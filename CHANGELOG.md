@@ -14,6 +14,10 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 - Added a structured feature-proposal form, private-security routing, and a fuller pull-request evidence checklist.
 
+### CI
+
+- Updated the pinned checkout and Node setup actions to their current v7 releases, removing the deprecated Node.js 20 action-runtime warning.
+
 ## 0.1.1 — 2026-08-13
 
 ### Fixed
