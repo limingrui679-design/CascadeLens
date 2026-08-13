@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { lstat, readdir, readFile } from "node:fs/promises";
 import { relative, resolve, sep } from "node:path";
 
-export const safeReleasePath = /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[a-zA-Z0-9._/-]+$/;
+export const safeReleasePath = /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[a-zA-Z0-9._/[\]-]+$/;
 
 export async function sha256File(path: string): Promise<string> {
   return createHash("sha256").update(await readFile(path)).digest("hex");
