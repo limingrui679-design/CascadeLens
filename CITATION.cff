@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use CascadeLens in research, please cite this software release."
 title: "CascadeLens"
 type: software
-version: 0.3.0
+version: 0.3.1
 date-released: 2026-08-13
 license: Apache-2.0
 repository-code: "https://github.com/limingrui679-design/CascadeLens"

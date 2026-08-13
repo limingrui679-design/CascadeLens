@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { access, readFile } from "node:fs/promises";
+import { access, mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import test from "node:test";
+import { cleanBuildOutputs } from "../../scripts/build-clean";
 
 const root = process.cwd();
 const entropyGuard = resolve(root, "scripts/deterministic-build-entropy.mjs");
@@ -46,6 +48,23 @@ test("offline build guard rejects external network and permits loopback", () => 
     );
   `;
   assert.equal(node(source, [entropyGuard, networkGuard]), "blocked\n");
+});
+
+test("production builds remove stale framework output roots", async () => {
+  const temporaryRoot = await mkdtemp(resolve(tmpdir(), "cascadelens-build-clean-"));
+  try {
+    for (const directory of ["dist", ".next", ".vinext"]) {
+      const outputRoot = resolve(temporaryRoot, directory);
+      await mkdir(outputRoot, { recursive: true });
+      await writeFile(resolve(outputRoot, "stale.txt"), "stale\n", "utf8");
+    }
+    cleanBuildOutputs(temporaryRoot);
+    for (const directory of ["dist", ".next", ".vinext"]) {
+      await assert.rejects(access(resolve(temporaryRoot, directory)));
+    }
+  } finally {
+    await rm(temporaryRoot, { recursive: true, force: true });
+  }
 });
 
 test("production fonts are repository-local and have no Google build import", async () => {

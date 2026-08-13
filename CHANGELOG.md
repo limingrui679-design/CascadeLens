@@ -6,6 +6,17 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.3.1 — 2026-08-13
+
+### Fixed
+
+- Production builds now remove `dist`, `.next`, and `.vinext` before compilation, so a release digest cannot include stale files left by an earlier checkout or build configuration.
+- The two-build verifier seeds a stale-output sentinel and fails unless the real production command removes it; detached verification now reports expected and actual build digests on mismatch.
+
+### Evidence boundary
+
+This patch strengthens release reproducibility only. It does not add historical outcome scoring, external validation, organizational adoption, or demonstrated real-world impact.
+
 ## 0.3.0 — 2026-08-13
 
 ### Closed audit findings

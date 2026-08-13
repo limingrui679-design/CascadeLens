@@ -38,7 +38,7 @@ import {
   writeRiskPackDirectory,
 } from "./io";
 
-const VERSION = "0.3.0";
+const VERSION = "0.3.1";
 const HELP = `CascadeLens ${VERSION}
 
 Usage:

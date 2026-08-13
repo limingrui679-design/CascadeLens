@@ -220,8 +220,12 @@ try {
   const after = await treeDigest(sourceRoot, manifest.generatedArtifactRoots);
   if (after !== before) throw new Error("Generated artifacts changed during fresh rebuild.");
   runVisible("npm", ["run", "ci"], sourceRoot, buildEnvironment);
-  if (await treeDigest(sourceRoot, ["dist"]) !== manifest.productionBuildSha256) {
-    throw new Error("Fresh production build does not match the release manifest.");
+  const freshProductionBuildSha256 = await treeDigest(sourceRoot, ["dist"]);
+  if (freshProductionBuildSha256 !== manifest.productionBuildSha256) {
+    throw new Error(
+      `Fresh production build does not match the release manifest: ` +
+      `expected=${manifest.productionBuildSha256} actual=${freshProductionBuildSha256}`,
+    );
   }
   runVisible(
     "npm",

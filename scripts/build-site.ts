@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { relative, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { cleanBuildOutputs } from "./build-clean";
 
 const excludedDirectories = new Set([
   ".git",
@@ -65,6 +66,11 @@ const nodeOptions = [
 ]
   .filter(Boolean)
   .join(" ");
+
+// Vite/vinext do not guarantee removal of files that disappeared between
+// builds. Start from empty output roots so a release digest cannot bind stale
+// assets left by an earlier checkout or build configuration.
+cleanBuildOutputs(root);
 
 execFileSync(
   process.execPath,

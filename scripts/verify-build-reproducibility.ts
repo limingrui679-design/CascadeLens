@@ -1,4 +1,6 @@
 import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { treeDigest } from "./release-utils";
 
 function buildOffline(): void {
@@ -9,7 +11,13 @@ function buildOffline(): void {
   });
 }
 
+const staleSentinel = resolve(process.cwd(), "dist/.cascadelens-stale-output-sentinel");
+mkdirSync(resolve(process.cwd(), "dist"), { recursive: true });
+writeFileSync(staleSentinel, "must be removed before the production build\n", "utf8");
 buildOffline();
+if (existsSync(staleSentinel)) {
+  throw new Error("Production build retained a stale output from an earlier build.");
+}
 const first = await treeDigest(process.cwd(), ["dist"]);
 buildOffline();
 const second = await treeDigest(process.cwd(), ["dist"]);
