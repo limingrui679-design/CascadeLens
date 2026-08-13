@@ -1,17 +1,16 @@
 # Content and provenance map
 
-`content/` separates reviewed source records and authored scenario definitions from deterministic build outputs. Generated files are committed so reviewers can inspect and verify the exact public artifacts without contacting external services.
+`content/` contains deterministic public catalogs and complete built reference cases. Generated files are committed so reviewers can inspect and verify the exact public artifacts without contacting external services; their authored specifications remain in the corresponding package source.
 
 ## Directory map
 
-| Path | Contents | Authorship status |
+| Path | Contents | Source of truth |
 |---|---|---|
-| [`sources/`](sources/) | Reviewed source and license records used by the catalog | Authored and reviewed |
-| [`scenarios/`](scenarios/) | Scenario-level source definitions | Authored and reviewed |
-| [`cases/`](cases/) | Per-case scenario, graph, assumptions, model card, results, and RiskPack | Mixed: authored inputs plus deterministic outputs |
-| [`catalog/`](catalog/) | Public connector catalog | Deterministically generated from reviewed source records |
+| [`cases/`](cases/) | Per-case scenario, graph, assumptions, context citation, model card, results, and RiskPack | Deterministically built from [`packages/cases/src/specs.ts`](../packages/cases/src/specs.ts) |
+| [`cases/catalog.json`](cases/catalog.json) | Public summary of all twelve reference cases | Generated with the case library |
+| [`catalog/connectors.json`](catalog/connectors.json) | Public catalog of the ten bounded connectors | Deterministically exported from [`packages/connectors/src/catalog.ts`](../packages/connectors/src/catalog.ts) |
 
-Every case records its classification separately from its scoring status. In the launch library, 9 cases are `quasi_historical` and 3 are `synthetic_stress`, but all 12 are `scenario_only`. Public event records provide context only; the case topology and numeric parameters are explicit model assumptions.
+Every case records its classification separately from its scoring status. In the launch library, 9 cases are `quasi_historical` and 3 are `synthetic_stress`, but all 12 are `scenario_only`. Public event records provide context only; the case topology and numeric parameters are explicit model assumptions recorded in the generated artifacts.
 
 ## Rebuild and verify
 

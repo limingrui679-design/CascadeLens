@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { readFile, readdir, stat } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -44,10 +44,19 @@ test("documentation navigation has no missing local targets", async () => {
       const withoutFragment = target.split("#", 1)[0].split("?", 1)[0];
       if (!withoutFragment) continue;
       const targetPath = resolve(dirname(sourcePath), decodeURIComponent(withoutFragment));
-      await assert.doesNotReject(
-        access(targetPath),
-        `${relativeFile} references a missing local target: ${target}`,
-      );
+      let targetStats;
+      try {
+        targetStats = await stat(targetPath);
+      } catch {
+        assert.fail(`${relativeFile} references a missing local target: ${target}`);
+      }
+      if (targetStats.isDirectory()) {
+        const entries = await readdir(targetPath);
+        assert.ok(
+          entries.length > 0,
+          `${relativeFile} references an empty directory that Git cannot publish: ${target}`,
+        );
+      }
     }
   }
 });
