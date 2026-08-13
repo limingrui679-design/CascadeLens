@@ -18,7 +18,7 @@
   "packId": "riskpack:refining-hurricane-restress:v0.1.0",
   "scenarioId": "refining-hurricane-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+  "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

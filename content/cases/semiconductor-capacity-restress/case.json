@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Semiconductors",
   "slug": "semiconductor-capacity-restress",
-  "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+  "snapshotDigest": "1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d",
   "summary": "A forward-dated semiconductor capacity stress across assumed fabrication, component, assembly, and production dependencies.",
   "tags": [
     "semiconductors",

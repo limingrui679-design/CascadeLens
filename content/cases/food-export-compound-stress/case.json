@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Food export compound",
   "slug": "food-export-compound-stress",
-  "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+  "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
   "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
   "tags": [
     "food",

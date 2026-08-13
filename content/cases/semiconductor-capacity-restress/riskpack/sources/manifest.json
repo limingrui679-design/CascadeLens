@@ -19,7 +19,7 @@
     "role": "input",
     "sha256": "9af9abedb8b541749052e06579ca8154d881f0973678f721595ade1bff85a044",
     "title": "Semiconductor capacity re-stress local assumption register",
-    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
+    "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
   },
   {
     "artifactKind": "citation_record",

@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Baltimore port",
   "slug": "baltimore-port-restress",
-  "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+  "snapshotDigest": "5d40c011820e161aa3ecd014688245f976651fa4d35ddfd09024d1984cfbd34a",
   "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
   "tags": [
     "port",

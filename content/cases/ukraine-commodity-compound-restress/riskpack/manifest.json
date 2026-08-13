@@ -18,7 +18,7 @@
   "packId": "riskpack:ukraine-commodity-compound-restress:v0.1.0",
   "scenarioId": "ukraine-commodity-compound-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+  "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

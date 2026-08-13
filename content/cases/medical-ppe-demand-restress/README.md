@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Shortage of personal protective equipment endangering health workers worldwide](https://www.who.int/news/item/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide)
 - Publisher: World Health Organization
-- Snapshot digest: `059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7`
+- Snapshot digest: `69f7474027b8e0398b03ade74842af328bff7dd13d113ea5c92e0a9b7b76dc5b`
 - Lower / central / upper total impact: 0.029706 / 0.029706 / 0.089865
 - Recommendation status: `evidence_required`
 

@@ -46,7 +46,7 @@ function draftForScale(): GraphSnapshotDraft {
         id: sourceId,
         title: "Synthetic performance assumptions",
         publisher: "CascadeLens test suite",
-        uri: "https://github.com/limingrui2/cascadelens/blob/main/docs/PERFORMANCE.md",
+        uri: "https://github.com/limingrui679-design/cascadelens/blob/main/docs/PERFORMANCE.md",
         retrievedAt: observedAt,
         availableAt: observedAt,
         sha256: "0".repeat(64),

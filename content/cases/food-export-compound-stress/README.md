@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [FAOSTAT data portal](https://www.fao.org/faostat/en/)
 - Publisher: Food and Agriculture Organization of the United Nations
-- Snapshot digest: `5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0`
+- Snapshot digest: `df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016`
 - Lower / central / upper total impact: 0.057330 / 0.057330 / 0.129289
 - Recommendation status: `evidence_required`
 

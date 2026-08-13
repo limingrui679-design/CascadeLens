@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Panama drought",
   "slug": "panama-drought-restress",
-  "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+  "snapshotDigest": "f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3",
   "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
   "tags": [
     "climate",

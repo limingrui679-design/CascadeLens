@@ -18,7 +18,7 @@
   "packId": "riskpack:red-sea-rerouting-restress:v0.1.0",
   "scenarioId": "red-sea-rerouting-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+  "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

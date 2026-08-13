@@ -18,7 +18,7 @@
   "packId": "riskpack:semiconductor-capacity-restress:v0.1.0",
   "scenarioId": "semiconductor-capacity-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+  "snapshotDigest": "1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

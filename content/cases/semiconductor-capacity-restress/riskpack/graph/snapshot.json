@@ -1,5 +1,5 @@
 {
-  "contentDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+  "contentDigest": "1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "9af9abedb8b541749052e06579ca8154d881f0973678f721595ade1bff85a044",
       "title": "Semiconductor capacity re-stress local assumption register",
-      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

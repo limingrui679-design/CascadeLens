@@ -18,7 +18,7 @@
   "packId": "riskpack:critical-minerals-export-stress:v0.1.0",
   "scenarioId": "critical-minerals-export-stress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814",
+  "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

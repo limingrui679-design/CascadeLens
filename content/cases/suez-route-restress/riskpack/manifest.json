@@ -18,7 +18,7 @@
   "packId": "riskpack:suez-route-restress:v0.1.0",
   "scenarioId": "suez-route-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+  "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

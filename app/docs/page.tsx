@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Install, run, verify, and extend CascadeLens.",
 };
 
-const commands = `git clone https://github.com/limingrui2/cascadelens.git
+const commands = `git clone https://github.com/limingrui679-design/cascadelens.git
 cd cascadelens
 npm ci
 npm run generate:catalog
@@ -36,7 +36,7 @@ export default function DocsPage() {
 const { bounds, interventions, benchmark } =
   await analyzeScenario(snapshot, scenario);`}</code></pre><p>Without separated outcomes, <code>benchmark.status</code> is <code>scenario_only</code>.</p></section>
           <section id="schemas"><Eyebrow>Contracts</Eyebrow><h2>Published JSON schemas</h2><ul><li><code>worldgraph-0.1.0.schema.json</code></li><li><code>shockscript-0.1.0.schema.json</code></li><li><code>riskpack-manifest-0.1.0.schema.json</code></li></ul><p>Unsupported versions and unknown ShockScript fields fail closed. Migrations create new artifacts and never mutate the original evidence pack.</p></section>
-          <section id="extend"><Eyebrow>Contribution</Eyebrow><h2>Engines, connectors, and cases</h2><p>New engines implement a versioned plugin interface. New connectors declare official endpoints, licensing, host and response limits, field lineage, and boundaries. Historical replays need a frozen cutoff and separated outcomes.</p><p><a className="text-link" href="https://github.com/limingrui2/cascadelens/blob/main/docs/EXTENDING.md" rel="noreferrer" target="_blank">Read the full extension contract ↗</a></p></section>
+          <section id="extend"><Eyebrow>Contribution</Eyebrow><h2>Engines, connectors, and cases</h2><p>New engines implement a versioned plugin interface. New connectors declare official endpoints, licensing, host and response limits, field lineage, and boundaries. Historical replays need a frozen cutoff and separated outcomes.</p><p><a className="text-link" href="https://github.com/limingrui679-design/cascadelens/blob/main/docs/EXTENDING.md" rel="noreferrer" target="_blank">Read the full extension contract ↗</a></p></section>
           <section id="security"><Eyebrow>Security</Eyebrow><h2>Untrusted input limits</h2><p>ShockScripts are capped at 1 MB with bounded aliases, nesting, values, and intervention count. Network connectors require HTTPS, allowlisted hosts, bounded time and size, redacted secrets, rate limits, and blocked redirects. The CLI rejects symbolic file inputs and path traversal in RiskPacks.</p><p><Link className="text-link" href="/data">Inspect connector acquisition modes →</Link></p></section>
         </article>
       </section>

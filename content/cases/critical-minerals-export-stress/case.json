@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Critical minerals",
   "slug": "critical-minerals-export-stress",
-  "snapshotDigest": "db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814",
+  "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
   "summary": "A synthetic export-control stress across an assumed mineral, component, manufacturing, and infrastructure chain.",
   "tags": [
     "minerals",

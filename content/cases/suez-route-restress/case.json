@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Suez route",
   "slug": "suez-route-restress",
-  "snapshotDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+  "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
   "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
   "tags": [
     "shipping",

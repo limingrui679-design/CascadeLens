@@ -1,5 +1,5 @@
 {
-  "contentDigest": "db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814",
+  "contentDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "4c0c45cb4d449732fdf0a0eacd87e9b3233d3f2b8eb2597b33db8b1f38b6b44a",
       "title": "Critical-minerals export-control stress local assumption register",
-      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/critical-minerals-export-stress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/critical-minerals-export-stress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

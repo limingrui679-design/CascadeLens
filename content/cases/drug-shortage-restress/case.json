@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Drug shortage",
   "slug": "drug-shortage-restress",
-  "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+  "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
   "summary": "A forward-dated medicine-supply stress across assumed manufacturer, wholesaler, care-site, and treatment-access links.",
   "tags": [
     "medicine",

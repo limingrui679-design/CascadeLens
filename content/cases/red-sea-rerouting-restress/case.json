@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Red Sea routing",
   "slug": "red-sea-rerouting-restress",
-  "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+  "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
   "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
   "tags": [
     "shipping",

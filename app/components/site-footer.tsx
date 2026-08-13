@@ -26,7 +26,7 @@ export function SiteFooter() {
         <div>
           <p className="footer-label">Build</p>
           <Link href="/docs">Documentation</Link>
-          <a href="https://github.com/limingrui2/cascadelens" rel="noreferrer" target="_blank">
+          <a href="https://github.com/limingrui679-design/cascadelens" rel="noreferrer" target="_blank">
             Source code ↗
           </a>
           <Link href="/docs#security">Security model</Link>

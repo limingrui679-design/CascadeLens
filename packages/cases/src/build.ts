@@ -31,7 +31,7 @@ function id(slug: string, kind: string, key: string): string {
 }
 
 function assumptionUri(slug: string): string {
-  return `https://github.com/limingrui2/cascadelens/blob/main/content/cases/${slug}/assumptions.json`;
+  return `https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/${slug}/assumptions.json`;
 }
 
 function contextRecord(spec: ReferenceCaseSpec) {

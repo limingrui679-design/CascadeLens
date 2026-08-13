@@ -18,7 +18,7 @@
   "packId": "riskpack:ofac-list-change-stress:v0.1.0",
   "scenarioId": "ofac-list-change-stress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+  "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

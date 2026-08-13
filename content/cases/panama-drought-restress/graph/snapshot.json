@@ -1,5 +1,5 @@
 {
-  "contentDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+  "contentDigest": "f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "3d8d1558e3bc14ef05734957bafb35b8e4288a2f97d60e93708e2256a39608ad",
       "title": "Panama Canal drought re-stress local assumption register",
-      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/panama-drought-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/panama-drought-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

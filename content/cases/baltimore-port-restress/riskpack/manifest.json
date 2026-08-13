@@ -18,7 +18,7 @@
   "packId": "riskpack:baltimore-port-restress:v0.1.0",
   "scenarioId": "baltimore-port-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+  "snapshotDigest": "5d40c011820e161aa3ecd014688245f976651fa4d35ddfd09024d1984cfbd34a",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

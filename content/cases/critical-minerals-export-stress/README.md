@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [2026 IEA Ministerial Declaration supporting critical-minerals security](https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security)
 - Publisher: International Energy Agency
-- Snapshot digest: `db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814`
+- Snapshot digest: `6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa`
 - Lower / central / upper total impact: 0.043858 / 0.043858 / 0.134873
 - Recommendation status: `evidence_required`
 

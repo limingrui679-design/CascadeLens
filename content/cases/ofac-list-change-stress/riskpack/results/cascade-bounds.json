@@ -62,7 +62,7 @@
     "iterations": 90,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
     "totalWeightedImpact": 0.03735909822866346,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
@@ -134,7 +134,7 @@
         "iterations": 7,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -205,7 +205,7 @@
         "iterations": 7,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -299,7 +299,7 @@
         "iterations": 7,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.23139728091352366,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
@@ -369,7 +369,7 @@
         "iterations": 30,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.11207729468599036,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -441,7 +441,7 @@
         "iterations": 30,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.11207729468599036,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -536,7 +536,7 @@
         "iterations": 30,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.25905080793931246,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": [
@@ -608,7 +608,7 @@
         "iterations": 90,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.03735909822866346,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -679,7 +679,7 @@
         "iterations": 90,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.03735909822866346,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -773,7 +773,7 @@
         "iterations": 90,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
         "totalWeightedImpact": 0.08780815155668417,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
@@ -843,7 +843,7 @@
     "iterations": 90,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
     "totalWeightedImpact": 0.03735909822866346,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
@@ -937,7 +937,7 @@
     "iterations": 90,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
     "totalWeightedImpact": 0.08780815155668417,
     "totalWeightedPeakEnvelope": 0.2725080565552267,
     "warnings": []

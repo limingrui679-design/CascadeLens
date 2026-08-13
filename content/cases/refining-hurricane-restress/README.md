@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Hurricane Ida caused widespread refinery and pipeline outages](https://www.eia.gov/todayinenergy/detail.php?id=49576)
 - Publisher: U.S. Energy Information Administration
-- Snapshot digest: `c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5`
+- Snapshot digest: `894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3`
 - Lower / central / upper total impact: 0.042455 / 0.042455 / 0.115757
 - Recommendation status: `evidence_required`
 

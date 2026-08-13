@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Refining hurricane",
   "slug": "refining-hurricane-restress",
-  "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+  "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
   "summary": "A forward-dated refining-capacity interruption across assumed fuel, transport, distribution, and essential-service links.",
   "tags": [
     "energy",

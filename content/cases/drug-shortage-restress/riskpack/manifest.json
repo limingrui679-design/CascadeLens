@@ -18,7 +18,7 @@
   "packId": "riskpack:drug-shortage-restress:v0.1.0",
   "scenarioId": "drug-shortage-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+  "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
