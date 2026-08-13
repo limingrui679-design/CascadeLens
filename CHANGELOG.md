@@ -16,7 +16,7 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 ### CI
 
-- Updated the pinned checkout and Node setup actions to their current v7 releases, removing the deprecated Node.js 20 action-runtime warning.
+- Updated the pinned checkout and Node setup actions to their current v7 releases and CodeQL to v4, removing deprecated Node.js 20 and CodeQL v3 action-runtime warnings.
 
 ## 0.1.1 — 2026-08-13
 
