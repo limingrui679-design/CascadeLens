@@ -29,10 +29,11 @@ RiskPack -- CLI / SDK / Web product
 - **Node-side acquisition:** network connectors do not run in the browser and never expose credentials.
 - **Conservative normalization:** the generic connector mapping preserves normalized facts as metric nodes and never invents dependency topology.
 - **Temporal execution:** graph visibility is reevaluated on every event day. An intervention starts at the frozen decision cutoff and activates only at `decisionCutoff + leadTimeDays`; solver iterations are distinct from simulated days.
-- **Recomputed evidence packs:** RiskPack verification rebuilds all derived outputs from packaged inputs; an optional external digest binds the whole pack to a separately retained receipt.
+- **Semantically bound evidence packs:** RiskPack verification validates versioned metadata contracts, binds assumption bytes to the packaged source manifest and each value to its actual scenario, graph, or observation parameter, checks model-card/benchmark and mandatory-limitation consistency, and rebuilds all derived outputs. An optional external digest binds the whole pack to a separately retained receipt.
+- **Byte-reproducible web build:** production fonts are repository-local; an offline build guard blocks non-loopback network access; build-scoped framework entropy is deterministically derived from source identity; and two fresh builds must have the same complete `dist` tree digest.
 - **Inspectable deployment:** `/build-info.json` exposes commit, Git tree, exact tag when present, dirty state, version, lock digest, content-catalog digest, RiskPack-catalog digest, build time, and hosting project id with an explicit self-attestation boundary.
 - **Optional scale layer:** large datasets remain in user-managed object storage and are represented by content-addressed manifests.
-- **Failure closed:** unsupported evidence, invalid temporal state, unverified license, or infeasible optimization blocks stronger output.
+- **Failure closed:** unsupported evidence, invalid temporal state, contradictory metadata, unverified license, or infeasible optimization blocks stronger output.
 
 ## Package boundaries
 

@@ -64,7 +64,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+    "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
     "totalWeightedImpact": 0.04975490196078431,
     "totalWeightedPeakEnvelope": 0.15441176470588233,
     "warnings": [
@@ -138,7 +138,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.15441176470588233,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -211,7 +211,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.15441176470588233,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -307,7 +307,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.38705263033599774,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
         "warnings": []
@@ -379,7 +379,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.14926470588235294,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -452,7 +452,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.14926470588235294,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -548,7 +548,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.33833946008817145,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
         "warnings": []
@@ -620,7 +620,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.04975490196078431,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -693,7 +693,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.04975490196078431,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -789,7 +789,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
         "totalWeightedImpact": 0.11277982002939048,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
         "warnings": []
@@ -861,7 +861,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+    "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
     "totalWeightedImpact": 0.04975490196078431,
     "totalWeightedPeakEnvelope": 0.15441176470588233,
     "warnings": [
@@ -957,7 +957,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+    "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
     "totalWeightedImpact": 0.11277982002939048,
     "totalWeightedPeakEnvelope": 0.38705263033599774,
     "warnings": []

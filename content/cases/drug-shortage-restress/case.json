@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Drug shortage",
   "slug": "drug-shortage-restress",
-  "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+  "snapshotDigest": "2ae5aa23b7b3d922122ed2ef7cf25606a8bbb58e1bed7aa47f460a8d315d3c3e",
   "structuralProfile": {
     "constraintProfile": {
       "budget": 22,

@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:red-sea-rerouting-restress:v0.2.0",
+  "packId": "riskpack:red-sea-rerouting-restress:engine-v0.2.0",
   "scenarioId": "red-sea-rerouting-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+  "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

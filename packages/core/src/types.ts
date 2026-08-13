@@ -1,5 +1,11 @@
 export const SCHEMA_VERSION = "0.1.0" as const;
 export const ENGINE_VERSION = "0.2.0" as const;
+export const ASSUMPTION_REGISTER_SCHEMA_VERSION =
+  "cascadelens-assumption-register/1.0.0" as const;
+export const MODEL_CARD_SCHEMA_VERSION =
+  "cascadelens-model-card/1.0.0" as const;
+export const RISKPACK_LIMITATIONS_SCHEMA_VERSION =
+  "cascadelens-riskpack-limitations/1.0.0" as const;
 
 export type JsonPrimitive = string | number | boolean | null;
 export type JsonValue = JsonPrimitive | JsonValue[] | { [key: string]: JsonValue };
@@ -439,17 +445,23 @@ export interface BenchmarkResult {
 
 export interface AssumptionRecord {
   id: string;
+  parameterPath:
+    | "scenario.propagation.transmission"
+    | "graph.edges[].weight"
+    | "inputs.observation-candidates[].candidateEdge.weight";
+  targetId: string;
   statement: string;
   value: JsonValue;
-  unit?: string;
-  lower?: number;
-  upper?: number;
+  unit: string;
+  lower: number;
+  upper: number;
   rationale: string;
   sourceIds: string[];
   status: "model_assumption";
 }
 
 export interface AssumptionRegister {
+  schemaVersion: typeof ASSUMPTION_REGISTER_SCHEMA_VERSION;
   scenarioId: string;
   generatedAt: string;
   status: "scenario_parameters_not_observations";
@@ -458,6 +470,7 @@ export interface AssumptionRegister {
 }
 
 export interface ModelCard {
+  schemaVersion: typeof MODEL_CARD_SCHEMA_VERSION;
   modelId: string;
   version: typeof ENGINE_VERSION;
   intendedUse: string[];

@@ -8,5 +8,6 @@
     "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
     "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
     "This is not sanctions screening, legal advice, or a determination that any party is restricted."
-  ]
+  ],
+  "schemaVersion": "cascadelens-riskpack-limitations/1.0.0"
 }

@@ -1,5 +1,5 @@
 {
-  "contentDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
+  "contentDigest": "bca0867097689a736df91bcb779b32e136cf53b832e6a708f1353d93852a0bf4",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -247,7 +247,7 @@
     {
       "artifactKind": "normalized_snapshot",
       "availableAt": "2026-08-12T00:00:00Z",
-      "bytes": 3193,
+      "bytes": 4638,
       "contentType": "application/json",
       "digestScope": "exact_bytes",
       "id": "source:medical-ppe-demand-restress:assumptions",
@@ -262,7 +262,7 @@
       "publisher": "CascadeLens",
       "retrievedAt": "2026-08-12T00:00:00Z",
       "role": "input",
-      "sha256": "f67a4959a36511f200fa08811d99d7d8bfeb5e55e231e6b57d644967007e61d3",
+      "sha256": "7a6b1e6162d36ecc2a951579bc2344d387e5815f35faf6d966db965a9493095b",
       "title": "Medical PPE demand re-stress local assumption register",
       "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/medical-ppe-demand-restress/assumptions.json"
     },

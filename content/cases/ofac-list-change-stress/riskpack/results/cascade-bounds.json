@@ -64,7 +64,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
     "simulatedDays": 60,
-    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
     "totalWeightedImpact": 0.05603864734299518,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
@@ -138,7 +138,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 3,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -211,7 +211,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 3,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -307,7 +307,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 3,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.2725080565552267,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
@@ -379,7 +379,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 14,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -452,7 +452,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 14,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -548,7 +548,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 14,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.2725080565552267,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
@@ -620,7 +620,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 60,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.05603864734299518,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -693,7 +693,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 60,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.05603864734299518,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -789,7 +789,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
         "simulatedDays": 60,
-        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
         "totalWeightedImpact": 0.13171222733502627,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
@@ -861,7 +861,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
     "simulatedDays": 60,
-    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
     "totalWeightedImpact": 0.05603864734299518,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
@@ -957,7 +957,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
     "simulatedDays": 60,
-    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
     "totalWeightedImpact": 0.13171222733502627,
     "totalWeightedPeakEnvelope": 0.2725080565552267,
     "warnings": []

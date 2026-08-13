@@ -10,12 +10,14 @@ import {
   runCascadeBounds,
   scoreReplay,
   stableStringify,
+  valueObservations,
   validateScenario,
   validateScenarioAgainstSnapshot,
   verifyRiskPack,
   verifyRiskPackDetailed,
   verifySnapshot,
   type AssumptionRegister,
+  type CandidateObservation,
   type GraphSnapshot,
   type ModelCard,
 } from "../../core/src/index";
@@ -36,13 +38,13 @@ import {
   writeRiskPackDirectory,
 } from "./io";
 
-const VERSION = "0.2.1";
+const VERSION = "0.3.0";
 const HELP = `CascadeLens ${VERSION}
 
 Usage:
   cascadelens validate <scenario> [--graph <snapshot>]
   cascadelens run <scenario> --graph <snapshot> --out <results.json>
-  cascadelens pack <scenario> --graph <snapshot> --assumptions <file> --model-card <file> --out <directory>
+  cascadelens pack <scenario> --graph <snapshot> --assumptions <file> --model-card <file> --observation-candidates <file> --out <directory>
   cascadelens verify <riskpack-directory> [--expected-digest <sha256>]
   cascadelens cases list
   cascadelens cases build [slug|all]
@@ -177,19 +179,37 @@ function validateModelCard(value: ModelCard): void {
 }
 
 async function packCommand(args: string[]): Promise<void> {
-  const parsed = parseArguments(args, ["--graph", "--assumptions", "--model-card", "--out"]);
+  const parsed = parseArguments(args, [
+    "--graph",
+    "--assumptions",
+    "--model-card",
+    "--observation-candidates",
+    "--out",
+  ]);
   assertPositional(
     parsed,
     1,
-    "cascadelens pack <scenario> --graph <snapshot> --assumptions <file> --model-card <file> --out <directory>",
+    "cascadelens pack <scenario> --graph <snapshot> --assumptions <file> --model-card <file> --observation-candidates <file> --out <directory>",
   );
   const result = await analyses(parsed.positional[0], requiredOption(parsed, "--graph"));
-  const [assumptions, modelCard] = await Promise.all([
+  const [assumptions, modelCard, observationCandidates] = await Promise.all([
     readJson<AssumptionRegister>(requiredOption(parsed, "--assumptions"), 5_000_000),
     readJson<ModelCard>(requiredOption(parsed, "--model-card"), 1_000_000),
+    readJson<CandidateObservation[]>(
+      requiredOption(parsed, "--observation-candidates"),
+      5_000_000,
+      "observation candidates",
+    ),
   ]);
   validateAssumptions(assumptions, result.scenario.scenarioId);
   validateModelCard(modelCard);
+  const riskValuePerUnit = 100;
+  const observationValues = await valueObservations(
+    result.snapshot,
+    result.scenario,
+    observationCandidates,
+    riskValuePerUnit,
+  );
   const pack = await createRiskPack({
     packId: `riskpack:${result.scenario.scenarioId}:cli`,
     generatedAt: new Date().toISOString(),
@@ -200,9 +220,11 @@ async function packCommand(args: string[]): Promise<void> {
     benchmark: result.benchmark,
     assumptions,
     modelCard,
-    observationValues: [],
+    observationValues,
+    observationCandidates,
+    riskValuePerUnit,
     rebuildCommand:
-      "cascadelens pack <scenario.json> --graph <snapshot.json> --assumptions <assumptions.json> --model-card <model-card.json> --out <directory>",
+      "cascadelens pack <scenario.json> --graph <snapshot.json> --assumptions <assumptions.json> --model-card <model-card.json> --observation-candidates <candidates.json> --out <directory>",
   });
   const issues = await verifyRiskPack(pack);
   if (issues.length > 0) throw new Error(`Generated RiskPack failed verification: ${issues.join(", ")}`);

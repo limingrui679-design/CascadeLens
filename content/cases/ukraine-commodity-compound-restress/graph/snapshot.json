@@ -1,5 +1,5 @@
 {
-  "contentDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+  "contentDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -247,7 +247,7 @@
     {
       "artifactKind": "normalized_snapshot",
       "availableAt": "2026-08-12T00:00:00Z",
-      "bytes": 3336,
+      "bytes": 4868,
       "contentType": "application/json",
       "digestScope": "exact_bytes",
       "id": "source:ukraine-commodity-compound-restress:assumptions",
@@ -262,7 +262,7 @@
       "publisher": "CascadeLens",
       "retrievedAt": "2026-08-12T00:00:00Z",
       "role": "input",
-      "sha256": "2c9b12d9367935641f2f6766dfe6c1228d7fb7bca815273c0b033cd7a72eb18f",
+      "sha256": "9da4f9abf9c6be1089660d11e542e8fb9b125ec65210195b6c198ed8e261bb0a",
       "title": "Food, fertilizer, and energy compound re-stress local assumption register",
       "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/ukraine-commodity-compound-restress/assumptions.json"
     },

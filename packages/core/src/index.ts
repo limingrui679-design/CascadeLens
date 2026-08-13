@@ -8,6 +8,7 @@ export * from "./evidence";
 export * from "./interventions";
 export * from "./observability";
 export * from "./riskpack";
+export * from "./riskpack-metadata";
 export * from "./shockscript";
 export * from "./temporal";
 export * from "./types";

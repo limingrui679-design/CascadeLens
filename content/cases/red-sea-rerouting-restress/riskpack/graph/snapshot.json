@@ -1,5 +1,5 @@
 {
-  "contentDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+  "contentDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -223,7 +223,7 @@
     {
       "artifactKind": "normalized_snapshot",
       "availableAt": "2026-08-12T00:00:00Z",
-      "bytes": 3175,
+      "bytes": 4027,
       "contentType": "application/json",
       "digestScope": "exact_bytes",
       "id": "source:red-sea-rerouting-restress:assumptions",
@@ -238,7 +238,7 @@
       "publisher": "CascadeLens",
       "retrievedAt": "2026-08-12T00:00:00Z",
       "role": "input",
-      "sha256": "0d227bacc6cc0148c160dd6078007481fbcd1373f51614e592147a923f4d7f1f",
+      "sha256": "01d162ffb498fc2c834ad9ffa6a0c0ea7e2defb58d555d5b0adabc9c8a74996e",
       "title": "Red Sea rerouting re-stress local assumption register",
       "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/red-sea-rerouting-restress/assumptions.json"
     },

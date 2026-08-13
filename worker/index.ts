@@ -48,16 +48,40 @@ const securityHeaders = {
   "X-Frame-Options": "DENY",
 } as const;
 
+const blockedInternalHeaders = [
+  "x-prerender-revalidate",
+  "x-prerender-revalidate-if-generated",
+  "x-vinext-prerender-route-params",
+  "x-vinext-prerender-secret",
+  "x-vinext-prerender-speculative",
+  "x-vinext-revalidate-host",
+] as const;
+
+function isForbiddenFrameworkControlRequest(request: Request, url: URL): boolean {
+  if (url.pathname === "/__vinext" || url.pathname.startsWith("/__vinext/")) {
+    return true;
+  }
+  if (blockedInternalHeaders.some((name) => request.headers.has(name))) {
+    return true;
+  }
+  return /(?:^|;\s*)__prerender_bypass=/.test(
+    request.headers.get("cookie") ?? "",
+  );
+}
+
 function nonce(): string {
   const bytes = crypto.getRandomValues(new Uint8Array(18));
   return btoa(String.fromCharCode(...bytes));
 }
 
-function contentSecurityPolicy(scriptNonce?: string): string {
-  const scriptSource = scriptNonce
-    ? `script-src 'self' 'nonce-${scriptNonce}'`
+function contentSecurityPolicy(responseNonce?: string): string {
+  const scriptSource = responseNonce
+    ? `script-src 'self' 'nonce-${responseNonce}'`
     : "script-src 'self'";
-  return `default-src 'self'; base-uri 'none'; connect-src 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data:; object-src 'none'; ${scriptSource}; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests`;
+  const styleSource = responseNonce
+    ? `style-src 'self' 'nonce-${responseNonce}'`
+    : "style-src 'self'";
+  return `default-src 'self'; base-uri 'none'; connect-src 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data:; object-src 'none'; ${scriptSource}; ${styleSource}; style-src-attr 'none'; upgrade-insecure-requests`;
 }
 
 async function harden(response: Response): Promise<Response> {
@@ -68,12 +92,17 @@ async function harden(response: Response): Promise<Response> {
   headers.delete("x-powered-by");
   const isHtml = /^text\/html\b/i.test(headers.get("content-type") ?? "");
   if (isHtml && response.body) {
-    const scriptNonce = nonce();
-    const html = (await response.text()).replace(
-      /<script(?![^>]*\bnonce=)/gi,
-      `<script nonce="${scriptNonce}"`,
-    );
-    headers.set("Content-Security-Policy", contentSecurityPolicy(scriptNonce));
+    const responseNonce = nonce();
+    const html = (await response.text())
+      .replace(
+        /<script(?![^>]*\bnonce=)/gi,
+        `<script nonce="${responseNonce}"`,
+      )
+      .replace(
+        /<style(?![^>]*\bnonce=)/gi,
+        `<style nonce="${responseNonce}"`,
+      );
+    headers.set("Content-Security-Policy", contentSecurityPolicy(responseNonce));
     headers.delete("content-length");
     return new Response(html, {
       status: response.status,
@@ -98,6 +127,16 @@ async function harden(response: Response): Promise<Response> {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    // CascadeLens does not expose framework draft, prerender, or on-demand
+    // revalidation controls. Block their public paths, headers, and cookie at
+    // the outer worker boundary before the framework handler can inspect them.
+    if (isForbiddenFrameworkControlRequest(request, url)) {
+      return harden(new Response("Forbidden", {
+        status: 403,
+        headers: { "Content-Type": "text/plain; charset=utf-8" },
+      }));
+    }
 
     if (url.pathname === "/build-info.json") {
       return harden(new Response(

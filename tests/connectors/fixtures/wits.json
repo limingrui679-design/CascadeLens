@@ -1,1 +1,1 @@
-{"data":[{"reporter":"TST","partner":"TSA","product":"TEST","year":"2020","indicator":"MPRT-TRD-VL","value":77.1,"unit":"test_units"}]}
+{"data":[{"reporter":"TST","partner":"TSA","product":"TEST1","year":"2020","indicator":"MPRT-TRD-VL","value":77.1,"unit":"test_units"},{"reporter":"TST","partner":"TSB","product":"TEST2","year":"2021","indicator":"MPRT-TRD-VL","value":81.4,"unit":"test_units"},{"reporter":"TSC","partner":"TSA","product":"TEST3","year":"2022","indicator":"AHS-WGHTD-AVRG","value":5.6,"unit":"test_percent"}]}

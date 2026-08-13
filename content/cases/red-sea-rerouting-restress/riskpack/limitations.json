@@ -8,5 +8,6 @@
     "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
     "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
     "The case does not claim actual freight-rate, emissions, or delivery-time effects."
-  ]
+  ],
+  "schemaVersion": "cascadelens-riskpack-limitations/1.0.0"
 }

@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:medical-ppe-demand-restress:v0.2.0",
+  "packId": "riskpack:medical-ppe-demand-restress:engine-v0.2.0",
   "scenarioId": "medical-ppe-demand-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
+  "snapshotDigest": "bca0867097689a736df91bcb779b32e136cf53b832e6a708f1353d93852a0bf4",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

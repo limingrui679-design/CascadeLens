@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Navigating troubled waters: Impact to global trade of disruption of shipping routes](https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black)
 - Publisher: UN Trade and Development
-- Snapshot digest: `c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8`
+- Snapshot digest: `9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19`
 - Lower / central / upper total impact: 0.049755 / 0.049755 / 0.112780
 - Recommendation status: `evidence_required`
 

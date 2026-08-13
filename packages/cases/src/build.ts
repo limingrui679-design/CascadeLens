@@ -1,8 +1,11 @@
 import {
   ENGINE_VERSION,
   SCHEMA_VERSION,
+  ASSUMPTION_REGISTER_DISCLAIMER,
+  ASSUMPTION_REGISTER_SCHEMA_VERSION,
   analyzeInterventions,
   createRiskPack,
+  dependencyCascadeModelCard,
   digestCanonical,
   runCascadeBounds,
   scoreReplay,
@@ -44,41 +47,63 @@ function contextRecord(spec: ReferenceCaseSpec) {
   };
 }
 
-function assumptionsFor(spec: ReferenceCaseSpec): AssumptionRegister {
-  const contextId = id(spec.slug, "source", "context");
+function assumptionsFor(
+  spec: ReferenceCaseSpec,
+  scenario: ShockScenario,
+  graph: GraphSnapshotDraft,
+  observationCandidates: CandidateObservation[],
+): AssumptionRegister {
+  const assumptionSourceId = id(spec.slug, "source", "assumptions");
+  const labelById = new Map(graph.nodes.map((node) => [node.id, node.label]));
   return {
+    schemaVersion: ASSUMPTION_REGISTER_SCHEMA_VERSION,
     scenarioId: spec.slug,
     generatedAt: DECISION_CUTOFF,
     status: "scenario_parameters_not_observations",
     assumptions: [
       {
         id: id(spec.slug, "assumption", "transmission"),
+        parameterPath: "scenario.propagation.transmission",
+        targetId: scenario.scenarioId,
         statement: "Propagation transmits a fixed share of upstream impact per iteration.",
-        value: 0.82,
+        value: scenario.propagation.transmission,
         unit: "share",
         lower: 0,
         upper: 1,
         rationale: "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
-        sourceIds: [contextId],
+        sourceIds: [assumptionSourceId],
         status: "model_assumption",
       },
-      ...spec.linkWeights.map((weight, index) => ({
-        id: id(spec.slug, "assumption", `link-${index + 1}`),
-        statement:
-          index < 4
-            ? `Assumed dependency from ${spec.stages[index].label} to ${spec.stages[index + 1].label}.`
-            : `Assumed missing direct dependency from ${spec.stages[0].label} to ${spec.stages[4].label}.`,
-        value: weight,
-        unit: "share",
-        lower: Math.max(0, Number((weight - 0.2).toFixed(3))),
-        upper: Math.min(1, Number((weight + 0.16).toFixed(3))),
+      ...graph.edges.map((edge, index) => ({
+        id: id(spec.slug, "assumption", `graph-link-${index + 1}`),
+        parameterPath: "graph.edges[].weight" as const,
+        targetId: edge.id,
+        statement: `Assumed dependency from ${labelById.get(edge.from)} to ${labelById.get(edge.to)}.`,
+        value: edge.weight.value,
+        unit: edge.weight.unit,
+        lower: edge.weight.lower!,
+        upper: edge.weight.upper!,
         rationale: "Illustrative topology parameter used only in the upper missing-graph bound.",
-        sourceIds: [contextId],
+        sourceIds: [assumptionSourceId],
+        status: "model_assumption" as const,
+      })),
+      ...observationCandidates.map((candidate, index) => ({
+        id: id(spec.slug, "assumption", `candidate-link-${index + 1}`),
+        parameterPath:
+          "inputs.observation-candidates[].candidateEdge.weight" as const,
+        targetId: candidate.candidateEdge.id,
+        statement: `Assumed missing direct dependency tested by ${candidate.label}.`,
+        value: candidate.candidateEdge.weight.value,
+        unit: candidate.candidateEdge.weight.unit,
+        lower: candidate.candidateEdge.weight.lower!,
+        upper: candidate.candidateEdge.weight.upper!,
+        rationale:
+          "Illustrative candidate topology parameter used only for value-of-information analysis.",
+        sourceIds: [assumptionSourceId],
         status: "model_assumption" as const,
       })),
     ],
-    disclaimer:
-      "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+    disclaimer: ASSUMPTION_REGISTER_DISCLAIMER,
   };
 }
 
@@ -334,33 +359,6 @@ function scenarioFor(spec: ReferenceCaseSpec): ShockScenario {
   };
 }
 
-function modelCardFor(spec: ReferenceCaseSpec): ModelCard {
-  return {
-    modelId: "dependency_cascade",
-    version: ENGINE_VERSION,
-    intendedUse: [
-      "Transparent stress-topology exploration",
-      "Software and evidence-governance verification",
-      "Comparing explicitly parameterized intervention bundles",
-    ],
-    outOfScope: [
-      "Forecasting realized losses",
-      "Causal inference",
-      "Autonomous operational decisions",
-      "Investment, legal, sanctions-compliance, clinical, or emergency-response advice",
-    ],
-    algorithm:
-      "Cycle-safe deterministic dependency propagation with evidence-gated lower, central, and upper graph bounds.",
-    evidencePolicy:
-      "MODEL_INFERRED edges are excluded from lower and central estimates and enter only the upper missing-graph envelope.",
-    validationStatus: "software_verified_empirically_unvalidated",
-    limitations: [
-      spec.specificLimitation,
-      "No case in the launch library currently has separated outcome data sufficient for historical scoring.",
-    ],
-  };
-}
-
 function observationCandidate(spec: ReferenceCaseSpec): CandidateObservation {
   return {
     id: id(spec.slug, "candidate", "direct-link"),
@@ -391,14 +389,20 @@ export interface BuiltReferenceCase {
 export async function buildReferenceCase(
   spec: ReferenceCaseSpec,
 ): Promise<BuiltReferenceCase> {
-  const assumptions = assumptionsFor(spec);
+  const scenario = scenarioFor(spec);
+  const observationCandidates = [observationCandidate(spec)];
+  const draft = graphDraft(spec, []);
+  const assumptions = assumptionsFor(
+    spec,
+    scenario,
+    draft,
+    observationCandidates,
+  );
   const assumptionsText = stableStringify(assumptions, 2) + "\n";
   const sources = await sourcesFor(spec, assumptionsText);
-  const snapshot = await sealSnapshot(graphDraft(spec, sources));
-  const scenario = scenarioFor(spec);
+  const snapshot = await sealSnapshot({ ...draft, sources });
   const bounds = await runCascadeBounds(snapshot, scenario);
   const interventions = await analyzeInterventions(snapshot, scenario);
-  const observationCandidates = [observationCandidate(spec)];
   const benchmarkOutcomes: never[] = [];
   const riskValuePerUnit = 100;
   const observability = await valueObservations(
@@ -408,9 +412,9 @@ export async function buildReferenceCase(
     riskValuePerUnit,
   );
   const benchmark = scoreReplay(snapshot, scenario, bounds, benchmarkOutcomes);
-  const modelCard = modelCardFor(spec);
+  const modelCard = dependencyCascadeModelCard(scenario, benchmark);
   const riskPack = await createRiskPack({
-    packId: id(spec.slug, "riskpack", "v0.2.0"),
+    packId: id(spec.slug, "riskpack", `engine-v${ENGINE_VERSION}`),
     generatedAt: DECISION_CUTOFF,
     snapshot,
     scenario,

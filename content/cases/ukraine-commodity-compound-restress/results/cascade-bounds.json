@@ -64,7 +64,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+    "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
     "totalWeightedImpact": 0.06444444444444444,
     "totalWeightedPeakEnvelope": 0.2,
     "warnings": [
@@ -138,7 +138,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.2,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -211,7 +211,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.2,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -312,7 +312,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 7,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.4366165257441388,
         "totalWeightedPeakEnvelope": 0.43661652576392124,
         "warnings": [
@@ -386,7 +386,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.19333333333333333,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -459,7 +459,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.19333333333333333,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -560,7 +560,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 30,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.4220626415753245,
         "totalWeightedPeakEnvelope": 0.43661652576411925,
         "warnings": [
@@ -634,7 +634,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.06444444444444444,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -707,7 +707,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.06444444444444444,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -808,7 +808,7 @@
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
         "simulatedDays": 90,
-        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
         "totalWeightedImpact": 0.14068754719476745,
         "totalWeightedPeakEnvelope": 0.43661652576411925,
         "warnings": [
@@ -882,7 +882,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+    "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
     "totalWeightedImpact": 0.06444444444444444,
     "totalWeightedPeakEnvelope": 0.2,
     "warnings": [
@@ -983,7 +983,7 @@
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
     "simulatedDays": 90,
-    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+    "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
     "totalWeightedImpact": 0.14068754719476745,
     "totalWeightedPeakEnvelope": 0.43661652576411925,
     "warnings": [

@@ -93,10 +93,26 @@ test("every HTML response carries the release security headers", async () => {
     response.headers.get("content-security-policy") ?? "",
     /script-src[^;]*'unsafe-inline'/,
   );
+  assert.match(
+    response.headers.get("content-security-policy") ?? "",
+    /style-src 'self' 'nonce-[A-Za-z0-9+/=]+';/,
+  );
+  assert.match(
+    response.headers.get("content-security-policy") ?? "",
+    /style-src-attr 'none'/,
+  );
+  assert.doesNotMatch(
+    response.headers.get("content-security-policy") ?? "",
+    /style-src[^;]*'unsafe-inline'/,
+  );
   const html = await response.text();
   for (const tag of html.match(/<script\b[^>]*>/gi) ?? []) {
     assert.match(tag, /\bnonce="[A-Za-z0-9+/=]+"/);
   }
+  for (const tag of html.match(/<style\b[^>]*>/gi) ?? []) {
+    assert.match(tag, /\bnonce="[A-Za-z0-9+/=]+"/);
+  }
+  assert.doesNotMatch(html, /<[^>]+\sstyle=/i);
   assert.equal(response.headers.get("cross-origin-opener-policy"), "same-origin");
   assert.equal(response.headers.get("cross-origin-resource-policy"), "same-origin");
   assert.equal(response.headers.get("referrer-policy"), "no-referrer");
@@ -104,6 +120,27 @@ test("every HTML response carries the release security headers", async () => {
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
   assert.equal(response.headers.get("x-frame-options"), "DENY");
   assert.equal(response.headers.has("x-powered-by"), false);
+});
+
+test("public worker blocks framework control paths, headers, and draft cookies", async () => {
+  const activeWorker = await worker();
+  const environment = {
+    ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
+  };
+  const context = { waitUntil() {}, passThroughOnException() {} };
+  for (const request of [
+    new Request("http://localhost/__vinext/prerender/static-params"),
+    new Request("http://localhost/", {
+      headers: { "x-prerender-revalidate": "publicly-derived-build-token" },
+    }),
+    new Request("http://localhost/", {
+      headers: { cookie: "session=fixture; __prerender_bypass=publicly-derived-build-token" },
+    }),
+  ]) {
+    const response = await activeWorker.fetch(request, environment, context);
+    assert.equal(response.status, 403);
+    assert.match(response.headers.get("content-security-policy") ?? "", /default-src 'self'/);
+  }
 });
 
 test("unknown pages fail closed with a branded 404", async () => {

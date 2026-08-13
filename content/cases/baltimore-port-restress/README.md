@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [NTSB opens public docket on Francis Scott Key Bridge investigation](https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx)
 - Publisher: National Transportation Safety Board
-- Snapshot digest: `494dc935c4d0191b4de22790e7e19fbb33462aad60336f6551141a6c11e61abc`
+- Snapshot digest: `62870d4201c425047241909e93fab7fc6add3eae725fac9e693074dabbaa6256`
 - Lower / central / upper total impact: 0.069402 / 0.069402 / 0.179967
 - Recommendation status: `evidence_required`
 

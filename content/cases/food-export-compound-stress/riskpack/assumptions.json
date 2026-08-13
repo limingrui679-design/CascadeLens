@@ -3,77 +3,89 @@
     {
       "id": "assumption:food-export-compound-stress:transmission",
       "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
       "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
       "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
       "status": "model_assumption",
+      "targetId": "food-export-compound-stress",
       "unit": "share",
       "upper": 1,
       "value": 0.82
     },
     {
-      "id": "assumption:food-export-compound-stress:link-1",
+      "id": "assumption:food-export-compound-stress:graph-link-1",
       "lower": 0.55,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
       "statement": "Assumed dependency from Food production capacity to Tradable food commodity.",
       "status": "model_assumption",
+      "targetId": "edge:food-export-compound-stress:link-1",
       "unit": "share",
       "upper": 0.91,
       "value": 0.75
     },
     {
-      "id": "assumption:food-export-compound-stress:link-2",
+      "id": "assumption:food-export-compound-stress:graph-link-2",
       "lower": 0.49,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
       "statement": "Assumed dependency from Tradable food commodity to Export availability.",
       "status": "model_assumption",
+      "targetId": "edge:food-export-compound-stress:link-2",
       "unit": "share",
       "upper": 0.85,
       "value": 0.69
     },
     {
-      "id": "assumption:food-export-compound-stress:link-3",
+      "id": "assumption:food-export-compound-stress:graph-link-3",
       "lower": 0.41,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
       "statement": "Assumed dependency from Export availability to Import-market distribution.",
       "status": "model_assumption",
+      "targetId": "edge:food-export-compound-stress:link-3",
       "unit": "share",
       "upper": 0.77,
       "value": 0.61
     },
     {
-      "id": "assumption:food-export-compound-stress:link-4",
+      "id": "assumption:food-export-compound-stress:graph-link-4",
       "lower": 0.34,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
       "statement": "Assumed dependency from Import-market distribution to Food affordability continuity.",
       "status": "model_assumption",
+      "targetId": "edge:food-export-compound-stress:link-4",
       "unit": "share",
       "upper": 0.7,
       "value": 0.54
     },
     {
-      "id": "assumption:food-export-compound-stress:link-5",
+      "id": "assumption:food-export-compound-stress:candidate-link-1",
       "lower": 0.05,
-      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
       "sourceIds": [
-        "source:food-export-compound-stress:context"
+        "source:food-export-compound-stress:assumptions"
       ],
-      "statement": "Assumed missing direct dependency from Food production capacity to Food affordability continuity.",
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Food production capacity to Food affordability continuity.",
       "status": "model_assumption",
+      "targetId": "edge:food-export-compound-stress:link-100",
       "unit": "share",
       "upper": 0.41,
       "value": 0.25
@@ -82,5 +94,6 @@
   "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
   "generatedAt": "2026-08-12T00:00:00Z",
   "scenarioId": "food-export-compound-stress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
   "status": "scenario_parameters_not_observations"
 }

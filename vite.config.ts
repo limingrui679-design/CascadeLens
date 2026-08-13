@@ -51,7 +51,7 @@ function buildIdentity() {
     packageVersion: packageMetadata.version,
     builtAt:
       process.env.CASCADELENS_BUILD_TIME ??
-      new Date().toISOString(),
+      packageMetadata.releaseDate,
     packageLockSha256: sha256("package-lock.json"),
     contentCatalogSha256: sha256("content/cases/catalog.json"),
     riskPackCatalogSha256: sha256("public/riskpacks/catalog.json"),

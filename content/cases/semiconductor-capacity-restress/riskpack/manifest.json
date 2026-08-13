@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:semiconductor-capacity-restress:v0.2.0",
+  "packId": "riskpack:semiconductor-capacity-restress:engine-v0.2.0",
   "scenarioId": "semiconductor-capacity-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "b991f1d9e819199adda1388518ea69b6fe23a09fe3f695e2f7ddd7a11c218daf",
+  "snapshotDigest": "21fc8222f6d20b085469e5a82c816b0d8786d72946d5e5594eeaa7c7936f9aa4",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

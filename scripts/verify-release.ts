@@ -25,10 +25,13 @@ interface ReleaseManifest {
   version: string;
   tag: string;
   commit: string;
+  tree: string;
+  releaseDate: string;
   packageLockSha256: string;
   generatedArtifactRoots: string[];
   generatedArtifactsSha256: string;
   riskPackCatalogSha256: string;
+  productionBuildSha256: string;
   artifacts: ReleaseArtifact[];
 }
 
@@ -41,11 +44,16 @@ function run(program: string, args: string[], cwd?: string): string {
   });
 }
 
-function runVisible(program: string, args: string[], cwd: string): void {
+function runVisible(
+  program: string,
+  args: string[],
+  cwd: string,
+  environment: Record<string, string> = {},
+): void {
   execFileSync(program, args, {
     cwd,
     stdio: "inherit",
-    env: { ...process.env, CI: "1" },
+    env: { ...process.env, CI: "1", ...environment },
   });
 }
 
@@ -101,11 +109,19 @@ if (!releaseInfo.isDirectory() || releaseInfo.isSymbolicLink()) {
 const manifest = JSON.parse(
   await readFile(resolve(releaseRoot, "release-manifest.json"), "utf8"),
 ) as ReleaseManifest;
-if (manifest.schemaVersion !== "cascadelens-release-manifest/1.0") {
+if (manifest.schemaVersion !== "cascadelens-release-manifest/1.1") {
   throw new Error("Unsupported release manifest schema.");
 }
 if (manifest.tag !== `v${manifest.version}` || manifest.product !== "cascadelens") {
   throw new Error("Release identity is inconsistent.");
+}
+if (
+  !/^[a-f0-9]{40}$/.test(manifest.commit) ||
+  !/^[a-f0-9]{40}$/.test(manifest.tree) ||
+  !/^[a-f0-9]{64}$/.test(manifest.productionBuildSha256) ||
+  !Number.isFinite(Date.parse(manifest.releaseDate))
+) {
+  throw new Error("Release source or production-build identity is invalid.");
 }
 const checksumsPath = resolve(releaseRoot, "checksums.sha256");
 const checksumSource = await readFile(checksumsPath, "utf8");
@@ -189,6 +205,13 @@ try {
   if (await sha256File(resolve(sourceRoot, "public/riskpacks/catalog.json")) !== manifest.riskPackCatalogSha256) {
     throw new Error("Extracted RiskPack catalog does not match the release manifest.");
   }
+  const buildEnvironment = {
+    CASCADELENS_BUILD_COMMIT: manifest.commit,
+    CASCADELENS_BUILD_TREE: manifest.tree,
+    CASCADELENS_BUILD_TAG: manifest.tag,
+    CASCADELENS_BUILD_DIRTY: "false",
+    CASCADELENS_BUILD_TIME: manifest.releaseDate,
+  };
   runVisible("npm", ["ci", "--no-audit", "--no-fund"], sourceRoot);
   runVisible("npm", ["run", "generate:catalog"], sourceRoot);
   runVisible("npm", ["run", "generate:cases"], sourceRoot);
@@ -196,7 +219,20 @@ try {
   runVisible("npm", ["run", "generate:sbom"], sourceRoot);
   const after = await treeDigest(sourceRoot, manifest.generatedArtifactRoots);
   if (after !== before) throw new Error("Generated artifacts changed during fresh rebuild.");
-  runVisible("npm", ["run", "ci"], sourceRoot);
+  runVisible("npm", ["run", "ci"], sourceRoot, buildEnvironment);
+  if (await treeDigest(sourceRoot, ["dist"]) !== manifest.productionBuildSha256) {
+    throw new Error("Fresh production build does not match the release manifest.");
+  }
+  runVisible(
+    "npm",
+    ["run", "verify:build-reproducibility"],
+    sourceRoot,
+    buildEnvironment,
+  );
+  const reproducedBuildSha256 = await treeDigest(sourceRoot, ["dist"]);
+  if (reproducedBuildSha256 !== manifest.productionBuildSha256) {
+    throw new Error("Offline repeated build does not match the tagged production build.");
+  }
 
   const report = {
     schemaVersion: "cascadelens-release-verification/1.0",
@@ -218,9 +254,11 @@ try {
       detachedSbomMatchesArchive: "pass",
       cleanInstallWithoutGit: "pass",
       deterministicGeneratedArtifacts: "pass",
+      byteReproducibleOfflineProductionBuild: "pass",
       fullCi: "pass",
     },
     generatedArtifactsSha256: after,
+    productionBuildSha256: reproducedBuildSha256,
     evidenceBoundary:
       "This verifies release integrity and software behavior only; it is not external review or empirical model validation.",
   };

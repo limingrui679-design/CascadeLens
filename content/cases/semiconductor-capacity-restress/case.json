@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Semiconductors",
   "slug": "semiconductor-capacity-restress",
-  "snapshotDigest": "b991f1d9e819199adda1388518ea69b6fe23a09fe3f695e2f7ddd7a11c218daf",
+  "snapshotDigest": "21fc8222f6d20b085469e5a82c816b0d8786d72946d5e5594eeaa7c7936f9aa4",
   "structuralProfile": {
     "constraintProfile": {
       "budget": 22,

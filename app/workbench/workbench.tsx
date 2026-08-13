@@ -245,7 +245,11 @@ export function Workbench({
               <span>{label}</span>
               <strong>{result.totalWeightedImpact.toFixed(4)}</strong>
               <small>{note} · {result.horizonDays}-day mean</small>
-              <i style={{ width: `${result.totalWeightedImpact * 100}%` }} aria-hidden="true" />
+              <progress
+                aria-label={`${label} bounded cascade impact`}
+                max={1}
+                value={result.totalWeightedImpact}
+              />
             </article>
           ))}
         </div>

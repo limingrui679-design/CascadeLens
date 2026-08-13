@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Suez route",
   "slug": "suez-route-restress",
-  "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+  "snapshotDigest": "8c660225b5be7a35c2d6bdd132683eeda5a950f6763ecb96c23baf28e02225b2",
   "structuralProfile": {
     "constraintProfile": {
       "budget": 22,

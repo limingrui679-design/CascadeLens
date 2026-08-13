@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:ofac-list-change-stress:v0.2.0",
+  "packId": "riskpack:ofac-list-change-stress:engine-v0.2.0",
   "scenarioId": "ofac-list-change-stress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+  "snapshotDigest": "a91958bb1d0c493de98e748321bbacd6b4f2c460d71c721256b7ad6e58454b28",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

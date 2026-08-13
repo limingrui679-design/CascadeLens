@@ -29,8 +29,11 @@ npm run cascadelens -- pack \
   --graph content/cases/suez-route-restress/graph/snapshot.json \
   --assumptions content/cases/suez-route-restress/assumptions.json \
   --model-card content/cases/suez-route-restress/model-card.json \
+  --observation-candidates content/cases/suez-route-restress/riskpack/inputs/observation-candidates.json \
   --out local-riskpack
 ```
+
+The candidate file is explicit because every observation-candidate weight in the assumption register must bind to the exact input that observability analysis uses. The CLI defaults to an empty historical-outcome set and therefore creates a `scenario_only` pack.
 
 ## Verify a RiskPack
 
@@ -39,7 +42,7 @@ npm run cascadelens -- verify local-riskpack
 npm run cascadelens -- cases verify all
 ```
 
-The successful status is `VERIFIED RECOMPUTED`. Verification checks relative paths, the exact declared file set, every checksum, sealed graph digest, ShockScript contract, cross-file identifiers, source manifest, model version, benchmark classification, and status labels. It then recomputes cascade bounds, intervention analysis, observability, and benchmark output from the packaged inputs and compares canonical bytes.
+The successful status is `VERIFIED RECOMPUTED`. Verification checks relative paths, the exact declared file set, every checksum, sealed graph digest, ShockScript contract, strict metadata schemas, exact-byte assumption source, parameter bindings, model-card/benchmark consistency, source manifest, model version, classification, and limitations. It then recomputes cascade bounds, intervention analysis, observability, and benchmark output from the packaged inputs and compares canonical bytes.
 
 To bind the pack to an independently retained receipt, pass its previously recorded pack digest:
 

@@ -1,75 +1,75 @@
 {
   "archives": [
     {
-      "bytes": 13877,
+      "bytes": 14206,
       "file": "suez-route-restress.zip",
-      "sha256": "1841a645fce9cf780897d8f061ddff99e452feae916bd41c4558370c83d5843d",
+      "sha256": "60e2fc13087e2daf96c7c87b7068230b33f2160e5271e64620f3d7ce6df18be0",
       "slug": "suez-route-restress"
     },
     {
-      "bytes": 14611,
+      "bytes": 14978,
       "file": "semiconductor-capacity-restress.zip",
-      "sha256": "3ec35e6f494a482d777716c79c5a776e848c6779188d4f011c88a3d11e3d5ce9",
+      "sha256": "f9446ad16994e7d6d5191e214031b0c12b177a89a9695284e62805afb5714674",
       "slug": "semiconductor-capacity-restress"
     },
     {
-      "bytes": 14229,
+      "bytes": 14579,
       "file": "medical-ppe-demand-restress.zip",
-      "sha256": "a6727b126f7bdfbf62b0138fc63d5b9f8071ca6567b9bb2e657d9318d1ae48f8",
+      "sha256": "39f00d0596cf1ca75259ef098a399b3084ab76bc65e7d28d3278a05dad5fb6fd",
       "slug": "medical-ppe-demand-restress"
     },
     {
-      "bytes": 14835,
+      "bytes": 15208,
       "file": "ukraine-commodity-compound-restress.zip",
-      "sha256": "5de4e9863ded00124dd1449c8aeec4f798c881890c05c1cabd4825b26c6903c7",
+      "sha256": "230520370dbcc4966c8907559bac5877ec063c68c3e776a3f5a26a0a0a637784",
       "slug": "ukraine-commodity-compound-restress"
     },
     {
-      "bytes": 14112,
+      "bytes": 14448,
       "file": "panama-drought-restress.zip",
-      "sha256": "cffad9bd54991e529e9500946c05cf059c626ab681ca04d1c81627897cfc2ae8",
+      "sha256": "49264ab68457bef4336b0a08e832e1738ddd4f64357b1d3bb1da1320946ee2a0",
       "slug": "panama-drought-restress"
     },
     {
-      "bytes": 14268,
+      "bytes": 14604,
       "file": "red-sea-rerouting-restress.zip",
-      "sha256": "47f5c70a1023b475c10acc15a6f2afe2a260139a0abf375d084edbf37e29ff16",
+      "sha256": "98ecbbe16918fd944d8ebef8ffac73bd33ff20095d2dba9061cbd6f2b52036d6",
       "slug": "red-sea-rerouting-restress"
     },
     {
-      "bytes": 14153,
+      "bytes": 14497,
       "file": "baltimore-port-restress.zip",
-      "sha256": "445ae32701f841fdbc57629e32cd08b6ed493240f9c30e2d86b1f0d07405e5d9",
+      "sha256": "9d222b4c5d7cf6b16a9cddef18cafac76377a924072ab468b201a5d4816d8bbd",
       "slug": "baltimore-port-restress"
     },
     {
-      "bytes": 14204,
+      "bytes": 14544,
       "file": "refining-hurricane-restress.zip",
-      "sha256": "a8dab03a660ecb2f602771cbe8c0d939f7596abb096d97ad608d9d73e3c25afa",
+      "sha256": "c5ec1f98bf80f0ae8932e4cd987d1e6d236ce74194e70d8b7cca4f1677fe9f24",
       "slug": "refining-hurricane-restress"
     },
     {
-      "bytes": 14107,
+      "bytes": 14433,
       "file": "critical-minerals-export-stress.zip",
-      "sha256": "d886beafa607a2f43d5a450cb50dd78938e9e8732380e8a7e90ce4a70d430cf6",
+      "sha256": "50df566753dbe4276134b55c0879e302e85a276f12a70e5fe0da23c9a288503e",
       "slug": "critical-minerals-export-stress"
     },
     {
-      "bytes": 13428,
+      "bytes": 13770,
       "file": "ofac-list-change-stress.zip",
-      "sha256": "3463ce058d63923c07cb4e3ae0f6ca992c610b22e5757d097be77bcd9df0e741",
+      "sha256": "39e183aab6706caa2955d0ab67b10bb75915e005f3a586751dea1a92775efe2f",
       "slug": "ofac-list-change-stress"
     },
     {
-      "bytes": 13781,
+      "bytes": 14135,
       "file": "drug-shortage-restress.zip",
-      "sha256": "724e596da7202a6048349f81b643b3939f25a1737a6f09bd8cd15d43433b40cc",
+      "sha256": "ea035623acd51a476117c0fecd4431f70987e6d136ccd6d092004b5d57333596",
       "slug": "drug-shortage-restress"
     },
     {
-      "bytes": 14393,
+      "bytes": 14745,
       "file": "food-export-compound-stress.zip",
-      "sha256": "61cc10371ce2e0c6b7b22f1be330f02c97cbb631541de9c7e738d8182572a13a",
+      "sha256": "b2de270499b33576585ac9ea5feec3096e5f67bf87d565d2c07f186706033887",
       "slug": "food-export-compound-stress"
     }
   ],

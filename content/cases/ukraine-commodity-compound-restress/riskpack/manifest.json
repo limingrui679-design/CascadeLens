@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:ukraine-commodity-compound-restress:v0.2.0",
+  "packId": "riskpack:ukraine-commodity-compound-restress:engine-v0.2.0",
   "scenarioId": "ukraine-commodity-compound-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+  "snapshotDigest": "d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

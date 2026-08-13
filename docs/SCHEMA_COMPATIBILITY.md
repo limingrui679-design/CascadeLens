@@ -1,6 +1,6 @@
 # Schema compatibility and migration
 
-CascadeLens uses explicit semantic versions for WorldGraph, ShockScript, engine output, and RiskPack manifests.
+CascadeLens uses explicit semantic versions for WorldGraph, ShockScript, engine output, RiskPack manifests, assumption registers, model cards, and RiskPack limitations.
 
 ## Compatibility policy
 
@@ -12,4 +12,4 @@ CascadeLens uses explicit semantic versions for WorldGraph, ShockScript, engine 
 
 ## Current migration registry
 
-Schema version `0.1.0` remains the initial WorldGraph, ShockScript, and RiskPack-manifest format. Engine version `0.2.0` changes derived-result semantics while continuing to serialize through those schemas. Runtime verification requires the exact engine version declared by the current release; an older RiskPack remains an immutable historical artifact and must be verified with its matching engine. An unsupported version returns a validation error and is never silently coerced.
+Schema version `0.1.0` remains the initial WorldGraph, ShockScript, and RiskPack-manifest format. Engine version `0.2.0` changes derived-result semantics while continuing to serialize through those schemas. CascadeLens `v0.3.0` introduces assumption-register, model-card, and limitations schemas at `1.0.0`; their required semantic-binding fields intentionally reject legacy metadata that could not be cross-checked. Runtime verification requires the exact engine and metadata versions declared by the current release. An older RiskPack remains an immutable historical artifact and must be verified with its matching release; unsupported versions are never silently coerced.

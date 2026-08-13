@@ -1,2 +1,4 @@
 Area Code,Item Code,Element Code,Year,Value,Unit,Flag,Note
 9999,TST1,TEST,2020,88.2,test_units,T,Fixture only
+9999,TST2,TEST,2021,91.4,test_units,T,Fixture only B
+9998,TST3,TEST2,2022,84.7,test_units,E,Fixture only C

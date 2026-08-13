@@ -2,7 +2,7 @@
   {
     "artifactKind": "normalized_snapshot",
     "availableAt": "2026-08-12T00:00:00Z",
-    "bytes": 3269,
+    "bytes": 4764,
     "contentType": "application/json",
     "digestScope": "exact_bytes",
     "id": "source:semiconductor-capacity-restress:assumptions",
@@ -17,7 +17,7 @@
     "publisher": "CascadeLens",
     "retrievedAt": "2026-08-12T00:00:00Z",
     "role": "input",
-    "sha256": "9af9abedb8b541749052e06579ca8154d881f0973678f721595ade1bff85a044",
+    "sha256": "38820f5552b9880fda71660b61d507460632faac0f9197ccb4055bdc03e58772",
     "title": "Semiconductor capacity re-stress local assumption register",
     "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
   },

@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-display: swap;
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/fonts/geist-latin-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/fonts/geist-mono-latin-variable.woff2") format("woff2");
+}
+
 :root {
+  --font-geist-sans: "Geist";
+  --font-geist-mono: "Geist Mono";
   --ink: #eef7f1;
   --muted: #9db0a8;
   --dim: #71867d;
@@ -259,7 +277,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .workbench-bounds span { color: var(--muted); font-size: 10px; }
 .workbench-bounds strong { display: block; font-family: var(--font-geist-mono), monospace; font-size: 30px; font-weight: 540; margin: 11px 0 7px; }
 .workbench-bounds small { color: var(--dim); display: block; font-size: 8px; min-height: 22px; }
-.workbench-bounds i { background: var(--mint); bottom: 0; height: 2px; left: 0; max-width: 100%; position: absolute; transition: width 300ms ease; }
+.workbench-bounds progress { appearance: none; background: transparent; border: 0; bottom: 0; height: 2px; left: 0; position: absolute; width: 100%; }
+.workbench-bounds progress::-webkit-progress-bar { background: transparent; }
+.workbench-bounds progress::-webkit-progress-value { background: var(--mint); transition: width 300ms ease; }
+.workbench-bounds progress::-moz-progress-bar { background: var(--mint); transition: width 300ms ease; }
 .workbench-grid { display: grid; gap: 8px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
 .workbench-grid .panel { padding: 19px; }
 .workbench-grid h3 { font-size: 17px; line-height: 1.3; margin: 18px 0 8px; }

@@ -1,6 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { basename, resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import { gzipSync } from "node:zlib";
 import {
   checksumText,
@@ -71,6 +72,30 @@ const generatedRoots = [
   "public/riskpacks",
   "docs/release/sbom.cdx.json",
 ];
+const tree = git("rev-parse", `${tag}^{tree}`);
+const productionBuildSha256 = await treeDigest(repoRoot, ["dist"]);
+const workerPath = resolve(repoRoot, "dist/server/index.js");
+const workerUrl = pathToFileURL(workerPath);
+workerUrl.searchParams.set("release-prepare", commit);
+const worker = await import(workerUrl.href).then((module) => module.default as {
+  fetch(request: Request, env: unknown, context: unknown): Promise<Response>;
+});
+const buildInfoResponse = await worker.fetch(
+  new Request("http://localhost/build-info.json"),
+  {},
+  { waitUntil() {}, passThroughOnException() {} },
+);
+const buildInfo = await buildInfoResponse.json() as Record<string, unknown>;
+if (
+  buildInfoResponse.status !== 200 ||
+  buildInfo.commit !== commit ||
+  buildInfo.tree !== tree ||
+  buildInfo.releaseTag !== tag ||
+  buildInfo.dirty !== false ||
+  buildInfo.packageVersion !== packageMetadata.version
+) {
+  throw new Error("dist does not identify the clean tagged release being prepared.");
+}
 const artifacts = await Promise.all(
   [tarGzipPath, zipPath, sbomPath].map(async (path) => ({
     file: basename(path),
@@ -79,18 +104,20 @@ const artifacts = await Promise.all(
   })),
 );
 const manifest = {
-  schemaVersion: "cascadelens-release-manifest/1.0",
+  schemaVersion: "cascadelens-release-manifest/1.1",
   product: packageMetadata.name,
   version: packageMetadata.version,
   tag,
   tagObject: git("rev-parse", tag),
   commit,
+  tree,
   releaseDate: new Date(packageMetadata.releaseDate).toISOString(),
   nodeEngine: packageMetadata.engines.node,
   packageLockSha256: await sha256File(resolve(repoRoot, "package-lock.json")),
   generatedArtifactRoots: generatedRoots,
   generatedArtifactsSha256: await treeDigest(repoRoot, generatedRoots),
   riskPackCatalogSha256: await sha256File(resolve(repoRoot, "public/riskpacks/catalog.json")),
+  productionBuildSha256,
   artifacts,
   evidenceBoundary:
     "Software verification and public hosting do not establish empirical model validity, external review, adoption, or real-world impact.",

@@ -1,2 +1,4 @@
 Ent_num,SDN_Name,SDN_Type,Program,Title,Remarks,Vess_flag
 999999,Fixture Listed Entity,Entity,TEST,,Synthetic contract fixture,
+999998,Fixture Listed Vessel,Vessel,TEST2,,Synthetic vessel fixture,ZZ
+999997,Fixture Listed Individual,Individual,TEST3,Mr,Synthetic individual fixture,

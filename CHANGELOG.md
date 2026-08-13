@@ -6,6 +6,22 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.3.0 — 2026-08-13
+
+### Closed audit findings
+
+- Added strict runtime and published JSON schemas for assumption registers, model cards, and RiskPack limitations.
+- Bound every assumption to a concrete scenario, graph-edge, or observation-candidate parameter; bound the assumption register to an exact-byte packaged source; and enforced model-card status, limitations, and benchmark consistency.
+- Added self-consistently rehashed adversarial tests for false validation status, removed limitations, altered assumption values, and altered assumption-source digests.
+- Expanded all ten adapter fixtures to three distinct records and added multiple permutations, field-order changes, duplicate-key, and exact-duplicate regressions.
+- Replaced remote build-time fonts with repository-local Geist assets and added an enforced no-network production build.
+- Made the complete production `dist` tree byte-reproducible across two clean builds, recorded its digest in the release manifest, and required exact reproduction in detached no-Git verification and Linux/macOS CI.
+- Removed `unsafe-inline` from style CSP, applied per-response nonces to server-rendered styles, and blocked inline style attributes.
+
+### Evidence boundary
+
+This release closes the independently reproduced software findings. It still contains 0 historically scored cases, 0 external validations, 0 independent domain or security certifications, and 0 claims of organizational adoption or demonstrated real-world impact.
+
 ## 0.2.1 — 2026-08-13
 
 ### Fixed

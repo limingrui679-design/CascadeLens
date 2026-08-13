@@ -3,77 +3,104 @@
     {
       "id": "assumption:semiconductor-capacity-restress:transmission",
       "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
       "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
       "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
       "status": "model_assumption",
+      "targetId": "semiconductor-capacity-restress",
       "unit": "share",
       "upper": 1,
       "value": 0.82
     },
     {
-      "id": "assumption:semiconductor-capacity-restress:link-1",
+      "id": "assumption:semiconductor-capacity-restress:graph-link-1",
       "lower": 0.61,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
       "statement": "Assumed dependency from Semiconductor fabrication capacity to Application-specific chips.",
       "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-1",
       "unit": "share",
       "upper": 0.97,
       "value": 0.81
     },
     {
-      "id": "assumption:semiconductor-capacity-restress:link-2",
+      "id": "assumption:semiconductor-capacity-restress:graph-link-2",
       "lower": 0.46,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
-      "statement": "Assumed dependency from Application-specific chips to Electronic modules.",
+      "statement": "Assumed dependency from Semiconductor fabrication capacity to Electronic modules.",
       "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-2",
       "unit": "share",
       "upper": 0.82,
       "value": 0.66
     },
     {
-      "id": "assumption:semiconductor-capacity-restress:link-3",
+      "id": "assumption:semiconductor-capacity-restress:graph-link-3",
       "lower": 0.42,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
-      "statement": "Assumed dependency from Electronic modules to Downstream manufacturing.",
+      "statement": "Assumed dependency from Application-specific chips to Downstream manufacturing.",
       "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-3",
       "unit": "share",
       "upper": 0.78,
       "value": 0.62
     },
     {
-      "id": "assumption:semiconductor-capacity-restress:link-4",
+      "id": "assumption:semiconductor-capacity-restress:graph-link-4",
       "lower": 0.24,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
-      "statement": "Assumed dependency from Downstream manufacturing to Finished-goods deliveries.",
+      "statement": "Assumed dependency from Electronic modules to Downstream manufacturing.",
       "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-4",
       "unit": "share",
       "upper": 0.6,
       "value": 0.44
     },
     {
-      "id": "assumption:semiconductor-capacity-restress:link-5",
+      "id": "assumption:semiconductor-capacity-restress:graph-link-5",
       "lower": 0,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:semiconductor-capacity-restress:context"
+        "source:semiconductor-capacity-restress:assumptions"
       ],
-      "statement": "Assumed missing direct dependency from Semiconductor fabrication capacity to Finished-goods deliveries.",
+      "statement": "Assumed dependency from Downstream manufacturing to Finished-goods deliveries.",
       "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-5",
+      "unit": "share",
+      "upper": 0.35,
+      "value": 0.19
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:candidate-link-1",
+      "lower": 0,
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:assumptions"
+      ],
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Semiconductor fabrication capacity to Finished-goods deliveries.",
+      "status": "model_assumption",
+      "targetId": "edge:semiconductor-capacity-restress:link-100",
       "unit": "share",
       "upper": 0.35,
       "value": 0.19
@@ -82,5 +109,6 @@
   "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
   "generatedAt": "2026-08-12T00:00:00Z",
   "scenarioId": "semiconductor-capacity-restress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
   "status": "scenario_parameters_not_observations"
 }

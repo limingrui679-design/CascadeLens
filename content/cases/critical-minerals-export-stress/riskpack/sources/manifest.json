@@ -2,7 +2,7 @@
   {
     "artifactKind": "normalized_snapshot",
     "availableAt": "2026-08-12T00:00:00Z",
-    "bytes": 3245,
+    "bytes": 4127,
     "contentType": "application/json",
     "digestScope": "exact_bytes",
     "id": "source:critical-minerals-export-stress:assumptions",
@@ -17,7 +17,7 @@
     "publisher": "CascadeLens",
     "retrievedAt": "2026-08-12T00:00:00Z",
     "role": "input",
-    "sha256": "4c0c45cb4d449732fdf0a0eacd87e9b3233d3f2b8eb2597b33db8b1f38b6b44a",
+    "sha256": "4d10fdc8d57d7a4d6173a5dd20c93bd8a67d0e9055a9bec52b60de91cdf41202",
     "title": "Critical-minerals export-control stress local assumption register",
     "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/critical-minerals-export-stress/assumptions.json"
   },

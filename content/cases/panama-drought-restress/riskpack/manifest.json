@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:panama-drought-restress:v0.2.0",
+  "packId": "riskpack:panama-drought-restress:engine-v0.2.0",
   "scenarioId": "panama-drought-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "20410abd3409b2aefd80addacd627d9ead1a1a1383593d90bccfe737663771ea",
+  "snapshotDigest": "81a67e3b7e0d296b8425cd4638bf494127b6d8f4b0f4dc942e73cf6e61ca609a",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

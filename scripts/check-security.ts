@@ -99,7 +99,7 @@ for (const path of await listFiles(root)) {
 }
 
 const expectedHeaders = new Map([
-  ["content-security-policy", /default-src 'self'.*frame-ancestors 'none'.*script-src 'self' 'nonce-[A-Za-z0-9+/=]+'/],
+  ["content-security-policy", /default-src 'self'.*frame-ancestors 'none'.*script-src 'self' 'nonce-[A-Za-z0-9+/=]+'.*style-src 'self' 'nonce-[A-Za-z0-9+/=]+'.*style-src-attr 'none'/],
   ["cross-origin-opener-policy", /^same-origin$/],
   ["cross-origin-resource-policy", /^same-origin$/],
   ["permissions-policy", /camera=\(\).*microphone=\(\)/],
@@ -125,7 +125,23 @@ const csp = response.headers.get("content-security-policy") ?? "";
 if (/script-src[^;]*'unsafe-inline'/.test(csp)) {
   findings.push("unsafe_inline_script_csp");
 }
+if (/style-src[^;]*'unsafe-inline'/.test(csp)) {
+  findings.push("unsafe_inline_style_csp");
+}
 if (response.headers.has("x-powered-by")) findings.push("framework_disclosure:x-powered-by");
+const blockedControlResponse = await worker.fetch(
+  new Request("http://localhost/__vinext/prerender/static-params", {
+    headers: {
+      "x-vinext-prerender-secret": "publicly-derived-build-token",
+      cookie: "__prerender_bypass=publicly-derived-build-token",
+    },
+  }),
+  { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+  { waitUntil() {}, passThroughOnException() {} },
+);
+if (blockedControlResponse.status !== 403) {
+  findings.push(`framework_control_request_not_blocked:${blockedControlResponse.status}`);
+}
 
 console.log(
   JSON.stringify(

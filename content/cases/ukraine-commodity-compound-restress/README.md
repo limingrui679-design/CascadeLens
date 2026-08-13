@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Food and Energy Price Shocks from Ukraine War](https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war)
 - Publisher: World Bank
-- Snapshot digest: `de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357`
+- Snapshot digest: `d4b348db5ed6a788feb6e4fe1de6750c57a4cfe4328acf53bc6cb9035078181e`
 - Lower / central / upper total impact: 0.064444 / 0.064444 / 0.140688
 - Recommendation status: `evidence_required`
 

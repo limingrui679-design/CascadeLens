@@ -2,7 +2,7 @@
   {
     "artifactKind": "normalized_snapshot",
     "availableAt": "2026-08-12T00:00:00Z",
-    "bytes": 3208,
+    "bytes": 4066,
     "contentType": "application/json",
     "digestScope": "exact_bytes",
     "id": "source:food-export-compound-stress:assumptions",
@@ -17,7 +17,7 @@
     "publisher": "CascadeLens",
     "retrievedAt": "2026-08-12T00:00:00Z",
     "role": "input",
-    "sha256": "f2ed1fed1b92be29280b809ddb8f26d80b06fe127cca5c6ecaae0d34c64c860b",
+    "sha256": "c61ec198a26056849be70ee40b00f1f409debb93ae4b3b3a292faedfda59f059",
     "title": "Food production and export-restriction compound stress local assumption register",
     "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/food-export-compound-stress/assumptions.json"
   },

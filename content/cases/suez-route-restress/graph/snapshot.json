@@ -1,5 +1,5 @@
 {
-  "contentDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+  "contentDigest": "8c660225b5be7a35c2d6bdd132683eeda5a950f6763ecb96c23baf28e02225b2",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -221,7 +221,7 @@
     {
       "artifactKind": "normalized_snapshot",
       "availableAt": "2026-08-12T00:00:00Z",
-      "bytes": 3091,
+      "bytes": 3901,
       "contentType": "application/json",
       "digestScope": "exact_bytes",
       "id": "source:suez-route-restress:assumptions",
@@ -236,7 +236,7 @@
       "publisher": "CascadeLens",
       "retrievedAt": "2026-08-12T00:00:00Z",
       "role": "input",
-      "sha256": "b191f5f8f8cc5e3dff62f996b42bdaf983db054f64388df3fcf2680813b1d26a",
+      "sha256": "7f66e9a53b7e448d1c4f3a3b3f3e28207523907c78fa2615fb2c7fe2fcac15f6",
       "title": "Suez route closure re-stress local assumption register",
       "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/suez-route-restress/assumptions.json"
     },

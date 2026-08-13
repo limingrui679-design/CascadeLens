@@ -8,5 +8,6 @@
     "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
     "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
     "The case is not a weather forecast or estimate of realized fuel-market impacts."
-  ]
+  ],
+  "schemaVersion": "cascadelens-riskpack-limitations/1.0.0"
 }

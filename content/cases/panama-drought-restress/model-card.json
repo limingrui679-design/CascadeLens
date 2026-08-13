@@ -7,8 +7,11 @@
     "Comparing explicitly parameterized intervention bundles"
   ],
   "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
     "The case does not reconstruct actual vessel queues, tolls, or shipment volumes.",
-    "No case in the launch library currently has separated outcome data sufficient for historical scoring."
+    "No comparable separated real-world outcome was available."
   ],
   "modelId": "dependency_cascade",
   "outOfScope": [
@@ -17,6 +20,7 @@
     "Autonomous operational decisions",
     "Investment, legal, sanctions-compliance, clinical, or emergency-response advice"
   ],
+  "schemaVersion": "cascadelens-model-card/1.0.0",
   "validationStatus": "software_verified_empirically_unvalidated",
   "version": "0.2.0"
 }

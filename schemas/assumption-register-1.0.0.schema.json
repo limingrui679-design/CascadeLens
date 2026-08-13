@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascadelens.dev/schemas/assumption-register-1.0.0.schema.json",
+  "title": "CascadeLens Assumption Register 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scenarioId", "generatedAt", "status", "assumptions", "disclaimer"],
+  "properties": {
+    "schemaVersion": { "const": "cascadelens-assumption-register/1.0.0" },
+    "scenarioId": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "status": { "const": "scenario_parameters_not_observations" },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "parameterPath",
+          "targetId",
+          "statement",
+          "value",
+          "unit",
+          "lower",
+          "upper",
+          "rationale",
+          "sourceIds",
+          "status"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "parameterPath": {
+            "enum": [
+              "scenario.propagation.transmission",
+              "graph.edges[].weight",
+              "inputs.observation-candidates[].candidateEdge.weight"
+            ]
+          },
+          "targetId": { "type": "string", "minLength": 1 },
+          "statement": { "type": "string", "minLength": 1 },
+          "value": { "type": "number" },
+          "unit": { "type": "string", "minLength": 1 },
+          "lower": { "type": "number" },
+          "upper": { "type": "number" },
+          "rationale": { "type": "string", "minLength": 1 },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "status": { "const": "model_assumption" }
+        }
+      }
+    },
+    "disclaimer": {
+      "const": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss."
+    }
+  }
+}

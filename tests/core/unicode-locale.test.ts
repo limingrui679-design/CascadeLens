@@ -26,7 +26,7 @@ test("keeps canonical bytes, graph digest, and RiskPack checksums identical acro
   assert.equal(new Set(receipts.map((item) => JSON.stringify(item))).size, 1);
   assert.deepEqual(receipts[0], {
     canonicalBytesSha256: "8b709319d33f01ceb24396b3711e1fe6c5e32e95965487a9859b98037b27e2b3",
-    graphDigest: "19e28400734d60df0fc6049a5bf2ce84439f6babe49f7e6e7390b93224773ca0",
-    riskPackChecksumsSha256: "428c5b2fe1772b9f7e44f459c26b007a3bb7e15b24757207c8ce0f0325ae78b1",
+    graphDigest: "546e6ba2828e9e4ff9a8ca61261cee67ff7aaca1de1ef3aabc220e9f973b3066",
+    riskPackChecksumsSha256: "85f710079427afdf7db20a713a0848875141d392b43c157836d84ee33ebd5176",
   });
 });

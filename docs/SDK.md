@@ -24,5 +24,8 @@ npm run example:sdk
 - `schemas/worldgraph-0.1.0.schema.json`
 - `schemas/shockscript-0.1.0.schema.json`
 - `schemas/riskpack-manifest-0.1.0.schema.json`
+- `schemas/assumption-register-1.0.0.schema.json`
+- `schemas/model-card-1.0.0.schema.json`
+- `schemas/riskpack-limitations-1.0.0.schema.json`
 
-The current SDK rejects unknown ShockScript fields, unsupported schema versions, unsafe identifiers, invalid temporal ordering, outcome leakage, malformed or duplicate replay outcomes, unregistered engines, and incompatible graph references. The published artifact schemas remain at version `0.1.0`.
+The current SDK rejects unknown ShockScript fields, unsupported schema versions, unsafe identifiers, invalid temporal ordering, outcome leakage, malformed or duplicate replay outcomes, unregistered engines, incompatible graph references, and RiskPack metadata that does not bind exactly to the packaged scenario, graph, benchmark, and assumptions source. WorldGraph, ShockScript, and RiskPack manifest schemas remain at version `0.1.0`; the three metadata contracts begin at version `1.0.0`.

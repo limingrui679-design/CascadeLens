@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascadelens.dev/schemas/riskpack-limitations-1.0.0.schema.json",
+  "title": "CascadeLens RiskPack Limitations 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scenarioLimitations", "benchmarkLimitations", "disclaimer"],
+  "properties": {
+    "schemaVersion": { "const": "cascadelens-riskpack-limitations/1.0.0" },
+    "scenarioLimitations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "benchmarkLimitations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "disclaimer": {
+      "const": "Scenario outputs are not causal estimates, realized losses, investment advice, legal advice, clinical advice, or evidence of adoption."
+    }
+  }
+}

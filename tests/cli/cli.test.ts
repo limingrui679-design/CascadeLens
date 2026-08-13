@@ -72,6 +72,8 @@ test("packs, independently verifies, and detects tampering", async () => {
       join(caseRoot, "assumptions.json"),
       "--model-card",
       join(caseRoot, "model-card.json"),
+      "--observation-candidates",
+      join(caseRoot, "riskpack", "inputs", "observation-candidates.json"),
       "--out",
       output,
     ]);
@@ -114,6 +116,8 @@ test("rejects unknown commands, duplicate flags, and path-like checksum entries"
       join(caseRoot, "assumptions.json"),
       "--model-card",
       join(caseRoot, "model-card.json"),
+      "--observation-candidates",
+      join(caseRoot, "riskpack", "inputs", "observation-candidates.json"),
       "--out",
       output,
     ]);

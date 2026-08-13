@@ -22,7 +22,7 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Red Sea routing",
   "slug": "red-sea-rerouting-restress",
-  "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+  "snapshotDigest": "9ae78f43fd6dea6c8106d7792a7dfba46d80190b5db5cc4e0f95783640fbff19",
   "structuralProfile": {
     "constraintProfile": {
       "budget": 22,

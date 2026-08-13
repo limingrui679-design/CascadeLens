@@ -1,2 +1,4 @@
 Economy,Period,Measure,Value,Unit,Frequency
 Fixture economy,2020-01,LSCI,101.2,index,Monthly
+Fixture economy B,2020-02,LSCI,102.4,index,Monthly
+Fixture economy C,2020-03,Port LSCI,98.7,index,Monthly

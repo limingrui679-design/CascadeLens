@@ -20,13 +20,13 @@
   ·
   <a href="docs/README.md">Read the docs</a>
   ·
-  <a href="docs/SELF_REVIEW_2026-08-13_v0.2.1.md">Inspect the evidence</a>
+  <a href="docs/SELF_REVIEW_2026-08-13_v0.3.0.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
 
 > [!IMPORTANT]
-> **Current release: `v0.2.1`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
+> **Current release: `v0.3.0`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
 
 ## Why CascadeLens
 
@@ -112,18 +112,18 @@ The engine uses an explicit UTF-8 byte ordering rather than process locale: equa
 
 ## What ships
 
-| Surface | Included in `v0.2.1` |
+| Surface | Included in `v0.3.0` |
 |---|---|
 | WorldGraph | Evidence-graded, bitemporal nodes and edges with canonical content digests |
 | ShockScript | Strict, versioned shock contract with graph-aware validation |
 | Analysis | Daily multi-horizon propagation over time-varying graph visibility, with a bounded per-day convergence solver |
 | Decision support | Activation-dated interventions and horizon-specific feasibility, Pareto frontiers, and recommendations |
 | CascadeBench | Metric-, horizon-, outcome-window-, and availability-closed replay gates plus an honest `scenario_only` fallback |
-| RiskPack | Inputs plus deterministically recomputed cascade, intervention, observability, and benchmark outputs; optional external expected digest |
+| RiskPack | Inputs plus deterministically recomputed outputs, strict versioned metadata schemas, exact-byte assumption-source binding, parameter-level semantic checks, and an optional external expected digest |
 | Data integration | 10 bounded connector contracts, including 3 lawfully redistributable frozen official-source runs with 3,802 normalized facts and zero inferred dependency edges |
 | Reference library | 12 deterministic, cross-domain, scenario-only cases spanning five topology and four horizon profiles |
 | Interfaces | Multi-route web product, CLI, TypeScript SDK, and public JSON Schemas |
-| Assurance | Unit, integration, CLI, artifact, render, accessibility, security, performance, and detached-release checks |
+| Assurance | Unit, integration, CLI, artifact, render, accessibility, security, performance, exact offline double-build, and detached-release checks |
 
 ### Reference-case coverage
 
@@ -160,7 +160,7 @@ Use the focused guides for [package boundaries](packages/README.md), [content pr
 
 | If you want to… | Start here |
 |---|---|
-| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.2.1 audit remediation review](docs/SELF_REVIEW_2026-08-13_v0.2.1.md) |
+| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.3.0 audit remediation review](docs/SELF_REVIEW_2026-08-13_v0.3.0.md) |
 | Understand the analytical design | [Architecture](docs/ARCHITECTURE.md) · [Product requirements](docs/PRODUCT_REQUIREMENTS.md) |
 | Use the interfaces | [CLI](docs/CLI.md) · [SDK](docs/SDK.md) |
 | Add an engine, connector, or case | [Extension guide](docs/EXTENDING.md) · [Connector contract](docs/connectors/CONNECTOR_CONTRACT.md) |

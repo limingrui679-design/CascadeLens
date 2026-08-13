@@ -1,40 +1,25 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
-  ENGINE_VERSION,
-  analyzeInterventions,
   compareCanonicalStrings,
   createRiskPack,
-  runCascadeBounds,
-  scoreReplay,
   sha256Text,
   stableStringify,
   verifyRiskPack,
   verifyRiskPackDetailed,
+  type CascadeBounds,
 } from "../../packages/core/src/index";
-import { graphSnapshot, scenario } from "./fixtures";
+import { riskPackFixtureInputs } from "./riskpack-fixture";
 
-function supplemental(activeScenario: ReturnType<typeof scenario>) {
+async function fixturePack() {
+  const input = await riskPackFixtureInputs();
   return {
-    assumptions: {
-      scenarioId: activeScenario.scenarioId,
-      generatedAt: activeScenario.decisionCutoff,
-      status: "scenario_parameters_not_observations" as const,
-      assumptions: [],
-      disclaimer: "Fixture assumptions are not observations.",
-    },
-    modelCard: {
-      modelId: "dependency_cascade",
-      version: ENGINE_VERSION,
-      intendedUse: ["Software verification"],
-      outOfScope: ["Real-world decisions"],
-      algorithm: "Deterministic dependency propagation.",
-      evidencePolicy: "Inferred edges remain bounded.",
-      validationStatus: "software_verified_empirically_unvalidated" as const,
-      limitations: ["Fixture only."],
-    },
-    observationValues: [],
-    rebuildCommand: `npm run cascadelens -- cases build ${activeScenario.scenarioId}`,
+    input,
+    pack: await createRiskPack({
+      packId: "riskpack:suez-fixture",
+      generatedAt: "2021-05-02T00:00:00Z",
+      ...input,
+    }),
   };
 }
 
@@ -50,58 +35,20 @@ async function rehash(
 }
 
 test("creates and verifies a complete RiskPack", async () => {
-  const snapshot = await graphSnapshot();
-  const activeScenario = scenario();
-  const bounds = await runCascadeBounds(snapshot, activeScenario);
-  const interventions = await analyzeInterventions(snapshot, activeScenario);
-  const benchmark = scoreReplay(snapshot, activeScenario, bounds, []);
-  const pack = await createRiskPack({
-    packId: "riskpack:suez-fixture",
-    generatedAt: "2021-05-02T00:00:00Z",
-    snapshot,
-    scenario: activeScenario,
-    bounds,
-    interventionAnalysis: interventions,
-    benchmark,
-    ...supplemental(activeScenario),
-  });
+  const { pack } = await fixturePack();
   assert.deepEqual(await verifyRiskPack(pack), []);
   assert.equal(pack.files["checksums.sha256"].includes("/Users/"), false);
 });
 
 test("detects a tampered RiskPack payload", async () => {
-  const snapshot = await graphSnapshot();
-  const activeScenario = scenario();
-  const bounds = await runCascadeBounds(snapshot, activeScenario);
-  const pack = await createRiskPack({
-    packId: "riskpack:suez-fixture",
-    generatedAt: "2021-05-02T00:00:00Z",
-    snapshot,
-    scenario: activeScenario,
-    bounds,
-    interventionAnalysis: await analyzeInterventions(snapshot, activeScenario),
-    benchmark: scoreReplay(snapshot, activeScenario, bounds, []),
-    ...supplemental(activeScenario),
-  });
+  const { pack } = await fixturePack();
   pack.files["limitations.json"] += "tampered";
   assert.ok((await verifyRiskPack(pack)).includes("checksum_mismatch:limitations.json"));
 });
 
 test("rejects a self-consistently rehashed pack with missing horizon evidence", async () => {
-  const snapshot = await graphSnapshot();
-  const activeScenario = scenario();
-  const bounds = await runCascadeBounds(snapshot, activeScenario);
-  const pack = await createRiskPack({
-    packId: "riskpack:suez-fixture",
-    generatedAt: "2021-05-02T00:00:00Z",
-    snapshot,
-    scenario: activeScenario,
-    bounds,
-    interventionAnalysis: await analyzeInterventions(snapshot, activeScenario),
-    benchmark: scoreReplay(snapshot, activeScenario, bounds, []),
-    ...supplemental(activeScenario),
-  });
-  const altered = JSON.parse(pack.files["results/cascade-bounds.json"]) as typeof bounds;
+  const { pack } = await fixturePack();
+  const altered = JSON.parse(pack.files["results/cascade-bounds.json"]) as CascadeBounds;
   altered.horizons = altered.horizons.slice(1);
   pack.files["results/cascade-bounds.json"] = `${JSON.stringify(altered, null, 2)}\n`;
   pack.checksums["results/cascade-bounds.json"] = await sha256Text(
@@ -115,22 +62,10 @@ test("rejects a self-consistently rehashed pack with missing horizon evidence", 
 });
 
 test("rejects derived-result tampering even when every internal checksum is refreshed", async () => {
-  const snapshot = await graphSnapshot();
-  const activeScenario = scenario();
-  const bounds = await runCascadeBounds(snapshot, activeScenario);
-  const pack = await createRiskPack({
-    packId: "riskpack:suez-fixture",
-    generatedAt: "2021-05-02T00:00:00Z",
-    snapshot,
-    scenario: activeScenario,
-    bounds,
-    interventionAnalysis: await analyzeInterventions(snapshot, activeScenario),
-    benchmark: scoreReplay(snapshot, activeScenario, bounds, []),
-    ...supplemental(activeScenario),
-  });
+  const { pack } = await fixturePack();
   const altered = JSON.parse(
     pack.files["results/cascade-bounds.json"],
-  ) as typeof bounds;
+  ) as CascadeBounds;
   altered.upper.totalWeightedImpact = Math.max(
     0,
     altered.upper.totalWeightedImpact - 0.01,
@@ -149,19 +84,7 @@ test("rejects derived-result tampering even when every internal checksum is refr
 });
 
 test("supports an external expected digest without confusing it with recomputation", async () => {
-  const snapshot = await graphSnapshot();
-  const activeScenario = scenario();
-  const bounds = await runCascadeBounds(snapshot, activeScenario);
-  const pack = await createRiskPack({
-    packId: "riskpack:suez-fixture",
-    generatedAt: "2021-05-02T00:00:00Z",
-    snapshot,
-    scenario: activeScenario,
-    bounds,
-    interventionAnalysis: await analyzeInterventions(snapshot, activeScenario),
-    benchmark: scoreReplay(snapshot, activeScenario, bounds, []),
-    ...supplemental(activeScenario),
-  });
+  const { pack } = await fixturePack();
   const baseline = await verifyRiskPackDetailed(pack);
   assert.equal(baseline.status, "recomputed");
   const matched = await verifyRiskPackDetailed(pack, baseline.packDigest);
@@ -169,4 +92,51 @@ test("supports an external expected digest without confusing it with recomputati
   const mismatched = await verifyRiskPackDetailed(pack, "f".repeat(64));
   assert.equal(mismatched.status, "invalid");
   assert.ok(mismatched.issues.includes("external_pack_digest_mismatch"));
+});
+
+test("rejects self-rehashed model-card validation-status tampering", async () => {
+  const { pack } = await fixturePack();
+  const card = JSON.parse(pack.files["model-card.json"]) as {
+    validationStatus: string;
+  };
+  card.validationStatus = "historically_scored";
+  pack.files["model-card.json"] = `${stableStringify(card, 2)}\n`;
+  await rehash(pack, "model-card.json");
+  assert.ok((await verifyRiskPack(pack)).includes("model_card_semantic_mismatch"));
+});
+
+test("rejects self-rehashed model-card limitation removal", async () => {
+  const { pack } = await fixturePack();
+  const card = JSON.parse(pack.files["model-card.json"]) as {
+    limitations: string[];
+  };
+  card.limitations = card.limitations.slice(1);
+  pack.files["model-card.json"] = `${stableStringify(card, 2)}\n`;
+  await rehash(pack, "model-card.json");
+  assert.ok((await verifyRiskPack(pack)).includes("model_card_semantic_mismatch"));
+});
+
+test("rejects self-rehashed assumption-value tampering", async () => {
+  const { pack } = await fixturePack();
+  const register = JSON.parse(pack.files["assumptions.json"]) as {
+    assumptions: Array<{ value: number }>;
+  };
+  register.assumptions[0].value -= 0.1;
+  pack.files["assumptions.json"] = `${stableStringify(register, 2)}\n`;
+  await rehash(pack, "assumptions.json");
+  const issues = await verifyRiskPack(pack);
+  assert.ok(issues.some((issue) => issue.startsWith("assumption_value_binding_mismatch:")));
+  assert.ok(issues.includes("assumption_artifact_digest_mismatch"));
+});
+
+test("rejects self-rehashed limitations removal", async () => {
+  const { pack } = await fixturePack();
+  const limitations = JSON.parse(pack.files["limitations.json"]) as {
+    scenarioLimitations: string[];
+  };
+  limitations.scenarioLimitations = [];
+  pack.files["limitations.json"] = `${stableStringify(limitations, 2)}\n`;
+  await rehash(pack, "limitations.json");
+  const issues = await verifyRiskPack(pack);
+  assert.ok(issues.includes("limitations_semantic_mismatch"));
 });

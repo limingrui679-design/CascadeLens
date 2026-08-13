@@ -2,7 +2,7 @@
   {
     "artifactKind": "normalized_snapshot",
     "availableAt": "2026-08-12T00:00:00Z",
-    "bytes": 3137,
+    "bytes": 3971,
     "contentType": "application/json",
     "digestScope": "exact_bytes",
     "id": "source:baltimore-port-restress:assumptions",
@@ -17,7 +17,7 @@
     "publisher": "CascadeLens",
     "retrievedAt": "2026-08-12T00:00:00Z",
     "role": "input",
-    "sha256": "2e66901186dd6e0183d76abd9c1a137550d5673a405eac15bb428073e5fae124",
+    "sha256": "8f9fcfdab32d217329d0cee9c644d620ac119108a9a1fd52cf316ef2247015af",
     "title": "Baltimore port access re-stress local assumption register",
     "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
   },

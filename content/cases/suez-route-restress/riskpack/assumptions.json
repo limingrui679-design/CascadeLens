@@ -3,77 +3,89 @@
     {
       "id": "assumption:suez-route-restress:transmission",
       "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
       "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
       "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
       "status": "model_assumption",
+      "targetId": "suez-route-restress",
       "unit": "share",
       "upper": 1,
       "value": 0.82
     },
     {
-      "id": "assumption:suez-route-restress:link-1",
+      "id": "assumption:suez-route-restress:graph-link-1",
       "lower": 0.56,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
       "statement": "Assumed dependency from Suez route to Time-sensitive maritime inputs.",
       "status": "model_assumption",
+      "targetId": "edge:suez-route-restress:link-1",
       "unit": "share",
       "upper": 0.92,
       "value": 0.76
     },
     {
-      "id": "assumption:suez-route-restress:link-2",
+      "id": "assumption:suez-route-restress:graph-link-2",
       "lower": 0.38,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
       "statement": "Assumed dependency from Time-sensitive maritime inputs to Import-dependent assembly.",
       "status": "model_assumption",
+      "targetId": "edge:suez-route-restress:link-2",
       "unit": "share",
       "upper": 0.74,
       "value": 0.58
     },
     {
-      "id": "assumption:suez-route-restress:link-3",
+      "id": "assumption:suez-route-restress:graph-link-3",
       "lower": 0.35,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
       "statement": "Assumed dependency from Import-dependent assembly to Regional distribution.",
       "status": "model_assumption",
+      "targetId": "edge:suez-route-restress:link-3",
       "unit": "share",
       "upper": 0.71,
       "value": 0.55
     },
     {
-      "id": "assumption:suez-route-restress:link-4",
+      "id": "assumption:suez-route-restress:graph-link-4",
       "lower": 0.28,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
       "statement": "Assumed dependency from Regional distribution to Downstream market availability.",
       "status": "model_assumption",
+      "targetId": "edge:suez-route-restress:link-4",
       "unit": "share",
       "upper": 0.64,
       "value": 0.48
     },
     {
-      "id": "assumption:suez-route-restress:link-5",
+      "id": "assumption:suez-route-restress:candidate-link-1",
       "lower": 0,
-      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
       "sourceIds": [
-        "source:suez-route-restress:context"
+        "source:suez-route-restress:assumptions"
       ],
-      "statement": "Assumed missing direct dependency from Suez route to Downstream market availability.",
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Suez route to Downstream market availability.",
       "status": "model_assumption",
+      "targetId": "edge:suez-route-restress:link-100",
       "unit": "share",
       "upper": 0.36,
       "value": 0.2
@@ -82,5 +94,6 @@
   "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
   "generatedAt": "2026-08-12T00:00:00Z",
   "scenarioId": "suez-route-restress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
   "status": "scenario_parameters_not_observations"
 }

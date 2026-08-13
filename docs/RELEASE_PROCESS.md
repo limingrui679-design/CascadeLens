@@ -1,12 +1,12 @@
 # Release process
 
-1. Regenerate the connector catalog, twelve cases, and deterministic RiskPack archives.
-2. Run `npm run ci` from the working tree.
-3. Generate the CycloneDX SBOM with `npm run generate:sbom`.
-4. Commit the exact tree and tag it with an annotated semantic version.
-5. Run `npm run release:prepare -- vX.Y.Z` to create a clean source archive, manifest, and relative checksum file from the tag.
-6. Run `npm run release:verify -- release/vX.Y.Z`. It inspects ZIP/TAR entry, expansion, compression-ratio, path, type, duplicate, and nested-archive budgets before extraction; then it extracts without `.git`, runs `npm ci`, regenerates deterministic artifacts, executes full CI, and compares committed generated artifacts.
-7. Build and host only the verified tagged tree. Reopen the public URL and compare `/build-info.json` commit, `dirty=false`, package version, lock digest, content/RiskPack catalog digests, route responses, security headers, and downloads with the release.
-8. Publish the archive, checksum, manifest, SBOM, detached verification receipt, and annotated tag only after every step passes.
+1. Regenerate the connector catalog, twelve cases, deterministic RiskPack archives, and CycloneDX SBOM.
+2. Run `npm run ci` and `npm run verify:build-reproducibility` from the working tree. The latter performs two network-blocked production builds and requires identical complete `dist` tree digests.
+3. Commit the exact tree, push it, and require the Linux/macOS reproducible-build matrix plus the complete CI job to pass.
+4. Create an annotated semantic-version tag on that exact commit.
+5. Rebuild the clean tagged tree with `npm run verify:build-reproducibility`, then run `npm run release:prepare -- vX.Y.Z`. The release manifest binds the commit, Git tree, package version, release date, and exact production `dist` digest to the source archives, SBOM, and checksums.
+6. Run `npm run release:verify -- release/vX.Y.Z`. It inspects ZIP/TAR entry, expansion, compression-ratio, path, type, duplicate, and nested-archive budgets before extraction; then it extracts without `.git`, runs `npm ci`, regenerates deterministic artifacts, executes full CI, performs two additional offline builds, and requires the rebuilt `dist` digest to match the manifest.
+7. Publish the archive, checksum, manifest, SBOM, detached verification receipt, and annotated tag only after every gate passes.
+8. Host only the verified tagged build. Reopen the public URL and compare `/build-info.json` commit, tree, tag, `dirty=false`, package version, lock/content/RiskPack digests, route responses, strict CSP, local-font delivery, and downloads with the release.
 
 Integrity, tests, and hosting do not establish empirical model validity, external review, adoption, or real-world impact. Those statuses require separate evidence.

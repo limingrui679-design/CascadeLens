@@ -10,6 +10,10 @@ import { valueObservations } from "./observability";
 import { validateScenario } from "./shockscript";
 import { validateScenarioAgainstSnapshot } from "./contracts";
 import { isIsoDateTime } from "./temporal";
+import {
+  riskPackLimitations,
+  validateRiskPackMetadata,
+} from "./riskpack-metadata";
 import { verifySnapshot } from "./worldgraph";
 import {
   ENGINE_VERSION,
@@ -119,6 +123,23 @@ export async function createRiskPack(input: RiskPackInput): Promise<RiskPack> {
       throw new TypeError(`RiskPack ${label} does not match deterministic recomputation.`);
     }
   }
+  const assumptionsText = stableStringify(input.assumptions, 2) + "\n";
+  const limitations = riskPackLimitations(input.scenario, input.benchmark);
+  const metadataIssues = await validateRiskPackMetadata({
+    assumptions: input.assumptions,
+    assumptionsText,
+    modelCard: input.modelCard,
+    limitations,
+    snapshot: input.snapshot,
+    scenario: input.scenario,
+    benchmark: input.benchmark,
+    observationCandidates,
+  });
+  if (metadataIssues.length > 0) {
+    throw new TypeError(
+      `RiskPack metadata contract failed: ${metadataIssues.join(", ")}`,
+    );
+  }
   const payload: Record<string, string> = {
     "scenario.json": stableStringify(input.scenario, 2) + "\n",
     "graph/snapshot.json": stableStringify(input.snapshot, 2) + "\n",
@@ -130,18 +151,10 @@ export async function createRiskPack(input: RiskPackInput): Promise<RiskPack> {
     "inputs/observation-candidates.json": stableStringify(observationCandidates, 2) + "\n",
     "inputs/observability-config.json": stableStringify({ riskValuePerUnit }, 2) + "\n",
     "sources/manifest.json": stableStringify(input.snapshot.sources, 2) + "\n",
-    "assumptions.json": stableStringify(input.assumptions, 2) + "\n",
+    "assumptions.json": assumptionsText,
     "model-card.json": stableStringify(input.modelCard, 2) + "\n",
     "REBUILD.txt": `${input.rebuildCommand}\n`,
-    "limitations.json": stableStringify(
-      {
-        scenarioLimitations: input.scenario.limitations,
-        benchmarkLimitations: input.benchmark.limitations,
-        disclaimer:
-          "Scenario outputs are not causal estimates, realized losses, investment advice, legal advice, clinical advice, or evidence of adoption.",
-      },
-      2,
-    ) + "\n",
+    "limitations.json": stableStringify(limitations, 2) + "\n",
   };
   const manifest: RiskPackManifest = {
     schemaVersion: SCHEMA_VERSION,
@@ -352,13 +365,17 @@ export async function verifyRiskPack(pack: RiskPack): Promise<string[]> {
     if (benchmark.classification !== scenario.classification) {
       issues.push("benchmark_classification_mismatch");
     }
-    if (assumptions.scenarioId !== scenario.scenarioId) {
-      issues.push("assumptions_scenario_id_mismatch");
-    }
-    if (assumptions.status !== "scenario_parameters_not_observations") {
-      issues.push("invalid_assumption_status");
-    }
-    if (modelCard.version !== ENGINE_VERSION) issues.push("model_card_version_mismatch");
+    const metadataIssues = await validateRiskPackMetadata({
+      assumptions,
+      assumptionsText: pack.files["assumptions.json"],
+      modelCard,
+      limitations,
+      snapshot,
+      scenario,
+      benchmark,
+      observationCandidates,
+    });
+    issues.push(...metadataIssues);
     if (stableStringify(sources) !== stableStringify(snapshot.sources)) {
       issues.push("source_manifest_mismatch");
     }

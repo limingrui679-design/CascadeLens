@@ -1,6 +1,6 @@
 {
   "name": "cascadelens",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "releaseDate": "2026-08-13T00:00:00.000Z",
   "description": "Evidence-graded world graph and shock compiler for global systemic-risk analysis.",
   "private": true,
@@ -13,7 +13,8 @@
   },
   "scripts": {
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
-    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
+    "build": "tsx scripts/build-site.ts",
+    "build:offline": "tsx scripts/build-site.ts --offline",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run test:unit && npm run test:examples && npm run validate:content && npm run test:docs && npm run build && npm run test:rendered && npm run test:a11y && npm run test:security && npm run test:performance",
     "test:unit": "tsx --test tests/**/*.test.ts",
@@ -31,6 +32,7 @@
     "generate:sbom": "tsx scripts/generate-sbom.ts",
     "release:prepare": "tsx scripts/prepare-release.ts",
     "release:verify": "tsx scripts/verify-release.ts",
+    "verify:build-reproducibility": "tsx scripts/verify-build-reproducibility.ts",
     "example:sdk": "tsx examples/typescript/analyze-reference-case.ts",
     "ci": "npm run lint && npm run typecheck && npm run test",
     "cascadelens": "tsx packages/cli/src/index.ts",

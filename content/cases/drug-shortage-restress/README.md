@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [openFDA Drug Shortages API](https://open.fda.gov/apis/drug/drugshortages/)
 - Publisher: U.S. Food and Drug Administration
-- Snapshot digest: `ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441`
+- Snapshot digest: `2ae5aa23b7b3d922122ed2ef7cf25606a8bbb58e1bed7aa47f460a8d315d3c3e`
 - Lower / central / upper total impact: 0.066140 / 0.066140 / 0.169978
 - Recommendation status: `evidence_required`
 

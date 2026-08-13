@@ -18,10 +18,10 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:suez-route-restress:v0.2.0",
+  "packId": "riskpack:suez-route-restress:engine-v0.2.0",
   "scenarioId": "suez-route-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+  "snapshotDigest": "8c660225b5be7a35c2d6bdd132683eeda5a950f6763ecb96c23baf28e02225b2",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"

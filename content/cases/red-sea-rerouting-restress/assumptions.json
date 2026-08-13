@@ -3,77 +3,89 @@
     {
       "id": "assumption:red-sea-rerouting-restress:transmission",
       "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
       "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
       "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
       "status": "model_assumption",
+      "targetId": "red-sea-rerouting-restress",
       "unit": "share",
       "upper": 1,
       "value": 0.82
     },
     {
-      "id": "assumption:red-sea-rerouting-restress:link-1",
+      "id": "assumption:red-sea-rerouting-restress:graph-link-1",
       "lower": 0.54,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
       "statement": "Assumed dependency from Red Sea shipping route to Long-haul voyage capacity.",
       "status": "model_assumption",
+      "targetId": "edge:red-sea-rerouting-restress:link-1",
       "unit": "share",
       "upper": 0.9,
       "value": 0.74
     },
     {
-      "id": "assumption:red-sea-rerouting-restress:link-2",
+      "id": "assumption:red-sea-rerouting-restress:graph-link-2",
       "lower": 0.37,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
       "statement": "Assumed dependency from Long-haul voyage capacity to Imported production inputs.",
       "status": "model_assumption",
+      "targetId": "edge:red-sea-rerouting-restress:link-2",
       "unit": "share",
       "upper": 0.73,
       "value": 0.57
     },
     {
-      "id": "assumption:red-sea-rerouting-restress:link-3",
+      "id": "assumption:red-sea-rerouting-restress:graph-link-3",
       "lower": 0.43,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
       "statement": "Assumed dependency from Imported production inputs to Downstream production.",
       "status": "model_assumption",
+      "targetId": "edge:red-sea-rerouting-restress:link-3",
       "unit": "share",
       "upper": 0.79,
       "value": 0.63
     },
     {
-      "id": "assumption:red-sea-rerouting-restress:link-4",
+      "id": "assumption:red-sea-rerouting-restress:graph-link-4",
       "lower": 0.31,
+      "parameterPath": "graph.edges[].weight",
       "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
       "statement": "Assumed dependency from Downstream production to Delivery continuity.",
       "status": "model_assumption",
+      "targetId": "edge:red-sea-rerouting-restress:link-4",
       "unit": "share",
       "upper": 0.67,
       "value": 0.51
     },
     {
-      "id": "assumption:red-sea-rerouting-restress:link-5",
+      "id": "assumption:red-sea-rerouting-restress:candidate-link-1",
       "lower": 0,
-      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
       "sourceIds": [
-        "source:red-sea-rerouting-restress:context"
+        "source:red-sea-rerouting-restress:assumptions"
       ],
-      "statement": "Assumed missing direct dependency from Red Sea shipping route to Delivery continuity.",
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Red Sea shipping route to Delivery continuity.",
       "status": "model_assumption",
+      "targetId": "edge:red-sea-rerouting-restress:link-100",
       "unit": "share",
       "upper": 0.36,
       "value": 0.2
@@ -82,5 +94,6 @@
   "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
   "generatedAt": "2026-08-12T00:00:00Z",
   "scenarioId": "red-sea-rerouting-restress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
   "status": "scenario_parameters_not_observations"
 }
