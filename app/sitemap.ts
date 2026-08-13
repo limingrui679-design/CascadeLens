@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import caseCatalog from "@/content/cases/catalog.json";
 
-const base = "https://cascadelens.chatgpt.site";
+const base = "https://cascadelens.limingrui2.chatgpt.site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = ["", "/workbench", "/worldgraph", "/cases", "/benchmark", "/data", "/methodology", "/docs"];

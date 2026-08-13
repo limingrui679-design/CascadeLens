@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cascadelens.chatgpt.site"),
+  metadataBase: new URL("https://cascadelens.limingrui2.chatgpt.site"),
   title: {
     default: "CascadeLens",
     template: "%s · CascadeLens",
