@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3269,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:semiconductor-capacity-restress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "9af9abedb8b541749052e06579ca8154d881f0973678f721595ade1bff85a044",
+    "title": "Semiconductor capacity re-stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/semiconductor-capacity-restress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2022-01-25T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:semiconductor-capacity-restress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
+    },
+    "publishedAt": "2022-01-25T00:00:00Z",
+    "publisher": "U.S. Department of Commerce",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "f74493b1ded856a90506e8b128d32dffbc8371a692b75625f35ff3e0a0afc923",
+    "title": "Results from Semiconductor Supply Chain Request for Information",
+    "uri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
+  }
+]

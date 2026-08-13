@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      runtime-and-build:
+        patterns:
+          - "react*"
+          - "vite*"
+          - "vinext"
+          - "@cloudflare/*"
+      development:
+        dependency-type: development

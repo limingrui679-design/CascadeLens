@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3137,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:baltimore-port-restress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "2e66901186dd6e0183d76abd9c1a137550d5673a405eac15bb428073e5fae124",
+    "title": "Baltimore port access re-stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2024-06-24T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:baltimore-port-restress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+    },
+    "publishedAt": "2024-06-24T00:00:00Z",
+    "publisher": "National Transportation Safety Board",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "c2399e981ef6f1985483008a6b9dd51ffcf9b60ff21581bf3a6761ee7a2aaf35",
+    "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
+    "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+  }
+]

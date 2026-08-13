@@ -1,0 +1,116 @@
+{
+  "classification": "quasi_historical",
+  "constraints": {
+    "budget": 22,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:red-sea-rerouting-restress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.35,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:red-sea-rerouting-restress:buffer",
+      "label": "Increase transit-time buffer",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:red-sea-rerouting-restress:voyage"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 13,
+      "costUnit": "normalized_cost",
+      "effect": 0.5,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:red-sea-rerouting-restress:diversify",
+      "label": "Diversify imported inputs",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:red-sea-rerouting-restress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:red-sea-rerouting-restress:reroute",
+      "label": "Route around the Cape",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:red-sea-rerouting-restress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "The case does not claim actual freight-rate, emissions, or delivery-time effects."
+  ],
+  "objectives": [
+    {
+      "id": "objective:red-sea-rerouting-restress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:red-sea-rerouting-restress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "red-sea-rerouting-restress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:red-sea-rerouting-restress:primary",
+      "label": "Red Sea route restriction",
+      "magnitude": 0.75,
+      "operation": "policy_restrict",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:red-sea-rerouting-restress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:red-sea-rerouting-restress:red-sea"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
+  "title": "Red Sea rerouting re-stress"
+}

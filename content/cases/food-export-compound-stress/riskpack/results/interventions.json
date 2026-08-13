@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.05733044733044735,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.05733044733044735,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.12928942213145903,
+    "worstCaseImpact": 0.12928942213145903
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.12928942213145903,
+      "worstCaseImpact": 0.12928942213145903
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11197937346221602,
+      "worstCaseImpact": 0.11197937346221602
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10950650936660991,
+      "worstCaseImpact": 0.10950650936660991
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:diversify"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11744161450873096,
+      "worstCaseImpact": 0.11744161450873096
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09912048016506415,
+      "worstCaseImpact": 0.09912048016506415
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:diversify"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10427829850744283,
+      "worstCaseImpact": 0.10427829850744283
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:diversify",
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:diversify",
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.12928942213145903,
+      "worstCaseImpact": 0.12928942213145903
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11197937346221602,
+      "worstCaseImpact": 0.11197937346221602
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10950650936660991,
+      "worstCaseImpact": 0.10950650936660991
+    },
+    {
+      "centralImpact": 0.05733044733044735,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "lowerImpact": 0.05733044733044735,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09912048016506415,
+      "worstCaseImpact": 0.09912048016506415
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:food-export-compound-stress:buffer",
+    "intervention:food-export-compound-stress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 462.1593013897548,
+      "toBundleIds": [
+        "intervention:food-export-compound-stress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:food-export-compound-stress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 1213.1681661481218,
+      "toBundleIds": [
+        "intervention:food-export-compound-stress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 770.2655023162612,
+      "toBundleIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "food-export-compound-stress"
+}

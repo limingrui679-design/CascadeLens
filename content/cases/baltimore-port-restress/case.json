@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2024-06-24T00:00:00Z",
+    "publisher": "National Transportation Safety Board",
+    "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
+    "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+  },
+  "decisionQuestion": "How do alternate ports and inventory buffers compare under a sudden port-access loss?",
+  "domain": "Port infrastructure",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build baltimore-port-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:baltimore-port-restress:buffer",
+    "intervention:baltimore-port-restress:reroute"
+  ],
+  "riskPackPath": "cases/baltimore-port-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Baltimore port",
+  "slug": "baltimore-port-restress",
+  "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+  "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
+  "tags": [
+    "port",
+    "infrastructure",
+    "logistics"
+  ],
+  "title": "Baltimore port access re-stress",
+  "totalWeightedImpact": {
+    "central": 0.06940170940170941,
+    "lower": 0.06940170940170941,
+    "upper": 0.17996741091444057
+  }
+}

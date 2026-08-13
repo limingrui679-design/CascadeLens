@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2021-03-31T00:00:00Z",
+    "publisher": "Suez Canal Authority",
+    "title": "Navigation in the Suez Canal restored after the Ever Given incident",
+    "uri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+  },
+  "decisionQuestion": "Which bounded intervention remains feasible if the Suez route becomes unavailable for a short planning horizon?",
+  "domain": "Maritime trade",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build suez-route-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:suez-route-restress:buffer",
+    "intervention:suez-route-restress:reroute"
+  ],
+  "riskPackPath": "cases/suez-route-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Suez route",
+  "slug": "suez-route-restress",
+  "snapshotDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+  "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
+  "tags": [
+    "shipping",
+    "route",
+    "trade"
+  ],
+  "title": "Suez route closure re-stress",
+  "totalWeightedImpact": {
+    "central": 0.06444444444444446,
+    "lower": 0.06444444444444446,
+    "upper": 0.16360629134473204
+  }
+}

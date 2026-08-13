@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascadelens.dev/schemas/shockscript-0.1.0.schema.json",
+  "title": "CascadeLens ShockScript 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scenarioId", "title", "summary", "classification", "decisionCutoff", "graphSnapshotId", "shocks", "propagation", "interventions", "objectives", "constraints", "limitations"],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "scenarioId": { "$ref": "#/$defs/id" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "classification": { "enum": ["historical_replay", "quasi_historical", "synthetic_stress"] },
+    "decisionCutoff": { "$ref": "#/$defs/dateTime" },
+    "graphSnapshotId": { "$ref": "#/$defs/id" },
+    "shocks": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "target", "operation", "magnitude", "unit", "startsAt", "rationale", "sourceIds"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "label": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "target": { "$ref": "#/$defs/target" },
+          "operation": { "enum": ["multiply_capacity", "reduce_supply", "increase_demand", "add_cost", "disable", "policy_restrict", "financial_stress"] },
+          "magnitude": { "type": "number", "minimum": 0 },
+          "unit": { "type": "string", "minLength": 1, "maxLength": 64 },
+          "startsAt": { "$ref": "#/$defs/dateTime" },
+          "endsAt": { "$ref": "#/$defs/dateTime" },
+          "rationale": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "sourceIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+        }
+      }
+    },
+    "propagation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["engine", "transmission", "maxIterations", "tolerance", "horizonsDays", "bounds"],
+      "properties": {
+        "engine": { "type": "string", "pattern": "^[a-z][a-z0-9_-]{1,63}$" },
+        "transmission": { "type": "number", "minimum": 0, "maximum": 1 },
+        "maxIterations": { "type": "integer", "minimum": 1, "maximum": 10000 },
+        "tolerance": { "type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1 },
+        "horizonsDays": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "integer", "minimum": 1 } },
+        "bounds": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "enum": ["lower", "central", "upper"] },
+          "allOf": [
+            { "contains": { "const": "lower" } },
+            { "contains": { "const": "central" } },
+            { "contains": { "const": "upper" } }
+          ]
+        }
+      }
+    },
+    "interventions": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "type", "targetNodeIds", "targetEdgeIds", "cost", "costUnit", "leadTimeDays", "effect", "evidenceGrade", "rationale"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "label": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "type": { "enum": ["buffer", "diversify", "reroute", "reserve_release", "demand_management", "evidence_acquisition"] },
+          "targetNodeIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+          "targetEdgeIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+          "cost": { "type": "number", "minimum": 0 },
+          "costUnit": { "type": "string", "minLength": 1, "maxLength": 64 },
+          "leadTimeDays": { "type": "integer", "minimum": 0 },
+          "effect": { "type": "number", "minimum": 0, "maximum": 1 },
+          "mutuallyExclusiveGroup": { "type": "string", "minLength": 1, "maxLength": 128 },
+          "evidenceGrade": { "$ref": "#/$defs/evidenceGrade" },
+          "rationale": { "type": "string", "minLength": 1, "maxLength": 2000 }
+        }
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "metric", "sense"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "metric": { "enum": ["residual_impact", "cost", "concentration", "unmet_demand"] },
+          "sense": { "enum": ["minimize", "maximize"] },
+          "weight": { "type": "number" },
+          "threshold": { "type": "number" }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "budget": { "type": "number", "minimum": 0 },
+        "budgetUnit": { "type": "string", "minLength": 1 },
+        "maxInterventions": { "type": "integer", "minimum": 0, "maximum": 16 },
+        "maxLeadTimeDays": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{1,127}$" },
+    "dateTime": { "type": "string", "format": "date-time" },
+    "evidenceGrade": { "enum": ["OFFICIAL_OBSERVED", "ENTITY_REPORTED", "THIRD_PARTY_VERIFIED", "TEXT_EXTRACTED", "MODEL_INFERRED"] },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "edgeIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "kind": { "enum": ["country", "region", "product", "industry", "legal_entity", "facility", "port", "route", "security", "fund", "medicine", "policy", "event", "metric"] },
+        "relation": { "enum": ["trades_to", "supplies", "inputs_to", "depends_on", "owns", "holds", "located_in", "connects_to", "substitute_for", "regulated_by", "exposed_to", "disclosed_relation"] },
+        "jurisdiction": { "type": "string", "minLength": 1 },
+        "propertyEquals": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["key", "value"],
+          "properties": {
+            "key": { "type": "string", "minLength": 1 },
+            "value": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "number" },
+                { "type": "boolean" },
+                { "type": "null" }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

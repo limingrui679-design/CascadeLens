@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3091,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:suez-route-restress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "b191f5f8f8cc5e3dff62f996b42bdaf983db054f64388df3fcf2680813b1d26a",
+    "title": "Suez route closure re-stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/suez-route-restress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2021-03-31T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:suez-route-restress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+    },
+    "publishedAt": "2021-03-31T00:00:00Z",
+    "publisher": "Suez Canal Authority",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "57b3de1790bbdf8fa31744dd04bd99cd2f321ff913c8d312ef9c61cd2f1e4427",
+    "title": "Navigation in the Suez Canal restored after the Ever Given incident",
+    "uri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+  }
+]

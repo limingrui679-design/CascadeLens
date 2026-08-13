@@ -1,0 +1,266 @@
+{
+  "connectors": [
+    {
+      "allowedHosts": [
+        "comtradeapi.un.org"
+      ],
+      "auth": "optional_api_key",
+      "boundary": "Official reported merchandise/service trade; mirror asymmetry, revisions, gaps, and classification changes remain material.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://uncomtrade.org/docs/un-comtrade-api/",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "un-comtrade",
+      "licenseNotes": [
+        "API access does not grant blanket redistribution rights; raw payloads are never bundled."
+      ],
+      "maxResponseBytes": 25000000,
+      "minimumIntervalMs": 1000,
+      "name": "UN Comtrade",
+      "officialUri": "https://comtradeplus.un.org/",
+      "operationalNotes": [
+        "Preview access is limited; free and premium subscription quotas differ."
+      ],
+      "publisher": "United Nations Statistics Division",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://comtradeplus.un.org/LicenseAgreement"
+    },
+    {
+      "allowedHosts": [
+        "sdmx.oecd.org",
+        "stats.oecd.org"
+      ],
+      "auth": "none",
+      "boundary": "Balanced country-industry accounts, not company supplier relationships or current operational flows.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://www.oecd.org/en/data/insights/data-explainers/2024/09/api.html",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "oecd-icio",
+      "licenseNotes": [
+        "Users accept OECD terms when retrieving data; the repository stores queries and hashes."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 1000,
+      "name": "OECD Inter-Country Input-Output tables",
+      "officialUri": "https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html",
+      "operationalNotes": [
+        "Large TiVA spaces are rate limited; bulk partitions are preferred over unbounded API requests."
+      ],
+      "publisher": "OECD",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://www.oecd.org/en/about/terms-conditions.html"
+    },
+    {
+      "allowedHosts": [
+        "data.sec.gov",
+        "www.sec.gov"
+      ],
+      "auth": "none",
+      "boundary": "Issuer/fund filings and XBRL facts are entity-reported and may omit operational relationships.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "evidenceGrade": "ENTITY_REPORTED",
+      "id": "sec-edgar",
+      "licenseNotes": [
+        "Government-created SEC content and issuer filing content have different authorship; raw archives are not bundled."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 110,
+      "name": "SEC EDGAR data APIs",
+      "officialUri": "https://data.sec.gov/",
+      "operationalNotes": [
+        "Declare a real user agent and remain below the SEC fair-access ceiling of 10 requests per second."
+      ],
+      "publisher": "U.S. Securities and Exchange Commission",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://www.sec.gov/about/privacy-information/security-policy"
+    },
+    {
+      "allowedHosts": [
+        "api.gleif.org"
+      ],
+      "auth": "none",
+      "boundary": "Legal-entity identity and reported accounting relationships are not commercial supply relationships.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://documenter.getpostman.com/view/7679680/SVYrrxuU",
+      "evidenceGrade": "THIRD_PARTY_VERIFIED",
+      "id": "gleif",
+      "licenseNotes": [
+        "Use and attribution remain subject to the current LEI Data Terms of Use."
+      ],
+      "maxResponseBytes": 25000000,
+      "minimumIntervalMs": 250,
+      "name": "GLEIF LEI API",
+      "officialUri": "https://www.gleif.org/en/lei-data/gleif-api/",
+      "operationalNotes": [
+        "Ignore unknown response fields and prefer current plural successor relationships."
+      ],
+      "publisher": "Global Legal Entity Identifier Foundation",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://www.gleif.org/en/meta/lei-data-terms-of-use"
+    },
+    {
+      "allowedHosts": [
+        "fenixservices.fao.org",
+        "files-faostat.fao.org"
+      ],
+      "auth": "none",
+      "boundary": "Country-reported agricultural statistics differ in coverage and quality; third-party datasets may carry exceptions.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://www.fao.org/faostat/en/#data",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "faostat",
+      "licenseNotes": [
+        "Default CC BY 4.0 applies unless dataset metadata states a third-party or other exception."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 500,
+      "name": "FAOSTAT",
+      "officialUri": "https://www.fao.org/faostat/en/",
+      "operationalNotes": [
+        "A release must retain FAO attribution and the dataset-specific metadata record."
+      ],
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "rawRedistributable": true,
+      "redistributionMode": "redistributable",
+      "runtime": "remote",
+      "termsUri": "https://www.fao.org/contact-us/terms/db-terms-of-use/en"
+    },
+    {
+      "allowedHosts": [
+        "api.fda.gov"
+      ],
+      "auth": "optional_api_key",
+      "boundary": "U.S. shortage records are not a global supply graph and must not be used for individual medical decisions.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://open.fda.gov/apis/drug/drugshortages/",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "openfda-drug-shortages",
+      "licenseNotes": [
+        "Store source links, retrieval time, and hashes; do not imply FDA endorsement."
+      ],
+      "maxResponseBytes": 25000000,
+      "minimumIntervalMs": 250,
+      "name": "openFDA Drug Shortages",
+      "officialUri": "https://open.fda.gov/apis/drug/drugshortages/",
+      "operationalNotes": [
+        "Current standard quotas differ with and without a free API key."
+      ],
+      "publisher": "U.S. Food and Drug Administration",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://open.fda.gov/terms/"
+    },
+    {
+      "allowedHosts": [
+        "sanctionslistservice.ofac.treas.gov",
+        "ofac.treasury.gov"
+      ],
+      "auth": "none",
+      "boundary": "OFAC designations cover OFAC-administered programs only; the connector is not a legal compliance determination.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://ofac.treasury.gov/sanctions-list-service",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "ofac-sls",
+      "licenseNotes": [
+        "Official hashes should be retained where available; the repository does not republish full lists."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 500,
+      "name": "OFAC Sanctions List Service",
+      "officialUri": "https://ofac.treasury.gov/sanctions-list-service",
+      "operationalNotes": [
+        "SLS publishes current files, customizable datasets, and archived deltas."
+      ],
+      "publisher": "U.S. Department of the Treasury, OFAC",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://home.treasury.gov/utility/terms-and-conditions"
+    },
+    {
+      "allowedHosts": [
+        "wits.worldbank.org"
+      ],
+      "auth": "none",
+      "boundary": "Trade/tariff indicators are aggregated and constrained by the selected source, nomenclature, and query dimensions.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://wits.worldbank.org/data/public/WITSAPI_UserGuide.pdf",
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "world-bank-wits",
+      "licenseNotes": [
+        "Underlying providers may impose terms in addition to World Bank dataset terms."
+      ],
+      "maxResponseBytes": 25000000,
+      "minimumIntervalMs": 500,
+      "name": "World Bank WITS API",
+      "officialUri": "https://wits.worldbank.org/witsapiintro.aspx?lang=en",
+      "operationalNotes": [
+        "The API rejects whole-database queries; bounded dimensions and cached partitions are mandatory."
+      ],
+      "publisher": "World Bank",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "remote",
+      "termsUri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"
+    },
+    {
+      "allowedHosts": [],
+      "auth": "user_file",
+      "boundary": "The published index is not the underlying carrier schedule or AIS dataset, and methodology revisions affect comparability.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://unctad.org/news/new-context-calls-changing-how-we-measure-maritime-connectivity",
+      "evidenceGrade": "THIRD_PARTY_VERIFIED",
+      "id": "unctad-lsci",
+      "licenseNotes": [
+        "MDS Transmodal underlying data rights are not presumed redistributable."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 0,
+      "name": "UNCTAD Liner Shipping Connectivity Index",
+      "officialUri": "https://unctadstat.unctad.org/insights/theme/246",
+      "operationalNotes": [
+        "Import a user-downloaded UNCTAD export with its metadata; no undocumented endpoint is scraped."
+      ],
+      "publisher": "UN Trade and Development and MDS Transmodal",
+      "rawRedistributable": false,
+      "redistributionMode": "download_on_run",
+      "runtime": "import_only",
+      "termsUri": "https://unctad.org/terms-use"
+    },
+    {
+      "allowedHosts": [],
+      "auth": "user_file",
+      "boundary": "PortWatch indicators and simulations do not expose a complete firm/product supply network and may rely on third-party satellite/AIS inputs.",
+      "checkedAt": "2026-08-12",
+      "documentationUri": "https://www.imf.org/en/news/articles/2023/11/13/pr23390-imf-university-oxford-launch-portwatch-platform-simulate-trade-disruptions",
+      "evidenceGrade": "THIRD_PARTY_VERIFIED",
+      "id": "imf-portwatch",
+      "licenseNotes": [
+        "Only user-provided lawful exports are imported; no platform data are bundled."
+      ],
+      "maxResponseBytes": 100000000,
+      "minimumIntervalMs": 0,
+      "name": "IMF PortWatch",
+      "officialUri": "https://portwatch.imf.org/",
+      "operationalNotes": [
+        "Import metadata must identify export time, fields, and applicable terms."
+      ],
+      "publisher": "International Monetary Fund and University of Oxford",
+      "rawRedistributable": false,
+      "redistributionMode": "user_provided",
+      "runtime": "import_only",
+      "termsUri": "https://www.imf.org/external/terms.htm"
+    }
+  ],
+  "generatedFrom": "packages/connectors/src/catalog.ts",
+  "schemaVersion": "0.1.0"
+}

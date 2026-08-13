@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2023-01-01T00:00:00Z",
+    "publisher": "U.S. Food and Drug Administration",
+    "title": "openFDA Drug Shortages API",
+    "uri": "https://open.fda.gov/apis/drug/drugshortages/"
+  },
+  "decisionQuestion": "Which bounded supply intervention remains feasible when a medicine becomes constrained?",
+  "domain": "Medicines",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build drug-shortage-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:drug-shortage-restress:buffer",
+    "intervention:drug-shortage-restress:reroute"
+  ],
+  "riskPackPath": "cases/drug-shortage-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Drug shortage",
+  "slug": "drug-shortage-restress",
+  "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+  "summary": "A forward-dated medicine-supply stress across assumed manufacturer, wholesaler, care-site, and treatment-access links.",
+  "tags": [
+    "medicine",
+    "shortage",
+    "health"
+  ],
+  "title": "Drug-shortage re-stress",
+  "totalWeightedImpact": {
+    "central": 0.044093567251462,
+    "lower": 0.044093567251462,
+    "upper": 0.11331852398178344
+  }
+}

@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.17575757575757564,
+        "endImpact": 0,
+        "impact": 0.17575757575757564,
+        "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+        "peakDirectImpact": 0.5454545454545454,
+        "peakImpact": 0.5454545454545454
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:care",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:ppe",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "medical-ppe-demand-restress",
+    "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+    "totalWeightedImpact": 0.02970550576184377,
+    "totalWeightedPeakEnvelope": 0.09218950064020484,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.09218950064020484,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5454545454545454,
+            "endImpact": 0.5454545454545454,
+            "impact": 0.5454545454545454,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.09218950064020484,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.09218950064020484,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5454545454545454,
+            "endImpact": 0.5454545454545454,
+            "impact": 0.5454545454545454,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.09218950064020484,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.2788898476305588,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5454545454545454,
+            "endImpact": 0.5454545454545454,
+            "impact": 0.5454545454545454,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.39359999999999995,
+                "edgeId": "edge:medical-ppe-demand-restress:link-1",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe-demand"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.39359999999999995,
+            "impact": 0.33737142857142854,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.39359999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.24851903999999994,
+                "edgeId": "edge:medical-ppe-demand-restress:link-2",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.2485190399999999,
+            "impact": 0.17751359999999994,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2485190399999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16914205862399992,
+                "edgeId": "edge:medical-ppe-demand-restress:link-3",
+                "fromNodeId": "node:medical-ppe-demand-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1691420586239999,
+            "impact": 0.09665260492799994,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1691420586239999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09431361188874234,
+                "edgeId": "edge:medical-ppe-demand-restress:link-4",
+                "fromNodeId": "node:medical-ppe-demand-restress:care"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.09431361188874232,
+            "impact": 0.04042011938088957,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09431361188874232
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.22628797526179317,
+        "totalWeightedPeakEnvelope": 0.2788898476305588,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5272727272727269,
+            "endImpact": 0,
+            "impact": 0.5272727272727269,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.0891165172855313,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5272727272727269,
+            "endImpact": 0,
+            "impact": 0.5272727272727269,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.0891165172855313,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.18670034699035395,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5272727272727269,
+            "endImpact": 0,
+            "impact": 0.5272727272727269,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.39359999999999995,
+                "edgeId": "edge:medical-ppe-demand-restress:link-1",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe-demand"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.39359999999999995,
+            "impact": 0.3804799999999998,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.39359999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.24851903999999994,
+                "edgeId": "edge:medical-ppe-demand-restress:link-2",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.2485190399999999,
+            "impact": 0.23195110399999977,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2485190399999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16914205862399992,
+                "edgeId": "edge:medical-ppe-demand-restress:link-3",
+                "fromNodeId": "node:medical-ppe-demand-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1691420586239999,
+            "impact": 0.15222785276159984,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1691420586239999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09431361188874234,
+                "edgeId": "edge:medical-ppe-demand-restress:link-4",
+                "fromNodeId": "node:medical-ppe-demand-restress:care"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.09431361188874232,
+            "impact": 0.08173846363691006,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09431361188874232
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.2635430940565065,
+        "totalWeightedPeakEnvelope": 0.2788898476305588,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.17575757575757564,
+            "endImpact": 0,
+            "impact": 0.17575757575757564,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.02970550576184377,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.17575757575757564,
+            "endImpact": 0,
+            "impact": 0.17575757575757564,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.02970550576184377,
+        "totalWeightedPeakEnvelope": 0.09218950064020484,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.17575757575757564,
+            "endImpact": 0,
+            "impact": 0.17575757575757564,
+            "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+            "peakDirectImpact": 0.5454545454545454,
+            "peakImpact": 0.5454545454545454
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.39359999999999995,
+                "edgeId": "edge:medical-ppe-demand-restress:link-1",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe-demand"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.12682666666666662,
+            "nodeId": "node:medical-ppe-demand-restress:ppe",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.39359999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.24851903999999994,
+                "edgeId": "edge:medical-ppe-demand-restress:link-2",
+                "fromNodeId": "node:medical-ppe-demand-restress:ppe"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.08007835733333325,
+            "nodeId": "node:medical-ppe-demand-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2485190399999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16914205862399992,
+                "edgeId": "edge:medical-ppe-demand-restress:link-3",
+                "fromNodeId": "node:medical-ppe-demand-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.054501330001066606,
+            "nodeId": "node:medical-ppe-demand-restress:care",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1691420586239999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09431361188874234,
+                "edgeId": "edge:medical-ppe-demand-restress:link-4",
+                "fromNodeId": "node:medical-ppe-demand-restress:care"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.03038994160859477,
+            "nodeId": "node:medical-ppe-demand-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09431361188874232
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "medical-ppe-demand-restress",
+        "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+        "totalWeightedImpact": 0.08986450645873557,
+        "totalWeightedPeakEnvelope": 0.2788898476305588,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.17575757575757564,
+        "endImpact": 0,
+        "impact": 0.17575757575757564,
+        "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+        "peakDirectImpact": 0.5454545454545454,
+        "peakImpact": 0.5454545454545454
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:care",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:medical-ppe-demand-restress:ppe",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "medical-ppe-demand-restress",
+    "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+    "totalWeightedImpact": 0.02970550576184377,
+    "totalWeightedPeakEnvelope": 0.09218950064020484,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.17575757575757564,
+        "endImpact": 0,
+        "impact": 0.17575757575757564,
+        "nodeId": "node:medical-ppe-demand-restress:ppe-demand",
+        "peakDirectImpact": 0.5454545454545454,
+        "peakImpact": 0.5454545454545454
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.39359999999999995,
+            "edgeId": "edge:medical-ppe-demand-restress:link-1",
+            "fromNodeId": "node:medical-ppe-demand-restress:ppe-demand"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.12682666666666662,
+        "nodeId": "node:medical-ppe-demand-restress:ppe",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.39359999999999995
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.24851903999999994,
+            "edgeId": "edge:medical-ppe-demand-restress:link-2",
+            "fromNodeId": "node:medical-ppe-demand-restress:ppe"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.08007835733333325,
+        "nodeId": "node:medical-ppe-demand-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.2485190399999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.16914205862399992,
+            "edgeId": "edge:medical-ppe-demand-restress:link-3",
+            "fromNodeId": "node:medical-ppe-demand-restress:distribution"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.054501330001066606,
+        "nodeId": "node:medical-ppe-demand-restress:care",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.1691420586239999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.09431361188874234,
+            "edgeId": "edge:medical-ppe-demand-restress:link-4",
+            "fromNodeId": "node:medical-ppe-demand-restress:care"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.03038994160859477,
+        "nodeId": "node:medical-ppe-demand-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.09431361188874232
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "medical-ppe-demand-restress",
+    "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+    "totalWeightedImpact": 0.08986450645873557,
+    "totalWeightedPeakEnvelope": 0.2788898476305588,
+    "warnings": []
+  }
+}

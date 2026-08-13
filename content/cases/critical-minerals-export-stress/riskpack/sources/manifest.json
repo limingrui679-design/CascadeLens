@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3245,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:critical-minerals-export-stress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "4c0c45cb4d449732fdf0a0eacd87e9b3233d3f2b8eb2597b33db8b1f38b6b44a",
+    "title": "Critical-minerals export-control stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/critical-minerals-export-stress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2026-02-19T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:critical-minerals-export-stress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
+    },
+    "publishedAt": "2026-02-19T00:00:00Z",
+    "publisher": "International Energy Agency",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "3b7357d66ba1624237ded90a1396e28531034839f9ed89e31de15a1f906081c9",
+    "title": "2026 IEA Ministerial Declaration supporting critical-minerals security",
+    "uri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
+  }
+]

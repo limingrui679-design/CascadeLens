@@ -1,0 +1,10 @@
+{
+  "classification": "quasi_historical",
+  "leakageIssues": [],
+  "limitations": [
+    "No comparable separated real-world outcome was available."
+  ],
+  "sampleSize": 0,
+  "scenarioId": "suez-route-restress",
+  "status": "scenario_only"
+}

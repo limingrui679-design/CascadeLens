@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.06444444444444444,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.06444444444444444,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.13421702159839816,
+    "worstCaseImpact": 0.13421702159839816
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13421702159839816,
+      "worstCaseImpact": 0.13421702159839816
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11715488168223365,
+      "worstCaseImpact": 0.11715488168223365
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11471743312278156,
+      "worstCaseImpact": 0.11471743312278156
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:diversify"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1224000447758073,
+      "worstCaseImpact": 0.1224000447758073
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10448014917308288,
+      "worstCaseImpact": 0.10448014917308288
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:diversify"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10947384674754959,
+      "worstCaseImpact": 0.10947384674754959
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:diversify",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:diversify",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13421702159839816,
+      "worstCaseImpact": 0.13421702159839816
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11715488168223365,
+      "worstCaseImpact": 0.11715488168223365
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11471743312278156,
+      "worstCaseImpact": 0.11471743312278156
+    },
+    {
+      "centralImpact": 0.06444444444444444,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444444,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10448014917308288,
+      "worstCaseImpact": 0.10448014917308288
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:ukraine-commodity-compound-restress:buffer",
+    "intervention:ukraine-commodity-compound-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 468.8743639020845,
+      "toBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 1230.7952052429628,
+      "toBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 781.4572731701428,
+      "toBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "ukraine-commodity-compound-restress"
+}

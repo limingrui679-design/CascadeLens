@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:medical-ppe-demand-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:medical-ppe-demand-restress:link-1",
+      "lower": 0.52,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Assumed dependency from PPE demand pressure to Protective equipment supply.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.88,
+      "value": 0.72
+    },
+    {
+      "id": "assumption:medical-ppe-demand-restress:link-2",
+      "lower": 0.41,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Assumed dependency from Protective equipment supply to Medical distribution.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.77,
+      "value": 0.61
+    },
+    {
+      "id": "assumption:medical-ppe-demand-restress:link-3",
+      "lower": 0.47,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Assumed dependency from Medical distribution to Care delivery capacity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.83,
+      "value": 0.67
+    },
+    {
+      "id": "assumption:medical-ppe-demand-restress:link-4",
+      "lower": 0.32,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Assumed dependency from Care delivery capacity to Patient access continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.68,
+      "value": 0.52
+    },
+    {
+      "id": "assumption:medical-ppe-demand-restress:link-5",
+      "lower": 0.01,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:medical-ppe-demand-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from PPE demand pressure to Patient access continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.37,
+      "value": 0.21
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "medical-ppe-demand-restress",
+  "status": "scenario_parameters_not_observations"
+}

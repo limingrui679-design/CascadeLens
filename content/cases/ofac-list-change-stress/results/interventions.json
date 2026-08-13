@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.03735909822866346,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.03735909822866346,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.08780815155668417,
+    "worstCaseImpact": 0.08780815155668417
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.08780815155668417,
+      "worstCaseImpact": 0.08780815155668417
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07015098289187692,
+      "worstCaseImpact": 0.07015098289187692
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06762853022547585,
+      "worstCaseImpact": 0.06762853022547585
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:diversify"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07451191796835821,
+      "worstCaseImpact": 0.07451191796835821
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05703422902659155,
+      "worstCaseImpact": 0.05703422902659155
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:diversify"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.061508431059465046,
+      "worstCaseImpact": 0.061508431059465046
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:diversify",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:diversify",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.08780815155668417,
+      "worstCaseImpact": 0.08780815155668417
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07015098289187692,
+      "worstCaseImpact": 0.07015098289187692
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06762853022547585,
+      "worstCaseImpact": 0.06762853022547585
+    },
+    {
+      "centralImpact": 0.03735909822866346,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": 0.03735909822866346,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05703422902659155,
+      "worstCaseImpact": 0.05703422902659155
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:ofac-list-change-stress:buffer",
+    "intervention:ofac-list-change-stress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 453.073771444734,
+      "toBundleIds": [
+        "intervention:ofac-list-change-stress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:ofac-list-change-stress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 1189.3186500424117,
+      "toBundleIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 755.1229524078933,
+      "toBundleIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "ofac-list-change-stress"
+}

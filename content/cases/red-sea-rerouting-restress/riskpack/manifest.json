@@ -1,0 +1,26 @@
+{
+  "classification": "quasi_historical",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:red-sea-rerouting-restress:v0.1.0",
+  "scenarioId": "red-sea-rerouting-restress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

@@ -1,0 +1,32 @@
+name: Bug report
+description: Report reproducible software behavior.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: State what happened without including credentials or restricted data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include the exact command and a lawful minimal input or RiskPack digest.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CascadeLens version or commit
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Data boundary
+      options:
+        - label: I removed secrets, personal data, proprietary inputs, and restricted source payloads.
+          required: true

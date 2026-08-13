@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:link-1",
+      "lower": 0.5,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Assumed dependency from Food, fertilizer, and energy supply to Agricultural input availability.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.86,
+      "value": 0.7
+    },
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:link-2",
+      "lower": 0.43,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Assumed dependency from Agricultural input availability to Food production.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.79,
+      "value": 0.63
+    },
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:link-3",
+      "lower": 0.39,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Assumed dependency from Food production to Regional food distribution.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.75,
+      "value": 0.59
+    },
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:link-4",
+      "lower": 0.36,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Assumed dependency from Regional food distribution to Food affordability pressure.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.72,
+      "value": 0.56
+    },
+    {
+      "id": "assumption:ukraine-commodity-compound-restress:link-5",
+      "lower": 0.04,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ukraine-commodity-compound-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Food, fertilizer, and energy supply to Food affordability pressure.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.4,
+      "value": 0.24
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "ukraine-commodity-compound-restress",
+  "status": "scenario_parameters_not_observations"
+}

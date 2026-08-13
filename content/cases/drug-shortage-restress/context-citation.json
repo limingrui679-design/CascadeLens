@@ -1,0 +1,7 @@
+{
+  "availableAt": "2023-01-01T00:00:00Z",
+  "publisher": "U.S. Food and Drug Administration",
+  "role": "scenario_context_only",
+  "title": "openFDA Drug Shortages API",
+  "uri": "https://open.fda.gov/apis/drug/drugshortages/"
+}

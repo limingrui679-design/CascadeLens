@@ -1,0 +1,134 @@
+{
+  "classification": "synthetic_stress",
+  "constraints": {
+    "budget": 22,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:food-export-compound-stress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.35,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:food-export-compound-stress:buffer",
+      "label": "Release food reserve",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:food-export-compound-stress:commodity"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 13,
+      "costUnit": "normalized_cost",
+      "effect": 0.5,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:food-export-compound-stress:diversify",
+      "label": "Diversify import sources",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:food-export-compound-stress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:food-export-compound-stress:reroute",
+      "label": "Reroute food distribution",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:food-export-compound-stress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No current production, trade, price, or food-security observation is included in the model topology."
+  ],
+  "objectives": [
+    {
+      "id": "objective:food-export-compound-stress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:food-export-compound-stress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "food-export-compound-stress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:food-export-compound-stress:primary",
+      "label": "Food production restriction",
+      "magnitude": 0.55,
+      "operation": "reduce_supply",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:food-export-compound-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:food-export-compound-stress:production"
+        ]
+      },
+      "unit": "share"
+    },
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:food-export-compound-stress:secondary",
+      "label": "Concurrent policy restriction",
+      "magnitude": 0.35,
+      "operation": "policy_restrict",
+      "rationale": "Explicit compound-stress assumption; not a statement about a current policy.",
+      "sourceIds": [
+        "source:food-export-compound-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:food-export-compound-stress:exports"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
+  "title": "Food production and export-restriction compound stress"
+}

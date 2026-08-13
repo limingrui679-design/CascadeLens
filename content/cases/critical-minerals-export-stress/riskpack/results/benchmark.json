@@ -1,0 +1,10 @@
+{
+  "classification": "synthetic_stress",
+  "leakageIssues": [],
+  "limitations": [
+    "No comparable separated real-world outcome was available."
+  ],
+  "sampleSize": 0,
+  "scenarioId": "critical-minerals-export-stress",
+  "status": "scenario_only"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "acquisitionCost": 3,
+    "candidateId": "candidate:panama-drought-restress:direct-link",
+    "expectedDecisionUncertaintyReduction": 0,
+    "expectedValueOfPerfectInformation": 0,
+    "expectedWorstCaseImpactReduction": 0,
+    "label": "Verify a possible direct dependency from Panama Canal transit capacity to Downstream service level",
+    "netValue": -3,
+    "probabilityDecisionChanges": 0,
+    "status": "not_cost_effective"
+  }
+]

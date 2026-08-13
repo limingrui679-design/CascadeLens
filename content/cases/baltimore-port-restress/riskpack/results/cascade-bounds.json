@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.32222222222222224,
+        "endImpact": 0,
+        "impact": 0.32222222222222224,
+        "nodeId": "node:baltimore-port-restress:port-access",
+        "peakDirectImpact": 1,
+        "peakImpact": 1
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:terminal",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:vehicle-flow",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "baltimore-port-restress",
+    "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+    "totalWeightedImpact": 0.06940170940170941,
+    "totalWeightedPeakEnvelope": 0.21538461538461537,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.21538461538461537,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 1,
+            "endImpact": 1,
+            "impact": 1,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.21538461538461537,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.21538461538461537,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 1,
+            "endImpact": 1,
+            "impact": 1,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.21538461538461537,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.5585195511137812,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 1,
+            "endImpact": 1,
+            "impact": 1,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.8036,
+                "edgeId": "edge:baltimore-port-restress:link-1",
+                "fromNodeId": "node:baltimore-port-restress:port-access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.8036,
+            "impact": 0.6888,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.8036
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50739304,
+                "edgeId": "edge:baltimore-port-restress:link-2",
+                "fromNodeId": "node:baltimore-port-restress:terminal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.50739304,
+            "impact": 0.3624236,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50739304
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29124360495999996,
+                "edgeId": "edge:baltimore-port-restress:link-3",
+                "fromNodeId": "node:baltimore-port-restress:vehicle-flow"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.29124360496,
+            "impact": 0.16642491712000002,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.29124360496
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.140903656079648,
+                "edgeId": "edge:baltimore-port-restress:link-4",
+                "fromNodeId": "node:baltimore-port-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.14090365607964794,
+            "impact": 0.06038728117699198,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.14090365607964794
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.4670473755969831,
+        "totalWeightedPeakEnvelope": 0.5585195511137812,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.9666666666666667,
+            "endImpact": 0,
+            "impact": 0.9666666666666667,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.2082051282051282,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.9666666666666667,
+            "endImpact": 0,
+            "impact": 0.9666666666666667,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.2082051282051282,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.3431349357291658,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.9666666666666667,
+            "endImpact": 0,
+            "impact": 0.9666666666666667,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.8036,
+                "edgeId": "edge:baltimore-port-restress:link-1",
+                "fromNodeId": "node:baltimore-port-restress:port-access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.8036,
+            "impact": 0.776813333333333,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.8036
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50739304,
+                "edgeId": "edge:baltimore-port-restress:link-2",
+                "fromNodeId": "node:baltimore-port-restress:terminal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.50739304,
+            "impact": 0.47356683733333343,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50739304
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29124360495999996,
+                "edgeId": "edge:baltimore-port-restress:link-3",
+                "fromNodeId": "node:baltimore-port-restress:vehicle-flow"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.29124360496,
+            "impact": 0.26211924446400003,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.29124360496
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.140903656079648,
+                "edgeId": "edge:baltimore-port-restress:link-4",
+                "fromNodeId": "node:baltimore-port-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.14090365607964794,
+            "impact": 0.12211650193569495,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.14090365607964794
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.5299965563137078,
+        "totalWeightedPeakEnvelope": 0.5585195511137812,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.32222222222222224,
+            "endImpact": 0,
+            "impact": 0.32222222222222224,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.06940170940170941,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.32222222222222224,
+            "endImpact": 0,
+            "impact": 0.32222222222222224,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.06940170940170941,
+        "totalWeightedPeakEnvelope": 0.21538461538461537,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.32222222222222224,
+            "endImpact": 0,
+            "impact": 0.32222222222222224,
+            "nodeId": "node:baltimore-port-restress:port-access",
+            "peakDirectImpact": 1,
+            "peakImpact": 1
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.8036,
+                "edgeId": "edge:baltimore-port-restress:link-1",
+                "fromNodeId": "node:baltimore-port-restress:port-access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.25893777777777766,
+            "nodeId": "node:baltimore-port-restress:terminal",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.8036
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50739304,
+                "edgeId": "edge:baltimore-port-restress:link-2",
+                "fromNodeId": "node:baltimore-port-restress:terminal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.16349331288888894,
+            "nodeId": "node:baltimore-port-restress:vehicle-flow",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50739304
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29124360495999996,
+                "edgeId": "edge:baltimore-port-restress:link-3",
+                "fromNodeId": "node:baltimore-port-restress:vehicle-flow"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.09384516159822223,
+            "nodeId": "node:baltimore-port-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.29124360496
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.140903656079648,
+                "edgeId": "edge:baltimore-port-restress:link-4",
+                "fromNodeId": "node:baltimore-port-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.045402289181219926,
+            "nodeId": "node:baltimore-port-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.14090365607964794
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "baltimore-port-restress",
+        "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+        "totalWeightedImpact": 0.17996741091444057,
+        "totalWeightedPeakEnvelope": 0.5585195511137812,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.32222222222222224,
+        "endImpact": 0,
+        "impact": 0.32222222222222224,
+        "nodeId": "node:baltimore-port-restress:port-access",
+        "peakDirectImpact": 1,
+        "peakImpact": 1
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:terminal",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:baltimore-port-restress:vehicle-flow",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "baltimore-port-restress",
+    "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+    "totalWeightedImpact": 0.06940170940170941,
+    "totalWeightedPeakEnvelope": 0.21538461538461537,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.32222222222222224,
+        "endImpact": 0,
+        "impact": 0.32222222222222224,
+        "nodeId": "node:baltimore-port-restress:port-access",
+        "peakDirectImpact": 1,
+        "peakImpact": 1
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.8036,
+            "edgeId": "edge:baltimore-port-restress:link-1",
+            "fromNodeId": "node:baltimore-port-restress:port-access"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.25893777777777766,
+        "nodeId": "node:baltimore-port-restress:terminal",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.8036
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.50739304,
+            "edgeId": "edge:baltimore-port-restress:link-2",
+            "fromNodeId": "node:baltimore-port-restress:terminal"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.16349331288888894,
+        "nodeId": "node:baltimore-port-restress:vehicle-flow",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.50739304
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.29124360495999996,
+            "edgeId": "edge:baltimore-port-restress:link-3",
+            "fromNodeId": "node:baltimore-port-restress:vehicle-flow"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.09384516159822223,
+        "nodeId": "node:baltimore-port-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.29124360496
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.140903656079648,
+            "edgeId": "edge:baltimore-port-restress:link-4",
+            "fromNodeId": "node:baltimore-port-restress:manufacturing"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.045402289181219926,
+        "nodeId": "node:baltimore-port-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.14090365607964794
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "baltimore-port-restress",
+    "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+    "totalWeightedImpact": 0.17996741091444057,
+    "totalWeightedPeakEnvelope": 0.5585195511137812,
+    "warnings": []
+  }
+}

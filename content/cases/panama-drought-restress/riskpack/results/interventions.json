@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.03029850746268655,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.03029850746268655,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.07523915649015667,
+    "worstCaseImpact": 0.07523915649015667
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.07523915649015667,
+      "worstCaseImpact": 0.07523915649015667
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05950992933054213,
+      "worstCaseImpact": 0.05950992933054213
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05726289687916862,
+      "worstCaseImpact": 0.05726289687916862
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:diversify"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06267124988686937,
+      "worstCaseImpact": 0.06267124988686937
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.04782536058339991,
+      "worstCaseImpact": 0.04782536058339991
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:diversify"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05134079003840539,
+      "worstCaseImpact": 0.05134079003840539
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:panama-drought-restress:diversify",
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:diversify",
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.07523915649015667,
+      "worstCaseImpact": 0.07523915649015667
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05950992933054213,
+      "worstCaseImpact": 0.05950992933054213
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05726289687916862,
+      "worstCaseImpact": 0.05726289687916862
+    },
+    {
+      "centralImpact": 0.03029850746268655,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "lowerImpact": 0.03029850746268655,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.04782536058339991,
+      "worstCaseImpact": 0.04782536058339991
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:panama-drought-restress:buffer",
+    "intervention:panama-drought-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 508.60731546559026,
+      "toBundleIds": [
+        "intervention:panama-drought-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:panama-drought-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 1335.094203097171,
+      "toBundleIds": [
+        "intervention:panama-drought-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 847.678859109318,
+      "toBundleIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "panama-drought-restress"
+}

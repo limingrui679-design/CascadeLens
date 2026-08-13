@@ -1,0 +1,38 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2026-02-19T00:00:00Z",
+    "publisher": "International Energy Agency",
+    "title": "2026 IEA Ministerial Declaration supporting critical-minerals security",
+    "uri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
+  },
+  "decisionQuestion": "What is the value of diversification and additional evidence under a concentrated critical-mineral dependency?",
+  "domain": "Minerals and technology",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build critical-minerals-export-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:critical-minerals-export-stress:buffer",
+    "intervention:critical-minerals-export-stress:reroute"
+  ],
+  "riskPackPath": "cases/critical-minerals-export-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Critical minerals",
+  "slug": "critical-minerals-export-stress",
+  "snapshotDigest": "db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814",
+  "summary": "A synthetic export-control stress across an assumed mineral, component, manufacturing, and infrastructure chain.",
+  "tags": [
+    "minerals",
+    "technology",
+    "export-controls"
+  ],
+  "title": "Critical-minerals export-control stress",
+  "totalWeightedImpact": {
+    "central": 0.04385802469135801,
+    "lower": 0.04385802469135801,
+    "upper": 0.13487336364594885
+  }
+}

@@ -1,0 +1,1 @@
+{"data":[{"id":"TEST0000000000000001","attributes":{"lei":"TEST0000000000000001","entity":{"legalName":{"name":"Fixture Legal Entity"},"legalAddress":{"country":"ZZ"},"status":"ACTIVE"},"registration":{"initialRegistrationDate":"2020-01-01","lastUpdateDate":"2021-01-01","status":"ISSUED","managingLou":"TESTLOU"}}}]}

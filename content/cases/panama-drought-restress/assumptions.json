@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:panama-drought-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:panama-drought-restress:link-1",
+      "lower": 0.57,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Assumed dependency from Panama Canal transit capacity to Affected shipping services.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.93,
+      "value": 0.77
+    },
+    {
+      "id": "assumption:panama-drought-restress:link-2",
+      "lower": 0.34,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Assumed dependency from Affected shipping services to Importer inventory continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.7,
+      "value": 0.54
+    },
+    {
+      "id": "assumption:panama-drought-restress:link-3",
+      "lower": 0.4,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Assumed dependency from Importer inventory continuity to Import-dependent production.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.76,
+      "value": 0.6
+    },
+    {
+      "id": "assumption:panama-drought-restress:link-4",
+      "lower": 0.27,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Assumed dependency from Import-dependent production to Downstream service level.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.63,
+      "value": 0.47
+    },
+    {
+      "id": "assumption:panama-drought-restress:link-5",
+      "lower": 0,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Panama Canal transit capacity to Downstream service level.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.34,
+      "value": 0.18
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "panama-drought-restress",
+  "status": "scenario_parameters_not_observations"
+}

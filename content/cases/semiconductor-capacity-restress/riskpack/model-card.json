@@ -1,0 +1,22 @@
+{
+  "algorithm": "Cycle-safe deterministic dependency propagation with evidence-gated lower, central, and upper graph bounds.",
+  "evidencePolicy": "MODEL_INFERRED edges are excluded from lower and central estimates and enter only the upper missing-graph envelope.",
+  "intendedUse": [
+    "Transparent stress-topology exploration",
+    "Software and evidence-governance verification",
+    "Comparing explicitly parameterized intervention bundles"
+  ],
+  "limitations": [
+    "The case does not estimate any company, facility, or sector's actual production loss.",
+    "No case in the launch library currently has separated outcome data sufficient for historical scoring."
+  ],
+  "modelId": "dependency_cascade",
+  "outOfScope": [
+    "Forecasting realized losses",
+    "Causal inference",
+    "Autonomous operational decisions",
+    "Investment, legal, sanctions-compliance, clinical, or emergency-response advice"
+  ],
+  "validationStatus": "software_verified_empirically_unvalidated",
+  "version": "0.1.0"
+}

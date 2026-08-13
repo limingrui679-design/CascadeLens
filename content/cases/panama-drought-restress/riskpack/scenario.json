@@ -1,0 +1,116 @@
+{
+  "classification": "quasi_historical",
+  "constraints": {
+    "budget": 22,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:panama-drought-restress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.35,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:panama-drought-restress:buffer",
+      "label": "Increase importer inventory",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:panama-drought-restress:shipping"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 13,
+      "costUnit": "normalized_cost",
+      "effect": 0.5,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:panama-drought-restress:diversify",
+      "label": "Diversify route exposure",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:panama-drought-restress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:panama-drought-restress:reroute",
+      "label": "Use alternate ocean routing",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:panama-drought-restress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "The case does not reconstruct actual vessel queues, tolls, or shipment volumes."
+  ],
+  "objectives": [
+    {
+      "id": "objective:panama-drought-restress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:panama-drought-restress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "panama-drought-restress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:panama-drought-restress:primary",
+      "label": "Canal transit capacity reduction",
+      "magnitude": 0.55,
+      "operation": "multiply_capacity",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:panama-drought-restress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:panama-drought-restress:canal"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
+  "title": "Panama Canal drought re-stress"
+}

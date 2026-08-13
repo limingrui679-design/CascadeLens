@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:semiconductor-capacity-restress:fabs",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:chips",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:modules",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "semiconductor-capacity-restress",
+    "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+    "totalWeightedImpact": 0.03967661691542291,
+    "totalWeightedPeakEnvelope": 0.12313432835820898,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.12313432835820898,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.12313432835820896,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.12313432835820898,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.12313432835820896,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.32154017192056533,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.43746999999999997,
+                "edgeId": "edge:semiconductor-capacity-restress:link-1",
+                "fromNodeId": "node:semiconductor-capacity-restress:fabs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.43747,
+            "impact": 0.3749742857142858,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.43747
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.294154828,
+                "edgeId": "edge:semiconductor-capacity-restress:link-2",
+                "fromNodeId": "node:semiconductor-capacity-restress:chips"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.2941548279999999,
+            "impact": 0.21011059142857139,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2941548279999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.18814142798879996,
+                "edgeId": "edge:semiconductor-capacity-restress:link-3",
+                "fromNodeId": "node:semiconductor-capacity-restress:modules"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.18814142798879996,
+            "impact": 0.1075093874221714,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.18814142798879996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09256558257048958,
+                "edgeId": "edge:semiconductor-capacity-restress:link-4",
+                "fromNodeId": "node:semiconductor-capacity-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.09256558257048964,
+            "impact": 0.03967096395878127,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09256558257048964
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.2671574460380931,
+        "totalWeightedPeakEnvelope": 0.32154017192056533,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.11902985074626873,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.11902985074626873,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.19840584356235635,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.43746999999999997,
+                "edgeId": "edge:semiconductor-capacity-restress:link-1",
+                "fromNodeId": "node:semiconductor-capacity-restress:fabs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.43747,
+            "impact": 0.4228876666666666,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.43747
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.294154828,
+                "edgeId": "edge:semiconductor-capacity-restress:link-2",
+                "fromNodeId": "node:semiconductor-capacity-restress:chips"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.2941548279999999,
+            "impact": 0.27454450613333325,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2941548279999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.18814142798879996,
+                "edgeId": "edge:semiconductor-capacity-restress:link-3",
+                "fromNodeId": "node:semiconductor-capacity-restress:modules"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.18814142798879996,
+            "impact": 0.16932728518991988,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.18814142798879996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09256558257048958,
+                "edgeId": "edge:semiconductor-capacity-restress:link-4",
+                "fromNodeId": "node:semiconductor-capacity-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.09256558257048964,
+            "impact": 0.08022350489442436,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09256558257048964
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.3047463916027149,
+        "totalWeightedPeakEnvelope": 0.32154017192056533,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.03967661691542291,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.03967661691542291,
+        "totalWeightedPeakEnvelope": 0.12313432835820898,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:semiconductor-capacity-restress:fabs",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.43746999999999997,
+                "edgeId": "edge:semiconductor-capacity-restress:link-1",
+                "fromNodeId": "node:semiconductor-capacity-restress:fabs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.14096255555555554,
+            "nodeId": "node:semiconductor-capacity-restress:chips",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.43747
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.294154828,
+                "edgeId": "edge:semiconductor-capacity-restress:link-2",
+                "fromNodeId": "node:semiconductor-capacity-restress:chips"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.09478322235555553,
+            "nodeId": "node:semiconductor-capacity-restress:modules",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2941548279999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.18814142798879996,
+                "edgeId": "edge:semiconductor-capacity-restress:link-3",
+                "fromNodeId": "node:semiconductor-capacity-restress:modules"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06062334901861329,
+            "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.18814142798879996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.09256558257048958,
+                "edgeId": "edge:semiconductor-capacity-restress:link-4",
+                "fromNodeId": "node:semiconductor-capacity-restress:manufacturing"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.02982668771715777,
+            "nodeId": "node:semiconductor-capacity-restress:deliveries",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.09256558257048964
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "semiconductor-capacity-restress",
+        "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+        "totalWeightedImpact": 0.10360738872995993,
+        "totalWeightedPeakEnvelope": 0.32154017192056533,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:semiconductor-capacity-restress:fabs",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:chips",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:semiconductor-capacity-restress:modules",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "semiconductor-capacity-restress",
+    "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+    "totalWeightedImpact": 0.03967661691542291,
+    "totalWeightedPeakEnvelope": 0.12313432835820898,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:semiconductor-capacity-restress:fabs",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.43746999999999997,
+            "edgeId": "edge:semiconductor-capacity-restress:link-1",
+            "fromNodeId": "node:semiconductor-capacity-restress:fabs"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.14096255555555554,
+        "nodeId": "node:semiconductor-capacity-restress:chips",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.43747
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.294154828,
+            "edgeId": "edge:semiconductor-capacity-restress:link-2",
+            "fromNodeId": "node:semiconductor-capacity-restress:chips"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.09478322235555553,
+        "nodeId": "node:semiconductor-capacity-restress:modules",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.2941548279999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.18814142798879996,
+            "edgeId": "edge:semiconductor-capacity-restress:link-3",
+            "fromNodeId": "node:semiconductor-capacity-restress:modules"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06062334901861329,
+        "nodeId": "node:semiconductor-capacity-restress:manufacturing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.18814142798879996
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.09256558257048958,
+            "edgeId": "edge:semiconductor-capacity-restress:link-4",
+            "fromNodeId": "node:semiconductor-capacity-restress:manufacturing"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.02982668771715777,
+        "nodeId": "node:semiconductor-capacity-restress:deliveries",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.09256558257048964
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "semiconductor-capacity-restress",
+    "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+    "totalWeightedImpact": 0.10360738872995993,
+    "totalWeightedPeakEnvelope": 0.32154017192056533,
+    "warnings": []
+  }
+}

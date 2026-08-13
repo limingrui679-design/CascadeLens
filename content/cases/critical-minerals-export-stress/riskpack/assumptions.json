@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:critical-minerals-export-stress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:critical-minerals-export-stress:link-1",
+      "lower": 0.64,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Assumed dependency from Critical-mineral exports to Processed critical mineral.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.84
+    },
+    {
+      "id": "assumption:critical-minerals-export-stress:link-2",
+      "lower": 0.5,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Assumed dependency from Processed critical mineral to Technology components.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.86,
+      "value": 0.7
+    },
+    {
+      "id": "assumption:critical-minerals-export-stress:link-3",
+      "lower": 0.44,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Assumed dependency from Technology components to Advanced manufacturing.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.8,
+      "value": 0.64
+    },
+    {
+      "id": "assumption:critical-minerals-export-stress:link-4",
+      "lower": 0.28,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Assumed dependency from Advanced manufacturing to Infrastructure delivery.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.64,
+      "value": 0.48
+    },
+    {
+      "id": "assumption:critical-minerals-export-stress:link-5",
+      "lower": 0.06,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:critical-minerals-export-stress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Critical-mineral exports to Infrastructure delivery.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.42,
+      "value": 0.26
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "critical-minerals-export-stress",
+  "status": "scenario_parameters_not_observations"
+}

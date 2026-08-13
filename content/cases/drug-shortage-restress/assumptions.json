@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:drug-shortage-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:drug-shortage-restress:link-1",
+      "lower": 0.58,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Assumed dependency from Medicine supply to Manufacturer availability.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.94,
+      "value": 0.78
+    },
+    {
+      "id": "assumption:drug-shortage-restress:link-2",
+      "lower": 0.42,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Assumed dependency from Manufacturer availability to Wholesale distribution.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.78,
+      "value": 0.62
+    },
+    {
+      "id": "assumption:drug-shortage-restress:link-3",
+      "lower": 0.4,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Assumed dependency from Wholesale distribution to Care-site inventory.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.76,
+      "value": 0.6
+    },
+    {
+      "id": "assumption:drug-shortage-restress:link-4",
+      "lower": 0.37,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Assumed dependency from Care-site inventory to Treatment access continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.73,
+      "value": 0.57
+    },
+    {
+      "id": "assumption:drug-shortage-restress:link-5",
+      "lower": 0.02,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:drug-shortage-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Medicine supply to Treatment access continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.38,
+      "value": 0.22
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "drug-shortage-restress",
+  "status": "scenario_parameters_not_observations"
+}

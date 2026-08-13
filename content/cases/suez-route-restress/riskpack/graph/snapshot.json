@@ -1,0 +1,265 @@
+{
+  "contentDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "from": "node:suez-route-restress:suez",
+      "id": "edge:suez-route-restress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:suez-route-restress:maritime-inputs",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.56,
+        "unit": "share",
+        "upper": 0.92,
+        "value": 0.76
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "from": "node:suez-route-restress:maritime-inputs",
+      "id": "edge:suez-route-restress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:suez-route-restress:assembly",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.38,
+        "unit": "share",
+        "upper": 0.74,
+        "value": 0.58
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "from": "node:suez-route-restress:assembly",
+      "id": "edge:suez-route-restress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:suez-route-restress:distribution",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.35,
+        "unit": "share",
+        "upper": 0.71,
+        "value": 0.55
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "from": "node:suez-route-restress:distribution",
+      "id": "edge:suez-route-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:suez-route-restress:market",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.28,
+        "unit": "share",
+        "upper": 0.64,
+        "value": 0.48
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "id": "node:suez-route-restress:assembly",
+      "kind": "industry",
+      "label": "Import-dependent assembly",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "id": "node:suez-route-restress:distribution",
+      "kind": "industry",
+      "label": "Regional distribution",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.2,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "id": "node:suez-route-restress:maritime-inputs",
+      "kind": "product",
+      "label": "Time-sensitive maritime inputs",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.1,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "id": "node:suez-route-restress:market",
+      "kind": "region",
+      "label": "Downstream market availability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "id": "node:suez-route-restress:suez",
+      "kind": "route",
+      "label": "Suez route",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:suez-route-restress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3091,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:suez-route-restress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "b191f5f8f8cc5e3dff62f996b42bdaf983db054f64388df3fcf2680813b1d26a",
+      "title": "Suez route closure re-stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/suez-route-restress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2021-03-31T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:suez-route-restress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+      },
+      "publishedAt": "2021-03-31T00:00:00Z",
+      "publisher": "Suez Canal Authority",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "57b3de1790bbdf8fa31744dd04bd99cd2f321ff913c8d312ef9c61cd2f1e4427",
+      "title": "Navigation in the Suez Canal restored after the Ever Given incident",
+      "uri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+    }
+  ],
+  "title": "Suez route closure re-stress assumed topology"
+}

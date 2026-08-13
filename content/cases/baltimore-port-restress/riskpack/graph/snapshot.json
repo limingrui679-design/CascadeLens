@@ -1,0 +1,265 @@
+{
+  "contentDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "from": "node:baltimore-port-restress:port-access",
+      "id": "edge:baltimore-port-restress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:baltimore-port-restress:terminal",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.62,
+        "unit": "share",
+        "upper": 0.98,
+        "value": 0.82
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "from": "node:baltimore-port-restress:terminal",
+      "id": "edge:baltimore-port-restress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:baltimore-port-restress:vehicle-flow",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.41,
+        "unit": "share",
+        "upper": 0.77,
+        "value": 0.61
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "from": "node:baltimore-port-restress:vehicle-flow",
+      "id": "edge:baltimore-port-restress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:baltimore-port-restress:manufacturing",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.34,
+        "unit": "share",
+        "upper": 0.7,
+        "value": 0.54
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "from": "node:baltimore-port-restress:manufacturing",
+      "id": "edge:baltimore-port-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:baltimore-port-restress:deliveries",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.23,
+        "unit": "share",
+        "upper": 0.59,
+        "value": 0.43
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "id": "node:baltimore-port-restress:deliveries",
+      "kind": "metric",
+      "label": "Customer deliveries",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.2,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "id": "node:baltimore-port-restress:manufacturing",
+      "kind": "industry",
+      "label": "Regional manufacturing",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "id": "node:baltimore-port-restress:port-access",
+      "kind": "route",
+      "label": "Port access channel",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "id": "node:baltimore-port-restress:terminal",
+      "kind": "port",
+      "label": "Terminal handling capacity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "id": "node:baltimore-port-restress:vehicle-flow",
+      "kind": "product",
+      "label": "Vehicle and machinery flows",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.2,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:baltimore-port-restress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3137,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:baltimore-port-restress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "2e66901186dd6e0183d76abd9c1a137550d5673a405eac15bb428073e5fae124",
+      "title": "Baltimore port access re-stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2024-06-24T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:baltimore-port-restress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+      },
+      "publishedAt": "2024-06-24T00:00:00Z",
+      "publisher": "National Transportation Safety Board",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "c2399e981ef6f1985483008a6b9dd51ffcf9b60ff21581bf3a6761ee7a2aaf35",
+      "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
+      "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+    }
+  ],
+  "title": "Baltimore port access re-stress assumed topology"
+}

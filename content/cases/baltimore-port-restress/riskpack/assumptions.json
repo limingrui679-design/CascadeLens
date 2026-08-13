@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:baltimore-port-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:baltimore-port-restress:link-1",
+      "lower": 0.62,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Assumed dependency from Port access channel to Terminal handling capacity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.98,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:baltimore-port-restress:link-2",
+      "lower": 0.41,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Assumed dependency from Terminal handling capacity to Vehicle and machinery flows.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.77,
+      "value": 0.61
+    },
+    {
+      "id": "assumption:baltimore-port-restress:link-3",
+      "lower": 0.34,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Assumed dependency from Vehicle and machinery flows to Regional manufacturing.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.7,
+      "value": 0.54
+    },
+    {
+      "id": "assumption:baltimore-port-restress:link-4",
+      "lower": 0.23,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Assumed dependency from Regional manufacturing to Customer deliveries.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.59,
+      "value": 0.43
+    },
+    {
+      "id": "assumption:baltimore-port-restress:link-5",
+      "lower": 0,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Port access channel to Customer deliveries.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.33,
+      "value": 0.17
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "baltimore-port-restress",
+  "status": "scenario_parameters_not_observations"
+}

@@ -1,0 +1,26 @@
+{
+  "classification": "quasi_historical",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:suez-route-restress:v0.1.0",
+  "scenarioId": "suez-route-restress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

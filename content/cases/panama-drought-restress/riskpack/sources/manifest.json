@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3179,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:panama-drought-restress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "3d8d1558e3bc14ef05734957bafb35b8e4288a2f97d60e93708e2256a39608ad",
+    "title": "Panama Canal drought re-stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/panama-drought-restress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2023-10-03T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:panama-drought-restress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/"
+    },
+    "publishedAt": "2023-10-03T00:00:00Z",
+    "publisher": "Panama Canal Authority",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "9b97e212e58872848921652bc0440d8bcdb1cb220798ed35525fe462bd09c729",
+    "title": "Panama Canal Authority adapts to unprecedented challenges",
+    "uri": "https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/"
+  }
+]

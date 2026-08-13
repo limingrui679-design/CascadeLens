@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:food-export-compound-stress:production",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.11277777777777773,
+        "nodeId": "node:food-export-compound-stress:exports",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.35
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:commodity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "food-export-compound-stress",
+    "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+    "totalWeightedImpact": 0.05733044733044735,
+    "totalWeightedPeakEnvelope": 0.17792207792207795,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.17792207792207795,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.35,
+            "impact": 0.35000000000000003,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.17792207792207793,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.17792207792207795,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.35,
+            "impact": 0.35000000000000003,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.17792207792207793,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.39860995586883907,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5499999999999999,
+            "endImpact": 0.55,
+            "impact": 0.5499999999999999,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28605576999999993,
+                "edgeId": "edge:food-export-compound-stress:link-2",
+                "fromNodeId": "node:food-export-compound-stress:commodity"
+              }
+            ],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.5359362504999999,
+            "impact": 0.4828116074999999,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5359362504999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.41041,
+                "edgeId": "edge:food-export-compound-stress:link-1",
+                "fromNodeId": "node:food-export-compound-stress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.41040999999999994,
+            "impact": 0.35177999999999987,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.41040999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33839014856569993,
+                "edgeId": "edge:food-export-compound-stress:link-3",
+                "fromNodeId": "node:food-export-compound-stress:exports"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33839014856569993,
+            "impact": 0.25650579918039995,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33839014856569993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19423594527671173,
+                "edgeId": "edge:food-export-compound-stress:link-4",
+                "fromNodeId": "node:food-export-compound-stress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19423594527671173,
+            "impact": 0.11948633654716219,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19423594527671173
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.3451675032646041,
+        "totalWeightedPeakEnvelope": 0.39860995586883907,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0,
+            "impact": 0.33833333333333315,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.17199134199134203,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0,
+            "impact": 0.33833333333333315,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.17199134199134203,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.23889142694676116,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.531666666666667,
+            "endImpact": 0,
+            "impact": 0.531666666666667,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28605576999999993,
+                "edgeId": "edge:food-export-compound-stress:link-2",
+                "fromNodeId": "node:food-export-compound-stress:commodity"
+              }
+            ],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0.28605576999999993,
+            "impact": 0.5152111511166669,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5359362504999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.41041,
+                "edgeId": "edge:food-export-compound-stress:link-1",
+                "fromNodeId": "node:food-export-compound-stress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.41040999999999994,
+            "impact": 0.3967296666666667,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.41040999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33839014856569993,
+                "edgeId": "edge:food-export-compound-stress:link-3",
+                "fromNodeId": "node:food-export-compound-stress:exports"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33839014856569993,
+            "impact": 0.31928380037579657,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33839014856569993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19423594527671173,
+                "edgeId": "edge:food-export-compound-stress:link-4",
+                "fromNodeId": "node:food-export-compound-stress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19423594527671173,
+            "impact": 0.17679436990648364,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19423594527671173
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.3808160992971152,
+        "totalWeightedPeakEnvelope": 0.39860995586883907,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.11277777777777773,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.05733044733044735,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.11277777777777773,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.05733044733044735,
+        "totalWeightedPeakEnvelope": 0.17792207792207795,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.1772222222222223,
+            "endImpact": 0,
+            "impact": 0.1772222222222223,
+            "nodeId": "node:food-export-compound-stress:production",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28605576999999993,
+                "edgeId": "edge:food-export-compound-stress:link-2",
+                "fromNodeId": "node:food-export-compound-stress:commodity"
+              }
+            ],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.17491544781666676,
+            "nodeId": "node:food-export-compound-stress:exports",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5359362504999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.41041,
+                "edgeId": "edge:food-export-compound-stress:link-1",
+                "fromNodeId": "node:food-export-compound-stress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.13224322222222223,
+            "nodeId": "node:food-export-compound-stress:commodity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.41040999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33839014856569993,
+                "edgeId": "edge:food-export-compound-stress:link-3",
+                "fromNodeId": "node:food-export-compound-stress:exports"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.11044161375144332,
+            "nodeId": "node:food-export-compound-stress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33839014856569993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19423594527671173,
+                "edgeId": "edge:food-export-compound-stress:link-4",
+                "fromNodeId": "node:food-export-compound-stress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.0633934862933285,
+            "nodeId": "node:food-export-compound-stress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19423594527671173
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "food-export-compound-stress",
+        "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+        "totalWeightedImpact": 0.12928942213145903,
+        "totalWeightedPeakEnvelope": 0.39860995586883907,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:food-export-compound-stress:production",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.11277777777777773,
+        "nodeId": "node:food-export-compound-stress:exports",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.35
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:commodity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:food-export-compound-stress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "food-export-compound-stress",
+    "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+    "totalWeightedImpact": 0.05733044733044735,
+    "totalWeightedPeakEnvelope": 0.17792207792207795,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.1772222222222223,
+        "endImpact": 0,
+        "impact": 0.1772222222222223,
+        "nodeId": "node:food-export-compound-stress:production",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.28605576999999993,
+            "edgeId": "edge:food-export-compound-stress:link-2",
+            "fromNodeId": "node:food-export-compound-stress:commodity"
+          }
+        ],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.17491544781666676,
+        "nodeId": "node:food-export-compound-stress:exports",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.5359362504999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.41041,
+            "edgeId": "edge:food-export-compound-stress:link-1",
+            "fromNodeId": "node:food-export-compound-stress:production"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.13224322222222223,
+        "nodeId": "node:food-export-compound-stress:commodity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.41040999999999994
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.33839014856569993,
+            "edgeId": "edge:food-export-compound-stress:link-3",
+            "fromNodeId": "node:food-export-compound-stress:exports"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.11044161375144332,
+        "nodeId": "node:food-export-compound-stress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.33839014856569993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.19423594527671173,
+            "edgeId": "edge:food-export-compound-stress:link-4",
+            "fromNodeId": "node:food-export-compound-stress:distribution"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.0633934862933285,
+        "nodeId": "node:food-export-compound-stress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.19423594527671173
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "food-export-compound-stress",
+    "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+    "totalWeightedImpact": 0.12928942213145903,
+    "totalWeightedPeakEnvelope": 0.39860995586883907,
+    "warnings": []
+  }
+}

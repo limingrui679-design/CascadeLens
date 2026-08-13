@@ -1,0 +1,116 @@
+{
+  "classification": "quasi_historical",
+  "constraints": {
+    "budget": 22,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:baltimore-port-restress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.35,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:baltimore-port-restress:buffer",
+      "label": "Increase inland inventory",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:baltimore-port-restress:terminal"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 13,
+      "costUnit": "normalized_cost",
+      "effect": 0.5,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:baltimore-port-restress:diversify",
+      "label": "Diversify port gateways",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:baltimore-port-restress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:baltimore-port-restress:reroute",
+      "label": "Redirect cargo to alternate ports",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:baltimore-port-restress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "The case is not an engineering reconstruction or estimate of the 2024 incident's realized losses."
+  ],
+  "objectives": [
+    {
+      "id": "objective:baltimore-port-restress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:baltimore-port-restress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "baltimore-port-restress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:baltimore-port-restress:primary",
+      "label": "Port access disabled",
+      "magnitude": 1,
+      "operation": "disable",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:baltimore-port-restress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:baltimore-port-restress:port-access"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
+  "title": "Baltimore port access re-stress"
+}

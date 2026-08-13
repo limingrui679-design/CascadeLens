@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3336,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:ukraine-commodity-compound-restress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "2c9b12d9367935641f2f6766dfe6c1228d7fb7bca815273c0b033cd7a72eb18f",
+    "title": "Food, fertilizer, and energy compound re-stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/ukraine-commodity-compound-restress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2022-04-26T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:ukraine-commodity-compound-restress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+    },
+    "publishedAt": "2022-04-26T00:00:00Z",
+    "publisher": "World Bank",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "caabe432d73b6bbc97348cc2e89431dd528154e6a3c6e2c7c69ae41afbd344db",
+    "title": "Food and Energy Price Shocks from Ukraine War",
+    "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+  }
+]

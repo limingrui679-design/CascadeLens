@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.03967661691542291,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.03967661691542291,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.10360738872995993,
+    "worstCaseImpact": 0.10360738872995993
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.10360738872995993,
+      "worstCaseImpact": 0.10360738872995993
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.081231618594872,
+      "worstCaseImpact": 0.081231618594872
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07803508000414515,
+      "worstCaseImpact": 0.07803508000414515
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:diversify"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08636943400013754,
+      "worstCaseImpact": 0.08636943400013754
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06460961792309235,
+      "worstCaseImpact": 0.06460961792309235
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:diversify"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07002694802048742,
+      "worstCaseImpact": 0.07002694802048742
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:diversify",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:diversify",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.10360738872995993,
+      "worstCaseImpact": 0.10360738872995993
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.081231618594872,
+      "worstCaseImpact": 0.081231618594872
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07803508000414515,
+      "worstCaseImpact": 0.07803508000414515
+    },
+    {
+      "centralImpact": 0.03967661691542291,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "lowerImpact": 0.03967661691542291,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06460961792309235,
+      "worstCaseImpact": 0.06460961792309235
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:semiconductor-capacity-restress:buffer",
+    "intervention:semiconductor-capacity-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 357.52959347106565,
+      "toBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 938.5151828615451,
+      "toBundleIds": [
+        "intervention:semiconductor-capacity-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 595.8826557851075,
+      "toBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "semiconductor-capacity-restress"
+}

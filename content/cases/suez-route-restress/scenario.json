@@ -1,0 +1,116 @@
+{
+  "classification": "quasi_historical",
+  "constraints": {
+    "budget": 22,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:suez-route-restress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.35,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:suez-route-restress:buffer",
+      "label": "Increase input buffer",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:suez-route-restress:maritime-inputs"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 13,
+      "costUnit": "normalized_cost",
+      "effect": 0.5,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:suez-route-restress:diversify",
+      "label": "Diversify assembly inputs",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:suez-route-restress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:suez-route-restress:reroute",
+      "label": "Use alternate maritime routing",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:suez-route-restress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "The topology and all dependency weights are research assumptions, not reconstructed 2021 trade flows."
+  ],
+  "objectives": [
+    {
+      "id": "objective:suez-route-restress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:suez-route-restress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "suez-route-restress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:suez-route-restress:primary",
+      "label": "Suez route unavailable",
+      "magnitude": 1,
+      "operation": "disable",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:suez-route-restress:suez"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
+  "title": "Suez route closure re-stress"
+}

@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:ofac-list-change-stress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:ofac-list-change-stress:link-1",
+      "lower": 0.53,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Assumed dependency from Sanctions-list change to Counterparty screening queue.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.89,
+      "value": 0.73
+    },
+    {
+      "id": "assumption:ofac-list-change-stress:link-2",
+      "lower": 0.39,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Assumed dependency from Counterparty screening queue to Payment processing continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.75,
+      "value": 0.59
+    },
+    {
+      "id": "assumption:ofac-list-change-stress:link-3",
+      "lower": 0.37,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Assumed dependency from Payment processing continuity to Supplier transaction continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.73,
+      "value": 0.57
+    },
+    {
+      "id": "assumption:ofac-list-change-stress:link-4",
+      "lower": 0.25,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Assumed dependency from Supplier transaction continuity to Order delivery continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.61,
+      "value": 0.45
+    },
+    {
+      "id": "assumption:ofac-list-change-stress:link-5",
+      "lower": 0,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:ofac-list-change-stress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Sanctions-list change to Order delivery continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.34,
+      "value": 0.18
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "ofac-list-change-stress",
+  "status": "scenario_parameters_not_observations"
+}

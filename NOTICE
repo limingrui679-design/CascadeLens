@@ -1,0 +1,9 @@
+CascadeLens
+Copyright 2026 Mingrui Li
+
+This product includes software developed by third parties. The exact locked
+component inventory for each release is recorded in docs/release/sbom.cdx.json.
+
+The reference cases cite public source context, but their topology and numeric
+parameters are declared model assumptions. Data-source names and trademarks
+remain the property of their respective owners.

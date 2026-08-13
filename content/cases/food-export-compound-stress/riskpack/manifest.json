@@ -1,0 +1,26 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:food-export-compound-stress:v0.1.0",
+  "scenarioId": "food-export-compound-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

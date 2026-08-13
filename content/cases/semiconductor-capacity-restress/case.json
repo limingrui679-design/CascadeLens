@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2022-01-25T00:00:00Z",
+    "publisher": "U.S. Department of Commerce",
+    "title": "Results from Semiconductor Supply Chain Request for Information",
+    "uri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
+  },
+  "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
+  "domain": "Advanced manufacturing",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build semiconductor-capacity-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:semiconductor-capacity-restress:buffer",
+    "intervention:semiconductor-capacity-restress:reroute"
+  ],
+  "riskPackPath": "cases/semiconductor-capacity-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Semiconductors",
+  "slug": "semiconductor-capacity-restress",
+  "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+  "summary": "A forward-dated semiconductor capacity stress across assumed fabrication, component, assembly, and production dependencies.",
+  "tags": [
+    "semiconductors",
+    "manufacturing",
+    "capacity"
+  ],
+  "title": "Semiconductor capacity re-stress",
+  "totalWeightedImpact": {
+    "central": 0.03967661691542291,
+    "lower": 0.03967661691542291,
+    "upper": 0.10360738872995993
+  }
+}

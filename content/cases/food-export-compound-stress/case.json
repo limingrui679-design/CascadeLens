@@ -1,0 +1,38 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2020-01-01T00:00:00Z",
+    "publisher": "Food and Agriculture Organization of the United Nations",
+    "title": "FAOSTAT data portal",
+    "uri": "https://www.fao.org/faostat/en/"
+  },
+  "decisionQuestion": "Which reserve and diversification choices stay on the Pareto frontier under a two-channel food stress?",
+  "domain": "Agriculture and trade",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build food-export-compound-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:food-export-compound-stress:buffer",
+    "intervention:food-export-compound-stress:reroute"
+  ],
+  "riskPackPath": "cases/food-export-compound-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Food export compound",
+  "slug": "food-export-compound-stress",
+  "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+  "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
+  "tags": [
+    "food",
+    "trade",
+    "compound"
+  ],
+  "title": "Food production and export-restriction compound stress",
+  "totalWeightedImpact": {
+    "central": 0.05733044733044735,
+    "lower": 0.05733044733044735,
+    "upper": 0.12928942213145903
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "contentDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "from": "node:food-export-compound-stress:production",
+      "id": "edge:food-export-compound-stress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:food-export-compound-stress:commodity",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.55,
+        "unit": "share",
+        "upper": 0.91,
+        "value": 0.75
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "from": "node:food-export-compound-stress:commodity",
+      "id": "edge:food-export-compound-stress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:food-export-compound-stress:exports",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.49,
+        "unit": "share",
+        "upper": 0.85,
+        "value": 0.69
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "from": "node:food-export-compound-stress:exports",
+      "id": "edge:food-export-compound-stress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:food-export-compound-stress:distribution",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.41,
+        "unit": "share",
+        "upper": 0.77,
+        "value": 0.61
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "from": "node:food-export-compound-stress:distribution",
+      "id": "edge:food-export-compound-stress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:food-export-compound-stress:affordability",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.34,
+        "unit": "share",
+        "upper": 0.7,
+        "value": 0.54
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "id": "node:food-export-compound-stress:affordability",
+      "kind": "metric",
+      "label": "Food affordability continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.8,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "id": "node:food-export-compound-stress:commodity",
+      "kind": "product",
+      "label": "Tradable food commodity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "id": "node:food-export-compound-stress:distribution",
+      "kind": "industry",
+      "label": "Import-market distribution",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "id": "node:food-export-compound-stress:exports",
+      "kind": "policy",
+      "label": "Export availability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "id": "node:food-export-compound-stress:production",
+      "kind": "industry",
+      "label": "Food production capacity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:food-export-compound-stress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3208,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:food-export-compound-stress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "f2ed1fed1b92be29280b809ddb8f26d80b06fe127cca5c6ecaae0d34c64c860b",
+      "title": "Food production and export-restriction compound stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/food-export-compound-stress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2020-01-01T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:food-export-compound-stress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.fao.org/faostat/en/"
+      },
+      "publishedAt": "2020-01-01T00:00:00Z",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "ae1247ade301a93bb1a966f01a7472bf4b9752986d9ad4f6b1fc0fab9d4785f5",
+      "title": "FAOSTAT data portal",
+      "uri": "https://www.fao.org/faostat/en/"
+    }
+  ],
+  "title": "Food production and export-restriction compound stress assumed topology"
+}

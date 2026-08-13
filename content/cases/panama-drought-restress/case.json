@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2023-10-03T00:00:00Z",
+    "publisher": "Panama Canal Authority",
+    "title": "Panama Canal Authority adapts to unprecedented challenges",
+    "uri": "https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/"
+  },
+  "decisionQuestion": "When does route diversification become preferable to inventory buffering under a canal-capacity constraint?",
+  "domain": "Climate and logistics",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build panama-drought-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:panama-drought-restress:buffer",
+    "intervention:panama-drought-restress:reroute"
+  ],
+  "riskPackPath": "cases/panama-drought-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Panama drought",
+  "slug": "panama-drought-restress",
+  "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+  "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
+  "tags": [
+    "climate",
+    "canal",
+    "shipping"
+  ],
+  "title": "Panama Canal drought re-stress",
+  "totalWeightedImpact": {
+    "central": 0.03029850746268655,
+    "lower": 0.03029850746268655,
+    "upper": 0.07523915649015667
+  }
+}

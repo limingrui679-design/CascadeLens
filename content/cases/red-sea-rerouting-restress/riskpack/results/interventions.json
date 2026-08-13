@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.04975490196078431,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.04975490196078431,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.12471695866382147,
+    "worstCaseImpact": 0.12471695866382147
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.12471695866382147,
+      "worstCaseImpact": 0.12471695866382147
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09848023881775847,
+      "worstCaseImpact": 0.09848023881775847
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09473213598260664,
+      "worstCaseImpact": 0.09473213598260664
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:diversify"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10297269501818525,
+      "worstCaseImpact": 0.10297269501818525
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07899010407496881,
+      "worstCaseImpact": 0.07899010407496881
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:diversify"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08434646744809492,
+      "worstCaseImpact": 0.08434646744809492
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:diversify",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:diversify",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.12471695866382147,
+      "worstCaseImpact": 0.12471695866382147
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09848023881775847,
+      "worstCaseImpact": 0.09848023881775847
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09473213598260664,
+      "worstCaseImpact": 0.09473213598260664
+    },
+    {
+      "centralImpact": 0.04975490196078431,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "lowerImpact": 0.04975490196078431,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07899010407496881,
+      "worstCaseImpact": 0.07899010407496881
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:red-sea-rerouting-restress:buffer",
+    "intervention:red-sea-rerouting-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 304.9161650899152,
+      "toBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 800.4049333610341,
+      "toBundleIds": [
+        "intervention:red-sea-rerouting-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 508.19360848319104,
+      "toBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "red-sea-rerouting-restress"
+}

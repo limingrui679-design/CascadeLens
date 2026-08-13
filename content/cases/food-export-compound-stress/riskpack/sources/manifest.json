@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 3208,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:food-export-compound-stress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "f2ed1fed1b92be29280b809ddb8f26d80b06fe127cca5c6ecaae0d34c64c860b",
+    "title": "Food production and export-restriction compound stress local assumption register",
+    "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/food-export-compound-stress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2020-01-01T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:food-export-compound-stress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.fao.org/faostat/en/"
+    },
+    "publishedAt": "2020-01-01T00:00:00Z",
+    "publisher": "Food and Agriculture Organization of the United Nations",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "ae1247ade301a93bb1a966f01a7472bf4b9752986d9ad4f6b1fc0fab9d4785f5",
+    "title": "FAOSTAT data portal",
+    "uri": "https://www.fao.org/faostat/en/"
+  }
+]

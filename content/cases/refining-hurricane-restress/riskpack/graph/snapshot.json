@@ -1,0 +1,265 @@
+{
+  "contentDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "from": "node:refining-hurricane-restress:refining",
+      "id": "edge:refining-hurricane-restress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:refining-hurricane-restress:fuel",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.59,
+        "unit": "share",
+        "upper": 0.95,
+        "value": 0.79
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "from": "node:refining-hurricane-restress:fuel",
+      "id": "edge:refining-hurricane-restress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:refining-hurricane-restress:transport",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.45,
+        "unit": "share",
+        "upper": 0.81,
+        "value": 0.65
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "from": "node:refining-hurricane-restress:transport",
+      "id": "edge:refining-hurricane-restress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:refining-hurricane-restress:distribution",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.38,
+        "unit": "share",
+        "upper": 0.74,
+        "value": 0.58
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "from": "node:refining-hurricane-restress:distribution",
+      "id": "edge:refining-hurricane-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:refining-hurricane-restress:services",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.3,
+        "unit": "share",
+        "upper": 0.66,
+        "value": 0.5
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "id": "node:refining-hurricane-restress:distribution",
+      "kind": "industry",
+      "label": "Regional distribution",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "id": "node:refining-hurricane-restress:fuel",
+      "kind": "product",
+      "label": "Transport fuel availability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "id": "node:refining-hurricane-restress:refining",
+      "kind": "facility",
+      "label": "Regional refining capacity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "id": "node:refining-hurricane-restress:services",
+      "kind": "metric",
+      "label": "Essential service continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.7,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "id": "node:refining-hurricane-restress:transport",
+      "kind": "industry",
+      "label": "Freight transport operations",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:refining-hurricane-restress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3225,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:refining-hurricane-restress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "5b36d52b9e2833db7accc8be81b7f5209a49fd827ef5b75b197768b2651ef30c",
+      "title": "Hurricane refining re-stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/refining-hurricane-restress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2021-09-16T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:refining-hurricane-restress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
+      },
+      "publishedAt": "2021-09-16T00:00:00Z",
+      "publisher": "U.S. Energy Information Administration",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "87b3263f213b3f40f30188f1dc63401ac536509e99c768b50fafa23834856b5e",
+      "title": "Hurricane Ida caused widespread refinery and pipeline outages",
+      "uri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
+    }
+  ],
+  "title": "Hurricane refining re-stress assumed topology"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascadelens.dev/schemas/riskpack-manifest-0.1.0.schema.json",
+  "title": "CascadeLens RiskPack manifest 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "engineVersion", "packId", "scenarioId", "classification", "generatedAt", "snapshotDigest", "files", "truthfulStatus"],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "engineVersion": { "const": "0.1.0" },
+    "packId": { "$ref": "#/$defs/id" },
+    "scenarioId": { "$ref": "#/$defs/id" },
+    "classification": { "enum": ["historical_replay", "quasi_historical", "synthetic_stress"] },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "snapshotDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "files": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$" } },
+    "truthfulStatus": { "type": "array", "uniqueItems": true, "items": { "enum": ["observed", "entity_reported", "third_party_verified", "text_extracted", "model_inferred", "historically_scored", "scenario_only"] } }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{1,127}$" }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.06444444444444446,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.06444444444444446,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.16360629134473204,
+    "worstCaseImpact": 0.16360629134473204
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.16360629134473204,
+      "worstCaseImpact": 0.16360629134473204
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.12889964492963138,
+      "worstCaseImpact": 0.12889964492963138
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.123941552584617,
+      "worstCaseImpact": 0.123941552584617
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:diversify"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.13459405165527202,
+      "worstCaseImpact": 0.13459405165527202
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10311756473555661,
+      "worstCaseImpact": 0.10311756473555661
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:diversify"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11004168913148238,
+      "worstCaseImpact": 0.11004168913148238
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:suez-route-restress:diversify",
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:diversify",
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.16360629134473204,
+      "worstCaseImpact": 0.16360629134473204
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.12889964492963138,
+      "worstCaseImpact": 0.12889964492963138
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.123941552584617,
+      "worstCaseImpact": 0.123941552584617
+    },
+    {
+      "centralImpact": 0.06444444444444446,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ],
+      "lowerImpact": 0.06444444444444446,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10311756473555661,
+      "worstCaseImpact": 0.10311756473555661
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:suez-route-restress:buffer",
+    "intervention:suez-route-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 230.5033999631623,
+      "toBundleIds": [
+        "intervention:suez-route-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:suez-route-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 605.0714249033016,
+      "toBundleIds": [
+        "intervention:suez-route-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:suez-route-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 384.1723332719372,
+      "toBundleIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "suez-route-restress"
+}

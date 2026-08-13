@@ -1,0 +1,25 @@
+name: Connector proposal
+description: Propose a documented source connector.
+title: "[Connector] "
+labels: [connector]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Official documentation URL
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: Access and redistribution terms
+      description: Distinguish raw payload, normalized output, and manifest rights.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Interpretive boundary
+      description: State what the source cannot establish.
+    validations:
+      required: true

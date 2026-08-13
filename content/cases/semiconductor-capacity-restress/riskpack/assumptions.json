@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:semiconductor-capacity-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:link-1",
+      "lower": 0.61,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Assumed dependency from Semiconductor fabrication capacity to Application-specific chips.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.97,
+      "value": 0.81
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:link-2",
+      "lower": 0.46,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Assumed dependency from Application-specific chips to Electronic modules.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.82,
+      "value": 0.66
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:link-3",
+      "lower": 0.42,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Assumed dependency from Electronic modules to Downstream manufacturing.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.78,
+      "value": 0.62
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:link-4",
+      "lower": 0.24,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Assumed dependency from Downstream manufacturing to Finished-goods deliveries.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.6,
+      "value": 0.44
+    },
+    {
+      "id": "assumption:semiconductor-capacity-restress:link-5",
+      "lower": 0,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:semiconductor-capacity-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Semiconductor fabrication capacity to Finished-goods deliveries.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.35,
+      "value": 0.19
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "semiconductor-capacity-restress",
+  "status": "scenario_parameters_not_observations"
+}

@@ -1,0 +1,26 @@
+{
+  "classification": "quasi_historical",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:refining-hurricane-restress:v0.1.0",
+  "scenarioId": "refining-hurricane-restress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

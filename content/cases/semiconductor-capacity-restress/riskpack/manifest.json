@@ -1,0 +1,26 @@
+{
+  "classification": "quasi_historical",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:semiconductor-capacity-restress:v0.1.0",
+  "scenarioId": "semiconductor-capacity-restress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

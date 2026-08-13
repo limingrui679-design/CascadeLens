@@ -1,0 +1,466 @@
+{
+  "caseCount": 12,
+  "cases": [
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2021-03-31T00:00:00Z",
+        "publisher": "Suez Canal Authority",
+        "title": "Navigation in the Suez Canal restored after the Ever Given incident",
+        "uri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+      },
+      "decisionQuestion": "Which bounded intervention remains feasible if the Suez route becomes unavailable for a short planning horizon?",
+      "domain": "Maritime trade",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build suez-route-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ],
+      "riskPackPath": "cases/suez-route-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Suez route",
+      "slug": "suez-route-restress",
+      "snapshotDigest": "08023ab864448fb262c7306cc23d259e8219032ec63801811287e7f02613565e",
+      "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
+      "tags": [
+        "shipping",
+        "route",
+        "trade"
+      ],
+      "title": "Suez route closure re-stress",
+      "totalWeightedImpact": {
+        "central": 0.06444444444444446,
+        "lower": 0.06444444444444446,
+        "upper": 0.16360629134473204
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2022-01-25T00:00:00Z",
+        "publisher": "U.S. Department of Commerce",
+        "title": "Results from Semiconductor Supply Chain Request for Information",
+        "uri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
+      },
+      "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
+      "domain": "Advanced manufacturing",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build semiconductor-capacity-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ],
+      "riskPackPath": "cases/semiconductor-capacity-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Semiconductors",
+      "slug": "semiconductor-capacity-restress",
+      "snapshotDigest": "b2d0526b8cd42432281ce69af3b5d306048150ef5308a740debc775e4e8f2135",
+      "summary": "A forward-dated semiconductor capacity stress across assumed fabrication, component, assembly, and production dependencies.",
+      "tags": [
+        "semiconductors",
+        "manufacturing",
+        "capacity"
+      ],
+      "title": "Semiconductor capacity re-stress",
+      "totalWeightedImpact": {
+        "central": 0.03967661691542291,
+        "lower": 0.03967661691542291,
+        "upper": 0.10360738872995993
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2020-03-03T00:00:00Z",
+        "publisher": "World Health Organization",
+        "title": "Shortage of personal protective equipment endangering health workers worldwide",
+        "uri": "https://www.who.int/news/item/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide"
+      },
+      "decisionQuestion": "Which feasible supply intervention best limits bounded access disruption during a PPE demand surge?",
+      "domain": "Public health supply",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build medical-ppe-demand-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "riskPackPath": "cases/medical-ppe-demand-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Medical PPE",
+      "slug": "medical-ppe-demand-restress",
+      "snapshotDigest": "059b335c7b08bcc0be3dc9d32333482360a775aaff68a264780f264dd11979a7",
+      "summary": "A forward-dated demand surge across an assumed personal-protective-equipment supply and care-delivery topology.",
+      "tags": [
+        "health",
+        "PPE",
+        "demand"
+      ],
+      "title": "Medical PPE demand re-stress",
+      "totalWeightedImpact": {
+        "central": 0.02970550576184377,
+        "lower": 0.02970550576184377,
+        "upper": 0.08986450645873557
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2022-04-26T00:00:00Z",
+        "publisher": "World Bank",
+        "title": "Food and Energy Price Shocks from Ukraine War",
+        "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+      },
+      "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
+      "domain": "Food and energy",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build ukraine-commodity-compound-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ],
+      "riskPackPath": "cases/ukraine-commodity-compound-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Commodity compound",
+      "slug": "ukraine-commodity-compound-restress",
+      "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+      "summary": "A compound forward stress joining assumed food, fertilizer, energy, logistics, and affordability dependencies.",
+      "tags": [
+        "food",
+        "fertilizer",
+        "energy",
+        "compound"
+      ],
+      "title": "Food, fertilizer, and energy compound re-stress",
+      "totalWeightedImpact": {
+        "central": 0.06444444444444444,
+        "lower": 0.06444444444444444,
+        "upper": 0.13421702159839816
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2023-10-03T00:00:00Z",
+        "publisher": "Panama Canal Authority",
+        "title": "Panama Canal Authority adapts to unprecedented challenges",
+        "uri": "https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/"
+      },
+      "decisionQuestion": "When does route diversification become preferable to inventory buffering under a canal-capacity constraint?",
+      "domain": "Climate and logistics",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build panama-drought-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ],
+      "riskPackPath": "cases/panama-drought-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Panama drought",
+      "slug": "panama-drought-restress",
+      "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+      "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
+      "tags": [
+        "climate",
+        "canal",
+        "shipping"
+      ],
+      "title": "Panama Canal drought re-stress",
+      "totalWeightedImpact": {
+        "central": 0.03029850746268655,
+        "lower": 0.03029850746268655,
+        "upper": 0.07523915649015667
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2024-02-22T00:00:00Z",
+        "publisher": "UN Trade and Development",
+        "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes",
+        "uri": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black"
+      },
+      "decisionQuestion": "Which intervention minimizes upper-bound continuity loss when vessels avoid the Red Sea route?",
+      "domain": "Geopolitics and shipping",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build red-sea-rerouting-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ],
+      "riskPackPath": "cases/red-sea-rerouting-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Red Sea routing",
+      "slug": "red-sea-rerouting-restress",
+      "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+      "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
+      "tags": [
+        "shipping",
+        "geopolitics",
+        "rerouting"
+      ],
+      "title": "Red Sea rerouting re-stress",
+      "totalWeightedImpact": {
+        "central": 0.04975490196078431,
+        "lower": 0.04975490196078431,
+        "upper": 0.12471695866382147
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2024-06-24T00:00:00Z",
+        "publisher": "National Transportation Safety Board",
+        "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
+        "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
+      },
+      "decisionQuestion": "How do alternate ports and inventory buffers compare under a sudden port-access loss?",
+      "domain": "Port infrastructure",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build baltimore-port-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:baltimore-port-restress:buffer",
+        "intervention:baltimore-port-restress:reroute"
+      ],
+      "riskPackPath": "cases/baltimore-port-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Baltimore port",
+      "slug": "baltimore-port-restress",
+      "snapshotDigest": "35bf5435f23718dc46811ddb9be11f7a88f93943db5a983ae644aea3e3fc03f1",
+      "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
+      "tags": [
+        "port",
+        "infrastructure",
+        "logistics"
+      ],
+      "title": "Baltimore port access re-stress",
+      "totalWeightedImpact": {
+        "central": 0.06940170940170941,
+        "lower": 0.06940170940170941,
+        "upper": 0.17996741091444057
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2021-09-16T00:00:00Z",
+        "publisher": "U.S. Energy Information Administration",
+        "title": "Hurricane Ida caused widespread refinery and pipeline outages",
+        "uri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
+      },
+      "decisionQuestion": "Which reserve, rerouting, or demand-management bundle is feasible under bounded refining disruption?",
+      "domain": "Energy infrastructure",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build refining-hurricane-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "riskPackPath": "cases/refining-hurricane-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Refining hurricane",
+      "slug": "refining-hurricane-restress",
+      "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+      "summary": "A forward-dated refining-capacity interruption across assumed fuel, transport, distribution, and essential-service links.",
+      "tags": [
+        "energy",
+        "hurricane",
+        "refining"
+      ],
+      "title": "Hurricane refining re-stress",
+      "totalWeightedImpact": {
+        "central": 0.04245495495495495,
+        "lower": 0.04245495495495495,
+        "upper": 0.11575746634170472
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2026-02-19T00:00:00Z",
+        "publisher": "International Energy Agency",
+        "title": "2026 IEA Ministerial Declaration supporting critical-minerals security",
+        "uri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
+      },
+      "decisionQuestion": "What is the value of diversification and additional evidence under a concentrated critical-mineral dependency?",
+      "domain": "Minerals and technology",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build critical-minerals-export-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "riskPackPath": "cases/critical-minerals-export-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Critical minerals",
+      "slug": "critical-minerals-export-stress",
+      "snapshotDigest": "db6bc9e6ad54a2c42e14d431fd31a544633b84fb46a8a45f284d12831dee6814",
+      "summary": "A synthetic export-control stress across an assumed mineral, component, manufacturing, and infrastructure chain.",
+      "tags": [
+        "minerals",
+        "technology",
+        "export-controls"
+      ],
+      "title": "Critical-minerals export-control stress",
+      "totalWeightedImpact": {
+        "central": 0.04385802469135801,
+        "lower": 0.04385802469135801,
+        "upper": 0.13487336364594885
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2024-05-06T00:00:00Z",
+        "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+        "title": "Sanctions List Service",
+        "uri": "https://ofac.treasury.gov/sanctions-list-service"
+      },
+      "decisionQuestion": "Which operational safeguard limits disruption while preserving a fail-closed compliance boundary?",
+      "domain": "Financial and compliance operations",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build ofac-list-change-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "riskPackPath": "cases/ofac-list-change-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Sanctions change",
+      "slug": "ofac-list-change-stress",
+      "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+      "summary": "A synthetic operational stress exploring how a sanctions-list change could affect assumed screening, payment, supplier, and delivery dependencies.",
+      "tags": [
+        "sanctions",
+        "finance",
+        "compliance"
+      ],
+      "title": "Sanctions-list change stress",
+      "totalWeightedImpact": {
+        "central": 0.03735909822866346,
+        "lower": 0.03735909822866346,
+        "upper": 0.08780815155668417
+      }
+    },
+    {
+      "classification": "quasi_historical",
+      "context": {
+        "availableAt": "2023-01-01T00:00:00Z",
+        "publisher": "U.S. Food and Drug Administration",
+        "title": "openFDA Drug Shortages API",
+        "uri": "https://open.fda.gov/apis/drug/drugshortages/"
+      },
+      "decisionQuestion": "Which bounded supply intervention remains feasible when a medicine becomes constrained?",
+      "domain": "Medicines",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build drug-shortage-restress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "riskPackPath": "cases/drug-shortage-restress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Drug shortage",
+      "slug": "drug-shortage-restress",
+      "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+      "summary": "A forward-dated medicine-supply stress across assumed manufacturer, wholesaler, care-site, and treatment-access links.",
+      "tags": [
+        "medicine",
+        "shortage",
+        "health"
+      ],
+      "title": "Drug-shortage re-stress",
+      "totalWeightedImpact": {
+        "central": 0.044093567251462,
+        "lower": 0.044093567251462,
+        "upper": 0.11331852398178344
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2020-01-01T00:00:00Z",
+        "publisher": "Food and Agriculture Organization of the United Nations",
+        "title": "FAOSTAT data portal",
+        "uri": "https://www.fao.org/faostat/en/"
+      },
+      "decisionQuestion": "Which reserve and diversification choices stay on the Pareto frontier under a two-channel food stress?",
+      "domain": "Agriculture and trade",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build food-export-compound-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:food-export-compound-stress:buffer",
+        "intervention:food-export-compound-stress:reroute"
+      ],
+      "riskPackPath": "cases/food-export-compound-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Food export compound",
+      "slug": "food-export-compound-stress",
+      "snapshotDigest": "5a08e2fb25c7e448a759feb84254e6adf85c1e20fec0e909b70c81ccb11e7ac0",
+      "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
+      "tags": [
+        "food",
+        "trade",
+        "compound"
+      ],
+      "title": "Food production and export-restriction compound stress",
+      "totalWeightedImpact": {
+        "central": 0.05733044733044735,
+        "lower": 0.05733044733044735,
+        "upper": 0.12928942213145903
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "historicallyScoredCaseCount": 0,
+  "schemaVersion": "0.1.0",
+  "status": "reference_cases_not_empirical_validation"
+}

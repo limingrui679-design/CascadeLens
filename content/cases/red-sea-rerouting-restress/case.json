@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2024-02-22T00:00:00Z",
+    "publisher": "UN Trade and Development",
+    "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes",
+    "uri": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black"
+  },
+  "decisionQuestion": "Which intervention minimizes upper-bound continuity loss when vessels avoid the Red Sea route?",
+  "domain": "Geopolitics and shipping",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build red-sea-rerouting-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:red-sea-rerouting-restress:buffer",
+    "intervention:red-sea-rerouting-restress:reroute"
+  ],
+  "riskPackPath": "cases/red-sea-rerouting-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Red Sea routing",
+  "slug": "red-sea-rerouting-restress",
+  "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+  "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
+  "tags": [
+    "shipping",
+    "geopolitics",
+    "rerouting"
+  ],
+  "title": "Red Sea rerouting re-stress",
+  "totalWeightedImpact": {
+    "central": 0.04975490196078431,
+    "lower": 0.04975490196078431,
+    "upper": 0.12471695866382147
+  }
+}

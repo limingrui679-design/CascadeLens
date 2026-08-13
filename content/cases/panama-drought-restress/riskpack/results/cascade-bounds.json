@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.14499999999999993,
+        "endImpact": 0,
+        "impact": 0.14499999999999993,
+        "nodeId": "node:panama-drought-restress:canal",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:inventory",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:service",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:shipping",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "panama-drought-restress",
+    "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+    "totalWeightedImpact": 0.03029850746268655,
+    "totalWeightedPeakEnvelope": 0.09402985074626864,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.09402985074626864,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.45000000000000007,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.45000000000000007,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.09402985074626866,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.09402985074626864,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.45000000000000007,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.45000000000000007,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.09402985074626866,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.23350083048669312,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.45000000000000007,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.45000000000000007,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.34317,
+                "edgeId": "edge:panama-drought-restress:link-1",
+                "fromNodeId": "node:panama-drought-restress:canal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.34317,
+            "impact": 0.2941457142857143,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.34317
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19697957999999996,
+                "edgeId": "edge:panama-drought-restress:link-2",
+                "fromNodeId": "node:panama-drought-restress:shipping"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19697957999999993,
+            "impact": 0.14069969999999996,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19697957999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.12275767425599995,
+                "edgeId": "edge:panama-drought-restress:link-3",
+                "fromNodeId": "node:panama-drought-restress:inventory"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.12275767425599993,
+            "impact": 0.07014724243199996,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.12275767425599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.06341661452064956,
+                "edgeId": "edge:panama-drought-restress:link-4",
+                "fromNodeId": "node:panama-drought-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.06341661452064962,
+            "impact": 0.02717854908027841,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.06341661452064962
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.19499066337242077,
+        "totalWeightedPeakEnvelope": 0.23350083048669312,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4349999999999998,
+            "endImpact": 0,
+            "impact": 0.4349999999999998,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.09089552238805965,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4349999999999998,
+            "endImpact": 0,
+            "impact": 0.4349999999999998,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.09089552238805965,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.13947097974042452,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4349999999999998,
+            "endImpact": 0,
+            "impact": 0.4349999999999998,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.34317,
+                "edgeId": "edge:panama-drought-restress:link-1",
+                "fromNodeId": "node:panama-drought-restress:canal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.34317,
+            "impact": 0.33173099999999994,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.34317
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19697957999999996,
+                "edgeId": "edge:panama-drought-restress:link-2",
+                "fromNodeId": "node:panama-drought-restress:shipping"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19697957999999993,
+            "impact": 0.18384760799999986,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19697957999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.12275767425599995,
+                "edgeId": "edge:panama-drought-restress:link-3",
+                "fromNodeId": "node:panama-drought-restress:inventory"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.12275767425599993,
+            "impact": 0.11048190683039993,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.12275767425599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.06341661452064956,
+                "edgeId": "edge:panama-drought-restress:link-4",
+                "fromNodeId": "node:panama-drought-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.06341661452064962,
+            "impact": 0.05496106591789633,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.06341661452064962
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.2213807964684872,
+        "totalWeightedPeakEnvelope": 0.23350083048669312,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.14499999999999993,
+            "endImpact": 0,
+            "impact": 0.14499999999999993,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.03029850746268655,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.14499999999999993,
+            "endImpact": 0,
+            "impact": 0.14499999999999993,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.03029850746268655,
+        "totalWeightedPeakEnvelope": 0.09402985074626864,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.14499999999999993,
+            "endImpact": 0,
+            "impact": 0.14499999999999993,
+            "nodeId": "node:panama-drought-restress:canal",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.34317,
+                "edgeId": "edge:panama-drought-restress:link-1",
+                "fromNodeId": "node:panama-drought-restress:canal"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.110577,
+            "nodeId": "node:panama-drought-restress:shipping",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.34317
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19697957999999996,
+                "edgeId": "edge:panama-drought-restress:link-2",
+                "fromNodeId": "node:panama-drought-restress:shipping"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06347119799999995,
+            "nodeId": "node:panama-drought-restress:inventory",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19697957999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.12275767425599995,
+                "edgeId": "edge:panama-drought-restress:link-3",
+                "fromNodeId": "node:panama-drought-restress:inventory"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.039555250593599975,
+            "nodeId": "node:panama-drought-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.12275767425599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.06341661452064956,
+                "edgeId": "edge:panama-drought-restress:link-4",
+                "fromNodeId": "node:panama-drought-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.020434242456653765,
+            "nodeId": "node:panama-drought-restress:service",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.06341661452064962
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "panama-drought-restress",
+        "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+        "totalWeightedImpact": 0.07523915649015667,
+        "totalWeightedPeakEnvelope": 0.23350083048669312,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.14499999999999993,
+        "endImpact": 0,
+        "impact": 0.14499999999999993,
+        "nodeId": "node:panama-drought-restress:canal",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:inventory",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:service",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:panama-drought-restress:shipping",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "panama-drought-restress",
+    "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+    "totalWeightedImpact": 0.03029850746268655,
+    "totalWeightedPeakEnvelope": 0.09402985074626864,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.14499999999999993,
+        "endImpact": 0,
+        "impact": 0.14499999999999993,
+        "nodeId": "node:panama-drought-restress:canal",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.34317,
+            "edgeId": "edge:panama-drought-restress:link-1",
+            "fromNodeId": "node:panama-drought-restress:canal"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.110577,
+        "nodeId": "node:panama-drought-restress:shipping",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.34317
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.19697957999999996,
+            "edgeId": "edge:panama-drought-restress:link-2",
+            "fromNodeId": "node:panama-drought-restress:shipping"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06347119799999995,
+        "nodeId": "node:panama-drought-restress:inventory",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.19697957999999993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.12275767425599995,
+            "edgeId": "edge:panama-drought-restress:link-3",
+            "fromNodeId": "node:panama-drought-restress:inventory"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.039555250593599975,
+        "nodeId": "node:panama-drought-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.12275767425599993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.06341661452064956,
+            "edgeId": "edge:panama-drought-restress:link-4",
+            "fromNodeId": "node:panama-drought-restress:production"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.020434242456653765,
+        "nodeId": "node:panama-drought-restress:service",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.06341661452064962
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "panama-drought-restress",
+    "snapshotDigest": "b92680a8cda9f6d5aafa8563bda19feaa669770173136995e8b963bf402422f2",
+    "totalWeightedImpact": 0.07523915649015667,
+    "totalWeightedPeakEnvelope": 0.23350083048669312,
+    "warnings": []
+  }
+}

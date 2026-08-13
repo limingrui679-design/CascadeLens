@@ -1,0 +1,38 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2021-09-16T00:00:00Z",
+    "publisher": "U.S. Energy Information Administration",
+    "title": "Hurricane Ida caused widespread refinery and pipeline outages",
+    "uri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
+  },
+  "decisionQuestion": "Which reserve, rerouting, or demand-management bundle is feasible under bounded refining disruption?",
+  "domain": "Energy infrastructure",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build refining-hurricane-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:refining-hurricane-restress:buffer",
+    "intervention:refining-hurricane-restress:reroute"
+  ],
+  "riskPackPath": "cases/refining-hurricane-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Refining hurricane",
+  "slug": "refining-hurricane-restress",
+  "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+  "summary": "A forward-dated refining-capacity interruption across assumed fuel, transport, distribution, and essential-service links.",
+  "tags": [
+    "energy",
+    "hurricane",
+    "refining"
+  ],
+  "title": "Hurricane refining re-stress",
+  "totalWeightedImpact": {
+    "central": 0.04245495495495495,
+    "lower": 0.04245495495495495,
+    "upper": 0.11575746634170472
+  }
+}

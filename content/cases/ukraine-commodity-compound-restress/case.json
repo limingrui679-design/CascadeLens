@@ -1,0 +1,39 @@
+{
+  "classification": "quasi_historical",
+  "context": {
+    "availableAt": "2022-04-26T00:00:00Z",
+    "publisher": "World Bank",
+    "title": "Food and Energy Price Shocks from Ukraine War",
+    "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+  },
+  "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
+  "domain": "Food and energy",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build ukraine-commodity-compound-restress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:ukraine-commodity-compound-restress:buffer",
+    "intervention:ukraine-commodity-compound-restress:reroute"
+  ],
+  "riskPackPath": "cases/ukraine-commodity-compound-restress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Commodity compound",
+  "slug": "ukraine-commodity-compound-restress",
+  "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+  "summary": "A compound forward stress joining assumed food, fertilizer, energy, logistics, and affordability dependencies.",
+  "tags": [
+    "food",
+    "fertilizer",
+    "energy",
+    "compound"
+  ],
+  "title": "Food, fertilizer, and energy compound re-stress",
+  "totalWeightedImpact": {
+    "central": 0.06444444444444444,
+    "lower": 0.06444444444444444,
+    "upper": 0.13421702159839816
+  }
+}

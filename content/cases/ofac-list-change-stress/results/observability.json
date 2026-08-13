@@ -1,0 +1,13 @@
+[
+  {
+    "acquisitionCost": 3,
+    "candidateId": "candidate:ofac-list-change-stress:direct-link",
+    "expectedDecisionUncertaintyReduction": 0,
+    "expectedValueOfPerfectInformation": 0,
+    "expectedWorstCaseImpactReduction": 0,
+    "label": "Verify a possible direct dependency from Sanctions-list change to Order delivery continuity",
+    "netValue": -3,
+    "probabilityDecisionChanges": 0,
+    "status": "not_cost_effective"
+  }
+]

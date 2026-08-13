@@ -1,0 +1,78 @@
+{
+  "archives": [
+    {
+      "bytes": 11227,
+      "file": "suez-route-restress.zip",
+      "sha256": "cca4cb3a36cfabc7228a2c9b41b9dee977a2690132aee27bc75622f61178023b",
+      "slug": "suez-route-restress"
+    },
+    {
+      "bytes": 11713,
+      "file": "semiconductor-capacity-restress.zip",
+      "sha256": "1d52d7b51f5c8e530162f4074c1e23af384021f478e27458513b0235c5dadc56",
+      "slug": "semiconductor-capacity-restress"
+    },
+    {
+      "bytes": 11520,
+      "file": "medical-ppe-demand-restress.zip",
+      "sha256": "befa0caa2ed48f75caf9680bd9d020eba4bee43be32a0bb1b9dd16a450efb2e4",
+      "slug": "medical-ppe-demand-restress"
+    },
+    {
+      "bytes": 11957,
+      "file": "ukraine-commodity-compound-restress.zip",
+      "sha256": "f08603b380dad85335c3ac150caf97c8bccc739de7cf7d50dfe1f08b3bcd143d",
+      "slug": "ukraine-commodity-compound-restress"
+    },
+    {
+      "bytes": 11358,
+      "file": "panama-drought-restress.zip",
+      "sha256": "d5f2717288d3a38a3b9c44ca07a6f15dbb3de0261334294702bed3e7aa434d30",
+      "slug": "panama-drought-restress"
+    },
+    {
+      "bytes": 11502,
+      "file": "red-sea-rerouting-restress.zip",
+      "sha256": "98d713063532a7ba57d458e0012367866f3b9f1307d5b7bf7267effb7e2ea06a",
+      "slug": "red-sea-rerouting-restress"
+    },
+    {
+      "bytes": 11437,
+      "file": "baltimore-port-restress.zip",
+      "sha256": "5d84a8cc59fb2f16a57c0f8dfdedee21cd2eb1651cdbef2c8fab87846461083a",
+      "slug": "baltimore-port-restress"
+    },
+    {
+      "bytes": 11459,
+      "file": "refining-hurricane-restress.zip",
+      "sha256": "0c38cdabcc0666320a98b8df61f668f77d97b2885b136247ca77e331f94f144d",
+      "slug": "refining-hurricane-restress"
+    },
+    {
+      "bytes": 11650,
+      "file": "critical-minerals-export-stress.zip",
+      "sha256": "e863fdec3f07a0866965f9c60413af3a86d2b68afe030bfb3e388de178414763",
+      "slug": "critical-minerals-export-stress"
+    },
+    {
+      "bytes": 11338,
+      "file": "ofac-list-change-stress.zip",
+      "sha256": "d1c1e2d915b8c09caa5a7991e4d4109f6512574394388de4c4188d949d3bc4da",
+      "slug": "ofac-list-change-stress"
+    },
+    {
+      "bytes": 11264,
+      "file": "drug-shortage-restress.zip",
+      "sha256": "750cb5b4bf9e2c40d3aeb28beb36761f945acef2829f759e94062cc46bd4b861",
+      "slug": "drug-shortage-restress"
+    },
+    {
+      "bytes": 11609,
+      "file": "food-export-compound-stress.zip",
+      "sha256": "84df168592e9dde341aef0e90885286f187c0fd330e5a6953c502d573efcdcd2",
+      "slug": "food-export-compound-stress"
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00.000Z",
+  "schemaVersion": "0.1.0"
+}

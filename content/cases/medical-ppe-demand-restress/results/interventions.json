@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.02970550576184377,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.02970550576184377,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.08986450645873557,
+    "worstCaseImpact": 0.08986450645873557
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.08986450645873557,
+      "worstCaseImpact": 0.08986450645873557
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06880885621482345,
+      "worstCaseImpact": 0.06880885621482345
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06580090617997889,
+      "worstCaseImpact": 0.06580090617997889
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:diversify"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07318218920888123,
+      "worstCaseImpact": 0.07318218920888123
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05316751603363157,
+      "worstCaseImpact": 0.05316751603363157
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:diversify"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05796535000241813,
+      "worstCaseImpact": 0.05796535000241813
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:diversify",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:diversify",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.08986450645873557,
+      "worstCaseImpact": 0.08986450645873557
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06880885621482345,
+      "worstCaseImpact": 0.06880885621482345
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.06580090617997889,
+      "worstCaseImpact": 0.06580090617997889
+    },
+    {
+      "centralImpact": 0.02970550576184377,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "lowerImpact": 0.02970550576184377,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.05316751603363157,
+      "worstCaseImpact": 0.05316751603363157
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:medical-ppe-demand-restress:buffer",
+    "intervention:medical-ppe-demand-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 379.94552090895706,
+      "toBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 997.3569923860196,
+      "toBundleIds": [
+        "intervention:medical-ppe-demand-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:medical-ppe-demand-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 633.2425348482595,
+      "toBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "medical-ppe-demand-restress"
+}

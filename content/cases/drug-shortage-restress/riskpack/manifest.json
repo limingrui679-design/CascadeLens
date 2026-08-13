@@ -1,0 +1,26 @@
+{
+  "classification": "quasi_historical",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:drug-shortage-restress:v0.1.0",
+  "scenarioId": "drug-shortage-restress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

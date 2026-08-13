@@ -1,0 +1,26 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.1.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:ofac-list-change-stress:v0.1.0",
+  "scenarioId": "ofac-list-change-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "e55cec242745d372972895af6f20e5a74c355652dd8648b71633c75b3f87789a",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ]
+}

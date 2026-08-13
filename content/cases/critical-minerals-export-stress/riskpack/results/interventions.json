@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.04385802469135801,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.04385802469135801,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.13487336364594885,
+    "worstCaseImpact": 0.13487336364594885
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13487336364594885,
+      "worstCaseImpact": 0.13487336364594885
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10301799501184207,
+      "worstCaseImpact": 0.10301799501184207
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09846722806411252,
+      "worstCaseImpact": 0.09846722806411252
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:diversify"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10863189787235711,
+      "worstCaseImpact": 0.10863189787235711
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07935400688364844,
+      "worstCaseImpact": 0.07935400688364844
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:diversify"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08596104225900743,
+      "worstCaseImpact": 0.08596104225900743
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:diversify",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:diversify",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13487336364594885,
+      "worstCaseImpact": 0.13487336364594885
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.10301799501184207,
+      "worstCaseImpact": 0.10301799501184207
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09846722806411252,
+      "worstCaseImpact": 0.09846722806411252
+    },
+    {
+      "centralImpact": 0.04385802469135801,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": 0.04385802469135801,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07935400688364844,
+      "worstCaseImpact": 0.07935400688364844
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:critical-minerals-export-stress:buffer",
+    "intervention:critical-minerals-export-stress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 251.1350627232922,
+      "toBundleIds": [
+        "intervention:critical-minerals-export-stress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:critical-minerals-export-stress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 659.2295396486411,
+      "toBundleIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 418.55843787215315,
+      "toBundleIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "critical-minerals-export-stress"
+}

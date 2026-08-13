@@ -1,0 +1,265 @@
+{
+  "contentDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "from": "node:drug-shortage-restress:supply",
+      "id": "edge:drug-shortage-restress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:drug-shortage-restress:manufacturer",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.58,
+        "unit": "share",
+        "upper": 0.94,
+        "value": 0.78
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "from": "node:drug-shortage-restress:manufacturer",
+      "id": "edge:drug-shortage-restress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:drug-shortage-restress:wholesale",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.42,
+        "unit": "share",
+        "upper": 0.78,
+        "value": 0.62
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "from": "node:drug-shortage-restress:wholesale",
+      "id": "edge:drug-shortage-restress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:drug-shortage-restress:care-sites",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.4,
+        "unit": "share",
+        "upper": 0.76,
+        "value": 0.6
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "from": "node:drug-shortage-restress:care-sites",
+      "id": "edge:drug-shortage-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:drug-shortage-restress:access",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.37,
+        "unit": "share",
+        "upper": 0.73,
+        "value": 0.57
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "id": "node:drug-shortage-restress:access",
+      "kind": "metric",
+      "label": "Treatment access continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.8,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "id": "node:drug-shortage-restress:care-sites",
+      "kind": "facility",
+      "label": "Care-site inventory",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "id": "node:drug-shortage-restress:manufacturer",
+      "kind": "industry",
+      "label": "Manufacturer availability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "id": "node:drug-shortage-restress:supply",
+      "kind": "medicine",
+      "label": "Medicine supply",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "id": "node:drug-shortage-restress:wholesale",
+      "kind": "industry",
+      "label": "Wholesale distribution",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:drug-shortage-restress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3116,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:drug-shortage-restress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "3dc2b1a2e2e8cfc6b0a123834dfcb1d591e57566725d6f43a3cddf9bf43078d6",
+      "title": "Drug-shortage re-stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/drug-shortage-restress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2023-01-01T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:drug-shortage-restress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://open.fda.gov/apis/drug/drugshortages/"
+      },
+      "publishedAt": "2023-01-01T00:00:00Z",
+      "publisher": "U.S. Food and Drug Administration",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "70403ae8e8bac0786e7e74164353f37dd0af0c9258bc40b82b8f35d38962d372",
+      "title": "openFDA Drug Shortages API",
+      "uri": "https://open.fda.gov/apis/drug/drugshortages/"
+    }
+  ],
+  "title": "Drug-shortage re-stress assumed topology"
+}

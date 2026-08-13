@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.044093567251462,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.044093567251462,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.11331852398178344,
+    "worstCaseImpact": 0.11331852398178344
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.11331852398178344,
+      "worstCaseImpact": 0.11331852398178344
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08908978912617097,
+      "worstCaseImpact": 0.08908978912617097
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08562854128965487,
+      "worstCaseImpact": 0.08562854128965487
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:diversify"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.093575498832997,
+      "worstCaseImpact": 0.093575498832997
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07109130037628737,
+      "worstCaseImpact": 0.07109130037628737
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:diversify"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07625682277945976,
+      "worstCaseImpact": 0.07625682277945976
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:diversify",
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:diversify",
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.11331852398178344,
+      "worstCaseImpact": 0.11331852398178344
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08908978912617097,
+      "worstCaseImpact": 0.08908978912617097
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08562854128965487,
+      "worstCaseImpact": 0.08562854128965487
+    },
+    {
+      "centralImpact": 0.044093567251462,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "lowerImpact": 0.044093567251462,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07109130037628737,
+      "worstCaseImpact": 0.07109130037628737
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:drug-shortage-restress:buffer",
+    "intervention:drug-shortage-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 330.1864520650709,
+      "toBundleIds": [
+        "intervention:drug-shortage-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:drug-shortage-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 866.7394366708047,
+      "toBundleIds": [
+        "intervention:drug-shortage-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:drug-shortage-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 550.3107534417842,
+      "toBundleIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "drug-shortage-restress"
+}

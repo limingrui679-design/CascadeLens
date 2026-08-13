@@ -1,0 +1,79 @@
+{
+  "name": "cascadelens",
+  "version": "0.1.0",
+  "releaseDate": "2026-08-13T00:00:00.000Z",
+  "description": "Evidence-graded world graph and shock compiler for global systemic-risk analysis.",
+  "private": true,
+  "bin": {
+    "cascadelens": "./packages/cli/src/index.ts"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
+    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
+    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
+    "test": "npm run test:unit && npm run test:examples && npm run validate:content && npm run build && npm run test:rendered && npm run test:a11y && npm run test:security && npm run test:performance",
+    "test:unit": "tsx --test tests/**/*.test.ts",
+    "test:rendered": "node --test tests/rendered-html.test.mjs",
+    "test:a11y": "node --test tests/accessibility.test.mjs",
+    "test:performance": "tsx scripts/check-performance.ts",
+    "test:security": "tsx scripts/check-security.ts && npm audit --audit-level=low",
+    "test:examples": "npm run example:sdk && npm run cascadelens -- --version && npm run cascadelens -- validate content/cases/suez-route-restress/scenario.json --graph content/cases/suez-route-restress/graph/snapshot.json && npm run cascadelens -- verify content/cases/suez-route-restress/riskpack",
+    "typecheck": "tsc --noEmit",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "generate:catalog": "tsx scripts/export-catalog.ts",
+    "generate:cases": "tsx scripts/build-cases.ts",
+    "generate:riskpack-archives": "tsx scripts/package-riskpacks.ts",
+    "generate:sbom": "tsx scripts/generate-sbom.ts",
+    "release:prepare": "tsx scripts/prepare-release.ts",
+    "release:verify": "tsx scripts/verify-release.ts",
+    "example:sdk": "tsx examples/typescript/analyze-reference-case.ts",
+    "ci": "npm run lint && npm run typecheck && npm run test",
+    "cascadelens": "tsx packages/cli/src/index.ts",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "image-size": "file:vendor/image-size",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.51.3",
+    "@eslint/js": "9.39.4",
+    "@next/eslint-plugin-next": "16.2.6",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "22.19.19",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "@vitejs/plugin-rsc": "^0.5.34",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "axe-core": "^4.13.0",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "jsdom": "^26.1.0",
+    "react-server-dom-webpack": "^19.2.8",
+    "tailwindcss": "4.2.1",
+    "tsx": "^4.23.12",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.3",
+    "vinext": "^1.0.0-beta.5",
+    "vite": "^8.2.1",
+    "wrangler": "^4.121.0"
+  },
+  "overrides": {
+    "image-size": "$image-size"
+  },
+  "type": "module"
+}

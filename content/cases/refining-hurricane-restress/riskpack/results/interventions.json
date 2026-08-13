@@ -1,0 +1,217 @@
+{
+  "baselineBundle": {
+    "centralImpact": 0.04245495495495495,
+    "cost": 0,
+    "feasible": true,
+    "interventionIds": [],
+    "lowerImpact": 0.04245495495495495,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.11575746634170472,
+    "worstCaseImpact": 0.11575746634170472
+  },
+  "evaluatedBundles": [
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.11575746634170472,
+      "worstCaseImpact": 0.11575746634170472
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09010158735634236,
+      "worstCaseImpact": 0.09010158735634236
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08643646178700486,
+      "worstCaseImpact": 0.08643646178700486
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 13,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:diversify"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09564241560328478,
+      "worstCaseImpact": 0.09564241560328478
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07104293439578736,
+      "worstCaseImpact": 0.07104293439578736
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 21,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:diversify"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07702680437636937,
+      "worstCaseImpact": 0.07702680437636937
+    },
+    {
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:diversify",
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:diversify",
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 0,
+      "feasible": true,
+      "interventionIds": [],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.11575746634170472,
+      "worstCaseImpact": 0.11575746634170472
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 8,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09010158735634236,
+      "worstCaseImpact": 0.09010158735634236
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 11,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.08643646178700486,
+      "worstCaseImpact": 0.08643646178700486
+    },
+    {
+      "centralImpact": 0.04245495495495495,
+      "cost": 19,
+      "feasible": true,
+      "interventionIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "lowerImpact": 0.04245495495495495,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.07104293439578736,
+      "worstCaseImpact": 0.07104293439578736
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:refining-hurricane-restress:buffer",
+    "intervention:refining-hurricane-restress:reroute"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 311.81936914203163,
+      "toBundleIds": [
+        "intervention:refining-hurricane-restress:buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:refining-hurricane-restress:buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 818.525843997829,
+      "toBundleIds": [
+        "intervention:refining-hurricane-restress:reroute"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:refining-hurricane-restress:reroute"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 519.6989485700502,
+      "toBundleIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ]
+    }
+  ],
+  "scenarioId": "refining-hurricane-restress"
+}

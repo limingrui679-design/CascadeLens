@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.24166666666666667,
+        "endImpact": 0,
+        "impact": 0.24166666666666667,
+        "nodeId": "node:red-sea-rerouting-restress:red-sea",
+        "peakDirectImpact": 0.75,
+        "peakImpact": 0.75
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:delivery",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:voyage",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "red-sea-rerouting-restress",
+    "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+    "totalWeightedImpact": 0.04975490196078431,
+    "totalWeightedPeakEnvelope": 0.15441176470588233,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.15441176470588233,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.75,
+            "endImpact": 0.75,
+            "impact": 0.75,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.15441176470588233,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.15441176470588233,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.75,
+            "endImpact": 0.75,
+            "impact": 0.75,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.15441176470588233,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.38705263033599774,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.75,
+            "endImpact": 0.75,
+            "impact": 0.75,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5535,
+                "edgeId": "edge:red-sea-rerouting-restress:link-1",
+                "fromNodeId": "node:red-sea-rerouting-restress:red-sea"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.5535,
+            "impact": 0.4744285714285715,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5535
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3313251,
+                "edgeId": "edge:red-sea-rerouting-restress:link-2",
+                "fromNodeId": "node:red-sea-rerouting-restress:voyage"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33132509999999993,
+            "impact": 0.23666078571428567,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33132509999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.21463239977999996,
+                "edgeId": "edge:red-sea-rerouting-restress:link-3",
+                "fromNodeId": "node:red-sea-rerouting-restress:inputs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.21463239977999993,
+            "impact": 0.12264708558857139,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.21463239977999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11791904043913197,
+                "edgeId": "edge:red-sea-rerouting-restress:link-4",
+                "fromNodeId": "node:red-sea-rerouting-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11791904043913193,
+            "impact": 0.05053673161677082,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11791904043913193
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.32083755291017546,
+        "totalWeightedPeakEnvelope": 0.38705263033599774,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.725,
+            "endImpact": 0,
+            "impact": 0.725,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.14926470588235294,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.725,
+            "endImpact": 0,
+            "impact": 0.725,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.14926470588235294,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.23264086563011538,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.725,
+            "endImpact": 0,
+            "impact": 0.725,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5535,
+                "edgeId": "edge:red-sea-rerouting-restress:link-1",
+                "fromNodeId": "node:red-sea-rerouting-restress:red-sea"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.5535,
+            "impact": 0.5350499999999998,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5535
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3313251,
+                "edgeId": "edge:red-sea-rerouting-restress:link-2",
+                "fromNodeId": "node:red-sea-rerouting-restress:voyage"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33132509999999993,
+            "impact": 0.30923676000000005,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33132509999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.21463239977999996,
+                "edgeId": "edge:red-sea-rerouting-restress:link-3",
+                "fromNodeId": "node:red-sea-rerouting-restress:inputs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.21463239977999993,
+            "impact": 0.19316915980200006,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.21463239977999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11791904043913197,
+                "edgeId": "edge:red-sea-rerouting-restress:link-4",
+                "fromNodeId": "node:red-sea-rerouting-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11791904043913193,
+            "impact": 0.10219650171391427,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11791904043913193
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.3664553867797764,
+        "totalWeightedPeakEnvelope": 0.38705263033599774,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.24166666666666667,
+            "endImpact": 0,
+            "impact": 0.24166666666666667,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.04975490196078431,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.24166666666666667,
+            "endImpact": 0,
+            "impact": 0.24166666666666667,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.04975490196078431,
+        "totalWeightedPeakEnvelope": 0.15441176470588233,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.24166666666666667,
+            "endImpact": 0,
+            "impact": 0.24166666666666667,
+            "nodeId": "node:red-sea-rerouting-restress:red-sea",
+            "peakDirectImpact": 0.75,
+            "peakImpact": 0.75
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5535,
+                "edgeId": "edge:red-sea-rerouting-restress:link-1",
+                "fromNodeId": "node:red-sea-rerouting-restress:red-sea"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.17834999999999993,
+            "nodeId": "node:red-sea-rerouting-restress:voyage",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5535
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3313251,
+                "edgeId": "edge:red-sea-rerouting-restress:link-2",
+                "fromNodeId": "node:red-sea-rerouting-restress:voyage"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.10676031000000002,
+            "nodeId": "node:red-sea-rerouting-restress:inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33132509999999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.21463239977999996,
+                "edgeId": "edge:red-sea-rerouting-restress:link-3",
+                "fromNodeId": "node:red-sea-rerouting-restress:inputs"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06915932881800002,
+            "nodeId": "node:red-sea-rerouting-restress:production",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.21463239977999993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11791904043913197,
+                "edgeId": "edge:red-sea-rerouting-restress:link-4",
+                "fromNodeId": "node:red-sea-rerouting-restress:production"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.03799613525260914,
+            "nodeId": "node:red-sea-rerouting-restress:delivery",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11791904043913193
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "red-sea-rerouting-restress",
+        "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+        "totalWeightedImpact": 0.12471695866382147,
+        "totalWeightedPeakEnvelope": 0.38705263033599774,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.24166666666666667,
+        "endImpact": 0,
+        "impact": 0.24166666666666667,
+        "nodeId": "node:red-sea-rerouting-restress:red-sea",
+        "peakDirectImpact": 0.75,
+        "peakImpact": 0.75
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:delivery",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:red-sea-rerouting-restress:voyage",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "red-sea-rerouting-restress",
+    "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+    "totalWeightedImpact": 0.04975490196078431,
+    "totalWeightedPeakEnvelope": 0.15441176470588233,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.24166666666666667,
+        "endImpact": 0,
+        "impact": 0.24166666666666667,
+        "nodeId": "node:red-sea-rerouting-restress:red-sea",
+        "peakDirectImpact": 0.75,
+        "peakImpact": 0.75
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.5535,
+            "edgeId": "edge:red-sea-rerouting-restress:link-1",
+            "fromNodeId": "node:red-sea-rerouting-restress:red-sea"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.17834999999999993,
+        "nodeId": "node:red-sea-rerouting-restress:voyage",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.5535
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.3313251,
+            "edgeId": "edge:red-sea-rerouting-restress:link-2",
+            "fromNodeId": "node:red-sea-rerouting-restress:voyage"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.10676031000000002,
+        "nodeId": "node:red-sea-rerouting-restress:inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.33132509999999993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.21463239977999996,
+            "edgeId": "edge:red-sea-rerouting-restress:link-3",
+            "fromNodeId": "node:red-sea-rerouting-restress:inputs"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06915932881800002,
+        "nodeId": "node:red-sea-rerouting-restress:production",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.21463239977999993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.11791904043913197,
+            "edgeId": "edge:red-sea-rerouting-restress:link-4",
+            "fromNodeId": "node:red-sea-rerouting-restress:production"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.03799613525260914,
+        "nodeId": "node:red-sea-rerouting-restress:delivery",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.11791904043913193
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "red-sea-rerouting-restress",
+    "snapshotDigest": "5f1a8226be9d9784ea6d5d6dcbd9b8b5245d7d9806dbad688dcf37bd8bd3117c",
+    "totalWeightedImpact": 0.12471695866382147,
+    "totalWeightedPeakEnvelope": 0.38705263033599774,
+    "warnings": []
+  }
+}

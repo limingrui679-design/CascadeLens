@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:refining-hurricane-restress:refining",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:fuel",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:services",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:transport",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "refining-hurricane-restress",
+    "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+    "totalWeightedImpact": 0.04245495495495495,
+    "totalWeightedPeakEnvelope": 0.13175675675675677,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.13175675675675677,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.13175675675675677,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.13175675675675677,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.13175675675675677,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.35924730933632515,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50635,
+                "edgeId": "edge:refining-hurricane-restress:link-1",
+                "fromNodeId": "node:refining-hurricane-restress:refining"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.50635,
+            "impact": 0.43401428571428563,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50635
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33631766999999996,
+                "edgeId": "edge:refining-hurricane-restress:link-2",
+                "fromNodeId": "node:refining-hurricane-restress:fuel"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3363176699999999,
+            "impact": 0.24022690714285708,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3363176699999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20407756215599993,
+                "edgeId": "edge:refining-hurricane-restress:link-3",
+                "fromNodeId": "node:refining-hurricane-restress:transport"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.20407756215599993,
+            "impact": 0.11661574980342852,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.20407756215599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11044677663882715,
+                "edgeId": "edge:refining-hurricane-restress:link-4",
+                "fromNodeId": "node:refining-hurricane-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11044677663882718,
+            "impact": 0.04733433284521165,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11044677663882718
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.29654161339901963,
+        "totalWeightedPeakEnvelope": 0.35924730933632515,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.12736486486486484,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.12736486486486484,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.22749055257956838,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50635,
+                "edgeId": "edge:refining-hurricane-restress:link-1",
+                "fromNodeId": "node:refining-hurricane-restress:refining"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.50635,
+            "impact": 0.48947166666666647,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50635
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33631766999999996,
+                "edgeId": "edge:refining-hurricane-restress:link-2",
+                "fromNodeId": "node:refining-hurricane-restress:fuel"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3363176699999999,
+            "impact": 0.31389649199999975,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3363176699999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20407756215599993,
+                "edgeId": "edge:refining-hurricane-restress:link-3",
+                "fromNodeId": "node:refining-hurricane-restress:transport"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.20407756215599993,
+            "impact": 0.18366980594039986,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.20407756215599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11044677663882715,
+                "edgeId": "edge:refining-hurricane-restress:link-4",
+                "fromNodeId": "node:refining-hurricane-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11044677663882718,
+            "impact": 0.09572053975365018,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11044677663882718
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.34022408839239515,
+        "totalWeightedPeakEnvelope": 0.35924730933632515,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.04245495495495495,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.04245495495495495,
+        "totalWeightedPeakEnvelope": 0.13175675675675677,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:refining-hurricane-restress:refining",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.50635,
+                "edgeId": "edge:refining-hurricane-restress:link-1",
+                "fromNodeId": "node:refining-hurricane-restress:refining"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.16315722222222215,
+            "nodeId": "node:refining-hurricane-restress:fuel",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.50635
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33631766999999996,
+                "edgeId": "edge:refining-hurricane-restress:link-2",
+                "fromNodeId": "node:refining-hurricane-restress:fuel"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.10836902699999992,
+            "nodeId": "node:refining-hurricane-restress:transport",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3363176699999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20407756215599993,
+                "edgeId": "edge:refining-hurricane-restress:link-3",
+                "fromNodeId": "node:refining-hurricane-restress:transport"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06575832558359995,
+            "nodeId": "node:refining-hurricane-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.20407756215599993
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11044677663882715,
+                "edgeId": "edge:refining-hurricane-restress:link-4",
+                "fromNodeId": "node:refining-hurricane-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.03558840580584429,
+            "nodeId": "node:refining-hurricane-restress:services",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11044677663882718
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "refining-hurricane-restress",
+        "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+        "totalWeightedImpact": 0.11575746634170472,
+        "totalWeightedPeakEnvelope": 0.35924730933632515,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:refining-hurricane-restress:refining",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:fuel",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:services",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:refining-hurricane-restress:transport",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "refining-hurricane-restress",
+    "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+    "totalWeightedImpact": 0.04245495495495495,
+    "totalWeightedPeakEnvelope": 0.13175675675675677,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:refining-hurricane-restress:refining",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.50635,
+            "edgeId": "edge:refining-hurricane-restress:link-1",
+            "fromNodeId": "node:refining-hurricane-restress:refining"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.16315722222222215,
+        "nodeId": "node:refining-hurricane-restress:fuel",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.50635
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.33631766999999996,
+            "edgeId": "edge:refining-hurricane-restress:link-2",
+            "fromNodeId": "node:refining-hurricane-restress:fuel"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.10836902699999992,
+        "nodeId": "node:refining-hurricane-restress:transport",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.3363176699999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.20407756215599993,
+            "edgeId": "edge:refining-hurricane-restress:link-3",
+            "fromNodeId": "node:refining-hurricane-restress:transport"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06575832558359995,
+        "nodeId": "node:refining-hurricane-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.20407756215599993
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.11044677663882715,
+            "edgeId": "edge:refining-hurricane-restress:link-4",
+            "fromNodeId": "node:refining-hurricane-restress:distribution"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.03558840580584429,
+        "nodeId": "node:refining-hurricane-restress:services",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.11044677663882718
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "refining-hurricane-restress",
+    "snapshotDigest": "c8f188106e287f320ffdecab81cab826214716b9f00f54dd58f879e8aa2f57c5",
+    "totalWeightedImpact": 0.11575746634170472,
+    "totalWeightedPeakEnvelope": 0.35924730933632515,
+    "warnings": []
+  }
+}

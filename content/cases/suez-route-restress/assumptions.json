@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:suez-route-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:suez-route-restress:link-1",
+      "lower": 0.56,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Assumed dependency from Suez route to Time-sensitive maritime inputs.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.92,
+      "value": 0.76
+    },
+    {
+      "id": "assumption:suez-route-restress:link-2",
+      "lower": 0.38,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Assumed dependency from Time-sensitive maritime inputs to Import-dependent assembly.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.74,
+      "value": 0.58
+    },
+    {
+      "id": "assumption:suez-route-restress:link-3",
+      "lower": 0.35,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Assumed dependency from Import-dependent assembly to Regional distribution.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.71,
+      "value": 0.55
+    },
+    {
+      "id": "assumption:suez-route-restress:link-4",
+      "lower": 0.28,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Assumed dependency from Regional distribution to Downstream market availability.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.64,
+      "value": 0.48
+    },
+    {
+      "id": "assumption:suez-route-restress:link-5",
+      "lower": 0,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:suez-route-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Suez route to Downstream market availability.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.36,
+      "value": 0.2
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "suez-route-restress",
+  "status": "scenario_parameters_not_observations"
+}

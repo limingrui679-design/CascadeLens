@@ -1,0 +1,86 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:refining-hurricane-restress:transmission",
+      "lower": 0,
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:refining-hurricane-restress:link-1",
+      "lower": 0.59,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Assumed dependency from Regional refining capacity to Transport fuel availability.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.95,
+      "value": 0.79
+    },
+    {
+      "id": "assumption:refining-hurricane-restress:link-2",
+      "lower": 0.45,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Assumed dependency from Transport fuel availability to Freight transport operations.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.81,
+      "value": 0.65
+    },
+    {
+      "id": "assumption:refining-hurricane-restress:link-3",
+      "lower": 0.38,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Assumed dependency from Freight transport operations to Regional distribution.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.74,
+      "value": 0.58
+    },
+    {
+      "id": "assumption:refining-hurricane-restress:link-4",
+      "lower": 0.3,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Assumed dependency from Regional distribution to Essential service continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.66,
+      "value": 0.5
+    },
+    {
+      "id": "assumption:refining-hurricane-restress:link-5",
+      "lower": 0.03,
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:refining-hurricane-restress:context"
+      ],
+      "statement": "Assumed missing direct dependency from Regional refining capacity to Essential service continuity.",
+      "status": "model_assumption",
+      "unit": "share",
+      "upper": 0.39,
+      "value": 0.23
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "refining-hurricane-restress",
+  "status": "scenario_parameters_not_observations"
+}

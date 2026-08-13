@@ -1,0 +1,40 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { imageSize, types } from "image-size";
+
+test("the build-asset parser allows only the audited PNG, GIF, and JPEG formats", () => {
+  assert.deepEqual([...types], ["png", "gif", "jpg"]);
+  const png = Uint8Array.from([
+    0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a,
+    0x00, 0x00, 0x00, 0x0d, 0x49, 0x48, 0x44, 0x52,
+    0x00, 0x00, 0x04, 0xb0, 0x00, 0x00, 0x02, 0x76,
+  ]);
+  assert.deepEqual(imageSize(png), { width: 1200, height: 630, type: "png" });
+
+  const gif = Uint8Array.from([
+    0x47, 0x49, 0x46, 0x38, 0x39, 0x61,
+    0x20, 0x03, 0x58, 0x02,
+  ]);
+  assert.deepEqual(imageSize(gif), { width: 800, height: 600, type: "gif" });
+});
+
+test("the build-asset parser rejects unsupported and malformed formats in bounded scans", () => {
+  const icns = Uint8Array.from([0x69, 0x63, 0x6e, 0x73, 0x7f, 0xff, 0xff, 0xff]);
+  const jpegXl = Uint8Array.from([
+    0x00, 0x00, 0x00, 0x0c, 0x4a, 0x58, 0x4c, 0x20,
+    0x0d, 0x0a, 0x87, 0x0a,
+  ]);
+  const malformedJpeg = Uint8Array.from([0xff, 0xd8, 0xff, 0xe0, 0xff, 0xff]);
+  assert.throws(() => imageSize(icns), /Unsupported image type/);
+  assert.throws(() => imageSize(jpegXl), /Unsupported image type/);
+  assert.throws(() => imageSize(malformedJpeg), /Invalid JPEG segment length/);
+});
+
+test("the build-asset parser rejects zero or excessive dimensions", () => {
+  const png = Uint8Array.from([
+    0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a,
+    0x00, 0x00, 0x00, 0x0d, 0x49, 0x48, 0x44, 0x52,
+    0x00, 0x01, 0x86, 0xa1, 0x00, 0x00, 0x00, 0x00,
+  ]);
+  assert.throws(() => imageSize(png), /outside the supported range/);
+});

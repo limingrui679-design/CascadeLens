@@ -1,0 +1,265 @@
+{
+  "contentDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "from": "node:ukraine-commodity-compound-restress:commodity-supply",
+      "id": "edge:ukraine-commodity-compound-restress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:ukraine-commodity-compound-restress:farm-inputs",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.5,
+        "unit": "share",
+        "upper": 0.86,
+        "value": 0.7
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "from": "node:ukraine-commodity-compound-restress:farm-inputs",
+      "id": "edge:ukraine-commodity-compound-restress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:ukraine-commodity-compound-restress:food-output",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.43,
+        "unit": "share",
+        "upper": 0.79,
+        "value": 0.63
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "from": "node:ukraine-commodity-compound-restress:food-output",
+      "id": "edge:ukraine-commodity-compound-restress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:ukraine-commodity-compound-restress:distribution",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.39,
+        "unit": "share",
+        "upper": 0.75,
+        "value": 0.59
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "from": "node:ukraine-commodity-compound-restress:distribution",
+      "id": "edge:ukraine-commodity-compound-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:ukraine-commodity-compound-restress:affordability",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.36,
+        "unit": "share",
+        "upper": 0.72,
+        "value": 0.56
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "id": "node:ukraine-commodity-compound-restress:affordability",
+      "kind": "metric",
+      "label": "Food affordability pressure",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.7,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "id": "node:ukraine-commodity-compound-restress:commodity-supply",
+      "kind": "product",
+      "label": "Food, fertilizer, and energy supply",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "id": "node:ukraine-commodity-compound-restress:distribution",
+      "kind": "industry",
+      "label": "Regional food distribution",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "id": "node:ukraine-commodity-compound-restress:farm-inputs",
+      "kind": "industry",
+      "label": "Agricultural input availability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "id": "node:ukraine-commodity-compound-restress:food-output",
+      "kind": "industry",
+      "label": "Food production",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:ukraine-commodity-compound-restress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 3336,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:ukraine-commodity-compound-restress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "2c9b12d9367935641f2f6766dfe6c1228d7fb7bca815273c0b033cd7a72eb18f",
+      "title": "Food, fertilizer, and energy compound re-stress local assumption register",
+      "uri": "https://github.com/limingrui2/cascadelens/blob/main/content/cases/ukraine-commodity-compound-restress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2022-04-26T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:ukraine-commodity-compound-restress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+      },
+      "publishedAt": "2022-04-26T00:00:00Z",
+      "publisher": "World Bank",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "caabe432d73b6bbc97348cc2e89431dd528154e6a3c6e2c7c69ae41afbd344db",
+      "title": "Food and Energy Price Shocks from Ukraine War",
+      "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+    }
+  ],
+  "title": "Food, fertilizer, and energy compound re-stress assumed topology"
+}

@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.19333333333333333,
+        "endImpact": 0,
+        "impact": 0.19333333333333333,
+        "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+        "peakDirectImpact": 0.6,
+        "peakImpact": 0.6
+      },
+      {
+        "contributions": [],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.11277777777777773,
+        "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.35
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "ukraine-commodity-compound-restress",
+    "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+    "totalWeightedImpact": 0.06444444444444444,
+    "totalWeightedPeakEnvelope": 0.2,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.2,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6,
+            "endImpact": 0.6,
+            "impact": 0.6,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.35,
+            "impact": 0.35000000000000003,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.2,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.2,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6,
+            "endImpact": 0.6,
+            "impact": 0.6,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.35,
+            "impact": 0.35000000000000003,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.2,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.41390935783179295,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6,
+            "endImpact": 0.6,
+            "impact": 0.6,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27409713599999996,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
+              }
+            ],
+            "directImpact": 0.35000000000000003,
+            "endImpact": 0.5281631384,
+            "impact": 0.4772593845714286,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5281631384
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42312,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.42311999999999994,
+            "impact": 0.36267428571428567,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42311999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3248203301159999,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.324820330116,
+            "impact": 0.24711161720914282,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.324820330116
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19177392290048637,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19177392290048634,
+            "impact": 0.11849842410020842,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19177392290048634
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.3623751892969113,
+        "totalWeightedPeakEnvelope": 0.41390935783179295,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.58,
+            "endImpact": 0,
+            "impact": 0.58,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0,
+            "impact": 0.33833333333333315,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.19333333333333333,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.58,
+            "endImpact": 0,
+            "impact": 0.58,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0,
+            "impact": 0.33833333333333315,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.19333333333333333,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.23410598890547718,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.58,
+            "endImpact": 0,
+            "impact": 0.58,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27409713599999996,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
+              }
+            ],
+            "directImpact": 0.33833333333333315,
+            "endImpact": 0.27409713599999996,
+            "impact": 0.5078167290933334,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5281631384
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42312,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.42311999999999994,
+            "impact": 0.4090160000000002,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42311999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3248203301159999,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.324820330116,
+            "impact": 0.30668829710440004,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.324820330116
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19177392290048637,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.19177392290048634,
+            "impact": 0.17467630651375474,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19177392290048634
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.39589127287611003,
+        "totalWeightedPeakEnvelope": 0.41390935783179295,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.19333333333333333,
+            "endImpact": 0,
+            "impact": 0.19333333333333333,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.11277777777777773,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.06444444444444444,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.19333333333333333,
+            "endImpact": 0,
+            "impact": 0.19333333333333333,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.11277777777777773,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.35
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.06444444444444444,
+        "totalWeightedPeakEnvelope": 0.2,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.19333333333333333,
+            "endImpact": 0,
+            "impact": 0.19333333333333333,
+            "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+            "peakDirectImpact": 0.6,
+            "peakImpact": 0.6
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27409713599999996,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
+              }
+            ],
+            "directImpact": 0.11277777777777773,
+            "endImpact": 0,
+            "impact": 0.17231776676444446,
+            "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+            "peakDirectImpact": 0.35,
+            "peakImpact": 0.5281631384
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42312,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.13633866666666675,
+            "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42311999999999994
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3248203301159999,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.10597542656013335,
+            "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.324820330116
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19177392290048637,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06256789184110267,
+            "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.19177392290048634
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "ukraine-commodity-compound-restress",
+        "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+        "totalWeightedImpact": 0.13421702159839816,
+        "totalWeightedPeakEnvelope": 0.41390935783179295,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.19333333333333333,
+        "endImpact": 0,
+        "impact": 0.19333333333333333,
+        "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+        "peakDirectImpact": 0.6,
+        "peakImpact": 0.6
+      },
+      {
+        "contributions": [],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.11277777777777773,
+        "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.35
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "ukraine-commodity-compound-restress",
+    "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+    "totalWeightedImpact": 0.06444444444444444,
+    "totalWeightedPeakEnvelope": 0.2,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.19333333333333333,
+        "endImpact": 0,
+        "impact": 0.19333333333333333,
+        "nodeId": "node:ukraine-commodity-compound-restress:commodity-supply",
+        "peakDirectImpact": 0.6,
+        "peakImpact": 0.6
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.27409713599999996,
+            "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
+            "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
+          }
+        ],
+        "directImpact": 0.11277777777777773,
+        "endImpact": 0,
+        "impact": 0.17231776676444446,
+        "nodeId": "node:ukraine-commodity-compound-restress:food-output",
+        "peakDirectImpact": 0.35,
+        "peakImpact": 0.5281631384
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.42312,
+            "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
+            "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.13633866666666675,
+        "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.42311999999999994
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.3248203301159999,
+            "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
+            "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.10597542656013335,
+        "nodeId": "node:ukraine-commodity-compound-restress:distribution",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.324820330116
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.19177392290048637,
+            "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
+            "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06256789184110267,
+        "nodeId": "node:ukraine-commodity-compound-restress:affordability",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.19177392290048634
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "ukraine-commodity-compound-restress",
+    "snapshotDigest": "ce43269c1f0bf261f7dc3e7015be7bec91ae934071a1e30db12a390b14f5020e",
+    "totalWeightedImpact": 0.13421702159839816,
+    "totalWeightedPeakEnvelope": 0.41390935783179295,
+    "warnings": []
+  }
+}

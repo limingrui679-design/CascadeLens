@@ -1,0 +1,945 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:drug-shortage-restress:supply",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:care-sites",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:manufacturer",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:wholesale",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "drug-shortage-restress",
+    "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+    "totalWeightedImpact": 0.044093567251462,
+    "totalWeightedPeakEnvelope": 0.13684210526315793,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.13684210526315793,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.13684210526315793,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 7,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.13684210526315793,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.13684210526315793,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.35167817787450034,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 7,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.65,
+            "endImpact": 0.65,
+            "impact": 0.65,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5010199999999999,
+                "edgeId": "edge:drug-shortage-restress:link-1",
+                "fromNodeId": "node:drug-shortage-restress:supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.5010199999999999,
+            "impact": 0.42944571428571426,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5010199999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.320452392,
+                "edgeId": "edge:drug-shortage-restress:link-2",
+                "fromNodeId": "node:drug-shortage-restress:manufacturer"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.320452392,
+            "impact": 0.2288945657142857,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.320452392
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19970593069439999,
+                "edgeId": "edge:drug-shortage-restress:link-3",
+                "fromNodeId": "node:drug-shortage-restress:wholesale"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1997059306944,
+            "impact": 0.1141176746825143,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1997059306944
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11954397011366782,
+                "edgeId": "edge:drug-shortage-restress:link-4",
+                "fromNodeId": "node:drug-shortage-restress:care-sites"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1195439701136678,
+            "impact": 0.05123313004871477,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1195439701136678
+          }
+        ],
+        "iterations": 7,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.2897609317815829,
+        "totalWeightedPeakEnvelope": 0.35167817787450034,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.132280701754386,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": false,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.132280701754386,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "Cascade had not settled by the requested horizon.",
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": false,
+        "endWeightedImpact": 0.21483607261134238,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.6283333333333333,
+            "endImpact": 0,
+            "impact": 0.6283333333333333,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5010199999999999,
+                "edgeId": "edge:drug-shortage-restress:link-1",
+                "fromNodeId": "node:drug-shortage-restress:supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.5010199999999999,
+            "impact": 0.48431933333333343,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5010199999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.320452392,
+                "edgeId": "edge:drug-shortage-restress:link-2",
+                "fromNodeId": "node:drug-shortage-restress:manufacturer"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.320452392,
+            "impact": 0.2990888992,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.320452392
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19970593069439999,
+                "edgeId": "edge:drug-shortage-restress:link-3",
+                "fromNodeId": "node:drug-shortage-restress:wholesale"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1997059306944,
+            "impact": 0.1797353376249599,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1997059306944
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11954397011366782,
+                "edgeId": "edge:drug-shortage-restress:link-4",
+                "fromNodeId": "node:drug-shortage-restress:care-sites"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.1195439701136678,
+            "impact": 0.10360477409851208,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1195439701136678
+          }
+        ],
+        "iterations": 30,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.3326694169440477,
+        "totalWeightedPeakEnvelope": 0.35167817787450034,
+        "warnings": [
+          "Cascade had not settled by the requested horizon."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.044093567251462,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 90,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.044093567251462,
+        "totalWeightedPeakEnvelope": 0.13684210526315793,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.1.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 90,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.20944444444444443,
+            "endImpact": 0,
+            "impact": 0.20944444444444443,
+            "nodeId": "node:drug-shortage-restress:supply",
+            "peakDirectImpact": 0.65,
+            "peakImpact": 0.65
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.5010199999999999,
+                "edgeId": "edge:drug-shortage-restress:link-1",
+                "fromNodeId": "node:drug-shortage-restress:supply"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.16143977777777782,
+            "nodeId": "node:drug-shortage-restress:manufacturer",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.5010199999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.320452392,
+                "edgeId": "edge:drug-shortage-restress:link-2",
+                "fromNodeId": "node:drug-shortage-restress:manufacturer"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.10325688186666666,
+            "nodeId": "node:drug-shortage-restress:wholesale",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.320452392
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19970593069439999,
+                "edgeId": "edge:drug-shortage-restress:link-3",
+                "fromNodeId": "node:drug-shortage-restress:wholesale"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.06434968877930662,
+            "nodeId": "node:drug-shortage-restress:care-sites",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1997059306944
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11954397011366782,
+                "edgeId": "edge:drug-shortage-restress:link-4",
+                "fromNodeId": "node:drug-shortage-restress:care-sites"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.03851972370329296,
+            "nodeId": "node:drug-shortage-restress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.1195439701136678
+          }
+        ],
+        "iterations": 90,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "drug-shortage-restress",
+        "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+        "totalWeightedImpact": 0.11331852398178344,
+        "totalWeightedPeakEnvelope": 0.35167817787450034,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:drug-shortage-restress:supply",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:care-sites",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:manufacturer",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:drug-shortage-restress:wholesale",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "drug-shortage-restress",
+    "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+    "totalWeightedImpact": 0.044093567251462,
+    "totalWeightedPeakEnvelope": 0.13684210526315793,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.1.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 90,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.20944444444444443,
+        "endImpact": 0,
+        "impact": 0.20944444444444443,
+        "nodeId": "node:drug-shortage-restress:supply",
+        "peakDirectImpact": 0.65,
+        "peakImpact": 0.65
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.5010199999999999,
+            "edgeId": "edge:drug-shortage-restress:link-1",
+            "fromNodeId": "node:drug-shortage-restress:supply"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.16143977777777782,
+        "nodeId": "node:drug-shortage-restress:manufacturer",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.5010199999999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.320452392,
+            "edgeId": "edge:drug-shortage-restress:link-2",
+            "fromNodeId": "node:drug-shortage-restress:manufacturer"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.10325688186666666,
+        "nodeId": "node:drug-shortage-restress:wholesale",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.320452392
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.19970593069439999,
+            "edgeId": "edge:drug-shortage-restress:link-3",
+            "fromNodeId": "node:drug-shortage-restress:wholesale"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.06434968877930662,
+        "nodeId": "node:drug-shortage-restress:care-sites",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.1997059306944
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.11954397011366782,
+            "edgeId": "edge:drug-shortage-restress:link-4",
+            "fromNodeId": "node:drug-shortage-restress:care-sites"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.03851972370329296,
+        "nodeId": "node:drug-shortage-restress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.1195439701136678
+      }
+    ],
+    "iterations": 90,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "drug-shortage-restress",
+    "snapshotDigest": "3c073f1631434eef43d86c5aa6cda208741fb9fa824d16156bed624361ac08e2",
+    "totalWeightedImpact": 0.11331852398178344,
+    "totalWeightedPeakEnvelope": 0.35167817787450034,
+    "warnings": []
+  }
+}

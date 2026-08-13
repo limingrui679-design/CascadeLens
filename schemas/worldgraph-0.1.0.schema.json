@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascadelens.dev/schemas/worldgraph-0.1.0.schema.json",
+  "title": "CascadeLens WorldGraph snapshot 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "snapshotId", "title", "decisionCutoff", "generatedAt", "contentDigest", "nodes", "edges", "sources"],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "snapshotId": { "$ref": "#/$defs/id" },
+    "title": { "type": "string", "minLength": 1 },
+    "decisionCutoff": { "$ref": "#/$defs/dateTime" },
+    "generatedAt": { "$ref": "#/$defs/dateTime" },
+    "contentDigest": { "$ref": "#/$defs/sha256" },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{1,127}$" },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "dateTime": { "type": "string", "format": "date-time" },
+    "evidenceGrade": { "enum": ["OFFICIAL_OBSERVED", "ENTITY_REPORTED", "THIRD_PARTY_VERIFIED", "TEXT_EXTRACTED", "MODEL_INFERRED"] },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "name", "termsUri"],
+      "properties": {
+        "mode": { "enum": ["redistributable", "download_on_run", "user_provided"] },
+        "name": { "type": "string", "minLength": 1 },
+        "termsUri": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "spdx": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "publisher", "uri", "retrievedAt", "availableAt", "sha256", "contentType", "artifactKind", "digestScope", "role", "license"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "uri": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "retrievedAt": { "$ref": "#/$defs/dateTime" },
+        "availableAt": { "$ref": "#/$defs/dateTime" },
+        "publishedAt": { "$ref": "#/$defs/dateTime" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "contentType": { "type": "string", "minLength": 1 },
+        "artifactKind": { "enum": ["raw_snapshot", "normalized_snapshot", "query_manifest", "citation_record"] },
+        "digestScope": { "enum": ["exact_bytes", "canonical_record"] },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "role": { "enum": ["input", "context", "outcome"] },
+        "license": { "$ref": "#/$defs/license" }
+      }
+    },
+    "temporal": {
+      "type": "object",
+      "properties": {
+        "validFrom": { "$ref": "#/$defs/dateTime" },
+        "validTo": { "$ref": "#/$defs/dateTime" },
+        "observedAt": { "$ref": "#/$defs/dateTime" },
+        "supersededAt": { "$ref": "#/$defs/dateTime" }
+      },
+      "required": ["validFrom", "observedAt"]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grade", "confidence", "sourceIds", "reviewStatus"],
+      "properties": {
+        "grade": { "$ref": "#/$defs/evidenceGrade" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "reviewStatus": { "enum": ["not_required", "pending", "verified", "rejected"] },
+        "reviewRecordId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "label", "validFrom", "observedAt", "properties", "evidence"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["country", "region", "product", "industry", "legal_entity", "facility", "port", "route", "security", "fund", "medicine", "policy", "event", "metric"] },
+        "label": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "jurisdiction": { "type": "string" },
+        "validFrom": { "$ref": "#/$defs/dateTime" },
+        "validTo": { "$ref": "#/$defs/dateTime" },
+        "observedAt": { "$ref": "#/$defs/dateTime" },
+        "supersededAt": { "$ref": "#/$defs/dateTime" },
+        "properties": { "type": "object" },
+        "evidence": { "$ref": "#/$defs/evidence" }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to", "relation", "weight", "validFrom", "observedAt", "properties", "evidence"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "from": { "$ref": "#/$defs/id" },
+        "to": { "$ref": "#/$defs/id" },
+        "relation": { "enum": ["trades_to", "supplies", "inputs_to", "depends_on", "owns", "holds", "located_in", "connects_to", "substitute_for", "regulated_by", "exposed_to", "disclosed_relation"] },
+        "weight": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit"],
+          "properties": {
+            "value": { "type": "number", "minimum": 0, "maximum": 1 },
+            "lower": { "type": "number", "minimum": 0, "maximum": 1 },
+            "upper": { "type": "number", "minimum": 0, "maximum": 1 },
+            "unit": { "type": "string", "minLength": 1 }
+          }
+        },
+        "validFrom": { "$ref": "#/$defs/dateTime" },
+        "validTo": { "$ref": "#/$defs/dateTime" },
+        "observedAt": { "$ref": "#/$defs/dateTime" },
+        "supersededAt": { "$ref": "#/$defs/dateTime" },
+        "properties": { "type": "object" },
+        "evidence": { "$ref": "#/$defs/evidence" }
+      }
+    }
+  }
+}
