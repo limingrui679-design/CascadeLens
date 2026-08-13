@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/limingrui679-design/cascadelens/tree/main/docs
+    about: Check the architecture, interface, extension, and evidence documentation first.
+  - name: Security vulnerability
+    url: https://github.com/limingrui679-design/cascadelens/security/advisories/new
+    about: Report suspected vulnerabilities privately rather than in a public issue.

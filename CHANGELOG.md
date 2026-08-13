@@ -2,6 +2,18 @@
 
 All notable release changes are recorded here. CascadeLens follows Semantic Versioning while pre-1.0 interfaces may evolve under the compatibility policy in `docs/SCHEMA_COMPATIBILITY.md`.
 
+## Unreleased
+
+### Documentation
+
+- Rebuilt the repository landing page around real product screenshots, a runnable entry path, an architecture diagram, explicit evidence boundaries, and role-based documentation navigation.
+- Added focused indexes for documentation, package boundaries, content provenance, and checked examples.
+- Added automated checks for local documentation targets, required project boundaries, and committed screenshot integrity.
+
+### Community
+
+- Added a structured feature-proposal form, private-security routing, and a fuller pull-request evidence checklist.
+
 ## 0.1.1 — 2026-08-13
 
 ### Fixed

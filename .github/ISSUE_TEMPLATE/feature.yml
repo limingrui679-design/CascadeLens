@@ -1,0 +1,57 @@
+name: Feature proposal
+description: Propose a product, analytical, interface, documentation, or assurance improvement.
+title: "[Feature] "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Describe the decision or verification problem without prescribing an implementation.
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Primary surface
+      options:
+        - Analytical core
+        - Connector
+        - Reference case
+        - Web product
+        - CLI
+        - TypeScript SDK
+        - Documentation
+        - Security, performance, or release assurance
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: Explain what a user should be able to do and how success could be verified.
+    validations:
+      required: true
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Contract and compatibility impact
+      description: Note any effect on schemas, evidence grades, temporal rules, classifications, CLI or SDK interfaces, or generated artifacts.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Evidence boundary
+      description: State what the feature would and would not establish about accuracy, validation, deployment, adoption, or real-world impact.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Submission checks
+      options:
+        - label: This proposal contains no secrets, personal data, proprietary inputs, or restricted source payloads.
+          required: true
+        - label: I reviewed the documentation and existing issues for an equivalent proposal.
+          required: true
