@@ -12,6 +12,7 @@ import {
 test("accepts framework route segments while rejecting traversal and absolute paths", () => {
   assert.equal(safeReleasePath.test("cascadelens-0.1.0/app/cases/[slug]/page.tsx"), true);
   assert.equal(safeReleasePath.test("cascadelens-0.1.0/.openai/hosting.json"), true);
+  assert.equal(safeReleasePath.test("ASTI_Researchers_E_All_Data_(Normalized).csv"), true);
   assert.equal(safeReleasePath.test("/etc/passwd"), false);
   assert.equal(safeReleasePath.test("cascadelens/../secret"), false);
   assert.equal(safeReleasePath.test("cascadelens/../../secret"), false);
@@ -21,9 +22,14 @@ test("accepts framework route segments while rejecting traversal and absolute pa
 
 test("enforces archive entry, expansion, compression-ratio, and nested budgets", () => {
   const normal = zipSync({
-    "cascadelens-0.1.2/README.md": new TextEncoder().encode("bounded"),
+    "cascadelens-0.1.2/ASTI_Researchers_E_All_Data_(Normalized).csv":
+      new TextEncoder().encode("bounded"),
   });
   assert.equal(inspectZipArchive(normal).entries, 1);
+  const traversal = zipSync({
+    "../escaped_(Normalized).csv": new TextEncoder().encode("blocked"),
+  });
+  assert.throws(() => inspectZipArchive(traversal), /Unsafe ZIP path/);
   const nested = zipSync({
     "riskpack.zip": zipSync({ "result.json": new TextEncoder().encode("{}") }),
   });

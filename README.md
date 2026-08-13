@@ -20,13 +20,13 @@
   ·
   <a href="docs/README.md">Read the docs</a>
   ·
-  <a href="docs/SELF_REVIEW_2026-08-13_v0.2.0.md">Inspect the evidence</a>
+  <a href="docs/SELF_REVIEW_2026-08-13_v0.2.1.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
 
 > [!IMPORTANT]
-> **Current release: `v0.2.0`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
+> **Current release: `v0.2.1`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
 
 ## Why CascadeLens
 
@@ -112,7 +112,7 @@ The engine uses an explicit UTF-8 byte ordering rather than process locale: equa
 
 ## What ships
 
-| Surface | Included in `v0.2.0` |
+| Surface | Included in `v0.2.1` |
 |---|---|
 | WorldGraph | Evidence-graded, bitemporal nodes and edges with canonical content digests |
 | ShockScript | Strict, versioned shock contract with graph-aware validation |
@@ -160,7 +160,7 @@ Use the focused guides for [package boundaries](packages/README.md), [content pr
 
 | If you want to… | Start here |
 |---|---|
-| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.2.0 audit remediation review](docs/SELF_REVIEW_2026-08-13_v0.2.0.md) |
+| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.2.1 audit remediation review](docs/SELF_REVIEW_2026-08-13_v0.2.1.md) |
 | Understand the analytical design | [Architecture](docs/ARCHITECTURE.md) · [Product requirements](docs/PRODUCT_REQUIREMENTS.md) |
 | Use the interfaces | [CLI](docs/CLI.md) · [SDK](docs/SDK.md) |
 | Add an engine, connector, or case | [Extension guide](docs/EXTENDING.md) · [Connector contract](docs/connectors/CONNECTOR_CONTRACT.md) |

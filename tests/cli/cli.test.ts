@@ -21,6 +21,12 @@ async function run(args: string[]) {
 }
 
 test("lists twelve truthfully classified reference cases", async () => {
+  const packageMetadata = JSON.parse(
+    await readFile(join(repositoryRoot, "package.json"), "utf8"),
+  ) as { version: string };
+  const version = await run(["--version"]);
+  assert.equal(version.stdout.trim(), packageMetadata.version);
+
   const { stdout } = await run(["cases", "list"]);
   const result = JSON.parse(stdout) as {
     status: string;

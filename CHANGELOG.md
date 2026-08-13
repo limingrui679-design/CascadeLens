@@ -6,6 +6,17 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.2.1 — 2026-08-13
+
+### Fixed
+
+- The detached verifier now accepts parentheses in otherwise bounded relative archive paths, matching the official FAOSTAT filename bundled in the frozen snapshot.
+- Traversal, absolute paths, backslashes, shell metacharacters, duplicate entries, excessive expansion, high compression ratios, and nested archives remain rejected and regression-tested.
+
+### Evidence boundary
+
+This patch corrects release verification only. It does not add a historical outcome score, external validation, organizational adoption, or demonstrated real-world impact.
+
 ## 0.2.0 — 2026-08-13
 
 ### Corrected analytical semantics

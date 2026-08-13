@@ -4,7 +4,7 @@ import { relative, resolve, sep } from "node:path";
 import { unzipSync } from "fflate";
 import { compareCanonicalStrings } from "../packages/core/src/canonical";
 
-export const safeReleasePath = /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[a-zA-Z0-9._/[\]-]+$/;
+export const safeReleasePath = /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[a-zA-Z0-9._/()[\]-]+$/;
 
 export async function sha256File(path: string): Promise<string> {
   return createHash("sha256").update(await readFile(path)).digest("hex");

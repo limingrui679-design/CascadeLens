@@ -1,4 +1,4 @@
-# CascadeLens v0.2.0 audit-remediation review
+# CascadeLens v0.2.1 audit-remediation review
 
 This maintainer review records how the release responds to the independently reproduced findings against `main@c326fa6`. It is software evidence, not an independent domain review, historical validation, user study, or adoption record.
 
@@ -12,7 +12,7 @@ This maintainer review records how the release responds to the independently rep
 
 ## Finding-to-evidence matrix
 
-| Finding | v0.2.0 behavior | Adversarial or regression evidence |
+| Finding | v0.2.1 behavior | Adversarial or regression evidence |
 |---|---|---|
 | RiskPack accepted self-rehashed derived tampering | Verifier reconstructs cascade, interventions, observability, and benchmark results from packaged inputs and compares canonical bytes. A separately retained expected digest is an optional second boundary. | [`riskpack.test.ts`](../tests/core/riskpack.test.ts) changes derived output and refreshes internal hashes; verification fails with `derived_output_mismatch`. It separately checks matching and mismatching external digests. |
 | Canonical digest depended on process locale | Digest-bearing key and identifier order uses explicit UTF-8 bytes. Release SBOM component order uses the same comparator. | [`unicode-locale.test.ts`](../tests/core/unicode-locale.test.ts) asserts golden canonical-byte, graph, and RiskPack-checksum hashes under `C`, English, Swedish, and Turkish locales. |
@@ -26,7 +26,7 @@ This maintainer review records how the release responds to the independently rep
 | Graph visibility was frozen at first-shock time | Node, edge, and shock target visibility is refreshed on every simulated event day. | [`cascade.test.ts`](../tests/core/cascade.test.ts) covers edges becoming valid and expiring inside a horizon. |
 | CLI hid validation paths | Structured validation failures print stable path, code, and message without echoing the rejected value. | [`cli.test.ts`](../tests/cli/cli.test.ts) checks actionable output and secret non-disclosure. |
 | Iteration controls had no solver semantics | `maxIterations` is a per-day fixed-point cap; `tolerance` can terminate convergence; simulated days and solver iterations are reported separately. | [`cascade.test.ts`](../tests/core/cascade.test.ts) covers a convergent cycle and explicit capped failure. |
-| Archive expansion policy exceeded implementation | ZIP and TAR metadata are budgeted before extraction; embedded archives are counted and reject further nesting. | [`release-utils.test.ts`](../tests/release/release-utils.test.ts) covers entry, expanded-byte, ratio, and nested-archive failures; detached release verification exercises the normal path. |
+| Archive expansion policy exceeded implementation | ZIP and TAR metadata are budgeted before extraction; embedded archives are counted and reject further nesting. The legal filename grammar includes the official FAOSTAT parentheses while retaining traversal and metacharacter rejection. | [`release-utils.test.ts`](../tests/release/release-utils.test.ts) covers official parenthesized names plus path, entry, expanded-byte, ratio, and nested-archive failures; detached release verification exercises the normal path. |
 | Package map omitted YAML | The package map declares the audited YAML parser and an automated documentation test checks that dependency edge. | [`documentation.test.mjs`](../tests/documentation.test.mjs) |
 | CSP allowed inline scripts | Every HTML response receives a fresh nonce; all script elements receive it; `script-src` no longer contains `unsafe-inline`. | [`rendered-html.test.mjs`](../tests/rendered-html.test.mjs) and [`check-security.ts`](../scripts/check-security.ts) |
 | Hosted build lacked machine-readable identity | `/build-info.json` exposes commit, Git tree, exact tag when present, dirty state, package version, lock digest, content and RiskPack catalog digests, build time, and hosting project id. | [`rendered-html.test.mjs`](../tests/rendered-html.test.mjs). The endpoint explicitly identifies itself as self-reported, not a third-party signature. |
@@ -39,7 +39,7 @@ This maintainer review records how the release responds to the independently rep
 - Production build: pass. Vinext's current static route classifier reports an informational limitation for some routes; rendered-route tests directly exercise all public route categories and the branded 404.
 - Enforced performance gate: pass. After caching only identical acyclic daily states, three consecutive pre-tag runs measured 3,412, 3,461, and 3,993 ms end to end. The final working-tree CI then measured 2,960 ms total—936 ms for construction/sealing and 2,024 ms for validation plus three-bound 7/30-day analysis—with a 182,550,528-byte RSS delta. Client assets measured 1,044,508 bytes total with a 190,101-byte maximum. The enforced limits remain 15,000 ms, 805,306,368 RSS-delta bytes, 1,500,000 total client bytes, and 300,000 bytes per asset. This is a synthetic 20,000-node/19,999-edge linear-graph engineering budget, not a production SLA or empirical-domain benchmark.
 - The style policy still permits inline CSS for framework compatibility. Script execution does not permit `unsafe-inline`; this distinction is tested.
-- The immutable `v0.2.0` release is required to include annotated tag identity, CycloneDX SBOM, canonical checksums, release manifest, archive-budget verification, and a detached no-`.git` full rebuild receipt.
+- The immutable `v0.2.1` release is required to include annotated tag identity, CycloneDX SBOM, canonical checksums, release manifest, archive-budget verification, and a detached no-`.git` full rebuild receipt. The superseded `v0.2.0` candidate tag is retained rather than rewritten; it has no GitHub Release.
 
 ## What this release does not establish
 
