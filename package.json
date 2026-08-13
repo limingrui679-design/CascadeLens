@@ -1,6 +1,6 @@
 {
   "name": "cascadelens",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "releaseDate": "2026-08-13T00:00:00.000Z",
   "description": "Evidence-graded world graph and shock compiler for global systemic-risk analysis.",
   "private": true,

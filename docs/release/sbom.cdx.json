@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:c4d89a13-a96c-5653-877b-369ff45dec18",
+  "serialNumber": "urn:uuid:2e2771de-8324-5485-92f5-afe304a64b2a",
   "version": 1,
   "metadata": {
     "timestamp": "2026-08-13T00:00:00.000Z",
@@ -10,14 +10,14 @@
         {
           "type": "application",
           "name": "CascadeLens SBOM generator",
-          "version": "0.3.1"
+          "version": "0.3.2"
         }
       ]
     },
     "component": {
       "type": "application",
       "name": "cascadelens",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "licenses": [
         {
           "license": {
@@ -25,7 +25,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/cascadelens@0.3.1"
+      "purl": "pkg:npm/cascadelens@0.3.2"
     },
     "properties": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "name": "cascadelens:packageLockSha256",
-        "value": "ca445c99a7e34e30b7f5e9b6420907efae0ff8211b82b5d9bb507a5cf682159d"
+        "value": "9280a4ba15866aa9169622781eb2965c14bfac11d3eadb76f0e21f82d45309b4"
       }
     ]
   },

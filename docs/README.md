@@ -7,7 +7,7 @@ This index routes readers to the contract, evidence, and operating material behi
 | Document | Purpose |
 |---|---|
 | [Acceptance matrix](ACCEPTANCE_MATRIX.md) | Maps product requirements to implementation and verification evidence. |
-| [v0.3.1 audit-remediation review](SELF_REVIEW_2026-08-13_v0.3.1.md) | Maps independently reproduced software findings to code, adversarial tests, and release evidence. |
+| [v0.3.2 audit-remediation review](SELF_REVIEW_2026-08-13_v0.3.2.md) | Maps independently reproduced software findings to code, adversarial tests, and immutable release evidence. |
 | [Initial five-pass review](SELF_REVIEW_2026-08-13.md) | Preserves the pre-patch review record for comparison. |
 | [Performance profile](PERFORMANCE.md) | Defines enforced client budgets and the research-scale graph smoke profile. |
 | [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md) | Defines the prospective replay, independent-review, usability, and adoption evidence gates without claiming they have occurred. |

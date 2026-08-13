@@ -6,6 +6,16 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.3.2 — 2026-08-13
+
+### Release integrity
+
+- Enabled repository-level immutable releases and used the draft-first publication workflow so the published tag, commit binding, release assets, and GitHub release attestation cannot be replaced after publication.
+
+### Evidence boundary
+
+This patch adds release immutability only. It does not add historical outcome scoring, external validation, organizational adoption, or demonstrated real-world impact.
+
 ## 0.3.1 — 2026-08-13
 
 ### Fixed

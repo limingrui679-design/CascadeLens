@@ -1,6 +1,6 @@
-# CascadeLens v0.3.1 audit-remediation review
+# CascadeLens v0.3.2 audit-remediation review
 
-This maintainer review records how `v0.3.1` responds to independently reproduced findings against `v0.2.1@4911251`. It is internal software evidence, not an independent domain review, security certification, historical validation, user study, adoption record, or impact evaluation.
+This maintainer review records how `v0.3.2` responds to independently reproduced findings against `v0.2.1@4911251`. It is internal software evidence, not an independent domain review, security certification, historical validation, user study, adoption record, or impact evaluation.
 
 ## Release boundary
 
@@ -12,7 +12,7 @@ This maintainer review records how `v0.3.1` responds to independently reproduced
 
 ## Finding-to-evidence matrix
 
-| Independently reproduced finding | v0.3.1 control | Adversarial or regression evidence |
+| Independently reproduced finding | v0.3.2 control | Adversarial or regression evidence |
 |---|---|---|
 | P1: a self-rehashed pack could claim a false validation status, delete limitations, or contradict its actual parameters | Assumption registers, model cards, and limitations have strict versioned runtime and JSON Schema contracts. Every assumption identifies a supported `parameterPath` and `targetId`; the verifier requires a one-to-one match with the packaged scenario, every inferred graph edge, and every observation candidate. The assumption register's exact bytes, length, and SHA-256 must match its unique packaged input-source record. Model-card status and all limitations are reconstructed from the packaged scenario and benchmark and compared canonically. | [`riskpack.test.ts`](../tests/core/riskpack.test.ts) changes validation status, removes model-card and pack limitations, and changes an assumption value while refreshing internal checksums. Verification fails semantically. [`json-schema.test.ts`](../tests/core/json-schema.test.ts) validates live artifacts against the three published metadata schemas. |
 | P2: production web bundle bytes were outside the reproducibility proof and fonts were fetched remotely | Geist Sans and Mono are repository-local. Offline builds block non-loopback network access. Build-scoped framework entropy is derived from source identity, and the complete `dist` tree is compared byte for byte. The release manifest binds that digest to commit, tree, tag, version, and date; detached verification rebuilds it twice without `.git`. | [`reproducibility.test.ts`](../tests/build/reproducibility.test.ts), [`verify-build-reproducibility.ts`](../scripts/verify-build-reproducibility.ts), [`prepare-release.ts`](../scripts/prepare-release.ts), [`verify-release.ts`](../scripts/verify-release.ts), and the Linux/macOS `reproducible-build` CI matrix. The deterministic preloader is build-only; response nonces still use runtime entropy. The outer worker blocks public draft, prerender, and revalidation control paths, headers, and cookie before dispatch. |
@@ -21,7 +21,7 @@ This maintainer review records how `v0.3.1` responds to independently reproduced
 
 ## Compatibility decision
 
-The breaking metadata change advanced the product to `0.3.0` because assumption registers and model cards gained required semantic-binding fields. During pre-publication detached verification, the verifier correctly found that a tagged build digest contained stale files retained from an earlier output directory. `v0.3.1` is the follow-up patch: every production build now removes `dist`, `.next`, and `.vinext` first, and the real two-build verifier injects a stale sentinel that must disappear. The WorldGraph, ShockScript, and RiskPack-manifest schemas remain at `0.1.0`; engine semantics remain at `0.2.0`; the three metadata schemas remain at `1.0.0`. Existing RiskPacks remain immutable and must be verified with the matching historical release.
+The breaking metadata change advanced the product to `0.3.0` because assumption registers and model cards gained required semantic-binding fields. During pre-publication detached verification, the verifier correctly found that a tagged build digest contained stale files retained from an earlier output directory. `v0.3.1` made every production build remove `dist`, `.next`, and `.vinext` first, and made the real two-build verifier inject a stale sentinel that must disappear. `v0.3.2` adds repository-level immutable releases and uses a draft-first publication so the published tag, commit binding, assets, and GitHub release attestation are locked. The WorldGraph, ShockScript, and RiskPack-manifest schemas remain at `0.1.0`; engine semantics remain at `0.2.0`; the three metadata schemas remain at `1.0.0`. Existing RiskPacks must be verified with the matching historical release.
 
 ## Verification ledger
 
@@ -30,8 +30,8 @@ The breaking metadata change advanced the product to `0.3.0` because assumption 
 - Rendered routes, framework-control rejection, and 404: **8/8 pass**.
 - Automated accessibility audit: **2/2 pass**.
 - Dependency audit: **0 known vulnerabilities**.
-- Repository security scan and strict nonce CSP checks: **593 files scanned, 0 findings**.
-- Two final pre-tag runs of the 20,000-node/19,999-edge synthetic engineering smoke profile passed in 5,921–6,553 ms with 178,061,312–179,601,408-byte RSS deltas; client assets totaled 959,614 bytes and the largest was 190,101 bytes. These bounded measurements are not a production SLA or empirical-domain benchmark.
+- Repository security scan and strict nonce CSP checks: **600 files scanned, 0 findings**.
+- Two final pre-tag runs of the 20,000-node/19,999-edge synthetic engineering smoke profile passed in 5,200–5,625 ms with 177,209,344–178,487,296-byte RSS deltas; client assets totaled 959,614 bytes and the largest was 190,101 bytes. These bounded measurements are not a production SLA or empirical-domain benchmark.
 - The exact clean-tag offline production double-build digest is recorded in the detached release manifest and verification report, avoiding a circular digest claim inside the source tree that determines the build identity.
 - The release gate additionally requires the exact commit to pass the complete Ubuntu CI job and two-build reproducibility on both Ubuntu and macOS. The immutable release must include the annotated tag, source ZIP and tarball, CycloneDX SBOM, canonical relative checksums, release manifest with `dist` digest, and detached no-`.git` verification receipt.
 
