@@ -1,5 +1,5 @@
 {
-  "contentDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
+  "contentDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "3dc2b1a2e2e8cfc6b0a123834dfcb1d591e57566725d6f43a3cddf9bf43078d6",
       "title": "Drug-shortage re-stress local assumption register",
-      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/drug-shortage-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/drug-shortage-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

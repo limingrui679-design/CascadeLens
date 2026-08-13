@@ -33,7 +33,7 @@ The evidence for every item is linked from [`ACCEPTANCE_MATRIX.md`](ACCEPTANCE_M
 | Performance | The original social image exceeded the largest-client-asset budget. | P3 | Converted and compressed the generated image to a 1200×630 JPEG while preserving the design. | Largest client asset 190,101 bytes under 300,000-byte budget |
 | SBOM | The local audited image parser was represented as `vendor/image-size` rather than the package name `image-size`. | P3 | Corrected non-registry lock-path name derivation and added deterministic inventory, lock-hash, timestamp, purl, and path assertions. | `tests/release/sbom.test.ts`; 621 components |
 | Release communication | README still described the tagged release as active development. | P3 | Replaced it with the exact v0.1.0 scope and public product URL. | Content validation and rendered route checks |
-| Repository identity | Public source links named an obsolete GitHub owner and would have resolved to a missing repository. | P1 | Confirmed the owner against the authenticated account and existing portfolio repositories, changed all canonical links to `limingrui679-design/cascadelens`, and regenerated every digest-bearing case and RiskPack. | Zero obsolete-owner matches; deterministic case/RiskPack rebuild; public repository check |
+| Repository identity | Public source links named an obsolete GitHub owner and would have resolved to a missing repository. | P1 | Confirmed the owner against the authenticated account and existing portfolio repositories, changed all canonical links to `limingrui679-design/CascadeLens`, and regenerated every digest-bearing case and RiskPack. | Zero obsolete-owner matches; deterministic case/RiskPack rebuild; public repository check |
 
 ## Final automated gate
 

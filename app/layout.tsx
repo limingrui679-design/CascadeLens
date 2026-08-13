@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "CascadeLens",
     title: "CascadeLens · Evidence-graded systemic-risk analysis",
     description:
-      "Compile world graphs, shocks, uncertainty bounds, interventions, and provenance into verifiable RiskPacks.",
+      "Compile world graphs, shocks, uncertainty bounds, interventions, and provenance into recomputation-verifiable RiskPacks.",
     images: [
       {
         url: "/social-card.jpg",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CascadeLens · Evidence-graded systemic-risk analysis",
     description:
-      "WorldGraph, ShockScript, bounded cascades, InterventionLab, and verifiable RiskPacks.",
+      "WorldGraph, ShockScript, bounded cascades, InterventionLab, and recomputation-verifiable RiskPacks.",
     images: ["/social-card.jpg"],
   },
 };

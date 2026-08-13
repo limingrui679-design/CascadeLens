@@ -1,10 +1,13 @@
 {
   "classification": "synthetic_stress",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:ofac-list-change-stress:v0.1.0",
+  "packId": "riskpack:ofac-list-change-stress:v0.2.0",
   "scenarioId": "ofac-list-change-stress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+  "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

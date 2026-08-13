@@ -1,70 +1,306 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.04975490196078431,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.15441176470588233,
+        "horizonDays": 7,
+        "lowerImpact": 0.15441176470588233,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.38705263033599774,
+        "worstCaseImpact": 0.38705263033599774
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.14926470588235294,
+        "horizonDays": 30,
+        "lowerImpact": 0.14926470588235294,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.33833946008817145,
+        "worstCaseImpact": 0.33833946008817145
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.04975490196078431,
+        "horizonDays": 90,
+        "lowerImpact": 0.04975490196078431,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.11277982002939048,
+        "worstCaseImpact": 0.11277982002939048
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.04975490196078431,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.12471695866382147,
-    "worstCaseImpact": 0.12471695866382147
+    "upperImpact": 0.11277982002939048,
+    "worstCaseImpact": 0.11277982002939048
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.04975490196078431,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.38705263033599774,
+          "worstCaseImpact": 0.38705263033599774
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33833946008817145,
+          "worstCaseImpact": 0.33833946008817145
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11277982002939048,
+          "worstCaseImpact": 0.11277982002939048
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.12471695866382147,
-      "worstCaseImpact": 0.12471695866382147
+      "upperImpact": 0.11277982002939048,
+      "worstCaseImpact": 0.11277982002939048
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30562832736545736,
+          "worstCaseImpact": 0.30562832736545736
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.272163296116135,
+          "worstCaseImpact": 0.272163296116135
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09072109870537833,
+          "worstCaseImpact": 0.09072109870537833
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer"
       ],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09848023881775847,
-      "worstCaseImpact": 0.09848023881775847
+      "upperImpact": 0.09072109870537833,
+      "worstCaseImpact": 0.09072109870537833
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2939962840839516,
+          "worstCaseImpact": 0.2939962840839516
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26270955840584415,
+          "worstCaseImpact": 0.26270955840584415
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08756985280194805,
+          "worstCaseImpact": 0.08756985280194805
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:reroute"
       ],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09473213598260664,
-      "worstCaseImpact": 0.09473213598260664
+      "upperImpact": 0.08756985280194805,
+      "worstCaseImpact": 0.08756985280194805
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "upperImpact": 0.38705263033599774,
+          "worstCaseImpact": 0.38705263033599774
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3341166892058185,
+          "worstCaseImpact": 0.3341166892058185
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11137222973527285,
+          "worstCaseImpact": 0.11137222973527285
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:diversify"
       ],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10297269501818525,
-      "worstCaseImpact": 0.10297269501818525
+      "upperImpact": 0.11137222973527285,
+      "worstCaseImpact": 0.11137222973527285
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.24514170230162738,
+          "worstCaseImpact": 0.24514170230162738
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22300386002262215,
+          "worstCaseImpact": 0.22300386002262215
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07433462000754072,
+          "worstCaseImpact": 0.07433462000754072
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer",
         "intervention:red-sea-rerouting-restress:reroute"
@@ -72,13 +308,64 @@
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07899010407496881,
-      "worstCaseImpact": 0.07899010407496881
+      "upperImpact": 0.07433462000754072,
+      "worstCaseImpact": 0.07433462000754072
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "upperImpact": 0.30562832736545736,
+          "worstCaseImpact": 0.30562832736545736
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26941849504260557,
+          "worstCaseImpact": 0.26941849504260557
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:diversify"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08980616501420186,
+          "worstCaseImpact": 0.08980616501420186
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer",
         "intervention:red-sea-rerouting-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08434646744809492,
-      "worstCaseImpact": 0.08434646744809492
+      "upperImpact": 0.08980616501420186,
+      "worstCaseImpact": 0.08980616501420186
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:diversify",
         "intervention:red-sea-rerouting-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:diversify",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer",
         "intervention:red-sea-rerouting-restress:diversify",
@@ -124,48 +519,889 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04975490196078431,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.38705263033599774,
+              "worstCaseImpact": 0.38705263033599774
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33833946008817145,
+              "worstCaseImpact": 0.33833946008817145
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11277982002939048,
+              "worstCaseImpact": 0.11277982002939048
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11277982002939048,
+          "worstCaseImpact": 0.11277982002939048
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30562832736545736,
+              "worstCaseImpact": 0.30562832736545736
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.272163296116135,
+              "worstCaseImpact": 0.272163296116135
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09072109870537833,
+              "worstCaseImpact": 0.09072109870537833
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09072109870537833,
+          "worstCaseImpact": 0.09072109870537833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2939962840839516,
+              "worstCaseImpact": 0.2939962840839516
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26270955840584415,
+              "worstCaseImpact": 0.26270955840584415
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08756985280194805,
+              "worstCaseImpact": 0.08756985280194805
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08756985280194805,
+          "worstCaseImpact": 0.08756985280194805
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24514170230162738,
+              "worstCaseImpact": 0.24514170230162738
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22300386002262215,
+              "worstCaseImpact": 0.22300386002262215
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07433462000754072,
+              "worstCaseImpact": 0.07433462000754072
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07433462000754072,
+          "worstCaseImpact": 0.07433462000754072
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04975490196078431,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.38705263033599774,
+              "worstCaseImpact": 0.38705263033599774
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33833946008817145,
+              "worstCaseImpact": 0.33833946008817145
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11277982002939048,
+              "worstCaseImpact": 0.11277982002939048
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11277982002939048,
+          "worstCaseImpact": 0.11277982002939048
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30562832736545736,
+              "worstCaseImpact": 0.30562832736545736
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.272163296116135,
+              "worstCaseImpact": 0.272163296116135
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09072109870537833,
+              "worstCaseImpact": 0.09072109870537833
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09072109870537833,
+          "worstCaseImpact": 0.09072109870537833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2939962840839516,
+              "worstCaseImpact": 0.2939962840839516
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26270955840584415,
+              "worstCaseImpact": 0.26270955840584415
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08756985280194805,
+              "worstCaseImpact": 0.08756985280194805
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08756985280194805,
+          "worstCaseImpact": 0.08756985280194805
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24514170230162738,
+              "worstCaseImpact": 0.24514170230162738
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22300386002262215,
+              "worstCaseImpact": 0.22300386002262215
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07433462000754072,
+              "worstCaseImpact": 0.07433462000754072
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07433462000754072,
+          "worstCaseImpact": 0.07433462000754072
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04975490196078431,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.38705263033599774,
+              "worstCaseImpact": 0.38705263033599774
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33833946008817145,
+              "worstCaseImpact": 0.33833946008817145
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11277982002939048,
+              "worstCaseImpact": 0.11277982002939048
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11277982002939048,
+          "worstCaseImpact": 0.11277982002939048
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30562832736545736,
+              "worstCaseImpact": 0.30562832736545736
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.272163296116135,
+              "worstCaseImpact": 0.272163296116135
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09072109870537833,
+              "worstCaseImpact": 0.09072109870537833
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09072109870537833,
+          "worstCaseImpact": 0.09072109870537833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2939962840839516,
+              "worstCaseImpact": 0.2939962840839516
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26270955840584415,
+              "worstCaseImpact": 0.26270955840584415
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08756985280194805,
+              "worstCaseImpact": 0.08756985280194805
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08756985280194805,
+          "worstCaseImpact": 0.08756985280194805
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04975490196078431,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.15441176470588233,
+              "horizonDays": 7,
+              "lowerImpact": 0.15441176470588233,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24514170230162738,
+              "worstCaseImpact": 0.24514170230162738
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.14926470588235294,
+              "horizonDays": 30,
+              "lowerImpact": 0.14926470588235294,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22300386002262215,
+              "worstCaseImpact": 0.22300386002262215
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:red-sea-rerouting-restress:buffer",
+                "intervention:red-sea-rerouting-restress:reroute"
+              ],
+              "centralImpact": 0.04975490196078431,
+              "horizonDays": 90,
+              "lowerImpact": 0.04975490196078431,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07433462000754072,
+              "worstCaseImpact": 0.07433462000754072
+            }
+          ],
+          "interventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "lowerImpact": 0.04975490196078431,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07433462000754072,
+          "worstCaseImpact": 0.07433462000754072
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:red-sea-rerouting-restress:buffer",
+        "intervention:red-sea-rerouting-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.04975490196078431,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.38705263033599774,
+          "worstCaseImpact": 0.38705263033599774
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33833946008817145,
+          "worstCaseImpact": 0.33833946008817145
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11277982002939048,
+          "worstCaseImpact": 0.11277982002939048
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.12471695866382147,
-      "worstCaseImpact": 0.12471695866382147
+      "upperImpact": 0.11277982002939048,
+      "worstCaseImpact": 0.11277982002939048
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30562832736545736,
+          "worstCaseImpact": 0.30562832736545736
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.272163296116135,
+          "worstCaseImpact": 0.272163296116135
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09072109870537833,
+          "worstCaseImpact": 0.09072109870537833
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer"
       ],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09848023881775847,
-      "worstCaseImpact": 0.09848023881775847
+      "upperImpact": 0.09072109870537833,
+      "worstCaseImpact": 0.09072109870537833
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2939962840839516,
+          "worstCaseImpact": 0.2939962840839516
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26270955840584415,
+          "worstCaseImpact": 0.26270955840584415
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08756985280194805,
+          "worstCaseImpact": 0.08756985280194805
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:reroute"
       ],
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09473213598260664,
-      "worstCaseImpact": 0.09473213598260664
+      "upperImpact": 0.08756985280194805,
+      "worstCaseImpact": 0.08756985280194805
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:red-sea-rerouting-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04975490196078431,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.15441176470588233,
+          "horizonDays": 7,
+          "lowerImpact": 0.15441176470588233,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.24514170230162738,
+          "worstCaseImpact": 0.24514170230162738
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.14926470588235294,
+          "horizonDays": 30,
+          "lowerImpact": 0.14926470588235294,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22300386002262215,
+          "worstCaseImpact": 0.22300386002262215
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:red-sea-rerouting-restress:buffer",
+            "intervention:red-sea-rerouting-restress:reroute"
+          ],
+          "centralImpact": 0.04975490196078431,
+          "horizonDays": 90,
+          "lowerImpact": 0.04975490196078431,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07433462000754072,
+          "worstCaseImpact": 0.07433462000754072
+        }
+      ],
       "interventionIds": [
         "intervention:red-sea-rerouting-restress:buffer",
         "intervention:red-sea-rerouting-restress:reroute"
@@ -173,8 +1409,8 @@
       "lowerImpact": 0.04975490196078431,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07899010407496881,
-      "worstCaseImpact": 0.07899010407496881
+      "upperImpact": 0.07433462000754072,
+      "worstCaseImpact": 0.07433462000754072
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1422,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 304.9161650899152,
+      "threshold": 362.66834702207115,
       "toBundleIds": [
         "intervention:red-sea-rerouting-restress:buffer"
       ]
@@ -196,7 +1432,7 @@
         "intervention:red-sea-rerouting-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 800.4049333610341,
+      "threshold": 952.0044109329475,
       "toBundleIds": [
         "intervention:red-sea-rerouting-restress:reroute"
       ]
@@ -206,7 +1442,7 @@
         "intervention:red-sea-rerouting-restress:reroute"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 508.19360848319104,
+      "threshold": 604.4472450367834,
       "toBundleIds": [
         "intervention:red-sea-rerouting-restress:buffer",
         "intervention:red-sea-rerouting-restress:reroute"

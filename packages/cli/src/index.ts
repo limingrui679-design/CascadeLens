@@ -2,6 +2,8 @@
 import { resolve } from "node:path";
 import {
   ENGINE_VERSION,
+  CascadeLensValidationError,
+  compareCanonicalStrings,
   analyzeInterventions,
   createRiskPack,
   parseShockScript,
@@ -11,12 +13,19 @@ import {
   validateScenario,
   validateScenarioAgainstSnapshot,
   verifyRiskPack,
+  verifyRiskPackDetailed,
   verifySnapshot,
   type AssumptionRegister,
   type GraphSnapshot,
   type ModelCard,
 } from "../../core/src/index";
-import { connectorById, connectorCatalog } from "../../connectors/src/index";
+import {
+  adapters,
+  connectorById,
+  connectorCatalog,
+  runConnectorPlan,
+  type ConnectorAdapter,
+} from "../../connectors/src/index";
 import { referenceCaseSpecs } from "../../cases/src/index";
 import { buildCases } from "../../../scripts/build-cases";
 import {
@@ -27,22 +36,23 @@ import {
   writeRiskPackDirectory,
 } from "./io";
 
-const VERSION = "0.1.1";
+const VERSION = "0.2.0";
 const HELP = `CascadeLens ${VERSION}
 
 Usage:
   cascadelens validate <scenario> [--graph <snapshot>]
   cascadelens run <scenario> --graph <snapshot> --out <results.json>
   cascadelens pack <scenario> --graph <snapshot> --assumptions <file> --model-card <file> --out <directory>
-  cascadelens verify <riskpack-directory>
+  cascadelens verify <riskpack-directory> [--expected-digest <sha256>]
   cascadelens cases list
   cascadelens cases build [slug|all]
   cascadelens cases verify [slug|all]
   cascadelens connectors list
   cascadelens connectors show <id>
+  cascadelens connectors acquire <id> --query <query.json> --out <directory> --user-agent <identifying-agent>
 
-All generated impacts are scenarios. A valid RiskPack is integrity evidence, not
-evidence of empirical accuracy, deployment, adoption, or realized impact.
+All generated impacts are scenarios. Recomputed RiskPack verification is derivation
+evidence, not empirical accuracy, publisher identity, adoption, or realized impact.
 `;
 
 interface ParsedArguments {
@@ -198,19 +208,37 @@ async function packCommand(args: string[]): Promise<void> {
   if (issues.length > 0) throw new Error(`Generated RiskPack failed verification: ${issues.join(", ")}`);
   const out = requiredOption(parsed, "--out");
   await writeRiskPackDirectory(out, pack);
-  process.stdout.write(`WROTE VERIFIED RISKPACK ${resolve(out)}\n`);
+  process.stdout.write(`WROTE RECOMPUTED RISKPACK ${resolve(out)}\n`);
 }
 
-async function verifyDirectory(path: string): Promise<void> {
-  const issues = await verifyRiskPack(await readRiskPackDirectory(path));
-  if (issues.length > 0) throw new Error(`INVALID ${path}\n${issues.map((issue) => `- ${issue}`).join("\n")}`);
-  process.stdout.write(`VERIFIED ${resolve(path)}\n`);
+async function verifyDirectory(path: string, expectedDigest?: string): Promise<void> {
+  const report = await verifyRiskPackDetailed(
+    await readRiskPackDirectory(path),
+    expectedDigest,
+  );
+  if (report.issues.length > 0) {
+    throw new Error(
+      `INVALID ${path}\n${report.issues.map((issue) => `- ${issue}`).join("\n")}`,
+    );
+  }
+  process.stdout.write(
+    `VERIFIED RECOMPUTED ${resolve(path)} pack-digest=${report.packDigest}${
+      expectedDigest ? " external-digest=matched" : " external-digest=not-supplied"
+    }\n`,
+  );
 }
 
 async function verifyCommand(args: string[]): Promise<void> {
-  const parsed = parseArguments(args, []);
-  assertPositional(parsed, 1, "cascadelens verify <riskpack-directory>");
-  await verifyDirectory(parsed.positional[0]);
+  const parsed = parseArguments(args, ["--expected-digest"]);
+  assertPositional(
+    parsed,
+    1,
+    "cascadelens verify <riskpack-directory> [--expected-digest <sha256>]",
+  );
+  await verifyDirectory(
+    parsed.positional[0],
+    parsed.options.get("--expected-digest"),
+  );
 }
 
 async function casesCommand(args: string[]): Promise<void> {
@@ -240,8 +268,8 @@ async function casesCommand(args: string[]): Promise<void> {
   throw new TypeError("Usage: cascadelens cases <list|build|verify> [slug|all]");
 }
 
-function connectorsCommand(args: string[]): void {
-  const parsed = parseArguments(args, []);
+async function connectorsCommand(args: string[]): Promise<void> {
+  const parsed = parseArguments(args, ["--query", "--out", "--user-agent"]);
   if (parsed.positional[0] === "list" && parsed.positional.length === 1) {
     process.stdout.write(`${stableStringify(connectorCatalog, 2)}\n`);
     return;
@@ -250,7 +278,37 @@ function connectorsCommand(args: string[]): void {
     process.stdout.write(`${stableStringify(connectorById(parsed.positional[1]), 2)}\n`);
     return;
   }
-  throw new TypeError("Usage: cascadelens connectors <list|show> [id]");
+  if (parsed.positional[0] === "acquire" && parsed.positional.length === 2) {
+    const id = parsed.positional[1] as keyof typeof adapters;
+    const adapter = adapters[id] as ConnectorAdapter<Record<string, unknown>> | undefined;
+    if (!adapter) throw new RangeError(`Unknown connector ${id}.`);
+    if (adapter.descriptor.runtime !== "remote") {
+      throw new TypeError(
+        `${id} is import-only; use its adapter through the SDK with a lawfully obtained local export.`,
+      );
+    }
+    const query = await readJson<Record<string, unknown>>(
+      requiredOption(parsed, "--query"),
+      1_000_000,
+      "connector query",
+    );
+    const result = await runConnectorPlan(
+      adapter,
+      [{ id: "partition-000001", query }],
+      requiredOption(parsed, "--out"),
+      { userAgent: requiredOption(parsed, "--user-agent") },
+    );
+    process.stdout.write(
+      `${stableStringify({
+        status: "acquired_normalized_and_mapped",
+        evidenceBoundary:
+          "The generic WorldGraph mapping creates metric nodes only and does not infer dependency edges.",
+        ...result,
+      }, 2)}\n`,
+    );
+    return;
+  }
+  throw new TypeError("Usage: cascadelens connectors <list|show|acquire> [id]");
 }
 
 export async function main(args = process.argv.slice(2)): Promise<void> {
@@ -273,7 +331,18 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
 }
 
 main().catch((error: unknown) => {
-  const message = error instanceof Error ? error.message : String(error);
+  const message = error instanceof CascadeLensValidationError
+    ? `${error.message}\n${[...error.issues]
+        .sort(
+          (left, right) =>
+            compareCanonicalStrings(left.path, right.path) ||
+            compareCanonicalStrings(left.code, right.code),
+        )
+        .map((issue) => `- ${issue.path} [${issue.code}]: ${issue.message}`)
+        .join("\n")}`
+    : error instanceof Error
+      ? error.message
+      : String(error);
   process.stderr.write(`ERROR ${message}\n`);
   process.exitCode = 1;
 });

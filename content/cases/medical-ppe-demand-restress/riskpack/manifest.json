@@ -1,10 +1,13 @@
 {
   "classification": "quasi_historical",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:medical-ppe-demand-restress:v0.1.0",
+  "packId": "riskpack:medical-ppe-demand-restress:v0.2.0",
   "scenarioId": "medical-ppe-demand-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "69f7474027b8e0398b03ade74842af328bff7dd13d113ea5c92e0a9b7b76dc5b",
+  "snapshotDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

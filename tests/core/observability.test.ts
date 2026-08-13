@@ -54,15 +54,22 @@ test("prices evidence that can change the preferred intervention and applies acq
     label: "Verify a possible feedback dependency",
     candidateEdge,
     probabilityPresent: 0.5,
-    acquisitionCost: 0.01,
+    acquisitionCost: 0.001,
     acquisitionCostUnit: "normalized_cost",
   };
 
+  const decisionScenario = scenario();
+  decisionScenario.constraints.budget = 100;
+  decisionScenario.interventions[0].cost = 10;
+  decisionScenario.interventions[0].effect = 0.9;
+  decisionScenario.interventions[1].cost = 0;
+  decisionScenario.interventions[1].effect = 0.2;
+
   const [worthAcquiring] = await valueObservations(
     snapshot,
-    scenario(),
+    decisionScenario,
     [candidate],
-    800,
+    1_000,
   );
   assert.equal(worthAcquiring.status, "worth_acquiring");
   assert.equal(worthAcquiring.probabilityDecisionChanges, 0.5);
@@ -74,9 +81,9 @@ test("prices evidence that can change the preferred intervention and applies acq
 
   const [tooExpensive] = await valueObservations(
     snapshot,
-    scenario(),
+    decisionScenario,
     [{ ...candidate, acquisitionCost: worthAcquiring.expectedValueOfPerfectInformation + 1 }],
-    800,
+    1_000,
   );
   assert.equal(tooExpensive.status, "not_cost_effective");
   assert.equal(

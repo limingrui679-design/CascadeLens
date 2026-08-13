@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-08-12",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 1631
+    }
+  },
+  "results": [
+    {
+      "update_type": "Reverified",
+      "initial_posting_date": "02/20/2018",
+      "package_ndc": "55150-250-50",
+      "generic_name": "Bupivacaine Hydrochloride Injection",
+      "contact_info": "888-238-7880",
+      "availability": "Available",
+      "related_info": "Check wholesalers for inventory",
+      "openfda": {
+        "application_number": [
+          "ANDA207183"
+        ],
+        "brand_name": [
+          "BUPIVACAINE HYDROCHLORIDE"
+        ],
+        "generic_name": [
+          "BUPIVACAINE HYDROCHLORIDE"
+        ],
+        "manufacturer_name": [
+          "Eugia US LLC"
+        ],
+        "product_ndc": [
+          "55150-250",
+          "55150-167",
+          "55150-168",
+          "55150-169",
+          "55150-170",
+          "55150-171",
+          "55150-172",
+          "55150-249"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "PERINEURAL"
+        ],
+        "substance_name": [
+          "BUPIVACAINE HYDROCHLORIDE"
+        ],
+        "rxcui": [
+          "1012396",
+          "1012404",
+          "1724786",
+          "1724787",
+          "1724880",
+          "1724884",
+          "1725078",
+          "1725082"
+        ],
+        "spl_id": [
+          "39649703-e633-4a20-ba71-0c04dbf8ff2a"
+        ],
+        "spl_set_id": [
+          "ffecf450-1f01-4721-8e10-251385852612"
+        ],
+        "package_ndc": [
+          "55150-167-10",
+          "55150-168-30",
+          "55150-169-10",
+          "55150-170-30",
+          "55150-171-10",
+          "55150-172-30",
+          "55150-249-50",
+          "55150-250-50"
+        ],
+        "unii": [
+          "7TQO7W3VT8"
+        ]
+      },
+      "update_date": "08/06/2026",
+      "therapeutic_category": [
+        "Anesthesia"
+      ],
+      "dosage_form": "Injection",
+      "presentation": "Bupivacaine Hydrochloride, Injection, 5 mg/1 mL (NDC 55150-250-50)",
+      "company_name": "Eugia US LLC",
+      "status": "Current"
+    }
+  ]
+}

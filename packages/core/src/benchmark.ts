@@ -47,6 +47,14 @@ function correlation(left: number[], right: number[]): number {
   return denominator === 0 ? 0 : numerator / denominator;
 }
 
+const millisecondsPerDay = 86_400_000;
+
+function firstShockStart(scenario: ShockScenario): string {
+  return [...scenario.shocks]
+    .sort((left, right) => toEpoch(left.startsAt) - toEpoch(right.startsAt))[0]
+    .startsAt;
+}
+
 export function scoreReplay(
   snapshot: GraphSnapshot,
   scenario: ShockScenario,
@@ -58,7 +66,9 @@ export function scoreReplay(
     .map((issue) => `${issue.path}: ${issue.message}`);
   const sourceById = new Map(snapshot.sources.map((source) => [source.id, source]));
   const nodeIds = new Set(snapshot.nodes.map((node) => node.id));
-  const seenOutcomeNodeIds = new Set<string>();
+  const seenOutcomeKeys = new Set<string>();
+  const shockStart = firstShockStart(scenario);
+  const shockStartEpoch = toEpoch(shockStart);
   for (const [index, outcome] of outcomes.entries()) {
     const source = sourceById.get(outcome.sourceId);
     if (!source) leakageIssues.push(`outcomes[${index}]: unknown source ${outcome.sourceId}`);
@@ -66,15 +76,50 @@ export function scoreReplay(
     if (!nodeIds.has(outcome.nodeId)) {
       leakageIssues.push(`outcomes[${index}]: unknown node ${outcome.nodeId}`);
     }
-    if (seenOutcomeNodeIds.has(outcome.nodeId)) {
-      leakageIssues.push(`outcomes[${index}]: duplicate outcome node ${outcome.nodeId}`);
+    const outcomeKey = `${outcome.targetMetric}:${outcome.horizonDays}:${outcome.nodeId}`;
+    if (seenOutcomeKeys.has(outcomeKey)) {
+      leakageIssues.push(`outcomes[${index}]: duplicate outcome target ${outcomeKey}`);
     } else {
-      seenOutcomeNodeIds.add(outcome.nodeId);
+      seenOutcomeKeys.add(outcomeKey);
     }
-    if (!isIsoDateTime(outcome.observedAt)) {
-      leakageIssues.push(`outcomes[${index}]: observedAt must be an ISO-8601 date-time with timezone`);
-    } else if (toEpoch(outcome.observedAt) <= toEpoch(scenario.decisionCutoff)) {
-      leakageIssues.push(`outcomes[${index}]: outcome must be recorded after the decision cutoff`);
+    if (outcome.targetMetric !== "time_weighted_mean_node_impact") {
+      leakageIssues.push(`outcomes[${index}]: unsupported targetMetric ${String(outcome.targetMetric)}`);
+    }
+    if (
+      !Number.isInteger(outcome.horizonDays) ||
+      !scenario.propagation.horizonsDays.includes(outcome.horizonDays)
+    ) {
+      leakageIssues.push(`outcomes[${index}]: horizonDays must match a declared scenario horizon`);
+    }
+    for (const field of ["windowStart", "windowEnd", "availableAt"] as const) {
+      if (!isIsoDateTime(outcome[field])) {
+        leakageIssues.push(`outcomes[${index}]: ${field} must be an ISO-8601 date-time with timezone`);
+      }
+    }
+    if (isIsoDateTime(outcome.windowStart) && toEpoch(outcome.windowStart) !== shockStartEpoch) {
+      leakageIssues.push(`outcomes[${index}]: windowStart must equal the first shock start ${shockStart}`);
+    }
+    if (
+      isIsoDateTime(outcome.windowEnd) &&
+      Number.isInteger(outcome.horizonDays) &&
+      toEpoch(outcome.windowEnd) !== shockStartEpoch + outcome.horizonDays * millisecondsPerDay
+    ) {
+      leakageIssues.push(`outcomes[${index}]: windowEnd must close the complete ${outcome.horizonDays}-day target horizon`);
+    }
+    if (
+      isIsoDateTime(outcome.availableAt) &&
+      isIsoDateTime(outcome.windowEnd) &&
+      toEpoch(outcome.availableAt) <= toEpoch(outcome.windowEnd)
+    ) {
+      leakageIssues.push(`outcomes[${index}]: availableAt must be after the complete outcome window`);
+    }
+    if (
+      source &&
+      isIsoDateTime(outcome.availableAt) &&
+      isIsoDateTime(source.availableAt) &&
+      toEpoch(outcome.availableAt) < toEpoch(source.availableAt)
+    ) {
+      leakageIssues.push(`outcomes[${index}]: availableAt predates the cited outcome source`);
     }
     if (!Number.isFinite(outcome.observedImpact) || outcome.observedImpact < 0 || outcome.observedImpact > 1) {
       leakageIssues.push(`outcomes[${index}]: observedImpact must be between 0 and 1`);
@@ -101,9 +146,42 @@ export function scoreReplay(
     };
   }
 
-  const lower = new Map(bounds.lower.impacts.map((item) => [item.nodeId, item.impact]));
-  const central = new Map(bounds.central.impacts.map((item) => [item.nodeId, item.impact]));
-  const upper = new Map(bounds.upper.impacts.map((item) => [item.nodeId, item.impact]));
+  const target = outcomes[0];
+  if (
+    outcomes.some(
+      (item) =>
+        item.targetMetric !== target.targetMetric ||
+        item.horizonDays !== target.horizonDays ||
+        item.windowStart !== target.windowStart ||
+        item.windowEnd !== target.windowEnd,
+    )
+  ) {
+    return {
+      scenarioId: scenario.scenarioId,
+      classification: scenario.classification,
+      status: "blocked",
+      sampleSize: outcomes.length,
+      leakageIssues: ["outcomes: all observations in one score must share one metric, horizon, and event-time window"],
+      limitations: ["Benchmark scoring was blocked by incomparable outcome targets."],
+    };
+  }
+
+  const horizonBounds = bounds.horizons.find(
+    (item) => item.horizonDays === target.horizonDays,
+  );
+  if (!horizonBounds) {
+    return {
+      scenarioId: scenario.scenarioId,
+      classification: scenario.classification,
+      status: "blocked",
+      sampleSize: outcomes.length,
+      leakageIssues: [`outcomes: no computed bounds exist for horizon ${target.horizonDays}`],
+      limitations: ["Benchmark scoring was blocked by a missing target horizon."],
+    };
+  }
+  const lower = new Map(horizonBounds.lower.impacts.map((item) => [item.nodeId, item.impact]));
+  const central = new Map(horizonBounds.central.impacts.map((item) => [item.nodeId, item.impact]));
+  const upper = new Map(horizonBounds.upper.impacts.map((item) => [item.nodeId, item.impact]));
   const comparable = outcomes.filter((item) => central.has(item.nodeId));
   if (comparable.length < 2) {
     return {
@@ -153,6 +231,9 @@ export function scoreReplay(
     empiricalCoverageCalibrationError: Math.abs(1 - intervalCoverage),
     directionAccuracy,
     meanRegretVersusZeroBaseline: meanAbsoluteError - baselineAbsoluteError,
+    targetMetric: target.targetMetric,
+    horizonDays: target.horizonDays,
+    outcomeWindow: { start: target.windowStart, end: target.windowEnd },
     leakageIssues: [],
     limitations: [
       "Replay metrics assess agreement with the selected outcome proxy, not causal impact or operational adoption.",

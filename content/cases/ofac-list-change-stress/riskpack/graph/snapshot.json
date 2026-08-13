@@ -1,5 +1,5 @@
 {
-  "contentDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+  "contentDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "889d047d0d0a0c7d586bd6c2fac5b2e4f69a09523d985b814fb97e3f230caa7b",
       "title": "Sanctions-list change stress local assumption register",
-      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/ofac-list-change-stress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/ofac-list-change-stress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

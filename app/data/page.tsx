@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import connectorCatalog from "@/content/catalog/connectors.json";
+import snapshotCatalog from "@/content/snapshots/catalog.json";
 import { PageShell } from "../components/page-shell";
 import { Eyebrow, Status } from "../components/status";
 
 export const metadata: Metadata = {
   title: "Data and license catalog",
-  description: "Ten official and documented public-source connector contracts with explicit license boundaries.",
+  description: "Ten documented public-source connector contracts and three verified frozen official-source snapshots.",
 };
 
 function modeTone(mode: string) {
@@ -19,12 +20,12 @@ export default function DataPage() {
         <Eyebrow>Source acquisition registry</Eyebrow>
         <h1>Data access is a contract, not a scrape.</h1>
         <p className="page-intro-copy">
-          Every connector declares its official source, allowed hosts, evidence grade, request limits, redistribution mode, and known interpretive boundary.
+          Every connector declares its official source, allowed hosts, evidence grade, request limits, redistribution mode, and known interpretive boundary. Remote runs emit a raw manifest, normalized digest, and conservative metric-node WorldGraph snapshot without inventing dependency edges.
         </p>
         <div className="page-intro-meta">
           <Status tone="observed">10 core connectors</Status>
           <Status tone="blocked">redirects blocked</Status>
-          <Status tone="verified">atomic snapshots</Status>
+          <Status tone="verified">3 frozen public snapshots</Status>
         </div>
       </section>
       <section className="page-content">
@@ -45,6 +46,16 @@ export default function DataPage() {
             </tbody>
           </table>
         </div>
+        <article className="panel">
+          <Eyebrow>Executed public-data evidence</Eyebrow>
+          <h2>Three official-source routes are frozen and independently recheckable.</h2>
+          <p>
+            The packaged FAOSTAT, GLEIF, and openFDA runs contain {snapshotCatalog.factCount.toLocaleString("en-US")} normalized facts, exact source hashes, manifests, stable identities, and deterministic WorldGraph snapshots. The generic mapper created {snapshotCatalog.dependencyEdgeCount} dependency edges because public records alone do not prove dependency topology.
+          </p>
+          <p>
+            <a href="https://github.com/limingrui679-design/CascadeLens/tree/main/content/snapshots" rel="noreferrer" target="_blank">Inspect queries, payloads, attribution, and digests ↗</a>
+          </p>
+        </article>
         <div className="content-grid data-principles">
           <article className="panel"><h2>Redistributable</h2><p>Small lawful snapshots may be packaged only with dataset-specific attribution and metadata.</p></article>
           <article className="panel"><h2>Download on run</h2><p>The repository stores bounded queries, timestamps, manifests, and hashes—not a mirror of the provider dataset.</p></article>

@@ -1,8 +1,38 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.04245495495495495,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.13175675675675677,
+        "horizonDays": 7,
+        "lowerImpact": 0.13175675675675677,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.3592473093363251,
+        "worstCaseImpact": 0.3592473093363251
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.12736486486486484,
+        "horizonDays": 30,
+        "lowerImpact": 0.12736486486486484,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.34727239902511414,
+        "worstCaseImpact": 0.34727239902511414
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.04245495495495495,
+        "horizonDays": 90,
+        "lowerImpact": 0.04245495495495495,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.11575746634170472,
+        "worstCaseImpact": 0.11575746634170472
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.04245495495495495,
     "reasons": [],
@@ -12,9 +42,39 @@
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.04245495495495495,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3592473093363251,
+          "worstCaseImpact": 0.3592473093363251
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.34727239902511414,
+          "worstCaseImpact": 0.34727239902511414
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11575746634170472,
+          "worstCaseImpact": 0.11575746634170472
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.04245495495495495,
       "reasons": [],
@@ -23,9 +83,51 @@
       "worstCaseImpact": 0.11575746634170472
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2796256159334762,
+          "worstCaseImpact": 0.2796256159334762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2703047620690271,
+          "worstCaseImpact": 0.2703047620690271
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09010158735634236,
+          "worstCaseImpact": 0.09010158735634236
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer"
       ],
@@ -36,9 +138,51 @@
       "worstCaseImpact": 0.09010158735634236
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2682510883044978,
+          "worstCaseImpact": 0.2682510883044978
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2593093853610145,
+          "worstCaseImpact": 0.2593093853610145
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08643646178700486,
+          "worstCaseImpact": 0.08643646178700486
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:reroute"
       ],
@@ -49,22 +193,114 @@
       "worstCaseImpact": 0.08643646178700486
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "upperImpact": 0.3592473093363251,
+          "worstCaseImpact": 0.3592473093363251
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3389489297540439,
+          "worstCaseImpact": 0.3389489297540439
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11298297658468129,
+          "worstCaseImpact": 0.11298297658468129
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:diversify"
       ],
       "lowerImpact": 0.04245495495495495,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09564241560328478,
-      "worstCaseImpact": 0.09564241560328478
+      "upperImpact": 0.11298297658468129,
+      "worstCaseImpact": 0.11298297658468129
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2204780722627884,
+          "worstCaseImpact": 0.2204780722627884
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2131288031873621,
+          "worstCaseImpact": 0.2131288031873621
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07104293439578736,
+          "worstCaseImpact": 0.07104293439578736
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer",
         "intervention:refining-hurricane-restress:reroute"
@@ -76,9 +312,60 @@
       "worstCaseImpact": 0.07104293439578736
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "upperImpact": 0.2796256159334762,
+          "worstCaseImpact": 0.2796256159334762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26489450704283135,
+          "worstCaseImpact": 0.26489450704283135
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:diversify"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08829816901427712,
+          "worstCaseImpact": 0.08829816901427712
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer",
         "intervention:refining-hurricane-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.04245495495495495,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07702680437636937,
-      "worstCaseImpact": 0.07702680437636937
+      "upperImpact": 0.08829816901427712,
+      "worstCaseImpact": 0.08829816901427712
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:diversify",
         "intervention:refining-hurricane-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:diversify",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer",
         "intervention:refining-hurricane-restress:diversify",
@@ -124,11 +519,718 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04245495495495495,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3592473093363251,
+              "worstCaseImpact": 0.3592473093363251
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34727239902511414,
+              "worstCaseImpact": 0.34727239902511414
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11575746634170472,
+              "worstCaseImpact": 0.11575746634170472
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11575746634170472,
+          "worstCaseImpact": 0.11575746634170472
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2796256159334762,
+              "worstCaseImpact": 0.2796256159334762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2703047620690271,
+              "worstCaseImpact": 0.2703047620690271
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09010158735634236,
+              "worstCaseImpact": 0.09010158735634236
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09010158735634236,
+          "worstCaseImpact": 0.09010158735634236
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2682510883044978,
+              "worstCaseImpact": 0.2682510883044978
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593093853610145,
+              "worstCaseImpact": 0.2593093853610145
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08643646178700486,
+              "worstCaseImpact": 0.08643646178700486
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08643646178700486,
+          "worstCaseImpact": 0.08643646178700486
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2204780722627884,
+              "worstCaseImpact": 0.2204780722627884
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2131288031873621,
+              "worstCaseImpact": 0.2131288031873621
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07104293439578736,
+              "worstCaseImpact": 0.07104293439578736
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07104293439578736,
+          "worstCaseImpact": 0.07104293439578736
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04245495495495495,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3592473093363251,
+              "worstCaseImpact": 0.3592473093363251
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34727239902511414,
+              "worstCaseImpact": 0.34727239902511414
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11575746634170472,
+              "worstCaseImpact": 0.11575746634170472
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11575746634170472,
+          "worstCaseImpact": 0.11575746634170472
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2796256159334762,
+              "worstCaseImpact": 0.2796256159334762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2703047620690271,
+              "worstCaseImpact": 0.2703047620690271
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09010158735634236,
+              "worstCaseImpact": 0.09010158735634236
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09010158735634236,
+          "worstCaseImpact": 0.09010158735634236
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2682510883044978,
+              "worstCaseImpact": 0.2682510883044978
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593093853610145,
+              "worstCaseImpact": 0.2593093853610145
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08643646178700486,
+              "worstCaseImpact": 0.08643646178700486
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08643646178700486,
+          "worstCaseImpact": 0.08643646178700486
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2204780722627884,
+              "worstCaseImpact": 0.2204780722627884
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2131288031873621,
+              "worstCaseImpact": 0.2131288031873621
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07104293439578736,
+              "worstCaseImpact": 0.07104293439578736
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07104293439578736,
+          "worstCaseImpact": 0.07104293439578736
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04245495495495495,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3592473093363251,
+              "worstCaseImpact": 0.3592473093363251
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34727239902511414,
+              "worstCaseImpact": 0.34727239902511414
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11575746634170472,
+              "worstCaseImpact": 0.11575746634170472
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.11575746634170472,
+          "worstCaseImpact": 0.11575746634170472
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2796256159334762,
+              "worstCaseImpact": 0.2796256159334762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2703047620690271,
+              "worstCaseImpact": 0.2703047620690271
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09010158735634236,
+              "worstCaseImpact": 0.09010158735634236
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09010158735634236,
+          "worstCaseImpact": 0.09010158735634236
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2682510883044978,
+              "worstCaseImpact": 0.2682510883044978
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593093853610145,
+              "worstCaseImpact": 0.2593093853610145
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.08643646178700486,
+              "worstCaseImpact": 0.08643646178700486
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.08643646178700486,
+          "worstCaseImpact": 0.08643646178700486
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:refining-hurricane-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04245495495495495,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.13175675675675677,
+              "horizonDays": 7,
+              "lowerImpact": 0.13175675675675677,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2204780722627884,
+              "worstCaseImpact": 0.2204780722627884
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.12736486486486484,
+              "horizonDays": 30,
+              "lowerImpact": 0.12736486486486484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2131288031873621,
+              "worstCaseImpact": 0.2131288031873621
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:refining-hurricane-restress:buffer",
+                "intervention:refining-hurricane-restress:reroute"
+              ],
+              "centralImpact": 0.04245495495495495,
+              "horizonDays": 90,
+              "lowerImpact": 0.04245495495495495,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07104293439578736,
+              "worstCaseImpact": 0.07104293439578736
+            }
+          ],
+          "interventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "lowerImpact": 0.04245495495495495,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07104293439578736,
+          "worstCaseImpact": 0.07104293439578736
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:refining-hurricane-restress:buffer",
+        "intervention:refining-hurricane-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.04245495495495495,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3592473093363251,
+          "worstCaseImpact": 0.3592473093363251
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.34727239902511414,
+          "worstCaseImpact": 0.34727239902511414
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11575746634170472,
+          "worstCaseImpact": 0.11575746634170472
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.04245495495495495,
       "reasons": [],
@@ -137,9 +1239,51 @@
       "worstCaseImpact": 0.11575746634170472
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2796256159334762,
+          "worstCaseImpact": 0.2796256159334762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2703047620690271,
+          "worstCaseImpact": 0.2703047620690271
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09010158735634236,
+          "worstCaseImpact": 0.09010158735634236
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer"
       ],
@@ -150,9 +1294,51 @@
       "worstCaseImpact": 0.09010158735634236
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2682510883044978,
+          "worstCaseImpact": 0.2682510883044978
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2593093853610145,
+          "worstCaseImpact": 0.2593093853610145
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.08643646178700486,
+          "worstCaseImpact": 0.08643646178700486
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:reroute"
       ],
@@ -163,9 +1349,59 @@
       "worstCaseImpact": 0.08643646178700486
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:refining-hurricane-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.04245495495495495,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.13175675675675677,
+          "horizonDays": 7,
+          "lowerImpact": 0.13175675675675677,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2204780722627884,
+          "worstCaseImpact": 0.2204780722627884
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.12736486486486484,
+          "horizonDays": 30,
+          "lowerImpact": 0.12736486486486484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2131288031873621,
+          "worstCaseImpact": 0.2131288031873621
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:refining-hurricane-restress:buffer",
+            "intervention:refining-hurricane-restress:reroute"
+          ],
+          "centralImpact": 0.04245495495495495,
+          "horizonDays": 90,
+          "lowerImpact": 0.04245495495495495,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07104293439578736,
+          "worstCaseImpact": 0.07104293439578736
+        }
+      ],
       "interventionIds": [
         "intervention:refining-hurricane-restress:buffer",
         "intervention:refining-hurricane-restress:reroute"

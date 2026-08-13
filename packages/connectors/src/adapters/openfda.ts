@@ -1,6 +1,6 @@
 import { connectorById } from "../catalog";
 import type { ConnectorAdapter } from "../types";
-import { fact, isoPeriod, parseJson, safeSegment } from "../util";
+import { fact, isoPeriod, parseJson, stableFactId } from "../util";
 
 interface OpenFdaQuery {
   search?: string;
@@ -11,14 +11,14 @@ interface OpenFdaQuery {
 export const openFdaAdapter: ConnectorAdapter<OpenFdaQuery> = {
   descriptor: connectorById("openfda-drug-shortages"),
   buildRequest(query, secrets = {}) {
-    const url = new URL("https://api.fda.gov/drug/drugshortages.json");
+    const url = new URL("https://api.fda.gov/drug/shortages.json");
     if (secrets.apiKey) url.searchParams.set("api_key", secrets.apiKey);
     if (query.search) {
       if (query.search.length > 1_000) throw new RangeError("openFDA search is too long.");
       url.searchParams.set("search", query.search);
     }
     const limit = query.limit ?? 100;
-    if (!Number.isInteger(limit) || limit < 1 || limit > 1_000) throw new RangeError("openFDA limit must be 1-1000.");
+    if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new RangeError("openFDA limit must be 1-100.");
     url.searchParams.set("limit", String(limit));
     if (query.skip !== undefined) {
       if (!Number.isInteger(query.skip) || query.skip < 0 || query.skip > 25_000) throw new RangeError("openFDA skip must be 0-25000.");
@@ -29,13 +29,17 @@ export const openFdaAdapter: ConnectorAdapter<OpenFdaQuery> = {
   normalize(payload, context) {
     const value = parseJson(payload) as { results?: Array<Record<string, unknown>> };
     if (!Array.isArray(value.results)) throw new TypeError("openFDA payload needs a results array.");
-    return value.results.map((row, index) => {
+    return value.results.map((row) => {
       const genericName = String(row.generic_name ?? row.genericName ?? "unknown");
       const company = String(row.company_name ?? row.companyName ?? row.manufacturer_name ?? "unknown");
       const postingDate = row.initial_posting_date ?? row.initialPostingDate;
       return fact(
         {
-          id: `openfda-shortage:${safeSegment(genericName)}:${safeSegment(company)}:${safeSegment(postingDate)}:${index}`,
+          id: stableFactId(
+            "openfda-shortage",
+            [genericName, company, postingDate],
+            row,
+          ),
           kind: "drug_shortage",
           validFrom: isoPeriod(postingDate, context.retrievedAt),
           evidenceGrade: "OFFICIAL_OBSERVED",

@@ -19,7 +19,7 @@
     "role": "input",
     "sha256": "2e66901186dd6e0183d76abd9c1a137550d5673a405eac15bb428073e5fae124",
     "title": "Baltimore port access re-stress local assumption register",
-    "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
+    "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
   },
   {
     "artifactKind": "citation_record",

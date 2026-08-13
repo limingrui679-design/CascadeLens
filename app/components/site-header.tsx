@@ -34,14 +34,14 @@ export function SiteHeader() {
                 {label}
               </Link>
             ))}
-            <a href="https://github.com/limingrui679-design/cascadelens" rel="noreferrer" target="_blank">
+            <a href="https://github.com/limingrui679-design/CascadeLens" rel="noreferrer" target="_blank">
               GitHub <span aria-hidden="true">↗</span>
             </a>
           </nav>
         </details>
         <a
           className="github-link"
-          href="https://github.com/limingrui679-design/cascadelens"
+          href="https://github.com/limingrui679-design/CascadeLens"
           rel="noreferrer"
           target="_blank"
         >

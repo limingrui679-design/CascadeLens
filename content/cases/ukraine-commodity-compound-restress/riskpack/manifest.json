@@ -1,10 +1,13 @@
 {
   "classification": "quasi_historical",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:ukraine-commodity-compound-restress:v0.1.0",
+  "packId": "riskpack:ukraine-commodity-compound-restress:v0.2.0",
   "scenarioId": "ukraine-commodity-compound-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+  "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

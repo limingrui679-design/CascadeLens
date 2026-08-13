@@ -22,6 +22,18 @@ test("keeps lower, central, and upper missing-graph impacts monotone", async () 
   assert.ok((upper.get("region:downstream") ?? 0) > 0);
 });
 
+test("solves an acyclic graph exactly in one topological pass per day", async () => {
+  const acyclic = scenario();
+  acyclic.propagation.horizonsDays = [7];
+  acyclic.propagation.maxIterations = 1;
+  const result = await runCascadeBounds(await graphSnapshot(), acyclic);
+  assert.equal(result.upper.converged, true);
+  assert.equal(result.upper.maxSolverIterationsUsed, 1);
+  assert.ok(
+    result.upper.impacts.find((item) => item.nodeId === "region:downstream")!.impact > 0,
+  );
+});
+
 test("converges with a directed cycle", async () => {
   const draft = graphDraft();
   draft.edges.push({
@@ -33,7 +45,11 @@ test("converges with a directed cycle", async () => {
   });
   const bounds = await runCascadeBounds(await sealSnapshot(draft), scenario());
   assert.equal(bounds.upper.converged, true);
-  assert.ok(bounds.upper.iterations < scenario().propagation.maxIterations);
+  assert.ok(
+    bounds.upper.maxSolverIterationsUsed < scenario().propagation.maxIterations,
+  );
+  assert.equal(bounds.upper.simulatedDays, 90);
+  assert.ok(bounds.upper.iterations >= bounds.upper.simulatedDays);
 });
 
 test("computes every requested horizon and activates later shocks only when visible", async () => {
@@ -87,4 +103,51 @@ test("rejects an invalid explicit horizon", async () => {
     () => runCascadeAtHorizon(snapshot, scenario(), "central", 0),
     /positive integer/,
   );
+});
+
+test("refreshes bitemporal edge visibility across the event-time horizon", async () => {
+  const draft = graphDraft();
+  draft.edges[0] = {
+    ...draft.edges[0],
+    validFrom: "2021-04-02T00:00:00Z",
+  };
+  const activeScenario = scenario();
+  activeScenario.shocks[0].endsAt = undefined;
+  const bounds = await runCascadeBounds(await sealSnapshot(draft), activeScenario);
+  const sevenDay = bounds.horizons[0].central.impacts.find(
+    (item) => item.nodeId === "product:medical",
+  )!;
+  const thirtyDay = bounds.horizons[1].central.impacts.find(
+    (item) => item.nodeId === "product:medical",
+  )!;
+  assert.equal(sevenDay.impact, 0);
+  assert.ok(thirtyDay.impact > 0);
+});
+
+test("uses maxIterations as a per-day solver cap with an explicit failure state", async () => {
+  const draft = graphDraft();
+  draft.edges.push({
+    ...draft.edges[0],
+    id: "edge:strong-cycle",
+    from: "region:downstream",
+    to: "product:medical",
+    weight: { value: 0.95, lower: 0.9, upper: 0.99, unit: "share" },
+  });
+  const snapshot = await sealSnapshot(draft);
+  const capped = scenario();
+  capped.propagation.horizonsDays = [7];
+  capped.propagation.maxIterations = 1;
+  capped.propagation.tolerance = 1e-12;
+  const cappedResult = await runCascadeBounds(snapshot, capped);
+  assert.equal(cappedResult.upper.converged, false);
+  assert.equal(cappedResult.upper.maxSolverIterationsUsed, 1);
+  assert.match(cappedResult.upper.warnings.join(" "), /reached maxIterations/);
+
+  const resolved = scenario();
+  resolved.propagation.horizonsDays = [7];
+  resolved.propagation.maxIterations = 500;
+  resolved.propagation.tolerance = 1e-9;
+  const resolvedResult = await runCascadeBounds(snapshot, resolved);
+  assert.equal(resolvedResult.upper.converged, true);
+  assert.ok(resolvedResult.upper.maxSolverIterationsUsed > 1);
 });

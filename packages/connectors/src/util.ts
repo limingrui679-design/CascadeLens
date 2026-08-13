@@ -1,3 +1,4 @@
+import { stableStringify } from "../../core/src/canonical";
 import type { NormalizeContext, NormalizedFact } from "./types";
 
 export const decode = (payload: Uint8Array): string =>
@@ -24,12 +25,22 @@ export function isoPeriod(value: unknown, fallback: string): string {
 }
 
 export function fact(
-  input: Omit<NormalizedFact, "observedAt" | "sourceLocator">,
+  input: Omit<
+    NormalizedFact,
+    "availableAt" | "observedAt" | "publishedAt" | "retrievedAt" | "sourceLocator"
+  > &
+    Partial<
+      Pick<NormalizedFact, "availableAt" | "observedAt" | "publishedAt">
+    >,
   context: NormalizeContext,
 ): NormalizedFact {
   return {
     ...input,
-    observedAt: context.retrievedAt,
+    observedAt:
+      input.observedAt ?? context.availableAt ?? context.retrievedAt,
+    publishedAt: input.publishedAt ?? context.publishedAt,
+    availableAt: input.availableAt ?? context.availableAt ?? context.retrievedAt,
+    retrievedAt: context.retrievedAt,
     sourceLocator: context.sourceLocator,
   };
 }
@@ -40,4 +51,47 @@ export function safeSegment(value: unknown): string {
     .toLowerCase()
     .replace(/[^a-z0-9._-]+/g, "-")
     .replace(/^-+|-+$/g, "") || "unknown";
+}
+
+function fnv1a64(value: string, seed: bigint): string {
+  let hash = seed;
+  for (const byte of new TextEncoder().encode(value)) {
+    hash ^= BigInt(byte);
+    hash = BigInt.asUintN(64, hash * 0x100000001b3n);
+  }
+  return hash.toString(16).padStart(16, "0");
+}
+
+/** Stable fact identity that is independent of upstream row order. */
+export function stableFactId(
+  namespace: string,
+  businessKey: unknown[],
+  record: unknown,
+): string {
+  const key = businessKey.map(safeSegment).join(":").slice(0, 60);
+  const safeNamespace = safeSegment(namespace).slice(0, 32);
+  const canonical = stableStringify(record);
+  const digest =
+    fnv1a64(canonical, 0xcbf29ce484222325n) +
+    fnv1a64(canonical, 0x84222325cbf29ce4n);
+  return `${safeNamespace}:${key}:${digest}`;
+}
+
+export function stabilizeNormalizedFacts(
+  facts: NormalizedFact[],
+): NormalizedFact[] {
+  const sorted = [...facts].sort((left, right) => {
+    const leftBytes = stableStringify(left);
+    const rightBytes = stableStringify(right);
+    return leftBytes < rightBytes ? -1 : leftBytes > rightBytes ? 1 : 0;
+  });
+  const totals = new Map<string, number>();
+  for (const item of sorted) totals.set(item.id, (totals.get(item.id) ?? 0) + 1);
+  const ordinal = new Map<string, number>();
+  return sorted.map((item) => {
+    if ((totals.get(item.id) ?? 0) === 1) return item;
+    const next = (ordinal.get(item.id) ?? 0) + 1;
+    ordinal.set(item.id, next);
+    return { ...item, id: `${item.id}:duplicate-${next}` };
+  });
 }

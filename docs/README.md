@@ -7,9 +7,10 @@ This index routes readers to the contract, evidence, and operating material behi
 | Document | Purpose |
 |---|---|
 | [Acceptance matrix](ACCEPTANCE_MATRIX.md) | Maps product requirements to implementation and verification evidence. |
-| [v0.1.1 five-pass maintainer review](SELF_REVIEW_2026-08-13_v0.1.1.md) | Records the latest tagged functional, analytical, security, web, and detached-release review. |
+| [v0.2.0 audit-remediation review](SELF_REVIEW_2026-08-13_v0.2.0.md) | Maps independently reproduced software findings to code, adversarial tests, and release evidence. |
 | [Initial five-pass review](SELF_REVIEW_2026-08-13.md) | Preserves the pre-patch review record for comparison. |
 | [Performance profile](PERFORMANCE.md) | Defines enforced client budgets and the research-scale graph smoke profile. |
+| [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md) | Defines the prospective replay, independent-review, usability, and adoption evidence gates without claiming they have occurred. |
 
 Maintainer review is internal software evidence. It is not independent domain validation, a user study, a production deployment, or proof of predictive accuracy.
 
@@ -21,6 +22,7 @@ Maintainer review is internal software evidence. It is not independent domain va
 | [Architecture](ARCHITECTURE.md) | Runtime flow, determinism, storage profile, and package boundaries. |
 | [Schema compatibility](SCHEMA_COMPATIBILITY.md) | Compatibility policy for ShockScript, WorldGraph, and RiskPack contracts. |
 | [Data licenses](DATA_LICENSES.md) | Source-by-source access and redistribution boundaries. |
+| [Frozen public snapshots](../content/snapshots/README.md) | Three dated official-source runs with exact payload, lineage, normalization, graph, and license receipts. |
 | [Connector data catalog](connectors/DATA_CATALOG.md) | Reviewed catalog of the ten bounded source connectors. |
 
 ## Use CascadeLens

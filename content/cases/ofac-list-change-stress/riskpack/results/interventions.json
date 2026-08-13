@@ -1,117 +1,311 @@
 {
   "baselineBundle": {
-    "centralImpact": 0.03735909822866346,
+    "activationSchedule": [],
+    "centralImpact": 0.05603864734299518,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.11594202898550726,
+        "horizonDays": 3,
+        "lowerImpact": 0.11594202898550726,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2725080565552267,
+        "worstCaseImpact": 0.2725080565552267
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.11594202898550726,
+        "horizonDays": 14,
+        "lowerImpact": 0.11594202898550726,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2725080565552267,
+        "worstCaseImpact": 0.2725080565552267
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.05603864734299518,
+        "horizonDays": 60,
+        "lowerImpact": 0.05603864734299518,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.13171222733502627,
+        "worstCaseImpact": 0.13171222733502627
+      }
+    ],
     "interventionIds": [],
-    "lowerImpact": 0.03735909822866346,
+    "lowerImpact": 0.05603864734299518,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.08780815155668417,
-    "worstCaseImpact": 0.08780815155668417
+    "upperImpact": 0.13171222733502627,
+    "worstCaseImpact": 0.13171222733502627
   },
   "evaluatedBundles": [
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [],
+      "centralImpact": 0.05603864734299518,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2725080565552267,
+          "worstCaseImpact": 0.2725080565552267
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2725080565552267,
+          "worstCaseImpact": 0.2725080565552267
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13171222733502627,
+          "worstCaseImpact": 0.13171222733502627
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.08780815155668417,
-      "worstCaseImpact": 0.08780815155668417
+      "upperImpact": 0.13171222733502627,
+      "worstCaseImpact": 0.13171222733502627
     },
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.05603864734299518,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21770994690582487,
+          "worstCaseImpact": 0.21770994690582487
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21770994690582487,
+          "worstCaseImpact": 0.21770994690582487
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10522647433781539,
+          "worstCaseImpact": 0.10522647433781539
+        }
+      ],
       "interventionIds": [
         "intervention:ofac-list-change-stress:buffer"
       ],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07015098289187692,
-      "worstCaseImpact": 0.07015098289187692
+      "upperImpact": 0.10522647433781539,
+      "worstCaseImpact": 0.10522647433781539
     },
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05603864734299518,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20988164552733893,
+          "worstCaseImpact": 0.20988164552733893
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20988164552733887,
+          "worstCaseImpact": 0.20988164552733887
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10144279533821378,
+          "worstCaseImpact": 0.10144279533821378
+        }
+      ],
       "interventionIds": [
         "intervention:ofac-list-change-stress:reroute"
       ],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06762853022547585,
-      "worstCaseImpact": 0.06762853022547585
+      "upperImpact": 0.10144279533821378,
+      "worstCaseImpact": 0.10144279533821378
     },
     {
-      "centralImpact": 0.03735909822866346,
-      "cost": 13,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:ofac-list-change-stress:diversify"
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:diversify",
+          "leadTimeDays": 45
+        }
       ],
-      "lowerImpact": 0.03735909822866346,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.07451191796835821,
-      "worstCaseImpact": 0.07451191796835821
-    },
-    {
-      "centralImpact": 0.03735909822866346,
-      "cost": 19,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:ofac-list-change-stress:buffer",
-        "intervention:ofac-list-change-stress:reroute"
-      ],
-      "lowerImpact": 0.03735909822866346,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.05703422902659155,
-      "worstCaseImpact": 0.05703422902659155
-    },
-    {
-      "centralImpact": 0.03735909822866346,
-      "cost": 21,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:ofac-list-change-stress:buffer",
-        "intervention:ofac-list-change-stress:diversify"
-      ],
-      "lowerImpact": 0.03735909822866346,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.061508431059465046,
-      "worstCaseImpact": 0.061508431059465046
-    },
-    {
       "centralImpact": null,
-      "cost": 24,
+      "cost": 13,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
-        "intervention:ofac-list-change-stress:diversify",
-        "intervention:ofac-list-change-stress:reroute"
+        "intervention:ofac-list-change-stress:diversify"
       ],
       "lowerImpact": null,
       "reasons": [
-        "budget_exceeded"
+        "budget_exceeded",
+        "lead_time_exceeded"
       ],
       "strategy": "intervene",
       "upperImpact": null,
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
-      "cost": 32,
+      "cost": 19,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:ofac-list-change-stress:buffer",
-        "intervention:ofac-list-change-stress:diversify",
         "intervention:ofac-list-change-stress:reroute"
       ],
       "lowerImpact": null,
@@ -122,71 +316,865 @@
       "strategy": "intervene",
       "upperImpact": null,
       "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": null,
+      "cost": 21,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:diversify"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:diversify",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer",
+            "intervention:ofac-list-change-stress:diversify",
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:ofac-list-change-stress:buffer",
+        "intervention:ofac-list-change-stress:diversify",
+        "intervention:ofac-list-change-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 3,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05603864734299518,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13171222733502627,
+              "worstCaseImpact": 0.13171222733502627
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13171222733502627,
+          "worstCaseImpact": 0.13171222733502627
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10522647433781539,
+              "worstCaseImpact": 0.10522647433781539
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10522647433781539,
+          "worstCaseImpact": 0.10522647433781539
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733893,
+              "worstCaseImpact": 0.20988164552733893
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733887,
+              "worstCaseImpact": 0.20988164552733887
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10144279533821378,
+              "worstCaseImpact": 0.10144279533821378
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10144279533821378,
+          "worstCaseImpact": 0.10144279533821378
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 14,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05603864734299518,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13171222733502627,
+              "worstCaseImpact": 0.13171222733502627
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13171222733502627,
+          "worstCaseImpact": 0.13171222733502627
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10522647433781539,
+              "worstCaseImpact": 0.10522647433781539
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10522647433781539,
+          "worstCaseImpact": 0.10522647433781539
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733893,
+              "worstCaseImpact": 0.20988164552733893
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733887,
+              "worstCaseImpact": 0.20988164552733887
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10144279533821378,
+              "worstCaseImpact": 0.10144279533821378
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10144279533821378,
+          "worstCaseImpact": 0.10144279533821378
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 60,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05603864734299518,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2725080565552267,
+              "worstCaseImpact": 0.2725080565552267
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13171222733502627,
+              "worstCaseImpact": 0.13171222733502627
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13171222733502627,
+          "worstCaseImpact": 0.13171222733502627
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21770994690582487,
+              "worstCaseImpact": 0.21770994690582487
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:buffer"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10522647433781539,
+              "worstCaseImpact": 0.10522647433781539
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10522647433781539,
+          "worstCaseImpact": 0.10522647433781539
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ofac-list-change-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05603864734299518,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 3,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733893,
+              "worstCaseImpact": 0.20988164552733893
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.11594202898550726,
+              "horizonDays": 14,
+              "lowerImpact": 0.11594202898550726,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20988164552733887,
+              "worstCaseImpact": 0.20988164552733887
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ofac-list-change-stress:reroute"
+              ],
+              "centralImpact": 0.05603864734299518,
+              "horizonDays": 60,
+              "lowerImpact": 0.05603864734299518,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10144279533821378,
+              "worstCaseImpact": 0.10144279533821378
+            }
+          ],
+          "interventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "lowerImpact": 0.05603864734299518,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10144279533821378,
+          "worstCaseImpact": 0.10144279533821378
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ofac-list-change-stress:reroute"
+      ]
     }
   ],
   "paretoFrontier": [
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [],
+      "centralImpact": 0.05603864734299518,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2725080565552267,
+          "worstCaseImpact": 0.2725080565552267
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2725080565552267,
+          "worstCaseImpact": 0.2725080565552267
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13171222733502627,
+          "worstCaseImpact": 0.13171222733502627
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.08780815155668417,
-      "worstCaseImpact": 0.08780815155668417
+      "upperImpact": 0.13171222733502627,
+      "worstCaseImpact": 0.13171222733502627
     },
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.05603864734299518,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21770994690582487,
+          "worstCaseImpact": 0.21770994690582487
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21770994690582487,
+          "worstCaseImpact": 0.21770994690582487
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:buffer"
+          ],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10522647433781539,
+          "worstCaseImpact": 0.10522647433781539
+        }
+      ],
       "interventionIds": [
         "intervention:ofac-list-change-stress:buffer"
       ],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07015098289187692,
-      "worstCaseImpact": 0.07015098289187692
+      "upperImpact": 0.10522647433781539,
+      "worstCaseImpact": 0.10522647433781539
     },
     {
-      "centralImpact": 0.03735909822866346,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ofac-list-change-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05603864734299518,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 3,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20988164552733893,
+          "worstCaseImpact": 0.20988164552733893
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.11594202898550726,
+          "horizonDays": 14,
+          "lowerImpact": 0.11594202898550726,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20988164552733887,
+          "worstCaseImpact": 0.20988164552733887
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ofac-list-change-stress:reroute"
+          ],
+          "centralImpact": 0.05603864734299518,
+          "horizonDays": 60,
+          "lowerImpact": 0.05603864734299518,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10144279533821378,
+          "worstCaseImpact": 0.10144279533821378
+        }
+      ],
       "interventionIds": [
         "intervention:ofac-list-change-stress:reroute"
       ],
-      "lowerImpact": 0.03735909822866346,
+      "lowerImpact": 0.05603864734299518,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06762853022547585,
-      "worstCaseImpact": 0.06762853022547585
-    },
-    {
-      "centralImpact": 0.03735909822866346,
-      "cost": 19,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:ofac-list-change-stress:buffer",
-        "intervention:ofac-list-change-stress:reroute"
-      ],
-      "lowerImpact": 0.03735909822866346,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.05703422902659155,
-      "worstCaseImpact": 0.05703422902659155
+      "upperImpact": 0.10144279533821378,
+      "worstCaseImpact": 0.10144279533821378
     }
   ],
   "recommendationStatus": "evidence_required",
   "recommendedBundleIds": [
-    "intervention:ofac-list-change-stress:buffer",
     "intervention:ofac-list-change-stress:reroute"
   ],
   "reversalThresholds": [
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 453.073771444734,
+      "threshold": 302.04918096315595,
       "toBundleIds": [
         "intervention:ofac-list-change-stress:buffer"
       ]
@@ -196,19 +1184,8 @@
         "intervention:ofac-list-change-stress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 1189.3186500424117,
+      "threshold": 792.8791000282731,
       "toBundleIds": [
-        "intervention:ofac-list-change-stress:reroute"
-      ]
-    },
-    {
-      "fromBundleIds": [
-        "intervention:ofac-list-change-stress:reroute"
-      ],
-      "parameter": "risk_value_per_unit",
-      "threshold": 755.1229524078933,
-      "toBundleIds": [
-        "intervention:ofac-list-change-stress:buffer",
         "intervention:ofac-list-change-stress:reroute"
       ]
     }

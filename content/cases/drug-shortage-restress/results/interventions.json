@@ -1,98 +1,436 @@
 {
   "baselineBundle": {
-    "centralImpact": 0.044093567251462,
+    "activationSchedule": [],
+    "centralImpact": 0.066140350877193,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.13684210526315793,
+        "horizonDays": 7,
+        "lowerImpact": 0.13684210526315793,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.35167817787450034,
+        "worstCaseImpact": 0.35167817787450034
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.13684210526315796,
+        "horizonDays": 21,
+        "lowerImpact": 0.13684210526315796,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.3516781778745004,
+        "worstCaseImpact": 0.3516781778745004
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.066140350877193,
+        "horizonDays": 60,
+        "lowerImpact": 0.066140350877193,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.16997778597267518,
+        "worstCaseImpact": 0.16997778597267518
+      }
+    ],
     "interventionIds": [],
-    "lowerImpact": 0.044093567251462,
+    "lowerImpact": 0.066140350877193,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.11331852398178344,
-    "worstCaseImpact": 0.11331852398178344
+    "upperImpact": 0.16997778597267518,
+    "worstCaseImpact": 0.16997778597267518
   },
   "evaluatedBundles": [
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [],
+      "centralImpact": 0.066140350877193,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.35167817787450034,
+          "worstCaseImpact": 0.35167817787450034
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3516781778745004,
+          "worstCaseImpact": 0.3516781778745004
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16997778597267518,
+          "worstCaseImpact": 0.16997778597267518
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.11331852398178344,
-      "worstCaseImpact": 0.11331852398178344
+      "upperImpact": 0.16997778597267518,
+      "worstCaseImpact": 0.16997778597267518
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13363468368925646,
+          "worstCaseImpact": 0.13363468368925646
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08908978912617097,
-      "worstCaseImpact": 0.08908978912617097
+      "upperImpact": 0.13363468368925646,
+      "worstCaseImpact": 0.13363468368925646
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2657437488299634,
+          "worstCaseImpact": 0.2657437488299634
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26574374882996343,
+          "worstCaseImpact": 0.26574374882996343
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12844281193448231,
+          "worstCaseImpact": 0.12844281193448231
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:reroute"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08562854128965487,
-      "worstCaseImpact": 0.08562854128965487
+      "upperImpact": 0.12844281193448231,
+      "worstCaseImpact": 0.12844281193448231
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "upperImpact": 0.35167817787450034,
+          "worstCaseImpact": 0.35167817787450034
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "upperImpact": 0.3516781778745004,
+          "worstCaseImpact": 0.3516781778745004
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1658930221487883,
+          "worstCaseImpact": 0.1658930221487883
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:diversify"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.093575498832997,
-      "worstCaseImpact": 0.093575498832997
+      "upperImpact": 0.1658930221487883,
+      "worstCaseImpact": 0.1658930221487883
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2206281735815815,
+          "worstCaseImpact": 0.2206281735815815
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22062817358158154,
+          "worstCaseImpact": 0.22062817358158154
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10663695056443107,
+          "worstCaseImpact": 0.10663695056443107
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer",
         "intervention:drug-shortage-restress:reroute"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07109130037628737,
-      "worstCaseImpact": 0.07109130037628737
+      "upperImpact": 0.10663695056443107,
+      "worstCaseImpact": 0.10663695056443107
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:diversify"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13097958720372999,
+          "worstCaseImpact": 0.13097958720372999
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer",
         "intervention:drug-shortage-restress:diversify"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07625682277945976,
-      "worstCaseImpact": 0.07625682277945976
+      "upperImpact": 0.13097958720372999,
+      "worstCaseImpact": 0.13097958720372999
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:diversify",
         "intervention:drug-shortage-restress:reroute"
@@ -106,9 +444,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:diversify",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer",
         "intervention:drug-shortage-restress:diversify",
@@ -124,57 +520,898 @@
       "worstCaseImpact": null
     }
   ],
-  "paretoFrontier": [
+  "horizonAnalyses": [
     {
-      "centralImpact": 0.044093567251462,
-      "cost": 0,
-      "feasible": true,
-      "interventionIds": [],
-      "lowerImpact": 0.044093567251462,
-      "reasons": [],
-      "strategy": "do_not_act",
-      "upperImpact": 0.11331852398178344,
-      "worstCaseImpact": 0.11331852398178344
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.066140350877193,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35167817787450034,
+              "worstCaseImpact": 0.35167817787450034
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3516781778745004,
+              "worstCaseImpact": 0.3516781778745004
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16997778597267518,
+              "worstCaseImpact": 0.16997778597267518
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16997778597267518,
+          "worstCaseImpact": 0.16997778597267518
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13363468368925646,
+              "worstCaseImpact": 0.13363468368925646
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13363468368925646,
+          "worstCaseImpact": 0.13363468368925646
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2657437488299634,
+              "worstCaseImpact": 0.2657437488299634
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26574374882996343,
+              "worstCaseImpact": 0.26574374882996343
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12844281193448231,
+              "worstCaseImpact": 0.12844281193448231
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12844281193448231,
+          "worstCaseImpact": 0.12844281193448231
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2206281735815815,
+              "worstCaseImpact": 0.2206281735815815
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22062817358158154,
+              "worstCaseImpact": 0.22062817358158154
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10663695056443107,
+              "worstCaseImpact": 0.10663695056443107
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10663695056443107,
+          "worstCaseImpact": 0.10663695056443107
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ]
     },
     {
-      "centralImpact": 0.044093567251462,
+      "horizonDays": 21,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.066140350877193,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35167817787450034,
+              "worstCaseImpact": 0.35167817787450034
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3516781778745004,
+              "worstCaseImpact": 0.3516781778745004
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16997778597267518,
+              "worstCaseImpact": 0.16997778597267518
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16997778597267518,
+          "worstCaseImpact": 0.16997778597267518
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13363468368925646,
+              "worstCaseImpact": 0.13363468368925646
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13363468368925646,
+          "worstCaseImpact": 0.13363468368925646
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2657437488299634,
+              "worstCaseImpact": 0.2657437488299634
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26574374882996343,
+              "worstCaseImpact": 0.26574374882996343
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12844281193448231,
+              "worstCaseImpact": 0.12844281193448231
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12844281193448231,
+          "worstCaseImpact": 0.12844281193448231
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2206281735815815,
+              "worstCaseImpact": 0.2206281735815815
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22062817358158154,
+              "worstCaseImpact": 0.22062817358158154
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10663695056443107,
+              "worstCaseImpact": 0.10663695056443107
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10663695056443107,
+          "worstCaseImpact": 0.10663695056443107
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 60,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.066140350877193,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35167817787450034,
+              "worstCaseImpact": 0.35167817787450034
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3516781778745004,
+              "worstCaseImpact": 0.3516781778745004
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16997778597267518,
+              "worstCaseImpact": 0.16997778597267518
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16997778597267518,
+          "worstCaseImpact": 0.16997778597267518
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2764855524605306,
+              "worstCaseImpact": 0.2764855524605306
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13363468368925646,
+              "worstCaseImpact": 0.13363468368925646
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13363468368925646,
+          "worstCaseImpact": 0.13363468368925646
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2657437488299634,
+              "worstCaseImpact": 0.2657437488299634
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26574374882996343,
+              "worstCaseImpact": 0.26574374882996343
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12844281193448231,
+              "worstCaseImpact": 0.12844281193448231
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12844281193448231,
+          "worstCaseImpact": 0.12844281193448231
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:drug-shortage-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.066140350877193,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315793,
+              "horizonDays": 7,
+              "lowerImpact": 0.13684210526315793,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2206281735815815,
+              "worstCaseImpact": 0.2206281735815815
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.13684210526315796,
+              "horizonDays": 21,
+              "lowerImpact": 0.13684210526315796,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22062817358158154,
+              "worstCaseImpact": 0.22062817358158154
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:drug-shortage-restress:buffer",
+                "intervention:drug-shortage-restress:reroute"
+              ],
+              "centralImpact": 0.066140350877193,
+              "horizonDays": 60,
+              "lowerImpact": 0.066140350877193,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10663695056443107,
+              "worstCaseImpact": 0.10663695056443107
+            }
+          ],
+          "interventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "lowerImpact": 0.066140350877193,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10663695056443107,
+          "worstCaseImpact": 0.10663695056443107
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:drug-shortage-restress:buffer",
+        "intervention:drug-shortage-restress:reroute"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.066140350877193,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.35167817787450034,
+          "worstCaseImpact": 0.35167817787450034
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3516781778745004,
+          "worstCaseImpact": 0.3516781778745004
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16997778597267518,
+          "worstCaseImpact": 0.16997778597267518
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.066140350877193,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.16997778597267518,
+      "worstCaseImpact": 0.16997778597267518
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2764855524605306,
+          "worstCaseImpact": 0.2764855524605306
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13363468368925646,
+          "worstCaseImpact": 0.13363468368925646
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08908978912617097,
-      "worstCaseImpact": 0.08908978912617097
+      "upperImpact": 0.13363468368925646,
+      "worstCaseImpact": 0.13363468368925646
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2657437488299634,
+          "worstCaseImpact": 0.2657437488299634
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26574374882996343,
+          "worstCaseImpact": 0.26574374882996343
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12844281193448231,
+          "worstCaseImpact": 0.12844281193448231
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:reroute"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08562854128965487,
-      "worstCaseImpact": 0.08562854128965487
+      "upperImpact": 0.12844281193448231,
+      "worstCaseImpact": 0.12844281193448231
     },
     {
-      "centralImpact": 0.044093567251462,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:drug-shortage-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.066140350877193,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315793,
+          "horizonDays": 7,
+          "lowerImpact": 0.13684210526315793,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2206281735815815,
+          "worstCaseImpact": 0.2206281735815815
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.13684210526315796,
+          "horizonDays": 21,
+          "lowerImpact": 0.13684210526315796,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22062817358158154,
+          "worstCaseImpact": 0.22062817358158154
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:drug-shortage-restress:buffer",
+            "intervention:drug-shortage-restress:reroute"
+          ],
+          "centralImpact": 0.066140350877193,
+          "horizonDays": 60,
+          "lowerImpact": 0.066140350877193,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10663695056443107,
+          "worstCaseImpact": 0.10663695056443107
+        }
+      ],
       "interventionIds": [
         "intervention:drug-shortage-restress:buffer",
         "intervention:drug-shortage-restress:reroute"
       ],
-      "lowerImpact": 0.044093567251462,
+      "lowerImpact": 0.066140350877193,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07109130037628737,
-      "worstCaseImpact": 0.07109130037628737
+      "upperImpact": 0.10663695056443107,
+      "worstCaseImpact": 0.10663695056443107
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1423,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 330.1864520650709,
+      "threshold": 220.12430137671385,
       "toBundleIds": [
         "intervention:drug-shortage-restress:buffer"
       ]
@@ -196,7 +1433,7 @@
         "intervention:drug-shortage-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 866.7394366708047,
+      "threshold": 577.826291113869,
       "toBundleIds": [
         "intervention:drug-shortage-restress:reroute"
       ]
@@ -206,7 +1443,7 @@
         "intervention:drug-shortage-restress:reroute"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 550.3107534417842,
+      "threshold": 366.8738356278561,
       "toBundleIds": [
         "intervention:drug-shortage-restress:buffer",
         "intervention:drug-shortage-restress:reroute"

@@ -1,10 +1,10 @@
 {
   "classification": "synthetic_stress",
   "constraints": {
-    "budget": 22,
+    "budget": 18,
     "budgetUnit": "normalized_cost",
-    "maxInterventions": 2,
-    "maxLeadTimeDays": 60
+    "maxInterventions": 1,
+    "maxLeadTimeDays": 30
   },
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "graphSnapshotId": "snapshot:critical-minerals-export-stress:assumed-topology",
@@ -81,9 +81,9 @@
     ],
     "engine": "dependency_cascade",
     "horizonsDays": [
-      7,
-      30,
-      90
+      14,
+      45,
+      120
     ],
     "maxIterations": 100,
     "tolerance": 1e-9,

@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:ukraine-commodity-compound-restress:assumptions"
+        ]
+      },
+      "from": "node:ukraine-commodity-compound-restress:commodity-supply",
+      "id": "edge:ukraine-commodity-compound-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:ukraine-commodity-compound-restress:affordability",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.04,
+        "unit": "share",
+        "upper": 0.4,
+        "value": 0.24
+      }
+    },
+    "id": "candidate:ukraine-commodity-compound-restress:direct-link",
+    "label": "Verify a possible direct dependency from Food, fertilizer, and energy supply to Food affordability pressure",
+    "probabilityPresent": 0.35
+  }
+]

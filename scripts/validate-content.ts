@@ -35,6 +35,8 @@ const required = [
   "content/catalog/connectors.json",
   "content/cases/catalog.json",
   "content/cases/README.md",
+  "content/snapshots/catalog.json",
+  "content/snapshots/README.md",
 ];
 
 function fail(message: string): never {
@@ -61,6 +63,34 @@ if (
 }
 if (connectorCatalog.length !== 10 || new Set(connectorCatalog.map((item) => item.id)).size !== 10) {
   fail("connector catalog must contain exactly ten unique core connectors");
+}
+
+const publicSnapshots = await json<{
+  schemaVersion: string;
+  snapshotCount: number;
+  factCount: number;
+  dependencyEdgeCount: number;
+  evidenceBoundary: string;
+  snapshots: Array<{ connectorId: string; slug: string }>;
+}>("content/snapshots/catalog.json");
+if (
+  publicSnapshots.schemaVersion !== "cascadelens-public-snapshots/1.0" ||
+  publicSnapshots.snapshotCount !== 3 ||
+  publicSnapshots.snapshots.length !== 3 ||
+  publicSnapshots.factCount !== 3_802 ||
+  publicSnapshots.dependencyEdgeCount !== 0 ||
+  !/not historical outcomes/i.test(publicSnapshots.evidenceBoundary)
+) {
+  fail("public snapshot catalog must preserve its exact count and evidence boundary");
+}
+if (new Set(publicSnapshots.snapshots.map((item) => item.slug)).size !== 3) {
+  fail("public snapshot slugs must be unique");
+}
+for (const record of publicSnapshots.snapshots) {
+  const descriptor = connectorCatalog.find((item) => item.id === record.connectorId);
+  if (!descriptor || !descriptor.rawRedistributable || !descriptor.redistributionLicense) {
+    fail(`${record.slug} must map to a redistributable, licensed connector descriptor`);
+  }
 }
 
 const catalog = await json<{
@@ -167,5 +197,5 @@ async function scan(directory: string): Promise<void> {
 for (const directory of publicRoots) await scan(directory);
 
 process.stdout.write(
-  `Validated ${required.length} required artifacts, 10 connectors, and 12 verified scenario-only reference cases.\n`,
+  `Validated ${required.length} required artifacts, 10 connectors, 3 frozen public snapshots, and 12 verified scenario-only reference cases.\n`,
 );

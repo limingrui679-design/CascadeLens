@@ -16,8 +16,8 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Sanctions List Service](https://ofac.treasury.gov/sanctions-list-service)
 - Publisher: U.S. Department of the Treasury, Office of Foreign Assets Control
-- Snapshot digest: `a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb`
-- Lower / central / upper total impact: 0.037359 / 0.037359 / 0.087808
+- Snapshot digest: `085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206`
+- Lower / central / upper total impact: 0.056039 / 0.056039 / 0.131712
 - Recommendation status: `evidence_required`
 
 ## Rebuild and verify

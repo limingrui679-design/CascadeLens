@@ -16,8 +16,8 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Panama Canal Authority adapts to unprecedented challenges](https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/)
 - Publisher: Panama Canal Authority
-- Snapshot digest: `f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3`
-- Lower / central / upper total impact: 0.030299 / 0.030299 / 0.075239
+- Snapshot digest: `20410abd3409b2aefd80addacd627d9ead1a1a1383593d90bccfe737663771ea`
+- Lower / central / upper total impact: 0.030299 / 0.030299 / 0.069050
 - Recommendation status: `evidence_required`
 
 ## Rebuild and verify

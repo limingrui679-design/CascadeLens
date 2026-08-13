@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -60,9 +60,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "suez-route-restress",
-    "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+    "simulatedDays": 90,
+    "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
     "totalWeightedImpact": 0.06444444444444446,
     "totalWeightedPeakEnvelope": 0.20000000000000004,
     "warnings": [
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.20000000000000004,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 7,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.20000000000000004,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
@@ -146,7 +150,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.20000000000000004,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 7,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.20000000000000004,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.5077436627939957,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.7544,
-            "impact": 0.6466285714285714,
+            "impact": 0.7543999999999998,
             "nodeId": "node:suez-route-restress:maritime-inputs",
             "peakDirectImpact": 0,
             "peakImpact": 0.7544
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.45776991999999994,
-            "impact": 0.3269785142857143,
+            "impact": 0.45776992,
             "nodeId": "node:suez-route-restress:assembly",
             "peakDirectImpact": 0,
             "peakImpact": 0.45776991999999994
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.26651364742399997,
-            "impact": 0.15229351281371425,
+            "impact": 0.26651364742399997,
             "nodeId": "node:suez-route-restress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.26651364742399997
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.1398663621681151,
-            "impact": 0.0599427266434779,
+            "impact": 0.1398663621681151,
             "nodeId": "node:suez-route-restress:market",
             "peakDirectImpact": 0,
             "peakImpact": 0.1398663621681151
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
-        "totalWeightedImpact": 0.42180425444816966,
+        "simulatedDays": 7,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+        "totalWeightedImpact": 0.5077436627939957,
         "totalWeightedPeakEnvelope": 0.5077436627939957,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -367,22 +375,23 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 30,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.19333333333333338,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "horizonDays": 30,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -439,21 +448,22 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 30,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.19333333333333338,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.3077436627939958,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -481,7 +491,7 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.7544,
+            "endImpact": 0,
             "impact": 0.7292533333333336,
             "nodeId": "node:suez-route-restress:maritime-inputs",
             "peakDirectImpact": 0,
@@ -496,8 +506,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.45776991999999994,
-            "impact": 0.4272519253333334,
+            "endImpact": 0,
+            "impact": 0.44251092266666675,
             "nodeId": "node:suez-route-restress:assembly",
             "peakDirectImpact": 0,
             "peakImpact": 0.45776991999999994
@@ -511,8 +521,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.26651364742399997,
-            "impact": 0.23986228268160012,
+            "endImpact": 0,
+            "impact": 0.25762985917653347,
             "nodeId": "node:suez-route-restress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.26651364742399997
@@ -526,22 +536,22 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.1398663621681151,
-            "impact": 0.12121751387903308,
+            "endImpact": 0,
+            "impact": 0.1352041500958446,
             "nodeId": "node:suez-route-restress:market",
             "peakDirectImpact": 0,
             "peakImpact": 0.1398663621681151
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
-        "totalWeightedImpact": 0.48102446751330313,
+        "simulatedDays": 30,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+        "totalWeightedImpact": 0.4908188740341961,
         "totalWeightedPeakEnvelope": 0.5077436627939957,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -606,9 +616,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 90,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.06444444444444446,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
@@ -620,7 +632,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -677,9 +689,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 90,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.06444444444444446,
         "totalWeightedPeakEnvelope": 0.20000000000000004,
         "warnings": [
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -771,9 +785,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "suez-route-restress",
-        "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+        "simulatedDays": 90,
+        "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
         "totalWeightedImpact": 0.16360629134473204,
         "totalWeightedPeakEnvelope": 0.5077436627939957,
         "warnings": []
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -841,9 +857,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "suez-route-restress",
-    "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+    "simulatedDays": 90,
+    "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
     "totalWeightedImpact": 0.06444444444444446,
     "totalWeightedPeakEnvelope": 0.20000000000000004,
     "warnings": [
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -935,9 +953,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "suez-route-restress",
-    "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+    "simulatedDays": 90,
+    "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
     "totalWeightedImpact": 0.16360629134473204,
     "totalWeightedPeakEnvelope": 0.5077436627939957,
     "warnings": []

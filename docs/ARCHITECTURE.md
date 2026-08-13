@@ -23,10 +23,14 @@ RiskPack -- CLI / SDK / Web product
 
 ## Design choices
 
-- **Deterministic core:** equal input snapshots, script, and engine version produce byte-stable canonical JSON results.
+- **Deterministic core:** canonical keys and identifiers use explicit UTF-8 byte order, so equal input snapshots, scripts, and engine versions produce byte-stable canonical JSON across the tested locale matrix.
 - **Portable local profile:** JSON-compatible artifacts and no required hosted database.
 - **Serverless public product:** the web surface runs on Cloudflare-compatible ESM output and reads reviewed bundled results.
 - **Node-side acquisition:** network connectors do not run in the browser and never expose credentials.
+- **Conservative normalization:** the generic connector mapping preserves normalized facts as metric nodes and never invents dependency topology.
+- **Temporal execution:** graph visibility is reevaluated on every event day. An intervention starts at the frozen decision cutoff and activates only at `decisionCutoff + leadTimeDays`; solver iterations are distinct from simulated days.
+- **Recomputed evidence packs:** RiskPack verification rebuilds all derived outputs from packaged inputs; an optional external digest binds the whole pack to a separately retained receipt.
+- **Inspectable deployment:** `/build-info.json` exposes commit, Git tree, exact tag when present, dirty state, version, lock digest, content-catalog digest, RiskPack-catalog digest, build time, and hosting project id with an explicit self-attestation boundary.
 - **Optional scale layer:** large datasets remain in user-managed object storage and are represented by content-addressed manifests.
 - **Failure closed:** unsupported evidence, invalid temporal state, unverified license, or infeasible optimization blocks stronger output.
 

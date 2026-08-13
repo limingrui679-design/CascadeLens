@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -60,9 +60,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "refining-hurricane-restress",
-    "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+    "simulatedDays": 90,
+    "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
     "totalWeightedImpact": 0.04245495495495495,
     "totalWeightedPeakEnvelope": 0.13175675675675677,
     "warnings": [
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.13175675675675677,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 7,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.13175675675675677,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
@@ -146,7 +150,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.13175675675675677,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 7,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.13175675675675677,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.35924730933632515,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.50635,
-            "impact": 0.43401428571428563,
+            "impact": 0.50635,
             "nodeId": "node:refining-hurricane-restress:fuel",
             "peakDirectImpact": 0,
             "peakImpact": 0.50635
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.3363176699999999,
-            "impact": 0.24022690714285708,
+            "impact": 0.33631766999999996,
             "nodeId": "node:refining-hurricane-restress:transport",
             "peakDirectImpact": 0,
             "peakImpact": 0.3363176699999999
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.20407756215599993,
-            "impact": 0.11661574980342852,
+            "impact": 0.20407756215599987,
             "nodeId": "node:refining-hurricane-restress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.20407756215599993
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.11044677663882718,
-            "impact": 0.04733433284521165,
+            "impact": 0.11044677663882718,
             "nodeId": "node:refining-hurricane-restress:services",
             "peakDirectImpact": 0,
             "peakImpact": 0.11044677663882718
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
-        "totalWeightedImpact": 0.29654161339901963,
+        "simulatedDays": 7,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
+        "totalWeightedImpact": 0.3592473093363251,
         "totalWeightedPeakEnvelope": 0.35924730933632515,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -367,22 +375,23 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 30,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.12736486486486484,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "horizonDays": 30,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -439,21 +448,22 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 30,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.12736486486486484,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.22749055257956838,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -481,7 +491,7 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.50635,
+            "endImpact": 0,
             "impact": 0.48947166666666647,
             "nodeId": "node:refining-hurricane-restress:fuel",
             "peakDirectImpact": 0,
@@ -496,8 +506,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.3363176699999999,
-            "impact": 0.31389649199999975,
+            "endImpact": 0,
+            "impact": 0.32510708099999974,
             "nodeId": "node:refining-hurricane-restress:transport",
             "peakDirectImpact": 0,
             "peakImpact": 0.3363176699999999
@@ -511,8 +521,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.20407756215599993,
-            "impact": 0.18366980594039986,
+            "endImpact": 0,
+            "impact": 0.19727497675079986,
             "nodeId": "node:refining-hurricane-restress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.20407756215599993
@@ -526,22 +536,22 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.11044677663882718,
-            "impact": 0.09572053975365018,
+            "endImpact": 0,
+            "impact": 0.10676521741753288,
             "nodeId": "node:refining-hurricane-restress:services",
             "peakDirectImpact": 0,
             "peakImpact": 0.11044677663882718
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
-        "totalWeightedImpact": 0.34022408839239515,
+        "simulatedDays": 30,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
+        "totalWeightedImpact": 0.34727239902511414,
         "totalWeightedPeakEnvelope": 0.35924730933632515,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -606,9 +616,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 90,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.04245495495495495,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
@@ -620,7 +632,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -677,9 +689,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 90,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.04245495495495495,
         "totalWeightedPeakEnvelope": 0.13175675675675677,
         "warnings": [
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -771,9 +785,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "refining-hurricane-restress",
-        "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+        "simulatedDays": 90,
+        "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
         "totalWeightedImpact": 0.11575746634170472,
         "totalWeightedPeakEnvelope": 0.35924730933632515,
         "warnings": []
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -841,9 +857,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "refining-hurricane-restress",
-    "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+    "simulatedDays": 90,
+    "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
     "totalWeightedImpact": 0.04245495495495495,
     "totalWeightedPeakEnvelope": 0.13175675675675677,
     "warnings": [
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -935,9 +953,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "refining-hurricane-restress",
-    "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+    "simulatedDays": 90,
+    "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
     "totalWeightedImpact": 0.11575746634170472,
     "totalWeightedPeakEnvelope": 0.35924730933632515,
     "warnings": []

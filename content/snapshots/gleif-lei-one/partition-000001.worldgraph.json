@@ -1,0 +1,70 @@
+{
+  "contentDigest": "0d540fbd8f9431e604c8367ba00176ba604066f35951cf66c3fd2af07b57852e",
+  "decisionCutoff": "2026-08-13T05:41:52.923Z",
+  "edges": [],
+  "generatedAt": "2026-08-13T05:41:52.923Z",
+  "nodes": [
+    {
+      "description": "Connector-normalized fact. No dependency topology is inferred by this generic mapping.",
+      "evidence": {
+        "confidence": 0.9,
+        "grade": "THIRD_PARTY_VERIFIED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "connector-source:gleif:ef41e2650f1d1b63"
+        ]
+      },
+      "id": "connector-fact:gleif:1119778b1cde4631ffe26eb84f8df56d",
+      "kind": "metric",
+      "label": "legal_entity_identity: CH · 506700GE1G29325QX363",
+      "observedAt": "2026-08-13T05:41:52.923Z",
+      "properties": {
+        "attributes": {
+          "lastUpdateDate": "2026-04-23T05:00:06Z",
+          "legalName": "Global Legal Entity Identifier Foundation",
+          "managingLou": "506700LOLO7M6V0E4247",
+          "status": "ACTIVE"
+        },
+        "availableAt": "2026-08-13T05:41:52.923Z",
+        "connectorId": "gleif",
+        "dimensions": {
+          "jurisdiction": "CH",
+          "lei": "506700GE1G29325QX363"
+        },
+        "factKind": "legal_entity_identity",
+        "mappingStatus": "normalized_fact_without_inferred_topology",
+        "measures": {},
+        "normalizedFactId": "gleif:lei:506700ge1g29325qx363",
+        "publishedAt": null,
+        "retrievedAt": "2026-08-13T05:41:52.923Z"
+      },
+      "validFrom": "2026-08-13T05:41:52.923Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "connector-snapshot:gleif:ef41e2650f1d1b63",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-13T05:41:52.923Z",
+      "bytes": 1110,
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "connector-source:gleif:ef41e2650f1d1b63",
+      "license": {
+        "mode": "redistributable",
+        "name": "CC0 1.0 Universal",
+        "notes": "GLEIF provides LEI and LE-RD through the Access Service under CC0 1.0; do not imply GLEIF endorsement or affiliation.",
+        "spdx": "CC0-1.0",
+        "termsUri": "https://www.gleif.org/en/meta/lei-data-terms-of-use"
+      },
+      "publisher": "Global Legal Entity Identifier Foundation",
+      "retrievedAt": "2026-08-13T05:41:52.923Z",
+      "role": "input",
+      "sha256": "ef41e2650f1d1b639fa02a93e3e9f612455c22f7024b8d99f0406a9d5cee3df2",
+      "title": "GLEIF LEI API normalized snapshot",
+      "uri": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.legalName%5D=Global+Legal+Entity+Identifier+Foundation&page%5Bsize%5D=1"
+    }
+  ],
+  "title": "GLEIF LEI API normalized fact snapshot"
+}

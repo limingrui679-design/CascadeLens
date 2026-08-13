@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
+import { compareCanonicalStrings } from "../packages/core/src/canonical";
 
 interface LockPackage {
   name?: string;
@@ -76,7 +77,8 @@ const components = Object.entries(lock.packages)
     };
   })
   .sort((left, right) =>
-    left.name.localeCompare(right.name) || left.version.localeCompare(right.version),
+    compareCanonicalStrings(left.name, right.name) ||
+      compareCanonicalStrings(left.version, right.version),
   );
 
 const lockDigest = createHash("sha256")

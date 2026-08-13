@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Food export compound",
   "slug": "food-export-compound-stress",
-  "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+  "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "chain"
+  },
   "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
   "tags": [
     "food",
@@ -33,6 +49,6 @@
   "totalWeightedImpact": {
     "central": 0.05733044733044735,
     "lower": 0.05733044733044735,
-    "upper": 0.12928942213145903
+    "upper": 0.12844098577995933
   }
 }

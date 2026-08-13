@@ -1,0 +1,18 @@
+{
+  "boundary": "Country-reported agricultural statistics differ in coverage and quality; third-party datasets may carry exceptions.",
+  "bytes": 33190,
+  "checkedAt": "2026-08-13",
+  "connectorId": "faostat",
+  "contentType": "application/x-zip-compressed",
+  "licenseName": "Creative Commons Attribution 4.0 International",
+  "licenseSpdx": "CC-BY-4.0",
+  "manifestDigest": "41ce78a08a6acf7e1d10a082505bc8e574ea88698b9f4523483a20fbef9d1d8a",
+  "publisher": "Food and Agriculture Organization of the United Nations",
+  "rawArtifactStatus": "embedded",
+  "redistributionMode": "redistributable",
+  "requestUri": "https://bulks-faostat.fao.org/production/ASTI_Researchers_E_All_Data_(Normalized).zip",
+  "retrievedAt": "2026-08-13T05:36:54.717Z",
+  "schemaVersion": "0.1.0",
+  "sha256": "03214dbf97e1094222c816d22050ad835a44328a90d39e3dd026943108a3af51",
+  "termsUri": "https://www.fao.org/contact-us/terms/db-terms-of-use/en"
+}

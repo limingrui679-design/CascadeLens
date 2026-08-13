@@ -6,9 +6,9 @@ CascadeLens keeps the analytical core small and deterministic, then exposes it t
 
 | Package | Owns | May depend on |
 |---|---|---|
-| [`core`](core/src/) | WorldGraph contracts, evidence and time validation, ShockScript, cascade engines, intervention analysis, observability, benchmark scoring, canonicalization, and RiskPack | Node.js standard library only |
-| [`connectors`](connectors/src/) | Source catalog, acquisition contracts, CSV normalization, network guards, and manifests | `core` |
-| [`cases`](cases/src/) | Twelve deterministic case specifications and their build orchestration | `core` |
+| [`core`](core/src/) | WorldGraph contracts, evidence and time validation, ShockScript, cascade engines, intervention analysis, observability, benchmark scoring, canonicalization, and RiskPack | Node.js standard library plus the audited YAML parser |
+| [`connectors`](connectors/src/) | Source catalog, bounded acquisition, CSV/ZIP normalization, stable IDs, resumable checkpoints, manifests, and conservative WorldGraph mapping | `core` |
+| [`cases`](cases/src/) | Twelve deterministic, structurally diverse case specifications and their build orchestration | `core` |
 | [`cli`](cli/src/) | Input validation, analysis execution, case/connector discovery, RiskPack writing, and verification | `core`, `connectors`, `cases`, release scripts |
 | [`sdk`](sdk/src/) | Typed public exports and the offline `analyzeScenario` helper | `core`, `connectors`, `cases` |
 

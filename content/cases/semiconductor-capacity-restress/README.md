@@ -16,8 +16,8 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Results from Semiconductor Supply Chain Request for Information](https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information)
 - Publisher: U.S. Department of Commerce
-- Snapshot digest: `1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d`
-- Lower / central / upper total impact: 0.039677 / 0.039677 / 0.103607
+- Snapshot digest: `b991f1d9e819199adda1388518ea69b6fe23a09fe3f695e2f7ddd7a11c218daf`
+- Lower / central / upper total impact: 0.039677 / 0.039677 / 0.125139
 - Recommendation status: `evidence_required`
 
 ## Rebuild and verify

@@ -1,7 +1,7 @@
 import { connectorById } from "../catalog";
 import { csvObjects } from "../csv";
 import type { ConnectorAdapter } from "../types";
-import { decode, fact, finite, isoPeriod, safeSegment } from "../util";
+import { decode, fact, finite, isoPeriod, stableFactId } from "../util";
 
 interface OecdQuery {
   agency: string;
@@ -37,14 +37,18 @@ export const oecdIcioAdapter: ConnectorAdapter<OecdQuery> = {
   },
   normalize(payload, context) {
     const rows = csvObjects(decode(payload));
-    return rows.map((row, index) => {
+    return rows.map((row) => {
       const period = row.TIME_PERIOD ?? row.Time ?? row.time ?? "unknown";
       const area = row.REF_AREA ?? row.LOCATION ?? row.Country ?? "unknown";
       const activity = row.ACTIVITY ?? row.INDUSTRY ?? row.SUBJECT ?? "unknown";
       const counterpart = row.COUNTERPART_AREA ?? row.PARTNER ?? row.Counterpart ?? "not_applicable";
       return fact(
         {
-          id: `oecd-icio:${safeSegment(period)}:${safeSegment(area)}:${safeSegment(activity)}:${safeSegment(counterpart)}:${index}`,
+          id: stableFactId(
+            "oecd-icio",
+            [period, area, activity, counterpart],
+            row,
+          ),
           kind: "country_industry_account",
           validFrom: isoPeriod(period, context.retrievedAt),
           evidenceGrade: "OFFICIAL_OBSERVED",

@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Red Sea routing",
   "slug": "red-sea-rerouting-restress",
-  "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+  "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 1,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "dynamic_expiry"
+  },
   "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
   "tags": [
     "shipping",
@@ -33,6 +49,6 @@
   "totalWeightedImpact": {
     "central": 0.04975490196078431,
     "lower": 0.04975490196078431,
-    "upper": 0.12471695866382147
+    "upper": 0.11277982002939048
   }
 }

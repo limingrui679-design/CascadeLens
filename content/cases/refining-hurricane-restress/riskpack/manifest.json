@@ -1,10 +1,13 @@
 {
   "classification": "quasi_historical",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:refining-hurricane-restress:v0.1.0",
+  "packId": "riskpack:refining-hurricane-restress:v0.2.0",
   "scenarioId": "refining-hurricane-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+  "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

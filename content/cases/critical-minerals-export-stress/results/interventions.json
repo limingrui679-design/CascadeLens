@@ -1,117 +1,310 @@
 {
   "baselineBundle": {
-    "centralImpact": 0.04385802469135801,
+    "activationSchedule": [],
+    "centralImpact": 0.0328935185185185,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.1361111111111111,
+        "horizonDays": 14,
+        "lowerImpact": 0.1361111111111111,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.4185725078667377,
+        "worstCaseImpact": 0.4185725078667377
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.08771604938271602,
+        "horizonDays": 45,
+        "lowerImpact": 0.08771604938271602,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2697467272918977,
+        "worstCaseImpact": 0.2697467272918977
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.0328935185185185,
+        "horizonDays": 120,
+        "lowerImpact": 0.0328935185185185,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.10115502273446163,
+        "worstCaseImpact": 0.10115502273446163
+      }
+    ],
     "interventionIds": [],
-    "lowerImpact": 0.04385802469135801,
+    "lowerImpact": 0.0328935185185185,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.13487336364594885,
-    "worstCaseImpact": 0.13487336364594885
+    "upperImpact": 0.10115502273446163,
+    "worstCaseImpact": 0.10115502273446163
   },
   "evaluatedBundles": [
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [],
+      "centralImpact": 0.0328935185185185,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4185725078667377,
+          "worstCaseImpact": 0.4185725078667377
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2697467272918977,
+          "worstCaseImpact": 0.2697467272918977
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10115502273446163,
+          "worstCaseImpact": 0.10115502273446163
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.13487336364594885,
-      "worstCaseImpact": 0.13487336364594885
+      "upperImpact": 0.10115502273446163,
+      "worstCaseImpact": 0.10115502273446163
     },
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.0328935185185185,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.31971101900226845,
+          "worstCaseImpact": 0.31971101900226845
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20603599002368414,
+          "worstCaseImpact": 0.20603599002368414
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07726349625888153,
+          "worstCaseImpact": 0.07726349625888153
+        }
+      ],
       "interventionIds": [
         "intervention:critical-minerals-export-stress:buffer"
       ],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10301799501184207,
-      "worstCaseImpact": 0.10301799501184207
+      "upperImpact": 0.07726349625888153,
+      "worstCaseImpact": 0.07726349625888153
     },
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.0328935185185185,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30558794916448717,
+          "worstCaseImpact": 0.30558794916448717
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.19693445612822505,
+          "worstCaseImpact": 0.19693445612822505
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0738504210480844,
+          "worstCaseImpact": 0.0738504210480844
+        }
+      ],
       "interventionIds": [
         "intervention:critical-minerals-export-stress:reroute"
       ],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09846722806411252,
-      "worstCaseImpact": 0.09846722806411252
+      "upperImpact": 0.0738504210480844,
+      "worstCaseImpact": 0.0738504210480844
     },
     {
-      "centralImpact": 0.04385802469135801,
-      "cost": 13,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:critical-minerals-export-stress:diversify"
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:diversify",
+          "leadTimeDays": 45
+        }
       ],
-      "lowerImpact": 0.04385802469135801,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.10863189787235711,
-      "worstCaseImpact": 0.10863189787235711
-    },
-    {
-      "centralImpact": 0.04385802469135801,
-      "cost": 19,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:critical-minerals-export-stress:buffer",
-        "intervention:critical-minerals-export-stress:reroute"
-      ],
-      "lowerImpact": 0.04385802469135801,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.07935400688364844,
-      "worstCaseImpact": 0.07935400688364844
-    },
-    {
-      "centralImpact": 0.04385802469135801,
-      "cost": 21,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:critical-minerals-export-stress:buffer",
-        "intervention:critical-minerals-export-stress:diversify"
-      ],
-      "lowerImpact": 0.04385802469135801,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.08596104225900743,
-      "worstCaseImpact": 0.08596104225900743
-    },
-    {
       "centralImpact": null,
-      "cost": 24,
+      "cost": 13,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 120,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
-        "intervention:critical-minerals-export-stress:diversify",
-        "intervention:critical-minerals-export-stress:reroute"
+        "intervention:critical-minerals-export-stress:diversify"
       ],
       "lowerImpact": null,
       "reasons": [
-        "budget_exceeded"
+        "lead_time_exceeded"
       ],
       "strategy": "intervene",
       "upperImpact": null,
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
-      "cost": 32,
+      "cost": 19,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 120,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:critical-minerals-export-stress:buffer",
-        "intervention:critical-minerals-export-stress:diversify",
         "intervention:critical-minerals-export-stress:reroute"
       ],
       "lowerImpact": null,
@@ -122,71 +315,865 @@
       "strategy": "intervene",
       "upperImpact": null,
       "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": null,
+      "cost": 21,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 120,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:diversify"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": null,
+      "cost": 24,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 120,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:diversify",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": null,
+      "cost": 32,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 120,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer",
+            "intervention:critical-minerals-export-stress:diversify",
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:critical-minerals-export-stress:buffer",
+        "intervention:critical-minerals-export-stress:diversify",
+        "intervention:critical-minerals-export-stress:reroute"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded",
+        "lead_time_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 14,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.0328935185185185,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4185725078667377,
+              "worstCaseImpact": 0.4185725078667377
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2697467272918977,
+              "worstCaseImpact": 0.2697467272918977
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10115502273446163,
+              "worstCaseImpact": 0.10115502273446163
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.10115502273446163,
+          "worstCaseImpact": 0.10115502273446163
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31971101900226845,
+              "worstCaseImpact": 0.31971101900226845
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20603599002368414,
+              "worstCaseImpact": 0.20603599002368414
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07726349625888153,
+              "worstCaseImpact": 0.07726349625888153
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07726349625888153,
+          "worstCaseImpact": 0.07726349625888153
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30558794916448717,
+              "worstCaseImpact": 0.30558794916448717
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19693445612822505,
+              "worstCaseImpact": 0.19693445612822505
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0738504210480844,
+              "worstCaseImpact": 0.0738504210480844
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.0738504210480844,
+          "worstCaseImpact": 0.0738504210480844
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 45,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.0328935185185185,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4185725078667377,
+              "worstCaseImpact": 0.4185725078667377
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2697467272918977,
+              "worstCaseImpact": 0.2697467272918977
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10115502273446163,
+              "worstCaseImpact": 0.10115502273446163
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.10115502273446163,
+          "worstCaseImpact": 0.10115502273446163
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31971101900226845,
+              "worstCaseImpact": 0.31971101900226845
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20603599002368414,
+              "worstCaseImpact": 0.20603599002368414
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07726349625888153,
+              "worstCaseImpact": 0.07726349625888153
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07726349625888153,
+          "worstCaseImpact": 0.07726349625888153
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30558794916448717,
+              "worstCaseImpact": 0.30558794916448717
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19693445612822505,
+              "worstCaseImpact": 0.19693445612822505
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0738504210480844,
+              "worstCaseImpact": 0.0738504210480844
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.0738504210480844,
+          "worstCaseImpact": 0.0738504210480844
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 120,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.0328935185185185,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4185725078667377,
+              "worstCaseImpact": 0.4185725078667377
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2697467272918977,
+              "worstCaseImpact": 0.2697467272918977
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10115502273446163,
+              "worstCaseImpact": 0.10115502273446163
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.10115502273446163,
+          "worstCaseImpact": 0.10115502273446163
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31971101900226845,
+              "worstCaseImpact": 0.31971101900226845
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.20603599002368414,
+              "worstCaseImpact": 0.20603599002368414
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:buffer"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.07726349625888153,
+              "worstCaseImpact": 0.07726349625888153
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.07726349625888153,
+          "worstCaseImpact": 0.07726349625888153
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:critical-minerals-export-stress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.0328935185185185,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.1361111111111111,
+              "horizonDays": 14,
+              "lowerImpact": 0.1361111111111111,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30558794916448717,
+              "worstCaseImpact": 0.30558794916448717
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.08771604938271602,
+              "horizonDays": 45,
+              "lowerImpact": 0.08771604938271602,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19693445612822505,
+              "worstCaseImpact": 0.19693445612822505
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:critical-minerals-export-stress:reroute"
+              ],
+              "centralImpact": 0.0328935185185185,
+              "horizonDays": 120,
+              "lowerImpact": 0.0328935185185185,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0738504210480844,
+              "worstCaseImpact": 0.0738504210480844
+            }
+          ],
+          "interventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "lowerImpact": 0.0328935185185185,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.0738504210480844,
+          "worstCaseImpact": 0.0738504210480844
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:critical-minerals-export-stress:reroute"
+      ]
     }
   ],
   "paretoFrontier": [
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [],
+      "centralImpact": 0.0328935185185185,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4185725078667377,
+          "worstCaseImpact": 0.4185725078667377
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2697467272918977,
+          "worstCaseImpact": 0.2697467272918977
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10115502273446163,
+          "worstCaseImpact": 0.10115502273446163
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.13487336364594885,
-      "worstCaseImpact": 0.13487336364594885
+      "upperImpact": 0.10115502273446163,
+      "worstCaseImpact": 0.10115502273446163
     },
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.0328935185185185,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.31971101900226845,
+          "worstCaseImpact": 0.31971101900226845
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.20603599002368414,
+          "worstCaseImpact": 0.20603599002368414
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:buffer"
+          ],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.07726349625888153,
+          "worstCaseImpact": 0.07726349625888153
+        }
+      ],
       "interventionIds": [
         "intervention:critical-minerals-export-stress:buffer"
       ],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10301799501184207,
-      "worstCaseImpact": 0.10301799501184207
+      "upperImpact": 0.07726349625888153,
+      "worstCaseImpact": 0.07726349625888153
     },
     {
-      "centralImpact": 0.04385802469135801,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:critical-minerals-export-stress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.0328935185185185,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.1361111111111111,
+          "horizonDays": 14,
+          "lowerImpact": 0.1361111111111111,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30558794916448717,
+          "worstCaseImpact": 0.30558794916448717
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.08771604938271602,
+          "horizonDays": 45,
+          "lowerImpact": 0.08771604938271602,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.19693445612822505,
+          "worstCaseImpact": 0.19693445612822505
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:critical-minerals-export-stress:reroute"
+          ],
+          "centralImpact": 0.0328935185185185,
+          "horizonDays": 120,
+          "lowerImpact": 0.0328935185185185,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0738504210480844,
+          "worstCaseImpact": 0.0738504210480844
+        }
+      ],
       "interventionIds": [
         "intervention:critical-minerals-export-stress:reroute"
       ],
-      "lowerImpact": 0.04385802469135801,
+      "lowerImpact": 0.0328935185185185,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.09846722806411252,
-      "worstCaseImpact": 0.09846722806411252
-    },
-    {
-      "centralImpact": 0.04385802469135801,
-      "cost": 19,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:critical-minerals-export-stress:buffer",
-        "intervention:critical-minerals-export-stress:reroute"
-      ],
-      "lowerImpact": 0.04385802469135801,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.07935400688364844,
-      "worstCaseImpact": 0.07935400688364844
+      "upperImpact": 0.0738504210480844,
+      "worstCaseImpact": 0.0738504210480844
     }
   ],
   "recommendationStatus": "evidence_required",
   "recommendedBundleIds": [
-    "intervention:critical-minerals-export-stress:buffer",
     "intervention:critical-minerals-export-stress:reroute"
   ],
   "reversalThresholds": [
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 251.1350627232922,
+      "threshold": 334.8467502977227,
       "toBundleIds": [
         "intervention:critical-minerals-export-stress:buffer"
       ]
@@ -196,19 +1183,8 @@
         "intervention:critical-minerals-export-stress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 659.2295396486411,
+      "threshold": 878.9727195315287,
       "toBundleIds": [
-        "intervention:critical-minerals-export-stress:reroute"
-      ]
-    },
-    {
-      "fromBundleIds": [
-        "intervention:critical-minerals-export-stress:reroute"
-      ],
-      "parameter": "risk_value_per_unit",
-      "threshold": 418.55843787215315,
-      "toBundleIds": [
-        "intervention:critical-minerals-export-stress:buffer",
         "intervention:critical-minerals-export-stress:reroute"
       ]
     }

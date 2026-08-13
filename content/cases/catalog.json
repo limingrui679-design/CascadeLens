@@ -25,7 +25,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Suez route",
       "slug": "suez-route-restress",
-      "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+      "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "chain"
+      },
       "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
       "tags": [
         "shipping",
@@ -49,7 +65,7 @@
       },
       "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
       "domain": "Advanced manufacturing",
-      "edgeCount": 4,
+      "edgeCount": 5,
       "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
       "nodeCount": 5,
       "observabilityStatus": "not_cost_effective",
@@ -63,7 +79,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Semiconductors",
       "slug": "semiconductor-capacity-restress",
-      "snapshotDigest": "1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d",
+      "snapshotDigest": "b991f1d9e819199adda1388518ea69b6fe23a09fe3f695e2f7ddd7a11c218daf",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "branch_merge"
+      },
       "summary": "A forward-dated semiconductor capacity stress across assumed fabrication, component, assembly, and production dependencies.",
       "tags": [
         "semiconductors",
@@ -74,7 +106,7 @@
       "totalWeightedImpact": {
         "central": 0.03967661691542291,
         "lower": 0.03967661691542291,
-        "upper": 0.10360738872995993
+        "upper": 0.1251388328726562
       }
     },
     {
@@ -87,7 +119,7 @@
       },
       "decisionQuestion": "Which feasible supply intervention best limits bounded access disruption during a PPE demand surge?",
       "domain": "Public health supply",
-      "edgeCount": 4,
+      "edgeCount": 5,
       "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
       "nodeCount": 5,
       "observabilityStatus": "not_cost_effective",
@@ -101,7 +133,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Medical PPE",
       "slug": "medical-ppe-demand-restress",
-      "snapshotDigest": "69f7474027b8e0398b03ade74842af328bff7dd13d113ea5c92e0a9b7b76dc5b",
+      "snapshotDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          21,
+          60
+        ],
+        "topology": "branch_merge"
+      },
       "summary": "A forward-dated demand surge across an assumed personal-protective-equipment supply and care-delivery topology.",
       "tags": [
         "health",
@@ -110,9 +158,9 @@
       ],
       "title": "Medical PPE demand re-stress",
       "totalWeightedImpact": {
-        "central": 0.02970550576184377,
-        "lower": 0.02970550576184377,
-        "upper": 0.08986450645873557
+        "central": 0.04455825864276565,
+        "lower": 0.04455825864276565,
+        "upper": 0.17237492477830463
       }
     },
     {
@@ -125,7 +173,7 @@
       },
       "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
       "domain": "Food and energy",
-      "edgeCount": 4,
+      "edgeCount": 5,
       "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
       "nodeCount": 5,
       "observabilityStatus": "not_cost_effective",
@@ -139,7 +187,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Commodity compound",
       "slug": "ukraine-commodity-compound-restress",
-      "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+      "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": true,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "cycle"
+      },
       "summary": "A compound forward stress joining assumed food, fertilizer, energy, logistics, and affordability dependencies.",
       "tags": [
         "food",
@@ -151,7 +215,7 @@
       "totalWeightedImpact": {
         "central": 0.06444444444444444,
         "lower": 0.06444444444444444,
-        "upper": 0.13421702159839816
+        "upper": 0.14068754719476745
       }
     },
     {
@@ -178,7 +242,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Panama drought",
       "slug": "panama-drought-restress",
-      "snapshotDigest": "f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3",
+      "snapshotDigest": "20410abd3409b2aefd80addacd627d9ead1a1a1383593d90bccfe737663771ea",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 1,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "dynamic_activation"
+      },
       "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
       "tags": [
         "climate",
@@ -189,7 +269,7 @@
       "totalWeightedImpact": {
         "central": 0.03029850746268655,
         "lower": 0.03029850746268655,
-        "upper": 0.07523915649015667
+        "upper": 0.0690499466333543
       }
     },
     {
@@ -216,7 +296,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Red Sea routing",
       "slug": "red-sea-rerouting-restress",
-      "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+      "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 1,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "dynamic_expiry"
+      },
       "summary": "A forward-dated shipping-route stress across assumed voyage-time, input, production, and delivery dependencies.",
       "tags": [
         "shipping",
@@ -227,7 +323,7 @@
       "totalWeightedImpact": {
         "central": 0.04975490196078431,
         "lower": 0.04975490196078431,
-        "upper": 0.12471695866382147
+        "upper": 0.11277982002939048
       }
     },
     {
@@ -254,7 +350,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Baltimore port",
       "slug": "baltimore-port-restress",
-      "snapshotDigest": "5d40c011820e161aa3ecd014688245f976651fa4d35ddfd09024d1984cfbd34a",
+      "snapshotDigest": "494dc935c4d0191b4de22790e7e19fbb33462aad60336f6551141a6c11e61abc",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "chain"
+      },
       "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
       "tags": [
         "port",
@@ -292,7 +404,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Refining hurricane",
       "slug": "refining-hurricane-restress",
-      "snapshotDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+      "snapshotDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "chain"
+      },
       "summary": "A forward-dated refining-capacity interruption across assumed fuel, transport, distribution, and essential-service links.",
       "tags": [
         "energy",
@@ -323,14 +451,29 @@
       "rebuildCommand": "npm run cascadelens -- cases build critical-minerals-export-stress",
       "recommendationStatus": "evidence_required",
       "recommendedBundleIds": [
-        "intervention:critical-minerals-export-stress:buffer",
         "intervention:critical-minerals-export-stress:reroute"
       ],
       "riskPackPath": "cases/critical-minerals-export-stress/riskpack/",
       "scoringStatus": "scenario_only",
       "shortTitle": "Critical minerals",
       "slug": "critical-minerals-export-stress",
-      "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
+      "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 18,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 1,
+          "maxLeadTimeDays": 30
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          14,
+          45,
+          120
+        ],
+        "topology": "chain"
+      },
       "summary": "A synthetic export-control stress across an assumed mineral, component, manufacturing, and infrastructure chain.",
       "tags": [
         "minerals",
@@ -339,9 +482,9 @@
       ],
       "title": "Critical-minerals export-control stress",
       "totalWeightedImpact": {
-        "central": 0.04385802469135801,
-        "lower": 0.04385802469135801,
-        "upper": 0.13487336364594885
+        "central": 0.0328935185185185,
+        "lower": 0.0328935185185185,
+        "upper": 0.10115502273446163
       }
     },
     {
@@ -361,14 +504,29 @@
       "rebuildCommand": "npm run cascadelens -- cases build ofac-list-change-stress",
       "recommendationStatus": "evidence_required",
       "recommendedBundleIds": [
-        "intervention:ofac-list-change-stress:buffer",
         "intervention:ofac-list-change-stress:reroute"
       ],
       "riskPackPath": "cases/ofac-list-change-stress/riskpack/",
       "scoringStatus": "scenario_only",
       "shortTitle": "Sanctions change",
       "slug": "ofac-list-change-stress",
-      "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+      "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 12,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 1,
+          "maxLeadTimeDays": 21
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          3,
+          14,
+          60
+        ],
+        "topology": "chain"
+      },
       "summary": "A synthetic operational stress exploring how a sanctions-list change could affect assumed screening, payment, supplier, and delivery dependencies.",
       "tags": [
         "sanctions",
@@ -377,9 +535,9 @@
       ],
       "title": "Sanctions-list change stress",
       "totalWeightedImpact": {
-        "central": 0.03735909822866346,
-        "lower": 0.03735909822866346,
-        "upper": 0.08780815155668417
+        "central": 0.05603864734299518,
+        "lower": 0.05603864734299518,
+        "upper": 0.13171222733502627
       }
     },
     {
@@ -406,7 +564,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Drug shortage",
       "slug": "drug-shortage-restress",
-      "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
+      "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          21,
+          60
+        ],
+        "topology": "chain"
+      },
       "summary": "A forward-dated medicine-supply stress across assumed manufacturer, wholesaler, care-site, and treatment-access links.",
       "tags": [
         "medicine",
@@ -415,9 +589,9 @@
       ],
       "title": "Drug-shortage re-stress",
       "totalWeightedImpact": {
-        "central": 0.044093567251462,
-        "lower": 0.044093567251462,
-        "upper": 0.11331852398178344
+        "central": 0.066140350877193,
+        "lower": 0.066140350877193,
+        "upper": 0.16997778597267518
       }
     },
     {
@@ -444,7 +618,23 @@
       "scoringStatus": "scenario_only",
       "shortTitle": "Food export compound",
       "slug": "food-export-compound-stress",
-      "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+      "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 22,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          7,
+          30,
+          90
+        ],
+        "topology": "chain"
+      },
       "summary": "A synthetic compound stress linking assumed production loss and export restriction to processing, trade, distribution, and affordability.",
       "tags": [
         "food",
@@ -455,12 +645,30 @@
       "totalWeightedImpact": {
         "central": 0.05733044733044735,
         "lower": 0.05733044733044735,
-        "upper": 0.12928942213145903
+        "upper": 0.12844098577995933
       }
     }
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
   "historicallyScoredCaseCount": 0,
   "schemaVersion": "0.1.0",
-  "status": "reference_cases_not_empirical_validation"
+  "status": "reference_cases_not_empirical_validation",
+  "structuralCoverage": {
+    "cycleCaseCount": 1,
+    "dynamicEdgeCaseCount": 2,
+    "evidenceBoundary": "Structural regression diversity does not establish empirical accuracy or historical validation.",
+    "horizonProfiles": [
+      "14/45/120",
+      "3/14/60",
+      "7/21/60",
+      "7/30/90"
+    ],
+    "topologyProfiles": [
+      "branch_merge",
+      "chain",
+      "cycle",
+      "dynamic_activation",
+      "dynamic_expiry"
+    ]
+  }
 }

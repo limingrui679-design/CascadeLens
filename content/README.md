@@ -7,6 +7,7 @@
 | Path | Contents | Source of truth |
 |---|---|---|
 | [`cases/`](cases/) | Per-case scenario, graph, assumptions, context citation, model card, results, and RiskPack | Deterministically built from [`packages/cases/src/specs.ts`](../packages/cases/src/specs.ts) |
+| [`snapshots/`](snapshots/) | Three frozen, lawfully redistributable public-source connector runs with raw manifest, normalized facts, and zero-edge conservative WorldGraph mapping | Retrieved from the recorded official endpoints under the recorded terms |
 | [`cases/catalog.json`](cases/catalog.json) | Public summary of all twelve reference cases | Generated with the case library |
 | [`catalog/connectors.json`](catalog/connectors.json) | Public catalog of the ten bounded connectors | Deterministically exported from [`packages/connectors/src/catalog.ts`](../packages/connectors/src/catalog.ts) |
 
@@ -20,7 +21,7 @@ npm run generate:cases
 npm run cascadelens -- cases verify all
 ```
 
-The build is deterministic against the same repository tree. RiskPack verification checks file membership, checksums, graph digests, schema contracts, identifiers, manifests, classifications, and rebuild commands. It establishes internal integrity and reproducibility—not empirical accuracy, external validation, deployment, or adoption.
+The build is deterministic against the same repository tree. RiskPack verification checks file membership, checksums, graph digests, schema contracts, identifiers, manifests, classifications, and rebuild commands, then deterministically recomputes every derived output from the packaged inputs. An optional external expected digest can bind the whole pack to a separately retained receipt. These checks establish derivation integrity and reproducibility—not empirical accuracy, external validation, deployment, or adoption.
 
 ## Adding content
 

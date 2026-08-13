@@ -12,7 +12,16 @@ test("builds twelve deterministic, bounded, scenario-only reference cases", asyn
   assert.equal(referenceCaseSpecs.length, 12);
   const currentCatalog = JSON.parse(
     await readFile(new URL("../../content/cases/catalog.json", import.meta.url), "utf8"),
-  ) as { cases: unknown[]; historicallyScoredCaseCount: number };
+  ) as {
+    cases: unknown[];
+    historicallyScoredCaseCount: number;
+    structuralCoverage: {
+      topologyProfiles: string[];
+      horizonProfiles: string[];
+      dynamicEdgeCaseCount: number;
+      cycleCaseCount: number;
+    };
+  };
   const rebuilt = [];
   for (const spec of referenceCaseSpecs) {
     const built = await buildReferenceCase(spec);
@@ -29,5 +38,9 @@ test("builds twelve deterministic, bounded, scenario-only reference cases", asyn
     assert.doesNotMatch(built.riskPack.files["REBUILD.txt"], /\/(?:Users|home)\//);
   }
   assert.equal(currentCatalog.historicallyScoredCaseCount, 0);
+  assert.ok(currentCatalog.structuralCoverage.topologyProfiles.length >= 5);
+  assert.ok(currentCatalog.structuralCoverage.horizonProfiles.length >= 4);
+  assert.ok(currentCatalog.structuralCoverage.dynamicEdgeCaseCount >= 2);
+  assert.ok(currentCatalog.structuralCoverage.cycleCaseCount >= 1);
   assert.equal(stableStringify(rebuilt), stableStringify(currentCatalog.cases));
 });

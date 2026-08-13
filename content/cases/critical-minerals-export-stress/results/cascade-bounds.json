@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -11,13 +11,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 120,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.22555555555555545,
+        "directImpact": 0.16916666666666658,
         "endImpact": 0,
-        "impact": 0.22555555555555545,
+        "impact": 0.16916666666666658,
         "nodeId": "node:critical-minerals-export-stress:exports",
         "peakDirectImpact": 0.7,
         "peakImpact": 0.7
@@ -59,11 +59,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 120,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "critical-minerals-export-stress",
-    "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-    "totalWeightedImpact": 0.04385802469135801,
+    "simulatedDays": 120,
+    "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+    "totalWeightedImpact": 0.0328935185185185,
     "totalWeightedPeakEnvelope": 0.1361111111111111,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.1361111111111111,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -83,13 +85,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.7000000000000001,
+            "directImpact": 0.7,
             "endImpact": 0.7,
-            "impact": 0.7000000000000001,
+            "impact": 0.7,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -131,22 +133,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 7,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.13611111111111113,
+        "simulatedDays": 14,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.1361111111111111,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 7,
+      "horizonDays": 14,
       "lower": {
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.1361111111111111,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -154,13 +158,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.7000000000000001,
+            "directImpact": 0.7,
             "endImpact": 0.7,
-            "impact": 0.7000000000000001,
+            "impact": 0.7,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -202,11 +206,13 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 7,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.13611111111111113,
+        "simulatedDays": 14,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.1361111111111111,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.4185725078667377,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -224,13 +230,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.7000000000000001,
+            "directImpact": 0.7,
             "endImpact": 0.7,
-            "impact": 0.7000000000000001,
+            "impact": 0.7,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.574,
-            "impact": 0.49199999999999994,
+            "impact": 0.574,
             "nodeId": "node:critical-minerals-export-stress:mineral",
             "peakDirectImpact": 0,
             "peakImpact": 0.574
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.40478479999999994,
-            "impact": 0.28913199999999994,
+            "impact": 0.4047847999999999,
             "nodeId": "node:critical-minerals-export-stress:component",
             "peakDirectImpact": 0,
             "peakImpact": 0.40478479999999994
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.2655388288,
-            "impact": 0.1517364736,
+            "impact": 0.2655388288,
             "nodeId": "node:critical-minerals-export-stress:manufacturing",
             "peakDirectImpact": 0,
             "peakImpact": 0.2655388288
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.13935477735423996,
-            "impact": 0.05972347600895998,
+            "impact": 0.13935477735424,
             "nodeId": "node:critical-minerals-export-stress:infrastructure",
             "peakDirectImpact": 0,
             "peakImpact": 0.13935477735423996
           }
         ],
-        "iterations": 7,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.3393338439682844,
+        "simulatedDays": 14,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.4185725078667377,
         "totalWeightedPeakEnvelope": 0.4185725078667377,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -318,13 +326,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 45,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6766666666666663,
+            "directImpact": 0.4511111111111109,
             "endImpact": 0,
-            "impact": 0.6766666666666663,
+            "impact": 0.4511111111111109,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -366,23 +374,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.131574074074074,
+        "simulatedDays": 45,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.08771604938271602,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 30,
+      "horizonDays": 45,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -390,13 +399,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 45,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6766666666666663,
+            "directImpact": 0.4511111111111109,
             "endImpact": 0,
-            "impact": 0.6766666666666663,
+            "impact": 0.4511111111111109,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -438,22 +447,23 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.131574074074074,
+        "simulatedDays": 45,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.08771604938271602,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.2824613967556267,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -461,13 +471,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 45,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6766666666666663,
+            "directImpact": 0.4511111111111109,
             "endImpact": 0,
-            "impact": 0.6766666666666663,
+            "impact": 0.4511111111111109,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -481,8 +491,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.574,
-            "impact": 0.5548666666666667,
+            "endImpact": 0,
+            "impact": 0.36991111111111113,
             "nodeId": "node:critical-minerals-export-stress:mineral",
             "peakDirectImpact": 0,
             "peakImpact": 0.574
@@ -496,8 +506,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.40478479999999994,
-            "impact": 0.3777991466666666,
+            "endImpact": 0,
+            "impact": 0.2608613155555555,
             "nodeId": "node:critical-minerals-export-stress:component",
             "peakDirectImpact": 0,
             "peakImpact": 0.40478479999999994
@@ -511,8 +521,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.2655388288,
-            "impact": 0.23898494592000016,
+            "endImpact": 0,
+            "impact": 0.17112502300444457,
             "nodeId": "node:critical-minerals-export-stress:manufacturing",
             "peakDirectImpact": 0,
             "peakImpact": 0.2655388288
@@ -526,22 +536,22 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.13935477735423996,
-            "impact": 0.12077414037367469,
+            "endImpact": 0,
+            "impact": 0.08980641207273246,
             "nodeId": "node:critical-minerals-export-stress:infrastructure",
             "peakDirectImpact": 0,
             "peakImpact": 0.13935477735423996
           }
         ],
-        "iterations": 30,
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.3955464492533949,
+        "simulatedDays": 45,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.2697467272918977,
         "totalWeightedPeakEnvelope": 0.4185725078667377,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -557,13 +567,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 120,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.22555555555555545,
+            "directImpact": 0.16916666666666658,
             "endImpact": 0,
-            "impact": 0.22555555555555545,
+            "impact": 0.16916666666666658,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -605,22 +615,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 120,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.04385802469135801,
+        "simulatedDays": 120,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.0328935185185185,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 90,
+      "horizonDays": 120,
       "lower": {
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -628,13 +640,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 120,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.22555555555555545,
+            "directImpact": 0.16916666666666658,
             "endImpact": 0,
-            "impact": 0.22555555555555545,
+            "impact": 0.16916666666666658,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -676,11 +688,13 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 120,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.04385802469135801,
+        "simulatedDays": 120,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.0328935185185185,
         "totalWeightedPeakEnvelope": 0.1361111111111111,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -698,13 +712,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 120,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.22555555555555545,
+            "directImpact": 0.16916666666666658,
             "endImpact": 0,
-            "impact": 0.22555555555555545,
+            "impact": 0.16916666666666658,
             "nodeId": "node:critical-minerals-export-stress:exports",
             "peakDirectImpact": 0.7,
             "peakImpact": 0.7
@@ -719,7 +733,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.18495555555555557,
+            "impact": 0.13871666666666668,
             "nodeId": "node:critical-minerals-export-stress:mineral",
             "peakDirectImpact": 0,
             "peakImpact": 0.574
@@ -734,7 +748,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.13043065777777774,
+            "impact": 0.0978229933333333,
             "nodeId": "node:critical-minerals-export-stress:component",
             "peakDirectImpact": 0,
             "peakImpact": 0.40478479999999994
@@ -749,7 +763,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.08556251150222229,
+            "impact": 0.06417188362666672,
             "nodeId": "node:critical-minerals-export-stress:manufacturing",
             "peakDirectImpact": 0,
             "peakImpact": 0.2655388288
@@ -764,17 +778,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.04490320603636623,
+            "impact": 0.03367740452727467,
             "nodeId": "node:critical-minerals-export-stress:infrastructure",
             "peakDirectImpact": 0,
             "peakImpact": 0.13935477735423996
           }
         ],
-        "iterations": 90,
+        "iterations": 120,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "critical-minerals-export-stress",
-        "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-        "totalWeightedImpact": 0.13487336364594885,
+        "simulatedDays": 120,
+        "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+        "totalWeightedImpact": 0.10115502273446163,
         "totalWeightedPeakEnvelope": 0.4185725078667377,
         "warnings": []
       }
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -792,13 +808,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 120,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.22555555555555545,
+        "directImpact": 0.16916666666666658,
         "endImpact": 0,
-        "impact": 0.22555555555555545,
+        "impact": 0.16916666666666658,
         "nodeId": "node:critical-minerals-export-stress:exports",
         "peakDirectImpact": 0.7,
         "peakImpact": 0.7
@@ -840,11 +856,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 120,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "critical-minerals-export-stress",
-    "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-    "totalWeightedImpact": 0.04385802469135801,
+    "simulatedDays": 120,
+    "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+    "totalWeightedImpact": 0.0328935185185185,
     "totalWeightedPeakEnvelope": 0.1361111111111111,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -862,13 +880,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 120,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.22555555555555545,
+        "directImpact": 0.16916666666666658,
         "endImpact": 0,
-        "impact": 0.22555555555555545,
+        "impact": 0.16916666666666658,
         "nodeId": "node:critical-minerals-export-stress:exports",
         "peakDirectImpact": 0.7,
         "peakImpact": 0.7
@@ -883,7 +901,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.18495555555555557,
+        "impact": 0.13871666666666668,
         "nodeId": "node:critical-minerals-export-stress:mineral",
         "peakDirectImpact": 0,
         "peakImpact": 0.574
@@ -898,7 +916,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.13043065777777774,
+        "impact": 0.0978229933333333,
         "nodeId": "node:critical-minerals-export-stress:component",
         "peakDirectImpact": 0,
         "peakImpact": 0.40478479999999994
@@ -913,7 +931,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.08556251150222229,
+        "impact": 0.06417188362666672,
         "nodeId": "node:critical-minerals-export-stress:manufacturing",
         "peakDirectImpact": 0,
         "peakImpact": 0.2655388288
@@ -928,17 +946,19 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.04490320603636623,
+        "impact": 0.03367740452727467,
         "nodeId": "node:critical-minerals-export-stress:infrastructure",
         "peakDirectImpact": 0,
         "peakImpact": 0.13935477735423996
       }
     ],
-    "iterations": 90,
+    "iterations": 120,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "critical-minerals-export-stress",
-    "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
-    "totalWeightedImpact": 0.13487336364594885,
+    "simulatedDays": 120,
+    "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
+    "totalWeightedImpact": 0.10115502273446163,
     "totalWeightedPeakEnvelope": 0.4185725078667377,
     "warnings": []
   }

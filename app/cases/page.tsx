@@ -16,7 +16,7 @@ export default function CasesPage() {
         <Eyebrow>Reference case library</Eyebrow>
         <h1>Twelve complete pipelines. Zero inflated claims.</h1>
         <p className="page-intro-copy">
-          Each case contains a sealed graph, ShockScript, assumption register, model card, bounded results, intervention analysis, observability output, benchmark status, and checksum-verified RiskPack.
+          Each case contains a sealed graph, ShockScript, assumption register, model card, bounded results, intervention analysis, observability output, benchmark status, and recomputation-verified RiskPack.
         </p>
         <div className="page-intro-meta">
           <Status tone="scenario">12 scenario-only</Status>

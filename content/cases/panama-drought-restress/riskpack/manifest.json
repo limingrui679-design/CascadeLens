@@ -1,10 +1,13 @@
 {
   "classification": "quasi_historical",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:panama-drought-restress:v0.1.0",
+  "packId": "riskpack:panama-drought-restress:v0.2.0",
   "scenarioId": "panama-drought-restress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3",
+  "snapshotDigest": "20410abd3409b2aefd80addacd627d9ead1a1a1383593d90bccfe737663771ea",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

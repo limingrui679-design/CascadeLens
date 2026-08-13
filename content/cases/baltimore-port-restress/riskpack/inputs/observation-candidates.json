@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:baltimore-port-restress:assumptions"
+        ]
+      },
+      "from": "node:baltimore-port-restress:port-access",
+      "id": "edge:baltimore-port-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:baltimore-port-restress:deliveries",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0,
+        "unit": "share",
+        "upper": 0.33,
+        "value": 0.17
+      }
+    },
+    "id": "candidate:baltimore-port-restress:direct-link",
+    "label": "Verify a possible direct dependency from Port access channel to Customer deliveries",
+    "probabilityPresent": 0.35
+  }
+]

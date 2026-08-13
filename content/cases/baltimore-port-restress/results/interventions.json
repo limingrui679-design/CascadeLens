@@ -1,8 +1,38 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.06940170940170941,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.21538461538461537,
+        "horizonDays": 7,
+        "lowerImpact": 0.21538461538461537,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.5585195511137812,
+        "worstCaseImpact": 0.5585195511137812
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.2082051282051282,
+        "horizonDays": 30,
+        "lowerImpact": 0.2082051282051282,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.5399022327433217,
+        "worstCaseImpact": 0.5399022327433217
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.06940170940170941,
+        "horizonDays": 90,
+        "lowerImpact": 0.06940170940170941,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.17996741091444057,
+        "worstCaseImpact": 0.17996741091444057
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.06940170940170941,
     "reasons": [],
@@ -12,9 +42,39 @@
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06940170940170941,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5585195511137812,
+          "worstCaseImpact": 0.5585195511137812
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5399022327433217,
+          "worstCaseImpact": 0.5399022327433217
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17996741091444057,
+          "worstCaseImpact": 0.17996741091444057
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06940170940170941,
       "reasons": [],
@@ -23,9 +83,51 @@
       "worstCaseImpact": 0.17996741091444057
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.43842232360857314,
+          "worstCaseImpact": 0.43842232360857314
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.423808246154954,
+          "worstCaseImpact": 0.423808246154954
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14126941538498466,
+          "worstCaseImpact": 0.14126941538498466
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer"
       ],
@@ -36,9 +138,51 @@
       "worstCaseImpact": 0.14126941538498466
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.42126557682211485,
+          "worstCaseImpact": 0.42126557682211485
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.40722339092804444,
+          "worstCaseImpact": 0.40722339092804444
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13574113030934815,
+          "worstCaseImpact": 0.13574113030934815
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:reroute"
       ],
@@ -49,22 +193,114 @@
       "worstCaseImpact": 0.13574113030934815
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "upperImpact": 0.5585195511137812,
+          "worstCaseImpact": 0.5585195511137812
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.527741237028044,
+          "worstCaseImpact": 0.527741237028044
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1759137456760147,
+          "worstCaseImpact": 0.1759137456760147
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:diversify"
       ],
       "lowerImpact": 0.06940170940170941,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.15057833793585276,
-      "worstCaseImpact": 0.15057833793585276
+      "upperImpact": 0.1759137456760147,
+      "worstCaseImpact": 0.1759137456760147
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.34920724031899003,
+          "worstCaseImpact": 0.34920724031899003
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33756699897502374,
+          "worstCaseImpact": 0.33756699897502374
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11252233299167459,
+          "worstCaseImpact": 0.11252233299167459
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer",
         "intervention:baltimore-port-restress:reroute"
@@ -76,9 +312,60 @@
       "worstCaseImpact": 0.11252233299167459
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "upperImpact": 0.43842232360857314,
+          "worstCaseImpact": 0.43842232360857314
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.41590359894002343,
+          "worstCaseImpact": 0.41590359894002343
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:diversify"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1386345329800078,
+          "worstCaseImpact": 0.1386345329800078
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer",
         "intervention:baltimore-port-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.06940170940170941,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.12216651794890258,
-      "worstCaseImpact": 0.12216651794890258
+      "upperImpact": 0.1386345329800078,
+      "worstCaseImpact": 0.1386345329800078
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:diversify",
         "intervention:baltimore-port-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:diversify",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer",
         "intervention:baltimore-port-restress:diversify",
@@ -124,11 +519,718 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06940170940170941,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5585195511137812,
+              "worstCaseImpact": 0.5585195511137812
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5399022327433217,
+              "worstCaseImpact": 0.5399022327433217
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17996741091444057,
+              "worstCaseImpact": 0.17996741091444057
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17996741091444057,
+          "worstCaseImpact": 0.17996741091444057
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.43842232360857314,
+              "worstCaseImpact": 0.43842232360857314
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.423808246154954,
+              "worstCaseImpact": 0.423808246154954
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14126941538498466,
+              "worstCaseImpact": 0.14126941538498466
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14126941538498466,
+          "worstCaseImpact": 0.14126941538498466
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.42126557682211485,
+              "worstCaseImpact": 0.42126557682211485
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40722339092804444,
+              "worstCaseImpact": 0.40722339092804444
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13574113030934815,
+              "worstCaseImpact": 0.13574113030934815
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13574113030934815,
+          "worstCaseImpact": 0.13574113030934815
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34920724031899003,
+              "worstCaseImpact": 0.34920724031899003
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33756699897502374,
+              "worstCaseImpact": 0.33756699897502374
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11252233299167459,
+              "worstCaseImpact": 0.11252233299167459
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11252233299167459,
+          "worstCaseImpact": 0.11252233299167459
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:baltimore-port-restress:buffer",
+        "intervention:baltimore-port-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06940170940170941,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5585195511137812,
+              "worstCaseImpact": 0.5585195511137812
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5399022327433217,
+              "worstCaseImpact": 0.5399022327433217
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17996741091444057,
+              "worstCaseImpact": 0.17996741091444057
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17996741091444057,
+          "worstCaseImpact": 0.17996741091444057
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.43842232360857314,
+              "worstCaseImpact": 0.43842232360857314
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.423808246154954,
+              "worstCaseImpact": 0.423808246154954
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14126941538498466,
+              "worstCaseImpact": 0.14126941538498466
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14126941538498466,
+          "worstCaseImpact": 0.14126941538498466
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.42126557682211485,
+              "worstCaseImpact": 0.42126557682211485
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40722339092804444,
+              "worstCaseImpact": 0.40722339092804444
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13574113030934815,
+              "worstCaseImpact": 0.13574113030934815
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13574113030934815,
+          "worstCaseImpact": 0.13574113030934815
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34920724031899003,
+              "worstCaseImpact": 0.34920724031899003
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33756699897502374,
+              "worstCaseImpact": 0.33756699897502374
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11252233299167459,
+              "worstCaseImpact": 0.11252233299167459
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11252233299167459,
+          "worstCaseImpact": 0.11252233299167459
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:baltimore-port-restress:buffer",
+        "intervention:baltimore-port-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06940170940170941,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5585195511137812,
+              "worstCaseImpact": 0.5585195511137812
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5399022327433217,
+              "worstCaseImpact": 0.5399022327433217
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17996741091444057,
+              "worstCaseImpact": 0.17996741091444057
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17996741091444057,
+          "worstCaseImpact": 0.17996741091444057
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.43842232360857314,
+              "worstCaseImpact": 0.43842232360857314
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.423808246154954,
+              "worstCaseImpact": 0.423808246154954
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14126941538498466,
+              "worstCaseImpact": 0.14126941538498466
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14126941538498466,
+          "worstCaseImpact": 0.14126941538498466
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.42126557682211485,
+              "worstCaseImpact": 0.42126557682211485
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40722339092804444,
+              "worstCaseImpact": 0.40722339092804444
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13574113030934815,
+              "worstCaseImpact": 0.13574113030934815
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.13574113030934815,
+          "worstCaseImpact": 0.13574113030934815
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:baltimore-port-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06940170940170941,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.21538461538461537,
+              "horizonDays": 7,
+              "lowerImpact": 0.21538461538461537,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.34920724031899003,
+              "worstCaseImpact": 0.34920724031899003
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.2082051282051282,
+              "horizonDays": 30,
+              "lowerImpact": 0.2082051282051282,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33756699897502374,
+              "worstCaseImpact": 0.33756699897502374
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:baltimore-port-restress:buffer",
+                "intervention:baltimore-port-restress:reroute"
+              ],
+              "centralImpact": 0.06940170940170941,
+              "horizonDays": 90,
+              "lowerImpact": 0.06940170940170941,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11252233299167459,
+              "worstCaseImpact": 0.11252233299167459
+            }
+          ],
+          "interventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "lowerImpact": 0.06940170940170941,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11252233299167459,
+          "worstCaseImpact": 0.11252233299167459
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:baltimore-port-restress:buffer",
+        "intervention:baltimore-port-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06940170940170941,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5585195511137812,
+          "worstCaseImpact": 0.5585195511137812
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5399022327433217,
+          "worstCaseImpact": 0.5399022327433217
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17996741091444057,
+          "worstCaseImpact": 0.17996741091444057
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06940170940170941,
       "reasons": [],
@@ -137,9 +1239,51 @@
       "worstCaseImpact": 0.17996741091444057
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.43842232360857314,
+          "worstCaseImpact": 0.43842232360857314
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.423808246154954,
+          "worstCaseImpact": 0.423808246154954
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14126941538498466,
+          "worstCaseImpact": 0.14126941538498466
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer"
       ],
@@ -150,9 +1294,51 @@
       "worstCaseImpact": 0.14126941538498466
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.42126557682211485,
+          "worstCaseImpact": 0.42126557682211485
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.40722339092804444,
+          "worstCaseImpact": 0.40722339092804444
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13574113030934815,
+          "worstCaseImpact": 0.13574113030934815
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:reroute"
       ],
@@ -163,9 +1349,59 @@
       "worstCaseImpact": 0.13574113030934815
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:baltimore-port-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06940170940170941,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.21538461538461537,
+          "horizonDays": 7,
+          "lowerImpact": 0.21538461538461537,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.34920724031899003,
+          "worstCaseImpact": 0.34920724031899003
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.2082051282051282,
+          "horizonDays": 30,
+          "lowerImpact": 0.2082051282051282,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33756699897502374,
+          "worstCaseImpact": 0.33756699897502374
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:baltimore-port-restress:buffer",
+            "intervention:baltimore-port-restress:reroute"
+          ],
+          "centralImpact": 0.06940170940170941,
+          "horizonDays": 90,
+          "lowerImpact": 0.06940170940170941,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11252233299167459,
+          "worstCaseImpact": 0.11252233299167459
+        }
+      ],
       "interventionIds": [
         "intervention:baltimore-port-restress:buffer",
         "intervention:baltimore-port-restress:reroute"

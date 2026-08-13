@@ -1,6 +1,6 @@
 import { connectorById } from "../catalog";
 import type { ConnectorAdapter } from "../types";
-import { fact, finite, isoPeriod, parseJson, safeSegment } from "../util";
+import { fact, finite, isoPeriod, parseJson, safeSegment, stableFactId } from "../util";
 
 interface ComtradeQuery {
   type?: "C" | "S";
@@ -47,7 +47,7 @@ export const unComtradeAdapter: ConnectorAdapter<ComtradeQuery> = {
   normalize(payload, context) {
     const value = parseJson(payload) as { data?: Array<Record<string, unknown>> };
     if (!Array.isArray(value.data)) throw new TypeError("UN Comtrade payload needs a data array.");
-    return value.data.map((row, index) => {
+    return value.data.map((row) => {
       const reporter = safeSegment(row.reporterCode ?? row.reporterISO);
       const partner = safeSegment(row.partnerCode ?? row.partnerISO);
       const commodity = safeSegment(row.cmdCode);
@@ -55,7 +55,11 @@ export const unComtradeAdapter: ConnectorAdapter<ComtradeQuery> = {
       const period = safeSegment(row.period);
       return fact(
         {
-          id: `un-comtrade:${period}:${reporter}:${partner}:${commodity}:${flow}:${index}`,
+          id: stableFactId(
+            "un-comtrade",
+            [period, reporter, partner, commodity, flow],
+            row,
+          ),
           kind: "bilateral_trade",
           validFrom: isoPeriod(row.period, context.retrievedAt),
           evidenceGrade: "OFFICIAL_OBSERVED",

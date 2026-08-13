@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:refining-hurricane-restress:assumptions"
+        ]
+      },
+      "from": "node:refining-hurricane-restress:refining",
+      "id": "edge:refining-hurricane-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:refining-hurricane-restress:services",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.03,
+        "unit": "share",
+        "upper": 0.39,
+        "value": 0.23
+      }
+    },
+    "id": "candidate:refining-hurricane-restress:direct-link",
+    "label": "Verify a possible direct dependency from Regional refining capacity to Essential service continuity",
+    "probabilityPresent": 0.35
+  }
+]

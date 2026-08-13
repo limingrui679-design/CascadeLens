@@ -82,8 +82,8 @@
     "engine": "dependency_cascade",
     "horizonsDays": [
       7,
-      30,
-      90
+      21,
+      60
     ],
     "maxIterations": 100,
     "tolerance": 1e-9,

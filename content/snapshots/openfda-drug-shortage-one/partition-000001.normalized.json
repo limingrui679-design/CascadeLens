@@ -1,0 +1,33 @@
+{
+  "connectorId": "openfda-drug-shortages",
+  "contentDigest": "1a2df2a7cc502c4d1e5d3d9559df388391a2a2e454697e30a048f74053ef3411",
+  "facts": [
+    {
+      "attributes": {
+        "availability": "Available",
+        "presentation": "Bupivacaine Hydrochloride, Injection, 5 mg/1 mL (NDC 55150-250-50)",
+        "shortageReason": "",
+        "therapeuticCategory": "Anesthesia",
+        "updateDate": "08/06/2026"
+      },
+      "availableAt": "2026-08-13T05:41:54.466Z",
+      "dimensions": {
+        "company": "Eugia US LLC",
+        "genericName": "Bupivacaine Hydrochloride Injection",
+        "status": "Current"
+      },
+      "evidenceGrade": "OFFICIAL_OBSERVED",
+      "id": "openfda-shortage:bupivacaine-hydrochloride-injection:eugia-us-llc:02-20-2018:d28bcf085d103d5aaba7c5562aa80e13",
+      "kind": "drug_shortage",
+      "measures": {},
+      "observedAt": "2026-08-13T05:41:54.466Z",
+      "retrievedAt": "2026-08-13T05:41:54.466Z",
+      "sourceLocator": "https://api.fda.gov/drug/shortages.json?limit=1",
+      "validFrom": "2026-08-13T05:41:54.466Z"
+    }
+  ],
+  "retrievedAt": "2026-08-13T05:41:54.466Z",
+  "schemaVersion": "cascadelens-normalized-snapshot/1.0",
+  "sourceLocator": "https://api.fda.gov/drug/shortages.json?limit=1",
+  "sourceManifestDigest": "22e6a9f664febff771838cc9f6243f99385039daa7b48a7c57be713ff1b42cfc"
+}

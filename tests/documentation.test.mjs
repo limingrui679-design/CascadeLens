@@ -81,3 +81,36 @@ test("README screenshots are committed, valid, and consistently framed", async (
     });
   }
 });
+
+test("package dependency map matches the core parser boundary", async () => {
+  const packageMap = await readFile(resolve(repositoryRoot, "packages/README.md"), "utf8");
+  const shockParser = await readFile(
+    resolve(repositoryRoot, "packages/core/src/shockscript.ts"),
+    "utf8",
+  );
+  assert.match(shockParser, /from ["']yaml["']/);
+  assert.match(packageMap, /Node\.js standard library plus the audited YAML parser/);
+  assert.doesNotMatch(packageMap, /core[^\n]*Node\.js standard library only/i);
+});
+
+test("human data catalog matches the three redistributable machine descriptors", async () => {
+  const catalog = JSON.parse(
+    await readFile(resolve(repositoryRoot, "content/catalog/connectors.json"), "utf8"),
+  );
+  const documentation = await readFile(
+    resolve(repositoryRoot, "docs/connectors/DATA_CATALOG.md"),
+    "utf8",
+  );
+  const expectedIds = ["faostat", "gleif", "openfda-drug-shortages"];
+  const redistributable = catalog.connectors.filter(
+    (item) => item.redistributionMode === "redistributable" && item.rawRedistributable,
+  );
+  assert.deepEqual(redistributable.map((item) => item.id).sort(), expectedIds);
+  for (const item of redistributable) {
+    assert.match(documentation, new RegExp(item.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+    assert.match(documentation, new RegExp(`${item.checkedAt}[^\n]*redistributable`, "i"));
+    assert.ok(item.redistributionLicense?.name);
+  }
+  assert.match(documentation, /Three small official-source runs are committed/i);
+  assert.match(documentation, /content\/snapshots\/catalog\.json/);
+});

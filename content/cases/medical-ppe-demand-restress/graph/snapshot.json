@@ -1,5 +1,5 @@
 {
-  "contentDigest": "69f7474027b8e0398b03ade74842af328bff7dd13d113ea5c92e0a9b7b76dc5b",
+  "contentDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -37,7 +37,7 @@
           "source:medical-ppe-demand-restress:assumptions"
         ]
       },
-      "from": "node:medical-ppe-demand-restress:ppe",
+      "from": "node:medical-ppe-demand-restress:ppe-demand",
       "id": "edge:medical-ppe-demand-restress:link-2",
       "observedAt": "2026-08-12T00:00:00Z",
       "properties": {
@@ -63,7 +63,7 @@
           "source:medical-ppe-demand-restress:assumptions"
         ]
       },
-      "from": "node:medical-ppe-demand-restress:distribution",
+      "from": "node:medical-ppe-demand-restress:ppe",
       "id": "edge:medical-ppe-demand-restress:link-3",
       "observedAt": "2026-08-12T00:00:00Z",
       "properties": {
@@ -89,8 +89,34 @@
           "source:medical-ppe-demand-restress:assumptions"
         ]
       },
-      "from": "node:medical-ppe-demand-restress:care",
+      "from": "node:medical-ppe-demand-restress:distribution",
       "id": "edge:medical-ppe-demand-restress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:medical-ppe-demand-restress:care",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.32,
+        "unit": "share",
+        "upper": 0.68,
+        "value": 0.52
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:medical-ppe-demand-restress:assumptions"
+        ]
+      },
+      "from": "node:medical-ppe-demand-restress:care",
+      "id": "edge:medical-ppe-demand-restress:link-5",
       "observedAt": "2026-08-12T00:00:00Z",
       "properties": {
         "eligibleForPrimaryEstimate": false,
@@ -100,10 +126,10 @@
       "to": "node:medical-ppe-demand-restress:access",
       "validFrom": "2026-08-12T00:00:00Z",
       "weight": {
-        "lower": 0.32,
+        "lower": 0.01,
         "unit": "share",
-        "upper": 0.68,
-        "value": 0.52
+        "upper": 0.37,
+        "value": 0.21
       }
     }
   ],
@@ -238,7 +264,7 @@
       "role": "input",
       "sha256": "f67a4959a36511f200fa08811d99d7d8bfeb5e55e231e6b57d644967007e61d3",
       "title": "Medical PPE demand re-stress local assumption register",
-      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/medical-ppe-demand-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/medical-ppe-demand-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

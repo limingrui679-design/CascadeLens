@@ -1,6 +1,6 @@
 import { connectorById } from "../catalog";
 import type { ConnectorAdapter } from "../types";
-import { fact, finite, isoPeriod, parseJson, safeSegment } from "../util";
+import { fact, finite, isoPeriod, parseJson, safeSegment, stableFactId } from "../util";
 
 interface SecQuery {
   cik: string;
@@ -56,11 +56,15 @@ export const secEdgarAdapter: ConnectorAdapter<SecQuery> = {
       for (const [tag, rawDefinition] of Object.entries(namespaceFacts)) {
         const definition = rawDefinition as { label?: string; description?: string; units?: Record<string, Array<Record<string, unknown>>> };
         for (const [unit, records] of Object.entries(definition.units ?? {})) {
-          for (const [index, record] of records.entries()) {
+          for (const record of records) {
             output.push(
               fact(
                 {
-                  id: `sec-edgar:fact:${cik}:${safeSegment(namespace)}:${safeSegment(tag)}:${safeSegment(unit)}:${safeSegment(record.accn)}:${index}`,
+                  id: stableFactId(
+                    "sec-edgar-fact",
+                    [cik, namespace, tag, unit, record.accn],
+                    record,
+                  ),
                   kind: "xbrl_fact",
                   validFrom: isoPeriod(record.end ?? record.fy, context.retrievedAt),
                   evidenceGrade: "ENTITY_REPORTED",

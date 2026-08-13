@@ -17,6 +17,8 @@ export interface DataSnapshotManifest {
   rawArtifactStatus: "embedded" | "download_on_run" | "user_provided";
   termsUri: string;
   checkedAt: string;
+  licenseName: string;
+  licenseSpdx?: string;
   boundary: string;
   manifestDigest: string;
 }
@@ -50,6 +52,8 @@ export async function createSnapshotManifest(
     rawArtifactStatus,
     termsUri: descriptor.termsUri,
     checkedAt: descriptor.checkedAt,
+    licenseName: descriptor.redistributionLicense?.name ?? "Source-specific terms",
+    licenseSpdx: descriptor.redistributionLicense?.spdx,
     boundary: descriptor.boundary,
   };
   return { ...draft, manifestDigest: await sha256Text(stableStringify(draft)) };
@@ -61,6 +65,9 @@ export async function verifySnapshotManifest(
   const issues: string[] = [];
   if (!/^https:\/\//.test(manifest.requestUri)) issues.push("insecure_request_uri");
   if (!/^https:\/\//.test(manifest.termsUri)) issues.push("insecure_terms_uri");
+  if (typeof manifest.licenseName !== "string" || manifest.licenseName.trim() === "") {
+    issues.push("missing_license_name");
+  }
   if (!/^[a-f0-9]{64}$/.test(manifest.sha256)) issues.push("invalid_payload_digest");
   if (!Number.isInteger(manifest.bytes) || manifest.bytes < 0) issues.push("invalid_byte_count");
   const { manifestDigest, ...draft } = manifest;

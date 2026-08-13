@@ -1,0 +1,72 @@
+{
+  "contentDigest": "1f0167466bfc449bd8abe4e29e488d29812160c23d24d3893e6a74e6fd772268",
+  "decisionCutoff": "2026-08-13T05:41:54.466Z",
+  "edges": [],
+  "generatedAt": "2026-08-13T05:41:54.466Z",
+  "nodes": [
+    {
+      "description": "Connector-normalized fact. No dependency topology is inferred by this generic mapping.",
+      "evidence": {
+        "confidence": 1,
+        "grade": "OFFICIAL_OBSERVED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "connector-source:openfda-drug-shortages:1a2df2a7cc502c4d"
+        ]
+      },
+      "id": "connector-fact:openfda-drug-shortages:87b207ded0e64f54de0881ac5cb0b4a9",
+      "kind": "metric",
+      "label": "drug_shortage: Eugia US LLC · Bupivacaine Hydrochloride Injection · Current",
+      "observedAt": "2026-08-13T05:41:54.466Z",
+      "properties": {
+        "attributes": {
+          "availability": "Available",
+          "presentation": "Bupivacaine Hydrochloride, Injection, 5 mg/1 mL (NDC 55150-250-50)",
+          "shortageReason": "",
+          "therapeuticCategory": "Anesthesia",
+          "updateDate": "08/06/2026"
+        },
+        "availableAt": "2026-08-13T05:41:54.466Z",
+        "connectorId": "openfda-drug-shortages",
+        "dimensions": {
+          "company": "Eugia US LLC",
+          "genericName": "Bupivacaine Hydrochloride Injection",
+          "status": "Current"
+        },
+        "factKind": "drug_shortage",
+        "mappingStatus": "normalized_fact_without_inferred_topology",
+        "measures": {},
+        "normalizedFactId": "openfda-shortage:bupivacaine-hydrochloride-injection:eugia-us-llc:02-20-2018:d28bcf085d103d5aaba7c5562aa80e13",
+        "publishedAt": null,
+        "retrievedAt": "2026-08-13T05:41:54.466Z"
+      },
+      "validFrom": "2026-08-13T05:41:54.466Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "connector-snapshot:openfda-drug-shortages:1a2df2a7cc502c4d",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-13T05:41:54.466Z",
+      "bytes": 1121,
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "connector-source:openfda-drug-shortages:1a2df2a7cc502c4d",
+      "license": {
+        "mode": "redistributable",
+        "name": "Public Domain / CC0 1.0 Universal",
+        "notes": "The Drug Shortages catalog is marked Public Domain and CC0; retain FDA attribution and do not imply endorsement.",
+        "spdx": "CC0-1.0",
+        "termsUri": "https://open.fda.gov/terms/"
+      },
+      "publisher": "U.S. Food and Drug Administration",
+      "retrievedAt": "2026-08-13T05:41:54.466Z",
+      "role": "input",
+      "sha256": "1a2df2a7cc502c4d1e5d3d9559df388391a2a2e454697e30a048f74053ef3411",
+      "title": "openFDA Drug Shortages normalized snapshot",
+      "uri": "https://api.fda.gov/drug/shortages.json?limit=1"
+    }
+  ],
+  "title": "openFDA Drug Shortages normalized fact snapshot"
+}

@@ -8,7 +8,7 @@
   },
   "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
   "domain": "Advanced manufacturing",
-  "edgeCount": 4,
+  "edgeCount": 5,
   "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
   "nodeCount": 5,
   "observabilityStatus": "not_cost_effective",
@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Semiconductors",
   "slug": "semiconductor-capacity-restress",
-  "snapshotDigest": "1f0f66c4b5340f0680221ababfe4024ef7b2609efa346dab2abfa5ecac5db77d",
+  "snapshotDigest": "b991f1d9e819199adda1388518ea69b6fe23a09fe3f695e2f7ddd7a11c218daf",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "branch_merge"
+  },
   "summary": "A forward-dated semiconductor capacity stress across assumed fabrication, component, assembly, and production dependencies.",
   "tags": [
     "semiconductors",
@@ -33,6 +49,6 @@
   "totalWeightedImpact": {
     "central": 0.03967661691542291,
     "lower": 0.03967661691542291,
-    "upper": 0.10360738872995993
+    "upper": 0.1251388328726562
   }
 }

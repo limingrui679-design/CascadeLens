@@ -1,4 +1,6 @@
 import { runCascade } from "./cascade";
+import { compareCanonicalStrings } from "./canonical";
+import { ENGINE_VERSION } from "./types";
 import type {
   BoundMode,
   CascadeEnginePlugin,
@@ -14,7 +16,7 @@ export class EngineRegistry {
     if (includeBuiltIn) {
       this.register({
         id: "dependency_cascade",
-        version: "0.1.0",
+        version: ENGINE_VERSION,
         run: runCascade,
       });
     }
@@ -33,7 +35,7 @@ export class EngineRegistry {
   list(): Array<{ id: string; version: string }> {
     return [...this.#engines.values()]
       .map(({ id, version }) => ({ id, version }))
-      .sort((left, right) => left.id.localeCompare(right.id));
+      .sort((left, right) => compareCanonicalStrings(left.id, right.id));
   }
 
   async run(

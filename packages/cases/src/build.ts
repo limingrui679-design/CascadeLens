@@ -31,7 +31,7 @@ function id(slug: string, kind: string, key: string): string {
 }
 
 function assumptionUri(slug: string): string {
-  return `https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/${slug}/assumptions.json`;
+  return `https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/${slug}/assumptions.json`;
 }
 
 function contextRecord(spec: ReferenceCaseSpec) {
@@ -162,7 +162,7 @@ function edgeFor(
   from: number,
   to: number,
 ): WorldEdge {
-  const weight = spec.linkWeights[index];
+  const weight = spec.linkWeights[index % spec.linkWeights.length];
   return {
     id: id(spec.slug, "edge", `link-${index + 1}`),
     from: id(spec.slug, "node", spec.stages[from].key),
@@ -190,6 +190,52 @@ function edgeFor(
 }
 
 function graphDraft(spec: ReferenceCaseSpec, sources: SourceRecord[]): GraphSnapshotDraft {
+  const topology = spec.topology ?? "chain";
+  let edges: WorldEdge[];
+  if (topology === "branch_merge") {
+    edges = [
+      edgeFor(spec, 0, 0, 1),
+      edgeFor(spec, 1, 0, 2),
+      edgeFor(spec, 2, 1, 3),
+      edgeFor(spec, 3, 2, 3),
+      edgeFor(spec, 4, 3, 4),
+    ];
+  } else if (topology === "cycle") {
+    edges = [
+      edgeFor(spec, 0, 0, 1),
+      edgeFor(spec, 1, 1, 2),
+      edgeFor(spec, 2, 2, 3),
+      edgeFor(spec, 3, 3, 4),
+      edgeFor(spec, 4, 3, 1),
+    ];
+  } else {
+    edges = [
+      edgeFor(spec, 0, 0, 1),
+      edgeFor(spec, 1, 1, 2),
+      edgeFor(spec, 2, 2, 3),
+      edgeFor(spec, 3, 3, 4),
+    ];
+  }
+  if (topology === "dynamic_activation") {
+    edges[2] = {
+      ...edges[2],
+      validFrom: "2026-09-15T00:00:00Z",
+      properties: {
+        ...edges[2].properties,
+        temporalPattern: "activates_during_horizon",
+      },
+    };
+  }
+  if (topology === "dynamic_expiry") {
+    edges[2] = {
+      ...edges[2],
+      validTo: "2026-09-15T00:00:00Z",
+      properties: {
+        ...edges[2].properties,
+        temporalPattern: "expires_during_horizon",
+      },
+    };
+  }
   return {
     schemaVersion: SCHEMA_VERSION,
     snapshotId: id(spec.slug, "snapshot", "assumed-topology"),
@@ -198,12 +244,7 @@ function graphDraft(spec: ReferenceCaseSpec, sources: SourceRecord[]): GraphSnap
     generatedAt: DECISION_CUTOFF,
     sources,
     nodes: nodesFor(spec),
-    edges: [
-      edgeFor(spec, 0, 0, 1),
-      edgeFor(spec, 1, 1, 2),
-      edgeFor(spec, 2, 2, 3),
-      edgeFor(spec, 3, 3, 4),
-    ],
+    edges,
   };
 }
 
@@ -252,7 +293,7 @@ function scenarioFor(spec: ReferenceCaseSpec): ShockScenario {
       transmission: 0.82,
       maxIterations: 100,
       tolerance: 1e-9,
-      horizonsDays: [7, 30, 90],
+      horizonsDays: spec.horizonsDays ?? [7, 30, 90],
       bounds: ["lower", "central", "upper"],
     },
     interventions: spec.interventions.map((intervention) => ({
@@ -279,10 +320,10 @@ function scenarioFor(spec: ReferenceCaseSpec): ShockScenario {
       { id: id(spec.slug, "objective", "cost"), metric: "cost", sense: "minimize" },
     ],
     constraints: {
-      budget: 22,
+      budget: spec.constraints?.budget ?? 22,
       budgetUnit: "normalized_cost",
-      maxInterventions: 2,
-      maxLeadTimeDays: 60,
+      maxInterventions: spec.constraints?.maxInterventions ?? 2,
+      maxLeadTimeDays: spec.constraints?.maxLeadTimeDays ?? 60,
     },
     limitations: [
       "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
@@ -327,7 +368,7 @@ function observationCandidate(spec: ReferenceCaseSpec): CandidateObservation {
     probabilityPresent: 0.35,
     acquisitionCost: 3,
     acquisitionCostUnit: "normalized_cost",
-    candidateEdge: edgeFor(spec, 4, 0, 4),
+    candidateEdge: edgeFor(spec, 99, 0, 4),
   };
 }
 
@@ -357,16 +398,19 @@ export async function buildReferenceCase(
   const scenario = scenarioFor(spec);
   const bounds = await runCascadeBounds(snapshot, scenario);
   const interventions = await analyzeInterventions(snapshot, scenario);
+  const observationCandidates = [observationCandidate(spec)];
+  const benchmarkOutcomes: never[] = [];
+  const riskValuePerUnit = 100;
   const observability = await valueObservations(
     snapshot,
     scenario,
-    [observationCandidate(spec)],
-    100,
+    observationCandidates,
+    riskValuePerUnit,
   );
-  const benchmark = scoreReplay(snapshot, scenario, bounds, []);
+  const benchmark = scoreReplay(snapshot, scenario, bounds, benchmarkOutcomes);
   const modelCard = modelCardFor(spec);
   const riskPack = await createRiskPack({
-    packId: id(spec.slug, "riskpack", "v0.1.0"),
+    packId: id(spec.slug, "riskpack", "v0.2.0"),
     generatedAt: DECISION_CUTOFF,
     snapshot,
     scenario,
@@ -376,6 +420,9 @@ export async function buildReferenceCase(
     assumptions,
     modelCard,
     observationValues: observability,
+    observationCandidates,
+    benchmarkOutcomes,
+    riskValuePerUnit,
     rebuildCommand: `npm run cascadelens -- cases build ${spec.slug}`,
   });
   return {
@@ -412,6 +459,15 @@ export function caseCatalogRecord(built: BuiltReferenceCase) {
     scoringStatus: benchmark.status,
     nodeCount: snapshot.nodes.length,
     edgeCount: snapshot.edges.length,
+    structuralProfile: {
+      topology: spec.topology ?? "chain",
+      horizonsDays: scenarioFor(spec).propagation.horizonsDays,
+      dynamicEdgeCount: snapshot.edges.filter(
+        (edge) => edge.validFrom !== DECISION_CUTOFF || edge.validTo !== undefined,
+      ).length,
+      hasCycle: (spec.topology ?? "chain") === "cycle",
+      constraintProfile: scenarioFor(spec).constraints,
+    },
     snapshotDigest: snapshot.contentDigest,
     totalWeightedImpact: {
       lower: bounds.lower.totalWeightedImpact,

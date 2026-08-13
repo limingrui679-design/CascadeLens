@@ -20,7 +20,7 @@ Every case declares one classification:
 - `quasi_historical`: a current forward stress inspired by a documented historical event; it is not a historical forecast.
 - `synthetic_stress`: an explicit hypothetical stress without a claim about a specific historical event.
 
-Each contribution needs an assumption register, sealed graph, ShockScript, model card, results, benchmark record, limitations, verified RiskPack, rebuild command, and tests. Context citations cannot be used as quantitative evidence when the exact data artifact was not preserved and hashed.
+Each contribution needs an assumption register, sealed graph, ShockScript, model card, results, benchmark record, limitations, recomputation-verified RiskPack, rebuild command, and tests. Context citations cannot be used as quantitative evidence when the exact data artifact was not preserved and hashed.
 
 ## Pull-request gate
 

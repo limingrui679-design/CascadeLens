@@ -1,7 +1,7 @@
 # CascadeLens product requirements
 
-Status: normative  
-Version: 0.1  
+Status: normative
+Version: 0.2
 Last updated: 2026-08-13
 
 CascadeLens is an evidence-graded, bitemporal world graph and executable shock-analysis platform for global supply-chain, financial, and critical-goods resilience. It must remain useful without proprietary data and must never present inferred relationships or simulated outcomes as observed facts.
@@ -42,6 +42,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 ### R3 — Cascade engines
 
 - Directed dependency propagation with cycle-safe convergence.
+- Daily bitemporal graph visibility and an explicit per-day fixed-point iteration cap and tolerance.
 - Trade and material-flow conservation checks.
 - Lower, central, and upper missing-graph bounds.
 - Multiple simultaneous shocks.
@@ -50,7 +51,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 
 ### R4 — InterventionLab
 
-- Costed interventions with eligibility, lead time, and capacity constraints.
+- Costed interventions with eligibility, activation at `decisionCutoff + leadTimeDays`, and capacity constraints.
 - Robust evaluation across graph bounds and stress variants.
 - Pareto frontier instead of a hidden single score.
 - Feasibility checks and `do_not_act` baseline.
@@ -69,6 +70,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 - Frozen decision cutoff.
 - Input and outcome partitions.
 - No-lookahead verifier.
+- Declared target metric, horizon, complete outcome window, and post-window source availability.
 - Direction, rank, interval coverage, calibration, feasibility, and regret metrics where appropriate.
 - Scenario-only designation when real outcomes are unavailable or incomparable.
 
@@ -77,6 +79,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 - Source manifest and graph snapshot manifest.
 - ShockScript, parameters, assumptions, model card, limitations, and results.
 - Machine-readable checksums using relative paths.
+- Deterministic recomputation of every derived result from packaged inputs, plus an optional externally retained whole-pack digest.
 - Rebuild and verify commands.
 - Schema migration and compatibility policy.
 
@@ -86,6 +89,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 - Rate limiting, request identification, retries with bounded deadlines, response-size limits, and atomic snapshots.
 - License modes: `redistributable`, `download_on_run`, and `user_provided`.
 - Raw payload preservation where permitted and normalized output with field-level lineage.
+- Stable row-order-independent fact IDs, distinct event/published/available/retrieved times, corrupt-resume recovery, and conservative WorldGraph mapping that invents no dependency edge.
 
 ### R9 — Historical and stress library
 
@@ -114,7 +118,8 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 - Strict type checking, linting, unit, integration, invariant, content, render, accessibility, and security checks.
 - Fresh archive install and full verification without `.git`.
 - Dependency audit, secret scan, path traversal checks, and untrusted-input limits.
-- Reproducible release archive, relative checksum file, SBOM, citation, security policy, and data-license inventory.
+- Reproducible release archive, expansion/ratio/nesting budgets, relative checksum file, SBOM, citation, security policy, and data-license inventory.
+- Nonce-based script CSP and machine-readable hosted build identity.
 - Public hosted site only after the exact release build passes.
 
 ## 3. Scale profiles

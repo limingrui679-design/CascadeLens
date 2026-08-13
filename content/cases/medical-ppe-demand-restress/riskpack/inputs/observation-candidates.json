@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:medical-ppe-demand-restress:assumptions"
+        ]
+      },
+      "from": "node:medical-ppe-demand-restress:ppe-demand",
+      "id": "edge:medical-ppe-demand-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:medical-ppe-demand-restress:access",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.01,
+        "unit": "share",
+        "upper": 0.37,
+        "value": 0.21
+      }
+    },
+    "id": "candidate:medical-ppe-demand-restress:direct-link",
+    "label": "Verify a possible direct dependency from PPE demand pressure to Patient access continuity",
+    "probabilityPresent": 0.35
+  }
+]

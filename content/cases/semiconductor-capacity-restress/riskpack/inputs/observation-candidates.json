@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:semiconductor-capacity-restress:assumptions"
+        ]
+      },
+      "from": "node:semiconductor-capacity-restress:fabs",
+      "id": "edge:semiconductor-capacity-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:semiconductor-capacity-restress:deliveries",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0,
+        "unit": "share",
+        "upper": 0.35,
+        "value": 0.19
+      }
+    },
+    "id": "candidate:semiconductor-capacity-restress:direct-link",
+    "label": "Verify a possible direct dependency from Semiconductor fabrication capacity to Finished-goods deliveries",
+    "probabilityPresent": 0.35
+  }
+]

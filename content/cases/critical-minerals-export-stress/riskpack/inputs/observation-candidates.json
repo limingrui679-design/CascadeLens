@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:critical-minerals-export-stress:assumptions"
+        ]
+      },
+      "from": "node:critical-minerals-export-stress:exports",
+      "id": "edge:critical-minerals-export-stress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:critical-minerals-export-stress:infrastructure",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.06,
+        "unit": "share",
+        "upper": 0.42,
+        "value": 0.26
+      }
+    },
+    "id": "candidate:critical-minerals-export-stress:direct-link",
+    "label": "Verify a possible direct dependency from Critical-mineral exports to Infrastructure delivery",
+    "probabilityPresent": 0.35
+  }
+]

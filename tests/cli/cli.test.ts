@@ -122,3 +122,26 @@ test("rejects unknown commands, duplicate flags, and path-like checksum entries"
     await rm(temporary, { recursive: true, force: true });
   }
 });
+
+test("prints actionable validation paths and codes without echoing input values", async () => {
+  const temporary = await mkdtemp(join(tmpdir(), "cascadelens-cli-errors-"));
+  try {
+    const invalidPath = join(temporary, "invalid.json");
+    const source = JSON.parse(
+      await readFile(join(caseRoot, "scenario.json"), "utf8"),
+    ) as Record<string, unknown>;
+    source.inventedSecretField = "sensitive-value-must-not-be-echoed";
+    await writeFile(invalidPath, `${JSON.stringify(source, null, 2)}\n`, "utf8");
+    await assert.rejects(
+      run(["validate", invalidPath]),
+      (error: unknown) => {
+        const message = error instanceof Error ? error.message : String(error);
+        assert.match(message, /inventedSecretField \[unknown_field\]/);
+        assert.doesNotMatch(message, /sensitive-value-must-not-be-echoed/);
+        return true;
+      },
+    );
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});

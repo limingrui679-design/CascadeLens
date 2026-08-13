@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:drug-shortage-restress:assumptions"
+        ]
+      },
+      "from": "node:drug-shortage-restress:supply",
+      "id": "edge:drug-shortage-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:drug-shortage-restress:access",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.02,
+        "unit": "share",
+        "upper": 0.38,
+        "value": 0.22
+      }
+    },
+    "id": "candidate:drug-shortage-restress:direct-link",
+    "label": "Verify a possible direct dependency from Medicine supply to Treatment access continuity",
+    "probabilityPresent": 0.35
+  }
+]

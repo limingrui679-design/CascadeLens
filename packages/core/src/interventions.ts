@@ -1,15 +1,20 @@
-import { canUseEvidence } from "./evidence";
+import { compareCanonicalStrings } from "./canonical";
 import {
-  type GraphSnapshot,
-  type InterventionAnalysis,
-  type InterventionBundleResult,
-  type InterventionDefinition,
-  type ShockScenario,
-  type WorldEdge,
-  type WorldNode,
+  firstShockStart,
+  interventionActivationAt,
+  runCascadeBounds,
+} from "./cascade";
+import { canUseEvidence } from "./evidence";
+import { toEpoch } from "./temporal";
+import type {
+  GraphSnapshot,
+  InterventionAnalysis,
+  InterventionBundleResult,
+  InterventionDefinition,
+  ShockScenario,
 } from "./types";
-import { runCascadeBounds } from "./cascade";
-import { sealSnapshot, toSnapshotDraft } from "./worldgraph";
+
+const millisecondsPerDay = 86_400_000;
 
 function combinations<T>(items: T[]): T[][] {
   if (items.length > 16) {
@@ -27,75 +32,16 @@ function combinations<T>(items: T[]): T[][] {
   return output;
 }
 
-function combineReduction(existing: number, added: number): number {
-  return 1 - (1 - existing) * (1 - added);
-}
-
-async function applyInterventions(
-  snapshot: GraphSnapshot,
-  selected: InterventionDefinition[],
-): Promise<GraphSnapshot> {
-  const nodeEffects = new Map<string, number>();
-  const edgeEffects = new Map<string, number>();
-  for (const intervention of selected) {
-    if (intervention.type === "evidence_acquisition") continue;
-    for (const nodeId of intervention.targetNodeIds) {
-      nodeEffects.set(
-        nodeId,
-        combineReduction(nodeEffects.get(nodeId) ?? 0, intervention.effect),
-      );
-    }
-    for (const edgeId of intervention.targetEdgeIds) {
-      edgeEffects.set(
-        edgeId,
-        combineReduction(edgeEffects.get(edgeId) ?? 0, intervention.effect),
-      );
-    }
-  }
-
-  const nodes: WorldNode[] = snapshot.nodes.map((node) => {
-    const effect = nodeEffects.get(node.id);
-    if (effect === undefined) return node;
-    const existing =
-      typeof node.properties.bufferShare === "number"
-        ? node.properties.bufferShare
-        : 0;
-    return {
-      ...node,
-      properties: {
-        ...node.properties,
-        bufferShare: combineReduction(existing, effect),
-      },
-    };
-  });
-  const edges: WorldEdge[] = snapshot.edges.map((edge) => {
-    const effect = edgeEffects.get(edge.id);
-    if (effect === undefined) return edge;
-    return {
-      ...edge,
-      weight: {
-        ...edge.weight,
-        value: edge.weight.value * (1 - effect),
-        lower: (edge.weight.lower ?? edge.weight.value) * (1 - effect),
-        upper: (edge.weight.upper ?? edge.weight.value) * (1 - effect),
-      },
-    };
-  });
-  const draft = toSnapshotDraft(snapshot);
-  return sealSnapshot({
-    ...draft,
-    nodes,
-    edges,
-  });
-}
-
 function feasibility(
   scenario: ShockScenario,
   selected: InterventionDefinition[],
 ): string[] {
   const reasons: string[] = [];
   const cost = selected.reduce((sum, item) => sum + item.cost, 0);
-  if (scenario.constraints.budget !== undefined && cost > scenario.constraints.budget + 1e-12) {
+  if (
+    scenario.constraints.budget !== undefined &&
+    cost > scenario.constraints.budget + 1e-12
+  ) {
     reasons.push("budget_exceeded");
   }
   if (
@@ -106,14 +52,19 @@ function feasibility(
   }
   if (
     scenario.constraints.maxLeadTimeDays !== undefined &&
-    selected.some((item) => item.leadTimeDays > scenario.constraints.maxLeadTimeDays!)
+    selected.some(
+      (item) => item.leadTimeDays > scenario.constraints.maxLeadTimeDays!,
+    )
   ) {
     reasons.push("lead_time_exceeded");
   }
   const groups = new Map<string, number>();
   for (const item of selected) {
     if (item.mutuallyExclusiveGroup) {
-      groups.set(item.mutuallyExclusiveGroup, (groups.get(item.mutuallyExclusiveGroup) ?? 0) + 1);
+      groups.set(
+        item.mutuallyExclusiveGroup,
+        (groups.get(item.mutuallyExclusiveGroup) ?? 0) + 1,
+      );
     }
     if (
       scenario.constraints.budgetUnit &&
@@ -125,27 +76,79 @@ function feasibility(
   for (const [group, count] of groups) {
     if (count > 1) reasons.push(`mutually_exclusive:${group}`);
   }
-  return [...new Set(reasons)].sort();
+  return [...new Set(reasons)].sort(compareCanonicalStrings);
 }
 
-function pareto(results: InterventionBundleResult[]): InterventionBundleResult[] {
+function horizonImpact(
+  result: InterventionBundleResult,
+  horizonDays?: number,
+): number | null {
+  if (horizonDays === undefined) return result.worstCaseImpact;
+  return (
+    result.horizonResults.find((item) => item.horizonDays === horizonDays)
+      ?.worstCaseImpact ?? null
+  );
+}
+
+function pareto(
+  results: InterventionBundleResult[],
+  horizonDays?: number,
+): InterventionBundleResult[] {
   const feasible = results.filter(
-    (result): result is InterventionBundleResult & { worstCaseImpact: number } =>
-      result.feasible && result.worstCaseImpact !== null,
+    (result) => result.feasible && horizonImpact(result, horizonDays) !== null,
   );
   return feasible
-    .filter(
-      (candidate) =>
-        !feasible.some(
-          (other) =>
-            other !== candidate &&
-            other.cost <= candidate.cost &&
-            other.worstCaseImpact <= candidate.worstCaseImpact &&
-            (other.cost < candidate.cost ||
-              other.worstCaseImpact < candidate.worstCaseImpact),
-        ),
-    )
-    .sort((a, b) => a.cost - b.cost || a.worstCaseImpact - b.worstCaseImpact);
+    .filter((candidate) => {
+      const candidateImpact = horizonImpact(candidate, horizonDays)!;
+      return !feasible.some((other) => {
+        if (other === candidate) return false;
+        const otherImpact = horizonImpact(other, horizonDays)!;
+        return (
+          other.cost <= candidate.cost &&
+          otherImpact <= candidateImpact &&
+          (other.cost < candidate.cost || otherImpact < candidateImpact)
+        );
+      });
+    })
+    .sort((left, right) => {
+      const impactDifference =
+        horizonImpact(left, horizonDays)! - horizonImpact(right, horizonDays)!;
+      return left.cost - right.cost || impactDifference;
+    });
+}
+
+function bestBundle(
+  results: InterventionBundleResult[],
+  horizonDays?: number,
+): InterventionBundleResult | undefined {
+  return [...results]
+    .filter((item) => item.feasible && horizonImpact(item, horizonDays) !== null)
+    .sort((left, right) => {
+      const leftImpact = horizonImpact(left, horizonDays)!;
+      const rightImpact = horizonImpact(right, horizonDays)!;
+      return (
+        leftImpact - rightImpact ||
+        left.cost - right.cost ||
+        compareCanonicalStrings(
+          left.interventionIds.join(","),
+          right.interventionIds.join(","),
+        )
+      );
+    })[0];
+}
+
+function recommendationStatus(
+  scenario: ShockScenario,
+  bundle: InterventionBundleResult | undefined,
+): InterventionAnalysis["recommendationStatus"] {
+  if (!bundle) return "blocked";
+  const selected = scenario.interventions.filter((item) =>
+    bundle.interventionIds.includes(item.id),
+  );
+  return scenario.constraints.budget === undefined ||
+    selected.some((item) => !canUseEvidence(item.evidenceGrade, "primary"))
+    ? "evidence_required"
+    : "eligible";
 }
 
 export async function analyzeInterventions(
@@ -153,12 +156,30 @@ export async function analyzeInterventions(
   scenario: ShockScenario,
 ): Promise<InterventionAnalysis> {
   const evaluated: InterventionBundleResult[] = [];
+  const horizonDays = [...scenario.propagation.horizonsDays].sort(
+    (left, right) => left - right,
+  );
+  const horizonEnd = (days: number) =>
+    toEpoch(firstShockStart(scenario)) + days * millisecondsPerDay;
+
   for (const selected of combinations(scenario.interventions)) {
     const reasons = feasibility(scenario, selected);
+    const interventionIds = selected
+      .map((item) => item.id)
+      .sort(compareCanonicalStrings);
     const cost = selected.reduce((sum, item) => sum + item.cost, 0);
+    const activationSchedule = selected
+      .map((item) => ({
+        interventionId: item.id,
+        activationAt: interventionActivationAt(scenario, item),
+        leadTimeDays: item.leadTimeDays,
+      }))
+      .sort((left, right) =>
+        compareCanonicalStrings(left.interventionId, right.interventionId),
+      );
     if (reasons.length > 0) {
       evaluated.push({
-        interventionIds: selected.map((item) => item.id).sort(),
+        interventionIds,
         strategy: selected.length === 0 ? "do_not_act" : "intervene",
         cost,
         feasible: false,
@@ -166,14 +187,42 @@ export async function analyzeInterventions(
         centralImpact: null,
         upperImpact: null,
         worstCaseImpact: null,
+        activationSchedule,
+        horizonResults: horizonDays.map((days) => ({
+          horizonDays: days,
+          lowerImpact: null,
+          centralImpact: null,
+          upperImpact: null,
+          worstCaseImpact: null,
+          activeInterventionIds: [],
+          pendingInterventionIds: interventionIds,
+        })),
         reasons,
       });
       continue;
     }
-    const modified = await applyInterventions(snapshot, selected);
-    const bounds = await runCascadeBounds(modified, scenario);
+
+    const bounds = await runCascadeBounds(snapshot, scenario, {
+      interventions: selected,
+    });
+    const horizonResults = bounds.horizons.map((item) => {
+      const activeInterventionIds = activationSchedule
+        .filter((activation) => toEpoch(activation.activationAt) < horizonEnd(item.horizonDays))
+        .map((activation) => activation.interventionId);
+      return {
+        horizonDays: item.horizonDays,
+        lowerImpact: item.lower.totalWeightedImpact,
+        centralImpact: item.central.totalWeightedImpact,
+        upperImpact: item.upper.totalWeightedImpact,
+        worstCaseImpact: item.upper.totalWeightedImpact,
+        activeInterventionIds,
+        pendingInterventionIds: interventionIds.filter(
+          (id) => !activeInterventionIds.includes(id),
+        ),
+      };
+    });
     evaluated.push({
-      interventionIds: selected.map((item) => item.id).sort(),
+      interventionIds,
       strategy: selected.length === 0 ? "do_not_act" : "intervene",
       cost,
       feasible: true,
@@ -181,39 +230,29 @@ export async function analyzeInterventions(
       centralImpact: bounds.central.totalWeightedImpact,
       upperImpact: bounds.upper.totalWeightedImpact,
       worstCaseImpact: bounds.upper.totalWeightedImpact,
+      activationSchedule,
+      horizonResults,
       reasons: [],
     });
   }
 
-  const frontier = pareto(evaluated);
-  const baselineBundle = evaluated.find(
+  const sortedEvaluated = evaluated.sort(
+    (left, right) =>
+      Number(right.feasible) - Number(left.feasible) ||
+      left.cost - right.cost ||
+      compareCanonicalStrings(
+        left.interventionIds.join(","),
+        right.interventionIds.join(","),
+      ),
+  );
+  const frontier = pareto(sortedEvaluated);
+  const baselineBundle = sortedEvaluated.find(
     (item) => item.interventionIds.length === 0,
   );
   if (!baselineBundle) {
     throw new Error("Intervention analysis did not produce a do_not_act baseline.");
   }
-  const best = [...evaluated]
-    .filter(
-      (item): item is InterventionBundleResult & { worstCaseImpact: number } =>
-        item.feasible && item.worstCaseImpact !== null,
-    )
-    .sort(
-      (a, b) =>
-        a.worstCaseImpact - b.worstCaseImpact ||
-        a.cost - b.cost ||
-        a.interventionIds.join(",").localeCompare(b.interventionIds.join(",")),
-    )[0];
-  let recommendationStatus: InterventionAnalysis["recommendationStatus"] = "blocked";
-  if (best) {
-    const selected = scenario.interventions.filter((item) =>
-      best.interventionIds.includes(item.id),
-    );
-    recommendationStatus =
-      scenario.constraints.budget === undefined ||
-      selected.some((item) => !canUseEvidence(item.evidenceGrade, "primary"))
-        ? "evidence_required"
-        : "eligible";
-  }
+  const best = bestBundle(sortedEvaluated);
 
   const reversalThresholds: InterventionAnalysis["reversalThresholds"] = [];
   for (let index = 1; index < frontier.length; index += 1) {
@@ -233,16 +272,20 @@ export async function analyzeInterventions(
 
   return {
     scenarioId: scenario.scenarioId,
-    evaluatedBundles: evaluated.sort(
-      (a, b) =>
-        Number(b.feasible) - Number(a.feasible) ||
-        a.cost - b.cost ||
-        a.interventionIds.join(",").localeCompare(b.interventionIds.join(",")),
-    ),
+    evaluatedBundles: sortedEvaluated,
     paretoFrontier: frontier,
     baselineBundle,
     recommendedBundleIds: best?.interventionIds ?? [],
-    recommendationStatus,
+    recommendationStatus: recommendationStatus(scenario, best),
+    horizonAnalyses: horizonDays.map((days) => {
+      const horizonBest = bestBundle(sortedEvaluated, days);
+      return {
+        horizonDays: days,
+        paretoFrontier: pareto(sortedEvaluated, days),
+        recommendedBundleIds: horizonBest?.interventionIds ?? [],
+        recommendationStatus: recommendationStatus(scenario, horizonBest),
+      };
+    }),
     reversalThresholds,
   };
 }

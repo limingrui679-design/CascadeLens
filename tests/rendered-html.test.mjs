@@ -61,6 +61,14 @@ test("home and benchmark report the current zero-history boundary", async () => 
   assert.match(benchmark, /External validations<\/span><strong>0<\/strong>/i);
 });
 
+test("data route distinguishes executed public snapshots from dependency evidence", async () => {
+  const html = await render("/data").then((response) => response.text());
+  assert.match(html, /3 frozen public snapshots/i);
+  assert.match(html, /3,802[\s\S]{0,40}normalized facts/i);
+  assert.match(html, /created[\s\S]{0,40}0[\s\S]{0,40}dependency edges/i);
+  assert.match(html, /FAOSTAT, GLEIF, and openFDA/i);
+});
+
 test("case downloads point to twelve present archives", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("../public/riskpacks/catalog.json", import.meta.url), "utf8"),
@@ -77,6 +85,18 @@ test("every HTML response carries the release security headers", async () => {
   const response = await render("/");
   assert.match(response.headers.get("content-security-policy") ?? "", /default-src 'self'/);
   assert.match(response.headers.get("content-security-policy") ?? "", /frame-ancestors 'none'/);
+  assert.match(
+    response.headers.get("content-security-policy") ?? "",
+    /script-src 'self' 'nonce-[A-Za-z0-9+/=]+';/,
+  );
+  assert.doesNotMatch(
+    response.headers.get("content-security-policy") ?? "",
+    /script-src[^;]*'unsafe-inline'/,
+  );
+  const html = await response.text();
+  for (const tag of html.match(/<script\b[^>]*>/gi) ?? []) {
+    assert.match(tag, /\bnonce="[A-Za-z0-9+/=]+"/);
+  }
   assert.equal(response.headers.get("cross-origin-opener-policy"), "same-origin");
   assert.equal(response.headers.get("cross-origin-resource-policy"), "same-origin");
   assert.equal(response.headers.get("referrer-policy"), "no-referrer");
@@ -95,4 +115,25 @@ test("unknown pages fail closed with a branded 404", async () => {
     assert.match(html, /Return home/i, path);
     assert.doesNotMatch(html, /stack|node_modules|internal server error/i, path);
   }
+});
+
+test("publishes machine-readable build identity with explicit evidence limits", async () => {
+  const response = await render("/build-info.json");
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get("content-type") ?? "", /^application\/json/);
+  const info = await response.json();
+  assert.equal(info.schemaVersion, "cascadelens-build-info/1.0");
+  assert.equal(info.project, "CascadeLens");
+  assert.match(info.commit, /^(?:[a-f0-9]{40}|source-archive-unbound)$/);
+  assert.match(info.tree, /^(?:[a-f0-9]{40}|source-archive-unbound)$/);
+  assert.ok(info.releaseTag === null || /^v\d+\.\d+\.\d+$/.test(info.releaseTag));
+  assert.equal(typeof info.dirty, "boolean");
+  for (const field of [
+    "packageLockSha256",
+    "contentCatalogSha256",
+    "riskPackCatalogSha256",
+  ]) {
+    assert.match(info[field], /^[a-f0-9]{64}$/);
+  }
+  assert.match(info.evidenceBoundary, /not a third-party signature/i);
 });

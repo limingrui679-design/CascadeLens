@@ -1,5 +1,5 @@
 {
-  "contentDigest": "894d7af1882e7ab2cf0eec57028e8c273818b25551d0bbfc032ed1f3dd00d1b3",
+  "contentDigest": "1aa070da5db031219b24d86bbb1a8a3c0b518b41b786365fa9dff87ac6097881",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "5b36d52b9e2833db7accc8be81b7f5209a49fd827ef5b75b197768b2651ef30c",
       "title": "Hurricane refining re-stress local assumption register",
-      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/refining-hurricane-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/refining-hurricane-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

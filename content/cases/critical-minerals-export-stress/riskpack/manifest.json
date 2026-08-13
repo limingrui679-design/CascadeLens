@@ -1,10 +1,13 @@
 {
   "classification": "synthetic_stress",
-  "engineVersion": "0.1.0",
+  "engineVersion": "0.2.0",
   "files": [
     "REBUILD.txt",
     "assumptions.json",
     "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
     "limitations.json",
     "model-card.json",
     "results/benchmark.json",
@@ -15,12 +18,13 @@
     "sources/manifest.json"
   ],
   "generatedAt": "2026-08-12T00:00:00Z",
-  "packId": "riskpack:critical-minerals-export-stress:v0.1.0",
+  "packId": "riskpack:critical-minerals-export-stress:v0.2.0",
   "scenarioId": "critical-minerals-export-stress",
   "schemaVersion": "0.1.0",
-  "snapshotDigest": "6975aace43b82f82af6386fe7bb51043589ed22ca5eca76f7c4957d865cadfaa",
+  "snapshotDigest": "3e3723c3e9cdfcd4db1a3d998bfe5415e05a095685b39a7d64c25d059e100196",
   "truthfulStatus": [
     "model_inferred",
     "scenario_only"
-  ]
+  ],
+  "verificationMode": "recomputed"
 }

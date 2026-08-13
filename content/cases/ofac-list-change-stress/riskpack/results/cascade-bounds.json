@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -11,13 +11,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.16111111111111112,
+        "directImpact": 0.24166666666666667,
         "endImpact": 0,
-        "impact": 0.16111111111111112,
+        "impact": 0.24166666666666667,
         "nodeId": "node:ofac-list-change-stress:list-change",
         "peakDirectImpact": 0.5,
         "peakImpact": 0.5
@@ -59,11 +59,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-    "totalWeightedImpact": 0.03735909822866346,
+    "simulatedDays": 60,
+    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "totalWeightedImpact": 0.05603864734299518,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.11594202898550726,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -83,7 +85,7 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 3,
         "impacts": [
           {
             "contributions": [],
@@ -131,22 +133,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 7,
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+        "simulatedDays": 3,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 7,
+      "horizonDays": 3,
       "lower": {
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.11594202898550726,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -154,7 +158,7 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 3,
         "impacts": [
           {
             "contributions": [],
@@ -202,10 +206,12 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 7,
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+        "simulatedDays": 3,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
         "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.2725080565552267,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -224,7 +230,7 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 7,
+        "horizonDays": 3,
         "impacts": [
           {
             "contributions": [],
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.3649,
-            "impact": 0.3127714285714286,
+            "impact": 0.3649,
             "nodeId": "node:ofac-list-change-stress:screening",
             "peakDirectImpact": 0,
             "peakImpact": 0.3649
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.22441350000000004,
-            "impact": 0.16029535714285717,
+            "impact": 0.22441350000000004,
             "nodeId": "node:ofac-list-change-stress:payments",
             "peakDirectImpact": 0,
             "peakImpact": 0.22441350000000004
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.13433392109999998,
-            "impact": 0.07676224062857141,
+            "impact": 0.13433392109999998,
             "nodeId": "node:ofac-list-change-stress:suppliers",
             "peakDirectImpact": 0,
             "peakImpact": 0.13433392109999998
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.06719382733421997,
-            "impact": 0.02879735457180856,
+            "impact": 0.06719382733421997,
             "nodeId": "node:ofac-list-change-stress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.06719382733421997
           }
         ],
-        "iterations": 7,
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.23139728091352366,
+        "simulatedDays": 3,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.2725080565552267,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
-        "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.11594202898550726,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -318,13 +326,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.48333333333333334,
-            "endImpact": 0,
-            "impact": 0.48333333333333334,
+            "directImpact": 0.5,
+            "endImpact": 0.5,
+            "impact": 0.5,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -366,23 +374,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.11207729468599036,
+        "simulatedDays": 14,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 30,
+      "horizonDays": 14,
       "lower": {
         "bound": "lower",
-        "converged": false,
-        "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.11594202898550726,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -390,13 +399,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.48333333333333334,
-            "endImpact": 0,
-            "impact": 0.48333333333333334,
+            "directImpact": 0.5,
+            "endImpact": 0.5,
+            "impact": 0.5,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -438,22 +447,23 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.11207729468599036,
+        "simulatedDays": 14,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.11594202898550726,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.1565660275697194,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.2725080565552267,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -461,13 +471,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 14,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.48333333333333334,
-            "endImpact": 0,
-            "impact": 0.48333333333333334,
+            "directImpact": 0.5,
+            "endImpact": 0.5,
+            "impact": 0.5,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -482,7 +492,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.3649,
-            "impact": 0.3527366666666669,
+            "impact": 0.36490000000000006,
             "nodeId": "node:ofac-list-change-stress:screening",
             "peakDirectImpact": 0,
             "peakImpact": 0.3649
@@ -497,7 +507,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.22441350000000004,
-            "impact": 0.2094525999999999,
+            "impact": 0.22441349999999996,
             "nodeId": "node:ofac-list-change-stress:payments",
             "peakDirectImpact": 0,
             "peakImpact": 0.22441350000000004
@@ -512,7 +522,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.13433392109999998,
-            "impact": 0.12090052899000005,
+            "impact": 0.13433392110000003,
             "nodeId": "node:ofac-list-change-stress:suppliers",
             "peakDirectImpact": 0,
             "peakImpact": 0.13433392109999998
@@ -527,21 +537,21 @@
             ],
             "directImpact": 0,
             "endImpact": 0.06719382733421997,
-            "impact": 0.058234650356323935,
+            "impact": 0.06719382733421997,
             "nodeId": "node:ofac-list-change-stress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.06719382733421997
           }
         ],
-        "iterations": 30,
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.25905080793931246,
+        "simulatedDays": 14,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.2725080565552267,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -557,13 +567,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.16111111111111112,
+            "directImpact": 0.24166666666666667,
             "endImpact": 0,
-            "impact": 0.16111111111111112,
+            "impact": 0.24166666666666667,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -605,22 +615,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.03735909822866346,
+        "simulatedDays": 60,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.05603864734299518,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 90,
+      "horizonDays": 60,
       "lower": {
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -628,13 +640,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.16111111111111112,
+            "directImpact": 0.24166666666666667,
             "endImpact": 0,
-            "impact": 0.16111111111111112,
+            "impact": 0.24166666666666667,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -676,11 +688,13 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.03735909822866346,
+        "simulatedDays": 60,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.05603864734299518,
         "totalWeightedPeakEnvelope": 0.11594202898550726,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -698,13 +712,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.16111111111111112,
+            "directImpact": 0.24166666666666667,
             "endImpact": 0,
-            "impact": 0.16111111111111112,
+            "impact": 0.24166666666666667,
             "nodeId": "node:ofac-list-change-stress:list-change",
             "peakDirectImpact": 0.5,
             "peakImpact": 0.5
@@ -719,7 +733,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.11757888888888897,
+            "impact": 0.17636833333333346,
             "nodeId": "node:ofac-list-change-stress:screening",
             "peakDirectImpact": 0,
             "peakImpact": 0.3649
@@ -734,7 +748,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.07231101666666663,
+            "impact": 0.10846652499999994,
             "nodeId": "node:ofac-list-change-stress:payments",
             "peakDirectImpact": 0,
             "peakImpact": 0.22441350000000004
@@ -749,7 +763,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.04328537457666669,
+            "impact": 0.06492806186500003,
             "nodeId": "node:ofac-list-change-stress:suppliers",
             "peakDirectImpact": 0,
             "peakImpact": 0.13433392109999998
@@ -764,17 +778,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.02165134436324864,
+            "impact": 0.032477016544872964,
             "nodeId": "node:ofac-list-change-stress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.06719382733421997
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ofac-list-change-stress",
-        "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-        "totalWeightedImpact": 0.08780815155668417,
+        "simulatedDays": 60,
+        "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+        "totalWeightedImpact": 0.13171222733502627,
         "totalWeightedPeakEnvelope": 0.2725080565552267,
         "warnings": []
       }
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -792,13 +808,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.16111111111111112,
+        "directImpact": 0.24166666666666667,
         "endImpact": 0,
-        "impact": 0.16111111111111112,
+        "impact": 0.24166666666666667,
         "nodeId": "node:ofac-list-change-stress:list-change",
         "peakDirectImpact": 0.5,
         "peakImpact": 0.5
@@ -840,11 +856,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-    "totalWeightedImpact": 0.03735909822866346,
+    "simulatedDays": 60,
+    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "totalWeightedImpact": 0.05603864734299518,
     "totalWeightedPeakEnvelope": 0.11594202898550726,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -862,13 +880,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.16111111111111112,
+        "directImpact": 0.24166666666666667,
         "endImpact": 0,
-        "impact": 0.16111111111111112,
+        "impact": 0.24166666666666667,
         "nodeId": "node:ofac-list-change-stress:list-change",
         "peakDirectImpact": 0.5,
         "peakImpact": 0.5
@@ -883,7 +901,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.11757888888888897,
+        "impact": 0.17636833333333346,
         "nodeId": "node:ofac-list-change-stress:screening",
         "peakDirectImpact": 0,
         "peakImpact": 0.3649
@@ -898,7 +916,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.07231101666666663,
+        "impact": 0.10846652499999994,
         "nodeId": "node:ofac-list-change-stress:payments",
         "peakDirectImpact": 0,
         "peakImpact": 0.22441350000000004
@@ -913,7 +931,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.04328537457666669,
+        "impact": 0.06492806186500003,
         "nodeId": "node:ofac-list-change-stress:suppliers",
         "peakDirectImpact": 0,
         "peakImpact": 0.13433392109999998
@@ -928,17 +946,19 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.02165134436324864,
+        "impact": 0.032477016544872964,
         "nodeId": "node:ofac-list-change-stress:delivery",
         "peakDirectImpact": 0,
         "peakImpact": 0.06719382733421997
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ofac-list-change-stress",
-    "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
-    "totalWeightedImpact": 0.08780815155668417,
+    "simulatedDays": 60,
+    "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+    "totalWeightedImpact": 0.13171222733502627,
     "totalWeightedPeakEnvelope": 0.2725080565552267,
     "warnings": []
   }

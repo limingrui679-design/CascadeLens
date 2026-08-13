@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Panama drought",
   "slug": "panama-drought-restress",
-  "snapshotDigest": "f286bb74ff5ba467d6dfd1ee22de5c17f5c995fb87b65cb4fd6c056463a864b3",
+  "snapshotDigest": "20410abd3409b2aefd80addacd627d9ead1a1a1383593d90bccfe737663771ea",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 1,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "dynamic_activation"
+  },
   "summary": "A forward-dated transit-capacity stress linking an assumed canal constraint to shipping, inventories, production, and service levels.",
   "tags": [
     "climate",
@@ -33,6 +49,6 @@
   "totalWeightedImpact": {
     "central": 0.03029850746268655,
     "lower": 0.03029850746268655,
-    "upper": 0.07523915649015667
+    "upper": 0.0690499466333543
   }
 }

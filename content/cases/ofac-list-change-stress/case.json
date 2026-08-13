@@ -15,14 +15,29 @@
   "rebuildCommand": "npm run cascadelens -- cases build ofac-list-change-stress",
   "recommendationStatus": "evidence_required",
   "recommendedBundleIds": [
-    "intervention:ofac-list-change-stress:buffer",
     "intervention:ofac-list-change-stress:reroute"
   ],
   "riskPackPath": "cases/ofac-list-change-stress/riskpack/",
   "scoringStatus": "scenario_only",
   "shortTitle": "Sanctions change",
   "slug": "ofac-list-change-stress",
-  "snapshotDigest": "a815a493ffef458bda58ebb1249dca50c6474184ea6473c20c68d5dc756145eb",
+  "snapshotDigest": "085355ccd3dfa7f398eff2836c5227fcd99186dfd0c39baac7d26e0790ee5206",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 12,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 1,
+      "maxLeadTimeDays": 21
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      3,
+      14,
+      60
+    ],
+    "topology": "chain"
+  },
   "summary": "A synthetic operational stress exploring how a sanctions-list change could affect assumed screening, payment, supplier, and delivery dependencies.",
   "tags": [
     "sanctions",
@@ -31,8 +46,8 @@
   ],
   "title": "Sanctions-list change stress",
   "totalWeightedImpact": {
-    "central": 0.03735909822866346,
-    "lower": 0.03735909822866346,
-    "upper": 0.08780815155668417
+    "central": 0.05603864734299518,
+    "lower": 0.05603864734299518,
+    "upper": 0.13171222733502627
   }
 }

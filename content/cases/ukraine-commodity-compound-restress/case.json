@@ -8,7 +8,7 @@
   },
   "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
   "domain": "Food and energy",
-  "edgeCount": 4,
+  "edgeCount": 5,
   "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
   "nodeCount": 5,
   "observabilityStatus": "not_cost_effective",
@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Commodity compound",
   "slug": "ukraine-commodity-compound-restress",
-  "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+  "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": true,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "cycle"
+  },
   "summary": "A compound forward stress joining assumed food, fertilizer, energy, logistics, and affordability dependencies.",
   "tags": [
     "food",
@@ -34,6 +50,6 @@
   "totalWeightedImpact": {
     "central": 0.06444444444444444,
     "lower": 0.06444444444444444,
-    "upper": 0.13421702159839816
+    "upper": 0.14068754719476745
   }
 }

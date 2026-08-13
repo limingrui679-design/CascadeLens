@@ -1,5 +1,5 @@
 export const SCHEMA_VERSION = "0.1.0" as const;
-export const ENGINE_VERSION = "0.1.0" as const;
+export const ENGINE_VERSION = "0.2.0" as const;
 
 export type JsonPrimitive = string | number | boolean | null;
 export type JsonValue = JsonPrimitive | JsonValue[] | { [key: string]: JsonValue };
@@ -191,7 +191,9 @@ export type BoundMode = "lower" | "central" | "upper";
 export interface PropagationConfig {
   engine: string;
   transmission: number;
+  /** Maximum fixed-point solver iterations for each event-time day. */
   maxIterations: number;
+  /** Per-day fixed-point convergence tolerance. */
   tolerance: number;
   horizonsDays: number[];
   bounds: BoundMode[];
@@ -283,8 +285,14 @@ export interface CascadeResult {
   bound: BoundMode;
   metric: "time_weighted_mean_node_impact";
   horizonDays: number;
+  /** True only when every daily fixed-point solve met tolerance. */
   converged: boolean;
+  /** Total fixed-point solver iterations across all simulated days. */
   iterations: number;
+  /** Number of event-time days evaluated for this result. */
+  simulatedDays: number;
+  /** Largest fixed-point iteration count used by any single day. */
+  maxSolverIterationsUsed: number;
   /** Criticality-weighted mean of each node's time-weighted mean impact. */
   totalWeightedImpact: number;
   /** Criticality-weighted envelope of each node's within-horizon peak. */
@@ -337,6 +345,20 @@ export interface InterventionBundleResult {
   centralImpact: number | null;
   upperImpact: number | null;
   worstCaseImpact: number | null;
+  activationSchedule: Array<{
+    interventionId: string;
+    activationAt: string;
+    leadTimeDays: number;
+  }>;
+  horizonResults: Array<{
+    horizonDays: number;
+    lowerImpact: number | null;
+    centralImpact: number | null;
+    upperImpact: number | null;
+    worstCaseImpact: number | null;
+    activeInterventionIds: string[];
+    pendingInterventionIds: string[];
+  }>;
   reasons: string[];
 }
 
@@ -347,6 +369,12 @@ export interface InterventionAnalysis {
   baselineBundle: InterventionBundleResult;
   recommendedBundleIds: string[];
   recommendationStatus: "eligible" | "evidence_required" | "blocked";
+  horizonAnalyses: Array<{
+    horizonDays: number;
+    paretoFrontier: InterventionBundleResult[];
+    recommendedBundleIds: string[];
+    recommendationStatus: "eligible" | "evidence_required" | "blocked";
+  }>;
   reversalThresholds: Array<{
     parameter: string;
     threshold: number;
@@ -379,8 +407,15 @@ export interface ObservationValue {
 export interface OutcomeObservation {
   nodeId: string;
   observedImpact: number;
-  observedAt: string;
   sourceId: string;
+  targetMetric: "time_weighted_mean_node_impact";
+  horizonDays: number;
+  /** Start of the event-time window represented by observedImpact. */
+  windowStart: string;
+  /** End of the complete event-time window represented by observedImpact. */
+  windowEnd: string;
+  /** Earliest time the frozen outcome value was available to the evaluator. */
+  availableAt: string;
 }
 
 export interface BenchmarkResult {
@@ -395,6 +430,9 @@ export interface BenchmarkResult {
   empiricalCoverageCalibrationError?: number;
   directionAccuracy?: number;
   meanRegretVersusZeroBaseline?: number;
+  targetMetric?: OutcomeObservation["targetMetric"];
+  horizonDays?: number;
+  outcomeWindow?: { start: string; end: string };
   leakageIssues: string[];
   limitations: string[];
 }
@@ -440,6 +478,7 @@ export interface RiskPackManifest {
   classification: ScenarioClassification;
   generatedAt: string;
   snapshotDigest: string;
+  verificationMode: "recomputed";
   files: string[];
   truthfulStatus: Array<
     | "observed"

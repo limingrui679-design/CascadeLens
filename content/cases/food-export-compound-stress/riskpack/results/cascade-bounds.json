@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -60,9 +60,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "food-export-compound-stress",
-    "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+    "simulatedDays": 90,
+    "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
     "totalWeightedImpact": 0.05733044733044735,
     "totalWeightedPeakEnvelope": 0.17792207792207795,
     "warnings": [
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.17792207792207795,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 7,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.17792207792207793,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
@@ -146,7 +150,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.17792207792207795,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 7,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.17792207792207793,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.39860995586883907,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0.35000000000000003,
             "endImpact": 0.5359362504999999,
-            "impact": 0.4828116074999999,
+            "impact": 0.5359362504999999,
             "nodeId": "node:food-export-compound-stress:exports",
             "peakDirectImpact": 0.35,
             "peakImpact": 0.5359362504999999
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.41040999999999994,
-            "impact": 0.35177999999999987,
+            "impact": 0.41040999999999983,
             "nodeId": "node:food-export-compound-stress:commodity",
             "peakDirectImpact": 0,
             "peakImpact": 0.41040999999999994
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.33839014856569993,
-            "impact": 0.25650579918039995,
+            "impact": 0.3383901485657,
             "nodeId": "node:food-export-compound-stress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.33839014856569993
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.19423594527671173,
-            "impact": 0.11948633654716219,
+            "impact": 0.19423594527671173,
             "nodeId": "node:food-export-compound-stress:affordability",
             "peakDirectImpact": 0,
             "peakImpact": 0.19423594527671173
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
-        "totalWeightedImpact": 0.3451675032646041,
+        "simulatedDays": 7,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+        "totalWeightedImpact": 0.39860995586883907,
         "totalWeightedPeakEnvelope": 0.39860995586883907,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -367,22 +375,23 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 30,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.17199134199134203,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "horizonDays": 30,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -439,21 +448,22 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 30,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.17199134199134203,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.23889142694676116,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -481,8 +491,8 @@
               }
             ],
             "directImpact": 0.33833333333333315,
-            "endImpact": 0.28605576999999993,
-            "impact": 0.5152111511166669,
+            "endImpact": 0,
+            "impact": 0.518071708816667,
             "nodeId": "node:food-export-compound-stress:exports",
             "peakDirectImpact": 0.35,
             "peakImpact": 0.5359362504999999
@@ -496,7 +506,7 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.41040999999999994,
+            "endImpact": 0,
             "impact": 0.3967296666666667,
             "nodeId": "node:food-export-compound-stress:commodity",
             "peakDirectImpact": 0,
@@ -511,8 +521,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.33839014856569993,
-            "impact": 0.31928380037579657,
+            "endImpact": 0,
+            "impact": 0.32711047694684325,
             "nodeId": "node:food-export-compound-stress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.33839014856569993
@@ -526,22 +536,22 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.19423594527671173,
-            "impact": 0.17679436990648364,
+            "endImpact": 0,
+            "impact": 0.18776141376748814,
             "nodeId": "node:food-export-compound-stress:affordability",
             "peakDirectImpact": 0,
             "peakImpact": 0.19423594527671173
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
-        "totalWeightedImpact": 0.3808160992971152,
+        "simulatedDays": 30,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+        "totalWeightedImpact": 0.385322957339878,
         "totalWeightedPeakEnvelope": 0.39860995586883907,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -606,9 +616,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 90,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.05733044733044735,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
@@ -620,7 +632,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -677,9 +689,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+        "simulatedDays": 90,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
         "totalWeightedImpact": 0.05733044733044735,
         "totalWeightedPeakEnvelope": 0.17792207792207795,
         "warnings": [
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -719,7 +733,7 @@
             ],
             "directImpact": 0.11277777777777773,
             "endImpact": 0,
-            "impact": 0.17491544781666676,
+            "impact": 0.17269056960555565,
             "nodeId": "node:food-export-compound-stress:exports",
             "peakDirectImpact": 0.35,
             "peakImpact": 0.5359362504999999
@@ -749,7 +763,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.11044161375144332,
+            "impact": 0.10903682564894776,
             "nodeId": "node:food-export-compound-stress:distribution",
             "peakDirectImpact": 0,
             "peakImpact": 0.33839014856569993
@@ -764,17 +778,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.0633934862933285,
+            "impact": 0.06258713792249604,
             "nodeId": "node:food-export-compound-stress:affordability",
             "peakDirectImpact": 0,
             "peakImpact": 0.19423594527671173
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "food-export-compound-stress",
-        "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
-        "totalWeightedImpact": 0.12928942213145903,
+        "simulatedDays": 90,
+        "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+        "totalWeightedImpact": 0.12844098577995933,
         "totalWeightedPeakEnvelope": 0.39860995586883907,
         "warnings": []
       }
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -841,9 +857,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "food-export-compound-stress",
-    "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
+    "simulatedDays": 90,
+    "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
     "totalWeightedImpact": 0.05733044733044735,
     "totalWeightedPeakEnvelope": 0.17792207792207795,
     "warnings": [
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -883,7 +901,7 @@
         ],
         "directImpact": 0.11277777777777773,
         "endImpact": 0,
-        "impact": 0.17491544781666676,
+        "impact": 0.17269056960555565,
         "nodeId": "node:food-export-compound-stress:exports",
         "peakDirectImpact": 0.35,
         "peakImpact": 0.5359362504999999
@@ -913,7 +931,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.11044161375144332,
+        "impact": 0.10903682564894776,
         "nodeId": "node:food-export-compound-stress:distribution",
         "peakDirectImpact": 0,
         "peakImpact": 0.33839014856569993
@@ -928,17 +946,19 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.0633934862933285,
+        "impact": 0.06258713792249604,
         "nodeId": "node:food-export-compound-stress:affordability",
         "peakDirectImpact": 0,
         "peakImpact": 0.19423594527671173
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "food-export-compound-stress",
-    "snapshotDigest": "df5720b4e2ac543074f63723830e26987dd1fa2bbf0de87d4285ea9737bd3016",
-    "totalWeightedImpact": 0.12928942213145903,
+    "simulatedDays": 90,
+    "snapshotDigest": "494ac9c4096008137dace0791a97d514addc28b7c0b5634d53b9e3a08323a1ad",
+    "totalWeightedImpact": 0.12844098577995933,
     "totalWeightedPeakEnvelope": 0.39860995586883907,
     "warnings": []
   }

@@ -1,98 +1,436 @@
 {
   "baselineBundle": {
-    "centralImpact": 0.02970550576184377,
+    "activationSchedule": [],
+    "centralImpact": 0.04455825864276565,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.09218950064020484,
+        "horizonDays": 7,
+        "lowerImpact": 0.09218950064020484,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.3566377754033888,
+        "worstCaseImpact": 0.3566377754033888
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.09218950064020481,
+        "horizonDays": 21,
+        "lowerImpact": 0.09218950064020481,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.35663777540338887,
+        "worstCaseImpact": 0.35663777540338887
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.04455825864276565,
+        "horizonDays": 60,
+        "lowerImpact": 0.04455825864276565,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.17237492477830463,
+        "worstCaseImpact": 0.17237492477830463
+      }
+    ],
     "interventionIds": [],
-    "lowerImpact": 0.02970550576184377,
+    "lowerImpact": 0.04455825864276565,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.08986450645873557,
-    "worstCaseImpact": 0.08986450645873557
+    "upperImpact": 0.17237492477830463,
+    "worstCaseImpact": 0.17237492477830463
   },
   "evaluatedBundles": [
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [],
+      "centralImpact": 0.04455825864276565,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3566377754033888,
+          "worstCaseImpact": 0.3566377754033888
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.35663777540338887,
+          "worstCaseImpact": 0.35663777540338887
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17237492477830463,
+          "worstCaseImpact": 0.17237492477830463
+        }
+      ],
       "interventionIds": [],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.08986450645873557,
-      "worstCaseImpact": 0.08986450645873557
+      "upperImpact": 0.17237492477830463,
+      "worstCaseImpact": 0.17237492477830463
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14770979081133923,
+          "worstCaseImpact": 0.14770979081133923
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06880885621482345,
-      "worstCaseImpact": 0.06880885621482345
+      "upperImpact": 0.14770979081133923,
+      "worstCaseImpact": 0.14770979081133923
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29831627636819974,
+          "worstCaseImpact": 0.29831627636819974
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2983162763681998,
+          "worstCaseImpact": 0.2983162763681998
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14418620024462986,
+          "worstCaseImpact": 0.14418620024462986
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:reroute"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06580090617997889,
-      "worstCaseImpact": 0.06580090617997889
+      "upperImpact": 0.14418620024462986,
+      "worstCaseImpact": 0.14418620024462986
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "upperImpact": 0.3566377754033888,
+          "worstCaseImpact": 0.3566377754033888
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "upperImpact": 0.35663777540338887,
+          "worstCaseImpact": 0.35663777540338887
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1689164552308745,
+          "worstCaseImpact": 0.1689164552308745
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:diversify"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07318218920888123,
-      "worstCaseImpact": 0.07318218920888123
+      "upperImpact": 0.1689164552308745,
+      "worstCaseImpact": 0.1689164552308745
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2676974893747255,
+          "worstCaseImpact": 0.2676974893747255
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2676974893747255,
+          "worstCaseImpact": 0.2676974893747255
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12938711986445064,
+          "worstCaseImpact": 0.12938711986445064
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer",
         "intervention:medical-ppe-demand-restress:reroute"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05316751603363157,
-      "worstCaseImpact": 0.05316751603363157
+      "upperImpact": 0.12938711986445064,
+      "worstCaseImpact": 0.12938711986445064
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:diversify"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1440775994551322,
+          "worstCaseImpact": 0.1440775994551322
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer",
         "intervention:medical-ppe-demand-restress:diversify"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05796535000241813,
-      "worstCaseImpact": 0.05796535000241813
+      "upperImpact": 0.1440775994551322,
+      "worstCaseImpact": 0.1440775994551322
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:diversify",
         "intervention:medical-ppe-demand-restress:reroute"
@@ -106,9 +444,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:diversify",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer",
         "intervention:medical-ppe-demand-restress:diversify",
@@ -124,57 +520,898 @@
       "worstCaseImpact": null
     }
   ],
-  "paretoFrontier": [
+  "horizonAnalyses": [
     {
-      "centralImpact": 0.02970550576184377,
-      "cost": 0,
-      "feasible": true,
-      "interventionIds": [],
-      "lowerImpact": 0.02970550576184377,
-      "reasons": [],
-      "strategy": "do_not_act",
-      "upperImpact": 0.08986450645873557,
-      "worstCaseImpact": 0.08986450645873557
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04455825864276565,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3566377754033888,
+              "worstCaseImpact": 0.3566377754033888
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35663777540338887,
+              "worstCaseImpact": 0.35663777540338887
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17237492477830463,
+              "worstCaseImpact": 0.17237492477830463
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17237492477830463,
+          "worstCaseImpact": 0.17237492477830463
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14770979081133923,
+              "worstCaseImpact": 0.14770979081133923
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14770979081133923,
+          "worstCaseImpact": 0.14770979081133923
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29831627636819974,
+              "worstCaseImpact": 0.29831627636819974
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2983162763681998,
+              "worstCaseImpact": 0.2983162763681998
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14418620024462986,
+              "worstCaseImpact": 0.14418620024462986
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14418620024462986,
+          "worstCaseImpact": 0.14418620024462986
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12938711986445064,
+              "worstCaseImpact": 0.12938711986445064
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12938711986445064,
+          "worstCaseImpact": 0.12938711986445064
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ]
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "horizonDays": 21,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04455825864276565,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3566377754033888,
+              "worstCaseImpact": 0.3566377754033888
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35663777540338887,
+              "worstCaseImpact": 0.35663777540338887
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17237492477830463,
+              "worstCaseImpact": 0.17237492477830463
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17237492477830463,
+          "worstCaseImpact": 0.17237492477830463
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14770979081133923,
+              "worstCaseImpact": 0.14770979081133923
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14770979081133923,
+          "worstCaseImpact": 0.14770979081133923
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29831627636819974,
+              "worstCaseImpact": 0.29831627636819974
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2983162763681998,
+              "worstCaseImpact": 0.2983162763681998
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14418620024462986,
+              "worstCaseImpact": 0.14418620024462986
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14418620024462986,
+          "worstCaseImpact": 0.14418620024462986
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12938711986445064,
+              "worstCaseImpact": 0.12938711986445064
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12938711986445064,
+          "worstCaseImpact": 0.12938711986445064
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 60,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04455825864276565,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3566377754033888,
+              "worstCaseImpact": 0.3566377754033888
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.35663777540338887,
+              "worstCaseImpact": 0.35663777540338887
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17237492477830463,
+              "worstCaseImpact": 0.17237492477830463
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.17237492477830463,
+          "worstCaseImpact": 0.17237492477830463
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.30560646374759837,
+              "worstCaseImpact": 0.30560646374759837
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14770979081133923,
+              "worstCaseImpact": 0.14770979081133923
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14770979081133923,
+          "worstCaseImpact": 0.14770979081133923
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29831627636819974,
+              "worstCaseImpact": 0.29831627636819974
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2983162763681998,
+              "worstCaseImpact": 0.2983162763681998
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14418620024462986,
+              "worstCaseImpact": 0.14418620024462986
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.14418620024462986,
+          "worstCaseImpact": 0.14418620024462986
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.04455825864276565,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020484,
+              "horizonDays": 7,
+              "lowerImpact": 0.09218950064020484,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.09218950064020481,
+              "horizonDays": 21,
+              "lowerImpact": 0.09218950064020481,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2676974893747255,
+              "worstCaseImpact": 0.2676974893747255
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:medical-ppe-demand-restress:buffer",
+                "intervention:medical-ppe-demand-restress:reroute"
+              ],
+              "centralImpact": 0.04455825864276565,
+              "horizonDays": 60,
+              "lowerImpact": 0.04455825864276565,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12938711986445064,
+              "worstCaseImpact": 0.12938711986445064
+            }
+          ],
+          "interventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "lowerImpact": 0.04455825864276565,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12938711986445064,
+          "worstCaseImpact": 0.12938711986445064
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:medical-ppe-demand-restress:buffer",
+        "intervention:medical-ppe-demand-restress:reroute"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.04455825864276565,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3566377754033888,
+          "worstCaseImpact": 0.3566377754033888
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.35663777540338887,
+          "worstCaseImpact": 0.35663777540338887
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17237492477830463,
+          "worstCaseImpact": 0.17237492477830463
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.04455825864276565,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.17237492477830463,
+      "worstCaseImpact": 0.17237492477830463
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.30560646374759837,
+          "worstCaseImpact": 0.30560646374759837
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14770979081133923,
+          "worstCaseImpact": 0.14770979081133923
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06880885621482345,
-      "worstCaseImpact": 0.06880885621482345
+      "upperImpact": 0.14770979081133923,
+      "worstCaseImpact": 0.14770979081133923
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29831627636819974,
+          "worstCaseImpact": 0.29831627636819974
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2983162763681998,
+          "worstCaseImpact": 0.2983162763681998
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14418620024462986,
+          "worstCaseImpact": 0.14418620024462986
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:reroute"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06580090617997889,
-      "worstCaseImpact": 0.06580090617997889
+      "upperImpact": 0.14418620024462986,
+      "worstCaseImpact": 0.14418620024462986
     },
     {
-      "centralImpact": 0.02970550576184377,
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:medical-ppe-demand-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.04455825864276565,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020484,
+          "horizonDays": 7,
+          "lowerImpact": 0.09218950064020484,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2676974893747255,
+          "worstCaseImpact": 0.2676974893747255
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.09218950064020481,
+          "horizonDays": 21,
+          "lowerImpact": 0.09218950064020481,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2676974893747255,
+          "worstCaseImpact": 0.2676974893747255
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:medical-ppe-demand-restress:buffer",
+            "intervention:medical-ppe-demand-restress:reroute"
+          ],
+          "centralImpact": 0.04455825864276565,
+          "horizonDays": 60,
+          "lowerImpact": 0.04455825864276565,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12938711986445064,
+          "worstCaseImpact": 0.12938711986445064
+        }
+      ],
       "interventionIds": [
         "intervention:medical-ppe-demand-restress:buffer",
         "intervention:medical-ppe-demand-restress:reroute"
       ],
-      "lowerImpact": 0.02970550576184377,
+      "lowerImpact": 0.04455825864276565,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05316751603363157,
-      "worstCaseImpact": 0.05316751603363157
+      "upperImpact": 0.12938711986445064,
+      "worstCaseImpact": 0.12938711986445064
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1423,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 379.94552090895706,
+      "threshold": 324.3444779466671,
       "toBundleIds": [
         "intervention:medical-ppe-demand-restress:buffer"
       ]
@@ -196,7 +1433,7 @@
         "intervention:medical-ppe-demand-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 997.3569923860196,
+      "threshold": 851.4042546099954,
       "toBundleIds": [
         "intervention:medical-ppe-demand-restress:reroute"
       ]
@@ -206,7 +1443,7 @@
         "intervention:medical-ppe-demand-restress:reroute"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 633.2425348482595,
+      "threshold": 540.5741299111129,
       "toBundleIds": [
         "intervention:medical-ppe-demand-restress:buffer",
         "intervention:medical-ppe-demand-restress:reroute"

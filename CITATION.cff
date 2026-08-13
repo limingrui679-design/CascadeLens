@@ -2,10 +2,10 @@ cff-version: 1.2.0
 message: "If you use CascadeLens in research, please cite this software release."
 title: "CascadeLens"
 type: software
-version: 0.1.1
+version: 0.2.0
 date-released: 2026-08-13
 license: Apache-2.0
-repository-code: "https://github.com/limingrui679-design/cascadelens"
+repository-code: "https://github.com/limingrui679-design/CascadeLens"
 abstract: "An evidence-graded bitemporal world graph and shock compiler for global systemic-risk analysis."
 authors:
   - family-names: Li

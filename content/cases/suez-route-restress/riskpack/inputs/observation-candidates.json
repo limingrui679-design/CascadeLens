@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:suez-route-restress:assumptions"
+        ]
+      },
+      "from": "node:suez-route-restress:suez",
+      "id": "edge:suez-route-restress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:suez-route-restress:market",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0,
+        "unit": "share",
+        "upper": 0.36,
+        "value": 0.2
+      }
+    },
+    "id": "candidate:suez-route-restress:direct-link",
+    "label": "Verify a possible direct dependency from Suez route to Downstream market availability",
+    "probabilityPresent": 0.35
+  }
+]

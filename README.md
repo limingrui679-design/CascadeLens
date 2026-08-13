@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/limingrui679-design/cascadelens/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/limingrui679-design/cascadelens/actions/workflows/ci.yml/badge.svg" /></a>
-  <a href="https://github.com/limingrui679-design/cascadelens/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/limingrui679-design/cascadelens/actions/workflows/codeql.yml/badge.svg" /></a>
-  <a href="https://github.com/limingrui679-design/cascadelens/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/limingrui679-design/cascadelens?style=flat" /></a>
-  <a href="LICENSE"><img alt="Apache-2.0 license" src="https://img.shields.io/github/license/limingrui679-design/cascadelens" /></a>
+  <a href="https://github.com/limingrui679-design/CascadeLens/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/limingrui679-design/CascadeLens/actions/workflows/ci.yml/badge.svg" /></a>
+  <a href="https://github.com/limingrui679-design/CascadeLens/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/limingrui679-design/CascadeLens/actions/workflows/codeql.yml/badge.svg" /></a>
+  <a href="https://github.com/limingrui679-design/CascadeLens/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/limingrui679-design/CascadeLens?style=flat" /></a>
+  <a href="LICENSE"><img alt="Apache-2.0 license" src="https://img.shields.io/github/license/limingrui679-design/CascadeLens" /></a>
   <a href="package.json"><img alt="Node.js 22.13 or newer" src="https://img.shields.io/badge/Node.js-%E2%89%A522.13-339933?logo=nodedotjs&amp;logoColor=white" /></a>
 </p>
 
@@ -20,13 +20,13 @@
   ·
   <a href="docs/README.md">Read the docs</a>
   ·
-  <a href="docs/SELF_REVIEW_2026-08-13_v0.1.1.md">Inspect the evidence</a>
+  <a href="docs/SELF_REVIEW_2026-08-13_v0.2.0.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
 
 > [!IMPORTANT]
-> **Current release: `v0.1.1`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
+> **Current release: `v0.2.0`.** CascadeLens is a software-verified research release, not an empirically validated production decision system. Its 12 reference cases are all `scenario_only`: there are **0 historically scored cases, 0 external validations, and 0 claims of organizational adoption**.
 
 ## Why CascadeLens
 
@@ -37,7 +37,7 @@ Most shock-analysis demos collapse source data, assumptions, model inference, an
 | Evidence stays graded | Observed, entity-reported, third-party-verified, text-extracted, and model-inferred relationships retain distinct provenance. |
 | Time stays explicit | Event time and knowledge time are separate, so a frozen decision cutoff can block future evidence. |
 | Uncertainty stays visible | Every cascade reports lower, central, and upper bounds rather than a single false-precision estimate. |
-| Decisions stay auditable | ShockScript inputs, graph digests, assumptions, model cards, results, and checksums travel together in a verifiable RiskPack. |
+| Decisions stay auditable | A RiskPack carries inputs and outputs together; verification recomputes every derived result before accepting it. |
 | Unsupported claims fail closed | Missing licenses, invalid temporal state, incompatible schemas, or insufficient evidence block stronger outputs. |
 
 ## Product tour
@@ -65,8 +65,8 @@ The catalog contains 9 context-grounded quasi-historical re-stresses and 3 synth
 Requirements: Node.js `>=22.13.0` and npm.
 
 ```bash
-git clone https://github.com/limingrui679-design/cascadelens.git
-cd cascadelens
+git clone https://github.com/limingrui679-design/CascadeLens.git
+cd CascadeLens
 npm ci
 npm run generate:catalog
 npm run generate:cases
@@ -108,20 +108,20 @@ flowchart LR
     K --> N["TypeScript SDK"]
 ```
 
-The engine is deterministic and portable: equal canonical graph snapshots, ShockScript, and engine versions produce byte-stable JSON results. Network acquisition runs outside the browser, while the public product reads reviewed artifacts.
+The engine uses an explicit UTF-8 byte ordering rather than process locale: equal canonical graph snapshots, ShockScripts, and engine versions produce byte-stable JSON results across the tested locale matrix. Network acquisition runs outside the browser, while the public product reads reviewed artifacts.
 
 ## What ships
 
-| Surface | Included in `v0.1.1` |
+| Surface | Included in `v0.2.0` |
 |---|---|
 | WorldGraph | Evidence-graded, bitemporal nodes and edges with canonical content digests |
 | ShockScript | Strict, versioned shock contract with graph-aware validation |
-| Analysis | Daily multi-horizon propagation with time-weighted mean, peak, and final-day impacts |
-| Decision support | Costed intervention enumeration, explicit do-not-act baseline, Pareto frontier, and observability value analysis |
-| CascadeBench | Frozen-cutoff replay gates plus an honest `scenario_only` fallback |
-| RiskPack | Checksummed portable bundle with assumptions, model card, manifests, inputs, and outputs |
-| Data integration | 10 bounded official/public-source connector contracts with acquisition and redistribution modes |
-| Reference library | 12 deterministic, cross-domain, scenario-only cases with complete verified RiskPacks |
+| Analysis | Daily multi-horizon propagation over time-varying graph visibility, with a bounded per-day convergence solver |
+| Decision support | Activation-dated interventions and horizon-specific feasibility, Pareto frontiers, and recommendations |
+| CascadeBench | Metric-, horizon-, outcome-window-, and availability-closed replay gates plus an honest `scenario_only` fallback |
+| RiskPack | Inputs plus deterministically recomputed cascade, intervention, observability, and benchmark outputs; optional external expected digest |
+| Data integration | 10 bounded connector contracts, including 3 lawfully redistributable frozen official-source runs with 3,802 normalized facts and zero inferred dependency edges |
+| Reference library | 12 deterministic, cross-domain, scenario-only cases spanning five topology and four horizon profiles |
 | Interfaces | Multi-route web product, CLI, TypeScript SDK, and public JSON Schemas |
 | Assurance | Unit, integration, CLI, artifact, render, accessibility, security, performance, and detached-release checks |
 
@@ -160,7 +160,7 @@ Use the focused guides for [package boundaries](packages/README.md), [content pr
 
 | If you want to… | Start here |
 |---|---|
-| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.1.1 five-pass review](docs/SELF_REVIEW_2026-08-13_v0.1.1.md) |
+| Evaluate what the project actually proves | [Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [v0.2.0 audit remediation review](docs/SELF_REVIEW_2026-08-13_v0.2.0.md) |
 | Understand the analytical design | [Architecture](docs/ARCHITECTURE.md) · [Product requirements](docs/PRODUCT_REQUIREMENTS.md) |
 | Use the interfaces | [CLI](docs/CLI.md) · [SDK](docs/SDK.md) |
 | Add an engine, connector, or case | [Extension guide](docs/EXTENDING.md) · [Connector contract](docs/connectors/CONNECTOR_CONTRACT.md) |
@@ -170,8 +170,9 @@ Use the focused guides for [package boundaries](packages/README.md), [content pr
 ## Evidence boundaries
 
 - Public-data examples are not client projects.
+- The three frozen connector snapshots prove bounded acquisition, lineage, normalization, and conservative mapping at their recorded retrieval times; they are not historical outcomes or calibrated model inputs.
 - A context-grounded re-stress is not a historically scored replay.
-- Passing RiskPack verification proves artifact integrity, not predictive accuracy.
+- Passing RiskPack verification proves that packaged derived outputs match deterministic recomputation from the packaged inputs. It does not prove predictive accuracy, publisher identity, or real-world impact; publisher identity requires an external digest or signature.
 - Simulated impacts are not causal estimates, forecasts, or realized losses.
 - Internal reproducibility is not external validation, deployment, adoption, or real-user impact.
 - CascadeLens is not investment, legal, sanctions-compliance, clinical, emergency-response, or operational advice.

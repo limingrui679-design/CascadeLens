@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Drug shortage",
   "slug": "drug-shortage-restress",
-  "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
+  "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      21,
+      60
+    ],
+    "topology": "chain"
+  },
   "summary": "A forward-dated medicine-supply stress across assumed manufacturer, wholesaler, care-site, and treatment-access links.",
   "tags": [
     "medicine",
@@ -31,8 +47,8 @@
   ],
   "title": "Drug-shortage re-stress",
   "totalWeightedImpact": {
-    "central": 0.044093567251462,
-    "lower": 0.044093567251462,
-    "upper": 0.11331852398178344
+    "central": 0.066140350877193,
+    "lower": 0.066140350877193,
+    "upper": 0.16997778597267518
   }
 }

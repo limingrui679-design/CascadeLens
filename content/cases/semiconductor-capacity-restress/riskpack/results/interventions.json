@@ -1,70 +1,306 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.03967661691542291,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.12313432835820896,
+        "horizonDays": 7,
+        "lowerImpact": 0.12313432835820896,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.3883618951220364,
+        "worstCaseImpact": 0.3883618951220364
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.11902985074626873,
+        "horizonDays": 30,
+        "lowerImpact": 0.11902985074626873,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.37541649861796855,
+        "worstCaseImpact": 0.37541649861796855
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.03967661691542291,
+        "horizonDays": 90,
+        "lowerImpact": 0.03967661691542291,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.1251388328726562,
+        "worstCaseImpact": 0.1251388328726562
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.03967661691542291,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.10360738872995993,
-    "worstCaseImpact": 0.10360738872995993
+    "upperImpact": 0.1251388328726562,
+    "worstCaseImpact": 0.1251388328726562
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.03967661691542291,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3883618951220364,
+          "worstCaseImpact": 0.3883618951220364
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.37541649861796855,
+          "worstCaseImpact": 0.37541649861796855
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1251388328726562,
+          "worstCaseImpact": 0.1251388328726562
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.10360738872995993,
-      "worstCaseImpact": 0.10360738872995993
+      "upperImpact": 0.1251388328726562,
+      "worstCaseImpact": 0.1251388328726562
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3343139829603088,
+          "worstCaseImpact": 0.3343139829603088
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3231701835282986,
+          "worstCaseImpact": 0.3231701835282986
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10772339450943286,
+          "worstCaseImpact": 0.10772339450943286
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer"
       ],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.081231618594872,
-      "worstCaseImpact": 0.081231618594872
+      "upperImpact": 0.10772339450943286,
+      "worstCaseImpact": 0.10772339450943286
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3265928526514906,
+          "worstCaseImpact": 0.3265928526514906
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3157064242297744,
+          "worstCaseImpact": 0.3157064242297744
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10523547474325812,
+          "worstCaseImpact": 0.10523547474325812
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:reroute"
       ],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07803508000414515,
-      "worstCaseImpact": 0.07803508000414515
+      "upperImpact": 0.10523547474325812,
+      "worstCaseImpact": 0.10523547474325812
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "upperImpact": 0.3883618951220364,
+          "worstCaseImpact": 0.3883618951220364
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.36896383336757216,
+          "worstCaseImpact": 0.36896383336757216
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12298794445585737,
+          "worstCaseImpact": 0.12298794445585737
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:diversify"
       ],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.08636943400013754,
-      "worstCaseImpact": 0.08636943400013754
+      "upperImpact": 0.12298794445585737,
+      "worstCaseImpact": 0.12298794445585737
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2941641053544539,
+          "worstCaseImpact": 0.2941641053544539
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.28435863517597226,
+          "worstCaseImpact": 0.28435863517597226
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09478621172532407,
+          "worstCaseImpact": 0.09478621172532407
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer",
         "intervention:semiconductor-capacity-restress:reroute"
@@ -72,13 +308,64 @@
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06460961792309235,
-      "worstCaseImpact": 0.06460961792309235
+      "upperImpact": 0.09478621172532407,
+      "worstCaseImpact": 0.09478621172532407
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "upperImpact": 0.3343139829603088,
+          "worstCaseImpact": 0.3343139829603088
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3163905020351668,
+          "worstCaseImpact": 0.3163905020351668
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:diversify"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10546350067838893,
+          "worstCaseImpact": 0.10546350067838893
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer",
         "intervention:semiconductor-capacity-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07002694802048742,
-      "worstCaseImpact": 0.07002694802048742
+      "upperImpact": 0.10546350067838893,
+      "worstCaseImpact": 0.10546350067838893
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:diversify",
         "intervention:semiconductor-capacity-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:diversify",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer",
         "intervention:semiconductor-capacity-restress:diversify",
@@ -124,48 +519,889 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03967661691542291,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3883618951220364,
+              "worstCaseImpact": 0.3883618951220364
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37541649861796855,
+              "worstCaseImpact": 0.37541649861796855
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1251388328726562,
+              "worstCaseImpact": 0.1251388328726562
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.1251388328726562,
+          "worstCaseImpact": 0.1251388328726562
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3343139829603088,
+              "worstCaseImpact": 0.3343139829603088
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3231701835282986,
+              "worstCaseImpact": 0.3231701835282986
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10772339450943286,
+              "worstCaseImpact": 0.10772339450943286
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10772339450943286,
+          "worstCaseImpact": 0.10772339450943286
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3265928526514906,
+              "worstCaseImpact": 0.3265928526514906
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3157064242297744,
+              "worstCaseImpact": 0.3157064242297744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10523547474325812,
+              "worstCaseImpact": 0.10523547474325812
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10523547474325812,
+          "worstCaseImpact": 0.10523547474325812
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2941641053544539,
+              "worstCaseImpact": 0.2941641053544539
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.28435863517597226,
+              "worstCaseImpact": 0.28435863517597226
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09478621172532407,
+              "worstCaseImpact": 0.09478621172532407
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09478621172532407,
+          "worstCaseImpact": 0.09478621172532407
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03967661691542291,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3883618951220364,
+              "worstCaseImpact": 0.3883618951220364
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37541649861796855,
+              "worstCaseImpact": 0.37541649861796855
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1251388328726562,
+              "worstCaseImpact": 0.1251388328726562
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.1251388328726562,
+          "worstCaseImpact": 0.1251388328726562
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3343139829603088,
+              "worstCaseImpact": 0.3343139829603088
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3231701835282986,
+              "worstCaseImpact": 0.3231701835282986
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10772339450943286,
+              "worstCaseImpact": 0.10772339450943286
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10772339450943286,
+          "worstCaseImpact": 0.10772339450943286
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3265928526514906,
+              "worstCaseImpact": 0.3265928526514906
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3157064242297744,
+              "worstCaseImpact": 0.3157064242297744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10523547474325812,
+              "worstCaseImpact": 0.10523547474325812
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10523547474325812,
+          "worstCaseImpact": 0.10523547474325812
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2941641053544539,
+              "worstCaseImpact": 0.2941641053544539
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.28435863517597226,
+              "worstCaseImpact": 0.28435863517597226
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09478621172532407,
+              "worstCaseImpact": 0.09478621172532407
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09478621172532407,
+          "worstCaseImpact": 0.09478621172532407
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03967661691542291,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3883618951220364,
+              "worstCaseImpact": 0.3883618951220364
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37541649861796855,
+              "worstCaseImpact": 0.37541649861796855
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1251388328726562,
+              "worstCaseImpact": 0.1251388328726562
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.1251388328726562,
+          "worstCaseImpact": 0.1251388328726562
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3343139829603088,
+              "worstCaseImpact": 0.3343139829603088
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3231701835282986,
+              "worstCaseImpact": 0.3231701835282986
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10772339450943286,
+              "worstCaseImpact": 0.10772339450943286
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10772339450943286,
+          "worstCaseImpact": 0.10772339450943286
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3265928526514906,
+              "worstCaseImpact": 0.3265928526514906
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3157064242297744,
+              "worstCaseImpact": 0.3157064242297744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10523547474325812,
+              "worstCaseImpact": 0.10523547474325812
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10523547474325812,
+          "worstCaseImpact": 0.10523547474325812
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03967661691542291,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.12313432835820896,
+              "horizonDays": 7,
+              "lowerImpact": 0.12313432835820896,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2941641053544539,
+              "worstCaseImpact": 0.2941641053544539
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.11902985074626873,
+              "horizonDays": 30,
+              "lowerImpact": 0.11902985074626873,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.28435863517597226,
+              "worstCaseImpact": 0.28435863517597226
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:semiconductor-capacity-restress:buffer",
+                "intervention:semiconductor-capacity-restress:reroute"
+              ],
+              "centralImpact": 0.03967661691542291,
+              "horizonDays": 90,
+              "lowerImpact": 0.03967661691542291,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09478621172532407,
+              "worstCaseImpact": 0.09478621172532407
+            }
+          ],
+          "interventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "lowerImpact": 0.03967661691542291,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09478621172532407,
+          "worstCaseImpact": 0.09478621172532407
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:semiconductor-capacity-restress:buffer",
+        "intervention:semiconductor-capacity-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.03967661691542291,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3883618951220364,
+          "worstCaseImpact": 0.3883618951220364
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.37541649861796855,
+          "worstCaseImpact": 0.37541649861796855
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1251388328726562,
+          "worstCaseImpact": 0.1251388328726562
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.10360738872995993,
-      "worstCaseImpact": 0.10360738872995993
+      "upperImpact": 0.1251388328726562,
+      "worstCaseImpact": 0.1251388328726562
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3343139829603088,
+          "worstCaseImpact": 0.3343139829603088
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3231701835282986,
+          "worstCaseImpact": 0.3231701835282986
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10772339450943286,
+          "worstCaseImpact": 0.10772339450943286
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer"
       ],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.081231618594872,
-      "worstCaseImpact": 0.081231618594872
+      "upperImpact": 0.10772339450943286,
+      "worstCaseImpact": 0.10772339450943286
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3265928526514906,
+          "worstCaseImpact": 0.3265928526514906
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3157064242297744,
+          "worstCaseImpact": 0.3157064242297744
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10523547474325812,
+          "worstCaseImpact": 0.10523547474325812
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:reroute"
       ],
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.07803508000414515,
-      "worstCaseImpact": 0.07803508000414515
+      "upperImpact": 0.10523547474325812,
+      "worstCaseImpact": 0.10523547474325812
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:semiconductor-capacity-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03967661691542291,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.12313432835820896,
+          "horizonDays": 7,
+          "lowerImpact": 0.12313432835820896,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2941641053544539,
+          "worstCaseImpact": 0.2941641053544539
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.11902985074626873,
+          "horizonDays": 30,
+          "lowerImpact": 0.11902985074626873,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.28435863517597226,
+          "worstCaseImpact": 0.28435863517597226
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:semiconductor-capacity-restress:buffer",
+            "intervention:semiconductor-capacity-restress:reroute"
+          ],
+          "centralImpact": 0.03967661691542291,
+          "horizonDays": 90,
+          "lowerImpact": 0.03967661691542291,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09478621172532407,
+          "worstCaseImpact": 0.09478621172532407
+        }
+      ],
       "interventionIds": [
         "intervention:semiconductor-capacity-restress:buffer",
         "intervention:semiconductor-capacity-restress:reroute"
@@ -173,8 +1409,8 @@
       "lowerImpact": 0.03967661691542291,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06460961792309235,
-      "worstCaseImpact": 0.06460961792309235
+      "upperImpact": 0.09478621172532407,
+      "worstCaseImpact": 0.09478621172532407
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1422,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 357.52959347106565,
+      "threshold": 459.3625398998751,
       "toBundleIds": [
         "intervention:semiconductor-capacity-restress:buffer"
       ]
@@ -196,7 +1432,7 @@
         "intervention:semiconductor-capacity-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 938.5151828615451,
+      "threshold": 1205.8266672371838,
       "toBundleIds": [
         "intervention:semiconductor-capacity-restress:reroute"
       ]
@@ -206,7 +1442,7 @@
         "intervention:semiconductor-capacity-restress:reroute"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 595.8826557851075,
+      "threshold": 765.6042331664559,
       "toBundleIds": [
         "intervention:semiconductor-capacity-restress:buffer",
         "intervention:semiconductor-capacity-restress:reroute"

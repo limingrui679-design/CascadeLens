@@ -1,5 +1,5 @@
 {
-  "contentDigest": "5d40c011820e161aa3ecd014688245f976651fa4d35ddfd09024d1984cfbd34a",
+  "contentDigest": "494dc935c4d0191b4de22790e7e19fbb33462aad60336f6551141a6c11e61abc",
   "decisionCutoff": "2026-08-12T00:00:00Z",
   "edges": [
     {
@@ -238,7 +238,7 @@
       "role": "input",
       "sha256": "2e66901186dd6e0183d76abd9c1a137550d5673a405eac15bb428073e5fae124",
       "title": "Baltimore port access re-stress local assumption register",
-      "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/baltimore-port-restress/assumptions.json"
     },
     {
       "artifactKind": "citation_record",

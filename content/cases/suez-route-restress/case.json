@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Suez route",
   "slug": "suez-route-restress",
-  "snapshotDigest": "9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3",
+  "snapshotDigest": "08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "chain"
+  },
   "summary": "A forward-dated re-stress of a Suez route interruption across a deliberately assumed maritime-to-production dependency chain.",
   "tags": [
     "shipping",

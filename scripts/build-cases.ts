@@ -128,6 +128,24 @@ export async function buildCases(selectedSlug?: string): Promise<void> {
       historicallyScoredCaseCount: builtCases.filter(
         (built) => built.benchmark.status === "historically_scored",
       ).length,
+      structuralCoverage: {
+        topologyProfiles: [...new Set(
+          builtCases.map((built) => built.spec.topology ?? "chain"),
+        )].sort(),
+        horizonProfiles: [...new Set(
+          builtCases.map((built) => built.scenario.propagation.horizonsDays.join("/")),
+        )].sort(),
+        dynamicEdgeCaseCount: builtCases.filter((built) =>
+          built.snapshot.edges.some(
+            (edge) => edge.validFrom !== built.snapshot.decisionCutoff || edge.validTo !== undefined,
+          )
+        ).length,
+        cycleCaseCount: builtCases.filter(
+          (built) => built.spec.topology === "cycle",
+        ).length,
+        evidenceBoundary:
+          "Structural regression diversity does not establish empirical accuracy or historical validation.",
+      },
       cases: builtCases.map(caseCatalogRecord),
     };
     await write(join(temporaryRoot, "catalog.json"), json(catalog));
@@ -137,7 +155,7 @@ export async function buildCases(selectedSlug?: string): Promise<void> {
 
 This directory contains ${builtCases.length} executable reference cases. They exercise the complete analysis and packaging pipeline across diverse domains. They are not demonstrations of empirical accuracy: all ${builtCases.length} are currently scenario-only and zero are historically scored.
 
-Each case includes an assumption register, context citation, sealed graph, ShockScript, model card, cascade bounds, intervention analysis, observability output, benchmark status, verified RiskPack, and rebuild command.
+Each case includes an assumption register, context citation, sealed graph, ShockScript, model card, cascade bounds, activation-dated intervention analysis, observability output, benchmark status, recomputation-verified RiskPack, and rebuild command.
 `,
     );
     const priorRoot = `${finalRoot}.previous`;

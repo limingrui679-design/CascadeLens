@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -11,13 +11,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.20944444444444443,
+        "directImpact": 0.31416666666666665,
         "endImpact": 0,
-        "impact": 0.20944444444444443,
+        "impact": 0.31416666666666665,
         "nodeId": "node:drug-shortage-restress:supply",
         "peakDirectImpact": 0.65,
         "peakImpact": 0.65
@@ -59,11 +59,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "drug-shortage-restress",
-    "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-    "totalWeightedImpact": 0.044093567251462,
+    "simulatedDays": 60,
+    "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+    "totalWeightedImpact": 0.066140350877193,
     "totalWeightedPeakEnvelope": 0.13684210526315793,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.13684210526315793,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
+        "simulatedDays": 7,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
         "totalWeightedImpact": 0.13684210526315793,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
@@ -146,7 +150,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.13684210526315793,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
+        "simulatedDays": 7,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
         "totalWeightedImpact": 0.13684210526315793,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.35167817787450034,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.5010199999999999,
-            "impact": 0.42944571428571426,
+            "impact": 0.5010199999999999,
             "nodeId": "node:drug-shortage-restress:manufacturer",
             "peakDirectImpact": 0,
             "peakImpact": 0.5010199999999999
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.320452392,
-            "impact": 0.2288945657142857,
+            "impact": 0.320452392,
             "nodeId": "node:drug-shortage-restress:wholesale",
             "peakDirectImpact": 0,
             "peakImpact": 0.320452392
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.1997059306944,
-            "impact": 0.1141176746825143,
+            "impact": 0.1997059306944,
             "nodeId": "node:drug-shortage-restress:care-sites",
             "peakDirectImpact": 0,
             "peakImpact": 0.1997059306944
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.1195439701136678,
-            "impact": 0.05123313004871477,
+            "impact": 0.1195439701136678,
             "nodeId": "node:drug-shortage-restress:access",
             "peakDirectImpact": 0,
             "peakImpact": 0.1195439701136678
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.2897609317815829,
+        "simulatedDays": 7,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.35167817787450034,
         "totalWeightedPeakEnvelope": 0.35167817787450034,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
-        "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.13684210526315793,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -318,13 +326,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 21,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6283333333333333,
-            "endImpact": 0,
-            "impact": 0.6283333333333333,
+            "directImpact": 0.6500000000000001,
+            "endImpact": 0.65,
+            "impact": 0.6500000000000001,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -366,23 +374,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.132280701754386,
+        "simulatedDays": 21,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.13684210526315796,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 30,
+      "horizonDays": 21,
       "lower": {
         "bound": "lower",
-        "converged": false,
-        "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.13684210526315793,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -390,13 +399,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 21,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6283333333333333,
-            "endImpact": 0,
-            "impact": 0.6283333333333333,
+            "directImpact": 0.6500000000000001,
+            "endImpact": 0.65,
+            "impact": 0.6500000000000001,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -438,22 +447,23 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 30,
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.132280701754386,
+        "simulatedDays": 21,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.13684210526315796,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.21483607261134238,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0.35167817787450034,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -461,13 +471,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 30,
+        "horizonDays": 21,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.6283333333333333,
-            "endImpact": 0,
-            "impact": 0.6283333333333333,
+            "directImpact": 0.6500000000000001,
+            "endImpact": 0.65,
+            "impact": 0.6500000000000001,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -482,7 +492,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.5010199999999999,
-            "impact": 0.48431933333333343,
+            "impact": 0.5010199999999999,
             "nodeId": "node:drug-shortage-restress:manufacturer",
             "peakDirectImpact": 0,
             "peakImpact": 0.5010199999999999
@@ -497,7 +507,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.320452392,
-            "impact": 0.2990888992,
+            "impact": 0.320452392,
             "nodeId": "node:drug-shortage-restress:wholesale",
             "peakDirectImpact": 0,
             "peakImpact": 0.320452392
@@ -512,7 +522,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.1997059306944,
-            "impact": 0.1797353376249599,
+            "impact": 0.19970593069439999,
             "nodeId": "node:drug-shortage-restress:care-sites",
             "peakDirectImpact": 0,
             "peakImpact": 0.1997059306944
@@ -527,21 +537,21 @@
             ],
             "directImpact": 0,
             "endImpact": 0.1195439701136678,
-            "impact": 0.10360477409851208,
+            "impact": 0.1195439701136678,
             "nodeId": "node:drug-shortage-restress:access",
             "peakDirectImpact": 0,
             "peakImpact": 0.1195439701136678
           }
         ],
-        "iterations": 30,
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.3326694169440477,
+        "simulatedDays": 21,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.3516781778745004,
         "totalWeightedPeakEnvelope": 0.35167817787450034,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -557,13 +567,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.20944444444444443,
+            "directImpact": 0.31416666666666665,
             "endImpact": 0,
-            "impact": 0.20944444444444443,
+            "impact": 0.31416666666666665,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -605,22 +615,24 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.044093567251462,
+        "simulatedDays": 60,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.066140350877193,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
         ]
       },
-      "horizonDays": 90,
+      "horizonDays": 60,
       "lower": {
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -628,13 +640,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.20944444444444443,
+            "directImpact": 0.31416666666666665,
             "endImpact": 0,
-            "impact": 0.20944444444444443,
+            "impact": 0.31416666666666665,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -676,11 +688,13 @@
             "peakImpact": 0
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.044093567251462,
+        "simulatedDays": 60,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.066140350877193,
         "totalWeightedPeakEnvelope": 0.13684210526315793,
         "warnings": [
           "No eligible dependency edges were visible for this bound."
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -698,13 +712,13 @@
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
         },
-        "horizonDays": 90,
+        "horizonDays": 60,
         "impacts": [
           {
             "contributions": [],
-            "directImpact": 0.20944444444444443,
+            "directImpact": 0.31416666666666665,
             "endImpact": 0,
-            "impact": 0.20944444444444443,
+            "impact": 0.31416666666666665,
             "nodeId": "node:drug-shortage-restress:supply",
             "peakDirectImpact": 0.65,
             "peakImpact": 0.65
@@ -719,7 +733,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.16143977777777782,
+            "impact": 0.24215966666666672,
             "nodeId": "node:drug-shortage-restress:manufacturer",
             "peakDirectImpact": 0,
             "peakImpact": 0.5010199999999999
@@ -734,7 +748,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.10325688186666666,
+            "impact": 0.15488532279999997,
             "nodeId": "node:drug-shortage-restress:wholesale",
             "peakDirectImpact": 0,
             "peakImpact": 0.320452392
@@ -749,7 +763,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.06434968877930662,
+            "impact": 0.09652453316895994,
             "nodeId": "node:drug-shortage-restress:care-sites",
             "peakDirectImpact": 0,
             "peakImpact": 0.1997059306944
@@ -764,17 +778,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.03851972370329296,
+            "impact": 0.057779585554939436,
             "nodeId": "node:drug-shortage-restress:access",
             "peakDirectImpact": 0,
             "peakImpact": 0.1195439701136678
           }
         ],
-        "iterations": 90,
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "drug-shortage-restress",
-        "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-        "totalWeightedImpact": 0.11331852398178344,
+        "simulatedDays": 60,
+        "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+        "totalWeightedImpact": 0.16997778597267518,
         "totalWeightedPeakEnvelope": 0.35167817787450034,
         "warnings": []
       }
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -792,13 +808,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.20944444444444443,
+        "directImpact": 0.31416666666666665,
         "endImpact": 0,
-        "impact": 0.20944444444444443,
+        "impact": 0.31416666666666665,
         "nodeId": "node:drug-shortage-restress:supply",
         "peakDirectImpact": 0.65,
         "peakImpact": 0.65
@@ -840,11 +856,13 @@
         "peakImpact": 0
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "drug-shortage-restress",
-    "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-    "totalWeightedImpact": 0.044093567251462,
+    "simulatedDays": 60,
+    "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+    "totalWeightedImpact": 0.066140350877193,
     "totalWeightedPeakEnvelope": 0.13684210526315793,
     "warnings": [
       "No eligible dependency edges were visible for this bound."
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -862,13 +880,13 @@
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
     },
-    "horizonDays": 90,
+    "horizonDays": 60,
     "impacts": [
       {
         "contributions": [],
-        "directImpact": 0.20944444444444443,
+        "directImpact": 0.31416666666666665,
         "endImpact": 0,
-        "impact": 0.20944444444444443,
+        "impact": 0.31416666666666665,
         "nodeId": "node:drug-shortage-restress:supply",
         "peakDirectImpact": 0.65,
         "peakImpact": 0.65
@@ -883,7 +901,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.16143977777777782,
+        "impact": 0.24215966666666672,
         "nodeId": "node:drug-shortage-restress:manufacturer",
         "peakDirectImpact": 0,
         "peakImpact": 0.5010199999999999
@@ -898,7 +916,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.10325688186666666,
+        "impact": 0.15488532279999997,
         "nodeId": "node:drug-shortage-restress:wholesale",
         "peakDirectImpact": 0,
         "peakImpact": 0.320452392
@@ -913,7 +931,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.06434968877930662,
+        "impact": 0.09652453316895994,
         "nodeId": "node:drug-shortage-restress:care-sites",
         "peakDirectImpact": 0,
         "peakImpact": 0.1997059306944
@@ -928,17 +946,19 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.03851972370329296,
+        "impact": 0.057779585554939436,
         "nodeId": "node:drug-shortage-restress:access",
         "peakDirectImpact": 0,
         "peakImpact": 0.1195439701136678
       }
     ],
-    "iterations": 90,
+    "iterations": 60,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "drug-shortage-restress",
-    "snapshotDigest": "caae18d3cbb5cffb96416f2f319e7bd8908a07f8004ac49a2e5dbef613aa5e34",
-    "totalWeightedImpact": 0.11331852398178344,
+    "simulatedDays": 60,
+    "snapshotDigest": "ab195f3946b8fb9a4c9c89aaa02591676b70ad3a89a6a356038d40384e23a441",
+    "totalWeightedImpact": 0.16997778597267518,
     "totalWeightedPeakEnvelope": 0.35167817787450034,
     "warnings": []
   }

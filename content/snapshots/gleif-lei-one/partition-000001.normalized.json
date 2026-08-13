@@ -1,0 +1,31 @@
+{
+  "connectorId": "gleif",
+  "contentDigest": "ef41e2650f1d1b639fa02a93e3e9f612455c22f7024b8d99f0406a9d5cee3df2",
+  "facts": [
+    {
+      "attributes": {
+        "lastUpdateDate": "2026-04-23T05:00:06Z",
+        "legalName": "Global Legal Entity Identifier Foundation",
+        "managingLou": "506700LOLO7M6V0E4247",
+        "status": "ACTIVE"
+      },
+      "availableAt": "2026-08-13T05:41:52.923Z",
+      "dimensions": {
+        "jurisdiction": "CH",
+        "lei": "506700GE1G29325QX363"
+      },
+      "evidenceGrade": "THIRD_PARTY_VERIFIED",
+      "id": "gleif:lei:506700ge1g29325qx363",
+      "kind": "legal_entity_identity",
+      "measures": {},
+      "observedAt": "2026-08-13T05:41:52.923Z",
+      "retrievedAt": "2026-08-13T05:41:52.923Z",
+      "sourceLocator": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.legalName%5D=Global+Legal+Entity+Identifier+Foundation&page%5Bsize%5D=1",
+      "validFrom": "2026-08-13T05:41:52.923Z"
+    }
+  ],
+  "retrievedAt": "2026-08-13T05:41:52.923Z",
+  "schemaVersion": "cascadelens-normalized-snapshot/1.0",
+  "sourceLocator": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.legalName%5D=Global+Legal+Entity+Identifier+Foundation&page%5Bsize%5D=1",
+  "sourceManifestDigest": "0b8cea0461be2d359b2879d064c6a0d20a44f99de9a4bb6eb43967a40c98a100"
+}

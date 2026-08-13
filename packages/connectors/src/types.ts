@@ -38,6 +38,10 @@ export interface ConnectorDescriptor {
   minimumIntervalMs: number;
   maxResponseBytes: number;
   boundary: string;
+  redistributionLicense?: {
+    name: string;
+    spdx?: string;
+  };
   licenseNotes: string[];
   operationalNotes: string[];
 }
@@ -62,6 +66,9 @@ export interface NormalizedFact {
   kind: string;
   validFrom: string;
   validTo?: string;
+  publishedAt?: string;
+  availableAt: string;
+  retrievedAt: string;
   observedAt: string;
   sourceLocator: string;
   evidenceGrade: EvidenceGrade;
@@ -73,6 +80,8 @@ export interface NormalizedFact {
 export interface NormalizeContext {
   retrievedAt: string;
   sourceLocator: string;
+  publishedAt?: string;
+  availableAt?: string;
 }
 
 export interface ConnectorAdapter<Query = Record<string, string>> {

@@ -138,16 +138,6 @@ export function validateScenario(value: unknown): ValidationIssue[] {
     }
     if (!Array.isArray(propagation.horizonsDays) || propagation.horizonsDays.length === 0 || propagation.horizonsDays.some((day) => !Number.isInteger(day) || day <= 0)) {
       add(issues, "propagation.horizonsDays", "invalid_horizons", "Use one or more positive integer horizons.");
-    } else if (
-      Number.isInteger(propagation.maxIterations) &&
-      propagation.maxIterations < Math.max(...propagation.horizonsDays)
-    ) {
-      add(
-        issues,
-        "propagation.maxIterations",
-        "insufficient_iterations",
-        "maxIterations must cover the longest daily propagation horizon.",
-      );
     }
     if (!Array.isArray(propagation.bounds) || !["lower", "central", "upper"].every((bound) => propagation.bounds.includes(bound as never))) {
       add(issues, "propagation.bounds", "missing_bounds", "lower, central, and upper bounds are required.");

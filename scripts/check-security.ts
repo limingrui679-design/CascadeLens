@@ -99,7 +99,7 @@ for (const path of await listFiles(root)) {
 }
 
 const expectedHeaders = new Map([
-  ["content-security-policy", /default-src 'self'.*frame-ancestors 'none'/],
+  ["content-security-policy", /default-src 'self'.*frame-ancestors 'none'.*script-src 'self' 'nonce-[A-Za-z0-9+/=]+'/],
   ["cross-origin-opener-policy", /^same-origin$/],
   ["cross-origin-resource-policy", /^same-origin$/],
   ["permissions-policy", /camera=\(\).*microphone=\(\)/],
@@ -120,6 +120,10 @@ if (response.status !== 200) findings.push(`security_header_render_status:${resp
 for (const [name, pattern] of expectedHeaders) {
   const value = response.headers.get(name) ?? "";
   if (!pattern.test(value)) findings.push(`missing_or_invalid_header:${name}`);
+}
+const csp = response.headers.get("content-security-policy") ?? "";
+if (/script-src[^;]*'unsafe-inline'/.test(csp)) {
+  findings.push("unsafe_inline_script_csp");
 }
 if (response.headers.has("x-powered-by")) findings.push("framework_disclosure:x-powered-by");
 

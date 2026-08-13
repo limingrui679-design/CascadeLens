@@ -8,7 +8,7 @@
   },
   "decisionQuestion": "Which feasible supply intervention best limits bounded access disruption during a PPE demand surge?",
   "domain": "Public health supply",
-  "edgeCount": 4,
+  "edgeCount": 5,
   "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
   "nodeCount": 5,
   "observabilityStatus": "not_cost_effective",
@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Medical PPE",
   "slug": "medical-ppe-demand-restress",
-  "snapshotDigest": "69f7474027b8e0398b03ade74842af328bff7dd13d113ea5c92e0a9b7b76dc5b",
+  "snapshotDigest": "5304e5991fdda394a1f716c334b2c1a25a933c5efae965f9fd983c2ae88b8cb5",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      21,
+      60
+    ],
+    "topology": "branch_merge"
+  },
   "summary": "A forward-dated demand surge across an assumed personal-protective-equipment supply and care-delivery topology.",
   "tags": [
     "health",
@@ -31,8 +47,8 @@
   ],
   "title": "Medical PPE demand re-stress",
   "totalWeightedImpact": {
-    "central": 0.02970550576184377,
-    "lower": 0.02970550576184377,
-    "upper": 0.08986450645873557
+    "central": 0.04455825864276565,
+    "lower": 0.04455825864276565,
+    "upper": 0.17237492477830463
   }
 }

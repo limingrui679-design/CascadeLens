@@ -36,6 +36,18 @@ export interface ReferenceCaseSpec {
   shockMagnitude: number;
   stages: CaseStageSpec[];
   linkWeights: number[];
+  topology?:
+    | "chain"
+    | "branch_merge"
+    | "cycle"
+    | "dynamic_activation"
+    | "dynamic_expiry";
+  horizonsDays?: number[];
+  constraints?: {
+    budget: number;
+    maxInterventions: number;
+    maxLeadTimeDays: number;
+  };
   interventions: CaseInterventionSpec[];
   context: {
     title: string;
@@ -130,6 +142,7 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "deliveries", label: "Finished-goods deliveries", kind: "metric", criticality: 1.2 },
     ],
     linkWeights: [0.81, 0.66, 0.62, 0.44, 0.19],
+    topology: "branch_merge",
     interventions: standardInterventions("Increase chip inventory", "Qualify alternate chip designs", "Reallocate available fabrication"),
     context: {
       title: "Results from Semiconductor Supply Chain Request for Information",
@@ -159,6 +172,8 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "access", label: "Patient access continuity", kind: "metric", criticality: 1.5 },
     ],
     linkWeights: [0.72, 0.61, 0.67, 0.52, 0.21],
+    topology: "branch_merge",
+    horizonsDays: [7, 21, 60],
     interventions: standardInterventions("Build PPE buffer", "Diversify PPE suppliers", "Prioritize scarce PPE allocation"),
     context: {
       title: "Shortage of personal protective equipment endangering health workers worldwide",
@@ -188,6 +203,7 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "affordability", label: "Food affordability pressure", kind: "metric", criticality: 1.7 },
     ],
     linkWeights: [0.7, 0.63, 0.59, 0.56, 0.24],
+    topology: "cycle",
     interventions: standardInterventions("Increase essential-input reserves", "Substitute farm inputs", "Re-route food distribution"),
     context: {
       title: "Food and Energy Price Shocks from Ukraine War",
@@ -217,6 +233,7 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "service", label: "Downstream service level", kind: "metric", criticality: 1.3 },
     ],
     linkWeights: [0.77, 0.54, 0.6, 0.47, 0.18],
+    topology: "dynamic_activation",
     interventions: standardInterventions("Increase importer inventory", "Diversify route exposure", "Use alternate ocean routing"),
     context: {
       title: "Panama Canal Authority adapts to unprecedented challenges",
@@ -246,6 +263,7 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "delivery", label: "Delivery continuity", kind: "metric", criticality: 1.4 },
     ],
     linkWeights: [0.74, 0.57, 0.63, 0.51, 0.2],
+    topology: "dynamic_expiry",
     interventions: standardInterventions("Increase transit-time buffer", "Diversify imported inputs", "Route around the Cape"),
     context: {
       title: "Navigating troubled waters: Impact to global trade of disruption of shipping routes",
@@ -333,6 +351,8 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "infrastructure", label: "Infrastructure delivery", kind: "metric", criticality: 1.3 },
     ],
     linkWeights: [0.84, 0.7, 0.64, 0.48, 0.26],
+    horizonsDays: [14, 45, 120],
+    constraints: { budget: 18, maxInterventions: 1, maxLeadTimeDays: 30 },
     interventions: standardInterventions("Increase mineral buffer", "Qualify alternate mineral supply", "Reallocate material to critical uses"),
     context: {
       title: "2026 IEA Ministerial Declaration supporting critical-minerals security",
@@ -362,6 +382,8 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "delivery", label: "Order delivery continuity", kind: "metric", criticality: 1.2 },
     ],
     linkWeights: [0.73, 0.59, 0.57, 0.45, 0.18],
+    horizonsDays: [3, 14, 60],
+    constraints: { budget: 12, maxInterventions: 1, maxLeadTimeDays: 21 },
     interventions: standardInterventions("Add screening review capacity", "Diversify eligible suppliers", "Route transactions for manual review"),
     context: {
       title: "Sanctions List Service",
@@ -391,6 +413,7 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
       { key: "access", label: "Treatment access continuity", kind: "metric", criticality: 1.8 },
     ],
     linkWeights: [0.78, 0.62, 0.6, 0.57, 0.22],
+    horizonsDays: [7, 21, 60],
     interventions: standardInterventions("Increase medicine buffer", "Qualify alternate supply", "Prioritize distribution to care sites"),
     context: {
       title: "openFDA Drug Shortages API",

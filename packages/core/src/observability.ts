@@ -1,4 +1,5 @@
 import { analyzeInterventions } from "./interventions";
+import { compareCanonicalStrings } from "./canonical";
 import { sealSnapshot, toSnapshotDraft } from "./worldgraph";
 import type {
   CandidateObservation,
@@ -96,18 +97,20 @@ export async function valueObservations(
           probability * score(presentBundle.cost, presentBundle.worstCaseImpact, riskValuePerUnit),
       };
     });
-    const exAnte = [...expectedScores].sort((a, b) => a.score - b.score || a.key.localeCompare(b.key))[0];
+    const exAnte = [...expectedScores].sort(
+      (a, b) => a.score - b.score || compareCanonicalStrings(a.key, b.key),
+    )[0];
     const absentBest = [...absent].sort(
       (a, b) =>
         score(a.cost, a.worstCaseImpact, riskValuePerUnit) -
           score(b.cost, b.worstCaseImpact, riskValuePerUnit) ||
-        key(a.interventionIds).localeCompare(key(b.interventionIds)),
+        compareCanonicalStrings(key(a.interventionIds), key(b.interventionIds)),
     )[0];
     const presentBest = [...present].sort(
       (a, b) =>
         score(a.cost, a.worstCaseImpact, riskValuePerUnit) -
           score(b.cost, b.worstCaseImpact, riskValuePerUnit) ||
-        key(a.interventionIds).localeCompare(key(b.interventionIds)),
+        compareCanonicalStrings(key(a.interventionIds), key(b.interventionIds)),
     )[0];
     const perfectScore =
       (1 - probability) * score(absentBest.cost, absentBest.worstCaseImpact, riskValuePerUnit) +
@@ -139,5 +142,9 @@ export async function valueObservations(
           : "not_cost_effective",
     });
   }
-  return output.sort((a, b) => b.netValue - a.netValue || a.candidateId.localeCompare(b.candidateId));
+  return output.sort(
+    (a, b) =>
+      b.netValue - a.netValue ||
+      compareCanonicalStrings(a.candidateId, b.candidateId),
+  );
 }

@@ -1,10 +1,12 @@
 import { execFileSync } from "node:child_process";
-import { lstat, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { lstat, mkdtemp, open, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { basename, join, resolve } from "node:path";
 import { tmpdir } from "node:os";
 import {
   assertContained,
   checksumText,
+  inspectTarListing,
+  inspectZipArchive,
   parseChecksums,
   safeReleasePath,
   sha256File,
@@ -63,6 +65,32 @@ function validateArchiveList(listing: string, expectedPrefix: string): string[] 
   return entries;
 }
 
+async function hasZipSignature(path: string): Promise<boolean> {
+  const handle = await open(path, "r");
+  try {
+    const header = Buffer.alloc(4);
+    const { bytesRead } = await handle.read(header, 0, header.length, 0);
+    return bytesRead === 4 && header[0] === 0x50 && header[1] === 0x4b &&
+      [0x03, 0x05, 0x07].includes(header[2]) && [0x04, 0x06, 0x08].includes(header[3]);
+  } finally {
+    await handle.close();
+  }
+}
+
+async function nestedZipPaths(root: string, directory = root): Promise<string[]> {
+  const output: string[] = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const target = resolve(directory, entry.name);
+    assertContained(root, target);
+    if (entry.isSymbolicLink()) throw new TypeError("Release source contains a symlink.");
+    if (entry.isDirectory()) output.push(...await nestedZipPaths(root, target));
+    else if (entry.isFile() && (/\.zip$/i.test(entry.name) || await hasZipSignature(target))) {
+      output.push(target);
+    }
+  }
+  return output;
+}
+
 const argument = process.argv[2];
 if (!argument) throw new TypeError("Usage: npm run release:verify -- release/v<semantic-version>");
 const releaseRoot = resolve(argument);
@@ -116,12 +144,30 @@ const verboseTar = run("tar", ["-tvzf", archivePath]).split("\n").filter(Boolean
 if (verboseTar.length !== tarEntries.length || verboseTar.some((line) => !/^[d-]/.test(line))) {
   throw new TypeError("Release archive contains a link or unsupported entry type.");
 }
+inspectZipArchive(await readFile(zipPath));
+inspectTarListing(
+  verboseTar.join("\n"),
+  (await lstat(archivePath)).size,
+);
 
 const temporaryRoot = await mkdtemp(join(tmpdir(), "cascadelens-release-verify-"));
 try {
   run("tar", ["-xzf", archivePath, "-C", temporaryRoot]);
   const sourceRoot = resolve(temporaryRoot, expectedPrefix.slice(0, -1));
   assertContained(temporaryRoot, sourceRoot);
+  const nestedArchives = await nestedZipPaths(sourceRoot);
+  if (nestedArchives.length > 100) {
+    throw new RangeError("Release contains too many embedded archives.");
+  }
+  let nestedArchiveBytes = 0;
+  for (const nestedArchive of nestedArchives) {
+    const info = await lstat(nestedArchive);
+    nestedArchiveBytes += info.size;
+    if (nestedArchiveBytes > 250 * 1024 * 1024) {
+      throw new RangeError("Embedded archive byte budget exceeded.");
+    }
+    inspectZipArchive(await readFile(nestedArchive), undefined, true);
+  }
   const packageMetadata = JSON.parse(
     await readFile(resolve(sourceRoot, "package.json"), "utf8"),
   ) as { name: string; version: string };
@@ -167,6 +213,7 @@ try {
     checks: {
       canonicalRelativeChecksums: "pass",
       safeArchivePathsAndTypes: "pass",
+      archiveExpansionAndNestedBudgets: "pass",
       exactManifestIdentity: "pass",
       detachedSbomMatchesArchive: "pass",
       cleanInstallWithoutGit: "pass",

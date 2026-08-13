@@ -19,7 +19,7 @@
     "role": "input",
     "sha256": "f67a4959a36511f200fa08811d99d7d8bfeb5e55e231e6b57d644967007e61d3",
     "title": "Medical PPE demand re-stress local assumption register",
-    "uri": "https://github.com/limingrui679-design/cascadelens/blob/main/content/cases/medical-ppe-demand-restress/assumptions.json"
+    "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/medical-ppe-demand-restress/assumptions.json"
   },
   {
     "artifactKind": "citation_record",

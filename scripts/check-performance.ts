@@ -46,7 +46,7 @@ function draftForScale(): GraphSnapshotDraft {
         id: sourceId,
         title: "Synthetic performance assumptions",
         publisher: "CascadeLens test suite",
-        uri: "https://github.com/limingrui679-design/cascadelens/blob/main/docs/PERFORMANCE.md",
+        uri: "https://github.com/limingrui679-design/CascadeLens/blob/main/docs/PERFORMANCE.md",
         retrievedAt: observedAt,
         availableAt: observedAt,
         sha256: "0".repeat(64),
@@ -151,8 +151,10 @@ const largestClientAsset = [...clientAssets].sort((left, right) => right.bytes -
 const rssBefore = process.memoryUsage().rss;
 const startedAt = performance.now();
 const snapshot = await sealSnapshot(draftForScale());
+const sealedAt = performance.now();
 const results = await runCascadeBounds(snapshot, scenarioForScale());
-const researchSmokeMilliseconds = performance.now() - startedAt;
+const completedAt = performance.now();
+const researchSmokeMilliseconds = completedAt - startedAt;
 const researchSmokeRssDeltaBytes = Math.max(0, process.memoryUsage().rss - rssBefore);
 
 const report = {
@@ -162,6 +164,8 @@ const report = {
     clientTotalBytes,
     largestClientAsset,
     researchSmokeMilliseconds: Math.round(researchSmokeMilliseconds),
+    graphConstructionAndSealMilliseconds: Math.round(sealedAt - startedAt),
+    cascadeMilliseconds: Math.round(completedAt - sealedAt),
     researchSmokeRssDeltaBytes,
     profile,
     upperThirtyDayImpact: results.upper.totalWeightedImpact,

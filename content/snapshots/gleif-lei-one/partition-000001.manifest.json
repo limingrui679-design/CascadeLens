@@ -1,0 +1,18 @@
+{
+  "boundary": "Legal-entity identity and reported accounting relationships are not commercial supply relationships.",
+  "bytes": 3775,
+  "checkedAt": "2026-08-13",
+  "connectorId": "gleif",
+  "contentType": "application/vnd.api+json",
+  "licenseName": "CC0 1.0 Universal",
+  "licenseSpdx": "CC0-1.0",
+  "manifestDigest": "0b8cea0461be2d359b2879d064c6a0d20a44f99de9a4bb6eb43967a40c98a100",
+  "publisher": "Global Legal Entity Identifier Foundation",
+  "rawArtifactStatus": "embedded",
+  "redistributionMode": "redistributable",
+  "requestUri": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.legalName%5D=Global+Legal+Entity+Identifier+Foundation&page%5Bsize%5D=1",
+  "retrievedAt": "2026-08-13T05:41:52.923Z",
+  "schemaVersion": "0.1.0",
+  "sha256": "3439e23ff7598a6210de95ce3e17fd6eed7cb1067a4690f9ab0b97cff40f4d12",
+  "termsUri": "https://www.gleif.org/en/meta/lei-data-terms-of-use"
+}

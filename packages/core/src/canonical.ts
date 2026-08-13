@@ -1,5 +1,25 @@
 import type { JsonValue } from "./types";
 
+const encoder = new TextEncoder();
+
+/**
+ * Locale-independent ordering for every value that can affect a content digest.
+ * UTF-8 byte order is explicit, deterministic, and does not consult the host's
+ * locale or ICU configuration.
+ */
+export function compareCanonicalStrings(left: string, right: string): number {
+  if (left === right) return 0;
+  const leftBytes = encoder.encode(left);
+  const rightBytes = encoder.encode(right);
+  const length = Math.min(leftBytes.length, rightBytes.length);
+  for (let index = 0; index < length; index += 1) {
+    if (leftBytes[index] !== rightBytes[index]) {
+      return leftBytes[index] - rightBytes[index];
+    }
+  }
+  return leftBytes.length - rightBytes.length;
+}
+
 function normalize(value: unknown, path: string): JsonValue {
   if (value === null || typeof value === "string" || typeof value === "boolean") {
     return value;
@@ -19,7 +39,7 @@ function normalize(value: unknown, path: string): JsonValue {
   if (typeof value === "object") {
     const entries = Object.entries(value as Record<string, unknown>)
       .filter(([, item]) => item !== undefined)
-      .sort(([left], [right]) => left.localeCompare(right));
+      .sort(([left], [right]) => compareCanonicalStrings(left, right));
     const normalized: Record<string, JsonValue> = {};
     for (const [key, item] of entries) {
       normalized[key] = normalize(item, `${path}.${key}`);

@@ -1,0 +1,18 @@
+{
+  "boundary": "U.S. shortage records are not a global supply graph and must not be used for individual medical decisions.",
+  "bytes": 2521,
+  "checkedAt": "2026-08-13",
+  "connectorId": "openfda-drug-shortages",
+  "contentType": "application/json",
+  "licenseName": "Public Domain / CC0 1.0 Universal",
+  "licenseSpdx": "CC0-1.0",
+  "manifestDigest": "22e6a9f664febff771838cc9f6243f99385039daa7b48a7c57be713ff1b42cfc",
+  "publisher": "U.S. Food and Drug Administration",
+  "rawArtifactStatus": "embedded",
+  "redistributionMode": "redistributable",
+  "requestUri": "https://api.fda.gov/drug/shortages.json?limit=1",
+  "retrievedAt": "2026-08-13T05:41:54.466Z",
+  "schemaVersion": "0.1.0",
+  "sha256": "3dcd29b2506352817b6380379cce975dc643ae6d2e4c1340700aac19ee5cd8ef",
+  "termsUri": "https://open.fda.gov/terms/"
+}

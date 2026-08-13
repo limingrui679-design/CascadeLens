@@ -22,7 +22,23 @@
   "scoringStatus": "scenario_only",
   "shortTitle": "Baltimore port",
   "slug": "baltimore-port-restress",
-  "snapshotDigest": "5d40c011820e161aa3ecd014688245f976651fa4d35ddfd09024d1984cfbd34a",
+  "snapshotDigest": "494dc935c4d0191b4de22790e7e19fbb33462aad60336f6551141a6c11e61abc",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 22,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      7,
+      30,
+      90
+    ],
+    "topology": "chain"
+  },
   "summary": "A forward-dated port-access interruption across assumed terminal, automotive logistics, manufacturing, and delivery links.",
   "tags": [
     "port",

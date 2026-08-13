@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  ENGINE_VERSION,
   EngineRegistry,
   auditFlowConservation,
   runCascade,
@@ -10,7 +11,7 @@ import { graphDraft, graphSnapshot, scenario } from "./fixtures";
 
 test("dispatches the built-in engine through a registry", async () => {
   const registry = new EngineRegistry();
-  assert.deepEqual(registry.list(), [{ id: "dependency_cascade", version: "0.1.0" }]);
+  assert.deepEqual(registry.list(), [{ id: "dependency_cascade", version: ENGINE_VERSION }]);
   const result = await registry.run(await graphSnapshot(), scenario(), "central");
   assert.equal(result.bound, "central");
   assert.equal(result.horizonDays, 90);

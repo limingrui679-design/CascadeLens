@@ -1,70 +1,306 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.03029850746268655,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.09402985074626866,
+        "horizonDays": 7,
+        "lowerImpact": 0.09402985074626866,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.19371305283582088,
+        "worstCaseImpact": 0.19371305283582088
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.09089552238805965,
+        "horizonDays": 30,
+        "lowerImpact": 0.09089552238805965,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2071498399000629,
+        "worstCaseImpact": 0.2071498399000629
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.03029850746268655,
+        "horizonDays": 90,
+        "lowerImpact": 0.03029850746268655,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.0690499466333543,
+        "worstCaseImpact": 0.0690499466333543
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.03029850746268655,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.07523915649015667,
-    "worstCaseImpact": 0.07523915649015667
+    "upperImpact": 0.0690499466333543,
+    "worstCaseImpact": 0.0690499466333543
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.03029850746268655,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.19371305283582088,
+          "worstCaseImpact": 0.19371305283582088
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2071498399000629,
+          "worstCaseImpact": 0.2071498399000629
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0690499466333543,
+          "worstCaseImpact": 0.0690499466333543
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.07523915649015667,
-      "worstCaseImpact": 0.07523915649015667
+      "upperImpact": 0.0690499466333543,
+      "worstCaseImpact": 0.0690499466333543
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15882393210447762,
+          "worstCaseImpact": 0.15882393210447762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1664608287708618,
+          "worstCaseImpact": 0.1664608287708618
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.055486942923620594,
+          "worstCaseImpact": 0.055486942923620594
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer"
       ],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05950992933054213,
-      "worstCaseImpact": 0.05950992933054213
+      "upperImpact": 0.055486942923620594,
+      "worstCaseImpact": 0.055486942923620594
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.153839772,
+          "worstCaseImpact": 0.153839772
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16064811289526165,
+          "worstCaseImpact": 0.16064811289526165
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.05354937096508722,
+          "worstCaseImpact": 0.05354937096508722
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:reroute"
       ],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05726289687916862,
-      "worstCaseImpact": 0.05726289687916862
+      "upperImpact": 0.05354937096508722,
+      "worstCaseImpact": 0.05354937096508722
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "upperImpact": 0.19371305283582088,
+          "worstCaseImpact": 0.19371305283582088
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2019493268228406,
+          "worstCaseImpact": 0.2019493268228406
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.06731644227428021,
+          "worstCaseImpact": 0.06731644227428021
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:diversify"
       ],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.06267124988686937,
-      "worstCaseImpact": 0.06267124988686937
+      "upperImpact": 0.06731644227428021,
+      "worstCaseImpact": 0.06731644227428021
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13290629956119404,
+          "worstCaseImpact": 0.13290629956119404
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13623470621774098,
+          "worstCaseImpact": 0.13623470621774098
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04541156873924699,
+          "worstCaseImpact": 0.04541156873924699
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer",
         "intervention:panama-drought-restress:reroute"
@@ -72,13 +308,64 @@
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.04782536058339991,
-      "worstCaseImpact": 0.04782536058339991
+      "upperImpact": 0.04541156873924699,
+      "worstCaseImpact": 0.04541156873924699
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "upperImpact": 0.15882393210447762,
+          "worstCaseImpact": 0.15882393210447762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1630804952706673,
+          "worstCaseImpact": 0.1630804952706673
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:diversify"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.05436016509022242,
+          "worstCaseImpact": 0.05436016509022242
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer",
         "intervention:panama-drought-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05134079003840539,
-      "worstCaseImpact": 0.05134079003840539
+      "upperImpact": 0.05436016509022242,
+      "worstCaseImpact": 0.05436016509022242
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:diversify",
         "intervention:panama-drought-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:diversify",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer",
         "intervention:panama-drought-restress:diversify",
@@ -124,48 +519,889 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03029850746268655,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19371305283582088,
+              "worstCaseImpact": 0.19371305283582088
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2071498399000629,
+              "worstCaseImpact": 0.2071498399000629
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0690499466333543,
+              "worstCaseImpact": 0.0690499466333543
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0690499466333543,
+          "worstCaseImpact": 0.0690499466333543
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15882393210447762,
+              "worstCaseImpact": 0.15882393210447762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1664608287708618,
+              "worstCaseImpact": 0.1664608287708618
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.055486942923620594,
+              "worstCaseImpact": 0.055486942923620594
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.055486942923620594,
+          "worstCaseImpact": 0.055486942923620594
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.153839772,
+              "worstCaseImpact": 0.153839772
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16064811289526165,
+              "worstCaseImpact": 0.16064811289526165
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.05354937096508722,
+              "worstCaseImpact": 0.05354937096508722
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.05354937096508722,
+          "worstCaseImpact": 0.05354937096508722
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13290629956119404,
+              "worstCaseImpact": 0.13290629956119404
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13623470621774098,
+              "worstCaseImpact": 0.13623470621774098
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04541156873924699,
+              "worstCaseImpact": 0.04541156873924699
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04541156873924699,
+          "worstCaseImpact": 0.04541156873924699
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03029850746268655,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19371305283582088,
+              "worstCaseImpact": 0.19371305283582088
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2071498399000629,
+              "worstCaseImpact": 0.2071498399000629
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0690499466333543,
+              "worstCaseImpact": 0.0690499466333543
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0690499466333543,
+          "worstCaseImpact": 0.0690499466333543
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15882393210447762,
+              "worstCaseImpact": 0.15882393210447762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1664608287708618,
+              "worstCaseImpact": 0.1664608287708618
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.055486942923620594,
+              "worstCaseImpact": 0.055486942923620594
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.055486942923620594,
+          "worstCaseImpact": 0.055486942923620594
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.153839772,
+              "worstCaseImpact": 0.153839772
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16064811289526165,
+              "worstCaseImpact": 0.16064811289526165
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.05354937096508722,
+              "worstCaseImpact": 0.05354937096508722
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.05354937096508722,
+          "worstCaseImpact": 0.05354937096508722
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13290629956119404,
+              "worstCaseImpact": 0.13290629956119404
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13623470621774098,
+              "worstCaseImpact": 0.13623470621774098
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04541156873924699,
+              "worstCaseImpact": 0.04541156873924699
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04541156873924699,
+          "worstCaseImpact": 0.04541156873924699
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.03029850746268655,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.19371305283582088,
+              "worstCaseImpact": 0.19371305283582088
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2071498399000629,
+              "worstCaseImpact": 0.2071498399000629
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0690499466333543,
+              "worstCaseImpact": 0.0690499466333543
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0690499466333543,
+          "worstCaseImpact": 0.0690499466333543
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15882393210447762,
+              "worstCaseImpact": 0.15882393210447762
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1664608287708618,
+              "worstCaseImpact": 0.1664608287708618
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.055486942923620594,
+              "worstCaseImpact": 0.055486942923620594
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.055486942923620594,
+          "worstCaseImpact": 0.055486942923620594
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.153839772,
+              "worstCaseImpact": 0.153839772
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16064811289526165,
+              "worstCaseImpact": 0.16064811289526165
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.05354937096508722,
+              "worstCaseImpact": 0.05354937096508722
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.05354937096508722,
+          "worstCaseImpact": 0.05354937096508722
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:panama-drought-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.03029850746268655,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09402985074626866,
+              "horizonDays": 7,
+              "lowerImpact": 0.09402985074626866,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13290629956119404,
+              "worstCaseImpact": 0.13290629956119404
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.09089552238805965,
+              "horizonDays": 30,
+              "lowerImpact": 0.09089552238805965,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13623470621774098,
+              "worstCaseImpact": 0.13623470621774098
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:panama-drought-restress:buffer",
+                "intervention:panama-drought-restress:reroute"
+              ],
+              "centralImpact": 0.03029850746268655,
+              "horizonDays": 90,
+              "lowerImpact": 0.03029850746268655,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04541156873924699,
+              "worstCaseImpact": 0.04541156873924699
+            }
+          ],
+          "interventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "lowerImpact": 0.03029850746268655,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04541156873924699,
+          "worstCaseImpact": 0.04541156873924699
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:panama-drought-restress:buffer",
+        "intervention:panama-drought-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.03029850746268655,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.19371305283582088,
+          "worstCaseImpact": 0.19371305283582088
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2071498399000629,
+          "worstCaseImpact": 0.2071498399000629
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0690499466333543,
+          "worstCaseImpact": 0.0690499466333543
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.07523915649015667,
-      "worstCaseImpact": 0.07523915649015667
+      "upperImpact": 0.0690499466333543,
+      "worstCaseImpact": 0.0690499466333543
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15882393210447762,
+          "worstCaseImpact": 0.15882393210447762
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1664608287708618,
+          "worstCaseImpact": 0.1664608287708618
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.055486942923620594,
+          "worstCaseImpact": 0.055486942923620594
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer"
       ],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05950992933054213,
-      "worstCaseImpact": 0.05950992933054213
+      "upperImpact": 0.055486942923620594,
+      "worstCaseImpact": 0.055486942923620594
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.153839772,
+          "worstCaseImpact": 0.153839772
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16064811289526165,
+          "worstCaseImpact": 0.16064811289526165
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.05354937096508722,
+          "worstCaseImpact": 0.05354937096508722
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:reroute"
       ],
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.05726289687916862,
-      "worstCaseImpact": 0.05726289687916862
+      "upperImpact": 0.05354937096508722,
+      "worstCaseImpact": 0.05354937096508722
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:panama-drought-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.03029850746268655,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09402985074626866,
+          "horizonDays": 7,
+          "lowerImpact": 0.09402985074626866,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13290629956119404,
+          "worstCaseImpact": 0.13290629956119404
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.09089552238805965,
+          "horizonDays": 30,
+          "lowerImpact": 0.09089552238805965,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13623470621774098,
+          "worstCaseImpact": 0.13623470621774098
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:panama-drought-restress:buffer",
+            "intervention:panama-drought-restress:reroute"
+          ],
+          "centralImpact": 0.03029850746268655,
+          "horizonDays": 90,
+          "lowerImpact": 0.03029850746268655,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04541156873924699,
+          "worstCaseImpact": 0.04541156873924699
+        }
+      ],
       "interventionIds": [
         "intervention:panama-drought-restress:buffer",
         "intervention:panama-drought-restress:reroute"
@@ -173,8 +1409,8 @@
       "lowerImpact": 0.03029850746268655,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.04782536058339991,
-      "worstCaseImpact": 0.04782536058339991
+      "upperImpact": 0.04541156873924699,
+      "worstCaseImpact": 0.04541156873924699
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1422,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 508.60731546559026,
+      "threshold": 589.8398445661909,
       "toBundleIds": [
         "intervention:panama-drought-restress:buffer"
       ]
@@ -196,7 +1432,7 @@
         "intervention:panama-drought-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 1335.094203097171,
+      "threshold": 1548.329591986259,
       "toBundleIds": [
         "intervention:panama-drought-restress:reroute"
       ]
@@ -206,7 +1442,7 @@
         "intervention:panama-drought-restress:reroute"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 847.678859109318,
+      "threshold": 983.0664076103177,
       "toBundleIds": [
         "intervention:panama-drought-restress:buffer",
         "intervention:panama-drought-restress:reroute"

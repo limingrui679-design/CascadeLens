@@ -3,10 +3,10 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
-      "MODEL_INFERRED": 4,
+      "MODEL_INFERRED": 5,
       "OFFICIAL_OBSERVED": 0,
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
@@ -60,9 +60,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
-    "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+    "simulatedDays": 90,
+    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
     "totalWeightedImpact": 0.06444444444444444,
     "totalWeightedPeakEnvelope": 0.2,
     "warnings": [
@@ -75,10 +77,10 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.2,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 7,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.2,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -146,10 +150,10 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.2,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 7,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.2,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -215,8 +221,8 @@
       "upper": {
         "bound": "upper",
         "converged": true,
-        "endWeightedImpact": 0.41390935783179295,
-        "engineVersion": "0.1.0",
+        "endWeightedImpact": 0.43661652576392124,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -238,17 +244,17 @@
           {
             "contributions": [
               {
-                "contribution": 0.27409713599999996,
+                "contribution": 0.3159632429280819,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
               }
             ],
             "directImpact": 0.35000000000000003,
-            "endImpact": 0.5281631384,
-            "impact": 0.4772593845714286,
+            "endImpact": 0.5553761079032532,
+            "impact": 0.5553761078788805,
             "nodeId": "node:ukraine-commodity-compound-restress:food-output",
             "peakDirectImpact": 0.35,
-            "peakImpact": 0.5281631384
+            "peakImpact": 0.5553761079032532
           },
           {
             "contributions": [
@@ -256,64 +262,73 @@
                 "contribution": 0.42312,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              },
+              {
+                "contribution": 0.11203046848612927,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-5",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.42311999999999994,
-            "impact": 0.36267428571428567,
+            "endImpact": 0.48774813666027816,
+            "impact": 0.4877481366489431,
             "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
             "peakDirectImpact": 0,
-            "peakImpact": 0.42311999999999994
+            "peakImpact": 0.48774813666027816
           },
           {
             "contributions": [
               {
-                "contribution": 0.3248203301159999,
+                "contribution": 0.34155630636050066,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.324820330116,
-            "impact": 0.24711161720914282,
+            "endImpact": 0.3415563063605007,
+            "impact": 0.3415563063333046,
             "nodeId": "node:ukraine-commodity-compound-restress:distribution",
             "peakDirectImpact": 0,
-            "peakImpact": 0.324820330116
+            "peakImpact": 0.3415563063605007
           },
           {
             "contributions": [
               {
-                "contribution": 0.19177392290048637,
+                "contribution": 0.20165484327503266,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.19177392290048634,
-            "impact": 0.11849842410020842,
+            "endImpact": 0.2016548432750327,
+            "impact": 0.2016548432396645,
             "nodeId": "node:ukraine-commodity-compound-restress:affordability",
             "peakDirectImpact": 0,
-            "peakImpact": 0.19177392290048634
+            "peakImpact": 0.2016548432750327
           }
         ],
-        "iterations": 7,
+        "iterations": 29,
+        "maxSolverIterationsUsed": 23,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
-        "totalWeightedImpact": 0.3623751892969113,
-        "totalWeightedPeakEnvelope": 0.41390935783179295,
-        "warnings": []
+        "simulatedDays": 7,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "totalWeightedImpact": 0.4366165257441388,
+        "totalWeightedPeakEnvelope": 0.43661652576392124,
+        "warnings": [
+          "Incoming depends_on shares for node:ukraine-commodity-compound-restress:farm-inputs exceed one by 0.260000."
+        ]
       }
     },
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -367,25 +382,26 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 30,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.19333333333333333,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "horizonDays": 30,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -439,21 +455,22 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 30,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.19333333333333333,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.23410598890547718,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 2.402704716473075e-10,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -475,17 +492,17 @@
           {
             "contributions": [
               {
-                "contribution": 0.27409713599999996,
+                "contribution": 0.3159632429285951,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
               }
             ],
             "directImpact": 0.33833333333333315,
-            "endImpact": 0.27409713599999996,
-            "impact": 0.5078167290933334,
+            "endImpact": 4.5870729437069713e-10,
+            "impact": 0.5368635709829905,
             "nodeId": "node:ukraine-commodity-compound-restress:food-output",
             "peakDirectImpact": 0.35,
-            "peakImpact": 0.5281631384
+            "peakImpact": 0.5553761079035868
           },
           {
             "contributions": [
@@ -493,54 +510,61 @@
                 "contribution": 0.42312,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              },
+              {
+                "contribution": 0.11203046848631124,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-5",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.42311999999999994,
-            "impact": 0.4090160000000002,
+            "endImpact": 1.6264289914857954e-10,
+            "impact": 0.47148986544112004,
             "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
             "peakDirectImpact": 0,
-            "peakImpact": 0.42311999999999994
+            "peakImpact": 0.4877481366603832
           },
           {
             "contributions": [
               {
-                "contribution": 0.3248203301159999,
+                "contribution": 0.3415563063607063,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.324820330116,
-            "impact": 0.30668829710440004,
+            "endImpact": 2.821050060219932e-10,
+            "impact": 0.33017109615168405,
             "nodeId": "node:ukraine-commodity-compound-restress:distribution",
             "peakDirectImpact": 0,
-            "peakImpact": 0.324820330116
+            "peakImpact": 0.34155630636070633
           },
           {
             "contributions": [
               {
-                "contribution": 0.19177392290048637,
+                "contribution": 0.2016548432753602,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.19177392290048634,
-            "impact": 0.17467630651375474,
+            "endImpact": 2.9275726287636417e-10,
+            "impact": 0.19493301516760264,
             "nodeId": "node:ukraine-commodity-compound-restress:affordability",
             "peakDirectImpact": 0,
-            "peakImpact": 0.19177392290048634
+            "peakImpact": 0.2016548432753602
           }
         ],
-        "iterations": 30,
+        "iterations": 83,
+        "maxSolverIterationsUsed": 32,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
-        "totalWeightedImpact": 0.39589127287611003,
-        "totalWeightedPeakEnvelope": 0.41390935783179295,
+        "simulatedDays": 30,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "totalWeightedImpact": 0.4220626415753245,
+        "totalWeightedPeakEnvelope": 0.43661652576411925,
         "warnings": [
-          "Cascade had not settled by the requested horizon."
+          "Incoming depends_on shares for node:ukraine-commodity-compound-restress:farm-inputs exceed one by 0.260000."
         ]
       }
     },
@@ -549,10 +573,10 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -606,9 +630,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 90,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.06444444444444444,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -620,10 +646,10 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
-          "MODEL_INFERRED": 4,
+          "MODEL_INFERRED": 5,
           "OFFICIAL_OBSERVED": 0,
           "TEXT_EXTRACTED": 0,
           "THIRD_PARTY_VERIFIED": 0
@@ -677,9 +703,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+        "simulatedDays": 90,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
         "totalWeightedImpact": 0.06444444444444444,
         "totalWeightedPeakEnvelope": 0.2,
         "warnings": [
@@ -690,7 +718,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -712,17 +740,17 @@
           {
             "contributions": [
               {
-                "contribution": 0.27409713599999996,
+                "contribution": 0.3159632429285951,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
               }
             ],
             "directImpact": 0.11277777777777773,
             "endImpact": 0,
-            "impact": 0.17231776676444446,
+            "impact": 0.17895452366387576,
             "nodeId": "node:ukraine-commodity-compound-restress:food-output",
             "peakDirectImpact": 0.35,
-            "peakImpact": 0.5281631384
+            "peakImpact": 0.5553761079035868
           },
           {
             "contributions": [
@@ -730,53 +758,62 @@
                 "contribution": 0.42312,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+              },
+              {
+                "contribution": 0.11203046848631124,
+                "edgeId": "edge:ukraine-commodity-compound-restress:link-5",
+                "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.13633866666666675,
+            "impact": 0.15716328848301026,
             "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
             "peakDirectImpact": 0,
-            "peakImpact": 0.42311999999999994
+            "peakImpact": 0.4877481366603832
           },
           {
             "contributions": [
               {
-                "contribution": 0.3248203301159999,
+                "contribution": 0.3415563063607063,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
               }
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.10597542656013335,
+            "impact": 0.11005703205546633,
             "nodeId": "node:ukraine-commodity-compound-restress:distribution",
             "peakDirectImpact": 0,
-            "peakImpact": 0.324820330116
+            "peakImpact": 0.34155630636070633
           },
           {
             "contributions": [
               {
-                "contribution": 0.19177392290048637,
+                "contribution": 0.2016548432753602,
                 "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
                 "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
               }
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.06256789184110267,
+            "impact": 0.06497767172728074,
             "nodeId": "node:ukraine-commodity-compound-restress:affordability",
             "peakDirectImpact": 0,
-            "peakImpact": 0.19177392290048634
+            "peakImpact": 0.2016548432753602
           }
         ],
-        "iterations": 90,
+        "iterations": 143,
+        "maxSolverIterationsUsed": 32,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "ukraine-commodity-compound-restress",
-        "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
-        "totalWeightedImpact": 0.13421702159839816,
-        "totalWeightedPeakEnvelope": 0.41390935783179295,
-        "warnings": []
+        "simulatedDays": 90,
+        "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+        "totalWeightedImpact": 0.14068754719476745,
+        "totalWeightedPeakEnvelope": 0.43661652576411925,
+        "warnings": [
+          "Incoming depends_on shares for node:ukraine-commodity-compound-restress:farm-inputs exceed one by 0.260000."
+        ]
       }
     }
   ],
@@ -784,10 +821,10 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
-      "MODEL_INFERRED": 4,
+      "MODEL_INFERRED": 5,
       "OFFICIAL_OBSERVED": 0,
       "TEXT_EXTRACTED": 0,
       "THIRD_PARTY_VERIFIED": 0
@@ -841,9 +878,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
-    "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
+    "simulatedDays": 90,
+    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
     "totalWeightedImpact": 0.06444444444444444,
     "totalWeightedPeakEnvelope": 0.2,
     "warnings": [
@@ -854,7 +893,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -876,17 +915,17 @@
       {
         "contributions": [
           {
-            "contribution": 0.27409713599999996,
+            "contribution": 0.3159632429285951,
             "edgeId": "edge:ukraine-commodity-compound-restress:link-2",
             "fromNodeId": "node:ukraine-commodity-compound-restress:farm-inputs"
           }
         ],
         "directImpact": 0.11277777777777773,
         "endImpact": 0,
-        "impact": 0.17231776676444446,
+        "impact": 0.17895452366387576,
         "nodeId": "node:ukraine-commodity-compound-restress:food-output",
         "peakDirectImpact": 0.35,
-        "peakImpact": 0.5281631384
+        "peakImpact": 0.5553761079035868
       },
       {
         "contributions": [
@@ -894,52 +933,61 @@
             "contribution": 0.42312,
             "edgeId": "edge:ukraine-commodity-compound-restress:link-1",
             "fromNodeId": "node:ukraine-commodity-compound-restress:commodity-supply"
+          },
+          {
+            "contribution": 0.11203046848631124,
+            "edgeId": "edge:ukraine-commodity-compound-restress:link-5",
+            "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
           }
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.13633866666666675,
+        "impact": 0.15716328848301026,
         "nodeId": "node:ukraine-commodity-compound-restress:farm-inputs",
         "peakDirectImpact": 0,
-        "peakImpact": 0.42311999999999994
+        "peakImpact": 0.4877481366603832
       },
       {
         "contributions": [
           {
-            "contribution": 0.3248203301159999,
+            "contribution": 0.3415563063607063,
             "edgeId": "edge:ukraine-commodity-compound-restress:link-3",
             "fromNodeId": "node:ukraine-commodity-compound-restress:food-output"
           }
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.10597542656013335,
+        "impact": 0.11005703205546633,
         "nodeId": "node:ukraine-commodity-compound-restress:distribution",
         "peakDirectImpact": 0,
-        "peakImpact": 0.324820330116
+        "peakImpact": 0.34155630636070633
       },
       {
         "contributions": [
           {
-            "contribution": 0.19177392290048637,
+            "contribution": 0.2016548432753602,
             "edgeId": "edge:ukraine-commodity-compound-restress:link-4",
             "fromNodeId": "node:ukraine-commodity-compound-restress:distribution"
           }
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.06256789184110267,
+        "impact": 0.06497767172728074,
         "nodeId": "node:ukraine-commodity-compound-restress:affordability",
         "peakDirectImpact": 0,
-        "peakImpact": 0.19177392290048634
+        "peakImpact": 0.2016548432753602
       }
     ],
-    "iterations": 90,
+    "iterations": 143,
+    "maxSolverIterationsUsed": 32,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "ukraine-commodity-compound-restress",
-    "snapshotDigest": "79d256c4f507571886e787d1839bfd7c32b087fb7469566340746859ba833a0f",
-    "totalWeightedImpact": 0.13421702159839816,
-    "totalWeightedPeakEnvelope": 0.41390935783179295,
-    "warnings": []
+    "simulatedDays": 90,
+    "snapshotDigest": "de9678b527d2ea8665e38ea17b9833cae377b5ff76d0958e43b6e93da1030357",
+    "totalWeightedImpact": 0.14068754719476745,
+    "totalWeightedPeakEnvelope": 0.43661652576411925,
+    "warnings": [
+      "Incoming depends_on shares for node:ukraine-commodity-compound-restress:farm-inputs exceed one by 0.260000."
+    ]
   }
 }

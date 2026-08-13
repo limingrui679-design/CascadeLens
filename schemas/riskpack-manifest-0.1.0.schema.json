@@ -4,15 +4,16 @@
   "title": "CascadeLens RiskPack manifest 0.1.0",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "engineVersion", "packId", "scenarioId", "classification", "generatedAt", "snapshotDigest", "files", "truthfulStatus"],
+  "required": ["schemaVersion", "engineVersion", "packId", "scenarioId", "classification", "generatedAt", "snapshotDigest", "verificationMode", "files", "truthfulStatus"],
   "properties": {
     "schemaVersion": { "const": "0.1.0" },
-    "engineVersion": { "const": "0.1.0" },
+    "engineVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
     "packId": { "$ref": "#/$defs/id" },
     "scenarioId": { "$ref": "#/$defs/id" },
     "classification": { "enum": ["historical_replay", "quasi_historical", "synthetic_stress"] },
     "generatedAt": { "type": "string", "format": "date-time" },
     "snapshotDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "verificationMode": { "const": "recomputed" },
     "files": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$" } },
     "truthfulStatus": { "type": "array", "uniqueItems": true, "items": { "enum": ["observed", "entity_reported", "third_party_verified", "text_extracted", "model_inferred", "historically_scored", "scenario_only"] } }
   },

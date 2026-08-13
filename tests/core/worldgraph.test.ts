@@ -21,6 +21,35 @@ test("seals a snapshot deterministically regardless of collection order", async 
   assert.deepEqual(first.nodes.map((node) => node.id), [...first.nodes.map((node) => node.id)].sort());
 });
 
+test("seals Unicode content identically without locale-sensitive ordering", async () => {
+  const draft = graphDraft();
+  draft.nodes[0] = {
+    ...draft.nodes[0],
+    label: "Ångström İstanbul Zürich",
+    properties: {
+      ...draft.nodes[0].properties,
+      z: "last in ASCII",
+      ä: "umlaut",
+      a: "plain",
+      Å: "ring",
+      ı: "dotless",
+      I: "latin capital",
+    },
+  };
+  const first = await sealSnapshot(draft);
+  const reordered = graphDraft();
+  reordered.nodes[0] = {
+    ...draft.nodes[0],
+    properties: Object.fromEntries(Object.entries(draft.nodes[0].properties).reverse()),
+  };
+  const second = await sealSnapshot(reordered);
+  assert.equal(first.contentDigest, second.contentDigest);
+  assert.equal(
+    first.contentDigest,
+    "19e28400734d60df0fc6049a5bf2ce84439f6babe49f7e6e7390b93224773ca0",
+  );
+});
+
 test("detects snapshot tampering", async () => {
   const snapshot = await graphSnapshot();
   const tampered = structuredClone(snapshot);

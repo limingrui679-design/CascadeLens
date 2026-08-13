@@ -1,4 +1,4 @@
-import { digestCanonical } from "./canonical";
+import { compareCanonicalStrings, digestCanonical } from "./canonical";
 import { assertNoErrors, type ValidationIssue } from "./errors";
 import { allowedEvidenceUses, includedInBound } from "./evidence";
 import { isIsoDateTime, isVisibleAt, toEpoch } from "./temporal";
@@ -305,9 +305,9 @@ export async function sealSnapshot(
 ): Promise<GraphSnapshot> {
   const normalized: GraphSnapshotDraft = {
     ...draft,
-    sources: [...draft.sources].sort((a, b) => a.id.localeCompare(b.id)),
-    nodes: [...draft.nodes].sort((a, b) => a.id.localeCompare(b.id)),
-    edges: [...draft.edges].sort((a, b) => a.id.localeCompare(b.id)),
+    sources: [...draft.sources].sort((a, b) => compareCanonicalStrings(a.id, b.id)),
+    nodes: [...draft.nodes].sort((a, b) => compareCanonicalStrings(a.id, b.id)),
+    edges: [...draft.edges].sort((a, b) => compareCanonicalStrings(a.id, b.id)),
   };
   assertNoErrors("Invalid graph snapshot", validateSnapshot(normalized, { replay: true }));
   const contentDigest = await digestCanonical(normalized);
@@ -432,7 +432,7 @@ export function auditFlowConservation(
   return issues.sort(
     (left, right) =>
       right.excess - left.excess ||
-      left.nodeId.localeCompare(right.nodeId) ||
-      left.relation.localeCompare(right.relation),
+      compareCanonicalStrings(left.nodeId, right.nodeId) ||
+      compareCanonicalStrings(left.relation, right.relation),
   );
 }

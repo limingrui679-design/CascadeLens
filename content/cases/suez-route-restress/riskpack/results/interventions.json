@@ -1,8 +1,38 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.06444444444444446,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.20000000000000004,
+        "horizonDays": 7,
+        "lowerImpact": 0.20000000000000004,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.5077436627939957,
+        "worstCaseImpact": 0.5077436627939957
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.19333333333333338,
+        "horizonDays": 30,
+        "lowerImpact": 0.19333333333333338,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.4908188740341961,
+        "worstCaseImpact": 0.4908188740341961
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.06444444444444446,
+        "horizonDays": 90,
+        "lowerImpact": 0.06444444444444446,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.16360629134473204,
+        "worstCaseImpact": 0.16360629134473204
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.06444444444444446,
     "reasons": [],
@@ -12,9 +42,39 @@
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06444444444444446,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5077436627939957,
+          "worstCaseImpact": 0.5077436627939957
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4908188740341961,
+          "worstCaseImpact": 0.4908188740341961
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16360629134473204,
+          "worstCaseImpact": 0.16360629134473204
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06444444444444446,
       "reasons": [],
@@ -23,9 +83,51 @@
       "worstCaseImpact": 0.16360629134473204
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.40003338081609735,
+          "worstCaseImpact": 0.40003338081609735
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3866989347888941,
+          "worstCaseImpact": 0.3866989347888941
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12889964492963138,
+          "worstCaseImpact": 0.12889964492963138
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer"
       ],
@@ -36,9 +138,51 @@
       "worstCaseImpact": 0.12889964492963138
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3846461976763975,
+          "worstCaseImpact": 0.3846461976763975
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.371824657753851,
+          "worstCaseImpact": 0.371824657753851
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.123941552584617,
+          "worstCaseImpact": 0.123941552584617
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:reroute"
       ],
@@ -49,22 +193,114 @@
       "worstCaseImpact": 0.123941552584617
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:diversify"
+          ],
+          "upperImpact": 0.5077436627939957,
+          "worstCaseImpact": 0.5077436627939957
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:diversify"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.47881380933510925,
+          "worstCaseImpact": 0.47881380933510925
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:diversify"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15960460311170305,
+          "worstCaseImpact": 0.15960460311170305
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:diversify"
       ],
       "lowerImpact": 0.06444444444444446,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.13459405165527202,
-      "worstCaseImpact": 0.13459405165527202
+      "upperImpact": 0.15960460311170305,
+      "worstCaseImpact": 0.15960460311170305
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3200200284896584,
+          "worstCaseImpact": 0.3200200284896584
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3093526942066699,
+          "worstCaseImpact": 0.3093526942066699
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10311756473555661,
+          "worstCaseImpact": 0.10311756473555661
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer",
         "intervention:suez-route-restress:reroute"
@@ -76,9 +312,60 @@
       "worstCaseImpact": 0.10311756473555661
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:diversify"
+          ],
+          "upperImpact": 0.40003338081609735,
+          "worstCaseImpact": 0.40003338081609735
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:diversify"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3788956427344876,
+          "worstCaseImpact": 0.3788956427344876
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:diversify"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12629854757816256,
+          "worstCaseImpact": 0.12629854757816256
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer",
         "intervention:suez-route-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.06444444444444446,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.11004168913148238,
-      "worstCaseImpact": 0.11004168913148238
+      "upperImpact": 0.12629854757816256,
+      "worstCaseImpact": 0.12629854757816256
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:diversify",
         "intervention:suez-route-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:diversify",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer",
         "intervention:suez-route-restress:diversify",
@@ -124,11 +519,718 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444446,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5077436627939957,
+              "worstCaseImpact": 0.5077436627939957
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4908188740341961,
+              "worstCaseImpact": 0.4908188740341961
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16360629134473204,
+              "worstCaseImpact": 0.16360629134473204
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16360629134473204,
+          "worstCaseImpact": 0.16360629134473204
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40003338081609735,
+              "worstCaseImpact": 0.40003338081609735
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3866989347888941,
+              "worstCaseImpact": 0.3866989347888941
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12889964492963138,
+              "worstCaseImpact": 0.12889964492963138
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12889964492963138,
+          "worstCaseImpact": 0.12889964492963138
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3846461976763975,
+              "worstCaseImpact": 0.3846461976763975
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.371824657753851,
+              "worstCaseImpact": 0.371824657753851
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.123941552584617,
+              "worstCaseImpact": 0.123941552584617
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.123941552584617,
+          "worstCaseImpact": 0.123941552584617
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3200200284896584,
+              "worstCaseImpact": 0.3200200284896584
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3093526942066699,
+              "worstCaseImpact": 0.3093526942066699
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10311756473555661,
+              "worstCaseImpact": 0.10311756473555661
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10311756473555661,
+          "worstCaseImpact": 0.10311756473555661
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444446,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5077436627939957,
+              "worstCaseImpact": 0.5077436627939957
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4908188740341961,
+              "worstCaseImpact": 0.4908188740341961
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16360629134473204,
+              "worstCaseImpact": 0.16360629134473204
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16360629134473204,
+          "worstCaseImpact": 0.16360629134473204
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40003338081609735,
+              "worstCaseImpact": 0.40003338081609735
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3866989347888941,
+              "worstCaseImpact": 0.3866989347888941
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12889964492963138,
+              "worstCaseImpact": 0.12889964492963138
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12889964492963138,
+          "worstCaseImpact": 0.12889964492963138
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3846461976763975,
+              "worstCaseImpact": 0.3846461976763975
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.371824657753851,
+              "worstCaseImpact": 0.371824657753851
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.123941552584617,
+              "worstCaseImpact": 0.123941552584617
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.123941552584617,
+          "worstCaseImpact": 0.123941552584617
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3200200284896584,
+              "worstCaseImpact": 0.3200200284896584
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3093526942066699,
+              "worstCaseImpact": 0.3093526942066699
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10311756473555661,
+              "worstCaseImpact": 0.10311756473555661
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10311756473555661,
+          "worstCaseImpact": 0.10311756473555661
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444446,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.5077436627939957,
+              "worstCaseImpact": 0.5077436627939957
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4908188740341961,
+              "worstCaseImpact": 0.4908188740341961
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.16360629134473204,
+              "worstCaseImpact": 0.16360629134473204
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.16360629134473204,
+          "worstCaseImpact": 0.16360629134473204
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.40003338081609735,
+              "worstCaseImpact": 0.40003338081609735
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3866989347888941,
+              "worstCaseImpact": 0.3866989347888941
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12889964492963138,
+              "worstCaseImpact": 0.12889964492963138
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.12889964492963138,
+          "worstCaseImpact": 0.12889964492963138
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3846461976763975,
+              "worstCaseImpact": 0.3846461976763975
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.371824657753851,
+              "worstCaseImpact": 0.371824657753851
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.123941552584617,
+              "worstCaseImpact": 0.123941552584617
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.123941552584617,
+          "worstCaseImpact": 0.123941552584617
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:suez-route-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444446,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.20000000000000004,
+              "horizonDays": 7,
+              "lowerImpact": 0.20000000000000004,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3200200284896584,
+              "worstCaseImpact": 0.3200200284896584
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333338,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333338,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3093526942066699,
+              "worstCaseImpact": 0.3093526942066699
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:suez-route-restress:buffer",
+                "intervention:suez-route-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444446,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444446,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10311756473555661,
+              "worstCaseImpact": 0.10311756473555661
+            }
+          ],
+          "interventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444446,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10311756473555661,
+          "worstCaseImpact": 0.10311756473555661
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:suez-route-restress:buffer",
+        "intervention:suez-route-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06444444444444446,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.5077436627939957,
+          "worstCaseImpact": 0.5077436627939957
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4908188740341961,
+          "worstCaseImpact": 0.4908188740341961
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.16360629134473204,
+          "worstCaseImpact": 0.16360629134473204
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06444444444444446,
       "reasons": [],
@@ -137,9 +1239,51 @@
       "worstCaseImpact": 0.16360629134473204
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.40003338081609735,
+          "worstCaseImpact": 0.40003338081609735
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3866989347888941,
+          "worstCaseImpact": 0.3866989347888941
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12889964492963138,
+          "worstCaseImpact": 0.12889964492963138
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer"
       ],
@@ -150,9 +1294,51 @@
       "worstCaseImpact": 0.12889964492963138
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3846461976763975,
+          "worstCaseImpact": 0.3846461976763975
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.371824657753851,
+          "worstCaseImpact": 0.371824657753851
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.123941552584617,
+          "worstCaseImpact": 0.123941552584617
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:reroute"
       ],
@@ -163,9 +1349,59 @@
       "worstCaseImpact": 0.123941552584617
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:suez-route-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444446,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.20000000000000004,
+          "horizonDays": 7,
+          "lowerImpact": 0.20000000000000004,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3200200284896584,
+          "worstCaseImpact": 0.3200200284896584
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333338,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333338,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3093526942066699,
+          "worstCaseImpact": 0.3093526942066699
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:suez-route-restress:buffer",
+            "intervention:suez-route-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444446,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444446,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10311756473555661,
+          "worstCaseImpact": 0.10311756473555661
+        }
+      ],
       "interventionIds": [
         "intervention:suez-route-restress:buffer",
         "intervention:suez-route-restress:reroute"

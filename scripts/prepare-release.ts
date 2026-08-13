@@ -67,6 +67,7 @@ await writeFile(sbomPath, await readFile(sbomSource));
 const generatedRoots = [
   "content/catalog",
   "content/cases",
+  "content/snapshots",
   "public/riskpacks",
   "docs/release/sbom.cdx.json",
 ];

@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:food-export-compound-stress:assumptions"
+        ]
+      },
+      "from": "node:food-export-compound-stress:production",
+      "id": "edge:food-export-compound-stress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:food-export-compound-stress:affordability",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.05,
+        "unit": "share",
+        "upper": 0.41,
+        "value": 0.25
+      }
+    },
+    "id": "candidate:food-export-compound-stress:direct-link",
+    "label": "Verify a possible direct dependency from Food production capacity to Food affordability continuity",
+    "probabilityPresent": 0.35
+  }
+]

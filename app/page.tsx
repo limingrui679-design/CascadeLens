@@ -16,7 +16,7 @@ import { Eyebrow, Status } from "./components/status";
 export const metadata: Metadata = {
   title: "Trace systemic risk without hiding uncertainty",
   description:
-    "Compile evidence-graded world graphs, shocks, intervention choices, and provenance into independently verifiable RiskPacks.",
+    "Compile evidence-graded world graphs, shocks, intervention choices, and provenance into recomputation-verifiable RiskPacks.",
 };
 
 const featured = caseCatalog.cases[0];
@@ -103,8 +103,8 @@ export default function Home() {
             [Braces, "ShockScript", "A strict YAML/JSON contract for targets, operations, horizons, assumptions, and constraints."],
             [GitBranch, "Bounded cascade", "Lower, central, and upper propagation expose missing relationships instead of smoothing them away."],
             [ScanSearch, "Observability frontier", "Ranks which missing fact could change the decision—without asserting that the fact is true."],
-            [ShieldCheck, "RiskPack", "Inputs, assumptions, model card, results, limitations, rebuild command, and relative checksums."],
-            [ArrowRight, "InterventionLab", "Feasible bundles, Pareto trade-offs, evidence-required status, and decision-reversal thresholds."],
+            [ShieldCheck, "RiskPack", "Inputs, results, and checksums backed by deterministic derived-output recomputation."],
+            [ArrowRight, "InterventionLab", "Activation-dated bundles, horizon-specific Pareto trade-offs, and evidence-required status."],
           ].map(([Icon, title, copy]) => {
             const FeatureIcon = Icon as typeof DatabaseZap;
             return (

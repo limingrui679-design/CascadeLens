@@ -1,70 +1,306 @@
 {
   "baselineBundle": {
+    "activationSchedule": [],
     "centralImpact": 0.06444444444444444,
     "cost": 0,
     "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.2,
+        "horizonDays": 7,
+        "lowerImpact": 0.2,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.4366165257441388,
+        "worstCaseImpact": 0.4366165257441388
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.19333333333333333,
+        "horizonDays": 30,
+        "lowerImpact": 0.19333333333333333,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.4220626415753245,
+        "worstCaseImpact": 0.4220626415753245
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.06444444444444444,
+        "horizonDays": 90,
+        "lowerImpact": 0.06444444444444444,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.14068754719476745,
+        "worstCaseImpact": 0.14068754719476745
+      }
+    ],
     "interventionIds": [],
     "lowerImpact": 0.06444444444444444,
     "reasons": [],
     "strategy": "do_not_act",
-    "upperImpact": 0.13421702159839816,
-    "worstCaseImpact": 0.13421702159839816
+    "upperImpact": 0.14068754719476745,
+    "worstCaseImpact": 0.14068754719476745
   },
   "evaluatedBundles": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06444444444444444,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4366165257441388,
+          "worstCaseImpact": 0.4366165257441388
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4220626415753245,
+          "worstCaseImpact": 0.4220626415753245
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14068754719476745,
+          "worstCaseImpact": 0.14068754719476745
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.13421702159839816,
-      "worstCaseImpact": 0.13421702159839816
+      "upperImpact": 0.14068754719476745,
+      "worstCaseImpact": 0.14068754719476745
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.37466355887176406,
+          "worstCaseImpact": 0.37466355887176406
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3621747735859847,
+          "worstCaseImpact": 0.3621747735859847
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1207249245300833,
+          "worstCaseImpact": 0.1207249245300833
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer"
       ],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.11715488168223365,
-      "worstCaseImpact": 0.11715488168223365
+      "upperImpact": 0.1207249245300833,
+      "worstCaseImpact": 0.1207249245300833
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 11,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.38024015580232257,
+          "worstCaseImpact": 0.38024015580232257
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.36756548397679834,
+          "worstCaseImpact": 0.36756548397679834
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12252182799439543,
+          "worstCaseImpact": 0.12252182799439543
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:reroute"
       ],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.11471743312278156,
-      "worstCaseImpact": 0.11471743312278156
+      "upperImpact": 0.12252182799439543,
+      "worstCaseImpact": 0.12252182799439543
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 13,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "upperImpact": 0.4366165257441388,
+          "worstCaseImpact": 0.4366165257441388
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4161904414152824,
+          "worstCaseImpact": 0.4161904414152824
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1387301471404068,
+          "worstCaseImpact": 0.1387301471404068
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:diversify"
       ],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.1224000447758073,
-      "worstCaseImpact": 0.1224000447758073
+      "upperImpact": 0.1387301471404068,
+      "worstCaseImpact": 0.1387301471404068
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33826289160508294,
+          "worstCaseImpact": 0.33826289160508294
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.32698746190735495,
+          "worstCaseImpact": 0.32698746190735495
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10899582063680802,
+          "worstCaseImpact": 0.10899582063680802
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer",
         "intervention:ukraine-commodity-compound-restress:reroute"
@@ -72,13 +308,64 @@
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10448014917308288,
-      "worstCaseImpact": 0.10448014917308288
+      "upperImpact": 0.10899582063680802,
+      "worstCaseImpact": 0.10899582063680802
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:diversify",
+          "leadTimeDays": 45
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 21,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "upperImpact": 0.37466355887176406,
+          "worstCaseImpact": 0.37466355887176406
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.35852477603266014,
+          "worstCaseImpact": 0.35852477603266014
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:diversify"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11950825867873982,
+          "worstCaseImpact": 0.11950825867873982
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer",
         "intervention:ukraine-commodity-compound-restress:diversify"
@@ -86,13 +373,63 @@
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10947384674754959,
-      "worstCaseImpact": 0.10947384674754959
+      "upperImpact": 0.11950825867873982,
+      "worstCaseImpact": 0.11950825867873982
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 24,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:diversify",
         "intervention:ukraine-commodity-compound-restress:reroute"
@@ -106,9 +443,67 @@
       "worstCaseImpact": null
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:diversify",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+          "leadTimeDays": 7
+        }
+      ],
       "centralImpact": null,
       "cost": 32,
       "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 7,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 90,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:diversify",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer",
         "intervention:ukraine-commodity-compound-restress:diversify",
@@ -124,48 +519,669 @@
       "worstCaseImpact": null
     }
   ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 7,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444444,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4366165257441388,
+              "worstCaseImpact": 0.4366165257441388
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4220626415753245,
+              "worstCaseImpact": 0.4220626415753245
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14068754719476745,
+              "worstCaseImpact": 0.14068754719476745
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.14068754719476745,
+          "worstCaseImpact": 0.14068754719476745
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37466355887176406,
+              "worstCaseImpact": 0.37466355887176406
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3621747735859847,
+              "worstCaseImpact": 0.3621747735859847
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1207249245300833,
+              "worstCaseImpact": 0.1207249245300833
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1207249245300833,
+          "worstCaseImpact": 0.1207249245300833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33826289160508294,
+              "worstCaseImpact": 0.33826289160508294
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.32698746190735495,
+              "worstCaseImpact": 0.32698746190735495
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10899582063680802,
+              "worstCaseImpact": 0.10899582063680802
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10899582063680802,
+          "worstCaseImpact": 0.10899582063680802
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444444,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4366165257441388,
+              "worstCaseImpact": 0.4366165257441388
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4220626415753245,
+              "worstCaseImpact": 0.4220626415753245
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14068754719476745,
+              "worstCaseImpact": 0.14068754719476745
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.14068754719476745,
+          "worstCaseImpact": 0.14068754719476745
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37466355887176406,
+              "worstCaseImpact": 0.37466355887176406
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3621747735859847,
+              "worstCaseImpact": 0.3621747735859847
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1207249245300833,
+              "worstCaseImpact": 0.1207249245300833
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1207249245300833,
+          "worstCaseImpact": 0.1207249245300833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33826289160508294,
+              "worstCaseImpact": 0.33826289160508294
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.32698746190735495,
+              "worstCaseImpact": 0.32698746190735495
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10899582063680802,
+              "worstCaseImpact": 0.10899582063680802
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10899582063680802,
+          "worstCaseImpact": 0.10899582063680802
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ]
+    },
+    {
+      "horizonDays": 90,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.06444444444444444,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4366165257441388,
+              "worstCaseImpact": 0.4366165257441388
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.4220626415753245,
+              "worstCaseImpact": 0.4220626415753245
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14068754719476745,
+              "worstCaseImpact": 0.14068754719476745
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.14068754719476745,
+          "worstCaseImpact": 0.14068754719476745
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.37466355887176406,
+              "worstCaseImpact": 0.37466355887176406
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3621747735859847,
+              "worstCaseImpact": 0.3621747735859847
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1207249245300833,
+              "worstCaseImpact": 0.1207249245300833
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1207249245300833,
+          "worstCaseImpact": 0.1207249245300833
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.06444444444444444,
+          "cost": 19,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.2,
+              "horizonDays": 7,
+              "lowerImpact": 0.2,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.33826289160508294,
+              "worstCaseImpact": 0.33826289160508294
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.19333333333333333,
+              "horizonDays": 30,
+              "lowerImpact": 0.19333333333333333,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.32698746190735495,
+              "worstCaseImpact": 0.32698746190735495
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:ukraine-commodity-compound-restress:buffer",
+                "intervention:ukraine-commodity-compound-restress:reroute"
+              ],
+              "centralImpact": 0.06444444444444444,
+              "horizonDays": 90,
+              "lowerImpact": 0.06444444444444444,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.10899582063680802,
+              "worstCaseImpact": 0.10899582063680802
+            }
+          ],
+          "interventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "lowerImpact": 0.06444444444444444,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.10899582063680802,
+          "worstCaseImpact": 0.10899582063680802
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:ukraine-commodity-compound-restress:buffer",
+        "intervention:ukraine-commodity-compound-restress:reroute"
+      ]
+    }
+  ],
   "paretoFrontier": [
     {
+      "activationSchedule": [],
       "centralImpact": 0.06444444444444444,
       "cost": 0,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4366165257441388,
+          "worstCaseImpact": 0.4366165257441388
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.4220626415753245,
+          "worstCaseImpact": 0.4220626415753245
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14068754719476745,
+          "worstCaseImpact": 0.14068754719476745
+        }
+      ],
       "interventionIds": [],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "do_not_act",
-      "upperImpact": 0.13421702159839816,
-      "worstCaseImpact": 0.13421702159839816
+      "upperImpact": 0.14068754719476745,
+      "worstCaseImpact": 0.14068754719476745
     },
     {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        }
+      ],
       "centralImpact": 0.06444444444444444,
       "cost": 8,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.37466355887176406,
+          "worstCaseImpact": 0.37466355887176406
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3621747735859847,
+          "worstCaseImpact": 0.3621747735859847
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1207249245300833,
+          "worstCaseImpact": 0.1207249245300833
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer"
       ],
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.11715488168223365,
-      "worstCaseImpact": 0.11715488168223365
+      "upperImpact": 0.1207249245300833,
+      "worstCaseImpact": 0.1207249245300833
     },
     {
-      "centralImpact": 0.06444444444444444,
-      "cost": 11,
-      "feasible": true,
-      "interventionIds": [
-        "intervention:ukraine-commodity-compound-restress:reroute"
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:buffer",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:ukraine-commodity-compound-restress:reroute",
+          "leadTimeDays": 7
+        }
       ],
-      "lowerImpact": 0.06444444444444444,
-      "reasons": [],
-      "strategy": "intervene",
-      "upperImpact": 0.11471743312278156,
-      "worstCaseImpact": 0.11471743312278156
-    },
-    {
       "centralImpact": 0.06444444444444444,
       "cost": 19,
       "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.2,
+          "horizonDays": 7,
+          "lowerImpact": 0.2,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.33826289160508294,
+          "worstCaseImpact": 0.33826289160508294
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.19333333333333333,
+          "horizonDays": 30,
+          "lowerImpact": 0.19333333333333333,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.32698746190735495,
+          "worstCaseImpact": 0.32698746190735495
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:ukraine-commodity-compound-restress:buffer",
+            "intervention:ukraine-commodity-compound-restress:reroute"
+          ],
+          "centralImpact": 0.06444444444444444,
+          "horizonDays": 90,
+          "lowerImpact": 0.06444444444444444,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.10899582063680802,
+          "worstCaseImpact": 0.10899582063680802
+        }
+      ],
       "interventionIds": [
         "intervention:ukraine-commodity-compound-restress:buffer",
         "intervention:ukraine-commodity-compound-restress:reroute"
@@ -173,8 +1189,8 @@
       "lowerImpact": 0.06444444444444444,
       "reasons": [],
       "strategy": "intervene",
-      "upperImpact": 0.10448014917308288,
-      "worstCaseImpact": 0.10448014917308288
+      "upperImpact": 0.10899582063680802,
+      "worstCaseImpact": 0.10899582063680802
     }
   ],
   "recommendationStatus": "evidence_required",
@@ -186,7 +1202,7 @@
     {
       "fromBundleIds": [],
       "parameter": "risk_value_per_unit",
-      "threshold": 468.8743639020845,
+      "threshold": 400.74894638732957,
       "toBundleIds": [
         "intervention:ukraine-commodity-compound-restress:buffer"
       ]
@@ -196,17 +1212,7 @@
         "intervention:ukraine-commodity-compound-restress:buffer"
       ],
       "parameter": "risk_value_per_unit",
-      "threshold": 1230.7952052429628,
-      "toBundleIds": [
-        "intervention:ukraine-commodity-compound-restress:reroute"
-      ]
-    },
-    {
-      "fromBundleIds": [
-        "intervention:ukraine-commodity-compound-restress:reroute"
-      ],
-      "parameter": "risk_value_per_unit",
-      "threshold": 781.4572731701428,
+      "threshold": 937.838056520814,
       "toBundleIds": [
         "intervention:ukraine-commodity-compound-restress:buffer",
         "intervention:ukraine-commodity-compound-restress:reroute"

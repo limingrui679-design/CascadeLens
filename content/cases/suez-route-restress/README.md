@@ -16,7 +16,7 @@ The public reference below is scenario context only. It does not supply the grap
 
 - Context: [Navigation in the Suez Canal restored after the Ever Given incident](https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx)
 - Publisher: Suez Canal Authority
-- Snapshot digest: `9191b88578d7fe3c39158fd3f9283a9b9edc56803a08a60de80f12f041e0a5a3`
+- Snapshot digest: `08794b0b602794aa19963fa21ac0f9f5a9f0339f721959c05fc1f20e88d7bca1`
 - Lower / central / upper total impact: 0.064444 / 0.064444 / 0.163606
 - Recommendation status: `evidence_required`
 

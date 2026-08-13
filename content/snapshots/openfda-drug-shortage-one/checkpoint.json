@@ -1,0 +1,12 @@
+{
+  "completed": {
+    "partition-000001": {
+      "manifestPath": "partition-000001.manifest.json",
+      "normalizedPath": "partition-000001.normalized.json",
+      "payloadPath": "partition-000001.payload",
+      "worldGraphPath": "partition-000001.worldgraph.json"
+    }
+  },
+  "connectorId": "openfda-drug-shortages",
+  "schemaVersion": "0.1.0"
+}

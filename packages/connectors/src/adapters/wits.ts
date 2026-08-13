@@ -1,6 +1,6 @@
 import { connectorById } from "../catalog";
 import type { ConnectorAdapter } from "../types";
-import { fact, finite, isoPeriod, parseJson, safeSegment } from "../util";
+import { fact, finite, isoPeriod, parseJson, stableFactId } from "../util";
 
 interface WitsQuery {
   datasource: "tradestats-trade" | "tradestats-tariff" | "tradestats-development" | "trn";
@@ -34,7 +34,7 @@ export const witsAdapter: ConnectorAdapter<WitsQuery> = {
         ? Object.values(candidate as Record<string, unknown>).flatMap((item) => Array.isArray(item) ? item : [])
         : [];
     if (rows.length === 0) throw new TypeError("WITS payload does not expose a supported data array.");
-    return rows.map((raw, index) => {
+    return rows.map((raw) => {
       const row = raw as Record<string, unknown>;
       const reporter = row.reporter ?? row.Reporter ?? row.REPORTER;
       const partner = row.partner ?? row.Partner ?? row.PARTNER;
@@ -43,7 +43,11 @@ export const witsAdapter: ConnectorAdapter<WitsQuery> = {
       const indicator = row.indicator ?? row.Indicator ?? row.INDICATOR;
       return fact(
         {
-          id: `wits:${safeSegment(reporter)}:${safeSegment(partner)}:${safeSegment(product)}:${safeSegment(year)}:${safeSegment(indicator)}:${index}`,
+          id: stableFactId(
+            "wits",
+            [reporter, partner, product, year, indicator],
+            row,
+          ),
           kind: "trade_tariff_indicator",
           validFrom: isoPeriod(year, context.retrievedAt),
           evidenceGrade: "OFFICIAL_OBSERVED",

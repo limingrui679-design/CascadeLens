@@ -1,4 +1,12 @@
-import { sha256Text, stableStringify } from "./canonical";
+import {
+  compareCanonicalStrings,
+  sha256Text,
+  stableStringify,
+} from "./canonical";
+import { runCascadeBounds } from "./cascade";
+import { analyzeInterventions } from "./interventions";
+import { scoreReplay } from "./benchmark";
+import { valueObservations } from "./observability";
 import { validateScenario } from "./shockscript";
 import { validateScenarioAgainstSnapshot } from "./contracts";
 import { isIsoDateTime } from "./temporal";
@@ -8,11 +16,13 @@ import {
   SCHEMA_VERSION,
   type AssumptionRegister,
   type BenchmarkResult,
+  type CandidateObservation,
   type CascadeBounds,
   type GraphSnapshot,
   type InterventionAnalysis,
   type ModelCard,
   type ObservationValue,
+  type OutcomeObservation,
   type RiskPack,
   type RiskPackManifest,
   type ShockScenario,
@@ -23,6 +33,9 @@ const requiredPayloadPaths = [
   "REBUILD.txt",
   "assumptions.json",
   "graph/snapshot.json",
+  "inputs/benchmark-outcomes.json",
+  "inputs/observation-candidates.json",
+  "inputs/observability-config.json",
   "limitations.json",
   "model-card.json",
   "results/benchmark.json",
@@ -35,7 +48,7 @@ const requiredPayloadPaths = [
 
 function checksumText(checksums: Record<string, string>): string {
   return Object.entries(checksums)
-    .sort(([left], [right]) => left.localeCompare(right))
+    .sort(([left], [right]) => compareCanonicalStrings(left, right))
     .map(([path, digest]) => `${digest}  ${path}`)
     .join("\n") + "\n";
 }
@@ -56,7 +69,7 @@ function truthfulStatuses(
       ? "historically_scored"
       : "scenario_only",
   );
-  return [...statuses].sort();
+  return [...statuses].sort(compareCanonicalStrings);
 }
 
 export interface RiskPackInput {
@@ -70,10 +83,42 @@ export interface RiskPackInput {
   assumptions: AssumptionRegister;
   modelCard: ModelCard;
   observationValues: ObservationValue[];
+  benchmarkOutcomes?: OutcomeObservation[];
+  observationCandidates?: CandidateObservation[];
+  riskValuePerUnit?: number;
   rebuildCommand: string;
 }
 
 export async function createRiskPack(input: RiskPackInput): Promise<RiskPack> {
+  const benchmarkOutcomes = input.benchmarkOutcomes ?? [];
+  const observationCandidates = input.observationCandidates ?? [];
+  const riskValuePerUnit = input.riskValuePerUnit ?? 100;
+  const [recomputedBounds, recomputedInterventions] = await Promise.all([
+    runCascadeBounds(input.snapshot, input.scenario),
+    analyzeInterventions(input.snapshot, input.scenario),
+  ]);
+  const recomputedBenchmark = scoreReplay(
+    input.snapshot,
+    input.scenario,
+    recomputedBounds,
+    benchmarkOutcomes,
+  );
+  const recomputedObservations = await valueObservations(
+    input.snapshot,
+    input.scenario,
+    observationCandidates,
+    riskValuePerUnit,
+  );
+  for (const [label, supplied, recomputed] of [
+    ["cascade bounds", input.bounds, recomputedBounds],
+    ["intervention analysis", input.interventionAnalysis, recomputedInterventions],
+    ["benchmark", input.benchmark, recomputedBenchmark],
+    ["observability", input.observationValues, recomputedObservations],
+  ] as const) {
+    if (stableStringify(supplied) !== stableStringify(recomputed)) {
+      throw new TypeError(`RiskPack ${label} does not match deterministic recomputation.`);
+    }
+  }
   const payload: Record<string, string> = {
     "scenario.json": stableStringify(input.scenario, 2) + "\n",
     "graph/snapshot.json": stableStringify(input.snapshot, 2) + "\n",
@@ -81,6 +126,9 @@ export async function createRiskPack(input: RiskPackInput): Promise<RiskPack> {
     "results/interventions.json": stableStringify(input.interventionAnalysis, 2) + "\n",
     "results/observability.json": stableStringify(input.observationValues, 2) + "\n",
     "results/benchmark.json": stableStringify(input.benchmark, 2) + "\n",
+    "inputs/benchmark-outcomes.json": stableStringify(benchmarkOutcomes, 2) + "\n",
+    "inputs/observation-candidates.json": stableStringify(observationCandidates, 2) + "\n",
+    "inputs/observability-config.json": stableStringify({ riskValuePerUnit }, 2) + "\n",
     "sources/manifest.json": stableStringify(input.snapshot.sources, 2) + "\n",
     "assumptions.json": stableStringify(input.assumptions, 2) + "\n",
     "model-card.json": stableStringify(input.modelCard, 2) + "\n",
@@ -103,7 +151,8 @@ export async function createRiskPack(input: RiskPackInput): Promise<RiskPack> {
     classification: input.scenario.classification,
     generatedAt: input.generatedAt,
     snapshotDigest: input.snapshot.contentDigest,
-    files: Object.keys(payload).sort(),
+    verificationMode: "recomputed",
+    files: Object.keys(payload).sort(compareCanonicalStrings),
     truthfulStatus: truthfulStatuses(input.snapshot, input.benchmark),
   };
   const files: Record<string, string> = {
@@ -138,22 +187,25 @@ export async function verifyRiskPack(pack: RiskPack): Promise<string[]> {
   for (const path of declaredFiles) {
     if (!safePathPattern.test(path)) issues.push(`unsafe_manifest_path:${path}`);
   }
-  const expectedPayload = [...declaredFiles].sort();
+  const expectedPayload = [...declaredFiles].sort(compareCanonicalStrings);
   const actualPayload = Object.keys(pack.files)
     .filter((path) => path !== "manifest.json" && path !== "checksums.sha256")
-    .sort();
+    .sort(compareCanonicalStrings);
   if (JSON.stringify(expectedPayload) !== JSON.stringify(actualPayload)) {
     issues.push("manifest_file_set_mismatch");
   }
   if (
     JSON.stringify(expectedPayload) !==
-    JSON.stringify([...requiredPayloadPaths].sort())
+    JSON.stringify([...requiredPayloadPaths].sort(compareCanonicalStrings))
   ) {
     issues.push("required_file_set_mismatch");
   }
   const hashable = Object.keys(pack.files).filter((path) => path !== "checksums.sha256");
-  const checksumPaths = Object.keys(pack.checksums).sort();
-  if (JSON.stringify(hashable.sort()) !== JSON.stringify(checksumPaths)) {
+  const checksumPaths = Object.keys(pack.checksums).sort(compareCanonicalStrings);
+  if (
+    JSON.stringify(hashable.sort(compareCanonicalStrings)) !==
+    JSON.stringify(checksumPaths)
+  ) {
     issues.push("checksum_file_set_mismatch");
   }
   for (const path of hashable) {
@@ -184,9 +236,21 @@ export async function verifyRiskPack(pack: RiskPack): Promise<string[]> {
     const limitations = JSON.parse(pack.files["limitations.json"]) as unknown;
     const observations = JSON.parse(
       pack.files["results/observability.json"],
-    ) as unknown;
+    ) as ObservationValue[];
+    const benchmarkOutcomes = JSON.parse(
+      pack.files["inputs/benchmark-outcomes.json"],
+    ) as OutcomeObservation[];
+    const observationCandidates = JSON.parse(
+      pack.files["inputs/observation-candidates.json"],
+    ) as CandidateObservation[];
+    const observabilityConfig = JSON.parse(
+      pack.files["inputs/observability-config.json"],
+    ) as { riskValuePerUnit?: number };
     if (manifest.schemaVersion !== SCHEMA_VERSION) issues.push("manifest_schema_version_mismatch");
     if (manifest.engineVersion !== ENGINE_VERSION) issues.push("manifest_engine_version_mismatch");
+    if (manifest.verificationMode !== "recomputed") {
+      issues.push("manifest_verification_mode_mismatch");
+    }
     if (!isIsoDateTime(manifest.generatedAt)) issues.push("invalid_manifest_generated_at");
     if (typeof manifest.packId !== "string" || manifest.packId.trim() === "") {
       issues.push("invalid_pack_id");
@@ -299,6 +363,14 @@ export async function verifyRiskPack(pack: RiskPack): Promise<string[]> {
       issues.push("source_manifest_mismatch");
     }
     if (!Array.isArray(observations)) issues.push("invalid_observability_output");
+    if (!Array.isArray(benchmarkOutcomes)) issues.push("invalid_benchmark_outcomes");
+    if (!Array.isArray(observationCandidates)) issues.push("invalid_observation_candidates");
+    if (
+      !Number.isFinite(observabilityConfig.riskValuePerUnit) ||
+      observabilityConfig.riskValuePerUnit! <= 0
+    ) {
+      issues.push("invalid_observability_config");
+    }
     if (!limitations || typeof limitations !== "object") issues.push("invalid_limitations");
     if (typeof pack.files["REBUILD.txt"] !== "string" || pack.files["REBUILD.txt"].trim() === "") {
       issues.push("missing_rebuild_command");
@@ -313,8 +385,73 @@ export async function verifyRiskPack(pack: RiskPack): Promise<string[]> {
     ) {
       issues.push("truthful_status_mismatch");
     }
+
+    if (
+      Array.isArray(benchmarkOutcomes) &&
+      Array.isArray(observationCandidates) &&
+      Number.isFinite(observabilityConfig.riskValuePerUnit) &&
+      observabilityConfig.riskValuePerUnit! > 0
+    ) {
+      const [recomputedBounds, recomputedInterventions] = await Promise.all([
+        runCascadeBounds(snapshot, scenario),
+        analyzeInterventions(snapshot, scenario),
+      ]);
+      const recomputedBenchmark = scoreReplay(
+        snapshot,
+        scenario,
+        recomputedBounds,
+        benchmarkOutcomes,
+      );
+      const recomputedObservations = await valueObservations(
+        snapshot,
+        scenario,
+        observationCandidates,
+        observabilityConfig.riskValuePerUnit!,
+      );
+      for (const [path, supplied, recomputed] of [
+        ["results/cascade-bounds.json", bounds, recomputedBounds],
+        ["results/interventions.json", interventions, recomputedInterventions],
+        ["results/benchmark.json", benchmark, recomputedBenchmark],
+        ["results/observability.json", observations, recomputedObservations],
+      ] as const) {
+        if (stableStringify(supplied) !== stableStringify(recomputed)) {
+          issues.push(`derived_output_mismatch:${path}`);
+        }
+      }
+    }
   } catch (error) {
     issues.push(`invalid_json:${error instanceof Error ? error.message : String(error)}`);
   }
-  return [...new Set(issues)].sort();
+  return [...new Set(issues)].sort(compareCanonicalStrings);
+}
+
+export interface RiskPackVerificationReport {
+  status: "recomputed" | "invalid";
+  packDigest: string;
+  expectedDigestMatched: boolean | null;
+  issues: string[];
+}
+
+export async function verifyRiskPackDetailed(
+  pack: RiskPack,
+  expectedDigest?: string,
+): Promise<RiskPackVerificationReport> {
+  const issues = await verifyRiskPack(pack);
+  const packDigest = await sha256Text(pack.files?.["checksums.sha256"] ?? "");
+  let expectedDigestMatched: boolean | null = null;
+  if (expectedDigest !== undefined) {
+    expectedDigestMatched = packDigest === expectedDigest;
+    if (!/^[a-f0-9]{64}$/.test(expectedDigest)) {
+      issues.push("invalid_expected_pack_digest");
+    } else if (!expectedDigestMatched) {
+      issues.push("external_pack_digest_mismatch");
+    }
+  }
+  const uniqueIssues = [...new Set(issues)].sort(compareCanonicalStrings);
+  return {
+    status: uniqueIssues.length === 0 ? "recomputed" : "invalid",
+    packDigest,
+    expectedDigestMatched,
+    issues: uniqueIssues,
+  };
 }

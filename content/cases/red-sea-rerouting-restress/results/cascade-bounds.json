@@ -3,7 +3,7 @@
     "bound": "central",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -60,9 +60,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
-    "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+    "simulatedDays": 90,
+    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
     "totalWeightedImpact": 0.04975490196078431,
     "totalWeightedPeakEnvelope": 0.15441176470588233,
     "warnings": [
@@ -75,7 +77,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0.15441176470588233,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -132,9 +134,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 7,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.15441176470588233,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -146,7 +150,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0.15441176470588233,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -203,9 +207,11 @@
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 7,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.15441176470588233,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -216,7 +222,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0.38705263033599774,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -245,7 +251,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.5535,
-            "impact": 0.4744285714285715,
+            "impact": 0.5535,
             "nodeId": "node:red-sea-rerouting-restress:voyage",
             "peakDirectImpact": 0,
             "peakImpact": 0.5535
@@ -260,7 +266,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.33132509999999993,
-            "impact": 0.23666078571428567,
+            "impact": 0.33132509999999993,
             "nodeId": "node:red-sea-rerouting-restress:inputs",
             "peakDirectImpact": 0,
             "peakImpact": 0.33132509999999993
@@ -275,7 +281,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0.21463239977999993,
-            "impact": 0.12264708558857139,
+            "impact": 0.21463239977999993,
             "nodeId": "node:red-sea-rerouting-restress:production",
             "peakDirectImpact": 0,
             "peakImpact": 0.21463239977999993
@@ -290,17 +296,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0.11791904043913193,
-            "impact": 0.05053673161677082,
+            "impact": 0.11791904043913193,
             "nodeId": "node:red-sea-rerouting-restress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.11791904043913193
           }
         ],
         "iterations": 7,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
-        "totalWeightedImpact": 0.32083755291017546,
+        "simulatedDays": 7,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "totalWeightedImpact": 0.38705263033599774,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
         "warnings": []
       }
@@ -308,9 +316,9 @@
     {
       "central": {
         "bound": "central",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -367,22 +375,23 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 30,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.14926470588235294,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "horizonDays": 30,
       "lower": {
         "bound": "lower",
-        "converged": false,
+        "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -439,21 +448,22 @@
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 30,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.14926470588235294,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
-          "Cascade had not settled by the requested horizon.",
           "No eligible dependency edges were visible for this bound."
         ]
       },
       "upper": {
         "bound": "upper",
-        "converged": false,
-        "endWeightedImpact": 0.23264086563011538,
-        "engineVersion": "0.1.0",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -481,7 +491,7 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.5535,
+            "endImpact": 0,
             "impact": 0.5350499999999998,
             "nodeId": "node:red-sea-rerouting-restress:voyage",
             "peakDirectImpact": 0,
@@ -496,8 +506,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.33132509999999993,
-            "impact": 0.30923676000000005,
+            "endImpact": 0,
+            "impact": 0.3202809300000001,
             "nodeId": "node:red-sea-rerouting-restress:inputs",
             "peakDirectImpact": 0,
             "peakImpact": 0.33132509999999993
@@ -511,8 +521,8 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.21463239977999993,
-            "impact": 0.19316915980200006,
+            "endImpact": 0,
+            "impact": 0.10016178656399997,
             "nodeId": "node:red-sea-rerouting-restress:production",
             "peakDirectImpact": 0,
             "peakImpact": 0.21463239977999993
@@ -526,22 +536,22 @@
               }
             ],
             "directImpact": 0,
-            "endImpact": 0.11791904043913193,
-            "impact": 0.10219650171391427,
+            "endImpact": 0,
+            "impact": 0.05502888553826157,
             "nodeId": "node:red-sea-rerouting-restress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.11791904043913193
           }
         ],
         "iterations": 30,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
-        "totalWeightedImpact": 0.3664553867797764,
+        "simulatedDays": 30,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "totalWeightedImpact": 0.33833946008817145,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
-        "warnings": [
-          "Cascade had not settled by the requested horizon."
-        ]
+        "warnings": []
       }
     },
     {
@@ -549,7 +559,7 @@
         "bound": "central",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -606,9 +616,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 90,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.04975490196078431,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -620,7 +632,7 @@
         "bound": "lower",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 4,
@@ -677,9 +689,11 @@
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+        "simulatedDays": 90,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
         "totalWeightedImpact": 0.04975490196078431,
         "totalWeightedPeakEnvelope": 0.15441176470588233,
         "warnings": [
@@ -690,7 +704,7 @@
         "bound": "upper",
         "converged": true,
         "endWeightedImpact": 0,
-        "engineVersion": "0.1.0",
+        "engineVersion": "0.2.0",
         "excludedEdgeCounts": {
           "ENTITY_REPORTED": 0,
           "MODEL_INFERRED": 0,
@@ -749,7 +763,7 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.06915932881800002,
+            "impact": 0.03338726218799999,
             "nodeId": "node:red-sea-rerouting-restress:production",
             "peakDirectImpact": 0,
             "peakImpact": 0.21463239977999993
@@ -764,17 +778,19 @@
             ],
             "directImpact": 0,
             "endImpact": 0,
-            "impact": 0.03799613525260914,
+            "impact": 0.018342961846087188,
             "nodeId": "node:red-sea-rerouting-restress:delivery",
             "peakDirectImpact": 0,
             "peakImpact": 0.11791904043913193
           }
         ],
         "iterations": 90,
+        "maxSolverIterationsUsed": 1,
         "metric": "time_weighted_mean_node_impact",
         "scenarioId": "red-sea-rerouting-restress",
-        "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
-        "totalWeightedImpact": 0.12471695866382147,
+        "simulatedDays": 90,
+        "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+        "totalWeightedImpact": 0.11277982002939048,
         "totalWeightedPeakEnvelope": 0.38705263033599774,
         "warnings": []
       }
@@ -784,7 +800,7 @@
     "bound": "lower",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 4,
@@ -841,9 +857,11 @@
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
-    "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
+    "simulatedDays": 90,
+    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
     "totalWeightedImpact": 0.04975490196078431,
     "totalWeightedPeakEnvelope": 0.15441176470588233,
     "warnings": [
@@ -854,7 +872,7 @@
     "bound": "upper",
     "converged": true,
     "endWeightedImpact": 0,
-    "engineVersion": "0.1.0",
+    "engineVersion": "0.2.0",
     "excludedEdgeCounts": {
       "ENTITY_REPORTED": 0,
       "MODEL_INFERRED": 0,
@@ -913,7 +931,7 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.06915932881800002,
+        "impact": 0.03338726218799999,
         "nodeId": "node:red-sea-rerouting-restress:production",
         "peakDirectImpact": 0,
         "peakImpact": 0.21463239977999993
@@ -928,17 +946,19 @@
         ],
         "directImpact": 0,
         "endImpact": 0,
-        "impact": 0.03799613525260914,
+        "impact": 0.018342961846087188,
         "nodeId": "node:red-sea-rerouting-restress:delivery",
         "peakDirectImpact": 0,
         "peakImpact": 0.11791904043913193
       }
     ],
     "iterations": 90,
+    "maxSolverIterationsUsed": 1,
     "metric": "time_weighted_mean_node_impact",
     "scenarioId": "red-sea-rerouting-restress",
-    "snapshotDigest": "00dae1874feddc0e2762a861f4fecfcfe1b6816dddf37deab9f87f78f8c0f5ee",
-    "totalWeightedImpact": 0.12471695866382147,
+    "simulatedDays": 90,
+    "snapshotDigest": "c6d40d4d0005712d0173d3bc1ac37e8206b258430e4a6eb7a761660f946d8df8",
+    "totalWeightedImpact": 0.11277982002939048,
     "totalWeightedPeakEnvelope": 0.38705263033599774,
     "warnings": []
   }
