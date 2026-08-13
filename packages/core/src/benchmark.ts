@@ -1,5 +1,5 @@
 import { validateSnapshot } from "./worldgraph";
-import { toEpoch } from "./temporal";
+import { isIsoDateTime, toEpoch } from "./temporal";
 import type {
   BenchmarkResult,
   CascadeBounds,
@@ -57,11 +57,23 @@ export function scoreReplay(
     .filter((issue) => ["future_source", "future_evidence", "outcome_leakage"].includes(issue.code))
     .map((issue) => `${issue.path}: ${issue.message}`);
   const sourceById = new Map(snapshot.sources.map((source) => [source.id, source]));
+  const nodeIds = new Set(snapshot.nodes.map((node) => node.id));
+  const seenOutcomeNodeIds = new Set<string>();
   for (const [index, outcome] of outcomes.entries()) {
     const source = sourceById.get(outcome.sourceId);
     if (!source) leakageIssues.push(`outcomes[${index}]: unknown source ${outcome.sourceId}`);
     else if (source.role !== "outcome") leakageIssues.push(`outcomes[${index}]: source ${outcome.sourceId} is not outcome-only`);
-    if (toEpoch(outcome.observedAt) <= toEpoch(scenario.decisionCutoff)) {
+    if (!nodeIds.has(outcome.nodeId)) {
+      leakageIssues.push(`outcomes[${index}]: unknown node ${outcome.nodeId}`);
+    }
+    if (seenOutcomeNodeIds.has(outcome.nodeId)) {
+      leakageIssues.push(`outcomes[${index}]: duplicate outcome node ${outcome.nodeId}`);
+    } else {
+      seenOutcomeNodeIds.add(outcome.nodeId);
+    }
+    if (!isIsoDateTime(outcome.observedAt)) {
+      leakageIssues.push(`outcomes[${index}]: observedAt must be an ISO-8601 date-time with timezone`);
+    } else if (toEpoch(outcome.observedAt) <= toEpoch(scenario.decisionCutoff)) {
       leakageIssues.push(`outcomes[${index}]: outcome must be recorded after the decision cutoff`);
     }
     if (!Number.isFinite(outcome.observedImpact) || outcome.observedImpact < 0 || outcome.observedImpact > 1) {

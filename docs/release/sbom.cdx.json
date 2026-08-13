@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:52d5cfb4-1d47-5286-a8fe-c753e35b125d",
+  "serialNumber": "urn:uuid:5d960600-f8c6-5543-b0b1-188d95fb9f48",
   "version": 1,
   "metadata": {
     "timestamp": "2026-08-13T00:00:00.000Z",
@@ -10,14 +10,14 @@
         {
           "type": "application",
           "name": "CascadeLens SBOM generator",
-          "version": "0.1.0"
+          "version": "0.1.1"
         }
       ]
     },
     "component": {
       "type": "application",
       "name": "cascadelens",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "licenses": [
         {
           "license": {
@@ -25,7 +25,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/cascadelens@0.1.0"
+      "purl": "pkg:npm/cascadelens@0.1.1"
     },
     "properties": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "name": "cascadelens:packageLockSha256",
-        "value": "565d1b1e6e3d659f418c50fa37b8671372283b1ed16b182a219891d6f8f14179"
+        "value": "0e818604ce5c8c96e7919ede63250b2d2defed4787412dbcba53b221bc8c58ba"
       }
     ]
   },
@@ -606,9 +606,9 @@
     {
       "type": "library",
       "name": "@cloudflare/vite-plugin",
-      "version": "1.51.3",
+      "version": "1.52.0",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fvite-plugin@1.51.3",
+      "purl": "pkg:npm/%40cloudflare%2Fvite-plugin@1.52.0",
       "licenses": [
         {
           "license": {
@@ -623,20 +623,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-8TzfBpQJH/VvIsmCGzHEGibD9fWu5ax6CEhVN/fU96te0J4Q99sMrgx4WmjDBZksTs1itrpE0d+OAT3xrNVI3g=="
+          "value": "sha512-uQ7bdlmR7ZbEHa77BuolIJIOVBaM0VCwxCnkgx+E/YMtwGdKH43rTpL9OZ1GJzqYvk6xfHyoZpqqfLXHPnD7Zw=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/vite-plugin/-/vite-plugin-1.51.3.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/vite-plugin/-/vite-plugin-1.52.0.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "@cloudflare/workerd-darwin-64",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fworkerd-darwin-64@1.20260804.1",
+      "purl": "pkg:npm/%40cloudflare%2Fworkerd-darwin-64@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -651,20 +651,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-191/PPEFicRK2wK69eXzSjnLgHL79k7zR2VUpyIr8rhFgGns1b5bTHgnBuUrgU2LPbEtwbE5eL2hJ0uhLAFEow=="
+          "value": "sha512-i5jqz+ywtOefr0AJbiAc8qxBLfSim/B0WJG7aW3B+pWnoVfMJdUQvi+BWcFKZJ0MoCci3KadTx6g31VfuEEqpQ=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/workerd-darwin-64/-/workerd-darwin-64-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/workerd-darwin-64/-/workerd-darwin-64-1.20260811.1.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "@cloudflare/workerd-darwin-arm64",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fworkerd-darwin-arm64@1.20260804.1",
+      "purl": "pkg:npm/%40cloudflare%2Fworkerd-darwin-arm64@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -679,20 +679,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-aI2cAFLsrNkSz3kLSQrgrO9ICTfY7jb2h0jgaWDE9mQLQQDfpXeYrKWt07tTgMmeNP79o9w3NZe3aqtt8mTGHQ=="
+          "value": "sha512-NoOUM/nvaDdm2Onlnz33FikWjtatzulNtvwvy4xs0IrHaTCHwC0c8NwIt6s+AI13FkDs02/vm2I3GTPLCT9+hQ=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/workerd-darwin-arm64/-/workerd-darwin-arm64-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/workerd-darwin-arm64/-/workerd-darwin-arm64-1.20260811.1.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "@cloudflare/workerd-linux-64",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fworkerd-linux-64@1.20260804.1",
+      "purl": "pkg:npm/%40cloudflare%2Fworkerd-linux-64@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -707,20 +707,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-KBCjxBIlN2jucfQGaTK4EgmPsWzQgYR/zYhPfi3mkWwdoTyG1dgrt2aizKps/SYse85ci/SOxojKk0/K7vstPw=="
+          "value": "sha512-sdYq2jL1AD1supa3fsi5O4zTB28wSjvTHj7Migh6/ts8EROPdvrSwv+rdGHhv8HJNAz/wbIAY3wZsi1Rw4uUIg=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20260811.1.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "@cloudflare/workerd-linux-arm64",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fworkerd-linux-arm64@1.20260804.1",
+      "purl": "pkg:npm/%40cloudflare%2Fworkerd-linux-arm64@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -735,20 +735,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-7lswfarBZ7xkHpTFrNb74ExwOltIalVaASc+GOYfCNtnwFxK/JZSVByfm/hnZEBtrHU7fMY2z7dYT64rwS0pHg=="
+          "value": "sha512-RIRv4shbu1kg05sD+DHTpSFCNnb5Dl2SkPDMUykqZa508tkPqe7VVw7gO0Q5msTBGyL0FfFrLuRxwwfA8u5Sow=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/workerd-linux-arm64/-/workerd-linux-arm64-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/workerd-linux-arm64/-/workerd-linux-arm64-1.20260811.1.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "@cloudflare/workerd-windows-64",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/%40cloudflare%2Fworkerd-windows-64@1.20260804.1",
+      "purl": "pkg:npm/%40cloudflare%2Fworkerd-windows-64@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -763,11 +763,11 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-GOgRWYtxISN5rAWfx3K7zubt3xEn0/ZPFrbcLL+GwT4ouCKyNoHqfT1cPNB6Nx7t8BHEjnuTG7gkHO4Wd5ORdg=="
+          "value": "sha512-g6VquwjASlYAibcNW/0E6Zszht4qLkmnXOGwIjjRHl2A0Qz48kVeMcGvyH6eA0G9U3OzZojjYFpP+YeyQmmdjw=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/@cloudflare/workerd-windows-64/-/workerd-windows-64-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/@cloudflare/workerd-windows-64/-/workerd-windows-64-1.20260811.1.tgz"
         }
       ]
     },
@@ -13030,9 +13030,9 @@
     {
       "type": "library",
       "name": "miniflare",
-      "version": "5.20260804.1-alpha",
+      "version": "5.20260811.0-alpha",
       "scope": "excluded",
-      "purl": "pkg:npm/miniflare@5.20260804.1-alpha",
+      "purl": "pkg:npm/miniflare@5.20260811.0-alpha",
       "licenses": [
         {
           "license": {
@@ -13047,11 +13047,11 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-J0QBHEj+d75TyFE9VhH+2dXgvdYt/pfyDlm+9IiYUFocQvqYy9iuW1DIqNawh1N7Kr6iMrDzVkgDSdt6pA75uA=="
+          "value": "sha512-sypXsD5fjY88fZNedPqnwrwR1dwfnfbfW7MfvMyIfPJdtRiCCOpUnjWGeFVYYZ+0fQVICye6Juu+vZgzTEx8XA=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/miniflare/-/miniflare-5.20260804.1-alpha.tgz"
+          "value": "https://registry.npmjs.org/miniflare/-/miniflare-5.20260811.0-alpha.tgz"
         }
       ]
     },
@@ -17062,9 +17062,9 @@
     {
       "type": "library",
       "name": "workerd",
-      "version": "1.20260804.1",
+      "version": "1.20260811.1",
       "scope": "excluded",
-      "purl": "pkg:npm/workerd@1.20260804.1",
+      "purl": "pkg:npm/workerd@1.20260811.1",
       "licenses": [
         {
           "license": {
@@ -17079,20 +17079,20 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-b0P38g5/ssemwWxd/mafNYggEZ0ere7PCiUH6RCHkgqjRhhXTP45nDiL2L3iIvi8uF2IjNrGpVgMXEunCaeY/w=="
+          "value": "sha512-kh+FFm55JQ4ssxhHZV9VPdMQq3D1nHxNJgwxMtWGD4dGppJvLySdguTRDKgeNTvgq6heSz+6TTXyPSDGj8Yllw=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/workerd/-/workerd-1.20260804.1.tgz"
+          "value": "https://registry.npmjs.org/workerd/-/workerd-1.20260811.1.tgz"
         }
       ]
     },
     {
       "type": "library",
       "name": "wrangler",
-      "version": "4.121.0",
+      "version": "4.122.0",
       "scope": "excluded",
-      "purl": "pkg:npm/wrangler@4.121.0",
+      "purl": "pkg:npm/wrangler@4.122.0",
       "licenses": [
         {
           "license": {
@@ -17107,11 +17107,11 @@
         },
         {
           "name": "cascadelens:npmIntegrity",
-          "value": "sha512-dcARWk6CyaD0vJBSLjJn4K2yo+mYko73hzryq+t/9DXnyAq877RWIMl7uOMcDKs5dDXdoickNhZTKxBYT9XKsA=="
+          "value": "sha512-qkskzgQ76Y1qvVe5JARgvc3RISq6BC2rPoxQhFoKH1dKIwQc3GDFttQ/7m2OfeQ+tmQRzynv2dy/DXnxFCj2Lw=="
         },
         {
           "name": "cascadelens:resolved",
-          "value": "https://registry.npmjs.org/wrangler/-/wrangler-4.121.0.tgz"
+          "value": "https://registry.npmjs.org/wrangler/-/wrangler-4.122.0.tgz"
         }
       ]
     },

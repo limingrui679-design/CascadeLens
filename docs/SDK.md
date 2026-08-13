@@ -25,4 +25,4 @@ npm run example:sdk
 - `schemas/shockscript-0.1.0.schema.json`
 - `schemas/riskpack-manifest-0.1.0.schema.json`
 
-Version `0.1.0` rejects unknown ShockScript fields, unsupported schema versions, unsafe identifiers, invalid temporal ordering, outcome leakage, unregistered engines, and incompatible graph references.
+The current SDK rejects unknown ShockScript fields, unsupported schema versions, unsafe identifiers, invalid temporal ordering, outcome leakage, malformed or duplicate replay outcomes, unregistered engines, and incompatible graph references. The published artifact schemas remain at version `0.1.0`.

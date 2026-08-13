@@ -101,8 +101,10 @@ for (const path of await listFiles(root)) {
 const expectedHeaders = new Map([
   ["content-security-policy", /default-src 'self'.*frame-ancestors 'none'/],
   ["cross-origin-opener-policy", /^same-origin$/],
+  ["cross-origin-resource-policy", /^same-origin$/],
   ["permissions-policy", /camera=\(\).*microphone=\(\)/],
   ["referrer-policy", /^no-referrer$/],
+  ["strict-transport-security", /^max-age=63072000; includeSubDomains$/],
   ["x-content-type-options", /^nosniff$/],
   ["x-frame-options", /^DENY$/],
 ]);

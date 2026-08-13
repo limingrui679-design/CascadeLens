@@ -1,6 +1,6 @@
 {
   "name": "cascadelens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "releaseDate": "2026-08-13T00:00:00.000Z",
   "description": "Evidence-graded world graph and shock compiler for global systemic-risk analysis.",
   "private": true,
@@ -44,7 +44,7 @@
     "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.51.3",
+    "@cloudflare/vite-plugin": "^1.52.0",
     "@eslint/js": "9.39.4",
     "@next/eslint-plugin-next": "16.2.6",
     "@tailwindcss/postcss": "4.2.1",
@@ -70,7 +70,7 @@
     "typescript-eslint": "8.59.3",
     "vinext": "^1.0.0-beta.5",
     "vite": "^8.2.1",
-    "wrangler": "^4.121.0"
+    "wrangler": "^4.122.0"
   },
   "overrides": {
     "image-size": "$image-size"

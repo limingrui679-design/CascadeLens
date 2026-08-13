@@ -4,9 +4,9 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 
 It is designed around a hard boundary: observed relationships, entity reports, verified third-party records, text extractions, and model inferences are different kinds of evidence and must remain different in every result.
 
-> Current release: `v0.1.0`. This is a software-verified research release, not an empirically validated production decision system.
+> Current release: `v0.1.1`. This is a software-verified research release, not an empirically validated production decision system.
 
-[Open the public product](https://cascadelens.limingrui2.chatgpt.site) · [Inspect the release process](docs/RELEASE_PROCESS.md) · [Read the v0.1.0 self-review](docs/SELF_REVIEW_2026-08-13.md)
+[Open the public product](https://cascadelens.limingrui2.chatgpt.site) · [Inspect the release process](docs/RELEASE_PROCESS.md) · [Read the v0.1.1 five-pass review](docs/SELF_REVIEW_2026-08-13_v0.1.1.md)
 
 ## Quick start
 

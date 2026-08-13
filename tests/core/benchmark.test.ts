@@ -50,3 +50,33 @@ test("blocks an outcome that reuses an input source", async () => {
   assert.equal(benchmark.status, "blocked");
   assert.ok(benchmark.leakageIssues.some((item) => item.includes("not outcome-only")));
 });
+
+test("blocks malformed, unknown, or duplicate outcome observations without throwing", async () => {
+  const snapshot = await graphSnapshot();
+  const activeScenario = scenario();
+  const bounds = await runCascadeBounds(snapshot, activeScenario);
+  const benchmark = scoreReplay(snapshot, activeScenario, bounds, [
+    {
+      nodeId: "missing:node",
+      observedImpact: 0.2,
+      observedAt: "not-a-date",
+      sourceId: "src:outcome",
+    },
+    {
+      nodeId: "product:medical",
+      observedImpact: 0.3,
+      observedAt: "2021-04-01T00:00:00Z",
+      sourceId: "src:outcome",
+    },
+    {
+      nodeId: "product:medical",
+      observedImpact: 0.4,
+      observedAt: "2021-04-02T00:00:00Z",
+      sourceId: "src:outcome",
+    },
+  ]);
+  assert.equal(benchmark.status, "blocked");
+  assert.ok(benchmark.leakageIssues.some((item) => item.includes("unknown node missing:node")));
+  assert.ok(benchmark.leakageIssues.some((item) => item.includes("observedAt must be")));
+  assert.ok(benchmark.leakageIssues.some((item) => item.includes("duplicate outcome node product:medical")));
+});

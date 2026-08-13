@@ -18,18 +18,18 @@ This file is the completion ledger. A requirement is complete only when the evid
 | A12 | Twelve launch cases | Twelve classified, deterministic, scenario-only cases and complete RiskPacks in [`reference-cases.test.ts`](../tests/cases/reference-cases.test.ts) and [`validate-content.ts`](../scripts/validate-content.ts) | Verified |
 | A13 | Data catalog and license safety | [`DATA_LICENSES.md`](DATA_LICENSES.md), [`connectors.json`](../content/catalog/connectors.json), and [`manifest.test.ts`](../tests/connectors/manifest.test.ts) | Verified |
 | A14 | Web overview | Route/content/status assertions in [`rendered-html.test.mjs`](../tests/rendered-html.test.mjs) | Verified |
-| A15 | WorldGraph explorer | Semantic observed/inferred controls, selection interaction, keyboard/mobile browser QA recorded in [`SELF_REVIEW_2026-08-13.md`](SELF_REVIEW_2026-08-13.md) | Verified |
-| A16 | Scenario workbench | Recompute/share interaction plus complete export contract in [`workbench-export.test.ts`](../tests/web/workbench-export.test.ts) and the [self-review](SELF_REVIEW_2026-08-13.md) | Verified |
+| A15 | WorldGraph explorer | Semantic observed/inferred controls, selection interaction, keyboard/mobile browser QA recorded in [`SELF_REVIEW_2026-08-13_v0.1.1.md`](SELF_REVIEW_2026-08-13_v0.1.1.md) | Verified |
+| A16 | Scenario workbench | Recompute/share interaction plus complete export contract in [`workbench-export.test.ts`](../tests/web/workbench-export.test.ts) and the [self-review](SELF_REVIEW_2026-08-13_v0.1.1.md) | Verified |
 | A17 | Case, benchmark, data and method routes | Nine route categories, dynamic-case rendering, navigation, and download assertions in [`rendered-html.test.mjs`](../tests/rendered-html.test.mjs) | Verified |
 | A18 | CLI and TypeScript SDK | [`cli.test.ts`](../tests/cli/cli.test.ts), [`analyze-reference-case.ts`](../examples/typescript/analyze-reference-case.ts), and fresh-archive example commands | Verified |
-| A19 | Accessibility | Automated serious-impact audit, focus/reduced-motion assertions in [`accessibility.test.mjs`](../tests/accessibility.test.mjs), plus desktop/mobile keyboard QA | Verified |
+| A19 | Accessibility | Automated all-detectable-impact audit across every product and case route, focus/reduced-motion assertions in [`accessibility.test.mjs`](../tests/accessibility.test.mjs), plus desktop/mobile keyboard QA | Verified |
 | A20 | Security and untrusted-input limits | Repository secret scan, headers, dependency audit, bounded I/O/network, traversal and archive checks in [`check-security.ts`](../scripts/check-security.ts) and security-focused tests | Verified |
-| A21 | Performance | Enforced client and 20,000-node budgets in [`check-performance.ts`](../scripts/check-performance.ts) and measured results in the [self-review](SELF_REVIEW_2026-08-13.md) | Verified |
+| A21 | Performance | Enforced client and 20,000-node budgets in [`check-performance.ts`](../scripts/check-performance.ts) and measured results in the [self-review](SELF_REVIEW_2026-08-13_v0.1.1.md) | Verified |
 | A22 | Documentation and contribution path | [`README.md`](../README.md), [`ARCHITECTURE.md`](ARCHITECTURE.md), [`CLI.md`](CLI.md), [`SDK.md`](SDK.md), [`EXTENDING.md`](EXTENDING.md), and [`CONTRIBUTING.md`](../CONTRIBUTING.md) | Verified |
-| A23 | Release archive | [`prepare-release.ts`](../scripts/prepare-release.ts), deterministic CycloneDX assertions in [`sbom.test.ts`](../tests/release/sbom.test.ts), and detached `release/v0.1.0/release-manifest.json` plus `checksums.sha256` | Verified |
-| A24 | Fresh archive reproducibility | [`verify-release.ts`](../scripts/verify-release.ts) and detached `release/v0.1.0/verification-report.json` prove clean install, regeneration, and full CI without `.git` | Verified |
-| A25 | Public hosting | Hosting identity in [`.openai/hosting.json`](../.openai/hosting.json), exact release procedure in [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md), and reopened public URL receipt in the [self-review](SELF_REVIEW_2026-08-13.md) | Verified |
-| A26 | Documented self-review cycles | Dated issue/fix/rerun ledger with no unresolved P1/P2/P3 in [`SELF_REVIEW_2026-08-13.md`](SELF_REVIEW_2026-08-13.md) | Verified |
+| A23 | Release archive | [`prepare-release.ts`](../scripts/prepare-release.ts), deterministic CycloneDX assertions in [`sbom.test.ts`](../tests/release/sbom.test.ts), and detached `release/v0.1.1/release-manifest.json` plus `checksums.sha256` | Verified |
+| A24 | Fresh archive reproducibility | [`verify-release.ts`](../scripts/verify-release.ts) and detached `release/v0.1.1/verification-report.json` prove clean install, regeneration, and full CI without `.git` | Verified |
+| A25 | Public hosting | Hosting identity in [`.openai/hosting.json`](../.openai/hosting.json), exact release procedure in [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md), and reopened public URL receipt in the [self-review](SELF_REVIEW_2026-08-13_v0.1.1.md) | Verified |
+| A26 | Documented self-review cycles | Dated five-pass issue/fix/rerun ledger with no unresolved P1/P2/P3 in [`SELF_REVIEW_2026-08-13_v0.1.1.md`](SELF_REVIEW_2026-08-13_v0.1.1.md) | Verified |
 
 ## Scoring rule
 

@@ -2,6 +2,22 @@
 
 All notable release changes are recorded here. CascadeLens follows Semantic Versioning while pre-1.0 interfaces may evolve under the compatibility policy in `docs/SCHEMA_COMPATIBILITY.md`.
 
+## 0.1.1 — 2026-08-13
+
+### Fixed
+
+- Replay scoring now blocks unknown outcome nodes, duplicate node observations, and malformed outcome timestamps instead of silently dropping, double-weighting, or throwing on them.
+- Public responses now add same-origin resource isolation and a two-year HTTPS transport policy.
+
+### Improved
+
+- Accessibility regression coverage now audits every reference-case page and fails on every detectable impact level, while retaining explicit exclusions only for checks that JSDOM cannot evaluate reliably.
+- Rendered-route coverage now proves that unknown product and case URLs return a branded, non-leaking 404 response.
+
+### Evidence boundary
+
+This patch strengthens validation and release assurance. It does not add historical outcome scores, external model validation, organizational adoption, or demonstrated real-world impact.
+
 ## 0.1.0 — 2026-08-13
 
 ### Added

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import axe from "axe-core";
 import { JSDOM } from "jsdom";
@@ -20,19 +21,22 @@ async function render(path) {
   return response.text();
 }
 
+const caseCatalog = JSON.parse(
+  await readFile(new URL("../content/cases/catalog.json", import.meta.url), "utf8"),
+);
 const routes = [
   "/",
   "/workbench",
   "/worldgraph",
   "/cases",
-  "/cases/suez-route-restress",
+  ...caseCatalog.cases.map((item) => `/cases/${item.slug}`),
   "/benchmark",
   "/data",
   "/methodology",
   "/docs",
 ];
 
-test("server-rendered routes have no detectable serious accessibility violations", async () => {
+test("server-rendered routes have no detectable accessibility violations", async () => {
   for (const path of routes) {
     const dom = new JSDOM(await render(path), {
       pretendToBeVisual: true,
@@ -47,12 +51,9 @@ test("server-rendered routes have no detectable serious accessibility violations
         "link-in-text-block": { enabled: false },
       },
     });
-    const serious = result.violations.filter((item) =>
-      item.impact === "critical" || item.impact === "serious",
-    );
     assert.equal(
       JSON.stringify(
-        serious.map((item) => ({
+        result.violations.map((item) => ({
           id: item.id,
           impact: item.impact,
           nodes: item.nodes.map((node) => node.target),
