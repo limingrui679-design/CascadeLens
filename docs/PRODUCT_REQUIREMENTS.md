@@ -2,7 +2,7 @@
 
 Status: normative  
 Version: 0.1  
-Last updated: 2026-08-12
+Last updated: 2026-08-13
 
 CascadeLens is an evidence-graded, bitemporal world graph and executable shock-analysis platform for global supply-chain, financial, and critical-goods resilience. It must remain useful without proprietary data and must never present inferred relationships or simulated outcomes as observed facts.
 

@@ -37,3 +37,81 @@ test("values a missing edge without promoting it to observed evidence", async ()
   assert.equal(candidateEdge.evidence.grade, "MODEL_INFERRED");
   assert.equal(candidateEdge.evidence.reviewStatus, "not_required");
 });
+
+test("prices evidence that can change the preferred intervention and applies acquisition cost", async () => {
+  const snapshot = await graphSnapshot();
+  const candidateEdge = edge(
+    "edge:candidate-feedback",
+    "industry:hospital",
+    "product:medical",
+    "MODEL_INFERRED",
+    0.3,
+    0.3,
+    0.3,
+  );
+  const candidate = {
+    id: "candidate:feedback",
+    label: "Verify a possible feedback dependency",
+    candidateEdge,
+    probabilityPresent: 0.5,
+    acquisitionCost: 0.01,
+    acquisitionCostUnit: "normalized_cost",
+  };
+
+  const [worthAcquiring] = await valueObservations(
+    snapshot,
+    scenario(),
+    [candidate],
+    800,
+  );
+  assert.equal(worthAcquiring.status, "worth_acquiring");
+  assert.equal(worthAcquiring.probabilityDecisionChanges, 0.5);
+  assert.ok(worthAcquiring.expectedValueOfPerfectInformation > candidate.acquisitionCost);
+  assert.equal(
+    worthAcquiring.netValue,
+    worthAcquiring.expectedValueOfPerfectInformation - candidate.acquisitionCost,
+  );
+
+  const [tooExpensive] = await valueObservations(
+    snapshot,
+    scenario(),
+    [{ ...candidate, acquisitionCost: worthAcquiring.expectedValueOfPerfectInformation + 1 }],
+    800,
+  );
+  assert.equal(tooExpensive.status, "not_cost_effective");
+  assert.equal(
+    tooExpensive.expectedValueOfPerfectInformation,
+    worthAcquiring.expectedValueOfPerfectInformation,
+  );
+  assert.ok(tooExpensive.netValue < 0);
+  assert.equal(snapshot.edges.some((item) => item.id === candidateEdge.id), false);
+});
+
+test("rejects a non-positive risk valuation", async () => {
+  const snapshot = await graphSnapshot();
+  const candidateEdge = edge(
+    "edge:candidate-invalid-value",
+    "industry:hospital",
+    "product:medical",
+    "MODEL_INFERRED",
+    0.3,
+    0.3,
+    0.3,
+  );
+  await assert.rejects(
+    valueObservations(
+      snapshot,
+      scenario(),
+      [{
+        id: "candidate:invalid-value",
+        label: "Invalid valuation fixture",
+        candidateEdge,
+        probabilityPresent: 0.5,
+        acquisitionCost: 0.01,
+        acquisitionCostUnit: "normalized_cost",
+      }],
+      0,
+    ),
+    /riskValuePerUnit must be a positive finite number/,
+  );
+});

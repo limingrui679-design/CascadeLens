@@ -19,6 +19,23 @@ test("evaluates the full feasible intervention set and returns a Pareto frontier
   assert.ok(baseline.worstCaseImpact !== null);
   assert.ok(best.worstCaseImpact < baseline.worstCaseImpact);
   assert.equal(analysis.recommendationStatus, "eligible");
+  assert.equal(analysis.reversalThresholds.length, analysis.paretoFrontier.length - 1);
+  for (let index = 0; index < analysis.reversalThresholds.length; index += 1) {
+    const threshold = analysis.reversalThresholds[index];
+    const from = analysis.paretoFrontier[index];
+    const to = analysis.paretoFrontier[index + 1];
+    assert.equal(threshold.parameter, "risk_value_per_unit");
+    assert.deepEqual(threshold.fromBundleIds, from.interventionIds);
+    assert.deepEqual(threshold.toBundleIds, to.interventionIds);
+    assert.ok(from.worstCaseImpact !== null);
+    assert.ok(to.worstCaseImpact !== null);
+    assert.equal(
+      threshold.threshold,
+      (to.cost - from.cost) / (from.worstCaseImpact - to.worstCaseImpact),
+    );
+    assert.ok(Number.isFinite(threshold.threshold));
+    assert.ok(threshold.threshold > 0);
+  }
 });
 
 test("blocks intervention bundles that exceed an explicit budget", async () => {
@@ -33,4 +50,43 @@ test("blocks intervention bundles that exceed an explicit budget", async () => {
   assert.ok(blocked);
   assert.equal(blocked.worstCaseImpact, null);
   assert.doesNotThrow(() => JSON.stringify(analysis));
+});
+
+test("reports lead-time, mutual-exclusion, and cost-unit infeasibility explicitly", async () => {
+  const constrained = scenario();
+  constrained.constraints = {
+    budget: 100,
+    budgetUnit: "normalized_cost",
+    maxInterventions: 3,
+    maxLeadTimeDays: 5,
+  };
+  constrained.interventions[0].mutuallyExclusiveGroup = "route-choice";
+  constrained.interventions[1].mutuallyExclusiveGroup = "route-choice";
+  constrained.interventions.push({
+    ...constrained.interventions[0],
+    id: "intervention:incompatible-unit",
+    label: "Incompatible cost-unit fixture",
+    cost: 1,
+    costUnit: "hours",
+    leadTimeDays: 1,
+    mutuallyExclusiveGroup: undefined,
+  });
+
+  const analysis = await analyzeInterventions(await graphSnapshot(), constrained);
+  const byIds = (ids: string[]) =>
+    analysis.evaluatedBundles.find(
+      (item) => item.interventionIds.join("|") === [...ids].sort().join("|"),
+    );
+  assert.deepEqual(
+    byIds(["intervention:diversify-input"])?.reasons,
+    ["lead_time_exceeded"],
+  );
+  assert.deepEqual(
+    byIds(["intervention:buffer-medical", "intervention:diversify-input"])?.reasons,
+    ["lead_time_exceeded", "mutually_exclusive:route-choice"],
+  );
+  assert.deepEqual(
+    byIds(["intervention:incompatible-unit"])?.reasons,
+    ["cost_unit_mismatch:intervention:incompatible-unit"],
+  );
 });

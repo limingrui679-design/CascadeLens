@@ -50,7 +50,11 @@ function sbomTimestamp(): string {
 const components = Object.entries(lock.packages)
   .filter(([path, item]) => path !== "" && item.version && !item.link)
   .map(([path, item]) => {
-    const name = item.name ?? path.split("node_modules/").at(-1)!;
+    const name = item.name ?? (
+      path.includes("node_modules/")
+        ? path.split("node_modules/").at(-1)!
+        : path.split("/").at(-1)!
+    );
     return {
       type: "library" as const,
       name,

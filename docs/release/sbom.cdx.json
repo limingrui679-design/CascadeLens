@@ -10489,6 +10489,26 @@
     },
     {
       "type": "library",
+      "name": "image-size",
+      "version": "2.0.3",
+      "scope": "required",
+      "purl": "pkg:npm/image-size@2.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "cascadelens:lockPath",
+          "value": "vendor/image-size"
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "import-fresh",
       "version": "3.3.1",
       "scope": "excluded",
@@ -16476,26 +16496,6 @@
         {
           "name": "cascadelens:resolved",
           "value": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "vendor/image-size",
-      "version": "2.0.3",
-      "scope": "required",
-      "purl": "pkg:npm/vendor%2Fimage-size@2.0.3",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0"
-          }
-        }
-      ],
-      "properties": [
-        {
-          "name": "cascadelens:lockPath",
-          "value": "vendor/image-size"
         }
       ]
     },
