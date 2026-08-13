@@ -27,6 +27,8 @@ const required = [
   "docs/ARCHITECTURE.md",
   "docs/connectors/DATA_CATALOG.md",
   "docs/connectors/CONNECTOR_CONTRACT.md",
+  "scripts/sites-vite-plugin.ts",
+  "vite.config.ts",
   "schemas/shockscript-0.1.0.schema.json",
   "schemas/worldgraph-0.1.0.schema.json",
   "schemas/riskpack-manifest-0.1.0.schema.json",
