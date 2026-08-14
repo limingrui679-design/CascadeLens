@@ -7,7 +7,7 @@ body:
     id: artifact
     attributes:
       label: Reviewed commit or release
-      placeholder: v0.5.0 or a full commit SHA
+      placeholder: v0.5.1 or a full commit SHA
     validations:
       required: true
   - type: textarea

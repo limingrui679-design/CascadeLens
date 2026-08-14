@@ -3,7 +3,7 @@
 Install the optional adapter and notebook tools:
 
 ```bash
-pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
+pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
 ```
 
 ## Convert an existing graph

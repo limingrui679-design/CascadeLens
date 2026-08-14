@@ -103,7 +103,7 @@ export default function Home() {
         </div>
         <div className="install-card">
           <div><Terminal size={16} aria-hidden="true" /><span>Python 3.11+</span></div>
-          <code>pip install &quot;cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0&quot;</code>
+          <code>pip install &quot;cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1&quot;</code>
           <code>cascadelens demo --out demo-riskpack</code>
           <div className="install-links">
             <a href="https://github.com/limingrui679-design/CascadeLens/blob/main/docs/tutorials/02_bring_your_own_graph.md">Import your graph</a>

@@ -73,7 +73,7 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
 
 test("README exposes the Python one-line install before the case library", async () => {
   const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
-  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"');
+  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"');
   const cases = readme.indexOf("## Explore all 12 cases");
   assert.ok(install >= 0, "README must contain the stable one-line Python install");
   assert.ok(cases > install, "Python installation must appear before the twelve-case showcase");

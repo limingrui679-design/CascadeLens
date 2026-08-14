@@ -5,7 +5,7 @@ The examples are executable parts of repository verification, not snippets allow
 ## Python: 60-second result
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
 cascadelens demo --out demo-riskpack
 ```
 

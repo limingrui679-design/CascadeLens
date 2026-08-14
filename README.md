@@ -18,7 +18,7 @@
   · <a href="#60-second-python-start">Run in 60 seconds</a>
   · <a href="#explore-all-12-cases">Explore 12 cases</a>
   · <a href="docs/README.md">Read the docs</a>
-  · <a href="docs/SELF_REVIEW_2026-08-14_v0.5.0.md">Inspect the evidence</a>
+  · <a href="docs/SELF_REVIEW_2026-08-14_v0.5.1.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
@@ -30,7 +30,7 @@ Each run reports **lower, central, and upper impacts**, exposes **feasible Paret
 ## 60-second Python start
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
 cascadelens demo --out demo-riskpack
 ```
 
@@ -59,7 +59,7 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
 </table>
 
 > [!IMPORTANT]
-> Stable release: **[`v0.5.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.5.0)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
+> Stable release: **[`v0.5.1`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.5.1)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 ## Explore all 12 cases
 
@@ -177,6 +177,18 @@ Confidence never upgrades a weaker evidence grade. Extracted and inferred links 
 ## One question → one verifiable RiskPack
 
 ```mermaid
+flowchart LR
+    Q["Decision question"] --> S["Sealed graph<br/>+ ShockScript"]
+    S --> B["Lower · central · upper<br/>cascade bounds"]
+    B --> D["Options · evidence priorities<br/>+ benchmark gate"]
+    D --> R["Checksummed<br/>RiskPack"]
+    R --> V["Independent recomputation<br/>verify or reject"]
+```
+
+<details>
+<summary><strong>Open the complete RiskPack decision and verification graph</strong></summary>
+
+```mermaid
 flowchart TD
     Q["Decision question"] --> S["Sealed graph + ShockScript"]
     S --> B["Bounded cascade"]
@@ -188,6 +200,8 @@ flowchart TD
     V -->|match| PASS["VERIFIED RECOMPUTED"]
     V -->|mismatch| FAIL["Reject + locate failure"]
 ```
+
+</details>
 
 <details>
 <summary><strong>What is inside a RiskPack?</strong></summary>
@@ -253,7 +267,7 @@ flowchart LR
 
 The scale check is a synthetic chain engineering budget—not a production SLA or empirical-domain benchmark.
 
-[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.5.0 review](docs/SELF_REVIEW_2026-08-14_v0.5.0.md)
+[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.5.1 review](docs/SELF_REVIEW_2026-08-14_v0.5.1.md)
 
 ## Interfaces
 

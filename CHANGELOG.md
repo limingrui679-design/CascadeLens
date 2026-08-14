@@ -6,6 +6,25 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.5.1 — 2026-08-14
+
+### Clearer public workflow
+
+- Added a compact decision-to-RiskPack overview to the public README and moved
+  the complete decision and verification graph into an expandable technical
+  section, preserving the full evidence path without dominating the page.
+- Updated the active Python install paths, package metadata, website copy,
+  evidence-status page, issue prompts, citation metadata, and generated SBOM to
+  the reviewed patch release.
+- Updated the pinned CodeQL action to the reviewed `v4.37.7` tag commit.
+
+### Evidence boundary
+
+This patch changes presentation and release identity only. It adds no
+historically scored case, external validation, structured user study, verified
+organizational adoption, or demonstrated real-world impact. The 12 reference
+cases remain `scenario_only`.
+
 ## 0.5.0 — 2026-08-14
 
 ### Published relational graph evidence

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Install CascadeLens, analyze a dependency graph, and verify a RiskPack with Python.",
 };
 
-const install = `pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
+const install = `pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
 cascadelens demo --out demo-riskpack`;
 
 const ownGraph = `cascadelens run \\
@@ -99,7 +99,7 @@ export default function DocsPage() {
           <section id="notebook">
             <Eyebrow>Jupyter</Eyebrow>
             <h2>Inspect each step interactively</h2>
-            <pre><code>{`pip install "cascadelens[notebook] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
+            <pre><code>{`pip install "cascadelens[notebook] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
 jupyter lab examples/notebooks/bring_your_own_graph.ipynb`}</code></pre>
             <p>
               The notebook keeps graph import, shock definition, uncertainty bounds,

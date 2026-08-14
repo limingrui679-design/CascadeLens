@@ -1,6 +1,6 @@
 {
   "name": "cascadelens",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "releaseDate": "2026-08-14T00:00:00.000Z",
   "description": "Python-first systemic-risk analysis for evidence-graded graphs, shocks, and verifiable RiskPacks.",
   "private": true,

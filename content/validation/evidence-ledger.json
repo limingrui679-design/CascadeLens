@@ -36,7 +36,7 @@
       "category": "external_review",
       "status": "protocol_ready_not_evidence",
       "path": ".github/ISSUE_TEMPLATE/external-review.yml",
-      "sha256": "a829bab2ede7dc5068b8eaffd73926156cdf63b2115cb7cbf2a75fd9cc014333"
+      "sha256": "41d065a93e222547088759a96e97bf93e3bb05c85af992271d5611698d5c12eb"
     },
     {
       "id": "user-study-protocol",
@@ -50,7 +50,7 @@
       "category": "structured_user_study",
       "status": "protocol_ready_not_evidence",
       "path": ".github/ISSUE_TEMPLATE/usability-study.yml",
-      "sha256": "3216496cb0348b51f836a14211598d33ea07f94b115e5aff5fd3b86ecc2f77ae"
+      "sha256": "855294d6da4674e52cff657711c710e6f0eb2ab9980d67d4d7721f4c16779fe4"
     },
     {
       "id": "adoption-impact-record",

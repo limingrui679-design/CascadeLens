@@ -6,6 +6,7 @@ This index routes readers to the contract, evidence, and operating material behi
 
 | Document | Purpose |
 |---|---|
+| [v0.5.1 presentation and release review](SELF_REVIEW_2026-08-14_v0.5.1.md) | Records the compact workflow, version alignment, full-suite gates, release assets, and public deployment identity. |
 | [v0.5.0 relational-data review](SELF_REVIEW_2026-08-14_v0.5.0.md) | Records the BEA topology, evidence-ledger, full-suite, release, and publication checks. |
 | [Acceptance matrix](ACCEPTANCE_MATRIX.md) | Maps product requirements to implementation and verification evidence. |
 | [v0.4.0 Python-first review](SELF_REVIEW_2026-08-14_v0.4.0.md) | Records five review passes across the Python package, workbench, evidence gates, release, and publication. |

@@ -32,7 +32,7 @@ snapshot = graph_from_networkx(graph, decision_cutoff="2026-01-01T00:00:00Z")
 result = analyze(snapshot, default_scenario(snapshot))
 ```
 
-NetworkX is optional: `pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"`.
+NetworkX is optional: `pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"`.
 
 ## Public functions
 
@@ -53,7 +53,7 @@ NetworkX is optional: `pip install "cascadelens[networkx] @ git+https://github.c
 - `schemas/shockscript-0.1.0.schema.json`
 - `schemas/riskpack-manifest-0.1.0.schema.json`
 
-Python package version `0.5.0` preserves WorldGraph and ShockScript schema version `0.1.0` and engine semantics `0.2.0`. Automated tests compare Python results with all 12 reviewed browser artifacts to numerical tolerance.
+Python package version `0.5.1` preserves WorldGraph and ShockScript schema version `0.1.0` and engine semantics `0.2.0`. Automated tests compare Python results with all 12 reviewed browser artifacts to numerical tolerance.
 
 ## TypeScript compatibility
 

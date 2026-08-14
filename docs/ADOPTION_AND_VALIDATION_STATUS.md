@@ -1,6 +1,6 @@
 # Adoption and validation status
 
-Current status for release `v0.5.0`:
+Current status for release `v0.5.1`:
 
 | Evidence | Count | What would change it |
 |---|---:|---|
