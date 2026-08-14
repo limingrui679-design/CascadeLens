@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { resolve } from "node:path";
+import packageMetadata from "../../../package.json" with { type: "json" };
 import {
   ENGINE_VERSION,
   CascadeLensValidationError,
@@ -38,7 +39,7 @@ import {
   writeRiskPackDirectory,
 } from "./io";
 
-const VERSION = "0.3.2";
+const VERSION = packageMetadata.version;
 const HELP = `CascadeLens ${VERSION}
 
 Usage:

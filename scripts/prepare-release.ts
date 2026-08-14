@@ -17,6 +17,20 @@ interface PackageMetadata {
   engines: { node: string };
 }
 
+interface PythonMetadata {
+  requiresPython: string;
+  version: string;
+}
+
+function pythonMetadata(source: string): PythonMetadata {
+  const version = source.match(/^version\s*=\s*"([^"]+)"\s*$/m)?.[1];
+  const requiresPython = source.match(/^requires-python\s*=\s*"([^"]+)"\s*$/m)?.[1];
+  if (!version || !requiresPython) {
+    throw new Error("pyproject.toml is missing project version or requires-python.");
+  }
+  return { version, requiresPython };
+}
+
 function git(...args: string[]): string {
   return execFileSync("git", args, { encoding: "utf8" }).trim();
 }
@@ -30,8 +44,13 @@ if (repoRoot !== resolve(process.cwd())) throw new Error("Run release preparatio
 const packageMetadata = JSON.parse(
   await readFile(resolve(repoRoot, "package.json"), "utf8"),
 ) as PackageMetadata;
+const pyprojectPath = resolve(repoRoot, "pyproject.toml");
+const pythonPackage = pythonMetadata(await readFile(pyprojectPath, "utf8"));
 if (tag !== `v${packageMetadata.version}`) {
   throw new Error(`Tag ${tag} does not match package version ${packageMetadata.version}.`);
+}
+if (pythonPackage.version !== packageMetadata.version) {
+  throw new Error("Python and web package versions do not match.");
 }
 if (git("status", "--porcelain=v1", "--untracked-files=all") !== "") {
   throw new Error("Release preparation requires a clean working tree.");
@@ -104,7 +123,7 @@ const artifacts = await Promise.all(
   })),
 );
 const manifest = {
-  schemaVersion: "cascadelens-release-manifest/1.1",
+  schemaVersion: "cascadelens-release-manifest/1.2",
   product: packageMetadata.name,
   version: packageMetadata.version,
   tag,
@@ -113,7 +132,9 @@ const manifest = {
   tree,
   releaseDate: new Date(packageMetadata.releaseDate).toISOString(),
   nodeEngine: packageMetadata.engines.node,
+  pythonRequires: pythonPackage.requiresPython,
   packageLockSha256: await sha256File(resolve(repoRoot, "package-lock.json")),
+  pyprojectSha256: await sha256File(pyprojectPath),
   generatedArtifactRoots: generatedRoots,
   generatedArtifactsSha256: await treeDigest(repoRoot, generatedRoots),
   riskPackCatalogSha256: await sha256File(resolve(repoRoot, "public/riskpacks/catalog.json")),

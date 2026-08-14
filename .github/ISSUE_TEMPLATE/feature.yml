@@ -16,11 +16,14 @@ body:
       label: Primary surface
       options:
         - Analytical core
+        - Python package or CLI
+        - Python import or NetworkX
+        - Jupyter tutorial
         - Connector
         - Reference case
         - Web product
         - CLI
-        - TypeScript SDK
+        - TypeScript browser compatibility
         - Documentation
         - Security, performance, or release assurance
     validations:

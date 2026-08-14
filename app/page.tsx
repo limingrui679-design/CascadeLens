@@ -5,8 +5,11 @@ import {
   Braces,
   DatabaseZap,
   GitBranch,
+  FileUp,
+  NotebookTabs,
   ScanSearch,
   ShieldCheck,
+  Terminal,
 } from "lucide-react";
 import caseCatalog from "@/content/cases/catalog.json";
 import connectorCatalog from "@/content/catalog/connectors.json";
@@ -85,6 +88,28 @@ export default function Home() {
             Open the complete evidence trail <ArrowRight size={15} aria-hidden="true" />
           </Link>
         </article>
+      </section>
+
+      <section className="section python-onramp">
+        <div className="python-onramp-copy">
+          <Eyebrow>Python-first · one-line install</Eyebrow>
+          <h2>Run your graph—not only the demo.</h2>
+          <p>Import JSON, CSV, GraphML, or NetworkX. Generate bounded results and a recomputable RiskPack locally.</p>
+          <div className="python-capabilities">
+            <span><FileUp size={15} aria-hidden="true" /> Your data</span>
+            <span><NotebookTabs size={15} aria-hidden="true" /> Jupyter</span>
+            <span><ShieldCheck size={15} aria-hidden="true" /> Verified pack</span>
+          </div>
+        </div>
+        <div className="install-card">
+          <div><Terminal size={16} aria-hidden="true" /><span>Python 3.11+</span></div>
+          <code>pip install &quot;cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0&quot;</code>
+          <code>cascadelens demo --out demo-riskpack</code>
+          <div className="install-links">
+            <a href="https://github.com/limingrui679-design/CascadeLens/blob/main/docs/tutorials/02_bring_your_own_graph.md">Import your graph</a>
+            <a href="https://github.com/limingrui679-design/CascadeLens/blob/main/examples/notebooks/bring_your_own_graph.ipynb">Open notebook</a>
+          </div>
+        </div>
       </section>
 
       <section className="section section-rule">

@@ -71,6 +71,19 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
   assert.match(readme, /0 claims of organizational adoption/);
 });
 
+test("README exposes the Python one-line install before the case library", async () => {
+  const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
+  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"');
+  const cases = readme.indexOf("## Explore all 12 cases");
+  assert.ok(install >= 0, "README must contain the stable one-line Python install");
+  assert.ok(cases > install, "Python installation must appear before the twelve-case showcase");
+  assert.match(readme, /CSV · GraphML · NetworkX/);
+  assert.match(readme, /cascadelens demo --out demo-riskpack/);
+  const pyproject = await readFile(resolve(repositoryRoot, "pyproject.toml"), "utf8");
+  assert.match(pyproject, /cascadelens = "cascadelens\.cli:main"/);
+  assert.match(pyproject, /requires-python = ">=3\.11"/);
+});
+
 test("README introduction explains the analytical input, outputs, and proof path", async () => {
   const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
   const introduction = readme.slice(0, readme.indexOf("<table>"));

@@ -10,15 +10,15 @@
   <a href="https://github.com/limingrui679-design/CascadeLens/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/limingrui679-design/CascadeLens/actions/workflows/codeql.yml/badge.svg" /></a>
   <a href="https://github.com/limingrui679-design/CascadeLens/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/limingrui679-design/CascadeLens?style=flat" /></a>
   <a href="LICENSE"><img alt="Apache-2.0 license" src="https://img.shields.io/github/license/limingrui679-design/CascadeLens" /></a>
-  <a href="package.json"><img alt="Node.js 22.13 or newer" src="https://img.shields.io/badge/Node.js-%E2%89%A522.13-339933?logo=nodedotjs&amp;logoColor=white" /></a>
+  <a href="pyproject.toml"><img alt="Python 3.11 or newer" src="https://img.shields.io/badge/Python-%E2%89%A53.11-3776AB?logo=python&amp;logoColor=white" /></a>
 </p>
 
 <p align="center">
   <a href="https://cascadelens.limingrui2.chatgpt.site"><strong>Open the live product</strong></a>
-  · <a href="#quick-start">Run locally</a>
+  · <a href="#60-second-python-start">Run in 60 seconds</a>
   · <a href="#explore-all-12-cases">Explore 12 cases</a>
   · <a href="docs/README.md">Read the docs</a>
-  · <a href="docs/SELF_REVIEW_2026-08-13_v0.3.2.md">Inspect the evidence</a>
+  · <a href="docs/SELF_REVIEW_2026-08-14_v0.4.0.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
@@ -27,17 +27,39 @@ CascadeLens turns a sourced **WorldGraph snapshot**, a **frozen decision cutoff*
 
 Each run reports **lower, central, and upper impacts**, exposes **feasible Pareto trade-offs**, returns `scenario_only` when outcomes are insufficient, and writes a **RiskPack whose metadata and analytical outputs are recomputed** during verification.
 
+## 60-second Python start
+
+```bash
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
+cascadelens demo --out demo-riskpack
+```
+
+The second command runs a complete scenario, writes a checksummed RiskPack, and recomputes it. No Node.js setup or external data is required.
+
+<table>
+  <tr>
+    <td width="33%" valign="top"><strong>Use your graph</strong><br /><sub>JSON · CSV · GraphML · NetworkX</sub><br /><a href="docs/tutorials/02_bring_your_own_graph.md">Import guide →</a></td>
+    <td width="33%" valign="top"><strong>Use Python</strong><br /><sub>CLI · API · Jupyter</sub><br /><a href="docs/tutorials/01_python_quickstart.md">Quick start →</a></td>
+    <td width="33%" valign="top"><strong>Check the method</strong><br /><sub>Equations · baselines · failure gates</sub><br /><a href="docs/METHODS.md">Methods →</a></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img alt="Thirty-second CascadeLens Workbench demonstration: switch cases, change parameters, recompute bounds, and export analysis" src="docs/assets/readme/workbench-demo.gif" width="960" />
+</p>
+<p align="center"><sub>Real local run · 12-case selector · scenario-only bounds · evidence-gated decision · Python RiskPack handoff</sub></p>
+
 <table>
   <tr>
     <td align="center"><strong>12</strong><br /><sub>executable cases</sub></td>
     <td align="center"><strong>10</strong><br /><sub>connector contracts</sub></td>
     <td align="center"><strong>3,802</strong><br /><sub>normalized official-source facts</sub></td>
-    <td align="center"><strong>123 / 123</strong><br /><sub>core automated checks</sub></td>
+    <td align="center"><strong>151 / 151</strong><br /><sub>Node + Python unit checks</sub></td>
   </tr>
 </table>
 
 > [!IMPORTANT]
-> Stable release: **[`v0.3.2`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.3.2)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
+> Stable release: **[`v0.4.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.4.0)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 ## Explore all 12 cases
 
@@ -94,7 +116,7 @@ flowchart LR
   </tr>
 </table>
 
-## Quick start
+## Develop the hosted interface
 
 ```bash
 git clone https://github.com/limingrui679-design/CascadeLens.git
@@ -110,10 +132,11 @@ Open `http://localhost:3000`, or use one focused path:
 | Goal | Start here |
 |---|---|
 | Explore without installing | [Live product](https://cascadelens.limingrui2.chatgpt.site) |
+| Analyze your own graph | `cascadelens run --graph <csv|json|graphml> --out analysis.json` |
+| Use a notebook or NetworkX | [Jupyter + NetworkX guide](docs/tutorials/03_networkx_and_notebooks.md) |
+| Create and verify a RiskPack | `cascadelens pack --graph <file> --out riskpack` · `cascadelens verify riskpack` |
 | List or rebuild cases | `npm run cascadelens -- cases list` · `cases build <slug>` |
-| Validate or run a shock | `npm run cascadelens -- validate …` · `run …` |
-| Verify a RiskPack | `npm run cascadelens -- verify <riskpack>` |
-| Call the typed SDK | `npm run example:sdk` · [SDK guide](docs/SDK.md) |
+| Maintain the hosted demo | `npm ci` · `npm run ci` |
 
 ## Change an assumption. Watch the boundary move.
 
@@ -127,7 +150,7 @@ Open `http://localhost:3000`, or use one focused path:
   </tr>
 </table>
 
-The public workbench uses the deterministic core but remains a reviewed, read-only-data demonstration. Results stay `scenario_only`.
+The workbench can switch among all 12 reviewed cases and accepts a user WorldGraph plus ShockScript. Imported topology stays user-provided and results stay `scenario_only`.
 
 ## Every edge carries its own evidence
 
@@ -230,7 +253,7 @@ flowchart LR
 
 The scale check is a synthetic chain engineering budget—not a production SLA or empirical-domain benchmark.
 
-[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.3.2 review](docs/SELF_REVIEW_2026-08-13_v0.3.2.md)
+[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.4.0 review](docs/SELF_REVIEW_2026-08-14_v0.4.0.md)
 
 ## Interfaces
 
@@ -240,16 +263,18 @@ The scale check is a synthetic chain engineering budget—not a production SLA o
 | [WorldGraph](https://cascadelens.limingrui2.chatgpt.site/worldgraph) | Inspect provenance, time, evidence grade, and eligibility |
 | [Case library](https://cascadelens.limingrui2.chatgpt.site/cases) | Browse 12 complete pipelines and download RiskPacks |
 | [CascadeBench](https://cascadelens.limingrui2.chatgpt.site/benchmark) | See no-lookahead gates and honest scoring coverage |
-| [CLI](docs/CLI.md) | Validate, run, build, pack, and verify locally |
-| [TypeScript SDK](docs/SDK.md) | Embed typed offline analysis |
+| [Python CLI](docs/CLI.md) | Import, validate, run, pack, and verify locally |
+| [Python API](docs/SDK.md) | Embed analysis in scripts, notebooks, or NetworkX workflows |
+| TypeScript compatibility layer | Power the hosted browser demonstration |
 
 ## Repository map
 
 ```text
-app/          web product                    content/   cases + reviewed artifacts
-packages/     core · connectors · CLI · SDK   schemas/   public JSON Schemas
-tests/        functional + adversarial gates  scripts/   build + release verification
-docs/         methods + assurance             worker/    hosted response policy
+src/cascadelens/  canonical Python core + CLI  examples/      CSV · GraphML · Jupyter
+app/              hosted browser product       content/       cases + reviewed artifacts
+packages/         browser compatibility layer  schemas/       public JSON Schemas
+tests_python/     Python parity + import gates  tests/         web + release assurance
+docs/             methods + tutorials           scripts/       hosted build verification
 ```
 
 | If you want to… | Open |
@@ -278,6 +303,7 @@ docs/         methods + assurance             worker/    hosted response policy
 Connectors, engines, cases, product surfaces, documentation, and assurance improvements are welcome. Preserve source, time, license, evidence grade, and scenario status; then run:
 
 ```bash
+python -m unittest discover -s tests_python -v
 npm run ci
 ```
 

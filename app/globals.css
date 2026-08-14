@@ -176,6 +176,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .callout h2 { max-width: 700px; }
 .callout .button-row { flex-shrink: 0; margin: 0; }
 
+.python-onramp { align-items: center; background: linear-gradient(135deg, rgba(124,242,181,.055), rgba(142,215,255,.025)); border: 1px solid var(--line); border-radius: 24px; display: grid; gap: 45px; grid-template-columns: .85fr 1.15fr; margin-bottom: 100px; padding-bottom: 46px; padding-top: 46px; }
+.python-onramp h2 { font-size: clamp(2rem, 3.6vw, 3.6rem); font-weight: 590; letter-spacing: -.05em; line-height: 1.02; margin: 0; }
+.python-onramp-copy > p { color: var(--muted); font-size: 13px; line-height: 1.65; margin: 20px 0 0; max-width: 520px; }
+.python-capabilities { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.python-capabilities span { align-items: center; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); display: inline-flex; font-size: 10px; gap: 6px; padding: 7px 9px; }
+.install-card { background: #050d0b; border: 1px solid var(--line-strong); border-radius: 16px; box-shadow: 0 22px 55px rgba(0,0,0,.2); padding: 18px; }
+.install-card > div:first-child { align-items: center; color: var(--mint); display: flex; font-family: var(--font-geist-mono), monospace; font-size: 10px; gap: 8px; margin-bottom: 13px; }
+.install-card code { background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 8px; color: #c8e2d5; display: block; font-family: var(--font-geist-mono), monospace; font-size: 10px; line-height: 1.55; margin-top: 7px; overflow-x: auto; padding: 11px; white-space: nowrap; }
+.install-links { display: flex; flex-wrap: wrap; gap: 17px; margin-top: 15px; }
+.install-links a { color: var(--sky); font-size: 10px; }
+
 .page-intro { padding-bottom: 66px; padding-top: 82px; }
 .page-intro h1 { font-size: clamp(3.1rem, 6vw, 5.9rem); }
 .page-intro-copy { color: #b7c8c0; font-size: 18px; line-height: 1.7; margin: 28px 0 0; max-width: 760px; }
@@ -249,6 +260,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .workbench-controls { background: #091512; border-right: 1px solid var(--line); padding: 24px; }
 .control-head { align-items: flex-start; display: flex; gap: 14px; justify-content: space-between; }
 .control-head h2 { font-size: 19px; line-height: 1.2; margin: 8px 0 0; }
+.workbench-select { border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 7px; margin-top: 22px; padding-top: 20px; }
+.workbench-select > span { color: var(--dim); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.workbench-select select { appearance: none; background: rgba(0,0,0,.18); border: 1px solid var(--line-strong); border-radius: 9px; color: var(--ink); font-size: 10px; min-height: 40px; overflow: hidden; padding: 0 30px 0 11px; text-overflow: ellipsis; width: 100%; }
+.import-actions { display: grid; gap: 7px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
+.file-button { align-items: center; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); cursor: pointer; display: inline-flex; font-size: 9px; gap: 6px; justify-content: center; min-height: 38px; padding: 0 7px; position: relative; text-align: center; }
+.file-button:hover, .file-button:focus-within { border-color: var(--line-strong); color: var(--ink); }
+.file-button input { height: 1px; opacity: 0; overflow: hidden; position: absolute; width: 1px; }
+.paste-script { border: 1px solid var(--line); border-radius: 9px; margin-top: 8px; padding: 10px; }
+.paste-script summary { color: var(--dim); cursor: pointer; font-size: 9px; list-style-position: inside; }
+.paste-script textarea { background: rgba(0,0,0,.2); border: 1px solid var(--line); border-radius: 7px; color: var(--ink); font-family: var(--font-geist-mono), monospace; font-size: 9px; height: 120px; line-height: 1.45; margin: 10px 0 8px; padding: 9px; resize: vertical; width: 100%; }
+.paste-script .button { width: 100%; }
 .boundary-warning { background: rgba(245, 207, 134, .06); border: 1px solid rgba(245, 207, 134, .17); border-radius: 10px; color: #d8c092; font-size: 10px; line-height: 1.55; margin-top: 22px; padding: 12px; }
 .range-control { border-top: 1px solid var(--line); display: flex; flex-direction: column; margin-top: 23px; padding-top: 22px; }
 .range-control > span { align-items: center; display: flex; justify-content: space-between; }
@@ -272,6 +294,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .icon-text-button { align-items: center; background: rgba(255,255,255,.018); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); cursor: pointer; display: inline-flex; font-size: 10px; gap: 6px; min-height: 36px; padding: 0 10px; }
 .icon-text-button:hover { border-color: var(--line-strong); color: var(--ink); }
 .run-message { color: var(--dim); font-size: 10px; margin: 14px 0 0; min-height: 16px; }
+.github-star-callout { align-items: center; background: rgba(124,242,181,.045); border: 1px solid rgba(124,242,181,.15); border-radius: 10px; display: flex; gap: 14px; justify-content: space-between; margin-top: 10px; padding: 10px 12px; }
+.github-star-callout span { color: var(--muted); font-size: 10px; }
+.github-star-callout a { align-items: center; color: var(--mint); display: inline-flex; font-size: 10px; font-weight: 650; gap: 6px; }
 .workbench-bounds { display: grid; gap: 8px; grid-template-columns: repeat(3, 1fr); margin-top: 25px; }
 .workbench-bounds article { background: rgba(0,0,0,.13); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; padding: 17px; position: relative; }
 .workbench-bounds span { color: var(--muted); font-size: 10px; }
@@ -367,6 +392,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .signal-path i { height: 24px; margin-left: 12px; width: 1px; }
   .signal-path i::after { border-left: 3px solid transparent; border-right: 3px solid transparent; border-top: 4px solid var(--mint); bottom: -1px; left: -2px; right: auto; top: auto; }
   .split-heading, .evidence-band { grid-template-columns: 1fr; }
+  .python-onramp { grid-template-columns: 1fr; margin-left: 18px; margin-right: 18px; }
   .evidence-band > p { grid-column: 1; }
   .feature-grid { grid-template-columns: 1fr; }
   .library-toolbar { align-items: stretch; grid-template-columns: 1fr; }

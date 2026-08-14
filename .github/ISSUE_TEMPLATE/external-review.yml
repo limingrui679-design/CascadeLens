@@ -1,0 +1,48 @@
+name: External review record
+description: Submit a reproducible independent method, domain, usability, or security review.
+title: "[External review] "
+labels: ["external-review"]
+body:
+  - type: input
+    id: artifact
+    attributes:
+      label: Reviewed commit or release
+      placeholder: v0.4.0 or a full commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: reviewer
+    attributes:
+      label: Reviewer identity and relevant expertise
+      description: Include a public professional profile where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflicts of interest
+      description: State financial, supervisory, collaboration, or other relevant relationships.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Scope and reproducible method
+      description: List exact artifacts, commands, tasks, participants, or review criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Complete findings
+      description: Include failures and limitations, not only favorable results.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Publication
+      options:
+        - label: I consent to publication of this review record and confirm it contains no private or restricted data.
+          required: true
+

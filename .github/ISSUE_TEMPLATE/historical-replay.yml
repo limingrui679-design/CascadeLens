@@ -1,0 +1,48 @@
+name: Historical replay proposal
+description: Propose a frozen-cutoff, outcome-separated historical validation case.
+title: "[Replay] "
+labels: ["validation"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision question and domain
+      description: State one question, intended user, and why the case is decision-relevant.
+    validations:
+      required: true
+  - type: input
+    id: cutoff
+    attributes:
+      label: Proposed decision cutoff
+      placeholder: 2024-01-31T00:00:00Z
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Frozen input sources
+      description: List source URLs, availability dates, licenses, and proposed graph mapping.
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Separated outcomes
+      description: Define the target metric, horizon, complete result window, and post-window availability.
+    validations:
+      required: true
+  - type: textarea
+    id: failures
+    attributes:
+      label: Failure and inclusion rules
+      description: Predeclare blocking conditions and confirm every eligible case remains in the denominator.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Evidence boundary
+      options:
+        - label: I understand one replay does not establish broad predictive validity, causality, adoption, or realized impact.
+          required: true
+

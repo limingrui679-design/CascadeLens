@@ -1,69 +1,76 @@
-# Command-line interface
+# Python command-line interface
 
-The CLI validates untrusted input before running the deterministic local engine. It does not silently overwrite output files or directories.
+The Python CLI is the primary local entry point. It validates input before analysis, does not silently overwrite outputs, and has no mandatory runtime dependencies.
 
-## Validate a ShockScript
+## Install
 
 ```bash
-npm run cascadelens -- validate \
-  content/cases/suez-route-restress/scenario.json \
-  --graph content/cases/suez-route-restress/graph/snapshot.json
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
 ```
 
-## Run an analysis
+## Run the complete demonstration
 
 ```bash
-npm run cascadelens -- run \
-  content/cases/suez-route-restress/scenario.json \
-  --graph content/cases/suez-route-restress/graph/snapshot.json \
-  --out local-results.json
+cascadelens demo --out demo-riskpack
 ```
 
-The output is explicitly labelled `scenario_output_not_empirical_validation`.
+This runs a packaged scenario, creates a checksummed RiskPack, recomputes every analytical output, and prints the retained pack digest.
 
-## Create a complete RiskPack
+## Import your graph
 
 ```bash
-npm run cascadelens -- pack \
-  content/cases/suez-route-restress/scenario.json \
-  --graph content/cases/suez-route-restress/graph/snapshot.json \
-  --assumptions content/cases/suez-route-restress/assumptions.json \
-  --model-card content/cases/suez-route-restress/model-card.json \
-  --observation-candidates content/cases/suez-route-restress/riskpack/inputs/observation-candidates.json \
+cascadelens import-graph network.csv --out worldgraph.json
+cascadelens import-graph network.graphml --out worldgraph.json
+cascadelens import-graph network.json --out worldgraph.json
+```
+
+CSV uses `source,target,weight`; JSON accepts a full WorldGraph or simple nodes and edges; GraphML reads standard node and edge data keys. Imported dependencies remain `MODEL_INFERRED` until separately supported and reviewed.
+
+## Validate and run
+
+```bash
+cascadelens validate --graph worldgraph.json
+cascadelens validate --graph worldgraph.json --scenario shockscript.json
+
+cascadelens run \
+  --graph worldgraph.json \
+  --scenario shockscript.json \
+  --out analysis.json
+```
+
+Omit `--scenario` to generate an explicit synthetic starter shock on the first node. Output is labelled `scenario_output_not_empirical_validation`.
+
+## Create and verify a RiskPack
+
+```bash
+cascadelens pack \
+  --graph worldgraph.json \
+  --scenario shockscript.json \
   --out local-riskpack
+
+cascadelens verify local-riskpack
 ```
 
-The candidate file is explicit because every observation-candidate weight in the assumption register must bind to the exact input that observability analysis uses. The CLI defaults to an empty historical-outcome set and therefore creates a `scenario_only` pack.
+Successful verification prints `VERIFIED RECOMPUTED`. It checks safe paths, the exact file set, checksums, snapshot digest, WorldGraph and ShockScript contracts, and deterministic recomputation of bounds, interventions, and benchmark status.
 
-## Verify a RiskPack
+Bind the pack to a digest retained outside the pack:
 
 ```bash
-npm run cascadelens -- verify local-riskpack
-npm run cascadelens -- cases verify all
+cascadelens verify local-riskpack --expected-digest <64-character-sha256>
 ```
 
-The successful status is `VERIFIED RECOMPUTED`. Verification checks relative paths, the exact declared file set, every checksum, sealed graph digest, ShockScript contract, strict metadata schemas, exact-byte assumption source, parameter bindings, model-card/benchmark consistency, source manifest, model version, classification, and limitations. It then recomputes cascade bounds, intervention analysis, observability, and benchmark output from the packaged inputs and compares canonical bytes.
+Recomputation detects changed derived results even when internal checksums are refreshed. An external digest additionally detects a self-consistently rebuilt pack with changed inputs. Neither proves empirical accuracy, authorship without an external trust channel, adoption, or realized impact.
 
-To bind the pack to an independently retained receipt, pass its previously recorded pack digest:
+## Hosted-demo maintenance
 
-```bash
-npm run cascadelens -- verify local-riskpack \
-  --expected-digest <64-character-sha256>
-```
-
-Recomputation detects altered derived results even if every internal checksum is refreshed. The external expected digest additionally detects a self-consistently rebuilt pack with altered inputs. Neither mode proves empirical accuracy, release authorship without an external trust channel, or real-world impact.
-
-## Cases and connectors
+The TypeScript CLI remains available for maintainers rebuilding the 12 reviewed website cases and bounded connector fixtures:
 
 ```bash
 npm run cascadelens -- cases list
 npm run cascadelens -- cases build suez-route-restress
 npm run cascadelens -- connectors list
-npm run cascadelens -- connectors show sec-edgar
-npm run cascadelens -- connectors acquire sec-edgar \
-  --query sec-query.json \
-  --out local-sec-snapshot \
-  --user-agent "CascadeLens research contact@example.org"
 ```
 
-For remote connectors, `acquire` performs bounded fetch, exact-byte hashing, manifest verification, normalization, stable-ID ordering, and conservative WorldGraph snapshot mapping. The generic mapping creates metric nodes only; it never invents dependency edges. Import-only connectors require a lawfully obtained local export through the SDK. Synthetic fixtures remain fictional contract tests. Separately, [`content/snapshots`](../content/snapshots/) contains three dated, lawfully redistributable official-source runs with exact receipts; those runs are not historical outcomes, calibrated inputs, or dependency evidence.
+It is a compatibility and content-build surface, not the recommended first installation path.
+
+See [Python quick start](tutorials/01_python_quickstart.md), [bring your own graph](tutorials/02_bring_your_own_graph.md), and [methods](METHODS.md).

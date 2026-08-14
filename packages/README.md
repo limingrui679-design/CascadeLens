@@ -1,16 +1,16 @@
 # Package map
 
-CascadeLens keeps the analytical core small and deterministic, then exposes it through bounded adapters and interfaces. The package directories are intentionally stable; this page supplies navigation without adding a workspace abstraction that the current build does not need.
+These TypeScript packages now form the hosted browser and release-compatibility layer. The canonical user-facing analysis package is [`src/cascadelens`](../src/cascadelens/).
 
 ## Responsibilities
 
 | Package | Owns | May depend on |
 |---|---|---|
-| [`core`](core/src/) | WorldGraph contracts, evidence and time validation, ShockScript, cascade engines, intervention analysis, observability, benchmark scoring, canonicalization, and RiskPack | Node.js standard library plus the audited YAML parser |
+| [`core`](core/src/) | Browser-compatible WorldGraph contracts and deterministic analysis parity | Node.js standard library plus the audited YAML parser |
 | [`connectors`](connectors/src/) | Source catalog, bounded acquisition, CSV/ZIP normalization, stable IDs, resumable checkpoints, manifests, and conservative WorldGraph mapping | `core` |
 | [`cases`](cases/src/) | Twelve deterministic, structurally diverse case specifications and their build orchestration | `core` |
-| [`cli`](cli/src/) | Input validation, analysis execution, case/connector discovery, RiskPack writing, and verification | `core`, `connectors`, `cases`, release scripts |
-| [`sdk`](sdk/src/) | Typed public exports and the offline `analyzeScenario` helper | `core`, `connectors`, `cases` |
+| [`cli`](cli/src/) | Reviewed website case/connector build and release-maintainer commands | `core`, `connectors`, `cases`, release scripts |
+| [`sdk`](sdk/src/) | Typed compatibility exports for the hosted TypeScript surface | `core`, `connectors`, `cases` |
 
 ## Dependency direction
 
@@ -30,7 +30,8 @@ Arrows mean “is consumed by.” The core must not import UI, connectors, cases
 
 ## Public entry points
 
-- CLI: `npm run cascadelens -- --help`
-- SDK: [`sdk/src/index.ts`](sdk/src/index.ts)
+- Python CLI: `cascadelens --help`
+- Python API: [`../src/cascadelens`](../src/cascadelens/)
+- Browser compatibility: [`sdk/src/index.ts`](sdk/src/index.ts)
 - JSON Schemas: [`../schemas`](../schemas/)
 - Extension requirements: [`../docs/EXTENDING.md`](../docs/EXTENDING.md)

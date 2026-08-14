@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cascadelens"
+version = "0.4.0"
+description = "Evidence-graded systemic-risk analysis in Python"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Mingrui Li" }]
+keywords = [
+  "systemic-risk",
+  "scenario-analysis",
+  "stress-testing",
+  "decision-support",
+  "provenance",
+  "network-analysis",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []
+
+[project.optional-dependencies]
+networkx = ["networkx>=3.2,<4"]
+notebook = ["jupyterlab>=4,<5", "networkx>=3.2,<4"]
+yaml = ["PyYAML>=6,<7"]
+dev = ["build>=1.2,<2", "pytest>=8,<9", "ruff>=0.9,<1"]
+
+[project.scripts]
+cascadelens = "cascadelens.cli:main"
+
+[project.urls]
+Homepage = "https://cascadelens.limingrui2.chatgpt.site"
+Documentation = "https://github.com/limingrui679-design/CascadeLens/tree/main/docs"
+Repository = "https://github.com/limingrui679-design/CascadeLens"
+Issues = "https://github.com/limingrui679-design/CascadeLens/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests_python"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]

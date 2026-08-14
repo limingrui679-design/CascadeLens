@@ -1,8 +1,8 @@
 {
   "name": "cascadelens",
-  "version": "0.3.2",
-  "releaseDate": "2026-08-13T00:00:00.000Z",
-  "description": "Evidence-graded world graph and shock compiler for global systemic-risk analysis.",
+  "version": "0.4.0",
+  "releaseDate": "2026-08-14T00:00:00.000Z",
+  "description": "Python-first systemic-risk analysis for evidence-graded graphs, shocks, and verifiable RiskPacks.",
   "private": true,
   "bin": {
     "cascadelens": "./packages/cli/src/index.ts"

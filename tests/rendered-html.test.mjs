@@ -31,7 +31,7 @@ const routes = [
   ["/benchmark", "tomorrow never leaks into yesterday"],
   ["/data", "Data access is a contract"],
   ["/methodology", "The model may be wrong"],
-  ["/docs", "Rebuild the result"],
+  ["/docs", "From dependency graph"],
 ];
 
 test("server-renders every public product route with truthful status", async () => {

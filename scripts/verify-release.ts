@@ -27,12 +27,19 @@ interface ReleaseManifest {
   commit: string;
   tree: string;
   releaseDate: string;
+  pythonRequires: string;
   packageLockSha256: string;
+  pyprojectSha256: string;
   generatedArtifactRoots: string[];
   generatedArtifactsSha256: string;
   riskPackCatalogSha256: string;
   productionBuildSha256: string;
   artifacts: ReleaseArtifact[];
+}
+
+function pythonVersion(program: string): string {
+  return run(program, ["-c", "import sys; print('.'.join(map(str, sys.version_info[:3])))"])
+    .trim();
 }
 
 function run(program: string, args: string[], cwd?: string): string {
@@ -109,7 +116,7 @@ if (!releaseInfo.isDirectory() || releaseInfo.isSymbolicLink()) {
 const manifest = JSON.parse(
   await readFile(resolve(releaseRoot, "release-manifest.json"), "utf8"),
 ) as ReleaseManifest;
-if (manifest.schemaVersion !== "cascadelens-release-manifest/1.1") {
+if (manifest.schemaVersion !== "cascadelens-release-manifest/1.2") {
   throw new Error("Unsupported release manifest schema.");
 }
 if (manifest.tag !== `v${manifest.version}` || manifest.product !== "cascadelens") {
@@ -119,6 +126,8 @@ if (
   !/^[a-f0-9]{40}$/.test(manifest.commit) ||
   !/^[a-f0-9]{40}$/.test(manifest.tree) ||
   !/^[a-f0-9]{64}$/.test(manifest.productionBuildSha256) ||
+  manifest.pythonRequires !== ">=3.11" ||
+  !/^[a-f0-9]{64}$/.test(manifest.pyprojectSha256) ||
   !Number.isFinite(Date.parse(manifest.releaseDate))
 ) {
   throw new Error("Release source or production-build identity is invalid.");
@@ -190,6 +199,18 @@ try {
   if (packageMetadata.name !== manifest.product || packageMetadata.version !== manifest.version) {
     throw new Error("Extracted package identity does not match the release manifest.");
   }
+  const pyprojectPath = resolve(sourceRoot, "pyproject.toml");
+  if (await sha256File(pyprojectPath) !== manifest.pyprojectSha256) {
+    throw new Error("Extracted Python package metadata does not match the release manifest.");
+  }
+  const pyproject = await readFile(pyprojectPath, "utf8");
+  if (
+    !new RegExp(`^version\\s*=\\s*"${manifest.version.replaceAll(".", "\\.")}"\\s*$`, "m")
+      .test(pyproject) ||
+    !/^requires-python\s*=\s*">=3\.11"\s*$/m.test(pyproject)
+  ) {
+    throw new Error("Python and release identities are inconsistent.");
+  }
   if (await sha256File(resolve(sourceRoot, "package-lock.json")) !== manifest.packageLockSha256) {
     throw new Error("Extracted package lock does not match the release manifest.");
   }
@@ -212,6 +233,38 @@ try {
     CASCADELENS_BUILD_DIRTY: "false",
     CASCADELENS_BUILD_TIME: manifest.releaseDate,
   };
+  const python = process.env.CASCADELENS_PYTHON || "python3";
+  const detectedPython = pythonVersion(python);
+  const [pythonMajor, pythonMinor] = detectedPython.split(".").map(Number);
+  if (pythonMajor !== 3 || pythonMinor < 11) {
+    throw new Error(`Release verification requires Python 3.11+, received ${detectedPython}.`);
+  }
+  const pythonEnvironment = { PYTHONPATH: resolve(sourceRoot, "src") };
+  runVisible(
+    python,
+    ["-m", "compileall", "-q", "src", "tests_python", "examples/python"],
+    sourceRoot,
+    pythonEnvironment,
+  );
+  runVisible(
+    python,
+    ["-m", "unittest", "discover", "-s", "tests_python", "-v"],
+    sourceRoot,
+    pythonEnvironment,
+  );
+  const pythonDemo = resolve(temporaryRoot, "python-demo-riskpack");
+  runVisible(
+    python,
+    ["-m", "cascadelens", "demo", "--out", pythonDemo],
+    sourceRoot,
+    pythonEnvironment,
+  );
+  runVisible(
+    python,
+    ["-m", "cascadelens", "verify", pythonDemo],
+    sourceRoot,
+    pythonEnvironment,
+  );
   runVisible("npm", ["ci", "--no-audit", "--no-fund"], sourceRoot);
   runVisible("npm", ["run", "generate:catalog"], sourceRoot);
   runVisible("npm", ["run", "generate:cases"], sourceRoot);
@@ -249,12 +302,14 @@ try {
       architecture: process.arch,
       node: process.version,
       npm: run("npm", ["--version"]).trim(),
+      python: detectedPython,
     },
     checks: {
       canonicalRelativeChecksums: "pass",
       safeArchivePathsAndTypes: "pass",
       archiveExpansionAndNestedBudgets: "pass",
       exactManifestIdentity: "pass",
+      pythonSourceRuntimeAndRiskPack: "pass",
       detachedSbomMatchesArchive: "pass",
       cleanInstallWithoutGit: "pass",
       deterministicGeneratedArtifacts: "pass",

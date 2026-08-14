@@ -1,6 +1,6 @@
 # Architecture
 
-CascadeLens uses a small, deterministic core and optional scale adapters.
+CascadeLens uses a canonical Python analysis package and a TypeScript browser-compatibility layer for the hosted demonstration.
 
 ```text
 official/public sources
@@ -9,7 +9,7 @@ official/public sources
 connectors -- source snapshots -- license gate
         |
         v
-WorldGraph normalization -- canonical snapshot hash
+Python WorldGraph normalization -- canonical snapshot hash
         |
         +-- ShockScript compiler
         +-- cascade and missing-graph bounds
@@ -18,12 +18,16 @@ WorldGraph normalization -- canonical snapshot hash
         +-- CascadeBench scoring
         |
         v
-RiskPack -- CLI / SDK / Web product
+RiskPack -- Python CLI / API
+        |
+        +-- reviewed artifacts --> TypeScript web product
 ```
 
 ## Design choices
 
-- **Deterministic core:** canonical keys and identifiers use explicit UTF-8 byte order, so equal input snapshots, scripts, and engine versions produce byte-stable canonical JSON across the tested locale matrix.
+- **Python-first core:** `src/cascadelens` owns user graph import, contract validation, cascade execution, intervention analysis, benchmark gating, and RiskPack recomputation.
+- **Cross-runtime parity:** Python executes all 12 reviewed cases and matches the browser artifacts to numerical tolerance; the TypeScript layer remains for website interaction and content-release compatibility.
+- **Deterministic core:** canonical keys and identifiers use explicit UTF-8 byte order, so equal input snapshots, scripts, and engine versions produce stable canonical JSON in the tested runtime matrix.
 - **Portable local profile:** JSON-compatible artifacts and no required hosted database.
 - **Serverless public product:** the web surface runs on Cloudflare-compatible ESM output and reads reviewed bundled results.
 - **Node-side acquisition:** network connectors do not run in the browser and never expose credentials.
@@ -37,10 +41,14 @@ RiskPack -- CLI / SDK / Web product
 
 ## Package boundaries
 
-- `packages/core`: domain model, validation, canonicalization, engines, benchmark, and RiskPack.
-- `packages/connectors`: source-specific acquisition and normalization.
-- `packages/cli`: user-facing command line.
+- `src/cascadelens`: primary Python package, CLI, imports, engine, analysis, and RiskPack.
+- `tests_python`: Python reference parity, import, CLI, and adversarial RiskPack tests.
+- `packages/core`: TypeScript browser-compatibility engine for the hosted product.
+- `packages/connectors`: TypeScript source acquisition retained for the reviewed frozen runs.
+- `packages/cli`: hosted-content and release-maintainer compatibility commands.
 - `content`: versioned source records, scenarios, reviewed outputs, and narrative metadata.
-- `app`: public product UI. It consumes reviewed core outputs and does not independently invent analytics.
+- `app`: public UI. It consumes reviewed artifacts and the browser compatibility engine.
 - `scripts`: content validation, release, packaging, and reproducibility tools.
 - `tests`: unit, integration, content, render, security, and release verification.
+
+The Python package is the recommended user entry point. The TypeScript tree remains visible and tested; GitHub language statistics exclude it because it is the hosted demonstration rather than the primary local product.

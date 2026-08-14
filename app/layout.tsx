@@ -7,12 +7,15 @@ export const metadata: Metadata = {
     default: "CascadeLens",
     template: "%s · CascadeLens",
   },
-  description: "Evidence-graded world graphs and auditable cascade analysis.",
+  description: "Python toolkit for evidence-graded dependency graphs, bounded cascade analysis, and verifiable RiskPacks.",
   applicationName: "CascadeLens",
   authors: [{ name: "Mingrui Li" }],
   creator: "Mingrui Li",
   keywords: [
     "systemic risk",
+    "Python",
+    "NetworkX",
+    "Jupyter",
     "supply chain resilience",
     "bitemporal graph",
     "scenario analysis",
@@ -25,9 +28,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "CascadeLens",
-    title: "CascadeLens · Evidence-graded systemic-risk analysis",
+    title: "CascadeLens · Auditable cascade analysis in Python",
     description:
-      "Compile world graphs, shocks, uncertainty bounds, interventions, and provenance into recomputation-verifiable RiskPacks.",
+      "Import dependency graphs, compare bounded shock propagation and interventions, and export recomputation-verifiable RiskPacks.",
     images: [
       {
         url: "/social-card.jpg",
@@ -39,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CascadeLens · Evidence-graded systemic-risk analysis",
+    title: "CascadeLens · Auditable cascade analysis in Python",
     description:
-      "WorldGraph, ShockScript, bounded cascades, InterventionLab, and recomputation-verifiable RiskPacks.",
+      "JSON, CSV, GraphML, and NetworkX in; bounded cascades, interventions, and verifiable RiskPacks out.",
     images: ["/social-card.jpg"],
   },
 };

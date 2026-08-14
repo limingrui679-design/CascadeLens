@@ -6,6 +6,31 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.4.0 — 2026-08-14
+
+### Python-first user path
+
+- Added an installable Python 3.11+ package with a dependency-free base, public API, and `cascadelens` CLI.
+- Added one-command demonstration and recomputation-verifiable Python RiskPack creation.
+- Added JSON, edge-list CSV, GraphML, and NetworkX imports; imported topology remains user-provided `MODEL_INFERRED` evidence.
+- Made imports reject duplicate nodes, non-finite or out-of-range weights, inconsistent uncertainty bounds, and GraphML entity declarations; undirected GraphML and NetworkX edges expand explicitly in both directions.
+- Added Python parity tests across all 12 reviewed cases, with lower, central, upper, and intervention outputs matched to the published browser artifacts to numerical tolerance.
+- Added a Jupyter notebook, checked examples, three tutorials, and formal equations, baseline relationships, and failure conditions.
+- Restricted `--overwrite` so JSON output never follows a symbolic link and a directory is replaced only when it is already a verified current RiskPack.
+
+### Product and community
+
+- Expanded the public workbench from one fixed case to all 12 reviewed cases.
+- Added local browser imports for JSON, CSV, GraphML, and JSON/YAML ShockScript, with no file upload to the hosted service.
+- Added a contextual GitHub source/star link after successful analysis or export.
+- Added a 15-minute contribution path plus historical-replay and external-review submission templates.
+- Added a public adoption and validation ledger that remains at zero until its evidence gates are satisfied.
+- Bound release manifests to Python package metadata and made detached no-`.git` verification rerun the Python tests, demo, and RiskPack recomputation.
+
+### Evidence boundary
+
+Python/browser parity, local import support, packaging, tutorials, and repository settings are software and usability improvements. This release still contains 0 historically scored cases, 0 external validations, 0 verified organizational adoptions, and 0 demonstrated real-world impacts.
+
 ## 0.3.2 — 2026-08-13
 
 ### Release integrity

@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import snapshotJson from "@/content/cases/semiconductor-capacity-restress/graph/snapshot.json";
-import scenarioJson from "@/content/cases/semiconductor-capacity-restress/scenario.json";
-import boundsJson from "@/content/cases/semiconductor-capacity-restress/results/cascade-bounds.json";
-import interventionsJson from "@/content/cases/semiconductor-capacity-restress/results/interventions.json";
-import type {
-  CascadeBounds,
-  GraphSnapshot,
-  InterventionAnalysis,
-  ShockScenario,
-} from "../../packages/core/src/index";
 import { PageShell } from "../components/page-shell";
 import { Eyebrow } from "../components/status";
+import { workbenchCases } from "./case-data";
 import { Workbench } from "./workbench";
 
 export const metadata: Metadata = {
@@ -35,17 +26,15 @@ export default async function WorkbenchPage({
         <Eyebrow>Interactive scenario compiler</Eyebrow>
         <h1>Change an assumption. See the decision boundary move.</h1>
         <p className="page-intro-copy">
-          This browser run uses the same deterministic core as the CLI. Inputs remain an assumed topology; results remain scenario-only.
+          Switch among all 12 reviewed cases or import JSON, CSV, GraphML, and a ShockScript. User topology remains unverified; every result remains scenario-only.
         </p>
       </section>
       <section className="wide-page-content">
         <Workbench
-          initialBounds={boundsJson as CascadeBounds}
-          initialInterventions={interventionsJson as InterventionAnalysis}
+          cases={workbenchCases}
+          initialSlug={typeof parameters.case === "string" ? parameters.case : undefined}
           initialMagnitude={finiteParameter(parameters.magnitude)}
           initialTransmission={finiteParameter(parameters.transmission)}
-          scenario={scenarioJson as ShockScenario}
-          snapshot={snapshotJson as GraphSnapshot}
         />
       </section>
     </PageShell>

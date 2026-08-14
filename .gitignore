@@ -12,6 +12,14 @@
 
 # testing
 /coverage
+/.pytest_cache/
+/.ruff_cache/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+/.venv/
 
 # next.js
 /.next/

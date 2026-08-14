@@ -1,0 +1,5 @@
+source,target,weight,lower,upper,source_label,target_label,relation
+port,inputs,0.78,0.55,0.90,Critical port,Time-sensitive inputs,depends_on
+inputs,plant,0.62,0.40,0.78,Time-sensitive inputs,Assembly plant,depends_on
+plant,market,0.54,0.34,0.70,Assembly plant,Regional availability,depends_on
+

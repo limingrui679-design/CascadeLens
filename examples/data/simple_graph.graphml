@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="kind" for="node" attr.name="kind" attr.type="string"/>
+  <key id="weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="cascade-demo" edgedefault="directed">
+    <node id="supplier"><data key="label">Supplier</data><data key="kind">legal_entity</data></node>
+    <node id="plant"><data key="label">Plant</data><data key="kind">facility</data></node>
+    <node id="market"><data key="label">Market</data><data key="kind">region</data></node>
+    <edge source="supplier" target="plant"><data key="weight">0.72</data></edge>
+    <edge source="plant" target="market"><data key="weight">0.61</data></edge>
+  </graph>
+</graphml>
+

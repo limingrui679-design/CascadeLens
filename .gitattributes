@@ -1,4 +1,18 @@
 * text=auto eol=lf
 *.png binary
 *.jpg binary
+*.gif binary
 *.zip binary
+
+# The Python package is the canonical local-analysis product. The TypeScript
+# tree is the hosted demonstration and browser-compatibility surface, so it is
+# excluded from GitHub's primary-language summary without being hidden from
+# source review.
+app/** linguist-detectable=false
+packages/** linguist-detectable=false
+scripts/** linguist-detectable=false
+tests/** linguist-detectable=false
+worker/** linguist-detectable=false
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+*.mjs linguist-detectable=false
