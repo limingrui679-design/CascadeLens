@@ -71,6 +71,17 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
   assert.match(readme, /0 claims of organizational adoption/);
 });
 
+test("README introduction explains the analytical input, outputs, and proof path", async () => {
+  const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
+  const introduction = readme.slice(0, readme.indexOf("<table>"));
+  assert.match(introduction, /WorldGraph snapshot/);
+  assert.match(introduction, /frozen decision cutoff/);
+  assert.match(introduction, /lower, central, and upper impacts/);
+  assert.match(introduction, /feasible Pareto trade-offs/);
+  assert.match(introduction, /returns `scenario_only`/);
+  assert.match(introduction, /RiskPack whose metadata and analytical outputs are recomputed/);
+});
+
 test("README prominently links every reference case", async () => {
   const [readme, caseCatalog] = await Promise.all([
     readFile(resolve(repositoryRoot, "README.md"), "utf8"),

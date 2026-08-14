@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Trace how disruption becomes systemic risk—without hiding where the evidence ends.</strong><br />
-  An evidence-graded, bitemporal world graph, executable shock compiler, and auditable decision-analysis toolkit for global resilience research.
+  Compile sourced dependency graphs and versioned shock scenarios into bounded cascade estimates, feasible intervention frontiers, evidence-acquisition priorities, honest benchmark status, and recomputable RiskPacks.
 </p>
 
 <p align="center">
@@ -27,9 +27,21 @@
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
 
-CascadeLens is a TypeScript and React research platform for analyzing how a declared disruption could propagate through an incomplete network of supply, financial, infrastructure, policy, and critical-goods dependencies. It turns sources, assumptions, graph structure, shocks, interventions, and validation status into one inspectable chain instead of presenting a single unexplained risk score.
+CascadeLens answers a concrete research question: **when evidence about global dependencies is incomplete and changes over time, how can an analyst test a disruption, compare possible responses, and preserve exactly which parts came from sources versus assumptions?** It is a local-first TypeScript and React platform for supply-chain, financial, infrastructure, policy, health, and critical-goods resilience analysis—not a single risk score or a graph visualization with hidden model logic.
 
-The repository is not only a dashboard. It contains a deterministic analytical core, a bitemporal evidence model, a versioned scenario language, ten bounded data-connector contracts, intervention and value-of-information analysis, a no-lookahead benchmark gate, portable RiskPacks, a CLI, a typed SDK, a multi-route web product, and a reproducible release pipeline.
+A run begins with a source-linked WorldGraph snapshot, a frozen decision cutoff, and a versioned ShockScript that declares the disruption, targets, dates, propagation settings, analysis horizons, candidate interventions, costs, lead times, and constraints. CascadeLens then applies evidence-grade and bitemporal eligibility rules, simulates the visible graph day by day, and keeps model-inferred relationships outside the primary estimate instead of silently treating them as observed dependencies.
+
+| Stage | What CascadeLens actually does |
+|---|---|
+| **Inputs** | Accepts a sealed WorldGraph, source manifests, explicit assumptions, a ShockScript, optional observation candidates, and—only when legitimately separated—post-event outcomes. |
+| **Evidence and time gate** | Distinguishes official observation, entity reporting, third-party verification, text extraction, and model inference; checks both real-world validity and when each item became knowable at the frozen cutoff. |
+| **Bounded cascade** | Recomputes daily propagation over acyclic or cyclic graphs and returns lower, central, and upper impacts, contributions, peaks, end states, excluded-edge counts, convergence, and warnings for every declared horizon. |
+| **Decision analysis** | Tests `do_not_act` and intervention bundles against lead time, budget, capacity, and exclusivity; exposes feasible Pareto trade-offs and decision-reversal thresholds instead of hiding them behind one score. |
+| **Evidence acquisition** | Estimates whether verifying a missing relationship could change the preferred action or reduce uncertainty enough to justify its acquisition cost, without claiming that the relationship is true. |
+| **Benchmark discipline** | Scores a replay only when its metric, horizon, complete outcome window, source separation, and availability time pass the no-lookahead gate; otherwise returns `scenario_only`. |
+| **Portable result** | Packages sources, graph, scenario, assumptions, model card, limitations, four machine-readable result sets, checksums, and rebuild instructions into a RiskPack whose metadata and analytical outputs are recomputed during verification. |
+
+The repository therefore includes much more than the public dashboard: a deterministic analytical core, bitemporal evidence model, strict scenario language, ten bounded data-connector contracts, twelve executable reference cases, InterventionLab, Observability Frontier, CascadeBench, RiskPack protocol, CLI, typed SDK, multi-route web product, public JSON Schemas, adversarial tests, and a reproducible release pipeline.
 
 <table>
   <tr>
