@@ -46,6 +46,7 @@ The repository is not only a dashboard. It contains a deterministic analytical c
 <details>
 <summary><strong>Table of contents</strong></summary>
 
+- [Explore all 12 cases](#explore-all-12-cases)
 - [Why CascadeLens](#why-cascadelens)
 - [What this repository implements](#what-this-repository-implements)
 - [From a question to a verifiable RiskPack](#from-a-question-to-a-verifiable-riskpack)
@@ -64,6 +65,84 @@ The repository is not only a dashboard. It contains a deterministic analytical c
 - [Evidence boundaries](#evidence-boundaries)
 
 </details>
+
+## Explore all 12 cases
+
+The complete launch library is visible here—not hidden behind the product tour. Select any title to inspect its scenario, graph, assumptions, results, model card, limitations, and rebuildable RiskPack in the repository. The same cases can also be run in the [live case library](https://cascadelens.limingrui2.chatgpt.site/cases).
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/suez-route-restress/README.md">1 · Suez route</a></strong><br />
+      <sub>Maritime trade · quasi-historical context · chain · 7/30/90 days</sub><br /><br />
+      Tests which bounded intervention remains feasible when an assumed route interruption propagates toward production and market availability.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/semiconductor-capacity-restress/README.md">2 · Semiconductors</a></strong><br />
+      <sub>Advanced manufacturing · quasi-historical context · branch/merge · 7/30/90 days</sub><br /><br />
+      Compares inventory, supplier diversification, and allocation under an assumed chip-capacity loss.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/medical-ppe-demand-restress/README.md">3 · Medical PPE</a></strong><br />
+      <sub>Public-health supply · quasi-historical context · branch/merge · 7/21/60 days</sub><br /><br />
+      Evaluates feasible supply responses to a bounded protective-equipment demand surge and downstream access disruption.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/ukraine-commodity-compound-restress/README.md">4 · Commodity compound</a></strong><br />
+      <sub>Food and energy · quasi-historical context · cycle · 7/30/90 days</sub><br /><br />
+      Tests buffers and substitution when several assumed commodity, logistics, and affordability channels move together.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/panama-drought-restress/README.md">5 · Panama drought</a></strong><br />
+      <sub>Climate and logistics · quasi-historical context · dynamic activation · 7/30/90 days</sub><br /><br />
+      Examines when route diversification becomes preferable to inventory buffering under a canal-capacity constraint.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/red-sea-rerouting-restress/README.md">6 · Red Sea routing</a></strong><br />
+      <sub>Geopolitics and shipping · quasi-historical context · dynamic expiry · 7/30/90 days</sub><br /><br />
+      Compares continuity interventions while an assumed route-avoidance edge changes across the simulated horizon.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/baltimore-port-restress/README.md">7 · Baltimore port</a></strong><br />
+      <sub>Port infrastructure · quasi-historical context · chain · 7/30/90 days</sub><br /><br />
+      Compares alternate-port and inventory-buffer choices under an assumed sudden loss of port access.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/refining-hurricane-restress/README.md">8 · Refining hurricane</a></strong><br />
+      <sub>Energy infrastructure · quasi-historical context · chain · 7/30/90 days</sub><br /><br />
+      Tests reserve, rerouting, and demand-management bundles under bounded refining-capacity disruption.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/critical-minerals-export-stress/README.md">9 · Critical minerals</a></strong><br />
+      <sub>Minerals and technology · synthetic stress · chain · 14/45/120 days</sub><br /><br />
+      Values diversification and additional evidence under an assumed concentrated critical-mineral dependency.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/ofac-list-change-stress/README.md">10 · Sanctions change</a></strong><br />
+      <sub>Financial and compliance operations · synthetic stress · chain · 3/14/60 days</sub><br /><br />
+      Tests operational safeguards while preserving a fail-closed compliance boundary after an assumed list change.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/drug-shortage-restress/README.md">11 · Drug shortage</a></strong><br />
+      <sub>Medicines · quasi-historical context · chain · 7/21/60 days</sub><br /><br />
+      Evaluates which bounded supply intervention remains feasible when an assumed medicine constraint reaches care access.
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="content/cases/food-export-compound-stress/README.md">12 · Food export compound</a></strong><br />
+      <sub>Agriculture and trade · synthetic stress · chain · 7/30/90 days</sub><br /><br />
+      Compares reserve and diversification choices under simultaneous assumed production loss and export restriction.
+    </td>
+  </tr>
+</table>
+
+> [!NOTE]
+> “Quasi-historical context” means that an event or official page frames the question; it does not supply the assumed dependency graph or validate the calculated impacts. All 12 cases remain `scenario_only` and must not be described as forecasts, client projects, or historically scored evidence.
 
 ## Why CascadeLens
 

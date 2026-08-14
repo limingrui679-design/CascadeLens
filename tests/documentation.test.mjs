@@ -71,6 +71,23 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
   assert.match(readme, /0 claims of organizational adoption/);
 });
 
+test("README prominently links every reference case", async () => {
+  const [readme, caseCatalog] = await Promise.all([
+    readFile(resolve(repositoryRoot, "README.md"), "utf8"),
+    readFile(resolve(repositoryRoot, "content/cases/catalog.json"), "utf8").then(JSON.parse),
+  ]);
+  assert.equal(caseCatalog.cases.length, 12);
+  const showcaseStart = readme.indexOf("## Explore all 12 cases");
+  const nextSection = readme.indexOf("\n## Why CascadeLens", showcaseStart);
+  assert.ok(showcaseStart >= 0, "README must contain the twelve-case showcase");
+  assert.ok(nextSection > showcaseStart, "twelve-case showcase must appear before project rationale");
+  const showcase = readme.slice(showcaseStart, nextSection);
+  for (const item of caseCatalog.cases) {
+    assert.match(showcase, new RegExp(`content/cases/${item.slug}/README\\.md`));
+    assert.match(showcase, new RegExp(item.shortTitle.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&"), "i"));
+  }
+});
+
 test("README screenshots are committed, valid, and consistently framed", async () => {
   for (const relativePath of screenshotPaths) {
     const bytes = await readFile(resolve(repositoryRoot, relativePath));
