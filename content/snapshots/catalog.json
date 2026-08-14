@@ -1,9 +1,9 @@
 {
   "schemaVersion": "cascadelens-public-snapshots/1.0",
-  "snapshotCount": 3,
-  "factCount": 3802,
-  "dependencyEdgeCount": 0,
-  "evidenceBoundary": "These frozen public-source snapshots demonstrate lawful acquisition, normalization, lineage, and conservative graph mapping. They are not historical outcomes, calibrated model inputs, customer data, external validation, adoption, or evidence that any dependency relationship exists.",
+  "snapshotCount": 4,
+  "factCount": 4027,
+  "dependencyEdgeCount": 222,
+  "evidenceBoundary": "These frozen public-source snapshots demonstrate lawful acquisition, normalization, lineage, and conservative graph mapping. The 222 BEA inputs_to edges are official published sector-average coefficients included only in the upper evidence bound; they are not firm-level supplier links, current operational dependencies, historical outcomes, calibrated model inputs, customer data, external validation, adoption, or realized impact.",
   "snapshots": [
     {
       "slug": "faostat-asti-researchers",
@@ -82,6 +82,32 @@
       "nodeCount": 1,
       "edgeCount": 0,
       "worldGraphDigest": "1f0167466bfc449bd8abe4e29e488d29812160c23d24d3893e6a74e6fd772268"
+    },
+    {
+      "slug": "bea-2023-direct-requirements",
+      "title": "BEA 2023 sector direct-requirements frozen snapshot",
+      "connectorId": "bea-input-output",
+      "retrievedAt": "2026-08-14T05:34:06.210Z",
+      "termsCheckedAt": "2026-08-14",
+      "licenseName": "U.S. Government Public Domain",
+      "licenseSpdx": "LicenseRef-Public-Domain-USGov",
+      "attribution": "Source: U.S. Bureau of Economic Analysis, 2023 Commodity-by-Industry Direct Requirements, After Redefinitions, sector level. Accessed 14 August 2026. No BEA endorsement is implied.",
+      "queryPath": "bea-2023-direct-requirements/query.json",
+      "querySha256": "f21131bb7bc72b9172cdd0acf6ee0ba9431698ab21c9ca54f670dceb50262253",
+      "checkpointPath": "bea-2023-direct-requirements/checkpoint.json",
+      "checkpointSha256": "929854181b8df7e5acdbea0ee8770372fec83e4b1812e4b163e36aac93935c33",
+      "payloadPath": "bea-2023-direct-requirements/partition-000001.payload",
+      "manifestPath": "bea-2023-direct-requirements/partition-000001.manifest.json",
+      "normalizedPath": "bea-2023-direct-requirements/partition-000001.normalized.json",
+      "worldGraphPath": "bea-2023-direct-requirements/partition-000001.worldgraph.json",
+      "payloadBytes": 124435,
+      "payloadSha256": "1590bb70bc05a39b367ba34344b45308873af09709384515a66df238f0124316",
+      "manifestDigest": "40b4b7198c73ae4032f273b05c3c4fac51f9b23ae5ecfb92bc49e2e89ab88251",
+      "factCount": 225,
+      "normalizedDigest": "9c9ed2f6faefa4ea4ab067a930d53884f6e87e73a3020c338e3fdaa1335716b1",
+      "nodeCount": 30,
+      "edgeCount": 222,
+      "worldGraphDigest": "ffc5b20e0a6f5381da9ad1cba94c2eb4c5f21bea9d1fb7cdf356d27ad2264a9e"
     }
   ]
 }

@@ -3,7 +3,7 @@
 ## 1. Install from the reviewed release
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
 ```
 
 Python 3.11 or newer is required. The base package has no mandatory runtime dependencies.
@@ -37,4 +37,3 @@ cascadelens verify demo-riskpack
 ```
 
 Pass `--expected-digest` with a previously retained digest to detect a self-consistently rebuilt pack whose inputs changed.
-

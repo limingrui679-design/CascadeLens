@@ -5,7 +5,7 @@ The Python CLI is the primary local entry point. It validates input before analy
 ## Install
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
 ```
 
 ## Run the complete demonstration

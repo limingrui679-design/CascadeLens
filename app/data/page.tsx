@@ -6,7 +6,7 @@ import { Eyebrow, Status } from "../components/status";
 
 export const metadata: Metadata = {
   title: "Data and license catalog",
-  description: "Ten documented public-source connector contracts and three verified frozen official-source snapshots.",
+  description: "Eleven documented public-source connector contracts and four verified frozen official-source snapshots.",
 };
 
 function modeTone(mode: string) {
@@ -20,12 +20,12 @@ export default function DataPage() {
         <Eyebrow>Source acquisition registry</Eyebrow>
         <h1>Data access is a contract, not a scrape.</h1>
         <p className="page-intro-copy">
-          Every connector declares its official source, allowed hosts, evidence grade, request limits, redistribution mode, and known interpretive boundary. Remote runs emit a raw manifest, normalized digest, and conservative metric-node WorldGraph snapshot without inventing dependency edges.
+          Every connector declares its official source, allowed hosts, evidence grade, request limits, redistribution mode, and known interpretive boundary. Generic mappings preserve metric facts without inventing edges; a source-specific mapping must preserve an explicit published relation and its evidence limit.
         </p>
         <div className="page-intro-meta">
-          <Status tone="observed">10 core connectors</Status>
+          <Status tone="observed">11 core connectors</Status>
           <Status tone="blocked">redirects blocked</Status>
-          <Status tone="verified">3 frozen public snapshots</Status>
+          <Status tone="verified">4 frozen public snapshots</Status>
         </div>
       </section>
       <section className="page-content">
@@ -48,9 +48,9 @@ export default function DataPage() {
         </div>
         <article className="panel">
           <Eyebrow>Executed public-data evidence</Eyebrow>
-          <h2>Three official-source routes are frozen and independently recheckable.</h2>
+          <h2>Four official-source routes are frozen and independently recheckable.</h2>
           <p>
-            The packaged FAOSTAT, GLEIF, and openFDA runs contain {snapshotCatalog.factCount.toLocaleString("en-US")} normalized facts, exact source hashes, manifests, stable identities, and deterministic WorldGraph snapshots. The generic mapper created {snapshotCatalog.dependencyEdgeCount} dependency edges because public records alone do not prove dependency topology.
+            FAOSTAT, GLEIF, openFDA, and BEA contribute {snapshotCatalog.factCount.toLocaleString("en-US")} normalized facts with exact source hashes and deterministic graphs. The first three remain metric-only. BEA contributes {snapshotCatalog.dependencyEdgeCount} published sector-level input edges; all are model-inferred, upper-bound-only, and not firm-level dependencies.
           </p>
           <p>
             <a href="https://github.com/limingrui679-design/CascadeLens/tree/main/content/snapshots" rel="noreferrer" target="_blank">Inspect queries, payloads, attribution, and digests ↗</a>

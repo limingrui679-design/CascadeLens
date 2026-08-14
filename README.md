@@ -18,7 +18,7 @@
   · <a href="#60-second-python-start">Run in 60 seconds</a>
   · <a href="#explore-all-12-cases">Explore 12 cases</a>
   · <a href="docs/README.md">Read the docs</a>
-  · <a href="docs/SELF_REVIEW_2026-08-14_v0.4.0.md">Inspect the evidence</a>
+  · <a href="docs/SELF_REVIEW_2026-08-14_v0.5.0.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
@@ -30,7 +30,7 @@ Each run reports **lower, central, and upper impacts**, exposes **feasible Paret
 ## 60-second Python start
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
 cascadelens demo --out demo-riskpack
 ```
 
@@ -52,14 +52,14 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
 <table>
   <tr>
     <td align="center"><strong>12</strong><br /><sub>executable cases</sub></td>
-    <td align="center"><strong>10</strong><br /><sub>connector contracts</sub></td>
-    <td align="center"><strong>3,802</strong><br /><sub>normalized official-source facts</sub></td>
-    <td align="center"><strong>151 / 151</strong><br /><sub>Node + Python unit checks</sub></td>
+    <td align="center"><strong>11</strong><br /><sub>connector contracts</sub></td>
+    <td align="center"><strong>4,027</strong><br /><sub>normalized official-source facts</sub></td>
+    <td align="center"><strong>PASS</strong><br /><sub>Node + Python unit suites</sub></td>
   </tr>
 </table>
 
 > [!IMPORTANT]
-> Stable release: **[`v0.4.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.4.0)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
+> Stable release: **[`v0.5.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.5.0)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 ## Explore all 12 cases
 
@@ -217,16 +217,16 @@ Verification validates schemas, paths, versions, semantic assumption bindings, m
 
 <table>
   <tr>
-    <td align="center"><strong>10</strong><br /><sub>bounded contracts</sub></td>
-    <td align="center"><strong>3</strong><br /><sub>frozen official runs</sub></td>
-    <td align="center"><strong>3,802</strong><br /><sub>normalized facts</sub></td>
-    <td align="center"><strong>0</strong><br /><sub>dependency edges inferred from those runs</sub></td>
+    <td align="center"><strong>11</strong><br /><sub>bounded contracts</sub></td>
+    <td align="center"><strong>4</strong><br /><sub>frozen official runs</sub></td>
+    <td align="center"><strong>4,027</strong><br /><sub>normalized facts</sub></td>
+    <td align="center"><strong>222</strong><br /><sub>published sector input edges</sub></td>
   </tr>
 </table>
 
-**Connectors:** UN Comtrade · OECD ICIO · SEC EDGAR · GLEIF · FAOSTAT · openFDA · OFAC · WITS · UNCTAD LSCI · IMF PortWatch
+**Connectors:** UN Comtrade · OECD ICIO · SEC EDGAR · GLEIF · FAOSTAT · openFDA · OFAC · WITS · UNCTAD LSCI · IMF PortWatch · BEA Input-Output
 
-Generic mapping preserves facts as metric nodes and refuses to invent causal or operational topology. Seven connectors currently ship contracts and fixtures without frozen public runs.
+Generic mapping preserves facts as metric nodes and refuses to invent topology. The BEA-specific mapper preserves 222 positive, published sector-average input coefficients as `MODEL_INFERRED` edges: upper bound only, never firm-level supplier links. Seven connectors currently ship contracts and fixtures without frozen public runs.
 
 [Data catalog](docs/connectors/DATA_CATALOG.md) · [Connector contract](docs/connectors/CONNECTOR_CONTRACT.md) · [Data licenses](docs/DATA_LICENSES.md) · [Frozen-run ledger](content/snapshots/README.md)
 
@@ -253,7 +253,7 @@ flowchart LR
 
 The scale check is a synthetic chain engineering budget—not a production SLA or empirical-domain benchmark.
 
-[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.4.0 review](docs/SELF_REVIEW_2026-08-14_v0.4.0.md)
+[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.5.0 review](docs/SELF_REVIEW_2026-08-14_v0.5.0.md)
 
 ## Interfaces
 
@@ -291,7 +291,7 @@ docs/             methods + tutorials           scripts/       hosted build veri
 |---|---|
 | Deterministic computation on checked fixtures | Predictive accuracy or calibrated real-world weights |
 | Bitemporal no-lookahead enforcement | Complete or perfectly true public sources |
-| Three reproducible public-data acquisition runs | A populated global dependency graph |
+| Four reproducible public-data acquisition runs and 222 published sector-level input coefficients | A populated firm-level or current global dependency graph |
 | Feasibility and value-of-information under declared assumptions | Operational, causal, clinical, legal, or investment advice |
 | RiskPack integrity and analytical recomputation | Publisher identity without an external trust channel |
 | Reproducible release engineering | Production SLA, adoption, or real-user impact |

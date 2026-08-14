@@ -40,6 +40,8 @@ const required = [
   "content/cases/README.md",
   "content/snapshots/catalog.json",
   "content/snapshots/README.md",
+  "content/validation/evidence-ledger.json",
+  "docs/validation/README.md",
 ];
 
 function fail(message: string): never {
@@ -64,8 +66,8 @@ if (
 ) {
   fail("generated connector catalog is stale; run npm run generate:catalog");
 }
-if (connectorCatalog.length !== 10 || new Set(connectorCatalog.map((item) => item.id)).size !== 10) {
-  fail("connector catalog must contain exactly ten unique core connectors");
+if (connectorCatalog.length !== 11 || new Set(connectorCatalog.map((item) => item.id)).size !== 11) {
+  fail("connector catalog must contain exactly eleven unique core connectors");
 }
 
 const publicSnapshots = await json<{
@@ -78,15 +80,16 @@ const publicSnapshots = await json<{
 }>("content/snapshots/catalog.json");
 if (
   publicSnapshots.schemaVersion !== "cascadelens-public-snapshots/1.0" ||
-  publicSnapshots.snapshotCount !== 3 ||
-  publicSnapshots.snapshots.length !== 3 ||
-  publicSnapshots.factCount !== 3_802 ||
-  publicSnapshots.dependencyEdgeCount !== 0 ||
-  !/not historical outcomes/i.test(publicSnapshots.evidenceBoundary)
+  publicSnapshots.snapshotCount !== 4 ||
+  publicSnapshots.snapshots.length !== 4 ||
+  publicSnapshots.factCount !== 4_027 ||
+  publicSnapshots.dependencyEdgeCount !== 222 ||
+  !/not firm-level supplier links/i.test(publicSnapshots.evidenceBoundary) ||
+  !/not.*historical outcomes/i.test(publicSnapshots.evidenceBoundary)
 ) {
   fail("public snapshot catalog must preserve its exact count and evidence boundary");
 }
-if (new Set(publicSnapshots.snapshots.map((item) => item.slug)).size !== 3) {
+if (new Set(publicSnapshots.snapshots.map((item) => item.slug)).size !== 4) {
   fail("public snapshot slugs must be unique");
 }
 for (const record of publicSnapshots.snapshots) {
@@ -200,5 +203,5 @@ async function scan(directory: string): Promise<void> {
 for (const directory of publicRoots) await scan(directory);
 
 process.stdout.write(
-  `Validated ${required.length} required artifacts, 10 connectors, 3 frozen public snapshots, and 12 verified scenario-only reference cases.\n`,
+  `Validated ${required.length} required artifacts, 11 connectors, 4 frozen public snapshots, and 12 verified scenario-only reference cases.\n`,
 );

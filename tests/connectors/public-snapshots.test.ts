@@ -4,12 +4,15 @@ import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import test from "node:test";
 import {
+  adapters,
   connectorById,
-  normalizedSnapshotToWorldGraph,
+  mapConnectorSnapshotToWorldGraph,
   verifySnapshotManifest,
+  type ConnectorAdapter,
   type DataSnapshotManifest,
   type NormalizedPartitionSnapshot,
 } from "../../packages/connectors/src/index";
+import { stabilizeNormalizedFacts } from "../../packages/connectors/src/util";
 import {
   sha256Text,
   stableStringify,
@@ -45,7 +48,7 @@ interface SnapshotRecord {
   worldGraphDigest: string;
 }
 
-test("verifies three lawfully redistributable frozen connector snapshots end to end", async () => {
+test("verifies four lawfully redistributable frozen connector snapshots end to end", async () => {
   const catalog = JSON.parse(
     await readFile(resolve(snapshotRoot, "catalog.json"), "utf8"),
   ) as {
@@ -57,14 +60,16 @@ test("verifies three lawfully redistributable frozen connector snapshots end to 
     snapshots: SnapshotRecord[];
   };
   assert.equal(catalog.schemaVersion, "cascadelens-public-snapshots/1.0");
-  assert.equal(catalog.snapshotCount, 3);
-  assert.equal(catalog.snapshots.length, 3);
-  assert.match(catalog.evidenceBoundary, /not historical outcomes/i);
+  assert.equal(catalog.snapshotCount, 4);
+  assert.equal(catalog.snapshots.length, 4);
+  assert.match(catalog.evidenceBoundary, /not[\s\S]*historical outcomes/i);
 
   let totalFacts = 0;
   let totalEdges = 0;
   for (const record of catalog.snapshots) {
     const descriptor = connectorById(record.connectorId);
+    const adapter = adapters[record.connectorId as keyof typeof adapters] as ConnectorAdapter<unknown>;
+    assert.ok(adapter);
     assert.equal(descriptor.redistributionMode, "redistributable");
     assert.equal(descriptor.rawRedistributable, true);
     assert.equal(descriptor.redistributionLicense?.name, record.licenseName);
@@ -122,6 +127,18 @@ test("verifies three lawfully redistributable frozen connector snapshots end to 
     assert.equal(normalized.facts.length, record.factCount);
     assert.equal(new Set(normalized.facts.map((fact) => fact.id)).size, record.factCount);
     assert.ok(normalized.facts.every((fact) => fact.retrievedAt === record.retrievedAt));
+    assert.equal(
+      stableStringify(
+        stabilizeNormalizedFacts(
+          adapter.normalize(payload, {
+            retrievedAt: record.retrievedAt,
+            availableAt: record.retrievedAt,
+            sourceLocator: manifest.requestUri,
+          }),
+        ),
+      ),
+      stableStringify(normalized.facts),
+    );
 
     assert.deepEqual(
       (await verifySnapshot(worldGraph)).filter((issue) => issue.severity === "error"),
@@ -130,11 +147,22 @@ test("verifies three lawfully redistributable frozen connector snapshots end to 
     assert.equal(worldGraph.contentDigest, record.worldGraphDigest);
     assert.equal(worldGraph.nodes.length, record.nodeCount);
     assert.equal(worldGraph.edges.length, record.edgeCount);
-    assert.equal(worldGraph.edges.length, 0);
     assert.equal(
       stableStringify(worldGraph),
-      stableStringify(await normalizedSnapshotToWorldGraph(descriptor, normalized)),
+      stableStringify(await mapConnectorSnapshotToWorldGraph(adapter, normalized)),
     );
+    if (record.connectorId === "bea-input-output") {
+      assert.equal(worldGraph.edges.length, 222);
+      assert.ok(worldGraph.edges.every((edge) => edge.relation === "inputs_to"));
+      assert.ok(worldGraph.edges.every((edge) => edge.evidence.grade === "MODEL_INFERRED"));
+      assert.ok(
+        worldGraph.edges.every(
+          (edge) => edge.properties.eligibleForPrimaryEstimate === false,
+        ),
+      );
+    } else {
+      assert.equal(worldGraph.edges.length, 0);
+    }
     totalFacts += normalized.facts.length;
     totalEdges += worldGraph.edges.length;
   }

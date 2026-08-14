@@ -272,6 +272,36 @@
       "redistributionMode": "user_provided",
       "runtime": "import_only",
       "termsUri": "https://www.imf.org/external/terms.htm"
+    },
+    {
+      "allowedHosts": [
+        "apps.bea.gov"
+      ],
+      "auth": "none",
+      "boundary": "Official national sector-average direct-requirements coefficients are derived statistical relationships, not firm-level suppliers, current operational dependencies, or causal effects.",
+      "checkedAt": "2026-08-14",
+      "documentationUri": "https://www.bea.gov/help/faq/32",
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "bea-input-output",
+      "licenseNotes": [
+        "BEA states that website information is public domain unless otherwise noted; retain source attribution and do not imply BEA endorsement."
+      ],
+      "maxResponseBytes": 2000000,
+      "minimumIntervalMs": 500,
+      "name": "BEA Input-Output Accounts",
+      "officialUri": "https://www.bea.gov/itable/input-output",
+      "operationalNotes": [
+        "The bounded connector reads only the latest sector-level commodity-by-industry direct-requirements worksheet."
+      ],
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "rawRedistributable": true,
+      "redistributionLicense": {
+        "name": "U.S. Government Public Domain",
+        "spdx": "LicenseRef-Public-Domain-USGov"
+      },
+      "redistributionMode": "redistributable",
+      "runtime": "remote",
+      "termsUri": "https://www.bea.gov/help/faq/145"
     }
   ],
   "generatedFrom": "packages/connectors/src/catalog.ts",

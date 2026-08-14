@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "cascadelens-evidence-ledger/1.0",
+  "updatedAt": "2026-08-14",
+  "evidenceBoundary": "Protocols, templates, issue forms, internal tests, maintainer reviews, traffic, stars, and demos do not count as accepted historical, external, user-research, adoption, or impact evidence.",
+  "counts": {
+    "historical_replay": 0,
+    "external_review": 0,
+    "structured_user_study": 0,
+    "organizational_adoption": 0,
+    "real_world_impact": 0
+  },
+  "readinessArtifacts": [
+    {
+      "id": "historical-replay-protocol",
+      "category": "historical_replay",
+      "status": "protocol_ready_not_evidence",
+      "path": "docs/validation/HISTORICAL_REPLAY_PROTOCOL.md",
+      "sha256": "355b6b20a2808892b7837c3b86372f9eac9f034e2b5e8da527c3d5068a61acb2"
+    },
+    {
+      "id": "historical-replay-intake",
+      "category": "historical_replay",
+      "status": "protocol_ready_not_evidence",
+      "path": ".github/ISSUE_TEMPLATE/historical-replay.yml",
+      "sha256": "38f4e39b145b4cbd408f91a77fddb25322186760714806c59c17ba90e50129ed"
+    },
+    {
+      "id": "external-review-packet",
+      "category": "external_review",
+      "status": "protocol_ready_not_evidence",
+      "path": "docs/validation/EXTERNAL_REVIEW_PACKET.md",
+      "sha256": "3e1820c72307168241c9ffe8729899c3859631bf947b6d878c70de1779773de1"
+    },
+    {
+      "id": "external-review-intake",
+      "category": "external_review",
+      "status": "protocol_ready_not_evidence",
+      "path": ".github/ISSUE_TEMPLATE/external-review.yml",
+      "sha256": "a829bab2ede7dc5068b8eaffd73926156cdf63b2115cb7cbf2a75fd9cc014333"
+    },
+    {
+      "id": "user-study-protocol",
+      "category": "structured_user_study",
+      "status": "protocol_ready_not_evidence",
+      "path": "docs/validation/USER_STUDY_PROTOCOL.md",
+      "sha256": "6a39cbdab42c99a24ec1e3e355e243695ac28531fed345a910680309154eff0f"
+    },
+    {
+      "id": "user-study-intake",
+      "category": "structured_user_study",
+      "status": "protocol_ready_not_evidence",
+      "path": ".github/ISSUE_TEMPLATE/usability-study.yml",
+      "sha256": "3216496cb0348b51f836a14211598d33ea07f94b115e5aff5fd3b86ecc2f77ae"
+    },
+    {
+      "id": "adoption-impact-record",
+      "category": "organizational_adoption",
+      "status": "protocol_ready_not_evidence",
+      "path": "docs/validation/ADOPTION_AND_IMPACT_RECORD.md",
+      "sha256": "d627e498bb43b5fb8002971012c6ae232ca09376f9861d22fedeed868c136cb1"
+    },
+    {
+      "id": "adoption-impact-intake",
+      "category": "real_world_impact",
+      "status": "protocol_ready_not_evidence",
+      "path": ".github/ISSUE_TEMPLATE/adoption-evidence.yml",
+      "sha256": "a8164b767f55456829f4239b4cbd95a87c10ca22978164890e60280d74e36b48"
+    }
+  ]
+}

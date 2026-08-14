@@ -63,10 +63,11 @@ test("home and benchmark report the current zero-history boundary", async () => 
 
 test("data route distinguishes executed public snapshots from dependency evidence", async () => {
   const html = await render("/data").then((response) => response.text());
-  assert.match(html, /3 frozen public snapshots/i);
-  assert.match(html, /3,802[\s\S]{0,40}normalized facts/i);
-  assert.match(html, /created[\s\S]{0,40}0[\s\S]{0,40}dependency edges/i);
-  assert.match(html, /FAOSTAT, GLEIF, and openFDA/i);
+  assert.match(html, /4 frozen public snapshots/i);
+  assert.match(html, /4,027[\s\S]{0,40}normalized facts/i);
+  assert.match(html, /222[\s\S]{0,80}published sector-level input edges/i);
+  assert.match(html, /FAOSTAT, GLEIF, openFDA, and BEA/i);
+  assert.match(html, /upper-bound-only/i);
 });
 
 test("case downloads point to twelve present archives", async () => {

@@ -1,6 +1,6 @@
 # Adoption and validation status
 
-Current status for release `v0.4.0`:
+Current status for release `v0.5.0`:
 
 | Evidence | Count | What would change it |
 |---|---:|---|
@@ -17,7 +17,8 @@ The Python package, public website, GitHub stars, clones, page views, internal t
 - [Historical replay proposal](https://github.com/limingrui679-design/CascadeLens/issues/new?template=historical-replay.yml)
 - [External review record](https://github.com/limingrui679-design/CascadeLens/issues/new?template=external-review.yml)
 - [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md)
+- [Ready-to-run validation packets](validation/README.md)
+- [Machine evidence ledger](../content/validation/evidence-ledger.json)
 - [Methods and failure conditions](METHODS.md)
 
-This ledger should be changed only after a claim-to-evidence review of a public, stable artifact.
-
+The counts are now derived from accepted JSON records by `npm run validate:evidence`. Protocols and issue forms are hashed readiness artifacts but cannot increment a count. A count changes only after a public, stable artifact passes the common and category-specific claim-to-evidence gates.

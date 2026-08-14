@@ -14,6 +14,7 @@ Verified against official publisher pages on each connector's recorded checked d
 | [World Bank WITS](https://wits.worldbank.org/witsapiintro.aspx?lang=en) | 2026-08-12 | Remote | `download_on_run` | Official observed | Queries are bounded; underlying provider terms can also apply. |
 | [UNCTAD LSCI](https://unctadstat.unctad.org/insights/theme/246) | 2026-08-12 | Import only | `download_on_run` | Third-party verified | Published indices do not grant rights to MDS Transmodal source data. |
 | [IMF PortWatch](https://www.imf.org/en/news/articles/2023/11/13/pr23390-imf-university-oxford-launch-portwatch-platform-simulate-trade-disruptions) | 2026-08-12 | Import only | `user_provided` | Third-party verified | User exports only; no undocumented platform scraping. |
+| [BEA Input-Output Accounts](https://www.bea.gov/industry/input-output-accounts-data) | 2026-08-14 | Remote | `redistributable` as U.S. Government Public Domain | Model inferred | Sector-average direct-requirements coefficients are not firm-level supplier links, current operational dependencies, or causal effects. |
 
 ## Enforcement
 
@@ -26,6 +27,8 @@ Verified against official publisher pages on each connector's recorded checked d
 
 ## Frozen public runs
 
-Three small official-source runs are committed under recorded affirmative redistribution terms: FAOSTAT ASTI Researchers, one GLEIF LEI record, and one openFDA Drug Shortages record. Their bounded queries, checkpoints, exact payloads, manifests, normalized facts, zero-edge WorldGraph snapshots, attribution, and hashes are independently rechecked by the test suite. They prove those acquisition routes at the recorded retrieval times; they are not historical outcomes, calibrated model inputs, or evidence of dependency relationships.
+Four official-source runs are committed under recorded affirmative redistribution terms: FAOSTAT ASTI Researchers, one GLEIF LEI record, one openFDA Drug Shortages record, and the BEA 2023 sector direct-requirements workbook. Together they contain 4,027 normalized facts. The first three use the generic zero-edge mapping. The BEA artifact maps 225 published coefficients into 222 positive sector-level `inputs_to` edges; all remain `MODEL_INFERRED`, are excluded from lower and central estimates, and retain the published unit and matrix method. The test suite reruns each normalizer from the exact payload and recomputes every digest and graph.
+
+These runs prove the four acquisition and transformation routes at their recorded retrieval times. They are not historical outcomes, calibrated model inputs, firm-level supplier relationships, external validation, adoption, or realized impact.
 
 The canonical machine inventory is [`content/catalog/connectors.json`](../../content/catalog/connectors.json). Exact frozen-run receipts are in the [`snapshot catalog`](../../content/snapshots/catalog.json).

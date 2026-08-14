@@ -207,6 +207,35 @@ export const connectorCatalog: ConnectorDescriptor[] = [
     licenseNotes: ["Only user-provided lawful exports are imported; no platform data are bundled."],
     operationalNotes: ["Import metadata must identify export time, fields, and applicable terms."],
   },
+  {
+    id: "bea-input-output",
+    name: "BEA Input-Output Accounts",
+    publisher: "U.S. Bureau of Economic Analysis",
+    officialUri: "https://www.bea.gov/itable/input-output",
+    documentationUri: "https://www.bea.gov/help/faq/32",
+    termsUri: "https://www.bea.gov/help/faq/145",
+    checkedAt: "2026-08-14",
+    runtime: "remote",
+    redistributionMode: "redistributable",
+    rawRedistributable: true,
+    evidenceGrade: "MODEL_INFERRED",
+    auth: "none",
+    allowedHosts: ["apps.bea.gov"],
+    minimumIntervalMs: 500,
+    maxResponseBytes: 2_000_000,
+    boundary:
+      "Official national sector-average direct-requirements coefficients are derived statistical relationships, not firm-level suppliers, current operational dependencies, or causal effects.",
+    redistributionLicense: {
+      name: "U.S. Government Public Domain",
+      spdx: "LicenseRef-Public-Domain-USGov",
+    },
+    licenseNotes: [
+      "BEA states that website information is public domain unless otherwise noted; retain source attribution and do not imply BEA endorsement.",
+    ],
+    operationalNotes: [
+      "The bounded connector reads only the latest sector-level commodity-by-industry direct-requirements worksheet.",
+    ],
+  },
 ];
 
 export function connectorById(id: string): ConnectorDescriptor {

@@ -1,0 +1,43 @@
+name: Structured user-study record
+description: Submit a consented, predefined, completely reported usability study.
+title: "[User study] "
+labels: ["user-research"]
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Tested release and commit
+      placeholder: v0.5.0 and a full commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: participants
+    attributes:
+      label: Participant criteria and count
+      description: Describe recruitment and intended-user relevance without exposing personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Frozen tasks and success rules
+      description: Include consent, privacy, time limits, assistance, stopping, and exclusion rules.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Complete task-level results
+      description: Include failures, withdrawals, missing data, protocol deviations, and critical errors.
+    validations:
+      required: true
+  - type: checkboxes
+    id: publication
+    attributes:
+      label: Publication checks
+      options:
+        - label: Participants consented under the stated protocol and this record contains no private or restricted data.
+          required: true
+        - label: No failed or unfavorable eligible session was removed from the reported denominator.
+          required: true
+

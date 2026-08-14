@@ -6,6 +6,26 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.5.0 — 2026-08-14
+
+### Published relational graph evidence
+
+- Added a bounded U.S. BEA Input-Output connector and a frozen 2023 sector direct-requirements workbook under the recorded U.S. Government public-domain basis.
+- Added a hardened XLSX reader with archive budgets, safe relationships, duplicate-entry and nested-archive rejection, and formula, error-cell, matrix-shape, identity, and coefficient validation.
+- Normalized 225 published commodity-by-industry coefficients and preserved 222 positive values as sector-level `inputs_to` edges.
+- Kept every BEA edge `MODEL_INFERRED`, ineligible for primary estimates, and available only in the upper evidence bound; no edge is represented as a firm-level supplier link or causal effect.
+- Extended frozen-snapshot verification to rerun every normalizer from exact payload bytes and deterministically remap all four public snapshots.
+
+### Evidence acceptance path
+
+- Added a machine-validated evidence ledger whose five public counts are derived only from accepted, hashed records.
+- Added ready-to-run historical replay, independent review, structured user-study, adoption, and impact protocols plus intake forms.
+- Registered the protocols as hashed readiness artifacts that explicitly do not increment evidence counts.
+
+### Evidence boundary
+
+This release adds official sector-level relational data and an enforceable path for later validation. It still contains 0 historically scored cases, 0 external method or domain reviews, 0 structured user studies, 0 verified organizational adoptions, and 0 demonstrated real-world impacts. All 12 reference cases remain `scenario_only`.
+
 ## 0.4.0 — 2026-08-14
 
 ### Python-first user path

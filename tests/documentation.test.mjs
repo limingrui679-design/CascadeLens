@@ -73,7 +73,7 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
 
 test("README exposes the Python one-line install before the case library", async () => {
   const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
-  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"');
+  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"');
   const cases = readme.indexOf("## Explore all 12 cases");
   assert.ok(install >= 0, "README must contain the stable one-line Python install");
   assert.ok(cases > install, "Python installation must appear before the twelve-case showcase");
@@ -134,7 +134,7 @@ test("package dependency map matches the core parser boundary", async () => {
   assert.doesNotMatch(packageMap, /core[^\n]*Node\.js standard library only/i);
 });
 
-test("human data catalog matches the three redistributable machine descriptors", async () => {
+test("human data catalog matches the four redistributable machine descriptors", async () => {
   const catalog = JSON.parse(
     await readFile(resolve(repositoryRoot, "content/catalog/connectors.json"), "utf8"),
   );
@@ -142,7 +142,7 @@ test("human data catalog matches the three redistributable machine descriptors",
     resolve(repositoryRoot, "docs/connectors/DATA_CATALOG.md"),
     "utf8",
   );
-  const expectedIds = ["faostat", "gleif", "openfda-drug-shortages"];
+  const expectedIds = ["bea-input-output", "faostat", "gleif", "openfda-drug-shortages"];
   const redistributable = catalog.connectors.filter(
     (item) => item.redistributionMode === "redistributable" && item.rawRedistributable,
   );
@@ -152,6 +152,6 @@ test("human data catalog matches the three redistributable machine descriptors",
     assert.match(documentation, new RegExp(`${item.checkedAt}[^\n]*redistributable`, "i"));
     assert.ok(item.redistributionLicense?.name);
   }
-  assert.match(documentation, /Three small official-source runs are committed/i);
+  assert.match(documentation, /Four official-source runs are committed/i);
   assert.match(documentation, /content\/snapshots\/catalog\.json/);
 });

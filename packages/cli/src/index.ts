@@ -325,7 +325,7 @@ async function connectorsCommand(args: string[]): Promise<void> {
       `${stableStringify({
         status: "acquired_normalized_and_mapped",
         evidenceBoundary:
-          "The generic WorldGraph mapping creates metric nodes only and does not infer dependency edges.",
+          "Generic mappings create metric nodes only. A connector-specific mapping may preserve a published relationship with its source evidence grade; neither mapping establishes firm-level causality, empirical accuracy, adoption, or realized impact.",
         ...result,
       }, 2)}\n`,
     );

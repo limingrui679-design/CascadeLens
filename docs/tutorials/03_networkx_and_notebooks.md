@@ -3,7 +3,7 @@
 Install the optional adapter and notebook tools:
 
 ```bash
-pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.4.0"
+pip install "cascadelens[networkx] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.0"
 ```
 
 ## Convert an existing graph
@@ -32,4 +32,3 @@ Open [`examples/notebooks/bring_your_own_graph.ipynb`](../../examples/notebooks/
 ## Integration boundary
 
 The adapter copies topology and scalar attributes. It does not infer edge direction, causal meaning, units, evidence grade, or licensing. Review those fields before using a graph for anything beyond a scenario demonstration.
-

@@ -5,11 +5,14 @@ const root = process.cwd();
 const excludedDirectories = new Set([
   ".git",
   ".next",
+  ".pytest_cache",
+  ".ruff_cache",
   ".vinext",
   ".wrangler",
   "dist",
   "node_modules",
   "outputs",
+  "__pycache__",
   "work",
 ]);
 const binaryExtensions = new Set([

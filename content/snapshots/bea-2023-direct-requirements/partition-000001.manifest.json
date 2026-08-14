@@ -1,0 +1,18 @@
+{
+  "boundary": "Official national sector-average direct-requirements coefficients are derived statistical relationships, not firm-level suppliers, current operational dependencies, or causal effects.",
+  "bytes": 124435,
+  "checkedAt": "2026-08-14",
+  "connectorId": "bea-input-output",
+  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "licenseName": "U.S. Government Public Domain",
+  "licenseSpdx": "LicenseRef-Public-Domain-USGov",
+  "manifestDigest": "40b4b7198c73ae4032f273b05c3c4fac51f9b23ae5ecfb92bc49e2e89ab88251",
+  "publisher": "U.S. Bureau of Economic Analysis",
+  "rawArtifactStatus": "embedded",
+  "redistributionMode": "redistributable",
+  "requestUri": "https://apps.bea.gov/industry/release/xlsx/CxI_DR_Sector.xlsx",
+  "retrievedAt": "2026-08-14T05:34:06.210Z",
+  "schemaVersion": "0.1.0",
+  "sha256": "1590bb70bc05a39b367ba34344b45308873af09709384515a66df238f0124316",
+  "termsUri": "https://www.bea.gov/help/faq/145"
+}

@@ -1,0 +1,40 @@
+name: Adoption or impact evidence
+description: Submit publishable evidence of organizational use, with a separate gate for impact.
+title: "[Adoption evidence] "
+labels: ["adoption-evidence"]
+body:
+  - type: textarea
+    id: organization
+    attributes:
+      label: Organization and publication permission
+      description: Identify the counterparty and document permission to publish its name.
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Dated task-specific use
+      description: State release, users, workflow, dates, frequency, and verifiable task evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact method, if claimed
+      description: Optional. Define outcome, baseline or counterfactual, window, data, uncertainty, null results, and alternative explanations.
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations and excluded claims
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Evidence boundary
+      options:
+        - label: I understand that a demo, page view, repository activity, or testimonial alone does not establish adoption or impact.
+          required: true
+        - label: This record contains no credentials, personal data, or restricted operational information.
+          required: true
+

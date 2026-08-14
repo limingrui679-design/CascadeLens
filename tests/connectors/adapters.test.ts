@@ -6,12 +6,24 @@ import {
   adapters,
   connectorCatalog,
   connectorIds,
+  mapConnectorSnapshotToWorldGraph,
   parseCsv,
 } from "../../packages/connectors/src/index";
 import { stabilizeNormalizedFacts } from "../../packages/connectors/src/util";
-import { stableStringify } from "../../packages/core/src/index";
+import {
+  sha256Text,
+  stableStringify,
+  verifySnapshot,
+} from "../../packages/core/src/index";
 
-const fixtures: Record<(typeof connectorIds)[number], string> = {
+type ConnectorId = (typeof connectorIds)[number];
+type FixtureConnectorId = Exclude<ConnectorId, "bea-input-output">;
+
+const fixtureConnectorIds = connectorIds.filter(
+  (id): id is FixtureConnectorId => id !== "bea-input-output",
+);
+
+const fixtures: Record<FixtureConnectorId, string> = {
   "un-comtrade": "un-comtrade.json",
   "oecd-icio": "oecd-icio.csv",
   "sec-edgar": "sec-companyfacts.json",
@@ -29,8 +41,8 @@ const context = {
   sourceLocator: "fixture://synthetic-contract",
 };
 
-test("catalog and adapter registry cover exactly ten core connectors", () => {
-  assert.equal(connectorCatalog.length, 10);
+test("catalog and adapter registry cover exactly eleven core connectors", () => {
+  assert.equal(connectorCatalog.length, 11);
   assert.deepEqual(
     Object.keys(adapters).sort(),
     [...connectorIds].sort(),
@@ -45,7 +57,7 @@ test("catalog and adapter registry cover exactly ten core connectors", () => {
   }
 });
 
-for (const id of connectorIds) {
+for (const id of fixtureConnectorIds) {
   test(`${id} normalizes its synthetic contract fixture with lineage`, async () => {
     const payload = await readFile(new URL(`fixtures/${fixtures[id]}`, import.meta.url));
     const facts = adapters[id].normalize(payload, context);
@@ -64,9 +76,7 @@ for (const id of connectorIds) {
   });
 }
 
-type ConnectorId = (typeof connectorIds)[number];
-
-const csvIds = new Set<ConnectorId>([
+const csvIds = new Set<FixtureConnectorId>([
   "oecd-icio",
   "faostat",
   "ofac-sls",
@@ -100,7 +110,7 @@ function reorderCsvColumns(payload: Uint8Array): Uint8Array {
   return csvText(rows.map((row) => indices.map((index) => row[index])));
 }
 
-function jsonRows(id: ConnectorId, value: Record<string, unknown>): unknown[] {
+function jsonRows(id: FixtureConnectorId, value: Record<string, unknown>): unknown[] {
   if (id === "un-comtrade" || id === "gleif") {
     return value.data as unknown[];
   }
@@ -127,7 +137,7 @@ function jsonRows(id: ConnectorId, value: Record<string, unknown>): unknown[] {
 }
 
 function reorderJsonRows(
-  id: ConnectorId,
+  id: FixtureConnectorId,
   payload: Uint8Array,
   order: "reverse" | "rotate",
 ): Uint8Array {
@@ -160,7 +170,7 @@ function reorderJsonFields(payload: Uint8Array): Uint8Array {
 }
 
 function mutateJsonRows(
-  id: ConnectorId,
+  id: FixtureConnectorId,
   payload: Uint8Array,
   mode: "exact_duplicate" | "business_key_collision",
 ): Uint8Array {
@@ -183,7 +193,7 @@ function mutateJsonRows(
   return new TextEncoder().encode(JSON.stringify(value));
 }
 
-const csvNonKeyField: Record<ConnectorId, string | undefined> = {
+const csvNonKeyField: Record<FixtureConnectorId, string | undefined> = {
   "un-comtrade": undefined,
   "oecd-icio": "OBS_VALUE",
   "sec-edgar": undefined,
@@ -197,7 +207,7 @@ const csvNonKeyField: Record<ConnectorId, string | undefined> = {
 };
 
 function mutateCsvRows(
-  id: ConnectorId,
+  id: FixtureConnectorId,
   payload: Uint8Array,
   mode: "exact_duplicate" | "business_key_collision",
 ): Uint8Array {
@@ -212,18 +222,18 @@ function mutateCsvRows(
   return csvText([headers, ...rows, duplicate]);
 }
 
-function normalizeFacts(id: ConnectorId, payload: Uint8Array) {
+function normalizeFacts(id: FixtureConnectorId, payload: Uint8Array) {
   return adapters[id]
     .normalize(payload, context)
     .map((fact) => [fact.id, stableStringify(fact)] as const)
     .sort(([left], [right]) => left < right ? -1 : left > right ? 1 : 0);
 }
 
-function stabilizeFacts(id: ConnectorId, payload: Uint8Array) {
+function stabilizeFacts(id: FixtureConnectorId, payload: Uint8Array) {
   return stabilizeNormalizedFacts(adapters[id].normalize(payload, context));
 }
 
-for (const id of connectorIds) {
+for (const id of fixtureConnectorIds) {
   test(`${id} keeps identities under reverse and rotated multi-row input`, async () => {
     const payload = await readFile(new URL(`fixtures/${fixtures[id]}`, import.meta.url));
     for (const order of ["reverse", "rotate"] as const) {
@@ -258,6 +268,196 @@ for (const id of connectorIds) {
     }
   });
 }
+
+const beaCodes = [
+  "11",
+  "21",
+  "22",
+  "23",
+  "31G",
+  "42",
+  "44RT",
+  "48TW",
+  "51",
+  "FIRE",
+  "PROF",
+  "6",
+  "7",
+  "81",
+  "G",
+] as const;
+
+function excelColumn(index: number): string {
+  let value = index;
+  let output = "";
+  while (value > 0) {
+    value -= 1;
+    output = String.fromCharCode(65 + (value % 26)) + output;
+    value = Math.floor(value / 26);
+  }
+  return output;
+}
+
+function xml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
+function textCell(reference: string, value: string): string {
+  return `<c r="${reference}" t="inlineStr"><is><t>${xml(value)}</t></is></c>`;
+}
+
+function numberCell(reference: string, value: number): string {
+  return `<c r="${reference}"><v>${value}</v></c>`;
+}
+
+function beaCoefficient(inputCode: string, outputCode: string): number {
+  const input = beaCodes.indexOf(inputCode as (typeof beaCodes)[number]);
+  const output = beaCodes.indexOf(outputCode as (typeof beaCodes)[number]);
+  if (input === 0 && output < 3) return 0;
+  return ((input + 1) * (output + 1)) / 1_000;
+}
+
+function syntheticBeaWorkbook(
+  inputCodes: readonly string[] = beaCodes,
+  outputCodes: readonly string[] = beaCodes,
+  coefficientCell: (reference: string, value: number) => string = numberCell,
+): Uint8Array {
+  const rows = new Map<number, string[]>();
+  const add = (row: number, cell: string) => rows.set(row, [...(rows.get(row) ?? []), cell]);
+  add(
+    1,
+    textCell(
+      "A1",
+      "Commodity-by-Industry Direct Requirements, After Redefinitions - Sector",
+    ),
+  );
+  add(4, textCell("A4", "2023"));
+  outputCodes.forEach((code, index) => {
+    const column = excelColumn(index + 3);
+    add(6, textCell(`${column}6`, code));
+    add(7, textCell(`${column}7`, `Sector ${code}`));
+  });
+  inputCodes.forEach((inputCode, rowOffset) => {
+    const row = rowOffset + 8;
+    add(row, textCell(`A${row}`, inputCode));
+    add(row, textCell(`B${row}`, `Sector ${inputCode}`));
+    outputCodes.forEach((outputCode, columnOffset) => {
+      const column = excelColumn(columnOffset + 3);
+      add(
+        row,
+        coefficientCell(`${column}${row}`, beaCoefficient(inputCode, outputCode)),
+      );
+    });
+  });
+  const sheetRows = [...rows]
+    .sort(([left], [right]) => left - right)
+    .map(([row, cells]) => `<row r="${row}">${cells.join("")}</row>`)
+    .join("");
+  const encode = (value: string) => new TextEncoder().encode(value);
+  return zipSync({
+    "xl/workbook.xml": encode(
+      '<?xml version="1.0" encoding="UTF-8"?>' +
+        '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">' +
+        '<sheets><sheet name="2023" sheetId="1" r:id="rId1"/></sheets></workbook>',
+    ),
+    "xl/_rels/workbook.xml.rels": encode(
+      '<?xml version="1.0" encoding="UTF-8"?>' +
+        '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+        '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>' +
+        "</Relationships>",
+    ),
+    "xl/worksheets/sheet1.xml": encode(
+      '<?xml version="1.0" encoding="UTF-8"?>' +
+        '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">' +
+        `<sheetData>${sheetRows}</sheetData></worksheet>`,
+    ),
+  });
+}
+
+test("BEA XLSX normalization is order-independent and maps published coefficients to bounded input edges", async () => {
+  const adapter = adapters["bea-input-output"];
+  const payload = syntheticBeaWorkbook();
+  const reordered = syntheticBeaWorkbook([...beaCodes].reverse(), [
+    ...beaCodes,
+  ].reverse());
+  const facts = stabilizeNormalizedFacts(adapter.normalize(payload, context));
+  const reorderedFacts = stabilizeNormalizedFacts(adapter.normalize(reordered, context));
+  assert.equal(facts.length, 225);
+  assert.deepEqual(reorderedFacts, facts);
+  assert.ok(facts.every((item) => item.evidenceGrade === "MODEL_INFERRED"));
+  assert.equal(
+    adapter.buildRequest({
+      table: "commodity-by-industry-direct-requirements-sector",
+    } as never).url,
+    "https://apps.bea.gov/industry/release/xlsx/CxI_DR_Sector.xlsx",
+  );
+
+  const normalizedDraft = {
+    schemaVersion: "cascadelens-normalized-snapshot/1.0" as const,
+    connectorId: "bea-input-output",
+    retrievedAt: context.retrievedAt,
+    sourceLocator: "https://apps.bea.gov/industry/release/xlsx/CxI_DR_Sector.xlsx",
+    sourceManifestDigest: "0".repeat(64),
+    facts,
+  };
+  const normalized = {
+    ...normalizedDraft,
+    contentDigest: await sha256Text(stableStringify(normalizedDraft)),
+  };
+  const graph = await mapConnectorSnapshotToWorldGraph(adapter, normalized);
+  assert.equal(graph.nodes.length, 30);
+  assert.equal(graph.edges.length, 222);
+  assert.ok(graph.edges.every((edge) => edge.relation === "inputs_to"));
+  assert.ok(graph.edges.every((edge) => edge.evidence.grade === "MODEL_INFERRED"));
+  assert.ok(graph.edges.every((edge) => edge.properties.eligibleForPrimaryEstimate === false));
+  assert.deepEqual(
+    (await verifySnapshot(graph)).filter((issue) => issue.severity === "error"),
+    [],
+  );
+});
+
+test("BEA XLSX parser rejects unsafe archives, ambiguous matrices, formulas, and invalid coefficients", () => {
+  const adapter = adapters["bea-input-output"];
+  assert.throws(
+    () => adapter.normalize(zipSync({ "../xl/workbook.xml": new Uint8Array() }), context),
+    /Unsafe XLSX path/,
+  );
+  const duplicateCodes = [...beaCodes];
+  duplicateCodes[1] = duplicateCodes[0];
+  assert.throws(
+    () => adapter.normalize(syntheticBeaWorkbook(beaCodes, duplicateCodes), context),
+    /duplicate output-industry codes/i,
+  );
+  assert.throws(
+    () => adapter.normalize(syntheticBeaWorkbook(duplicateCodes, beaCodes), context),
+    /duplicate fact ids|duplicate input-commodity codes/i,
+  );
+  assert.throws(
+    () => adapter.normalize(
+      syntheticBeaWorkbook(beaCodes, beaCodes, (reference, value) =>
+        reference === "C8"
+          ? '<c r="C8"><f>1+1</f><v>0.1</v></c>'
+          : numberCell(reference, value),
+      ),
+      context,
+    ),
+    /Formula cells are not accepted/i,
+  );
+  assert.throws(
+    () => adapter.normalize(
+      syntheticBeaWorkbook(beaCodes, beaCodes, (reference, value) =>
+        numberCell(reference, reference === "D8" ? 1.01 : value),
+      ),
+      context,
+    ),
+    /must be 0-1/i,
+  );
+});
 
 test("contract fixtures are explicitly non-empirical", async () => {
   const notice = await readFile(new URL("fixtures/README.md", import.meta.url), "utf8");

@@ -11,9 +11,13 @@ import {
   type ConnectorPartition,
   type DataSnapshotManifest,
 } from "./manifest";
-import type { ConnectorAdapter, FetchPolicy } from "./types";
+import type {
+  ConnectorAdapter,
+  FetchPolicy,
+  NormalizedConnectorSnapshot,
+} from "./types";
 import { stabilizeNormalizedFacts } from "./util";
-import { normalizedSnapshotToWorldGraph } from "./worldgraph-mapping";
+import { mapConnectorSnapshotToWorldGraph } from "./worldgraph-mapping";
 
 interface Checkpoint {
   schemaVersion: "0.1.0";
@@ -29,15 +33,7 @@ interface Checkpoint {
   >;
 }
 
-export interface NormalizedPartitionSnapshot {
-  schemaVersion: "cascadelens-normalized-snapshot/1.0";
-  connectorId: string;
-  retrievedAt: string;
-  sourceLocator: string;
-  sourceManifestDigest: string;
-  facts: ReturnType<typeof stabilizeNormalizedFacts>;
-  contentDigest: string;
-}
+export type NormalizedPartitionSnapshot = NormalizedConnectorSnapshot;
 
 function safePartitionId(value: string): string {
   if (!/^[a-z0-9][a-z0-9._-]{1,127}$/i.test(value)) {
@@ -156,8 +152,8 @@ async function completedEntryIsValid(
     if ((await verifySnapshot(worldGraph)).some((issue) => issue.severity === "error")) {
       return false;
     }
-    const recomputedWorldGraph = await normalizedSnapshotToWorldGraph(
-      adapter.descriptor,
+    const recomputedWorldGraph = await mapConnectorSnapshotToWorldGraph(
+      adapter,
       normalized,
     );
     if (stableStringify(worldGraph) !== stableStringify(recomputedWorldGraph)) return false;
@@ -237,8 +233,8 @@ export async function runConnectorPlan<Query>(
       ...normalizedDraft,
       contentDigest: await sha256Text(stableStringify(normalizedDraft)),
     };
-    const worldGraph = await normalizedSnapshotToWorldGraph(
-      adapter.descriptor,
+    const worldGraph = await mapConnectorSnapshotToWorldGraph(
+      adapter as ConnectorAdapter<unknown>,
       normalized,
     );
     const payloadName = `${id}.payload`;

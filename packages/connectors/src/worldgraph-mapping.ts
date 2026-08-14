@@ -8,7 +8,10 @@ import {
   type WorldNode,
 } from "../../core/src/index";
 import type { ConnectorDescriptor } from "./types";
-import type { NormalizedPartitionSnapshot } from "./pipeline-node";
+import type {
+  ConnectorAdapter,
+  NormalizedConnectorSnapshot,
+} from "./types";
 
 function metricLabel(kind: string, dimensions: Record<string, string>): string {
   const detail = Object.entries(dimensions)
@@ -27,7 +30,7 @@ function metricLabel(kind: string, dimensions: Record<string, string>): string {
  */
 export async function normalizedSnapshotToWorldGraph(
   descriptor: ConnectorDescriptor,
-  normalized: NormalizedPartitionSnapshot,
+  normalized: NormalizedConnectorSnapshot,
 ): Promise<GraphSnapshot> {
   if (descriptor.id !== normalized.connectorId) {
     throw new TypeError("Normalized snapshot connector does not match its descriptor.");
@@ -99,4 +102,13 @@ export async function normalizedSnapshotToWorldGraph(
     nodes,
     edges: [],
   });
+}
+
+export async function mapConnectorSnapshotToWorldGraph(
+  adapter: ConnectorAdapter<unknown>,
+  normalized: NormalizedConnectorSnapshot,
+): Promise<GraphSnapshot> {
+  return adapter.mapToWorldGraph
+    ? adapter.mapToWorldGraph(normalized)
+    : normalizedSnapshotToWorldGraph(adapter.descriptor, normalized);
 }

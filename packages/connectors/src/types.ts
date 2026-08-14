@@ -1,5 +1,6 @@
 import type {
   EvidenceGrade,
+  GraphSnapshot,
   JsonValue,
   RedistributionMode,
 } from "../../core/src/types";
@@ -15,6 +16,7 @@ export const connectorIds = [
   "world-bank-wits",
   "unctad-lsci",
   "imf-portwatch",
+  "bea-input-output",
 ] as const;
 
 export type ConnectorId = (typeof connectorIds)[number];
@@ -84,10 +86,25 @@ export interface NormalizeContext {
   availableAt?: string;
 }
 
+export interface NormalizedConnectorSnapshot {
+  schemaVersion: "cascadelens-normalized-snapshot/1.0";
+  connectorId: string;
+  retrievedAt: string;
+  sourceLocator: string;
+  sourceManifestDigest: string;
+  facts: NormalizedFact[];
+  contentDigest: string;
+}
+
 export interface ConnectorAdapter<Query = Record<string, string>> {
   descriptor: ConnectorDescriptor;
   buildRequest(query: Query, secrets?: Record<string, string>): ConnectorRequest;
   normalize(payload: Uint8Array, context: NormalizeContext): NormalizedFact[];
+  /**
+   * Optional evidence-preserving domain map. Connectors without one retain the
+   * conservative metric-node mapping and create no relationship edges.
+   */
+  mapToWorldGraph?(snapshot: NormalizedConnectorSnapshot): Promise<GraphSnapshot>;
 }
 
 export interface FetchPolicy {

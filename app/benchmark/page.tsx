@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import caseCatalog from "@/content/cases/catalog.json";
+import evidenceLedger from "@/content/validation/evidence-ledger.json";
 import { PageShell } from "../components/page-shell";
 import { Eyebrow, Status } from "../components/status";
 
@@ -21,9 +22,9 @@ export default function BenchmarkPage() {
       <section className="page-content">
         <div className="benchmark-scoreboard">
           <div><span>Reference cases</span><strong>{caseCatalog.caseCount}</strong></div>
-          <div><span>Historically scored</span><strong>{caseCatalog.historicallyScoredCaseCount}</strong></div>
-          <div><span>External validations</span><strong>0</strong></div>
-          <div><span>Real-user impact studies</span><strong>0</strong></div>
+          <div><span>Historically scored</span><strong>{evidenceLedger.counts.historical_replay}</strong></div>
+          <div><span>External validations</span><strong>{evidenceLedger.counts.external_review}</strong></div>
+          <div><span>Real-user impact studies</span><strong>{evidenceLedger.counts.real_world_impact}</strong></div>
         </div>
         <div className="benchmark-banner">
           <Status tone="blocked">empirical validation not yet established</Status>
@@ -52,6 +53,9 @@ export default function BenchmarkPage() {
             <li>Predeclare comparable nodes, proxy definition, horizon, threshold, exclusions, and missing-data policy.</li>
             <li>Publish the full RiskPack and retain failed or blocked cases in the denominator.</li>
           </ol>
+          <p>
+            <a href="https://github.com/limingrui679-design/CascadeLens/tree/main/docs/validation" rel="noreferrer" target="_blank">Open the runnable replay, review, user-study, adoption, and impact protocols ↗</a>
+          </p>
         </div>
       </section>
     </PageShell>

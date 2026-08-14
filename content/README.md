@@ -7,9 +7,10 @@
 | Path | Contents | Source of truth |
 |---|---|---|
 | [`cases/`](cases/) | Per-case scenario, graph, assumptions, context citation, model card, results, and RiskPack | Deterministically built from [`packages/cases/src/specs.ts`](../packages/cases/src/specs.ts) |
-| [`snapshots/`](snapshots/) | Three frozen, lawfully redistributable public-source connector runs with raw manifest, normalized facts, and zero-edge conservative WorldGraph mapping | Retrieved from the recorded official endpoints under the recorded terms |
+| [`snapshots/`](snapshots/) | Four frozen, lawfully redistributable public-source runs with raw manifests, normalized facts, and evidence-preserving WorldGraph mappings | Retrieved from the recorded official endpoints under the recorded terms |
+| [`validation/`](validation/) | Machine evidence ledger, accepted-record gate, and current zero counts | Derived from accepted public evidence records; protocols never increment counts |
 | [`cases/catalog.json`](cases/catalog.json) | Public summary of all twelve reference cases | Generated with the case library |
-| [`catalog/connectors.json`](catalog/connectors.json) | Public catalog of the ten bounded connectors | Deterministically exported from [`packages/connectors/src/catalog.ts`](../packages/connectors/src/catalog.ts) |
+| [`catalog/connectors.json`](catalog/connectors.json) | Public catalog of the eleven bounded connectors | Deterministically exported from [`packages/connectors/src/catalog.ts`](../packages/connectors/src/catalog.ts) |
 
 Every case records its classification separately from its scoring status. In the launch library, 9 cases are `quasi_historical` and 3 are `synthetic_stress`, but all 12 are `scenario_only`. Public event records provide context only; the case topology and numeric parameters are explicit model assumptions recorded in the generated artifacts.
 

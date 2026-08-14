@@ -6,6 +6,7 @@ This index routes readers to the contract, evidence, and operating material behi
 
 | Document | Purpose |
 |---|---|
+| [v0.5.0 relational-data review](SELF_REVIEW_2026-08-14_v0.5.0.md) | Records the BEA topology, evidence-ledger, full-suite, release, and publication checks. |
 | [Acceptance matrix](ACCEPTANCE_MATRIX.md) | Maps product requirements to implementation and verification evidence. |
 | [v0.4.0 Python-first review](SELF_REVIEW_2026-08-14_v0.4.0.md) | Records five review passes across the Python package, workbench, evidence gates, release, and publication. |
 | [v0.3.2 audit-remediation review](SELF_REVIEW_2026-08-13_v0.3.2.md) | Maps independently reproduced software findings to code, adversarial tests, and immutable release evidence. |
@@ -13,6 +14,7 @@ This index routes readers to the contract, evidence, and operating material behi
 | [Performance profile](PERFORMANCE.md) | Defines enforced client budgets and the research-scale graph smoke profile. |
 | [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md) | Defines the prospective replay, independent-review, usability, and adoption evidence gates without claiming they have occurred. |
 | [Adoption and validation status](ADOPTION_AND_VALIDATION_STATUS.md) | Keeps current external evidence counts and the exact gate for changing them. |
+| [Validation evidence path](validation/README.md) | Provides runnable replay, review, user-study, adoption, and impact packets plus the machine acceptance gate. |
 | [Methods and failure conditions](METHODS.md) | Defines equations, evidence bounds, baseline relationships, and blocking conditions. |
 
 Maintainer review is internal software evidence. It is not independent domain validation, a user study, a production deployment, or proof of predictive accuracy.
@@ -25,8 +27,8 @@ Maintainer review is internal software evidence. It is not independent domain va
 | [Architecture](ARCHITECTURE.md) | Runtime flow, determinism, storage profile, and package boundaries. |
 | [Schema compatibility](SCHEMA_COMPATIBILITY.md) | Compatibility policy for ShockScript, WorldGraph, and RiskPack contracts. |
 | [Data licenses](DATA_LICENSES.md) | Source-by-source access and redistribution boundaries. |
-| [Frozen public snapshots](../content/snapshots/README.md) | Three dated official-source runs with exact payload, lineage, normalization, graph, and license receipts. |
-| [Connector data catalog](connectors/DATA_CATALOG.md) | Reviewed catalog of the ten bounded source connectors. |
+| [Frozen public snapshots](../content/snapshots/README.md) | Four dated official-source runs with exact payload, lineage, normalization, graph, and license receipts. |
+| [Connector data catalog](connectors/DATA_CATALOG.md) | Reviewed catalog of the eleven bounded source connectors. |
 
 ## Use CascadeLens
 
