@@ -42,7 +42,7 @@
   "dependencies": {
     "fflate": "^0.8.3",
     "image-size": "file:vendor/image-size",
-    "lucide-react": "^0.468.0",
+    "lucide-react": "^1.31.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "yaml": "^2.7.0"
