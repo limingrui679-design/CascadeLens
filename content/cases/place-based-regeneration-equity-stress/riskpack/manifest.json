@@ -1,0 +1,30 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.2.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:place-based-regeneration-equity-stress:engine-v0.2.0",
+  "scenarioId": "place-based-regeneration-equity-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ],
+  "verificationMode": "recomputed"
+}

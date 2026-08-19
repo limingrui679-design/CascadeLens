@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:transition",
+      "id": "edge:place-based-regeneration-equity-stress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:resident-continuity",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.04,
+        "unit": "share",
+        "upper": 0.4,
+        "value": 0.24
+      }
+    },
+    "id": "candidate:place-based-regeneration-equity-stress:direct-link",
+    "label": "Verify a possible direct dependency from Redevelopment transition pressure to Resident opportunity and continuity",
+    "probabilityPresent": 0.35
+  }
+]

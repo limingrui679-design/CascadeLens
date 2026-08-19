@@ -26,7 +26,8 @@ RiskPack -- Python CLI / API
 ## Design choices
 
 - **Python-first core:** `src/cascadelens` owns user graph import, contract validation, cascade execution, intervention analysis, benchmark gating, and RiskPack recomputation.
-- **Cross-runtime parity:** Python executes all 12 reviewed cases and matches the browser artifacts to numerical tolerance; the TypeScript layer remains for website interaction and content-release compatibility.
+- **Cross-runtime parity:** Python executes all 16 reviewed cases and matches the browser artifacts to numerical tolerance; the TypeScript layer remains for website interaction and content-release compatibility.
+- **Single generated case surface:** one case specification emits the per-case artifacts, catalog record, capability matrix, Workbench bundle, and RiskPack. The web product no longer maintains a hand-written import list.
 - **Deterministic core:** canonical keys and identifiers use explicit UTF-8 byte order, so equal input snapshots, scripts, and engine versions produce stable canonical JSON in the tested runtime matrix.
 - **Portable local profile:** JSON-compatible artifacts and no required hosted database.
 - **Serverless public product:** the web surface runs on Cloudflare-compatible ESM output and reads reviewed bundled results.

@@ -6,6 +6,38 @@
     "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes",
     "uri": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "temporal-reasoning",
+      "sensitivity-analysis",
+      "stakeholder-communication",
+      "uncertainty-bounds",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Global logistics risk lead",
+    "guardrail": "No freight-rate, emissions, insurance, or realized delivery-time effect is claimed.",
+    "methods": [
+      "dynamic edge expiry",
+      "upper-bound stress comparison",
+      "lead-time analysis"
+    ],
+    "stakeholders": [
+      "ship operators",
+      "cargo owners",
+      "production sites",
+      "delivery recipients"
+    ],
+    "tradeoffs": [
+      "route continuity versus longer transit",
+      "faster action versus uncertain intervention effect"
+    ],
+    "userTasks": [
+      "compare routing and inventory assumptions",
+      "locate the effect of an expiring link",
+      "set a review trigger for changing course"
+    ]
+  },
   "decisionQuestion": "Which intervention minimizes upper-bound continuity loss when vessels avoid the Red Sea route?",
   "domain": "Geopolitics and shipping",
   "edgeCount": 4,

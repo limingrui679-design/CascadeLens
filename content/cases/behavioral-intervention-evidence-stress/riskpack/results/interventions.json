@@ -1,0 +1,1223 @@
+{
+  "baselineBundle": {
+    "activationSchedule": [],
+    "centralImpact": 0.01469594594594594,
+    "cost": 0,
+    "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.09121621621621623,
+        "horizonDays": 14,
+        "lowerImpact": 0.09121621621621623,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.29560394872027057,
+        "worstCaseImpact": 0.29560394872027057
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.04408783783783781,
+        "horizonDays": 60,
+        "lowerImpact": 0.04408783783783781,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.14287524188146408,
+        "worstCaseImpact": 0.14287524188146408
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.01469594594594594,
+        "horizonDays": 180,
+        "lowerImpact": 0.01469594594594594,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.0476250806271547,
+        "worstCaseImpact": 0.0476250806271547
+      }
+    ],
+    "interventionIds": [],
+    "lowerImpact": 0.01469594594594594,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.0476250806271547,
+    "worstCaseImpact": 0.0476250806271547
+  },
+  "evaluatedBundles": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.01469594594594594,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29560394872027057,
+          "worstCaseImpact": 0.29560394872027057
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14287524188146408,
+          "worstCaseImpact": 0.14287524188146408
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0476250806271547,
+          "worstCaseImpact": 0.0476250806271547
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.0476250806271547,
+      "worstCaseImpact": 0.0476250806271547
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 8,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25682820065065537,
+          "worstCaseImpact": 0.25682820065065537
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12413363031448339,
+          "worstCaseImpact": 0.12413363031448339
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04137787677149446,
+          "worstCaseImpact": 0.04137787677149446
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.04137787677149446,
+      "worstCaseImpact": 0.04137787677149446
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 9,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.28224391681236316,
+          "worstCaseImpact": 0.28224391681236316
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13616096943543882,
+          "worstCaseImpact": 0.13616096943543882
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.045386989811812946,
+          "worstCaseImpact": 0.045386989811812946
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.045386989811812946,
+      "worstCaseImpact": 0.045386989811812946
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:independent-measure",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 12,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "upperImpact": 0.29560394872027057,
+          "worstCaseImpact": 0.29560394872027057
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1402989311148493,
+          "worstCaseImpact": 0.1402989311148493
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.046766310371616444,
+          "worstCaseImpact": 0.046766310371616444
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:independent-measure"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.046766310371616444,
+      "worstCaseImpact": 0.046766310371616444
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 17,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2422849918597744,
+          "worstCaseImpact": 0.2422849918597744
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1168247356400919,
+          "worstCaseImpact": 0.1168247356400919
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.038941578546697296,
+          "worstCaseImpact": 0.038941578546697296
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.038941578546697296,
+      "worstCaseImpact": 0.038941578546697296
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:independent-measure",
+          "leadTimeDays": 45
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 20,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "upperImpact": 0.25682820065065537,
+          "worstCaseImpact": 0.25682820065065537
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1214638789119825,
+          "worstCaseImpact": 0.1214638789119825
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:independent-measure"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0404879596373275,
+          "worstCaseImpact": 0.0404879596373275
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:independent-measure"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.0404879596373275,
+      "worstCaseImpact": 0.0404879596373275
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:independent-measure",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": null,
+      "cost": 21,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 180,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:independent-measure",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:independent-measure",
+          "leadTimeDays": 45
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": null,
+      "cost": 29,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 60,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 180,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:independent-measure",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:independent-measure",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 14,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.01469594594594594,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29560394872027057,
+              "worstCaseImpact": 0.29560394872027057
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14287524188146408,
+              "worstCaseImpact": 0.14287524188146408
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0476250806271547,
+              "worstCaseImpact": 0.0476250806271547
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0476250806271547,
+          "worstCaseImpact": 0.0476250806271547
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25682820065065537,
+              "worstCaseImpact": 0.25682820065065537
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12413363031448339,
+              "worstCaseImpact": 0.12413363031448339
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04137787677149446,
+              "worstCaseImpact": 0.04137787677149446
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04137787677149446,
+          "worstCaseImpact": 0.04137787677149446
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2422849918597744,
+              "worstCaseImpact": 0.2422849918597744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1168247356400919,
+              "worstCaseImpact": 0.1168247356400919
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.038941578546697296,
+              "worstCaseImpact": 0.038941578546697296
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.038941578546697296,
+          "worstCaseImpact": 0.038941578546697296
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ]
+    },
+    {
+      "horizonDays": 60,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.01469594594594594,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29560394872027057,
+              "worstCaseImpact": 0.29560394872027057
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14287524188146408,
+              "worstCaseImpact": 0.14287524188146408
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0476250806271547,
+              "worstCaseImpact": 0.0476250806271547
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0476250806271547,
+          "worstCaseImpact": 0.0476250806271547
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25682820065065537,
+              "worstCaseImpact": 0.25682820065065537
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12413363031448339,
+              "worstCaseImpact": 0.12413363031448339
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04137787677149446,
+              "worstCaseImpact": 0.04137787677149446
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04137787677149446,
+          "worstCaseImpact": 0.04137787677149446
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2422849918597744,
+              "worstCaseImpact": 0.2422849918597744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1168247356400919,
+              "worstCaseImpact": 0.1168247356400919
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.038941578546697296,
+              "worstCaseImpact": 0.038941578546697296
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.038941578546697296,
+          "worstCaseImpact": 0.038941578546697296
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ]
+    },
+    {
+      "horizonDays": 180,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.01469594594594594,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.29560394872027057,
+              "worstCaseImpact": 0.29560394872027057
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.14287524188146408,
+              "worstCaseImpact": 0.14287524188146408
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.0476250806271547,
+              "worstCaseImpact": 0.0476250806271547
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.0476250806271547,
+          "worstCaseImpact": 0.0476250806271547
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 8,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25682820065065537,
+              "worstCaseImpact": 0.25682820065065537
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.12413363031448339,
+              "worstCaseImpact": 0.12413363031448339
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04137787677149446,
+              "worstCaseImpact": 0.04137787677149446
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.04137787677149446,
+          "worstCaseImpact": 0.04137787677149446
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-26T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+              "leadTimeDays": 14
+            },
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.01469594594594594,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.09121621621621623,
+              "horizonDays": 14,
+              "lowerImpact": 0.09121621621621623,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2422849918597744,
+              "worstCaseImpact": 0.2422849918597744
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.04408783783783781,
+              "horizonDays": 60,
+              "lowerImpact": 0.04408783783783781,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1168247356400919,
+              "worstCaseImpact": 0.1168247356400919
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+                "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+              ],
+              "centralImpact": 0.01469594594594594,
+              "horizonDays": 180,
+              "lowerImpact": 0.01469594594594594,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.038941578546697296,
+              "worstCaseImpact": 0.038941578546697296
+            }
+          ],
+          "interventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "lowerImpact": 0.01469594594594594,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.038941578546697296,
+          "worstCaseImpact": 0.038941578546697296
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.01469594594594594,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29560394872027057,
+          "worstCaseImpact": 0.29560394872027057
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.14287524188146408,
+          "worstCaseImpact": 0.14287524188146408
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.0476250806271547,
+          "worstCaseImpact": 0.0476250806271547
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.0476250806271547,
+      "worstCaseImpact": 0.0476250806271547
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 8,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25682820065065537,
+          "worstCaseImpact": 0.25682820065065537
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12413363031448339,
+          "worstCaseImpact": 0.12413363031448339
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04137787677149446,
+          "worstCaseImpact": 0.04137787677149446
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.04137787677149446,
+      "worstCaseImpact": 0.04137787677149446
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+          "leadTimeDays": 14
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.01469594594594594,
+      "cost": 17,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.09121621621621623,
+          "horizonDays": 14,
+          "lowerImpact": 0.09121621621621623,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2422849918597744,
+          "worstCaseImpact": 0.2422849918597744
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.04408783783783781,
+          "horizonDays": 60,
+          "lowerImpact": 0.04408783783783781,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1168247356400919,
+          "worstCaseImpact": 0.1168247356400919
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+            "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+          ],
+          "centralImpact": 0.01469594594594594,
+          "horizonDays": 180,
+          "lowerImpact": 0.01469594594594594,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.038941578546697296,
+          "worstCaseImpact": 0.038941578546697296
+        }
+      ],
+      "interventionIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "lowerImpact": 0.01469594594594594,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.038941578546697296,
+      "worstCaseImpact": 0.038941578546697296
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+    "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 1280.5729066695408,
+      "toBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 3694.129030837062,
+      "toBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ]
+    }
+  ],
+  "scenarioId": "behavioral-intervention-evidence-stress"
+}

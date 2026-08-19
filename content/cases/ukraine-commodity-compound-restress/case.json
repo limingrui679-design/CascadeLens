@@ -6,6 +6,38 @@
     "title": "Food and Energy Price Shocks from Ukraine War",
     "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "uncertainty-bounds",
+      "constrained-optimization",
+      "public-interest-ethics",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Food and energy resilience analyst",
+    "guardrail": "No country-level price, food-security, or welfare effect is estimated.",
+    "methods": [
+      "compound-shock compilation",
+      "cycle-safe fixed point",
+      "Pareto frontier analysis"
+    ],
+    "stakeholders": [
+      "producers",
+      "logistics operators",
+      "public agencies",
+      "households"
+    ],
+    "tradeoffs": [
+      "system continuity versus affordability",
+      "reserve use versus longer-horizon resilience"
+    ],
+    "userTasks": [
+      "separate direct from propagated pressure",
+      "compare reserve and substitution bundles",
+      "identify distributional questions the model cannot answer"
+    ]
+  },
   "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
   "domain": "Food and energy",
   "edgeCount": 5,

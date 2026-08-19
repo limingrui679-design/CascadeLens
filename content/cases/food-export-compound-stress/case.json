@@ -6,6 +6,39 @@
     "title": "FAOSTAT data portal",
     "uri": "https://www.fao.org/faostat/en/"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "constrained-optimization",
+      "public-interest-ethics",
+      "sensitivity-analysis",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Food-system policy planner",
+    "guardrail": "No current production, trade, price, nutrition, or food-security observation drives the scenario.",
+    "methods": [
+      "compound supply-policy shock",
+      "Pareto frontier",
+      "affordability-oriented criticality"
+    ],
+    "stakeholders": [
+      "producers",
+      "traders",
+      "distributors",
+      "public agencies",
+      "households"
+    ],
+    "tradeoffs": [
+      "reserve release versus future resilience",
+      "market continuity versus household affordability"
+    ],
+    "userTasks": [
+      "compare reserves and import diversity",
+      "test joint-shock assumptions",
+      "identify which groups require separate outcome data"
+    ]
+  },
   "decisionQuestion": "Which reserve and diversification choices stay on the Pareto frontier under a two-channel food stress?",
   "domain": "Agriculture and trade",
   "edgeCount": 4,

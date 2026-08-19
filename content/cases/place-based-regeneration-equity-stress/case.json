@@ -1,0 +1,88 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2024-04-09T00:00:00Z",
+    "publisher": "U.S. Department of Housing and Urban Development",
+    "title": "Choice Neighborhoods",
+    "uri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+  },
+  "decisionProfile": {
+    "capabilities": [
+      "spatial-policy",
+      "public-interest-ethics",
+      "constrained-optimization",
+      "temporal-reasoning",
+      "stakeholder-communication",
+      "system-mapping"
+    ],
+    "decisionOwner": "Place-based regeneration planner",
+    "guardrail": "The case represents no named neighborhood, parcel, household, grant, or measured displacement effect.",
+    "methods": [
+      "place-based dependency mapping",
+      "phased intervention analysis",
+      "distributional decision framing"
+    ],
+    "stakeholders": [
+      "current residents",
+      "housing providers",
+      "local businesses",
+      "transport agencies",
+      "local government"
+    ],
+    "tradeoffs": [
+      "redevelopment pace versus resident continuity",
+      "capital delivery versus affordable access"
+    ],
+    "userTasks": [
+      "compare housing, access, and local-business safeguards",
+      "state who benefits and who bears transition costs",
+      "set a review trigger for displacement pressure"
+    ]
+  },
+  "decisionQuestion": "Which phased, budget-constrained package protects access and resident continuity while preserving redevelopment capacity?",
+  "domain": "Urban regeneration and public policy",
+  "edgeCount": 5,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build place-based-regeneration-equity-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:place-based-regeneration-equity-stress:transition-support"
+  ],
+  "riskPackPath": "cases/place-based-regeneration-equity-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Regeneration equity",
+  "slug": "place-based-regeneration-equity-stress",
+  "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 25,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 180
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      30,
+      180,
+      365
+    ],
+    "topology": "branch_merge"
+  },
+  "summary": "A synthetic place-based transition stress linking redevelopment, affordable housing, service access, local businesses, and resident continuity.",
+  "tags": [
+    "planning",
+    "housing",
+    "access",
+    "equity",
+    "regeneration"
+  ],
+  "title": "Place-based regeneration and equity stress",
+  "totalWeightedImpact": {
+    "central": 0.005409754572616066,
+    "lower": 0.005409754572616066,
+    "upper": 0.020847777765766146
+  }
+}

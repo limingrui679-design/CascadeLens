@@ -16,7 +16,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const item = caseCatalog.cases.find((candidate) => candidate.slug === slug);
   return item
-    ? { title: item.title, description: item.summary }
+    ? {
+        title: item.title,
+        description: item.summary,
+        openGraph: {
+          title: item.title,
+          description: item.summary,
+          images: [],
+        },
+        twitter: {
+          card: "summary",
+          title: item.title,
+          description: item.summary,
+          images: [],
+        },
+      }
     : { title: "Case not found" };
 }
 
@@ -42,6 +56,43 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
           <p className="micro-label">Decision question</p>
           <h2>{item.decisionQuestion}</h2>
           <p>{item.evidenceBoundary}</p>
+          <Link className="button button-primary button-small" href={`/workbench?case=${item.slug}`}>
+            Run this case
+          </Link>
+        </article>
+        <article className="panel decision-profile-panel">
+          <p className="micro-label">Decision owner and stakeholders</p>
+          <h2>{item.decisionProfile.decisionOwner}</h2>
+          <div className="tag-row decision-tags">
+            {item.decisionProfile.stakeholders.map((stakeholder) => <span key={stakeholder}>{stakeholder}</span>)}
+          </div>
+        </article>
+        <article className="panel decision-profile-panel">
+          <p className="micro-label">Capabilities exercised</p>
+          <div className="capability-detail-list">
+            {item.decisionProfile.capabilities.map((capability) => (
+              <span key={capability}>{capability.replaceAll("-", " ")}</span>
+            ))}
+          </div>
+        </article>
+        <article className="panel decision-profile-panel">
+          <p className="micro-label">Methods</p>
+          <ul>
+            {item.decisionProfile.methods.map((method) => <li key={method}>{method}</li>)}
+          </ul>
+        </article>
+        <article className="panel decision-profile-panel">
+          <p className="micro-label">User tasks</p>
+          <ol>
+            {item.decisionProfile.userTasks.map((task) => <li key={task}>{task}</li>)}
+          </ol>
+        </article>
+        <article className="panel decision-profile-panel profile-guardrail">
+          <p className="micro-label">Trade-offs and hard guardrail</p>
+          <ul>
+            {item.decisionProfile.tradeoffs.map((tradeoff) => <li key={tradeoff}>{tradeoff}</li>)}
+          </ul>
+          <p><strong>Guardrail:</strong> {item.decisionProfile.guardrail}</p>
         </article>
         <article className="panel">
           <p className="micro-label">Generated bounds</p>

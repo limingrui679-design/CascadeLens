@@ -1,0 +1,951 @@
+{
+  "baselineBundle": {
+    "activationSchedule": [],
+    "centralImpact": 0.005409754572616066,
+    "cost": 0,
+    "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.06581868063349547,
+        "horizonDays": 30,
+        "lowerImpact": 0.06581868063349547,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2536479628168214,
+        "worstCaseImpact": 0.2536479628168214
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.010969780105582578,
+        "horizonDays": 180,
+        "lowerImpact": 0.010969780105582578,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.04227466046947024,
+        "worstCaseImpact": 0.04227466046947024
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.005409754572616066,
+        "horizonDays": 365,
+        "lowerImpact": 0.005409754572616066,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.020847777765766146,
+        "worstCaseImpact": 0.020847777765766146
+      }
+    ],
+    "interventionIds": [],
+    "lowerImpact": 0.005409754572616066,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.020847777765766146,
+    "worstCaseImpact": 0.020847777765766146
+  },
+  "evaluatedBundles": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.005409754572616066,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2536479628168214,
+          "worstCaseImpact": 0.2536479628168214
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04227466046947024,
+          "worstCaseImpact": 0.04227466046947024
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.020847777765766146,
+      "worstCaseImpact": 0.020847777765766146
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+          "leadTimeDays": 30
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 10,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2464680693601187,
+          "worstCaseImpact": 0.2464680693601187
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.041078011560019785,
+          "worstCaseImpact": 0.041078011560019785
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020257649536448114,
+      "worstCaseImpact": 0.020257649536448114
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-10-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:access-redundancy",
+          "leadTimeDays": 60
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 11,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy"
+          ],
+          "upperImpact": 0.2536479628168214,
+          "worstCaseImpact": 0.2536479628168214
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04227466046947024,
+          "worstCaseImpact": 0.04227466046947024
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:access-redundancy"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020847777765766146,
+      "worstCaseImpact": 0.020847777765766146
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-12-10T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:housing-first",
+          "leadTimeDays": 120
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 14,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "upperImpact": 0.2536479628168214,
+          "worstCaseImpact": 0.2536479628168214
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04227466046947024,
+          "worstCaseImpact": 0.04227466046947024
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:housing-first"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020847777765766146,
+      "worstCaseImpact": 0.020847777765766146
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-10-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:access-redundancy",
+          "leadTimeDays": 60
+        },
+        {
+          "activationAt": "2026-09-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+          "leadTimeDays": 30
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 21,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy"
+          ],
+          "upperImpact": 0.2464680693601187,
+          "worstCaseImpact": 0.2464680693601187
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.041078011560019785,
+          "worstCaseImpact": 0.041078011560019785
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:access-redundancy",
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020257649536448114,
+      "worstCaseImpact": 0.020257649536448114
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-12-10T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:housing-first",
+          "leadTimeDays": 120
+        },
+        {
+          "activationAt": "2026-09-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+          "leadTimeDays": 30
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 24,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "upperImpact": 0.2464680693601187,
+          "worstCaseImpact": 0.2464680693601187
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.041078011560019785,
+          "worstCaseImpact": 0.041078011560019785
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:housing-first",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:housing-first",
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020257649536448114,
+      "worstCaseImpact": 0.020257649536448114
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-10-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:access-redundancy",
+          "leadTimeDays": 60
+        },
+        {
+          "activationAt": "2026-12-10T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:housing-first",
+          "leadTimeDays": 120
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 25,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "upperImpact": 0.2536479628168214,
+          "worstCaseImpact": 0.2536479628168214
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04227466046947024,
+          "worstCaseImpact": 0.04227466046947024
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:access-redundancy",
+        "intervention:place-based-regeneration-equity-stress:housing-first"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020847777765766146,
+      "worstCaseImpact": 0.020847777765766146
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-10-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:access-redundancy",
+          "leadTimeDays": 60
+        },
+        {
+          "activationAt": "2026-12-10T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:housing-first",
+          "leadTimeDays": 120
+        },
+        {
+          "activationAt": "2026-09-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+          "leadTimeDays": 30
+        }
+      ],
+      "centralImpact": null,
+      "cost": 35,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 30,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 180,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 365,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:access-redundancy",
+            "intervention:place-based-regeneration-equity-stress:housing-first",
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:access-redundancy",
+        "intervention:place-based-regeneration-equity-stress:housing-first",
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 30,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.005409754572616066,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2536479628168214,
+              "worstCaseImpact": 0.2536479628168214
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04227466046947024,
+              "worstCaseImpact": 0.04227466046947024
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020847777765766146,
+              "worstCaseImpact": 0.020847777765766146
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-11T00:00:00.000Z",
+              "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+              "leadTimeDays": 30
+            }
+          ],
+          "centralImpact": 0.005409754572616066,
+          "cost": 10,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2464680693601187,
+              "worstCaseImpact": 0.2464680693601187
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.041078011560019785,
+              "worstCaseImpact": 0.041078011560019785
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020257649536448114,
+              "worstCaseImpact": 0.020257649536448114
+            }
+          ],
+          "interventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ]
+    },
+    {
+      "horizonDays": 180,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.005409754572616066,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2536479628168214,
+              "worstCaseImpact": 0.2536479628168214
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04227466046947024,
+              "worstCaseImpact": 0.04227466046947024
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020847777765766146,
+              "worstCaseImpact": 0.020847777765766146
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-11T00:00:00.000Z",
+              "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+              "leadTimeDays": 30
+            }
+          ],
+          "centralImpact": 0.005409754572616066,
+          "cost": 10,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2464680693601187,
+              "worstCaseImpact": 0.2464680693601187
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.041078011560019785,
+              "worstCaseImpact": 0.041078011560019785
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020257649536448114,
+              "worstCaseImpact": 0.020257649536448114
+            }
+          ],
+          "interventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ]
+    },
+    {
+      "horizonDays": 365,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.005409754572616066,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2536479628168214,
+              "worstCaseImpact": 0.2536479628168214
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.04227466046947024,
+              "worstCaseImpact": 0.04227466046947024
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020847777765766146,
+              "worstCaseImpact": 0.020847777765766146
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-11T00:00:00.000Z",
+              "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+              "leadTimeDays": 30
+            }
+          ],
+          "centralImpact": 0.005409754572616066,
+          "cost": 10,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.06581868063349547,
+              "horizonDays": 30,
+              "lowerImpact": 0.06581868063349547,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2464680693601187,
+              "worstCaseImpact": 0.2464680693601187
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.010969780105582578,
+              "horizonDays": 180,
+              "lowerImpact": 0.010969780105582578,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.041078011560019785,
+              "worstCaseImpact": 0.041078011560019785
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:place-based-regeneration-equity-stress:transition-support"
+              ],
+              "centralImpact": 0.005409754572616066,
+              "horizonDays": 365,
+              "lowerImpact": 0.005409754572616066,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.020257649536448114,
+              "worstCaseImpact": 0.020257649536448114
+            }
+          ],
+          "interventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "lowerImpact": 0.005409754572616066,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.005409754572616066,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2536479628168214,
+          "worstCaseImpact": 0.2536479628168214
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.04227466046947024,
+          "worstCaseImpact": 0.04227466046947024
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020847777765766146,
+          "worstCaseImpact": 0.020847777765766146
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.020847777765766146,
+      "worstCaseImpact": 0.020847777765766146
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-11T00:00:00.000Z",
+          "interventionId": "intervention:place-based-regeneration-equity-stress:transition-support",
+          "leadTimeDays": 30
+        }
+      ],
+      "centralImpact": 0.005409754572616066,
+      "cost": 10,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.06581868063349547,
+          "horizonDays": 30,
+          "lowerImpact": 0.06581868063349547,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2464680693601187,
+          "worstCaseImpact": 0.2464680693601187
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.010969780105582578,
+          "horizonDays": 180,
+          "lowerImpact": 0.010969780105582578,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.041078011560019785,
+          "worstCaseImpact": 0.041078011560019785
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:place-based-regeneration-equity-stress:transition-support"
+          ],
+          "centralImpact": 0.005409754572616066,
+          "horizonDays": 365,
+          "lowerImpact": 0.005409754572616066,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.020257649536448114,
+          "worstCaseImpact": 0.020257649536448114
+        }
+      ],
+      "interventionIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "lowerImpact": 0.005409754572616066,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.020257649536448114,
+      "worstCaseImpact": 0.020257649536448114
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:place-based-regeneration-equity-stress:transition-support"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 16945.469650818544,
+      "toBundleIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ]
+    }
+  ],
+  "scenarioId": "place-based-regeneration-equity-stress"
+}

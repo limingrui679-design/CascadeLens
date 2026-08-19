@@ -9,6 +9,7 @@ const repositoryRoot = fileURLToPath(new URL("../", import.meta.url));
 const documentationFiles = [
   "README.md",
   "docs/README.md",
+  "docs/CASE_CAPABILITY_MATRIX.md",
   "packages/README.md",
   "content/README.md",
   "examples/README.md",
@@ -68,15 +69,16 @@ test("README exposes the runnable path, architecture, and evidence boundary", as
   assert.match(readme, /npm ci/);
   assert.match(readme, /0 historically scored cases/);
   assert.match(readme, /0 external validations/);
-  assert.match(readme, /0 claims of organizational adoption/);
+  assert.match(readme, /0 structured user studies/);
+  assert.match(readme, /0 verified organizational adoptions/);
 });
 
 test("README exposes the Python one-line install before the case library", async () => {
   const readme = await readFile(resolve(repositoryRoot, "README.md"), "utf8");
-  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"');
-  const cases = readme.indexOf("## Explore all 12 cases");
+  const install = readme.indexOf('pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"');
+  const cases = readme.indexOf("## Explore all 16 cases");
   assert.ok(install >= 0, "README must contain the stable one-line Python install");
-  assert.ok(cases > install, "Python installation must appear before the twelve-case showcase");
+  assert.ok(cases > install, "Python installation must appear before the sixteen-case showcase");
   assert.match(readme, /CSV · GraphML · NetworkX/);
   assert.match(readme, /cascadelens demo --out demo-riskpack/);
   const pyproject = await readFile(resolve(repositoryRoot, "pyproject.toml"), "utf8");
@@ -100,16 +102,31 @@ test("README prominently links every reference case", async () => {
     readFile(resolve(repositoryRoot, "README.md"), "utf8"),
     readFile(resolve(repositoryRoot, "content/cases/catalog.json"), "utf8").then(JSON.parse),
   ]);
-  assert.equal(caseCatalog.cases.length, 12);
-  const showcaseStart = readme.indexOf("## Explore all 12 cases");
+  assert.equal(caseCatalog.cases.length, 16);
+  const showcaseStart = readme.indexOf("## Explore all 16 cases");
   const nextSection = readme.indexOf("\n## Why CascadeLens", showcaseStart);
-  assert.ok(showcaseStart >= 0, "README must contain the twelve-case showcase");
-  assert.ok(nextSection > showcaseStart, "twelve-case showcase must appear before project rationale");
+  assert.ok(showcaseStart >= 0, "README must contain the sixteen-case showcase");
+  assert.ok(nextSection > showcaseStart, "sixteen-case showcase must appear before project rationale");
   const showcase = readme.slice(showcaseStart, nextSection);
   for (const item of caseCatalog.cases) {
     assert.match(showcase, new RegExp(`content/cases/${item.slug}/README\\.md`));
     assert.match(showcase, new RegExp(item.shortTitle.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&"), "i"));
   }
+});
+
+test("capability matrix covers every case and public capability", async () => {
+  const matrix = JSON.parse(
+    await readFile(resolve(repositoryRoot, "content/cases/capability-matrix.json"), "utf8"),
+  );
+  assert.equal(matrix.cases.length, 16);
+  assert.equal(matrix.capabilities.length, 15);
+  const covered = new Set(matrix.cases.flatMap((item) => item.decisionProfile.capabilities));
+  assert.deepEqual([...covered].sort(), matrix.capabilities.map((item) => item.id).sort());
+  const documentation = await readFile(
+    resolve(repositoryRoot, "docs/CASE_CAPABILITY_MATRIX.md"),
+    "utf8",
+  );
+  for (const item of matrix.cases) assert.match(documentation, new RegExp(item.shortTitle, "i"));
 });
 
 test("README screenshots are committed, valid, and consistently framed", async () => {

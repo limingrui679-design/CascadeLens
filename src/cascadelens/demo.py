@@ -86,7 +86,7 @@ def demo_snapshot() -> dict[str, Any]:
                     "retrievedAt": _CUTOFF,
                     "availableAt": _CUTOFF,
                     "publishedAt": _CUTOFF,
-                    "sha256": sha256_text("CascadeLens packaged demonstration assumptions v0.5.1"),
+                    "sha256": sha256_text("CascadeLens packaged demonstration assumptions v0.6.0"),
                     "contentType": "text/plain",
                     "artifactKind": "normalized_snapshot",
                     "digestScope": "exact_bytes",

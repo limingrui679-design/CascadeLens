@@ -5,7 +5,7 @@ The Python CLI is the primary local entry point. It validates input before analy
 ## Install
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"
 ```
 
 ## Run the complete demonstration
@@ -63,7 +63,7 @@ Recomputation detects changed derived results even when internal checksums are r
 
 ## Hosted-demo maintenance
 
-The TypeScript CLI remains available for maintainers rebuilding the 12 reviewed website cases and bounded connector fixtures:
+The TypeScript CLI remains available for maintainers rebuilding the 16 reviewed website cases, capability matrix, Workbench bundle, and bounded connector fixtures:
 
 ```bash
 npm run cascadelens -- cases list

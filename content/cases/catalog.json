@@ -1,5 +1,5 @@
 {
-  "caseCount": 12,
+  "caseCount": 16,
   "cases": [
     {
       "classification": "quasi_historical",
@@ -8,6 +8,38 @@
         "publisher": "Suez Canal Authority",
         "title": "Navigation in the Suez Canal restored after the Ever Given incident",
         "uri": "https://www.suezcanal.gov.eg/English/MediaCenter/News/Pages/31-3-2021.aspx"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "temporal-reasoning",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Cross-border operations lead",
+        "guardrail": "Do not interpret the stress index as vessel delay, revenue loss, or a forecast of a closure.",
+        "methods": [
+          "bitemporal eligibility",
+          "missing-graph bounds",
+          "lead-time-constrained Pareto analysis"
+        ],
+        "stakeholders": [
+          "carriers",
+          "procurement teams",
+          "production planners",
+          "downstream customers"
+        ],
+        "tradeoffs": [
+          "speed versus normalized cost",
+          "continuity versus reliance on assumed links"
+        ],
+        "userTasks": [
+          "compare buffer and rerouting bundles",
+          "locate the dependency that drives the upper bound",
+          "state the evidence needed before acting"
+        ]
       },
       "decisionQuestion": "Which bounded intervention remains feasible if the Suez route becomes unavailable for a short planning horizon?",
       "domain": "Maritime trade",
@@ -63,6 +95,38 @@
         "title": "Results from Semiconductor Supply Chain Request for Information",
         "uri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "constrained-optimization",
+          "data-systems",
+          "evidence-governance",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Technology manufacturing planner",
+        "guardrail": "No company, fabrication site, production volume, or realized shortage is represented.",
+        "methods": [
+          "branch-and-merge topology",
+          "bounded propagation",
+          "feasible bundle enumeration"
+        ],
+        "stakeholders": [
+          "fabrication partners",
+          "component engineers",
+          "assembly teams",
+          "customers"
+        ],
+        "tradeoffs": [
+          "inventory cost versus qualification lead time",
+          "allocation continuity versus customer coverage"
+        ],
+        "userTasks": [
+          "compare inventory, redesign, and allocation",
+          "trace where two dependency branches merge",
+          "explain why feasibility is not a recommendation"
+        ]
+      },
       "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
       "domain": "Advanced manufacturing",
       "edgeCount": 5,
@@ -117,6 +181,38 @@
         "title": "Shortage of personal protective equipment endangering health workers worldwide",
         "uri": "https://www.who.int/news/item/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "public-interest-ethics",
+          "temporal-reasoning",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Public-health supply coordinator",
+        "guardrail": "The case is neither clinical guidance nor an emergency-allocation recommendation.",
+        "methods": [
+          "demand-shock compilation",
+          "access-oriented criticality weighting",
+          "bounded intervention comparison"
+        ],
+        "stakeholders": [
+          "health workers",
+          "care sites",
+          "distributors",
+          "patients"
+        ],
+        "tradeoffs": [
+          "aggregate continuity versus equitable allocation",
+          "rapid prioritization versus evidence quality"
+        ],
+        "userTasks": [
+          "compare stockpiling, supplier diversity, and prioritization",
+          "surface who bears a shortage",
+          "write a safety-limited decision boundary"
+        ]
+      },
       "decisionQuestion": "Which feasible supply intervention best limits bounded access disruption during a PPE demand surge?",
       "domain": "Public health supply",
       "edgeCount": 5,
@@ -170,6 +266,38 @@
         "publisher": "World Bank",
         "title": "Food and Energy Price Shocks from Ukraine War",
         "uri": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Food and energy resilience analyst",
+        "guardrail": "No country-level price, food-security, or welfare effect is estimated.",
+        "methods": [
+          "compound-shock compilation",
+          "cycle-safe fixed point",
+          "Pareto frontier analysis"
+        ],
+        "stakeholders": [
+          "producers",
+          "logistics operators",
+          "public agencies",
+          "households"
+        ],
+        "tradeoffs": [
+          "system continuity versus affordability",
+          "reserve use versus longer-horizon resilience"
+        ],
+        "userTasks": [
+          "separate direct from propagated pressure",
+          "compare reserve and substitution bundles",
+          "identify distributional questions the model cannot answer"
+        ]
       },
       "decisionQuestion": "Which combination of buffers and substitution remains robust when several commodity channels move together?",
       "domain": "Food and energy",
@@ -226,6 +354,38 @@
         "title": "Panama Canal Authority adapts to unprecedented challenges",
         "uri": "https://pancanal.com/en/panama-canal-authority-adapts-to-unprecedented-challenges/"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "temporal-reasoning",
+          "sensitivity-analysis",
+          "spatial-policy",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Network and route planner",
+        "guardrail": "The graph does not reconstruct vessel queues, water levels, tolls, or actual cargo volumes.",
+        "methods": [
+          "dynamic edge activation",
+          "horizon comparison",
+          "shock-transmission sensitivity"
+        ],
+        "stakeholders": [
+          "canal operators",
+          "carriers",
+          "importers",
+          "regional producers"
+        ],
+        "tradeoffs": [
+          "short-run inventory versus long-run route diversity",
+          "regional access versus added transport burden"
+        ],
+        "userTasks": [
+          "find when diversification overtakes buffering",
+          "inspect the mid-horizon topology change",
+          "communicate a reversible trigger"
+        ]
+      },
       "decisionQuestion": "When does route diversification become preferable to inventory buffering under a canal-capacity constraint?",
       "domain": "Climate and logistics",
       "edgeCount": 4,
@@ -279,6 +439,38 @@
         "publisher": "UN Trade and Development",
         "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes",
         "uri": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "temporal-reasoning",
+          "sensitivity-analysis",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Global logistics risk lead",
+        "guardrail": "No freight-rate, emissions, insurance, or realized delivery-time effect is claimed.",
+        "methods": [
+          "dynamic edge expiry",
+          "upper-bound stress comparison",
+          "lead-time analysis"
+        ],
+        "stakeholders": [
+          "ship operators",
+          "cargo owners",
+          "production sites",
+          "delivery recipients"
+        ],
+        "tradeoffs": [
+          "route continuity versus longer transit",
+          "faster action versus uncertain intervention effect"
+        ],
+        "userTasks": [
+          "compare routing and inventory assumptions",
+          "locate the effect of an expiring link",
+          "set a review trigger for changing course"
+        ]
       },
       "decisionQuestion": "Which intervention minimizes upper-bound continuity loss when vessels avoid the Red Sea route?",
       "domain": "Geopolitics and shipping",
@@ -334,6 +526,39 @@
         "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
         "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "spatial-policy",
+          "public-interest-ethics",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Regional infrastructure coordinator",
+        "guardrail": "This is not an engineering reconstruction or an estimate of the incident's realized losses.",
+        "methods": [
+          "place-based dependency mapping",
+          "access-loss scenario",
+          "budget-constrained option comparison"
+        ],
+        "stakeholders": [
+          "port operators",
+          "workers",
+          "manufacturers",
+          "nearby communities",
+          "cargo owners"
+        ],
+        "tradeoffs": [
+          "regional continuity versus burden shifting",
+          "speed of rerouting versus local capacity"
+        ],
+        "userTasks": [
+          "compare alternate gateways and inland buffers",
+          "name affected groups outside the supply chain",
+          "separate engineering facts from scenario assumptions"
+        ]
+      },
       "decisionQuestion": "How do alternate ports and inventory buffers compare under a sudden port-access loss?",
       "domain": "Port infrastructure",
       "edgeCount": 4,
@@ -387,6 +612,39 @@
         "publisher": "U.S. Energy Information Administration",
         "title": "Hurricane Ida caused widespread refinery and pipeline outages",
         "uri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "temporal-reasoning",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Essential-services continuity lead",
+        "guardrail": "The case is not a weather forecast or a fuel-market impact estimate.",
+        "methods": [
+          "capacity-shock compilation",
+          "criticality-weighted outcomes",
+          "reserve and rerouting frontier"
+        ],
+        "stakeholders": [
+          "refiners",
+          "freight operators",
+          "public agencies",
+          "essential-service providers",
+          "residents"
+        ],
+        "tradeoffs": [
+          "commercial continuity versus essential-service priority",
+          "reserve depletion versus immediate access"
+        ],
+        "userTasks": [
+          "compare reserves, rerouting, and demand management",
+          "test whether a bundle fits the lead-time window",
+          "surface service-equity questions"
+        ]
       },
       "decisionQuestion": "Which reserve, rerouting, or demand-management bundle is feasible under bounded refining disruption?",
       "domain": "Energy infrastructure",
@@ -442,6 +700,38 @@
         "title": "2026 IEA Ministerial Declaration supporting critical-minerals security",
         "uri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "evidence-governance",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Strategic technology policy analyst",
+        "guardrail": "The synthetic topology names no mineral, country, firm, or current export-control measure.",
+        "methods": [
+          "policy-restriction scenario",
+          "concentration stress",
+          "value-of-information ranking"
+        ],
+        "stakeholders": [
+          "material processors",
+          "manufacturers",
+          "infrastructure operators",
+          "public agencies"
+        ],
+        "tradeoffs": [
+          "strategic reserve cost versus exposure",
+          "rapid substitution versus qualification risk"
+        ],
+        "userTasks": [
+          "compare diversification with additional evidence",
+          "identify the assumed bottleneck",
+          "explain why context does not prove topology"
+        ]
+      },
       "decisionQuestion": "What is the value of diversification and additional evidence under a concentrated critical-mineral dependency?",
       "domain": "Minerals and technology",
       "edgeCount": 4,
@@ -495,6 +785,39 @@
         "title": "Sanctions List Service",
         "uri": "https://ofac.treasury.gov/sanctions-list-service"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "data-systems",
+          "evidence-governance",
+          "financial-risk",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "public-interest-ethics"
+        ],
+        "decisionOwner": "Financial-compliance operations lead",
+        "guardrail": "The case performs no sanctions screening and makes no legal or eligibility determination.",
+        "methods": [
+          "fail-closed policy stress",
+          "queue dependency mapping",
+          "manual-review option comparison"
+        ],
+        "stakeholders": [
+          "compliance reviewers",
+          "payment teams",
+          "suppliers",
+          "customers",
+          "legal counsel"
+        ],
+        "tradeoffs": [
+          "transaction continuity versus compliance safety",
+          "automation speed versus accountable review"
+        ],
+        "userTasks": [
+          "preserve the compliance gate while comparing continuity options",
+          "separate list data from a legal conclusion",
+          "document escalation and review ownership"
+        ]
+      },
       "decisionQuestion": "Which operational safeguard limits disruption while preserving a fail-closed compliance boundary?",
       "domain": "Financial and compliance operations",
       "edgeCount": 4,
@@ -547,6 +870,39 @@
         "publisher": "U.S. Food and Drug Administration",
         "title": "openFDA Drug Shortages API",
         "uri": "https://open.fda.gov/apis/drug/drugshortages/"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "data-systems",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Medicine access coordinator",
+        "guardrail": "No current shortage record is used as topology, and no treatment recommendation is produced.",
+        "methods": [
+          "official-source context isolation",
+          "care-access criticality",
+          "bounded supply intervention analysis"
+        ],
+        "stakeholders": [
+          "manufacturers",
+          "wholesalers",
+          "care sites",
+          "clinicians",
+          "patients"
+        ],
+        "tradeoffs": [
+          "aggregate stock versus care-site access",
+          "speed versus evidence for alternate supply"
+        ],
+        "userTasks": [
+          "compare buffer, alternate supply, and distribution priority",
+          "trace a source record without treating it as a topology",
+          "state the clinical boundary"
+        ]
       },
       "decisionQuestion": "Which bounded supply intervention remains feasible when a medicine becomes constrained?",
       "domain": "Medicines",
@@ -602,6 +958,39 @@
         "title": "FAOSTAT data portal",
         "uri": "https://www.fao.org/faostat/en/"
       },
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "sensitivity-analysis",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Food-system policy planner",
+        "guardrail": "No current production, trade, price, nutrition, or food-security observation drives the scenario.",
+        "methods": [
+          "compound supply-policy shock",
+          "Pareto frontier",
+          "affordability-oriented criticality"
+        ],
+        "stakeholders": [
+          "producers",
+          "traders",
+          "distributors",
+          "public agencies",
+          "households"
+        ],
+        "tradeoffs": [
+          "reserve release versus future resilience",
+          "market continuity versus household affordability"
+        ],
+        "userTasks": [
+          "compare reserves and import diversity",
+          "test joint-shock assumptions",
+          "identify which groups require separate outcome data"
+        ]
+      },
       "decisionQuestion": "Which reserve and diversification choices stay on the Pareto frontier under a two-channel food stress?",
       "domain": "Agriculture and trade",
       "edgeCount": 4,
@@ -647,9 +1036,360 @@
         "lower": 0.05733044733044735,
         "upper": 0.12844098577995933
       }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2020-08-11T00:00:00Z",
+        "publisher": "Office of the National Coordinator for Health Information Technology",
+        "title": "United States Core Data for Interoperability certification companion guide",
+        "uri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "health-informatics",
+          "data-systems",
+          "evidence-governance",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "reproducible-computation"
+        ],
+        "decisionOwner": "Health-information governance lead",
+        "guardrail": "The case contains no patient data and makes no claim about clinical performance, certification, or deployment.",
+        "methods": [
+          "terminology-workflow mapping",
+          "branch-and-merge failure analysis",
+          "manual-review safeguard comparison"
+        ],
+        "stakeholders": [
+          "patients",
+          "clinicians",
+          "health IT teams",
+          "care organizations",
+          "public-health analysts"
+        ],
+        "tradeoffs": [
+          "exchange completeness versus safety review",
+          "automation speed versus human accountability"
+        ],
+        "userTasks": [
+          "compare mapping validation, source redundancy, and manual review",
+          "trace how missing semantics reach a downstream decision",
+          "separate interoperability standards from local implementation evidence"
+        ]
+      },
+      "decisionQuestion": "Which validation and accountable-review bundle best preserves safe information flow when coded-data availability degrades?",
+      "domain": "Health information systems",
+      "edgeCount": 5,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build health-data-interoperability-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "riskPackPath": "cases/health-data-interoperability-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Health interoperability",
+      "slug": "health-data-interoperability-stress",
+      "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 18,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 21
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          3,
+          14,
+          45
+        ],
+        "topology": "branch_merge"
+      },
+      "summary": "A synthetic information-flow stress linking record completeness, terminology mapping, provenance review, decision support, and population reporting.",
+      "tags": [
+        "health-informatics",
+        "interoperability",
+        "terminology",
+        "workflow"
+      ],
+      "title": "Health-data interoperability workflow stress",
+      "totalWeightedImpact": {
+        "central": 0.05649350649350648,
+        "lower": 0.05649350649350648,
+        "upper": 0.2004397383573752
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2020-09-01T00:00:00Z",
+        "publisher": "U.S. General Services Administration, Office of Evaluation Sciences",
+        "title": "Reporting statistical results in text and in graphs",
+        "uri": "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "behavioral-experimentation",
+          "evidence-governance",
+          "uncertainty-bounds",
+          "reproducible-computation",
+          "public-interest-ethics",
+          "stakeholder-communication"
+        ],
+        "decisionOwner": "Program evaluation lead",
+        "guardrail": "No treatment effect, causal mechanism, participant response, or program impact is estimated.",
+        "methods": [
+          "measurement-to-rollout dependency map",
+          "assignment-integrity stress",
+          "reversible pilot comparison"
+        ],
+        "stakeholders": [
+          "participants",
+          "service teams",
+          "evaluators",
+          "program owners",
+          "oversight bodies"
+        ],
+        "tradeoffs": [
+          "learning speed versus measurement quality",
+          "population reach versus reversible experimentation"
+        ],
+        "userTasks": [
+          "distinguish observed behavior from mechanism",
+          "compare measurement, randomization, and staged-rollout safeguards",
+          "write a result statement that preserves null and heterogeneous outcomes"
+        ]
+      },
+      "decisionQuestion": "Which experiment and rollout safeguard preserves learning value when measurement quality and uptake assumptions weaken?",
+      "domain": "Behavioral policy and experimentation",
+      "edgeCount": 5,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build behavioral-intervention-evidence-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+        "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+      ],
+      "riskPackPath": "cases/behavioral-intervention-evidence-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Behavioral evidence",
+      "slug": "behavioral-intervention-evidence-stress",
+      "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 20,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 60
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          14,
+          60,
+          180
+        ],
+        "topology": "branch_merge"
+      },
+      "summary": "A synthetic evaluation-workflow stress separating measurement quality, assignment integrity, response signals, implementation, and participant outcomes.",
+      "tags": [
+        "behavior",
+        "experimentation",
+        "measurement",
+        "evaluation"
+      ],
+      "title": "Behavioral-intervention evidence stress",
+      "totalWeightedImpact": {
+        "central": 0.01469594594594594,
+        "lower": 0.01469594594594594,
+        "upper": 0.0476250806271547
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2024-04-09T00:00:00Z",
+        "publisher": "U.S. Department of Housing and Urban Development",
+        "title": "Choice Neighborhoods",
+        "uri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "spatial-policy",
+          "public-interest-ethics",
+          "constrained-optimization",
+          "temporal-reasoning",
+          "stakeholder-communication",
+          "system-mapping"
+        ],
+        "decisionOwner": "Place-based regeneration planner",
+        "guardrail": "The case represents no named neighborhood, parcel, household, grant, or measured displacement effect.",
+        "methods": [
+          "place-based dependency mapping",
+          "phased intervention analysis",
+          "distributional decision framing"
+        ],
+        "stakeholders": [
+          "current residents",
+          "housing providers",
+          "local businesses",
+          "transport agencies",
+          "local government"
+        ],
+        "tradeoffs": [
+          "redevelopment pace versus resident continuity",
+          "capital delivery versus affordable access"
+        ],
+        "userTasks": [
+          "compare housing, access, and local-business safeguards",
+          "state who benefits and who bears transition costs",
+          "set a review trigger for displacement pressure"
+        ]
+      },
+      "decisionQuestion": "Which phased, budget-constrained package protects access and resident continuity while preserving redevelopment capacity?",
+      "domain": "Urban regeneration and public policy",
+      "edgeCount": 5,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build place-based-regeneration-equity-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:place-based-regeneration-equity-stress:transition-support"
+      ],
+      "riskPackPath": "cases/place-based-regeneration-equity-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Regeneration equity",
+      "slug": "place-based-regeneration-equity-stress",
+      "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 25,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 180
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          30,
+          180,
+          365
+        ],
+        "topology": "branch_merge"
+      },
+      "summary": "A synthetic place-based transition stress linking redevelopment, affordable housing, service access, local businesses, and resident continuity.",
+      "tags": [
+        "planning",
+        "housing",
+        "access",
+        "equity",
+        "regeneration"
+      ],
+      "title": "Place-based regeneration and equity stress",
+      "totalWeightedImpact": {
+        "central": 0.005409754572616066,
+        "lower": 0.005409754572616066,
+        "upper": 0.020847777765766146
+      }
+    },
+    {
+      "classification": "synthetic_stress",
+      "context": {
+        "availableAt": "2019-02-01T00:00:00Z",
+        "publisher": "U.S. Securities and Exchange Commission, Investor.gov",
+        "title": "Beginner's guide to asset allocation, diversification, and rebalancing",
+        "uri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+      },
+      "decisionProfile": {
+        "capabilities": [
+          "financial-risk",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "sensitivity-analysis",
+          "evidence-governance",
+          "stakeholder-communication"
+        ],
+        "decisionOwner": "Portfolio risk committee",
+        "guardrail": "The case contains no real portfolio, security recommendation, return forecast, or evidence of fiduciary suitability.",
+        "methods": [
+          "concentration-shock mapping",
+          "liquidity and mandate constraints",
+          "rebalancing frontier"
+        ],
+        "stakeholders": [
+          "beneficiaries",
+          "portfolio managers",
+          "risk teams",
+          "compliance officers",
+          "oversight committees"
+        ],
+        "tradeoffs": [
+          "concentration risk versus mandate tracking",
+          "liquidity protection versus opportunity cost"
+        ],
+        "userTasks": [
+          "compare rebalancing, liquidity buffer, and exposure review",
+          "test sensitivity to stress transmission",
+          "state the fiduciary and evidence limits of the output"
+        ]
+      },
+      "decisionQuestion": "Which rebalancing and liquidity safeguard remains feasible when a concentrated exposure is stressed under mandate constraints?",
+      "domain": "Portfolio and fiduciary risk",
+      "edgeCount": 4,
+      "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+      "nodeCount": 5,
+      "observabilityStatus": "not_cost_effective",
+      "rebuildCommand": "npm run cascadelens -- cases build portfolio-concentration-fiduciary-stress",
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ],
+      "riskPackPath": "cases/portfolio-concentration-fiduciary-stress/riskpack/",
+      "scoringStatus": "scenario_only",
+      "shortTitle": "Portfolio concentration",
+      "slug": "portfolio-concentration-fiduciary-stress",
+      "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+      "structuralProfile": {
+        "constraintProfile": {
+          "budget": 16,
+          "budgetUnit": "normalized_cost",
+          "maxInterventions": 2,
+          "maxLeadTimeDays": 30
+        },
+        "dynamicEdgeCount": 0,
+        "hasCycle": false,
+        "horizonsDays": [
+          5,
+          21,
+          63
+        ],
+        "topology": "chain"
+      },
+      "summary": "A synthetic portfolio stress linking concentrated exposure, liquidity needs, mandate constraints, and beneficiary objectives without using holdings or returns.",
+      "tags": [
+        "portfolio",
+        "concentration",
+        "liquidity",
+        "fiduciary"
+      ],
+      "title": "Portfolio concentration and fiduciary stress",
+      "totalWeightedImpact": {
+        "central": 0.04807112718505126,
+        "lower": 0.04807112718505126,
+        "upper": 0.13534587279791288
+      }
     }
   ],
-  "generatedAt": "2026-08-12T00:00:00Z",
+  "generatedAt": "2026-08-20T00:00:00Z",
   "historicallyScoredCaseCount": 0,
   "schemaVersion": "0.1.0",
   "status": "reference_cases_not_empirical_validation",
@@ -659,7 +1399,11 @@
     "evidenceBoundary": "Structural regression diversity does not establish empirical accuracy or historical validation.",
     "horizonProfiles": [
       "14/45/120",
+      "14/60/180",
+      "3/14/45",
       "3/14/60",
+      "30/180/365",
+      "5/21/63",
       "7/21/60",
       "7/30/90"
     ],

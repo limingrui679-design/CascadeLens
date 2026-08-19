@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.042455 / 0.042455 / 0.115757
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Essential-services continuity lead
+- Stakeholders: refiners; freight operators; public agencies; essential-service providers; residents
+- Capabilities exercised: temporal-reasoning; constrained-optimization; public-interest-ethics; stakeholder-communication; uncertainty-bounds; resilience-operations
+- Methods: capacity-shock compilation; criticality-weighted outcomes; reserve and rerouting frontier
+
+### User tasks
+
+- compare reserves, rerouting, and demand management
+- test whether a bundle fits the lead-time window
+- surface service-equity questions
+
+### Trade-offs and guardrail
+
+- commercial continuity versus essential-service priority
+- reserve depletion versus immediate access
+
+> The case is not a weather forecast or a fuel-market impact estimate.
+
 ## Rebuild and verify
 
 ```bash

@@ -456,6 +456,7 @@ export function caseCatalogRecord(built: BuiltReferenceCase) {
     classification: spec.classification,
     summary: spec.summary,
     decisionQuestion: spec.decisionQuestion,
+    decisionProfile: spec.decisionProfile,
     tags: spec.tags,
     context: spec.context,
     evidenceBoundary:

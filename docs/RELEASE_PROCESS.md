@@ -1,6 +1,6 @@
 # Release process
 
-1. Regenerate the connector catalog, twelve cases, deterministic RiskPack archives, and CycloneDX SBOM.
+1. Regenerate the connector catalog, sixteen cases, capability matrix, Workbench bundle, deterministic RiskPack archives, and CycloneDX SBOM.
 2. Run the Python 3.11/3.12/3.13 install-and-test matrix, `npm run ci`, and `npm run verify:build-reproducibility` from the working tree. The latter performs two network-blocked production builds and requires identical complete `dist` tree digests.
 3. Commit the exact tree, push it, and require the Python matrix, Linux/macOS reproducible-build matrix, and complete web CI job to pass.
 4. Create an annotated semantic-version tag on that exact commit.

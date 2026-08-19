@@ -8,8 +8,8 @@ const catalog = JSON.parse(
   await readFile(new URL("../../public/riskpacks/catalog.json", import.meta.url), "utf8"),
 ) as { archives: Array<{ slug: string; file: string; bytes: number; sha256: string }> };
 
-test("publishes twelve deterministic, self-verifying RiskPack archives", async () => {
-  assert.equal(catalog.archives.length, 12);
+test("publishes sixteen deterministic, self-verifying RiskPack archives", async () => {
+  assert.equal(catalog.archives.length, 16);
   for (const record of catalog.archives) {
     const archiveBytes = await readFile(
       new URL(`../../public/riskpacks/${record.file}`, import.meta.url),

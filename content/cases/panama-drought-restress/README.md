@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.030299 / 0.030299 / 0.069050
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Network and route planner
+- Stakeholders: canal operators; carriers; importers; regional producers
+- Capabilities exercised: temporal-reasoning; sensitivity-analysis; spatial-policy; stakeholder-communication; uncertainty-bounds; resilience-operations
+- Methods: dynamic edge activation; horizon comparison; shock-transmission sensitivity
+
+### User tasks
+
+- find when diversification overtakes buffering
+- inspect the mid-horizon topology change
+- communicate a reversible trigger
+
+### Trade-offs and guardrail
+
+- short-run inventory versus long-run route diversity
+- regional access versus added transport burden
+
+> The graph does not reconstruct vessel queues, water levels, tolls, or actual cargo volumes.
+
 ## Rebuild and verify
 
 ```bash

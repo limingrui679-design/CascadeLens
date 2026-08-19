@@ -1,6 +1,6 @@
 {
   "schemaVersion": "cascadelens-evidence-ledger/1.0",
-  "updatedAt": "2026-08-14",
+  "updatedAt": "2026-08-20",
   "evidenceBoundary": "Protocols, templates, issue forms, internal tests, maintainer reviews, traffic, stars, and demos do not count as accepted historical, external, user-research, adoption, or impact evidence.",
   "counts": {
     "historical_replay": 0,

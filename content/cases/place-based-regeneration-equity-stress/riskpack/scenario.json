@@ -1,0 +1,116 @@
+{
+  "classification": "synthetic_stress",
+  "constraints": {
+    "budget": 25,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 180
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:place-based-regeneration-equity-stress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 14,
+      "costUnit": "normalized_cost",
+      "effect": 0.45,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:place-based-regeneration-equity-stress:housing-first",
+      "label": "Phase replacement housing before transition",
+      "leadTimeDays": 120,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:place-based-regeneration-equity-stress:housing"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.38,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:place-based-regeneration-equity-stress:access-redundancy",
+      "label": "Protect alternate service access",
+      "leadTimeDays": 60,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:place-based-regeneration-equity-stress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 10,
+      "costUnit": "normalized_cost",
+      "effect": 0.34,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:place-based-regeneration-equity-stress:transition-support",
+      "label": "Fund resident and local-business transition support",
+      "leadTimeDays": 30,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:place-based-regeneration-equity-stress:link-4"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No named neighborhood, parcel, household, funding decision, spatial estimate, or displacement outcome is represented."
+  ],
+  "objectives": [
+    {
+      "id": "objective:place-based-regeneration-equity-stress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:place-based-regeneration-equity-stress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      30,
+      180,
+      365
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "place-based-regeneration-equity-stress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:place-based-regeneration-equity-stress:primary",
+      "label": "Housing and access transition pressure",
+      "magnitude": 0.65,
+      "operation": "increase_demand",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:place-based-regeneration-equity-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:place-based-regeneration-equity-stress:transition"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A synthetic place-based transition stress linking redevelopment, affordable housing, service access, local businesses, and resident continuity.",
+  "title": "Place-based regeneration and equity stress"
+}

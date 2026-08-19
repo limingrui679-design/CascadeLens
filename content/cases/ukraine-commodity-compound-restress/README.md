@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.064444 / 0.064444 / 0.140688
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Food and energy resilience analyst
+- Stakeholders: producers; logistics operators; public agencies; households
+- Capabilities exercised: system-mapping; uncertainty-bounds; constrained-optimization; public-interest-ethics; stakeholder-communication; resilience-operations
+- Methods: compound-shock compilation; cycle-safe fixed point; Pareto frontier analysis
+
+### User tasks
+
+- separate direct from propagated pressure
+- compare reserve and substitution bundles
+- identify distributional questions the model cannot answer
+
+### Trade-offs and guardrail
+
+- system continuity versus affordability
+- reserve use versus longer-horizon resilience
+
+> No country-level price, food-security, or welfare effect is estimated.
+
 ## Rebuild and verify
 
 ```bash

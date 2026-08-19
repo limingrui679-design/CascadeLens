@@ -6,6 +6,38 @@
     "title": "2026 IEA Ministerial Declaration supporting critical-minerals security",
     "uri": "https://www.iea.org/news/2026-iea-ministerial-declaration-supporting-the-iea-s-work-on-critical-minerals-security"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "evidence-governance",
+      "constrained-optimization",
+      "public-interest-ethics",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Strategic technology policy analyst",
+    "guardrail": "The synthetic topology names no mineral, country, firm, or current export-control measure.",
+    "methods": [
+      "policy-restriction scenario",
+      "concentration stress",
+      "value-of-information ranking"
+    ],
+    "stakeholders": [
+      "material processors",
+      "manufacturers",
+      "infrastructure operators",
+      "public agencies"
+    ],
+    "tradeoffs": [
+      "strategic reserve cost versus exposure",
+      "rapid substitution versus qualification risk"
+    ],
+    "userTasks": [
+      "compare diversification with additional evidence",
+      "identify the assumed bottleneck",
+      "explain why context does not prove topology"
+    ]
+  },
   "decisionQuestion": "What is the value of diversification and additional evidence under a concentrated critical-mineral dependency?",
   "domain": "Minerals and technology",
   "edgeCount": 4,

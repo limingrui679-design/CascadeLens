@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.064444 / 0.064444 / 0.163606
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Cross-border operations lead
+- Stakeholders: carriers; procurement teams; production planners; downstream customers
+- Capabilities exercised: system-mapping; uncertainty-bounds; constrained-optimization; temporal-reasoning; stakeholder-communication; resilience-operations
+- Methods: bitemporal eligibility; missing-graph bounds; lead-time-constrained Pareto analysis
+
+### User tasks
+
+- compare buffer and rerouting bundles
+- locate the dependency that drives the upper bound
+- state the evidence needed before acting
+
+### Trade-offs and guardrail
+
+- speed versus normalized cost
+- continuity versus reliance on assumed links
+
+> Do not interpret the stress index as vessel delay, revenue loss, or a forecast of a closure.
+
 ## Rebuild and verify
 
 ```bash

@@ -6,7 +6,11 @@ import {
   DatabaseZap,
   GitBranch,
   FileUp,
+  FlaskConical,
+  HeartPulse,
   NotebookTabs,
+  MapPinned,
+  ChartNoAxesCombined,
   ScanSearch,
   ShieldCheck,
   Terminal,
@@ -23,6 +27,35 @@ export const metadata: Metadata = {
 };
 
 const featured = caseCatalog.cases[0];
+const decisionLenses = [
+  {
+    icon: HeartPulse,
+    slug: "health-data-interoperability-stress",
+    label: "Health information systems",
+    action: "Trace terminology, provenance, review, and reporting failure paths.",
+  },
+  {
+    icon: FlaskConical,
+    slug: "behavioral-intervention-evidence-stress",
+    label: "Behavioral evaluation",
+    action: "Separate measurement, assignment, response, and rollout evidence.",
+  },
+  {
+    icon: MapPinned,
+    slug: "place-based-regeneration-equity-stress",
+    label: "Place-based policy",
+    action: "Make housing, access, transition costs, and affected groups visible.",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    slug: "portfolio-concentration-fiduciary-stress",
+    label: "Portfolio risk",
+    action: "Compare concentration, liquidity, mandate, and beneficiary trade-offs.",
+  },
+].map((item) => ({
+  ...item,
+  case: caseCatalog.cases.find((candidate) => candidate.slug === item.slug)!,
+}));
 
 export default function Home() {
   return (
@@ -90,6 +123,32 @@ export default function Home() {
         </article>
       </section>
 
+      <section className="section section-rule">
+        <div className="section-heading split-heading">
+          <div>
+            <Eyebrow>Decision range</Eyebrow>
+            <h2>One evidence contract across four very different decisions.</h2>
+          </div>
+          <p>
+            The expanded library now tests data semantics, experimentation, place-based equity, and fiduciary constraints alongside operational resilience.
+          </p>
+        </div>
+        <div className="case-lens-grid">
+          {decisionLenses.map((item) => {
+            const Icon = item.icon;
+            return (
+              <Link className="case-lens-card" href={`/cases/${item.slug}`} key={item.slug}>
+                <Icon size={20} aria-hidden="true" />
+                <span>{item.label}</span>
+                <h3>{item.case.shortTitle}</h3>
+                <p>{item.action}</p>
+                <small>Open evidence trail →</small>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="section python-onramp">
         <div className="python-onramp-copy">
           <Eyebrow>Python-first · one-line install</Eyebrow>
@@ -103,7 +162,7 @@ export default function Home() {
         </div>
         <div className="install-card">
           <div><Terminal size={16} aria-hidden="true" /><span>Python 3.11+</span></div>
-          <code>pip install &quot;cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1&quot;</code>
+          <code>pip install &quot;cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0&quot;</code>
           <code>cascadelens demo --out demo-riskpack</code>
           <div className="install-links">
             <a href="https://github.com/limingrui679-design/CascadeLens/blob/main/docs/tutorials/02_bring_your_own_graph.md">Import your graph</a>
@@ -166,7 +225,7 @@ export default function Home() {
           <h2>A screenshot can persuade. A RiskPack can be checked.</h2>
         </div>
         <div className="button-row">
-          <Link className="button button-primary" href="/cases">Inspect all 12 cases</Link>
+          <Link className="button button-primary" href="/cases">Inspect all 16 cases</Link>
           <Link className="button button-secondary" href="/docs">Build from source</Link>
         </div>
       </section>

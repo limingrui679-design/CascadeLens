@@ -1,0 +1,30 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.2.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:portfolio-concentration-fiduciary-stress:engine-v0.2.0",
+  "scenarioId": "portfolio-concentration-fiduciary-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ],
+  "verificationMode": "recomputed"
+}

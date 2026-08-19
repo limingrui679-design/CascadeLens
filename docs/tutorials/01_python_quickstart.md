@@ -3,7 +3,7 @@
 ## 1. Install from the reviewed release
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"
 ```
 
 Python 3.11 or newer is required. The base package has no mandatory runtime dependencies.

@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.044558 / 0.044558 / 0.172375
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Public-health supply coordinator
+- Stakeholders: health workers; care sites; distributors; patients
+- Capabilities exercised: uncertainty-bounds; constrained-optimization; stakeholder-communication; public-interest-ethics; temporal-reasoning; resilience-operations
+- Methods: demand-shock compilation; access-oriented criticality weighting; bounded intervention comparison
+
+### User tasks
+
+- compare stockpiling, supplier diversity, and prioritization
+- surface who bears a shortage
+- write a safety-limited decision boundary
+
+### Trade-offs and guardrail
+
+- aggregate continuity versus equitable allocation
+- rapid prioritization versus evidence quality
+
+> The case is neither clinical guidance nor an emergency-allocation recommendation.
+
 ## Rebuild and verify
 
 ```bash

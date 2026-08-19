@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ReferenceParityTests(unittest.TestCase):
-    def test_python_engine_matches_all_twelve_published_cases(self) -> None:
+    def test_python_engine_matches_all_sixteen_published_cases(self) -> None:
         catalog = json.loads((ROOT / "content/cases/catalog.json").read_text(encoding="utf-8"))
-        self.assertEqual(12, len(catalog["cases"]))
+        self.assertEqual(16, len(catalog["cases"]))
         for case in catalog["cases"]:
             with self.subTest(case=case["slug"]):
                 case_root = ROOT / "content/cases" / case["slug"]

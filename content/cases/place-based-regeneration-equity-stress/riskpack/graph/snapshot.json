@@ -1,0 +1,291 @@
+{
+  "contentDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:transition",
+      "id": "edge:place-based-regeneration-equity-stress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:housing",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.52,
+        "unit": "share",
+        "upper": 0.88,
+        "value": 0.72
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:transition",
+      "id": "edge:place-based-regeneration-equity-stress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:access",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.47,
+        "unit": "share",
+        "upper": 0.83,
+        "value": 0.67
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:housing",
+      "id": "edge:place-based-regeneration-equity-stress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:business",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.41,
+        "unit": "share",
+        "upper": 0.77,
+        "value": 0.61
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:access",
+      "id": "edge:place-based-regeneration-equity-stress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:business",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.38,
+        "unit": "share",
+        "upper": 0.74,
+        "value": 0.58
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "from": "node:place-based-regeneration-equity-stress:business",
+      "id": "edge:place-based-regeneration-equity-stress:link-5",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:place-based-regeneration-equity-stress:resident-continuity",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.04,
+        "unit": "share",
+        "upper": 0.4,
+        "value": 0.24
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "id": "node:place-based-regeneration-equity-stress:access",
+      "kind": "route",
+      "label": "Transit and service access",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "id": "node:place-based-regeneration-equity-stress:business",
+      "kind": "industry",
+      "label": "Local business continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "id": "node:place-based-regeneration-equity-stress:housing",
+      "kind": "metric",
+      "label": "Affordable housing continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.8,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "id": "node:place-based-regeneration-equity-stress:resident-continuity",
+      "kind": "metric",
+      "label": "Resident opportunity and continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.9,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:place-based-regeneration-equity-stress:assumptions"
+        ]
+      },
+      "id": "node:place-based-regeneration-equity-stress:transition",
+      "kind": "event",
+      "label": "Redevelopment transition pressure",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:place-based-regeneration-equity-stress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 4965,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:place-based-regeneration-equity-stress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "06e610faed5f2e5116651e4a547586f8bba3b0ccd635d4880c729956029fc121",
+      "title": "Place-based regeneration and equity stress local assumption register",
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/place-based-regeneration-equity-stress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2024-04-09T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:place-based-regeneration-equity-stress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+      },
+      "publishedAt": "2024-04-09T00:00:00Z",
+      "publisher": "U.S. Department of Housing and Urban Development",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "4eadd513cfe3cca9c233625eeaca1248bd621346aa3cf240bf2f124ac7b44e3d",
+      "title": "Choice Neighborhoods",
+      "uri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+    }
+  ],
+  "title": "Place-based regeneration and equity stress assumed topology"
+}

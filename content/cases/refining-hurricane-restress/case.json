@@ -6,6 +6,39 @@
     "title": "Hurricane Ida caused widespread refinery and pipeline outages",
     "uri": "https://www.eia.gov/todayinenergy/detail.php?id=49576"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "temporal-reasoning",
+      "constrained-optimization",
+      "public-interest-ethics",
+      "stakeholder-communication",
+      "uncertainty-bounds",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Essential-services continuity lead",
+    "guardrail": "The case is not a weather forecast or a fuel-market impact estimate.",
+    "methods": [
+      "capacity-shock compilation",
+      "criticality-weighted outcomes",
+      "reserve and rerouting frontier"
+    ],
+    "stakeholders": [
+      "refiners",
+      "freight operators",
+      "public agencies",
+      "essential-service providers",
+      "residents"
+    ],
+    "tradeoffs": [
+      "commercial continuity versus essential-service priority",
+      "reserve depletion versus immediate access"
+    ],
+    "userTasks": [
+      "compare reserves, rerouting, and demand management",
+      "test whether a bundle fits the lead-time window",
+      "surface service-equity questions"
+    ]
+  },
   "decisionQuestion": "Which reserve, rerouting, or demand-management bundle is feasible under bounded refining disruption?",
   "domain": "Energy infrastructure",
   "edgeCount": 4,

@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.057330 / 0.057330 / 0.128441
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Food-system policy planner
+- Stakeholders: producers; traders; distributors; public agencies; households
+- Capabilities exercised: system-mapping; constrained-optimization; public-interest-ethics; sensitivity-analysis; stakeholder-communication; resilience-operations
+- Methods: compound supply-policy shock; Pareto frontier; affordability-oriented criticality
+
+### User tasks
+
+- compare reserves and import diversity
+- test joint-shock assumptions
+- identify which groups require separate outcome data
+
+### Trade-offs and guardrail
+
+- reserve release versus future resilience
+- market continuity versus household affordability
+
+> No current production, trade, price, nutrition, or food-security observation drives the scenario.
+
 ## Rebuild and verify
 
 ```bash

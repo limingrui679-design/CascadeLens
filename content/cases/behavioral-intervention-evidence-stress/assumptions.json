@@ -1,0 +1,114 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:transmission",
+      "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "targetId": "behavioral-intervention-evidence-stress",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:graph-link-1",
+      "lower": 0.51,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Outcome measurement reliability to Treatment assignment integrity.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-1",
+      "unit": "share",
+      "upper": 0.87,
+      "value": 0.71
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:graph-link-2",
+      "lower": 0.44,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Outcome measurement reliability to Behavioral response signal.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-2",
+      "unit": "share",
+      "upper": 0.8,
+      "value": 0.64
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:graph-link-3",
+      "lower": 0.39,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Treatment assignment integrity to Program implementation capacity.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-3",
+      "unit": "share",
+      "upper": 0.75,
+      "value": 0.59
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:graph-link-4",
+      "lower": 0.35,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Behavioral response signal to Program implementation capacity.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-4",
+      "unit": "share",
+      "upper": 0.71,
+      "value": 0.55
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:graph-link-5",
+      "lower": 0.02,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Program implementation capacity to Participant outcome evidence.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-5",
+      "unit": "share",
+      "upper": 0.38,
+      "value": 0.22
+    },
+    {
+      "id": "assumption:behavioral-intervention-evidence-stress:candidate-link-1",
+      "lower": 0.02,
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:assumptions"
+      ],
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Outcome measurement reliability to Participant outcome evidence.",
+      "status": "model_assumption",
+      "targetId": "edge:behavioral-intervention-evidence-stress:link-100",
+      "unit": "share",
+      "upper": 0.38,
+      "value": 0.22
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "behavioral-intervention-evidence-stress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
+  "status": "scenario_parameters_not_observations"
+}

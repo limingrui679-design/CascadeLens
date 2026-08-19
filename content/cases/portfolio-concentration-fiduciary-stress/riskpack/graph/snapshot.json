@@ -1,0 +1,265 @@
+{
+  "contentDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "from": "node:portfolio-concentration-fiduciary-stress:exposure",
+      "id": "edge:portfolio-concentration-fiduciary-stress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:portfolio-concentration-fiduciary-stress:portfolio",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.59,
+        "unit": "share",
+        "upper": 0.95,
+        "value": 0.79
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "from": "node:portfolio-concentration-fiduciary-stress:portfolio",
+      "id": "edge:portfolio-concentration-fiduciary-stress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:portfolio-concentration-fiduciary-stress:liquidity",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.43,
+        "unit": "share",
+        "upper": 0.79,
+        "value": 0.63
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "from": "node:portfolio-concentration-fiduciary-stress:liquidity",
+      "id": "edge:portfolio-concentration-fiduciary-stress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:portfolio-concentration-fiduciary-stress:mandate",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.37,
+        "unit": "share",
+        "upper": 0.73,
+        "value": 0.57
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "from": "node:portfolio-concentration-fiduciary-stress:mandate",
+      "id": "edge:portfolio-concentration-fiduciary-stress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.3,
+        "unit": "share",
+        "upper": 0.66,
+        "value": 0.5
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "id": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+      "kind": "metric",
+      "label": "Beneficiary objective continuity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.8,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "id": "node:portfolio-concentration-fiduciary-stress:exposure",
+      "kind": "security",
+      "label": "Concentrated risk exposure",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "id": "node:portfolio-concentration-fiduciary-stress:liquidity",
+      "kind": "metric",
+      "label": "Liquidity requirement",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "id": "node:portfolio-concentration-fiduciary-stress:mandate",
+      "kind": "policy",
+      "label": "Mandate and tracking constraints",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "id": "node:portfolio-concentration-fiduciary-stress:portfolio",
+      "kind": "fund",
+      "label": "Portfolio sleeve",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:portfolio-concentration-fiduciary-stress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 4320,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:portfolio-concentration-fiduciary-stress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "6ddb41686a682d0401fede096a7e7d54ba355fe6ac0ad77819a7bbb45bd933b3",
+      "title": "Portfolio concentration and fiduciary stress local assumption register",
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/portfolio-concentration-fiduciary-stress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2019-02-01T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:portfolio-concentration-fiduciary-stress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+      },
+      "publishedAt": "2019-02-01T00:00:00Z",
+      "publisher": "U.S. Securities and Exchange Commission, Investor.gov",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "ed9b566303e68c197e0141dab8266754a6163b5824ca35561f42b26f9349e8af",
+      "title": "Beginner's guide to asset allocation, diversification, and rebalancing",
+      "uri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+    }
+  ],
+  "title": "Portfolio concentration and fiduciary stress assumed topology"
+}

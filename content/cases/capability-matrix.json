@@ -1,0 +1,731 @@
+{
+  "capabilities": [
+    {
+      "description": "Translate a decision problem into typed nodes, dependencies, and explicit boundaries.",
+      "group": "analysis",
+      "id": "system-mapping",
+      "label": "System mapping",
+      "shortLabel": "Map"
+    },
+    {
+      "description": "Keep known, verified, and assumed relationships in separate result envelopes.",
+      "group": "analysis",
+      "id": "uncertainty-bounds",
+      "label": "Uncertainty bounds",
+      "shortLabel": "Bounds"
+    },
+    {
+      "description": "Compare feasible choices under budget, timing, capacity, and reversibility constraints.",
+      "group": "analysis",
+      "id": "constrained-optimization",
+      "label": "Constrained optimization",
+      "shortLabel": "Optimize"
+    },
+    {
+      "description": "Test whether a decision survives changes in declared shock and propagation assumptions.",
+      "group": "analysis",
+      "id": "sensitivity-analysis",
+      "label": "Sensitivity analysis",
+      "shortLabel": "Sensitivity"
+    },
+    {
+      "description": "Separate event time, knowledge time, intervention lead time, and outcome windows.",
+      "group": "analysis",
+      "id": "temporal-reasoning",
+      "label": "Temporal reasoning",
+      "shortLabel": "Time"
+    },
+    {
+      "description": "Preserve schemas, identifiers, lineage, licenses, and conservative transformations.",
+      "group": "engineering",
+      "id": "data-systems",
+      "label": "Data systems",
+      "shortLabel": "Data"
+    },
+    {
+      "description": "Package inputs and outputs so another person can recompute or reject the result.",
+      "group": "engineering",
+      "id": "reproducible-computation",
+      "label": "Reproducible computation",
+      "shortLabel": "Recompute"
+    },
+    {
+      "description": "Prevent citations, inferences, simulations, and outcomes from silently changing status.",
+      "group": "decision",
+      "id": "evidence-governance",
+      "label": "Evidence governance",
+      "shortLabel": "Evidence"
+    },
+    {
+      "description": "Turn technical uncertainty into a bounded question, trade-off, and decision gate.",
+      "group": "decision",
+      "id": "stakeholder-communication",
+      "label": "Stakeholder communication",
+      "shortLabel": "Communicate"
+    },
+    {
+      "description": "Make distributional effects, safety limits, accountability, and affected groups visible.",
+      "group": "decision",
+      "id": "public-interest-ethics",
+      "label": "Public-interest ethics",
+      "shortLabel": "Ethics"
+    },
+    {
+      "description": "Reason about concentration, liquidity, mandate constraints, and fiduciary trade-offs.",
+      "group": "domain",
+      "id": "financial-risk",
+      "label": "Financial risk",
+      "shortLabel": "Finance"
+    },
+    {
+      "description": "Examine terminology, interoperability, workflow, decision support, and population reporting.",
+      "group": "domain",
+      "id": "health-informatics",
+      "label": "Health informatics",
+      "shortLabel": "Health IT"
+    },
+    {
+      "description": "Separate measurement, assignment, mechanism, heterogeneous response, and rollout evidence.",
+      "group": "domain",
+      "id": "behavioral-experimentation",
+      "label": "Behavioral experimentation",
+      "shortLabel": "Behavior"
+    },
+    {
+      "description": "Connect location, access, housing, infrastructure, institutions, and place-based outcomes.",
+      "group": "domain",
+      "id": "spatial-policy",
+      "label": "Spatial and place policy",
+      "shortLabel": "Place"
+    },
+    {
+      "description": "Compare buffers, diversification, routing, allocation, and staged recovery choices.",
+      "group": "domain",
+      "id": "resilience-operations",
+      "label": "Resilience operations",
+      "shortLabel": "Resilience"
+    }
+  ],
+  "cases": [
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "temporal-reasoning",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Cross-border operations lead",
+        "guardrail": "Do not interpret the stress index as vessel delay, revenue loss, or a forecast of a closure.",
+        "methods": [
+          "bitemporal eligibility",
+          "missing-graph bounds",
+          "lead-time-constrained Pareto analysis"
+        ],
+        "stakeholders": [
+          "carriers",
+          "procurement teams",
+          "production planners",
+          "downstream customers"
+        ],
+        "tradeoffs": [
+          "speed versus normalized cost",
+          "continuity versus reliance on assumed links"
+        ],
+        "userTasks": [
+          "compare buffer and rerouting bundles",
+          "locate the dependency that drives the upper bound",
+          "state the evidence needed before acting"
+        ]
+      },
+      "domain": "Maritime trade",
+      "shortTitle": "Suez route",
+      "slug": "suez-route-restress",
+      "title": "Suez route closure re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "constrained-optimization",
+          "data-systems",
+          "evidence-governance",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Technology manufacturing planner",
+        "guardrail": "No company, fabrication site, production volume, or realized shortage is represented.",
+        "methods": [
+          "branch-and-merge topology",
+          "bounded propagation",
+          "feasible bundle enumeration"
+        ],
+        "stakeholders": [
+          "fabrication partners",
+          "component engineers",
+          "assembly teams",
+          "customers"
+        ],
+        "tradeoffs": [
+          "inventory cost versus qualification lead time",
+          "allocation continuity versus customer coverage"
+        ],
+        "userTasks": [
+          "compare inventory, redesign, and allocation",
+          "trace where two dependency branches merge",
+          "explain why feasibility is not a recommendation"
+        ]
+      },
+      "domain": "Advanced manufacturing",
+      "shortTitle": "Semiconductors",
+      "slug": "semiconductor-capacity-restress",
+      "title": "Semiconductor capacity re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "public-interest-ethics",
+          "temporal-reasoning",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Public-health supply coordinator",
+        "guardrail": "The case is neither clinical guidance nor an emergency-allocation recommendation.",
+        "methods": [
+          "demand-shock compilation",
+          "access-oriented criticality weighting",
+          "bounded intervention comparison"
+        ],
+        "stakeholders": [
+          "health workers",
+          "care sites",
+          "distributors",
+          "patients"
+        ],
+        "tradeoffs": [
+          "aggregate continuity versus equitable allocation",
+          "rapid prioritization versus evidence quality"
+        ],
+        "userTasks": [
+          "compare stockpiling, supplier diversity, and prioritization",
+          "surface who bears a shortage",
+          "write a safety-limited decision boundary"
+        ]
+      },
+      "domain": "Public health supply",
+      "shortTitle": "Medical PPE",
+      "slug": "medical-ppe-demand-restress",
+      "title": "Medical PPE demand re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Food and energy resilience analyst",
+        "guardrail": "No country-level price, food-security, or welfare effect is estimated.",
+        "methods": [
+          "compound-shock compilation",
+          "cycle-safe fixed point",
+          "Pareto frontier analysis"
+        ],
+        "stakeholders": [
+          "producers",
+          "logistics operators",
+          "public agencies",
+          "households"
+        ],
+        "tradeoffs": [
+          "system continuity versus affordability",
+          "reserve use versus longer-horizon resilience"
+        ],
+        "userTasks": [
+          "separate direct from propagated pressure",
+          "compare reserve and substitution bundles",
+          "identify distributional questions the model cannot answer"
+        ]
+      },
+      "domain": "Food and energy",
+      "shortTitle": "Commodity compound",
+      "slug": "ukraine-commodity-compound-restress",
+      "title": "Food, fertilizer, and energy compound re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "temporal-reasoning",
+          "sensitivity-analysis",
+          "spatial-policy",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Network and route planner",
+        "guardrail": "The graph does not reconstruct vessel queues, water levels, tolls, or actual cargo volumes.",
+        "methods": [
+          "dynamic edge activation",
+          "horizon comparison",
+          "shock-transmission sensitivity"
+        ],
+        "stakeholders": [
+          "canal operators",
+          "carriers",
+          "importers",
+          "regional producers"
+        ],
+        "tradeoffs": [
+          "short-run inventory versus long-run route diversity",
+          "regional access versus added transport burden"
+        ],
+        "userTasks": [
+          "find when diversification overtakes buffering",
+          "inspect the mid-horizon topology change",
+          "communicate a reversible trigger"
+        ]
+      },
+      "domain": "Climate and logistics",
+      "shortTitle": "Panama drought",
+      "slug": "panama-drought-restress",
+      "title": "Panama Canal drought re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "temporal-reasoning",
+          "sensitivity-analysis",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Global logistics risk lead",
+        "guardrail": "No freight-rate, emissions, insurance, or realized delivery-time effect is claimed.",
+        "methods": [
+          "dynamic edge expiry",
+          "upper-bound stress comparison",
+          "lead-time analysis"
+        ],
+        "stakeholders": [
+          "ship operators",
+          "cargo owners",
+          "production sites",
+          "delivery recipients"
+        ],
+        "tradeoffs": [
+          "route continuity versus longer transit",
+          "faster action versus uncertain intervention effect"
+        ],
+        "userTasks": [
+          "compare routing and inventory assumptions",
+          "locate the effect of an expiring link",
+          "set a review trigger for changing course"
+        ]
+      },
+      "domain": "Geopolitics and shipping",
+      "shortTitle": "Red Sea routing",
+      "slug": "red-sea-rerouting-restress",
+      "title": "Red Sea rerouting re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "spatial-policy",
+          "public-interest-ethics",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Regional infrastructure coordinator",
+        "guardrail": "This is not an engineering reconstruction or an estimate of the incident's realized losses.",
+        "methods": [
+          "place-based dependency mapping",
+          "access-loss scenario",
+          "budget-constrained option comparison"
+        ],
+        "stakeholders": [
+          "port operators",
+          "workers",
+          "manufacturers",
+          "nearby communities",
+          "cargo owners"
+        ],
+        "tradeoffs": [
+          "regional continuity versus burden shifting",
+          "speed of rerouting versus local capacity"
+        ],
+        "userTasks": [
+          "compare alternate gateways and inland buffers",
+          "name affected groups outside the supply chain",
+          "separate engineering facts from scenario assumptions"
+        ]
+      },
+      "domain": "Port infrastructure",
+      "shortTitle": "Baltimore port",
+      "slug": "baltimore-port-restress",
+      "title": "Baltimore port access re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "temporal-reasoning",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "uncertainty-bounds",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Essential-services continuity lead",
+        "guardrail": "The case is not a weather forecast or a fuel-market impact estimate.",
+        "methods": [
+          "capacity-shock compilation",
+          "criticality-weighted outcomes",
+          "reserve and rerouting frontier"
+        ],
+        "stakeholders": [
+          "refiners",
+          "freight operators",
+          "public agencies",
+          "essential-service providers",
+          "residents"
+        ],
+        "tradeoffs": [
+          "commercial continuity versus essential-service priority",
+          "reserve depletion versus immediate access"
+        ],
+        "userTasks": [
+          "compare reserves, rerouting, and demand management",
+          "test whether a bundle fits the lead-time window",
+          "surface service-equity questions"
+        ]
+      },
+      "domain": "Energy infrastructure",
+      "shortTitle": "Refining hurricane",
+      "slug": "refining-hurricane-restress",
+      "title": "Hurricane refining re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "evidence-governance",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Strategic technology policy analyst",
+        "guardrail": "The synthetic topology names no mineral, country, firm, or current export-control measure.",
+        "methods": [
+          "policy-restriction scenario",
+          "concentration stress",
+          "value-of-information ranking"
+        ],
+        "stakeholders": [
+          "material processors",
+          "manufacturers",
+          "infrastructure operators",
+          "public agencies"
+        ],
+        "tradeoffs": [
+          "strategic reserve cost versus exposure",
+          "rapid substitution versus qualification risk"
+        ],
+        "userTasks": [
+          "compare diversification with additional evidence",
+          "identify the assumed bottleneck",
+          "explain why context does not prove topology"
+        ]
+      },
+      "domain": "Minerals and technology",
+      "shortTitle": "Critical minerals",
+      "slug": "critical-minerals-export-stress",
+      "title": "Critical-minerals export-control stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "data-systems",
+          "evidence-governance",
+          "financial-risk",
+          "constrained-optimization",
+          "stakeholder-communication",
+          "public-interest-ethics"
+        ],
+        "decisionOwner": "Financial-compliance operations lead",
+        "guardrail": "The case performs no sanctions screening and makes no legal or eligibility determination.",
+        "methods": [
+          "fail-closed policy stress",
+          "queue dependency mapping",
+          "manual-review option comparison"
+        ],
+        "stakeholders": [
+          "compliance reviewers",
+          "payment teams",
+          "suppliers",
+          "customers",
+          "legal counsel"
+        ],
+        "tradeoffs": [
+          "transaction continuity versus compliance safety",
+          "automation speed versus accountable review"
+        ],
+        "userTasks": [
+          "preserve the compliance gate while comparing continuity options",
+          "separate list data from a legal conclusion",
+          "document escalation and review ownership"
+        ]
+      },
+      "domain": "Financial and compliance operations",
+      "shortTitle": "Sanctions change",
+      "slug": "ofac-list-change-stress",
+      "title": "Sanctions-list change stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "data-systems",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Medicine access coordinator",
+        "guardrail": "No current shortage record is used as topology, and no treatment recommendation is produced.",
+        "methods": [
+          "official-source context isolation",
+          "care-access criticality",
+          "bounded supply intervention analysis"
+        ],
+        "stakeholders": [
+          "manufacturers",
+          "wholesalers",
+          "care sites",
+          "clinicians",
+          "patients"
+        ],
+        "tradeoffs": [
+          "aggregate stock versus care-site access",
+          "speed versus evidence for alternate supply"
+        ],
+        "userTasks": [
+          "compare buffer, alternate supply, and distribution priority",
+          "trace a source record without treating it as a topology",
+          "state the clinical boundary"
+        ]
+      },
+      "domain": "Medicines",
+      "shortTitle": "Drug shortage",
+      "slug": "drug-shortage-restress",
+      "title": "Drug-shortage re-stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "system-mapping",
+          "constrained-optimization",
+          "public-interest-ethics",
+          "sensitivity-analysis",
+          "stakeholder-communication",
+          "resilience-operations"
+        ],
+        "decisionOwner": "Food-system policy planner",
+        "guardrail": "No current production, trade, price, nutrition, or food-security observation drives the scenario.",
+        "methods": [
+          "compound supply-policy shock",
+          "Pareto frontier",
+          "affordability-oriented criticality"
+        ],
+        "stakeholders": [
+          "producers",
+          "traders",
+          "distributors",
+          "public agencies",
+          "households"
+        ],
+        "tradeoffs": [
+          "reserve release versus future resilience",
+          "market continuity versus household affordability"
+        ],
+        "userTasks": [
+          "compare reserves and import diversity",
+          "test joint-shock assumptions",
+          "identify which groups require separate outcome data"
+        ]
+      },
+      "domain": "Agriculture and trade",
+      "shortTitle": "Food export compound",
+      "slug": "food-export-compound-stress",
+      "title": "Food production and export-restriction compound stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "health-informatics",
+          "data-systems",
+          "evidence-governance",
+          "public-interest-ethics",
+          "stakeholder-communication",
+          "reproducible-computation"
+        ],
+        "decisionOwner": "Health-information governance lead",
+        "guardrail": "The case contains no patient data and makes no claim about clinical performance, certification, or deployment.",
+        "methods": [
+          "terminology-workflow mapping",
+          "branch-and-merge failure analysis",
+          "manual-review safeguard comparison"
+        ],
+        "stakeholders": [
+          "patients",
+          "clinicians",
+          "health IT teams",
+          "care organizations",
+          "public-health analysts"
+        ],
+        "tradeoffs": [
+          "exchange completeness versus safety review",
+          "automation speed versus human accountability"
+        ],
+        "userTasks": [
+          "compare mapping validation, source redundancy, and manual review",
+          "trace how missing semantics reach a downstream decision",
+          "separate interoperability standards from local implementation evidence"
+        ]
+      },
+      "domain": "Health information systems",
+      "shortTitle": "Health interoperability",
+      "slug": "health-data-interoperability-stress",
+      "title": "Health-data interoperability workflow stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "behavioral-experimentation",
+          "evidence-governance",
+          "uncertainty-bounds",
+          "reproducible-computation",
+          "public-interest-ethics",
+          "stakeholder-communication"
+        ],
+        "decisionOwner": "Program evaluation lead",
+        "guardrail": "No treatment effect, causal mechanism, participant response, or program impact is estimated.",
+        "methods": [
+          "measurement-to-rollout dependency map",
+          "assignment-integrity stress",
+          "reversible pilot comparison"
+        ],
+        "stakeholders": [
+          "participants",
+          "service teams",
+          "evaluators",
+          "program owners",
+          "oversight bodies"
+        ],
+        "tradeoffs": [
+          "learning speed versus measurement quality",
+          "population reach versus reversible experimentation"
+        ],
+        "userTasks": [
+          "distinguish observed behavior from mechanism",
+          "compare measurement, randomization, and staged-rollout safeguards",
+          "write a result statement that preserves null and heterogeneous outcomes"
+        ]
+      },
+      "domain": "Behavioral policy and experimentation",
+      "shortTitle": "Behavioral evidence",
+      "slug": "behavioral-intervention-evidence-stress",
+      "title": "Behavioral-intervention evidence stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "spatial-policy",
+          "public-interest-ethics",
+          "constrained-optimization",
+          "temporal-reasoning",
+          "stakeholder-communication",
+          "system-mapping"
+        ],
+        "decisionOwner": "Place-based regeneration planner",
+        "guardrail": "The case represents no named neighborhood, parcel, household, grant, or measured displacement effect.",
+        "methods": [
+          "place-based dependency mapping",
+          "phased intervention analysis",
+          "distributional decision framing"
+        ],
+        "stakeholders": [
+          "current residents",
+          "housing providers",
+          "local businesses",
+          "transport agencies",
+          "local government"
+        ],
+        "tradeoffs": [
+          "redevelopment pace versus resident continuity",
+          "capital delivery versus affordable access"
+        ],
+        "userTasks": [
+          "compare housing, access, and local-business safeguards",
+          "state who benefits and who bears transition costs",
+          "set a review trigger for displacement pressure"
+        ]
+      },
+      "domain": "Urban regeneration and public policy",
+      "shortTitle": "Regeneration equity",
+      "slug": "place-based-regeneration-equity-stress",
+      "title": "Place-based regeneration and equity stress"
+    },
+    {
+      "decisionProfile": {
+        "capabilities": [
+          "financial-risk",
+          "uncertainty-bounds",
+          "constrained-optimization",
+          "sensitivity-analysis",
+          "evidence-governance",
+          "stakeholder-communication"
+        ],
+        "decisionOwner": "Portfolio risk committee",
+        "guardrail": "The case contains no real portfolio, security recommendation, return forecast, or evidence of fiduciary suitability.",
+        "methods": [
+          "concentration-shock mapping",
+          "liquidity and mandate constraints",
+          "rebalancing frontier"
+        ],
+        "stakeholders": [
+          "beneficiaries",
+          "portfolio managers",
+          "risk teams",
+          "compliance officers",
+          "oversight committees"
+        ],
+        "tradeoffs": [
+          "concentration risk versus mandate tracking",
+          "liquidity protection versus opportunity cost"
+        ],
+        "userTasks": [
+          "compare rebalancing, liquidity buffer, and exposure review",
+          "test sensitivity to stress transmission",
+          "state the fiduciary and evidence limits of the output"
+        ]
+      },
+      "domain": "Portfolio and fiduciary risk",
+      "shortTitle": "Portfolio concentration",
+      "slug": "portfolio-concentration-fiduciary-stress",
+      "title": "Portfolio concentration and fiduciary stress"
+    }
+  ],
+  "evidenceBoundary": "Capability tags describe executable analytical tasks. They do not establish expertise, external validation, adoption, or impact.",
+  "generatedAt": "2026-08-20T00:00:00Z",
+  "schemaVersion": "cascadelens-capability-matrix/1.0"
+}

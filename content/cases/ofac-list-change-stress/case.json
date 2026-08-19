@@ -6,6 +6,39 @@
     "title": "Sanctions List Service",
     "uri": "https://ofac.treasury.gov/sanctions-list-service"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "data-systems",
+      "evidence-governance",
+      "financial-risk",
+      "constrained-optimization",
+      "stakeholder-communication",
+      "public-interest-ethics"
+    ],
+    "decisionOwner": "Financial-compliance operations lead",
+    "guardrail": "The case performs no sanctions screening and makes no legal or eligibility determination.",
+    "methods": [
+      "fail-closed policy stress",
+      "queue dependency mapping",
+      "manual-review option comparison"
+    ],
+    "stakeholders": [
+      "compliance reviewers",
+      "payment teams",
+      "suppliers",
+      "customers",
+      "legal counsel"
+    ],
+    "tradeoffs": [
+      "transaction continuity versus compliance safety",
+      "automation speed versus accountable review"
+    ],
+    "userTasks": [
+      "preserve the compliance gate while comparing continuity options",
+      "separate list data from a legal conclusion",
+      "document escalation and review ownership"
+    ]
+  },
   "decisionQuestion": "Which operational safeguard limits disruption while preserving a fail-closed compliance boundary?",
   "domain": "Financial and compliance operations",
   "edgeCount": 4,

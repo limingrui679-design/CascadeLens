@@ -4,6 +4,10 @@ import type {
   ScenarioClassification,
   ShockOperation,
 } from "../../core/src/index";
+import {
+  decisionProfiles,
+  type CaseDecisionProfile,
+} from "./capabilities";
 
 export interface CaseStageSpec {
   key: string;
@@ -57,6 +61,7 @@ export interface ReferenceCaseSpec {
   };
   tags: string[];
   specificLimitation: string;
+  decisionProfile: CaseDecisionProfile;
 }
 
 const standardInterventions = (
@@ -93,7 +98,7 @@ const standardInterventions = (
   },
 ];
 
-export const referenceCaseSpecs: ReferenceCaseSpec[] = [
+const baseReferenceCaseSpecs: Array<Omit<ReferenceCaseSpec, "decisionProfile">> = [
   {
     slug: "suez-route-restress",
     title: "Suez route closure re-stress",
@@ -453,8 +458,258 @@ export const referenceCaseSpecs: ReferenceCaseSpec[] = [
     tags: ["food", "trade", "compound"],
     specificLimitation: "No current production, trade, price, or food-security observation is included in the model topology.",
   },
+  {
+    slug: "health-data-interoperability-stress",
+    title: "Health-data interoperability workflow stress",
+    shortTitle: "Health interoperability",
+    domain: "Health information systems",
+    classification: "synthetic_stress",
+    summary: "A synthetic information-flow stress linking record completeness, terminology mapping, provenance review, decision support, and population reporting.",
+    decisionQuestion: "Which validation and accountable-review bundle best preserves safe information flow when coded-data availability degrades?",
+    shockLabel: "Interoperable coded-record availability reduction",
+    shockOperation: "reduce_supply",
+    shockMagnitude: 0.45,
+    stages: [
+      { key: "records", label: "Interoperable coded records", kind: "metric", criticality: 1.5 },
+      { key: "terminology", label: "Terminology mapping workflow", kind: "industry", criticality: 1.5 },
+      { key: "provenance", label: "Identity and provenance review", kind: "industry", criticality: 1.4 },
+      { key: "decision-support", label: "Decision-support queue", kind: "facility", criticality: 1.7 },
+      { key: "population-reporting", label: "Population reporting completeness", kind: "metric", criticality: 1.6 },
+    ],
+    linkWeights: [0.74, 0.68, 0.6, 0.57, 0.24],
+    topology: "branch_merge",
+    horizonsDays: [3, 14, 45],
+    constraints: { budget: 18, maxInterventions: 2, maxLeadTimeDays: 21 },
+    interventions: [
+      {
+        key: "validate-mapping",
+        label: "Validate terminology mappings",
+        type: "buffer",
+        targetStage: 1,
+        cost: 7,
+        leadTimeDays: 7,
+        effect: 0.34,
+      },
+      {
+        key: "source-redundancy",
+        label: "Add source-system redundancy",
+        type: "diversify",
+        targetLink: 0,
+        cost: 10,
+        leadTimeDays: 21,
+        effect: 0.42,
+      },
+      {
+        key: "accountable-review",
+        label: "Route uncertain records to accountable review",
+        type: "reroute",
+        targetLink: 3,
+        cost: 8,
+        leadTimeDays: 3,
+        effect: 0.38,
+      },
+    ],
+    context: {
+      title: "United States Core Data for Interoperability certification companion guide",
+      publisher: "Office of the National Coordinator for Health Information Technology",
+      uri: "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/",
+      availableAt: "2020-08-11T00:00:00Z",
+    },
+    tags: ["health-informatics", "interoperability", "terminology", "workflow"],
+    specificLimitation: "No patient data, clinical workflow observation, certified product, or measured care outcome is represented.",
+  },
+  {
+    slug: "behavioral-intervention-evidence-stress",
+    title: "Behavioral-intervention evidence stress",
+    shortTitle: "Behavioral evidence",
+    domain: "Behavioral policy and experimentation",
+    classification: "synthetic_stress",
+    summary: "A synthetic evaluation-workflow stress separating measurement quality, assignment integrity, response signals, implementation, and participant outcomes.",
+    decisionQuestion: "Which experiment and rollout safeguard preserves learning value when measurement quality and uptake assumptions weaken?",
+    shockLabel: "Measurement reliability reduction",
+    shockOperation: "multiply_capacity",
+    shockMagnitude: 0.55,
+    stages: [
+      { key: "measurement", label: "Outcome measurement reliability", kind: "metric", criticality: 1.5 },
+      { key: "assignment", label: "Treatment assignment integrity", kind: "policy", criticality: 1.5 },
+      { key: "response", label: "Behavioral response signal", kind: "metric", criticality: 1.3 },
+      { key: "implementation", label: "Program implementation capacity", kind: "industry", criticality: 1.4 },
+      { key: "participant-outcome", label: "Participant outcome evidence", kind: "metric", criticality: 1.7 },
+    ],
+    linkWeights: [0.71, 0.64, 0.59, 0.55, 0.22],
+    topology: "branch_merge",
+    horizonsDays: [14, 60, 180],
+    constraints: { budget: 20, maxInterventions: 2, maxLeadTimeDays: 60 },
+    interventions: [
+      {
+        key: "assignment-audit",
+        label: "Preregister and audit assignment",
+        type: "buffer",
+        targetStage: 1,
+        cost: 8,
+        leadTimeDays: 14,
+        effect: 0.36,
+      },
+      {
+        key: "independent-measure",
+        label: "Add an independent outcome measure",
+        type: "diversify",
+        targetLink: 1,
+        cost: 12,
+        leadTimeDays: 45,
+        effect: 0.44,
+      },
+      {
+        key: "staged-rollout",
+        label: "Use a staged rollout with stop rules",
+        type: "reroute",
+        targetLink: 3,
+        cost: 9,
+        leadTimeDays: 21,
+        effect: 0.4,
+      },
+    ],
+    context: {
+      title: "Reporting statistical results in text and in graphs",
+      publisher: "U.S. General Services Administration, Office of Evaluation Sciences",
+      uri: "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf",
+      availableAt: "2020-09-01T00:00:00Z",
+    },
+    tags: ["behavior", "experimentation", "measurement", "evaluation"],
+    specificLimitation: "No participant data, treatment effect, causal mechanism, heterogeneous response, or program outcome is estimated.",
+  },
+  {
+    slug: "place-based-regeneration-equity-stress",
+    title: "Place-based regeneration and equity stress",
+    shortTitle: "Regeneration equity",
+    domain: "Urban regeneration and public policy",
+    classification: "synthetic_stress",
+    summary: "A synthetic place-based transition stress linking redevelopment, affordable housing, service access, local businesses, and resident continuity.",
+    decisionQuestion: "Which phased, budget-constrained package protects access and resident continuity while preserving redevelopment capacity?",
+    shockLabel: "Housing and access transition pressure",
+    shockOperation: "increase_demand",
+    shockMagnitude: 0.65,
+    stages: [
+      { key: "transition", label: "Redevelopment transition pressure", kind: "event", criticality: 1.4 },
+      { key: "housing", label: "Affordable housing continuity", kind: "metric", criticality: 1.8 },
+      { key: "access", label: "Transit and service access", kind: "route", criticality: 1.6 },
+      { key: "business", label: "Local business continuity", kind: "industry", criticality: 1.4 },
+      { key: "resident-continuity", label: "Resident opportunity and continuity", kind: "metric", criticality: 1.9 },
+    ],
+    linkWeights: [0.72, 0.67, 0.61, 0.58, 0.24],
+    topology: "branch_merge",
+    horizonsDays: [30, 180, 365],
+    constraints: { budget: 25, maxInterventions: 2, maxLeadTimeDays: 180 },
+    interventions: [
+      {
+        key: "housing-first",
+        label: "Phase replacement housing before transition",
+        type: "buffer",
+        targetStage: 1,
+        cost: 14,
+        leadTimeDays: 120,
+        effect: 0.45,
+      },
+      {
+        key: "access-redundancy",
+        label: "Protect alternate service access",
+        type: "diversify",
+        targetLink: 1,
+        cost: 11,
+        leadTimeDays: 60,
+        effect: 0.38,
+      },
+      {
+        key: "transition-support",
+        label: "Fund resident and local-business transition support",
+        type: "reroute",
+        targetLink: 3,
+        cost: 10,
+        leadTimeDays: 30,
+        effect: 0.34,
+      },
+    ],
+    context: {
+      title: "Choice Neighborhoods",
+      publisher: "U.S. Department of Housing and Urban Development",
+      uri: "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants",
+      availableAt: "2024-04-09T00:00:00Z",
+    },
+    tags: ["planning", "housing", "access", "equity", "regeneration"],
+    specificLimitation: "No named neighborhood, parcel, household, funding decision, spatial estimate, or displacement outcome is represented.",
+  },
+  {
+    slug: "portfolio-concentration-fiduciary-stress",
+    title: "Portfolio concentration and fiduciary stress",
+    shortTitle: "Portfolio concentration",
+    domain: "Portfolio and fiduciary risk",
+    classification: "synthetic_stress",
+    summary: "A synthetic portfolio stress linking concentrated exposure, liquidity needs, mandate constraints, and beneficiary objectives without using holdings or returns.",
+    decisionQuestion: "Which rebalancing and liquidity safeguard remains feasible when a concentrated exposure is stressed under mandate constraints?",
+    shockLabel: "Concentrated exposure financial stress",
+    shockOperation: "financial_stress",
+    shockMagnitude: 0.55,
+    stages: [
+      { key: "exposure", label: "Concentrated risk exposure", kind: "security", criticality: 1.5 },
+      { key: "portfolio", label: "Portfolio sleeve", kind: "fund", criticality: 1.5 },
+      { key: "liquidity", label: "Liquidity requirement", kind: "metric", criticality: 1.6 },
+      { key: "mandate", label: "Mandate and tracking constraints", kind: "policy", criticality: 1.5 },
+      { key: "beneficiary", label: "Beneficiary objective continuity", kind: "metric", criticality: 1.8 },
+    ],
+    linkWeights: [0.79, 0.63, 0.57, 0.5, 0.2],
+    horizonsDays: [5, 21, 63],
+    constraints: { budget: 16, maxInterventions: 2, maxLeadTimeDays: 30 },
+    interventions: [
+      {
+        key: "liquidity-buffer",
+        label: "Increase the liquidity buffer",
+        type: "buffer",
+        targetStage: 2,
+        cost: 7,
+        leadTimeDays: 5,
+        effect: 0.32,
+      },
+      {
+        key: "diversify-exposure",
+        label: "Diversify the concentrated exposure",
+        type: "diversify",
+        targetLink: 0,
+        cost: 11,
+        leadTimeDays: 21,
+        effect: 0.46,
+      },
+      {
+        key: "staged-rebalance",
+        label: "Stage rebalancing within mandate limits",
+        type: "reroute",
+        targetLink: 2,
+        cost: 8,
+        leadTimeDays: 14,
+        effect: 0.37,
+      },
+    ],
+    context: {
+      title: "Beginner's guide to asset allocation, diversification, and rebalancing",
+      publisher: "U.S. Securities and Exchange Commission, Investor.gov",
+      uri: "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf",
+      availableAt: "2019-02-01T00:00:00Z",
+    },
+    tags: ["portfolio", "concentration", "liquidity", "fiduciary"],
+    specificLimitation: "No real portfolio, security, price, return, investor preference, or suitability determination is represented.",
+  },
 ];
 
-if (referenceCaseSpecs.length !== 12) {
-  throw new Error(`Expected exactly 12 reference cases, received ${referenceCaseSpecs.length}.`);
+export const referenceCaseSpecs: ReferenceCaseSpec[] = baseReferenceCaseSpecs.map((spec) => {
+  const decisionProfile = decisionProfiles[spec.slug];
+  if (!decisionProfile) throw new Error(`Missing decision profile for ${spec.slug}.`);
+  return { ...spec, decisionProfile };
+});
+
+const orphanedProfiles = Object.keys(decisionProfiles).filter(
+  (slug) => !baseReferenceCaseSpecs.some((spec) => spec.slug === slug),
+);
+if (referenceCaseSpecs.length !== 16 || orphanedProfiles.length > 0) {
+  throw new Error(
+    `Expected exactly 16 reference cases and profiles; received ${referenceCaseSpecs.length} cases and ${orphanedProfiles.length} orphaned profiles.`,
+  );
 }

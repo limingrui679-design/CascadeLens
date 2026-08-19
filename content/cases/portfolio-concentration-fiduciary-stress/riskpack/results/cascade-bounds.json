@@ -1,0 +1,965 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 63,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.25317460317460333,
+        "endImpact": 0,
+        "impact": 0.25317460317460333,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 63,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "portfolio-concentration-fiduciary-stress",
+    "simulatedDays": 63,
+    "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+    "totalWeightedImpact": 0.04807112718505126,
+    "totalWeightedPeakEnvelope": 0.10443037974683544,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.10443037974683544,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 5,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.55,
+            "endImpact": 0.55,
+            "impact": 0.55,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 5,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 5,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.10443037974683544,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 5,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.10443037974683544,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 5,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.55,
+            "endImpact": 0.55,
+            "impact": 0.55,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 5,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 5,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.10443037974683544,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.29402724090581067,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 5,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.55,
+            "endImpact": 0.55,
+            "impact": 0.55,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42844999999999994,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-1",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:exposure"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.42845,
+            "impact": 0.42844999999999994,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42845
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27754991,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-2",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:portfolio"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.27754991000000007,
+            "impact": 0.27754991000000007,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.27754991000000007
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16614137612600002,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-3",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:liquidity"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.166141376126,
+            "impact": 0.166141376126,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.166141376126
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.0899157127593912,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-4",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:mandate"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.08991571275939125,
+            "impact": 0.08991571275939125,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.08991571275939125
+          }
+        ],
+        "iterations": 5,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 5,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.2940272409058106,
+        "totalWeightedPeakEnvelope": 0.29402724090581067,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.10443037974683544,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 21,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5500000000000002,
+            "endImpact": 0.55,
+            "impact": 0.5500000000000002,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 21,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.10443037974683546,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 21,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.10443037974683544,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 21,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5500000000000002,
+            "endImpact": 0.55,
+            "impact": 0.5500000000000002,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 21,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.10443037974683546,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.29402724090581067,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 21,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.5500000000000002,
+            "endImpact": 0.55,
+            "impact": 0.5500000000000002,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42844999999999994,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-1",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:exposure"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.42845,
+            "impact": 0.4284499999999999,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42845
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27754991,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-2",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:portfolio"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.27754991000000007,
+            "impact": 0.2775499100000002,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.27754991000000007
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16614137612600002,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-3",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:liquidity"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.166141376126,
+            "impact": 0.16614137612600008,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.166141376126
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.0899157127593912,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-4",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:mandate"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.08991571275939125,
+            "impact": 0.08991571275939125,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.08991571275939125
+          }
+        ],
+        "iterations": 21,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 21,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.2940272409058107,
+        "totalWeightedPeakEnvelope": 0.29402724090581067,
+        "warnings": []
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 63,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.25317460317460333,
+            "endImpact": 0,
+            "impact": 0.25317460317460333,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 63,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 63,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.04807112718505126,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 63,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 4,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 63,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.25317460317460333,
+            "endImpact": 0,
+            "impact": 0.25317460317460333,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 63,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 63,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.04807112718505126,
+        "totalWeightedPeakEnvelope": 0.10443037974683544,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 63,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.25317460317460333,
+            "endImpact": 0,
+            "impact": 0.25317460317460333,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+            "peakDirectImpact": 0.55,
+            "peakImpact": 0.55
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.42844999999999994,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-1",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:exposure"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.1972230158730158,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.42845
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.27754991,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-2",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:portfolio"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.12776106968253978,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.27754991000000007
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.16614137612600002,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-3",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:liquidity"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.07647777631196831,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.166141376126
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.0899157127593912,
+                "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-4",
+                "fromNodeId": "node:portfolio-concentration-fiduciary-stress:mandate"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.04138977254003726,
+            "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.08991571275939125
+          }
+        ],
+        "iterations": 63,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "portfolio-concentration-fiduciary-stress",
+        "simulatedDays": 63,
+        "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+        "totalWeightedImpact": 0.13534587279791288,
+        "totalWeightedPeakEnvelope": 0.29402724090581067,
+        "warnings": []
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 4,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 63,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.25317460317460333,
+        "endImpact": 0,
+        "impact": 0.25317460317460333,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 63,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "portfolio-concentration-fiduciary-stress",
+    "simulatedDays": 63,
+    "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+    "totalWeightedImpact": 0.04807112718505126,
+    "totalWeightedPeakEnvelope": 0.10443037974683544,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 63,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.25317460317460333,
+        "endImpact": 0,
+        "impact": 0.25317460317460333,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:exposure",
+        "peakDirectImpact": 0.55,
+        "peakImpact": 0.55
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.42844999999999994,
+            "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-1",
+            "fromNodeId": "node:portfolio-concentration-fiduciary-stress:exposure"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.1972230158730158,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:portfolio",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.42845
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.27754991,
+            "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-2",
+            "fromNodeId": "node:portfolio-concentration-fiduciary-stress:portfolio"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.12776106968253978,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:liquidity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.27754991000000007
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.16614137612600002,
+            "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-3",
+            "fromNodeId": "node:portfolio-concentration-fiduciary-stress:liquidity"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.07647777631196831,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:mandate",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.166141376126
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.0899157127593912,
+            "edgeId": "edge:portfolio-concentration-fiduciary-stress:link-4",
+            "fromNodeId": "node:portfolio-concentration-fiduciary-stress:mandate"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.04138977254003726,
+        "nodeId": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.08991571275939125
+      }
+    ],
+    "iterations": 63,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "portfolio-concentration-fiduciary-stress",
+    "simulatedDays": 63,
+    "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+    "totalWeightedImpact": 0.13534587279791288,
+    "totalWeightedPeakEnvelope": 0.29402724090581067,
+    "warnings": []
+  }
+}

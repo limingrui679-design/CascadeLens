@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.039677 / 0.039677 / 0.125139
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Technology manufacturing planner
+- Stakeholders: fabrication partners; component engineers; assembly teams; customers
+- Capabilities exercised: system-mapping; constrained-optimization; data-systems; evidence-governance; stakeholder-communication; resilience-operations
+- Methods: branch-and-merge topology; bounded propagation; feasible bundle enumeration
+
+### User tasks
+
+- compare inventory, redesign, and allocation
+- trace where two dependency branches merge
+- explain why feasibility is not a recommendation
+
+### Trade-offs and guardrail
+
+- inventory cost versus qualification lead time
+- allocation continuity versus customer coverage
+
+> No company, fabrication site, production volume, or realized shortage is represented.
+
 ## Rebuild and verify
 
 ```bash

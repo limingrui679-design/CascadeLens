@@ -1,0 +1,88 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2020-09-01T00:00:00Z",
+    "publisher": "U.S. General Services Administration, Office of Evaluation Sciences",
+    "title": "Reporting statistical results in text and in graphs",
+    "uri": "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf"
+  },
+  "decisionProfile": {
+    "capabilities": [
+      "behavioral-experimentation",
+      "evidence-governance",
+      "uncertainty-bounds",
+      "reproducible-computation",
+      "public-interest-ethics",
+      "stakeholder-communication"
+    ],
+    "decisionOwner": "Program evaluation lead",
+    "guardrail": "No treatment effect, causal mechanism, participant response, or program impact is estimated.",
+    "methods": [
+      "measurement-to-rollout dependency map",
+      "assignment-integrity stress",
+      "reversible pilot comparison"
+    ],
+    "stakeholders": [
+      "participants",
+      "service teams",
+      "evaluators",
+      "program owners",
+      "oversight bodies"
+    ],
+    "tradeoffs": [
+      "learning speed versus measurement quality",
+      "population reach versus reversible experimentation"
+    ],
+    "userTasks": [
+      "distinguish observed behavior from mechanism",
+      "compare measurement, randomization, and staged-rollout safeguards",
+      "write a result statement that preserves null and heterogeneous outcomes"
+    ]
+  },
+  "decisionQuestion": "Which experiment and rollout safeguard preserves learning value when measurement quality and uptake assumptions weaken?",
+  "domain": "Behavioral policy and experimentation",
+  "edgeCount": 5,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build behavioral-intervention-evidence-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+    "intervention:behavioral-intervention-evidence-stress:staged-rollout"
+  ],
+  "riskPackPath": "cases/behavioral-intervention-evidence-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Behavioral evidence",
+  "slug": "behavioral-intervention-evidence-stress",
+  "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 20,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 60
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      14,
+      60,
+      180
+    ],
+    "topology": "branch_merge"
+  },
+  "summary": "A synthetic evaluation-workflow stress separating measurement quality, assignment integrity, response signals, implementation, and participant outcomes.",
+  "tags": [
+    "behavior",
+    "experimentation",
+    "measurement",
+    "evaluation"
+  ],
+  "title": "Behavioral-intervention evidence stress",
+  "totalWeightedImpact": {
+    "central": 0.01469594594594594,
+    "lower": 0.01469594594594594,
+    "upper": 0.0476250806271547
+  }
+}

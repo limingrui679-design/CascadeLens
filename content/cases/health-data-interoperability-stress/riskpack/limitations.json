@@ -1,0 +1,13 @@
+{
+  "benchmarkLimitations": [
+    "No comparable separated real-world outcome was available."
+  ],
+  "disclaimer": "Scenario outputs are not causal estimates, realized losses, investment advice, legal advice, clinical advice, or evidence of adoption.",
+  "scenarioLimitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No patient data, clinical workflow observation, certified product, or measured care outcome is represented."
+  ],
+  "schemaVersion": "cascadelens-riskpack-limitations/1.0.0"
+}

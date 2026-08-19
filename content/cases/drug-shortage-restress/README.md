@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.066140 / 0.066140 / 0.169978
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Medicine access coordinator
+- Stakeholders: manufacturers; wholesalers; care sites; clinicians; patients
+- Capabilities exercised: data-systems; uncertainty-bounds; constrained-optimization; public-interest-ethics; stakeholder-communication; resilience-operations
+- Methods: official-source context isolation; care-access criticality; bounded supply intervention analysis
+
+### User tasks
+
+- compare buffer, alternate supply, and distribution priority
+- trace a source record without treating it as a topology
+- state the clinical boundary
+
+### Trade-offs and guardrail
+
+- aggregate stock versus care-site access
+- speed versus evidence for alternate supply
+
+> No current shortage record is used as topology, and no treatment recommendation is produced.
+
 ## Rebuild and verify
 
 ```bash

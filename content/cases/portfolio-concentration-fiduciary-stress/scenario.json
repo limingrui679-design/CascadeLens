@@ -1,0 +1,116 @@
+{
+  "classification": "synthetic_stress",
+  "constraints": {
+    "budget": 16,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 30
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:portfolio-concentration-fiduciary-stress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 7,
+      "costUnit": "normalized_cost",
+      "effect": 0.32,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+      "label": "Increase the liquidity buffer",
+      "leadTimeDays": 5,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:portfolio-concentration-fiduciary-stress:liquidity"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 11,
+      "costUnit": "normalized_cost",
+      "effect": 0.46,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+      "label": "Diversify the concentrated exposure",
+      "leadTimeDays": 21,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:portfolio-concentration-fiduciary-stress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.37,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance",
+      "label": "Stage rebalancing within mandate limits",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:portfolio-concentration-fiduciary-stress:link-3"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No real portfolio, security, price, return, investor preference, or suitability determination is represented."
+  ],
+  "objectives": [
+    {
+      "id": "objective:portfolio-concentration-fiduciary-stress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:portfolio-concentration-fiduciary-stress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      5,
+      21,
+      63
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "portfolio-concentration-fiduciary-stress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:portfolio-concentration-fiduciary-stress:primary",
+      "label": "Concentrated exposure financial stress",
+      "magnitude": 0.55,
+      "operation": "financial_stress",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:portfolio-concentration-fiduciary-stress:exposure"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A synthetic portfolio stress linking concentrated exposure, liquidity needs, mandate constraints, and beneficiary objectives without using holdings or returns.",
+  "title": "Portfolio concentration and fiduciary stress"
+}

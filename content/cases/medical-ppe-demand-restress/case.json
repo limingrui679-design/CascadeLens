@@ -6,6 +6,38 @@
     "title": "Shortage of personal protective equipment endangering health workers worldwide",
     "uri": "https://www.who.int/news/item/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "uncertainty-bounds",
+      "constrained-optimization",
+      "stakeholder-communication",
+      "public-interest-ethics",
+      "temporal-reasoning",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Public-health supply coordinator",
+    "guardrail": "The case is neither clinical guidance nor an emergency-allocation recommendation.",
+    "methods": [
+      "demand-shock compilation",
+      "access-oriented criticality weighting",
+      "bounded intervention comparison"
+    ],
+    "stakeholders": [
+      "health workers",
+      "care sites",
+      "distributors",
+      "patients"
+    ],
+    "tradeoffs": [
+      "aggregate continuity versus equitable allocation",
+      "rapid prioritization versus evidence quality"
+    ],
+    "userTasks": [
+      "compare stockpiling, supplier diversity, and prioritization",
+      "surface who bears a shortage",
+      "write a safety-limited decision boundary"
+    ]
+  },
   "decisionQuestion": "Which feasible supply intervention best limits bounded access disruption during a PPE demand surge?",
   "domain": "Public health supply",
   "edgeCount": 5,

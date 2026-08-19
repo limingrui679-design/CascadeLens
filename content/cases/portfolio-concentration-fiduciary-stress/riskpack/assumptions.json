@@ -1,0 +1,99 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:transmission",
+      "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "targetId": "portfolio-concentration-fiduciary-stress",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:graph-link-1",
+      "lower": 0.59,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Concentrated risk exposure to Portfolio sleeve.",
+      "status": "model_assumption",
+      "targetId": "edge:portfolio-concentration-fiduciary-stress:link-1",
+      "unit": "share",
+      "upper": 0.95,
+      "value": 0.79
+    },
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:graph-link-2",
+      "lower": 0.43,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Portfolio sleeve to Liquidity requirement.",
+      "status": "model_assumption",
+      "targetId": "edge:portfolio-concentration-fiduciary-stress:link-2",
+      "unit": "share",
+      "upper": 0.79,
+      "value": 0.63
+    },
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:graph-link-3",
+      "lower": 0.37,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Liquidity requirement to Mandate and tracking constraints.",
+      "status": "model_assumption",
+      "targetId": "edge:portfolio-concentration-fiduciary-stress:link-3",
+      "unit": "share",
+      "upper": 0.73,
+      "value": 0.57
+    },
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:graph-link-4",
+      "lower": 0.3,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Mandate and tracking constraints to Beneficiary objective continuity.",
+      "status": "model_assumption",
+      "targetId": "edge:portfolio-concentration-fiduciary-stress:link-4",
+      "unit": "share",
+      "upper": 0.66,
+      "value": 0.5
+    },
+    {
+      "id": "assumption:portfolio-concentration-fiduciary-stress:candidate-link-1",
+      "lower": 0,
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
+      "sourceIds": [
+        "source:portfolio-concentration-fiduciary-stress:assumptions"
+      ],
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Concentrated risk exposure to Beneficiary objective continuity.",
+      "status": "model_assumption",
+      "targetId": "edge:portfolio-concentration-fiduciary-stress:link-100",
+      "unit": "share",
+      "upper": 0.36,
+      "value": 0.2
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "portfolio-concentration-fiduciary-stress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
+  "status": "scenario_parameters_not_observations"
+}

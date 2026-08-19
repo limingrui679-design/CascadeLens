@@ -6,6 +6,39 @@
     "title": "openFDA Drug Shortages API",
     "uri": "https://open.fda.gov/apis/drug/drugshortages/"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "data-systems",
+      "uncertainty-bounds",
+      "constrained-optimization",
+      "public-interest-ethics",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Medicine access coordinator",
+    "guardrail": "No current shortage record is used as topology, and no treatment recommendation is produced.",
+    "methods": [
+      "official-source context isolation",
+      "care-access criticality",
+      "bounded supply intervention analysis"
+    ],
+    "stakeholders": [
+      "manufacturers",
+      "wholesalers",
+      "care sites",
+      "clinicians",
+      "patients"
+    ],
+    "tradeoffs": [
+      "aggregate stock versus care-site access",
+      "speed versus evidence for alternate supply"
+    ],
+    "userTasks": [
+      "compare buffer, alternate supply, and distribution priority",
+      "trace a source record without treating it as a topology",
+      "state the clinical boundary"
+    ]
+  },
   "decisionQuestion": "Which bounded supply intervention remains feasible when a medicine becomes constrained?",
   "domain": "Medicines",
   "edgeCount": 4,

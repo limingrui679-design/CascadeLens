@@ -3,6 +3,7 @@ import { basename, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   buildReferenceCase,
+  capabilityCatalog,
   caseCatalogRecord,
   referenceCaseSpecs,
   type BuiltReferenceCase,
@@ -45,6 +46,23 @@ The public reference below is scenario context only. It does not supply the grap
 - Snapshot digest: \`${snapshot.contentDigest}\`
 - Lower / central / upper total impact: ${bounds.lower.totalWeightedImpact.toFixed(6)} / ${bounds.central.totalWeightedImpact.toFixed(6)} / ${bounds.upper.totalWeightedImpact.toFixed(6)}
 - Recommendation status: \`${interventions.recommendationStatus}\`
+
+## Decision profile
+
+- Decision owner: ${spec.decisionProfile.decisionOwner}
+- Stakeholders: ${spec.decisionProfile.stakeholders.join("; ")}
+- Capabilities exercised: ${spec.decisionProfile.capabilities.join("; ")}
+- Methods: ${spec.decisionProfile.methods.join("; ")}
+
+### User tasks
+
+${spec.decisionProfile.userTasks.map((task) => `- ${task}`).join("\n")}
+
+### Trade-offs and guardrail
+
+${spec.decisionProfile.tradeoffs.map((tradeoff) => `- ${tradeoff}`).join("\n")}
+
+> ${spec.decisionProfile.guardrail}
 
 ## Rebuild and verify
 
@@ -122,7 +140,7 @@ export async function buildCases(selectedSlug?: string): Promise<void> {
 
     const catalog = {
       schemaVersion: "0.1.0",
-      generatedAt: "2026-08-12T00:00:00Z",
+      generatedAt: "2026-08-20T00:00:00Z",
       status: "reference_cases_not_empirical_validation",
       caseCount: builtCases.length,
       historicallyScoredCaseCount: builtCases.filter(
@@ -150,12 +168,46 @@ export async function buildCases(selectedSlug?: string): Promise<void> {
     };
     await write(join(temporaryRoot, "catalog.json"), json(catalog));
     await write(
+      join(temporaryRoot, "capability-matrix.json"),
+      json({
+        schemaVersion: "cascadelens-capability-matrix/1.0",
+        generatedAt: catalog.generatedAt,
+        evidenceBoundary:
+          "Capability tags describe executable analytical tasks. They do not establish expertise, external validation, adoption, or impact.",
+        capabilities: capabilityCatalog,
+        cases: builtCases.map((built) => ({
+          slug: built.spec.slug,
+          title: built.spec.title,
+          shortTitle: built.spec.shortTitle,
+          domain: built.spec.domain,
+          decisionProfile: built.spec.decisionProfile,
+        })),
+      }),
+    );
+    await write(
+      join(temporaryRoot, "workbench.json"),
+      json({
+        schemaVersion: "cascadelens-workbench-cases/1.0",
+        generatedAt: catalog.generatedAt,
+        cases: builtCases.map((built) => ({
+          slug: built.spec.slug,
+          domain: built.spec.domain,
+          decisionQuestion: built.spec.decisionQuestion,
+          snapshot: built.snapshot,
+          scenario: built.scenario,
+          bounds: built.bounds,
+          interventions: built.interventions,
+          decisionProfile: built.spec.decisionProfile,
+        })),
+      }),
+    );
+    await write(
       join(temporaryRoot, "README.md"),
       `# CascadeLens reference-case library
 
-This directory contains ${builtCases.length} executable reference cases. They exercise the complete analysis and packaging pipeline across diverse domains. They are not demonstrations of empirical accuracy: all ${builtCases.length} are currently scenario-only and zero are historically scored.
+This directory contains ${builtCases.length} executable reference cases. They exercise the complete analysis and packaging pipeline across diverse domains, decision owners, stakeholder perspectives, methods, and evidence boundaries. They are not demonstrations of empirical accuracy: all ${builtCases.length} are currently scenario-only and zero are historically scored.
 
-Each case includes an assumption register, context citation, sealed graph, ShockScript, model card, cascade bounds, activation-dated intervention analysis, observability output, benchmark status, recomputation-verified RiskPack, and rebuild command.
+Each case includes an assumption register, context citation, sealed graph, ShockScript, model card, decision profile, cascade bounds, activation-dated intervention analysis, observability output, benchmark status, recomputation-verified RiskPack, and rebuild command. The generated \`capability-matrix.json\` and \`workbench.json\` keep the public comparison and interactive product synchronized with the same case specifications.
 `,
     );
     const priorRoot = `${finalRoot}.previous`;

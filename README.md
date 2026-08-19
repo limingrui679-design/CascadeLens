@@ -16,9 +16,9 @@
 <p align="center">
   <a href="https://cascadelens.limingrui2.chatgpt.site"><strong>Open the live product</strong></a>
   · <a href="#60-second-python-start">Run in 60 seconds</a>
-  · <a href="#explore-all-12-cases">Explore 12 cases</a>
+  · <a href="#explore-all-16-cases">Explore 16 cases</a>
   · <a href="docs/README.md">Read the docs</a>
-  · <a href="docs/SELF_REVIEW_2026-08-14_v0.5.1.md">Inspect the evidence</a>
+  · <a href="docs/SELF_REVIEW_2026-08-20_v0.6.0.md">Inspect the evidence</a>
 </p>
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
@@ -30,7 +30,7 @@ Each run reports **lower, central, and upper impacts**, exposes **feasible Paret
 ## 60-second Python start
 
 ```bash
-pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
+pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"
 cascadelens demo --out demo-riskpack
 ```
 
@@ -47,11 +47,11 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
 <p align="center">
   <img alt="Thirty-second CascadeLens Workbench demonstration: switch cases, change parameters, recompute bounds, and export analysis" src="docs/assets/readme/workbench-demo.gif" width="960" />
 </p>
-<p align="center"><sub>Real local run · 12-case selector · scenario-only bounds · evidence-gated decision · Python RiskPack handoff</sub></p>
+<p align="center"><sub>Real local run · 16-case selector · 5 × 5 normalized-severity surface · evidence-gated decision · JSON + decision-brief export</sub></p>
 
 <table>
   <tr>
-    <td align="center"><strong>12</strong><br /><sub>executable cases</sub></td>
+    <td align="center"><strong>16</strong><br /><sub>executable cases</sub></td>
     <td align="center"><strong>11</strong><br /><sub>connector contracts</sub></td>
     <td align="center"><strong>4,027</strong><br /><sub>normalized official-source facts</sub></td>
     <td align="center"><strong>PASS</strong><br /><sub>Node + Python unit suites</sub></td>
@@ -59,36 +59,51 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
 </table>
 
 > [!IMPORTANT]
-> Stable release: **[`v0.5.1`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.5.1)**. It contains **0 historically scored cases**, **0 external validations**, and **0 claims of organizational adoption**. The 12 launch cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
+> Current development scope contains **0 historically scored cases**, **0 external validations**, **0 structured user studies**, **0 verified organizational adoptions**, and **0 demonstrated real-world impacts**. All 16 cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
-## Explore all 12 cases
+## Explore all 16 cases
 
-![CascadeLens case library with twelve complete scenario-only pipelines](docs/assets/readme/cases.jpg)
+![CascadeLens capability matrix across sixteen complete scenario-only pipelines](docs/assets/readme/cases.jpg)
 
 <table>
   <tr>
-    <td width="33%" valign="top"><strong><a href="content/cases/suez-route-restress/README.md">01 · Suez route</a></strong><br /><sub>Maritime trade · chain · 7/30/90d</sub></td>
-    <td width="33%" valign="top"><strong><a href="content/cases/semiconductor-capacity-restress/README.md">02 · Semiconductors</a></strong><br /><sub>Manufacturing · branch/merge · 7/30/90d</sub></td>
-    <td width="33%" valign="top"><strong><a href="content/cases/medical-ppe-demand-restress/README.md">03 · Medical PPE</a></strong><br /><sub>Public health · branch/merge · 7/21/60d</sub></td>
+    <td width="25%" valign="top"><strong><a href="content/cases/suez-route-restress/README.md">01 · Suez route</a></strong><br /><sub>Maritime trade · chain</sub></td>
+    <td width="25%" valign="top"><strong><a href="content/cases/semiconductor-capacity-restress/README.md">02 · Semiconductors</a></strong><br /><sub>Manufacturing · branch/merge</sub></td>
+    <td width="25%" valign="top"><strong><a href="content/cases/medical-ppe-demand-restress/README.md">03 · Medical PPE</a></strong><br /><sub>Public health · branch/merge</sub></td>
+    <td width="25%" valign="top"><strong><a href="content/cases/ukraine-commodity-compound-restress/README.md">04 · Commodity compound</a></strong><br /><sub>Food + energy · cycle</sub></td>
   </tr>
   <tr>
-    <td valign="top"><strong><a href="content/cases/ukraine-commodity-compound-restress/README.md">04 · Commodity compound</a></strong><br /><sub>Food + energy · cycle · 7/30/90d</sub></td>
-    <td valign="top"><strong><a href="content/cases/panama-drought-restress/README.md">05 · Panama drought</a></strong><br /><sub>Climate + logistics · activation · 7/30/90d</sub></td>
-    <td valign="top"><strong><a href="content/cases/red-sea-rerouting-restress/README.md">06 · Red Sea routing</a></strong><br /><sub>Shipping · expiry · 7/30/90d</sub></td>
+    <td valign="top"><strong><a href="content/cases/panama-drought-restress/README.md">05 · Panama drought</a></strong><br /><sub>Climate + logistics · activation</sub></td>
+    <td valign="top"><strong><a href="content/cases/red-sea-rerouting-restress/README.md">06 · Red Sea routing</a></strong><br /><sub>Shipping · expiry</sub></td>
+    <td valign="top"><strong><a href="content/cases/baltimore-port-restress/README.md">07 · Baltimore port</a></strong><br /><sub>Infrastructure · chain</sub></td>
+    <td valign="top"><strong><a href="content/cases/refining-hurricane-restress/README.md">08 · Refining hurricane</a></strong><br /><sub>Energy · chain</sub></td>
   </tr>
   <tr>
-    <td valign="top"><strong><a href="content/cases/baltimore-port-restress/README.md">07 · Baltimore port</a></strong><br /><sub>Infrastructure · chain · 7/30/90d</sub></td>
-    <td valign="top"><strong><a href="content/cases/refining-hurricane-restress/README.md">08 · Refining hurricane</a></strong><br /><sub>Energy · chain · 7/30/90d</sub></td>
-    <td valign="top"><strong><a href="content/cases/critical-minerals-export-stress/README.md">09 · Critical minerals</a></strong><br /><sub>Technology · synthetic · 14/45/120d</sub></td>
+    <td valign="top"><strong><a href="content/cases/critical-minerals-export-stress/README.md">09 · Critical minerals</a></strong><br /><sub>Technology policy · chain</sub></td>
+    <td valign="top"><strong><a href="content/cases/ofac-list-change-stress/README.md">10 · Sanctions change</a></strong><br /><sub>Compliance · chain</sub></td>
+    <td valign="top"><strong><a href="content/cases/drug-shortage-restress/README.md">11 · Drug shortage</a></strong><br /><sub>Medicine access · chain</sub></td>
+    <td valign="top"><strong><a href="content/cases/food-export-compound-stress/README.md">12 · Food export compound</a></strong><br /><sub>Agriculture · compound</sub></td>
   </tr>
   <tr>
-    <td valign="top"><strong><a href="content/cases/ofac-list-change-stress/README.md">10 · Sanctions change</a></strong><br /><sub>Compliance · synthetic · 3/14/60d</sub></td>
-    <td valign="top"><strong><a href="content/cases/drug-shortage-restress/README.md">11 · Drug shortage</a></strong><br /><sub>Medicines · chain · 7/21/60d</sub></td>
-    <td valign="top"><strong><a href="content/cases/food-export-compound-stress/README.md">12 · Food export compound</a></strong><br /><sub>Agriculture · synthetic · 7/30/90d</sub></td>
+    <td valign="top"><strong><a href="content/cases/health-data-interoperability-stress/README.md">13 · Health interoperability</a></strong><br /><sub>Health IT · branch/merge</sub></td>
+    <td valign="top"><strong><a href="content/cases/behavioral-intervention-evidence-stress/README.md">14 · Behavioral evidence</a></strong><br /><sub>Experimentation · branch/merge</sub></td>
+    <td valign="top"><strong><a href="content/cases/place-based-regeneration-equity-stress/README.md">15 · Regeneration equity</a></strong><br /><sub>Housing + place · branch/merge</sub></td>
+    <td valign="top"><strong><a href="content/cases/portfolio-concentration-fiduciary-stress/README.md">16 · Portfolio concentration</a></strong><br /><sub>Fiduciary risk · chain</sub></td>
   </tr>
 </table>
 
-> **9 context-grounded re-stresses + 3 synthetic fixtures.** Public pages frame questions; they do not supply the assumed topology, weights, shocks, or intervention effects.
+> **9 context-grounded re-stresses + 7 synthetic stress fixtures.** Public pages frame questions; they do not supply the assumed topology, weights, shocks, or intervention effects.
+
+### One comparison plane—not sixteen disconnected demos
+
+| Decision lens | What the executable task makes visible |
+|---|---|
+| Health information systems | Terminology, provenance, accountable review, and population reporting |
+| Behavioral evaluation | Measurement, assignment, response signals, reversible rollout, and null-result discipline |
+| Place-based policy | Housing, access, local business continuity, affected groups, and transition costs |
+| Portfolio risk | Concentration, liquidity, mandate constraints, beneficiary objectives, and fiduciary limits |
+
+The generated [capability matrix](content/cases/capability-matrix.json) maps every case to 15 analytical, engineering, decision, and domain capabilities. The [live case library](https://cascadelens.limingrui2.chatgpt.site/cases) renders the same matrix and filters from the same specifications.
 
 ## Why CascadeLens
 
@@ -150,7 +165,7 @@ Open `http://localhost:3000`, or use one focused path:
   </tr>
 </table>
 
-The workbench can switch among all 12 reviewed cases and accepts a user WorldGraph plus ShockScript. Imported topology stays user-provided and results stay `scenario_only`.
+The workbench switches among all 16 reviewed cases and accepts a user WorldGraph plus ShockScript. Each run can recompute a 5 × 5 normalized-severity–transmission sensitivity surface, export machine-readable JSON, and generate a stakeholder-facing Markdown decision brief that carries the same `scenario_only` and `evidence_required` boundaries. For binary disable operations, the surface discloses a partial-capacity proxy while preserving the binary reviewed base run. Imported topology stays user-provided and unverified.
 
 ## Every edge carries its own evidence
 
@@ -267,7 +282,7 @@ flowchart LR
 
 The scale check is a synthetic chain engineering budget—not a production SLA or empirical-domain benchmark.
 
-[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md) · [v0.5.1 review](docs/SELF_REVIEW_2026-08-14_v0.5.1.md)
+[Acceptance matrix](docs/ACCEPTANCE_MATRIX.md) · [Release process](docs/RELEASE_PROCESS.md) · [Performance](docs/PERFORMANCE.md) · [Security](SECURITY.md)
 
 ## Interfaces
 
@@ -275,7 +290,7 @@ The scale check is a synthetic chain engineering budget—not a production SLA o
 |---|---|
 | [Workbench](https://cascadelens.limingrui2.chatgpt.site/workbench) | Edit bounded assumptions and compare feasible responses |
 | [WorldGraph](https://cascadelens.limingrui2.chatgpt.site/worldgraph) | Inspect provenance, time, evidence grade, and eligibility |
-| [Case library](https://cascadelens.limingrui2.chatgpt.site/cases) | Browse 12 complete pipelines and download RiskPacks |
+| [Case library](https://cascadelens.limingrui2.chatgpt.site/cases) | Compare 16 pipelines, filter by capability, and download RiskPacks |
 | [CascadeBench](https://cascadelens.limingrui2.chatgpt.site/benchmark) | See no-lookahead gates and honest scoring coverage |
 | [Python CLI](docs/CLI.md) | Import, validate, run, pack, and verify locally |
 | [Python API](docs/SDK.md) | Embed analysis in scripts, notebooks, or NetworkX workflows |
@@ -294,7 +309,7 @@ docs/             methods + tutorials           scripts/       hosted build veri
 | If you want to… | Open |
 |---|---|
 | Understand the design | [Architecture](docs/ARCHITECTURE.md) · [Product requirements](docs/PRODUCT_REQUIREMENTS.md) |
-| Add a case or connector | [Extension guide](docs/EXTENDING.md) · [Connector contract](docs/connectors/CONNECTOR_CONTRACT.md) |
+| Compare or add a case | [Capability matrix](docs/CASE_CAPABILITY_MATRIX.md) · [Extension guide](docs/EXTENDING.md) |
 | Audit versions and compatibility | [Schema compatibility](docs/SCHEMA_COMPATIBILITY.md) · [Changelog](CHANGELOG.md) |
 | Plan legitimate external validation | [External validation protocol](docs/EXTERNAL_VALIDATION_PROTOCOL.md) |
 | Navigate everything | [Documentation hub](docs/README.md) |

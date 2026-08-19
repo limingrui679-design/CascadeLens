@@ -1,0 +1,30 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.2.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:behavioral-intervention-evidence-stress:engine-v0.2.0",
+  "scenarioId": "behavioral-intervention-evidence-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ],
+  "verificationMode": "recomputed"
+}

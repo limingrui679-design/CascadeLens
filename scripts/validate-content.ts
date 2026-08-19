@@ -13,7 +13,11 @@ import {
   type ShockScenario,
 } from "../packages/core/src/index";
 import { connectorCatalog } from "../packages/connectors/src/index";
-import { referenceCaseSpecs } from "../packages/cases/src/index";
+import {
+  capabilityCatalog,
+  referenceCaseSpecs,
+  type CaseDecisionProfile,
+} from "../packages/cases/src/index";
 import { readRiskPackDirectory } from "../packages/cli/src/io";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
@@ -25,6 +29,7 @@ const required = [
   "docs/PRODUCT_REQUIREMENTS.md",
   "docs/ACCEPTANCE_MATRIX.md",
   "docs/ARCHITECTURE.md",
+  "docs/CASE_CAPABILITY_MATRIX.md",
   "docs/connectors/DATA_CATALOG.md",
   "docs/connectors/CONNECTOR_CONTRACT.md",
   "scripts/sites-vite-plugin.ts",
@@ -37,6 +42,8 @@ const required = [
   "schemas/riskpack-limitations-1.0.0.schema.json",
   "content/catalog/connectors.json",
   "content/cases/catalog.json",
+  "content/cases/capability-matrix.json",
+  "content/cases/workbench.json",
   "content/cases/README.md",
   "content/snapshots/catalog.json",
   "content/snapshots/README.md",
@@ -103,13 +110,18 @@ const catalog = await json<{
   status: string;
   caseCount: number;
   historicallyScoredCaseCount: number;
-  cases: Array<{ slug: string; scoringStatus: string; snapshotDigest: string }>;
+  cases: Array<{
+    slug: string;
+    scoringStatus: string;
+    snapshotDigest: string;
+    decisionProfile: CaseDecisionProfile;
+  }>;
 }>("content/cases/catalog.json");
 if (catalog.status !== "reference_cases_not_empirical_validation") {
   fail("case catalog must preserve the non-empirical validation boundary");
 }
-if (catalog.caseCount !== 12 || catalog.cases.length !== 12 || referenceCaseSpecs.length !== 12) {
-  fail("case library must contain exactly twelve reference cases");
+if (catalog.caseCount !== 16 || catalog.cases.length !== 16 || referenceCaseSpecs.length !== 16) {
+  fail("case library must contain exactly sixteen reference cases");
 }
 if (catalog.historicallyScoredCaseCount !== 0) {
   fail("launch cases cannot claim historical scoring without separated outcomes");
@@ -118,6 +130,90 @@ const expectedSlugs = referenceCaseSpecs.map((item) => item.slug).sort();
 const catalogSlugs = catalog.cases.map((item) => item.slug).sort();
 if (stableStringify(expectedSlugs) !== stableStringify(catalogSlugs)) {
   fail("case catalog slugs do not match the source specifications");
+}
+
+const knownCapabilityIds = new Set(capabilityCatalog.map((item) => item.id));
+for (const record of catalog.cases) {
+  const profile = record.decisionProfile;
+  if (
+    !profile ||
+    !profile.decisionOwner.trim() ||
+    profile.stakeholders.length < 3 ||
+    profile.capabilities.length < 4 ||
+    profile.methods.length < 3 ||
+    profile.userTasks.length < 3 ||
+    profile.tradeoffs.length < 2 ||
+    !profile.guardrail.trim()
+  ) {
+    fail(`${record.slug} has an incomplete decision profile`);
+  }
+  if (
+    new Set(profile.capabilities).size !== profile.capabilities.length ||
+    profile.capabilities.some((capability) => !knownCapabilityIds.has(capability))
+  ) {
+    fail(`${record.slug} has duplicate or unknown capability identifiers`);
+  }
+}
+
+const capabilityMatrix = await json<{
+  schemaVersion: string;
+  capabilities: unknown[];
+  cases: Array<{ slug: string; decisionProfile: CaseDecisionProfile }>;
+}>("content/cases/capability-matrix.json");
+if (
+  capabilityMatrix.schemaVersion !== "cascadelens-capability-matrix/1.0" ||
+  stableStringify(capabilityMatrix.capabilities) !== stableStringify(capabilityCatalog) ||
+  stableStringify(capabilityMatrix.cases.map((item) => item.slug).sort()) !== stableStringify(expectedSlugs)
+) {
+  fail("generated capability matrix is stale or incomplete");
+}
+const matrixCasesBySlug = new Map(
+  capabilityMatrix.cases.map((record) => [record.slug, record]),
+);
+
+const workbenchCatalog = await json<{
+  schemaVersion: string;
+  cases: Array<{
+    slug: string;
+    decisionQuestion: string;
+    decisionProfile: CaseDecisionProfile;
+    scenario: ShockScenario;
+    snapshot: GraphSnapshot;
+  }>;
+}>("content/cases/workbench.json");
+if (
+  workbenchCatalog.schemaVersion !== "cascadelens-workbench-cases/1.0" ||
+  stableStringify(workbenchCatalog.cases.map((item) => item.slug).sort()) !== stableStringify(expectedSlugs)
+) {
+  fail("generated workbench bundle is stale or incomplete");
+}
+const catalogCasesBySlug = new Map(catalog.cases.map((record) => [record.slug, record]));
+const workbenchCasesBySlug = new Map(
+  workbenchCatalog.cases.map((record) => [record.slug, record]),
+);
+
+for (const spec of referenceCaseSpecs) {
+  const catalogCase = catalogCasesBySlug.get(spec.slug);
+  const matrixCase = matrixCasesBySlug.get(spec.slug);
+  const workbenchCase = workbenchCasesBySlug.get(spec.slug);
+  if (!catalogCase || !matrixCase || !workbenchCase) {
+    fail(`${spec.slug} is missing from a generated case surface`);
+  }
+  const expectedProfile = stableStringify(spec.decisionProfile);
+  if (
+    stableStringify(catalogCase.decisionProfile) !== expectedProfile ||
+    stableStringify(matrixCase.decisionProfile) !== expectedProfile ||
+    stableStringify(workbenchCase.decisionProfile) !== expectedProfile
+  ) {
+    fail(`${spec.slug} decision profile has drifted across generated surfaces`);
+  }
+  if (
+    workbenchCase.decisionQuestion !== spec.decisionQuestion ||
+    workbenchCase.scenario.scenarioId !== spec.slug ||
+    workbenchCase.snapshot.contentDigest !== catalogCase.snapshotDigest
+  ) {
+    fail(`${spec.slug} workbench inputs have drifted from the reviewed case`);
+  }
 }
 
 for (const record of catalog.cases) {
@@ -203,5 +299,5 @@ async function scan(directory: string): Promise<void> {
 for (const directory of publicRoots) await scan(directory);
 
 process.stdout.write(
-  `Validated ${required.length} required artifacts, 11 connectors, 4 frozen public snapshots, and 12 verified scenario-only reference cases.\n`,
+  `Validated ${required.length} required artifacts, 11 connectors, 4 frozen public snapshots, and ${catalog.caseCount} verified scenario-only reference cases.\n`,
 );

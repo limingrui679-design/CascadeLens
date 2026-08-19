@@ -26,7 +26,7 @@ export default async function WorkbenchPage({
         <Eyebrow>Interactive scenario compiler</Eyebrow>
         <h1>Change an assumption. See the decision boundary move.</h1>
         <p className="page-intro-copy">
-          Switch among all 12 reviewed cases or import JSON, CSV, GraphML, and a ShockScript. User topology remains unverified; every result remains scenario-only.
+          Switch among all 16 reviewed cases or import JSON, CSV, GraphML, and a ShockScript. Recompute bounds, feasible bundles, and a 5 × 5 normalized-severity–transmission surface, then export JSON or an evidence-bounded decision brief. User topology remains unverified; every result remains scenario-only.
         </p>
       </section>
       <section className="wide-page-content">

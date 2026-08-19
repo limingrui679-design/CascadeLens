@@ -1,0 +1,291 @@
+{
+  "contentDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:measurement",
+      "id": "edge:behavioral-intervention-evidence-stress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:assignment",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.51,
+        "unit": "share",
+        "upper": 0.87,
+        "value": 0.71
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:measurement",
+      "id": "edge:behavioral-intervention-evidence-stress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:response",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.44,
+        "unit": "share",
+        "upper": 0.8,
+        "value": 0.64
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:assignment",
+      "id": "edge:behavioral-intervention-evidence-stress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:implementation",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.39,
+        "unit": "share",
+        "upper": 0.75,
+        "value": 0.59
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:response",
+      "id": "edge:behavioral-intervention-evidence-stress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:implementation",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.35,
+        "unit": "share",
+        "upper": 0.71,
+        "value": 0.55
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:implementation",
+      "id": "edge:behavioral-intervention-evidence-stress:link-5",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:participant-outcome",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.02,
+        "unit": "share",
+        "upper": 0.38,
+        "value": 0.22
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "id": "node:behavioral-intervention-evidence-stress:assignment",
+      "kind": "policy",
+      "label": "Treatment assignment integrity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "id": "node:behavioral-intervention-evidence-stress:implementation",
+      "kind": "industry",
+      "label": "Program implementation capacity",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "id": "node:behavioral-intervention-evidence-stress:measurement",
+      "kind": "metric",
+      "label": "Outcome measurement reliability",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "id": "node:behavioral-intervention-evidence-stress:participant-outcome",
+      "kind": "metric",
+      "label": "Participant outcome evidence",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.7,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "id": "node:behavioral-intervention-evidence-stress:response",
+      "kind": "metric",
+      "label": "Behavioral response signal",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.3,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:behavioral-intervention-evidence-stress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 4988,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:behavioral-intervention-evidence-stress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "f35fe34483d1b0732fb8877af69f06877cc4e8685332eaf76684112eff96d11d",
+      "title": "Behavioral-intervention evidence stress local assumption register",
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/behavioral-intervention-evidence-stress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2020-09-01T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:behavioral-intervention-evidence-stress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf"
+      },
+      "publishedAt": "2020-09-01T00:00:00Z",
+      "publisher": "U.S. General Services Administration, Office of Evaluation Sciences",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "6fb56914f66850b4ff063af76c345c91d2e49117563adb62beed7c3006b1a09f",
+      "title": "Reporting statistical results in text and in graphs",
+      "uri": "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf"
+    }
+  ],
+  "title": "Behavioral-intervention evidence stress assumed topology"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 4871,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:health-data-interoperability-stress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "f354068a27fa464779e07a25b72fa517bfe2546514a9f1f43067e8a1268fd5d4",
+    "title": "Health-data interoperability workflow stress local assumption register",
+    "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/health-data-interoperability-stress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2020-08-11T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:health-data-interoperability-stress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+    },
+    "publishedAt": "2020-08-11T00:00:00Z",
+    "publisher": "Office of the National Coordinator for Health Information Technology",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "2bcb9fd46e4cc292a506c13cb01500b16d32c13ac5ab8479b9d4a7ecf28a9003",
+    "title": "United States Core Data for Interoperability certification companion guide",
+    "uri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+  }
+]

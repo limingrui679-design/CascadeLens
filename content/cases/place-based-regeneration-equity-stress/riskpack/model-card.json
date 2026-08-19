@@ -1,0 +1,26 @@
+{
+  "algorithm": "Cycle-safe deterministic dependency propagation with evidence-gated lower, central, and upper graph bounds.",
+  "evidencePolicy": "MODEL_INFERRED edges are excluded from lower and central estimates and enter only the upper missing-graph envelope.",
+  "intendedUse": [
+    "Transparent stress-topology exploration",
+    "Software and evidence-governance verification",
+    "Comparing explicitly parameterized intervention bundles"
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No named neighborhood, parcel, household, funding decision, spatial estimate, or displacement outcome is represented.",
+    "No comparable separated real-world outcome was available."
+  ],
+  "modelId": "dependency_cascade",
+  "outOfScope": [
+    "Forecasting realized losses",
+    "Causal inference",
+    "Autonomous operational decisions",
+    "Investment, legal, sanctions-compliance, clinical, or emergency-response advice"
+  ],
+  "schemaVersion": "cascadelens-model-card/1.0.0",
+  "validationStatus": "software_verified_empirically_unvalidated",
+  "version": "0.2.0"
+}

@@ -1,0 +1,116 @@
+{
+  "classification": "synthetic_stress",
+  "constraints": {
+    "budget": 18,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 21
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:health-data-interoperability-stress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 7,
+      "costUnit": "normalized_cost",
+      "effect": 0.34,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:health-data-interoperability-stress:validate-mapping",
+      "label": "Validate terminology mappings",
+      "leadTimeDays": 7,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:health-data-interoperability-stress:terminology"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 10,
+      "costUnit": "normalized_cost",
+      "effect": 0.42,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:health-data-interoperability-stress:source-redundancy",
+      "label": "Add source-system redundancy",
+      "leadTimeDays": 21,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:health-data-interoperability-stress:link-1"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.38,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:health-data-interoperability-stress:accountable-review",
+      "label": "Route uncertain records to accountable review",
+      "leadTimeDays": 3,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:health-data-interoperability-stress:link-4"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No patient data, clinical workflow observation, certified product, or measured care outcome is represented."
+  ],
+  "objectives": [
+    {
+      "id": "objective:health-data-interoperability-stress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:health-data-interoperability-stress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      3,
+      14,
+      45
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "health-data-interoperability-stress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:health-data-interoperability-stress:primary",
+      "label": "Interoperable coded-record availability reduction",
+      "magnitude": 0.45,
+      "operation": "reduce_supply",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:health-data-interoperability-stress:records"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A synthetic information-flow stress linking record completeness, terminology mapping, provenance review, decision support, and population reporting.",
+  "title": "Health-data interoperability workflow stress"
+}

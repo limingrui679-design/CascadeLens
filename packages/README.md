@@ -8,7 +8,7 @@ These TypeScript packages now form the hosted browser and release-compatibility 
 |---|---|---|
 | [`core`](core/src/) | Browser-compatible WorldGraph contracts and deterministic analysis parity | Node.js standard library plus the audited YAML parser |
 | [`connectors`](connectors/src/) | Source catalog, bounded acquisition, CSV/ZIP normalization, stable IDs, resumable checkpoints, manifests, and conservative WorldGraph mapping | `core` |
-| [`cases`](cases/src/) | Twelve deterministic, structurally diverse case specifications and their build orchestration | `core` |
+| [`cases`](cases/src/) | Sixteen deterministic case specifications, decision profiles, capability taxonomy, and build orchestration | `core` |
 | [`cli`](cli/src/) | Reviewed website case/connector build and release-maintainer commands | `core`, `connectors`, `cases`, release scripts |
 | [`sdk`](sdk/src/) | Typed compatibility exports for the hosted TypeScript surface | `core`, `connectors`, `cases` |
 

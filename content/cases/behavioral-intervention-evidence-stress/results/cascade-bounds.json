@@ -1,0 +1,993 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 180,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.07249999999999997,
+        "endImpact": 0,
+        "impact": 0.07249999999999997,
+        "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:response",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 180,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "behavioral-intervention-evidence-stress",
+    "simulatedDays": 180,
+    "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+    "totalWeightedImpact": 0.01469594594594594,
+    "totalWeightedPeakEnvelope": 0.0912162162162162,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.0912162162162162,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.09121621621621623,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 14,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.0912162162162162,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.09121621621621623,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.29560394872027057,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19743344999999995,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-3",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:assignment"
+              },
+              {
+                "contribution": 0.17186543999999992,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-4",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:response"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3353669032450318,
+            "impact": 0.3353669032450318,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3353669032450318
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3210299999999999,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-1",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3210299999999999,
+            "impact": 0.32103,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3210299999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29519999999999996,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-2",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.2951999999999999,
+            "impact": 0.2951999999999999,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2951999999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.1045003270511519,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-5",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:implementation"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.10450032705115186,
+            "impact": 0.10450032705115185,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10450032705115186
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.29560394872027057,
+        "totalWeightedPeakEnvelope": 0.29560394872027057,
+        "warnings": [
+          "Incoming depends_on shares for node:behavioral-intervention-evidence-stress:implementation exceed one by 0.460000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 60,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.2174999999999999,
+            "endImpact": 0,
+            "impact": 0.2174999999999999,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 60,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.04408783783783781,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 60,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 60,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.2174999999999999,
+            "endImpact": 0,
+            "impact": 0.2174999999999999,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 60,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.04408783783783781,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 60,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.2174999999999999,
+            "endImpact": 0,
+            "impact": 0.2174999999999999,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19743344999999995,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-3",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:assignment"
+              },
+              {
+                "contribution": 0.17186543999999992,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-4",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:response"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.1620940032350987,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3353669032450318
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3210299999999999,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-1",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.1551645000000001,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3210299999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29519999999999996,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-2",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.14267999999999986,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2951999999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.1045003270511519,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-5",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:implementation"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.0505084914080567,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10450032705115186
+          }
+        ],
+        "iterations": 60,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 60,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.14287524188146408,
+        "totalWeightedPeakEnvelope": 0.29560394872027057,
+        "warnings": [
+          "Incoming depends_on shares for node:behavioral-intervention-evidence-stress:implementation exceed one by 0.460000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.07249999999999997,
+            "endImpact": 0,
+            "impact": 0.07249999999999997,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.01469594594594594,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 180,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.07249999999999997,
+            "endImpact": 0,
+            "impact": 0.07249999999999997,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.01469594594594594,
+        "totalWeightedPeakEnvelope": 0.0912162162162162,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.07249999999999997,
+            "endImpact": 0,
+            "impact": 0.07249999999999997,
+            "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.19743344999999995,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-3",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:assignment"
+              },
+              {
+                "contribution": 0.17186543999999992,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-4",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:response"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.05403133441169957,
+            "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3353669032450318
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.3210299999999999,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-1",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.05172150000000003,
+            "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3210299999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.29519999999999996,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-2",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.04755999999999995,
+            "nodeId": "node:behavioral-intervention-evidence-stress:response",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2951999999999999
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.1045003270511519,
+                "edgeId": "edge:behavioral-intervention-evidence-stress:link-5",
+                "fromNodeId": "node:behavioral-intervention-evidence-stress:implementation"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.01683616380268557,
+            "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10450032705115186
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "behavioral-intervention-evidence-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+        "totalWeightedImpact": 0.0476250806271547,
+        "totalWeightedPeakEnvelope": 0.29560394872027057,
+        "warnings": [
+          "Incoming depends_on shares for node:behavioral-intervention-evidence-stress:implementation exceed one by 0.460000."
+        ]
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 180,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.07249999999999997,
+        "endImpact": 0,
+        "impact": 0.07249999999999997,
+        "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:behavioral-intervention-evidence-stress:response",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 180,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "behavioral-intervention-evidence-stress",
+    "simulatedDays": 180,
+    "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+    "totalWeightedImpact": 0.01469594594594594,
+    "totalWeightedPeakEnvelope": 0.0912162162162162,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 180,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.07249999999999997,
+        "endImpact": 0,
+        "impact": 0.07249999999999997,
+        "nodeId": "node:behavioral-intervention-evidence-stress:measurement",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.19743344999999995,
+            "edgeId": "edge:behavioral-intervention-evidence-stress:link-3",
+            "fromNodeId": "node:behavioral-intervention-evidence-stress:assignment"
+          },
+          {
+            "contribution": 0.17186543999999992,
+            "edgeId": "edge:behavioral-intervention-evidence-stress:link-4",
+            "fromNodeId": "node:behavioral-intervention-evidence-stress:response"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.05403133441169957,
+        "nodeId": "node:behavioral-intervention-evidence-stress:implementation",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.3353669032450318
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.3210299999999999,
+            "edgeId": "edge:behavioral-intervention-evidence-stress:link-1",
+            "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.05172150000000003,
+        "nodeId": "node:behavioral-intervention-evidence-stress:assignment",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.3210299999999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.29519999999999996,
+            "edgeId": "edge:behavioral-intervention-evidence-stress:link-2",
+            "fromNodeId": "node:behavioral-intervention-evidence-stress:measurement"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.04755999999999995,
+        "nodeId": "node:behavioral-intervention-evidence-stress:response",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.2951999999999999
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.1045003270511519,
+            "edgeId": "edge:behavioral-intervention-evidence-stress:link-5",
+            "fromNodeId": "node:behavioral-intervention-evidence-stress:implementation"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.01683616380268557,
+        "nodeId": "node:behavioral-intervention-evidence-stress:participant-outcome",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.10450032705115186
+      }
+    ],
+    "iterations": 180,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "behavioral-intervention-evidence-stress",
+    "simulatedDays": 180,
+    "snapshotDigest": "c5b9f8112ee24221a49efb4f6b4c40e019536148816b328e4329273e37b06acb",
+    "totalWeightedImpact": 0.0476250806271547,
+    "totalWeightedPeakEnvelope": 0.29560394872027057,
+    "warnings": [
+      "Incoming depends_on shares for node:behavioral-intervention-evidence-stress:implementation exceed one by 0.460000."
+    ]
+  }
+}

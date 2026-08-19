@@ -1,0 +1,116 @@
+{
+  "classification": "synthetic_stress",
+  "constraints": {
+    "budget": 20,
+    "budgetUnit": "normalized_cost",
+    "maxInterventions": 2,
+    "maxLeadTimeDays": 60
+  },
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "graphSnapshotId": "snapshot:behavioral-intervention-evidence-stress:assumed-topology",
+  "interventions": [
+    {
+      "cost": 8,
+      "costUnit": "normalized_cost",
+      "effect": 0.36,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:behavioral-intervention-evidence-stress:assignment-audit",
+      "label": "Preregister and audit assignment",
+      "leadTimeDays": 14,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [],
+      "targetNodeIds": [
+        "node:behavioral-intervention-evidence-stress:assignment"
+      ],
+      "type": "buffer"
+    },
+    {
+      "cost": 12,
+      "costUnit": "normalized_cost",
+      "effect": 0.44,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:behavioral-intervention-evidence-stress:independent-measure",
+      "label": "Add an independent outcome measure",
+      "leadTimeDays": 45,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:behavioral-intervention-evidence-stress:link-2"
+      ],
+      "targetNodeIds": [],
+      "type": "diversify"
+    },
+    {
+      "cost": 9,
+      "costUnit": "normalized_cost",
+      "effect": 0.4,
+      "evidenceGrade": "MODEL_INFERRED",
+      "id": "intervention:behavioral-intervention-evidence-stress:staged-rollout",
+      "label": "Use a staged rollout with stop rules",
+      "leadTimeDays": 21,
+      "rationale": "Illustrative intervention parameter; feasibility does not imply operational suitability.",
+      "targetEdgeIds": [
+        "edge:behavioral-intervention-evidence-stress:link-4"
+      ],
+      "targetNodeIds": [],
+      "type": "reroute"
+    }
+  ],
+  "limitations": [
+    "Scenario-only reference case; it has not been compared with separated real-world outcomes.",
+    "All graph links, weights, shock magnitudes, costs, and intervention effects are explicit model assumptions.",
+    "Outputs are not forecasts, causal estimates, realized losses, or evidence of external use.",
+    "No participant data, treatment effect, causal mechanism, heterogeneous response, or program outcome is estimated."
+  ],
+  "objectives": [
+    {
+      "id": "objective:behavioral-intervention-evidence-stress:risk",
+      "metric": "residual_impact",
+      "sense": "minimize"
+    },
+    {
+      "id": "objective:behavioral-intervention-evidence-stress:cost",
+      "metric": "cost",
+      "sense": "minimize"
+    }
+  ],
+  "propagation": {
+    "bounds": [
+      "lower",
+      "central",
+      "upper"
+    ],
+    "engine": "dependency_cascade",
+    "horizonsDays": [
+      14,
+      60,
+      180
+    ],
+    "maxIterations": 100,
+    "tolerance": 1e-9,
+    "transmission": 0.82
+  },
+  "scenarioId": "behavioral-intervention-evidence-stress",
+  "schemaVersion": "0.1.0",
+  "shocks": [
+    {
+      "endsAt": "2026-09-30T00:00:00Z",
+      "id": "shock:behavioral-intervention-evidence-stress:primary",
+      "label": "Measurement reliability reduction",
+      "magnitude": 0.55,
+      "operation": "multiply_capacity",
+      "rationale": "Forward-dated stress inspired by the context reference; timing and magnitude are explicit scenario parameters.",
+      "sourceIds": [
+        "source:behavioral-intervention-evidence-stress:context"
+      ],
+      "startsAt": "2026-09-01T00:00:00Z",
+      "target": {
+        "ids": [
+          "node:behavioral-intervention-evidence-stress:measurement"
+        ]
+      },
+      "unit": "share"
+    }
+  ],
+  "summary": "A synthetic evaluation-workflow stress separating measurement quality, assignment integrity, response signals, implementation, and participant outcomes.",
+  "title": "Behavioral-intervention evidence stress"
+}

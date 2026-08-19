@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:behavioral-intervention-evidence-stress:assumptions"
+        ]
+      },
+      "from": "node:behavioral-intervention-evidence-stress:measurement",
+      "id": "edge:behavioral-intervention-evidence-stress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:behavioral-intervention-evidence-stress:participant-outcome",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.02,
+        "unit": "share",
+        "upper": 0.38,
+        "value": 0.22
+      }
+    },
+    "id": "candidate:behavioral-intervention-evidence-stress:direct-link",
+    "label": "Verify a possible direct dependency from Outcome measurement reliability to Participant outcome evidence",
+    "probabilityPresent": 0.35
+  }
+]

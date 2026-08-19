@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.069402 / 0.069402 / 0.179967
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Regional infrastructure coordinator
+- Stakeholders: port operators; workers; manufacturers; nearby communities; cargo owners
+- Capabilities exercised: system-mapping; spatial-policy; public-interest-ethics; constrained-optimization; stakeholder-communication; resilience-operations
+- Methods: place-based dependency mapping; access-loss scenario; budget-constrained option comparison
+
+### User tasks
+
+- compare alternate gateways and inland buffers
+- name affected groups outside the supply chain
+- separate engineering facts from scenario assumptions
+
+### Trade-offs and guardrail
+
+- regional continuity versus burden shifting
+- speed of rerouting versus local capacity
+
+> This is not an engineering reconstruction or an estimate of the incident's realized losses.
+
 ## Rebuild and verify
 
 ```bash

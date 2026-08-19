@@ -1,0 +1,88 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2020-08-11T00:00:00Z",
+    "publisher": "Office of the National Coordinator for Health Information Technology",
+    "title": "United States Core Data for Interoperability certification companion guide",
+    "uri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+  },
+  "decisionProfile": {
+    "capabilities": [
+      "health-informatics",
+      "data-systems",
+      "evidence-governance",
+      "public-interest-ethics",
+      "stakeholder-communication",
+      "reproducible-computation"
+    ],
+    "decisionOwner": "Health-information governance lead",
+    "guardrail": "The case contains no patient data and makes no claim about clinical performance, certification, or deployment.",
+    "methods": [
+      "terminology-workflow mapping",
+      "branch-and-merge failure analysis",
+      "manual-review safeguard comparison"
+    ],
+    "stakeholders": [
+      "patients",
+      "clinicians",
+      "health IT teams",
+      "care organizations",
+      "public-health analysts"
+    ],
+    "tradeoffs": [
+      "exchange completeness versus safety review",
+      "automation speed versus human accountability"
+    ],
+    "userTasks": [
+      "compare mapping validation, source redundancy, and manual review",
+      "trace how missing semantics reach a downstream decision",
+      "separate interoperability standards from local implementation evidence"
+    ]
+  },
+  "decisionQuestion": "Which validation and accountable-review bundle best preserves safe information flow when coded-data availability degrades?",
+  "domain": "Health information systems",
+  "edgeCount": 5,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build health-data-interoperability-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:health-data-interoperability-stress:source-redundancy",
+    "intervention:health-data-interoperability-stress:validate-mapping"
+  ],
+  "riskPackPath": "cases/health-data-interoperability-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Health interoperability",
+  "slug": "health-data-interoperability-stress",
+  "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 18,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 21
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      3,
+      14,
+      45
+    ],
+    "topology": "branch_merge"
+  },
+  "summary": "A synthetic information-flow stress linking record completeness, terminology mapping, provenance review, decision support, and population reporting.",
+  "tags": [
+    "health-informatics",
+    "interoperability",
+    "terminology",
+    "workflow"
+  ],
+  "title": "Health-data interoperability workflow stress",
+  "totalWeightedImpact": {
+    "central": 0.05649350649350648,
+    "lower": 0.05649350649350648,
+    "upper": 0.2004397383573752
+  }
+}

@@ -90,7 +90,11 @@ An effect reduces the relevant node or edge contribution multiplicatively. The P
 
 Historical scoring requires a predeclared metric, horizon, complete result window, post-window availability, and an outcome-only source partition. When eligible outcomes exist, the implementation reports sample size, mean absolute error, rank correlation, interval coverage and width, direction accuracy, calibration error, and regret against a zero-impact baseline.
 
-The 12 published launch cases have no separated outcome set and therefore return `scenario_only`.
+The 16 published reference cases have no separated outcome set and therefore return `scenario_only`.
+
+## Parameter sensitivity surface
+
+The Workbench recomputes a deterministic 5 × 5 grid over normalized primary-shock severity and propagation transmission. Operation-specific magnitudes are mapped to a common severity scale: capacity multipliers use one minus remaining capacity, demand increases use the engine's bounded demand-pressure transform, and already proportional operations use their bounded magnitude. Because `disable` is binary, sensitivity cells represent a disclosed partial-capacity proxy; the reviewed base run remains a binary disable. Every cell is a complete upper missing-graph-bound run at the displayed parameter pair. The surface is a robustness diagnostic: grid levels are not probabilities, the result is not a posterior distribution, and variation across cells is not statistical uncertainty.
 
 ## Baseline relationships
 
@@ -106,7 +110,7 @@ Published comparisons are methodological context, not evidence that CascadeLens 
 
 ## Python–browser parity
 
-The Python package is the canonical local-analysis entry point. Automated parity tests execute all 12 published graphs and ShockScripts and compare lower, central, upper, and intervention outputs with the reviewed browser artifacts to numerical tolerance. This establishes implementation agreement on those fixtures, not method correctness in a real domain.
+The Python package is the canonical local-analysis entry point. Automated parity tests execute all 16 published graphs and ShockScripts and compare lower, central, upper, and intervention outputs with the reviewed browser artifacts to numerical tolerance. This establishes implementation agreement on those fixtures, not method correctness in a real domain.
 
 ## Failure conditions
 
@@ -128,4 +132,3 @@ Analysis blocks or weakens its status when any of the following occurs:
 RiskPack verification checks paths, file sets, checksums, contracts, the snapshot digest, and deterministic recomputation of bounds, interventions, and benchmark status. It does not prove data publisher identity, causal structure, empirical accuracy, independent review, adoption, or realized impact.
 
 See [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md) for the evidence required to strengthen those claims.
-

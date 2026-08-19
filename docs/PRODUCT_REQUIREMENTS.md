@@ -1,8 +1,8 @@
 # CascadeLens product requirements
 
 Status: normative
-Version: 0.2
-Last updated: 2026-08-13
+Version: 0.6
+Last updated: 2026-08-20
 
 CascadeLens is an evidence-graded, bitemporal world graph and executable shock-analysis platform for global supply-chain, financial, and critical-goods resilience. It must remain useful without proprietary data and must never present inferred relationships or simulated outcomes as observed facts.
 
@@ -93,9 +93,11 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 
 ### R9 — Historical and stress library
 
-- Twelve domain-diverse launch cases.
+- Sixteen domain-diverse reference cases spanning operations, public-interest decisions, health information systems, behavioral evaluation, place-based policy, and fiduciary risk.
 - Every case declares `historical_replay`, `quasi_historical`, or `synthetic_stress`.
 - Every historical replay uses official or methodologically documented public data.
+- Every case declares a decision owner, affected stakeholders, capabilities, methods, user tasks, trade-offs, and a hard claim guardrail.
+- A generated machine-readable capability matrix and Workbench bundle must match the source specifications exactly.
 - No school, admissions program, or application-specific labels in the public repository.
 
 ### R10 — Web product
@@ -105,6 +107,7 @@ CascadeLens is an evidence-graded, bitemporal world graph and executable shock-a
 - Product-specific first viewport; no generic dashboard placeholder.
 - Clear observed/inferred/scenario visual semantics.
 - Shareable scenario state and downloadable RiskPack.
+- Recomputed 5 × 5 normalized-severity–transmission sensitivity surface and evidence-bounded decision-brief export; binary disables must disclose their partial-capacity sensitivity proxy.
 
 ### R11 — Developer product
 

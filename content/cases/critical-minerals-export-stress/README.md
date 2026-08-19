@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.032894 / 0.032894 / 0.101155
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Strategic technology policy analyst
+- Stakeholders: material processors; manufacturers; infrastructure operators; public agencies
+- Capabilities exercised: system-mapping; evidence-governance; constrained-optimization; public-interest-ethics; stakeholder-communication; resilience-operations
+- Methods: policy-restriction scenario; concentration stress; value-of-information ranking
+
+### User tasks
+
+- compare diversification with additional evidence
+- identify the assumed bottleneck
+- explain why context does not prove topology
+
+### Trade-offs and guardrail
+
+- strategic reserve cost versus exposure
+- rapid substitution versus qualification risk
+
+> The synthetic topology names no mineral, country, firm, or current export-control measure.
+
 ## Rebuild and verify
 
 ```bash

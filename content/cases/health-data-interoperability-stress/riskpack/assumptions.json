@@ -1,0 +1,114 @@
+{
+  "assumptions": [
+    {
+      "id": "assumption:health-data-interoperability-stress:transmission",
+      "lower": 0,
+      "parameterPath": "scenario.propagation.transmission",
+      "rationale": "A transparent stress parameter selected for sensitivity analysis, not fitted to outcomes.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Propagation transmits a fixed share of upstream impact per iteration.",
+      "status": "model_assumption",
+      "targetId": "health-data-interoperability-stress",
+      "unit": "share",
+      "upper": 1,
+      "value": 0.82
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:graph-link-1",
+      "lower": 0.54,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Interoperable coded records to Terminology mapping workflow.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-1",
+      "unit": "share",
+      "upper": 0.9,
+      "value": 0.74
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:graph-link-2",
+      "lower": 0.48,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Interoperable coded records to Identity and provenance review.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-2",
+      "unit": "share",
+      "upper": 0.84,
+      "value": 0.68
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:graph-link-3",
+      "lower": 0.4,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Terminology mapping workflow to Decision-support queue.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-3",
+      "unit": "share",
+      "upper": 0.76,
+      "value": 0.6
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:graph-link-4",
+      "lower": 0.37,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Identity and provenance review to Decision-support queue.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-4",
+      "unit": "share",
+      "upper": 0.73,
+      "value": 0.57
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:graph-link-5",
+      "lower": 0.04,
+      "parameterPath": "graph.edges[].weight",
+      "rationale": "Illustrative topology parameter used only in the upper missing-graph bound.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed dependency from Decision-support queue to Population reporting completeness.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-5",
+      "unit": "share",
+      "upper": 0.4,
+      "value": 0.24
+    },
+    {
+      "id": "assumption:health-data-interoperability-stress:candidate-link-1",
+      "lower": 0.04,
+      "parameterPath": "inputs.observation-candidates[].candidateEdge.weight",
+      "rationale": "Illustrative candidate topology parameter used only for value-of-information analysis.",
+      "sourceIds": [
+        "source:health-data-interoperability-stress:assumptions"
+      ],
+      "statement": "Assumed missing direct dependency tested by Verify a possible direct dependency from Interoperable coded records to Population reporting completeness.",
+      "status": "model_assumption",
+      "targetId": "edge:health-data-interoperability-stress:link-100",
+      "unit": "share",
+      "upper": 0.4,
+      "value": 0.24
+    }
+  ],
+  "disclaimer": "Every numeric value in this register is a scenario assumption. It is not an observed flow, calibrated forecast, causal effect, or realized loss.",
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "scenarioId": "health-data-interoperability-stress",
+  "schemaVersion": "cascadelens-assumption-register/1.0.0",
+  "status": "scenario_parameters_not_observations"
+}

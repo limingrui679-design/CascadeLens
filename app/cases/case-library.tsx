@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight, Search } from "lucide-react";
 import { useMemo, useState } from "react";
+import capabilityMatrix from "@/content/cases/capability-matrix.json";
 import { Status } from "../components/status";
 
 export interface CaseRecord {
@@ -15,23 +16,40 @@ export interface CaseRecord {
   scoringStatus: string;
   totalWeightedImpact: { lower: number; central: number; upper: number };
   recommendationStatus: string;
+  decisionProfile: {
+    decisionOwner: string;
+    stakeholders: string[];
+    capabilities: string[];
+    methods: string[];
+  };
 }
 
 export function CaseLibrary({ cases }: { cases: CaseRecord[] }) {
   const [query, setQuery] = useState("");
   const [classification, setClassification] = useState("all");
+  const [capability, setCapability] = useState("all");
   const visible = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return cases.filter(
       (item) =>
         (classification === "all" || item.classification === classification) &&
+        (capability === "all" || item.decisionProfile.capabilities.includes(capability)) &&
         (!normalized ||
-          [item.title, item.domain, item.summary, ...item.tags]
+          [
+            item.title,
+            item.domain,
+            item.summary,
+            item.decisionProfile.decisionOwner,
+            ...item.tags,
+            ...item.decisionProfile.capabilities,
+            ...item.decisionProfile.methods,
+            ...item.decisionProfile.stakeholders,
+          ]
             .join(" ")
             .toLowerCase()
             .includes(normalized)),
     );
-  }, [cases, classification, query]);
+  }, [capability, cases, classification, query]);
 
   return (
     <>
@@ -54,6 +72,15 @@ export function CaseLibrary({ cases }: { cases: CaseRecord[] }) {
             <option value="synthetic_stress">Synthetic stress</option>
           </select>
         </label>
+        <label className="select-field">
+          <span>Capability</span>
+          <select value={capability} onChange={(event) => setCapability(event.target.value)}>
+            <option value="all">All capabilities</option>
+            {capabilityMatrix.capabilities.map((item) => (
+              <option key={item.id} value={item.id}>{item.label}</option>
+            ))}
+          </select>
+        </label>
         <p aria-live="polite" className="result-count">{visible.length} of {cases.length}</p>
       </div>
       <div className="case-grid">
@@ -73,6 +100,11 @@ export function CaseLibrary({ cases }: { cases: CaseRecord[] }) {
             </div>
             <div className="tag-row">
               {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
+            </div>
+            <div className="capability-row" aria-label="Primary capability tasks">
+              {item.decisionProfile.capabilities.slice(0, 3).map((itemCapability) => (
+                <span key={itemCapability}>{itemCapability.replaceAll("-", " ")}</span>
+              ))}
             </div>
             <Link className="text-link" href={`/cases/${item.slug}`}>
               Inspect evidence trail <ArrowRight size={15} aria-hidden="true" />

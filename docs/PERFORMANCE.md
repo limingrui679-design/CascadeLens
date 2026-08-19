@@ -4,7 +4,7 @@ CascadeLens treats performance claims as bounded release gates, not universal sc
 
 ## Measured profiles
 
-- **Bundled local profile:** the twelve five-node reference cases and their complete analysis/RiskPack pipeline.
+- **Bundled local profile:** the sixteen five-node reference cases, 25-run Workbench sensitivity surface, and complete analysis/RiskPack pipeline.
 - **Research smoke profile:** a deterministic synthetic chain with 20,000 nodes, 19,999 edges, three evidence bounds, and 7/30-day outputs. It checks algorithmic behavior on a materially larger graph; it is not a real research dataset and does not imply support for every 20,000-node topology.
 - **Research/distributed data profiles:** connector partition plans and manifests describe download-on-run or user-managed storage. The repository does not claim that the browser or local in-memory engine loads hundreds of millions of facts.
 

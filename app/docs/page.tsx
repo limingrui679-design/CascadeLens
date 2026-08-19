@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Install CascadeLens, analyze a dependency graph, and verify a RiskPack with Python.",
 };
 
-const install = `pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
+const install = `pip install "cascadelens @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"
 cascadelens demo --out demo-riskpack`;
 
 const ownGraph = `cascadelens run \\
@@ -92,14 +92,14 @@ export default function DocsPage() {
             <pre><code>{pythonApi}</code></pre>
             <p>
               NetworkX adapters are available through <code>cascadelens[networkx]</code>.
-              The public Python engine is parity-tested against all 12 published reference cases.
+              The public Python engine is parity-tested against all 16 published reference cases.
             </p>
           </section>
 
           <section id="notebook">
             <Eyebrow>Jupyter</Eyebrow>
             <h2>Inspect each step interactively</h2>
-            <pre><code>{`pip install "cascadelens[notebook] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.5.1"
+            <pre><code>{`pip install "cascadelens[notebook] @ git+https://github.com/limingrui679-design/CascadeLens.git@v0.6.0"
 jupyter lab examples/notebooks/bring_your_own_graph.ipynb`}</code></pre>
             <p>
               The notebook keeps graph import, shock definition, uncertainty bounds,
@@ -125,7 +125,7 @@ jupyter lab examples/notebooks/bring_your_own_graph.ipynb`}</code></pre>
 
           <section id="hosted">
             <Eyebrow>Browser compatibility layer</Eyebrow>
-            <h2>Run all 12 cases without installation</h2>
+            <h2>Run all 16 cases without installation</h2>
             <p>
               The hosted TypeScript workbench mirrors the reference engine for local,
               browser-only exploration. Uploads stay in the browser and are not sent to a server.

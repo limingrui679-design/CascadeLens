@@ -26,7 +26,7 @@ const routes = [
   ["/", "Trace how disruption becomes systemic risk"],
   ["/workbench", "Change an assumption"],
   ["/worldgraph", "Every edge answers"],
-  ["/cases", "Twelve complete pipelines"],
+  ["/cases", "Sixteen complete pipelines"],
   ["/cases/suez-route-restress", "Suez route closure re-stress"],
   ["/benchmark", "tomorrow never leaks into yesterday"],
   ["/data", "Data access is a contract"],
@@ -70,15 +70,28 @@ test("data route distinguishes executed public snapshots from dependency evidenc
   assert.match(html, /upper-bound-only/i);
 });
 
-test("case downloads point to twelve present archives", async () => {
+test("case downloads point to sixteen present archives", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("../public/riskpacks/catalog.json", import.meta.url), "utf8"),
   );
-  assert.equal(catalog.archives.length, 12);
+  assert.equal(catalog.archives.length, 16);
   for (const archive of catalog.archives) {
     await access(new URL(`../public/riskpacks/${archive.file}`, import.meta.url));
     const html = await render(`/cases/${archive.slug}`).then((response) => response.text());
     assert.match(html, new RegExp(`/riskpacks/${archive.file.replace(".", "\\.")}`));
+  }
+});
+
+test("shareable case routes publish record-specific metadata without a generic image", async () => {
+  for (const slug of ["suez-route-restress", "health-data-interoperability-stress"]) {
+    const catalog = JSON.parse(
+      await readFile(new URL("../content/cases/catalog.json", import.meta.url), "utf8"),
+    );
+    const record = catalog.cases.find((item) => item.slug === slug);
+    const html = await render(`/cases/${slug}`).then((response) => response.text());
+    assert.match(html, new RegExp(`<meta property="og:title" content="${record.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
+    assert.match(html, new RegExp(`<meta name="twitter:title" content="${record.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
+    assert.doesNotMatch(html, /social-card\.jpg/);
   }
 });
 

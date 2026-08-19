@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.056039 / 0.056039 / 0.131712
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Financial-compliance operations lead
+- Stakeholders: compliance reviewers; payment teams; suppliers; customers; legal counsel
+- Capabilities exercised: data-systems; evidence-governance; financial-risk; constrained-optimization; stakeholder-communication; public-interest-ethics
+- Methods: fail-closed policy stress; queue dependency mapping; manual-review option comparison
+
+### User tasks
+
+- preserve the compliance gate while comparing continuity options
+- separate list data from a legal conclusion
+- document escalation and review ownership
+
+### Trade-offs and guardrail
+
+- transaction continuity versus compliance safety
+- automation speed versus accountable review
+
+> The case performs no sanctions screening and makes no legal or eligibility determination.
+
 ## Rebuild and verify
 
 ```bash

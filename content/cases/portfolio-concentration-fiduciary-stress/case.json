@@ -1,0 +1,87 @@
+{
+  "classification": "synthetic_stress",
+  "context": {
+    "availableAt": "2019-02-01T00:00:00Z",
+    "publisher": "U.S. Securities and Exchange Commission, Investor.gov",
+    "title": "Beginner's guide to asset allocation, diversification, and rebalancing",
+    "uri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+  },
+  "decisionProfile": {
+    "capabilities": [
+      "financial-risk",
+      "uncertainty-bounds",
+      "constrained-optimization",
+      "sensitivity-analysis",
+      "evidence-governance",
+      "stakeholder-communication"
+    ],
+    "decisionOwner": "Portfolio risk committee",
+    "guardrail": "The case contains no real portfolio, security recommendation, return forecast, or evidence of fiduciary suitability.",
+    "methods": [
+      "concentration-shock mapping",
+      "liquidity and mandate constraints",
+      "rebalancing frontier"
+    ],
+    "stakeholders": [
+      "beneficiaries",
+      "portfolio managers",
+      "risk teams",
+      "compliance officers",
+      "oversight committees"
+    ],
+    "tradeoffs": [
+      "concentration risk versus mandate tracking",
+      "liquidity protection versus opportunity cost"
+    ],
+    "userTasks": [
+      "compare rebalancing, liquidity buffer, and exposure review",
+      "test sensitivity to stress transmission",
+      "state the fiduciary and evidence limits of the output"
+    ]
+  },
+  "decisionQuestion": "Which rebalancing and liquidity safeguard remains feasible when a concentrated exposure is stressed under mandate constraints?",
+  "domain": "Portfolio and fiduciary risk",
+  "edgeCount": 4,
+  "evidenceBoundary": "Context-only public reference; all topology and numeric parameters are explicit model assumptions.",
+  "nodeCount": 5,
+  "observabilityStatus": "not_cost_effective",
+  "rebuildCommand": "npm run cascadelens -- cases build portfolio-concentration-fiduciary-stress",
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+  ],
+  "riskPackPath": "cases/portfolio-concentration-fiduciary-stress/riskpack/",
+  "scoringStatus": "scenario_only",
+  "shortTitle": "Portfolio concentration",
+  "slug": "portfolio-concentration-fiduciary-stress",
+  "snapshotDigest": "aaf910ca0bf40b88ed29a2d4a7ba14cf7b757c85caea0c1f5ff1faf9c453db55",
+  "structuralProfile": {
+    "constraintProfile": {
+      "budget": 16,
+      "budgetUnit": "normalized_cost",
+      "maxInterventions": 2,
+      "maxLeadTimeDays": 30
+    },
+    "dynamicEdgeCount": 0,
+    "hasCycle": false,
+    "horizonsDays": [
+      5,
+      21,
+      63
+    ],
+    "topology": "chain"
+  },
+  "summary": "A synthetic portfolio stress linking concentrated exposure, liquidity needs, mandate constraints, and beneficiary objectives without using holdings or returns.",
+  "tags": [
+    "portfolio",
+    "concentration",
+    "liquidity",
+    "fiduciary"
+  ],
+  "title": "Portfolio concentration and fiduciary stress",
+  "totalWeightedImpact": {
+    "central": 0.04807112718505126,
+    "lower": 0.04807112718505126,
+    "upper": 0.13534587279791288
+  }
+}

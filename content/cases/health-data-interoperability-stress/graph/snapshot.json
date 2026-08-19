@@ -1,0 +1,291 @@
+{
+  "contentDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+  "decisionCutoff": "2026-08-12T00:00:00Z",
+  "edges": [
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "from": "node:health-data-interoperability-stress:records",
+      "id": "edge:health-data-interoperability-stress:link-1",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:health-data-interoperability-stress:terminology",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.54,
+        "unit": "share",
+        "upper": 0.9,
+        "value": 0.74
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "from": "node:health-data-interoperability-stress:records",
+      "id": "edge:health-data-interoperability-stress:link-2",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:health-data-interoperability-stress:provenance",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.48,
+        "unit": "share",
+        "upper": 0.84,
+        "value": 0.68
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "from": "node:health-data-interoperability-stress:terminology",
+      "id": "edge:health-data-interoperability-stress:link-3",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:health-data-interoperability-stress:decision-support",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.4,
+        "unit": "share",
+        "upper": 0.76,
+        "value": 0.6
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "from": "node:health-data-interoperability-stress:provenance",
+      "id": "edge:health-data-interoperability-stress:link-4",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:health-data-interoperability-stress:decision-support",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.37,
+        "unit": "share",
+        "upper": 0.73,
+        "value": 0.57
+      }
+    },
+    {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "from": "node:health-data-interoperability-stress:decision-support",
+      "id": "edge:health-data-interoperability-stress:link-5",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:health-data-interoperability-stress:population-reporting",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0.04,
+        "unit": "share",
+        "upper": 0.4,
+        "value": 0.24
+      }
+    }
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "nodes": [
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "id": "node:health-data-interoperability-stress:decision-support",
+      "kind": "facility",
+      "label": "Decision-support queue",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.7,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "id": "node:health-data-interoperability-stress:population-reporting",
+      "kind": "metric",
+      "label": "Population reporting completeness",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.6,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "id": "node:health-data-interoperability-stress:provenance",
+      "kind": "industry",
+      "label": "Identity and provenance review",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.4,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "id": "node:health-data-interoperability-stress:records",
+      "kind": "metric",
+      "label": "Interoperable coded records",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    },
+    {
+      "description": "Illustrative node in an explicitly assumed stress topology.",
+      "evidence": {
+        "confidence": 0.35,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:health-data-interoperability-stress:assumptions"
+        ]
+      },
+      "id": "node:health-data-interoperability-stress:terminology",
+      "kind": "industry",
+      "label": "Terminology mapping workflow",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "bufferShare": 0,
+        "criticality": 1.5,
+        "factualStatus": "model_construct"
+      },
+      "validFrom": "2026-08-12T00:00:00Z"
+    }
+  ],
+  "schemaVersion": "0.1.0",
+  "snapshotId": "snapshot:health-data-interoperability-stress:assumed-topology",
+  "sources": [
+    {
+      "artifactKind": "normalized_snapshot",
+      "availableAt": "2026-08-12T00:00:00Z",
+      "bytes": 4871,
+      "contentType": "application/json",
+      "digestScope": "exact_bytes",
+      "id": "source:health-data-interoperability-stress:assumptions",
+      "license": {
+        "mode": "redistributable",
+        "name": "Apache-2.0",
+        "notes": "Covers the locally authored assumption register, not the linked context page.",
+        "spdx": "Apache-2.0",
+        "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "publisher": "CascadeLens",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "input",
+      "sha256": "f354068a27fa464779e07a25b72fa517bfe2546514a9f1f43067e8a1268fd5d4",
+      "title": "Health-data interoperability workflow stress local assumption register",
+      "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/health-data-interoperability-stress/assumptions.json"
+    },
+    {
+      "artifactKind": "citation_record",
+      "availableAt": "2020-08-11T00:00:00Z",
+      "contentType": "application/json",
+      "digestScope": "canonical_record",
+      "id": "source:health-data-interoperability-stress:context",
+      "license": {
+        "mode": "download_on_run",
+        "name": "Linked publisher terms apply",
+        "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+        "termsUri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+      },
+      "publishedAt": "2020-08-11T00:00:00Z",
+      "publisher": "Office of the National Coordinator for Health Information Technology",
+      "retrievedAt": "2026-08-12T00:00:00Z",
+      "role": "context",
+      "sha256": "2bcb9fd46e4cc292a506c13cb01500b16d32c13ac5ab8479b9d4a7ecf28a9003",
+      "title": "United States Core Data for Interoperability certification companion guide",
+      "uri": "https://healthit.gov/test-method/united-states-core-data-for-interoperability-uscdi/"
+    }
+  ],
+  "title": "Health-data interoperability workflow stress assumed topology"
+}

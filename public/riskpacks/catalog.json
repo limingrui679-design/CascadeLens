@@ -71,6 +71,30 @@
       "file": "food-export-compound-stress.zip",
       "sha256": "b2de270499b33576585ac9ea5feec3096e5f67bf87d565d2c07f186706033887",
       "slug": "food-export-compound-stress"
+    },
+    {
+      "bytes": 15504,
+      "file": "health-data-interoperability-stress.zip",
+      "sha256": "f404f27742cd149ee057cf43a1482a073804bc46140e329b8bc02f721b30742d",
+      "slug": "health-data-interoperability-stress"
+    },
+    {
+      "bytes": 15174,
+      "file": "behavioral-intervention-evidence-stress.zip",
+      "sha256": "526ee4b48c47139d888391efe019373b032e5af95cace81fa6812a84422f0ba1",
+      "slug": "behavioral-intervention-evidence-stress"
+    },
+    {
+      "bytes": 14723,
+      "file": "place-based-regeneration-equity-stress.zip",
+      "sha256": "e362042182d4395ebf6f28e982d40ad25410b09b18bd9d1c8126780ce9e7c2a0",
+      "slug": "place-based-regeneration-equity-stress"
+    },
+    {
+      "bytes": 14965,
+      "file": "portfolio-concentration-fiduciary-stress.zip",
+      "sha256": "bf2ad193e6519cc886481b6b786ca4bc2f03d33e30ab02d8272d5fa362401a97",
+      "slug": "portfolio-concentration-fiduciary-stress"
     }
   ],
   "generatedAt": "2026-08-12T00:00:00.000Z",

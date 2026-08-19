@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 4965,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:place-based-regeneration-equity-stress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "06e610faed5f2e5116651e4a547586f8bba3b0ccd635d4880c729956029fc121",
+    "title": "Place-based regeneration and equity stress local assumption register",
+    "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/place-based-regeneration-equity-stress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2024-04-09T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:place-based-regeneration-equity-stress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+    },
+    "publishedAt": "2024-04-09T00:00:00Z",
+    "publisher": "U.S. Department of Housing and Urban Development",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "4eadd513cfe3cca9c233625eeaca1248bd621346aa3cf240bf2f124ac7b44e3d",
+    "title": "Choice Neighborhoods",
+    "uri": "https://www.hud.gov/program_offices/public_indian_housing/programs/ph/cn/grants"
+  }
+]

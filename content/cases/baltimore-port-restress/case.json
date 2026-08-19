@@ -6,6 +6,39 @@
     "title": "NTSB opens public docket on Francis Scott Key Bridge investigation",
     "uri": "https://www.ntsb.gov/news/press-releases/Pages/NR20240624.aspx"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "spatial-policy",
+      "public-interest-ethics",
+      "constrained-optimization",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Regional infrastructure coordinator",
+    "guardrail": "This is not an engineering reconstruction or an estimate of the incident's realized losses.",
+    "methods": [
+      "place-based dependency mapping",
+      "access-loss scenario",
+      "budget-constrained option comparison"
+    ],
+    "stakeholders": [
+      "port operators",
+      "workers",
+      "manufacturers",
+      "nearby communities",
+      "cargo owners"
+    ],
+    "tradeoffs": [
+      "regional continuity versus burden shifting",
+      "speed of rerouting versus local capacity"
+    ],
+    "userTasks": [
+      "compare alternate gateways and inland buffers",
+      "name affected groups outside the supply chain",
+      "separate engineering facts from scenario assumptions"
+    ]
+  },
   "decisionQuestion": "How do alternate ports and inventory buffers compare under a sudden port-access loss?",
   "domain": "Port infrastructure",
   "edgeCount": 4,

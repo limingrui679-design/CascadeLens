@@ -1,0 +1,1183 @@
+{
+  "baselineBundle": {
+    "activationSchedule": [],
+    "centralImpact": 0.04807112718505126,
+    "cost": 0,
+    "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.10443037974683544,
+        "horizonDays": 5,
+        "lowerImpact": 0.10443037974683544,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2940272409058106,
+        "worstCaseImpact": 0.2940272409058106
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.10443037974683546,
+        "horizonDays": 21,
+        "lowerImpact": 0.10443037974683546,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2940272409058107,
+        "worstCaseImpact": 0.2940272409058107
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.04807112718505126,
+        "horizonDays": 63,
+        "lowerImpact": 0.04807112718505126,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.13534587279791288,
+        "worstCaseImpact": 0.13534587279791288
+      }
+    ],
+    "interventionIds": [],
+    "lowerImpact": 0.04807112718505126,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.13534587279791288,
+    "worstCaseImpact": 0.13534587279791288
+  },
+  "evaluatedBundles": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.04807112718505126,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2940272409058106,
+          "worstCaseImpact": 0.2940272409058106
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2940272409058107,
+          "worstCaseImpact": 0.2940272409058107
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13534587279791288,
+          "worstCaseImpact": 0.13534587279791288
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13534587279791288,
+      "worstCaseImpact": 0.13534587279791288
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-17T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+          "leadTimeDays": 5
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 7,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25938865039822967,
+          "worstCaseImpact": 0.25938865039822967
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2593886503982298,
+          "worstCaseImpact": 0.2593886503982298
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11940112478648672,
+          "worstCaseImpact": 0.11940112478648672
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11940112478648672,
+      "worstCaseImpact": 0.11940112478648672
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 8,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.27477504743142017,
+          "worstCaseImpact": 0.27477504743142017
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2747750474314203,
+          "worstCaseImpact": 0.2747750474314203
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.12648375199224107,
+          "worstCaseImpact": 0.12648375199224107
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.12648375199224107,
+      "worstCaseImpact": 0.12648375199224107
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 11,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22425559599930775,
+          "worstCaseImpact": 0.22425559599930775
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21096575887425958,
+          "worstCaseImpact": 0.21096575887425958
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09658384784985569,
+          "worstCaseImpact": 0.09658384784985569
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09658384784985569,
+      "worstCaseImpact": 0.09658384784985569
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-17T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+          "leadTimeDays": 5
+        },
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 15,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2462971588356442,
+          "worstCaseImpact": 0.2462971588356442
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2462971588356442,
+          "worstCaseImpact": 0.2462971588356442
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11337488263862988,
+          "worstCaseImpact": 0.11337488263862988
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+        "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11337488263862988,
+      "worstCaseImpact": 0.11337488263862988
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-17T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+          "leadTimeDays": 5
+        }
+      ],
+      "centralImpact": null,
+      "cost": 18,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 5,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 63,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": null,
+      "cost": 19,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 5,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 63,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+        "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-17T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+          "leadTimeDays": 5
+        },
+        {
+          "activationAt": "2026-08-26T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance",
+          "leadTimeDays": 14
+        }
+      ],
+      "centralImpact": null,
+      "cost": 26,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 5,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 21,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 63,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+            "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+        "intervention:portfolio-concentration-fiduciary-stress:staged-rebalance"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 5,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04807112718505126,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058106,
+              "worstCaseImpact": 0.2940272409058106
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058107,
+              "worstCaseImpact": 0.2940272409058107
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13534587279791288,
+              "worstCaseImpact": 0.13534587279791288
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13534587279791288,
+          "worstCaseImpact": 0.13534587279791288
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-17T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+              "leadTimeDays": 5
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25938865039822967,
+              "worstCaseImpact": 0.25938865039822967
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593886503982298,
+              "worstCaseImpact": 0.2593886503982298
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11940112478648672,
+              "worstCaseImpact": 0.11940112478648672
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11940112478648672,
+          "worstCaseImpact": 0.11940112478648672
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22425559599930775,
+              "worstCaseImpact": 0.22425559599930775
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21096575887425958,
+              "worstCaseImpact": 0.21096575887425958
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09658384784985569,
+              "worstCaseImpact": 0.09658384784985569
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09658384784985569,
+          "worstCaseImpact": 0.09658384784985569
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ]
+    },
+    {
+      "horizonDays": 21,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04807112718505126,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058106,
+              "worstCaseImpact": 0.2940272409058106
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058107,
+              "worstCaseImpact": 0.2940272409058107
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13534587279791288,
+              "worstCaseImpact": 0.13534587279791288
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13534587279791288,
+          "worstCaseImpact": 0.13534587279791288
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-17T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+              "leadTimeDays": 5
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25938865039822967,
+              "worstCaseImpact": 0.25938865039822967
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593886503982298,
+              "worstCaseImpact": 0.2593886503982298
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11940112478648672,
+              "worstCaseImpact": 0.11940112478648672
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11940112478648672,
+          "worstCaseImpact": 0.11940112478648672
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22425559599930775,
+              "worstCaseImpact": 0.22425559599930775
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21096575887425958,
+              "worstCaseImpact": 0.21096575887425958
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09658384784985569,
+              "worstCaseImpact": 0.09658384784985569
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09658384784985569,
+          "worstCaseImpact": 0.09658384784985569
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ]
+    },
+    {
+      "horizonDays": 63,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.04807112718505126,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058106,
+              "worstCaseImpact": 0.2940272409058106
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2940272409058107,
+              "worstCaseImpact": 0.2940272409058107
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.13534587279791288,
+              "worstCaseImpact": 0.13534587279791288
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.13534587279791288,
+          "worstCaseImpact": 0.13534587279791288
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-17T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+              "leadTimeDays": 5
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25938865039822967,
+              "worstCaseImpact": 0.25938865039822967
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2593886503982298,
+              "worstCaseImpact": 0.2593886503982298
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.11940112478648672,
+              "worstCaseImpact": 0.11940112478648672
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.11940112478648672,
+          "worstCaseImpact": 0.11940112478648672
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.04807112718505126,
+          "cost": 11,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683544,
+              "horizonDays": 5,
+              "lowerImpact": 0.10443037974683544,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.22425559599930775,
+              "worstCaseImpact": 0.22425559599930775
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.10443037974683546,
+              "horizonDays": 21,
+              "lowerImpact": 0.10443037974683546,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.21096575887425958,
+              "worstCaseImpact": 0.21096575887425958
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+              ],
+              "centralImpact": 0.04807112718505126,
+              "horizonDays": 63,
+              "lowerImpact": 0.04807112718505126,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.09658384784985569,
+              "worstCaseImpact": 0.09658384784985569
+            }
+          ],
+          "interventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "lowerImpact": 0.04807112718505126,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.09658384784985569,
+          "worstCaseImpact": 0.09658384784985569
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.04807112718505126,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2940272409058106,
+          "worstCaseImpact": 0.2940272409058106
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2940272409058107,
+          "worstCaseImpact": 0.2940272409058107
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.13534587279791288,
+          "worstCaseImpact": 0.13534587279791288
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.13534587279791288,
+      "worstCaseImpact": 0.13534587279791288
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-17T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer",
+          "leadTimeDays": 5
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 7,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25938865039822967,
+          "worstCaseImpact": 0.25938865039822967
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2593886503982298,
+          "worstCaseImpact": 0.2593886503982298
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.11940112478648672,
+          "worstCaseImpact": 0.11940112478648672
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.11940112478648672,
+      "worstCaseImpact": 0.11940112478648672
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.04807112718505126,
+      "cost": 11,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.10443037974683544,
+          "horizonDays": 5,
+          "lowerImpact": 0.10443037974683544,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.22425559599930775,
+          "worstCaseImpact": 0.22425559599930775
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.10443037974683546,
+          "horizonDays": 21,
+          "lowerImpact": 0.10443037974683546,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.21096575887425958,
+          "worstCaseImpact": 0.21096575887425958
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+          ],
+          "centralImpact": 0.04807112718505126,
+          "horizonDays": 63,
+          "lowerImpact": 0.04807112718505126,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.09658384784985569,
+          "worstCaseImpact": 0.09658384784985569
+        }
+      ],
+      "interventionIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ],
+      "lowerImpact": 0.04807112718505126,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.09658384784985569,
+      "worstCaseImpact": 0.09658384784985569
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 439.0160317982907,
+      "toBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:liquidity-buffer"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 175.3057567346421,
+      "toBundleIds": [
+        "intervention:portfolio-concentration-fiduciary-stress:diversify-exposure"
+      ]
+    }
+  ],
+  "scenarioId": "portfolio-concentration-fiduciary-stress"
+}

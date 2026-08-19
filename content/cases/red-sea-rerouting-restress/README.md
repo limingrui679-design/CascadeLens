@@ -20,6 +20,26 @@ The public reference below is scenario context only. It does not supply the grap
 - Lower / central / upper total impact: 0.049755 / 0.049755 / 0.112780
 - Recommendation status: `evidence_required`
 
+## Decision profile
+
+- Decision owner: Global logistics risk lead
+- Stakeholders: ship operators; cargo owners; production sites; delivery recipients
+- Capabilities exercised: system-mapping; temporal-reasoning; sensitivity-analysis; stakeholder-communication; uncertainty-bounds; resilience-operations
+- Methods: dynamic edge expiry; upper-bound stress comparison; lead-time analysis
+
+### User tasks
+
+- compare routing and inventory assumptions
+- locate the effect of an expiring link
+- set a review trigger for changing course
+
+### Trade-offs and guardrail
+
+- route continuity versus longer transit
+- faster action versus uncertain intervention effect
+
+> No freight-rate, emissions, insurance, or realized delivery-time effect is claimed.
+
 ## Rebuild and verify
 
 ```bash

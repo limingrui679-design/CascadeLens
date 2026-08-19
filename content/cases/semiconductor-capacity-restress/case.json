@@ -6,6 +6,38 @@
     "title": "Results from Semiconductor Supply Chain Request for Information",
     "uri": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information"
   },
+  "decisionProfile": {
+    "capabilities": [
+      "system-mapping",
+      "constrained-optimization",
+      "data-systems",
+      "evidence-governance",
+      "stakeholder-communication",
+      "resilience-operations"
+    ],
+    "decisionOwner": "Technology manufacturing planner",
+    "guardrail": "No company, fabrication site, production volume, or realized shortage is represented.",
+    "methods": [
+      "branch-and-merge topology",
+      "bounded propagation",
+      "feasible bundle enumeration"
+    ],
+    "stakeholders": [
+      "fabrication partners",
+      "component engineers",
+      "assembly teams",
+      "customers"
+    ],
+    "tradeoffs": [
+      "inventory cost versus qualification lead time",
+      "allocation continuity versus customer coverage"
+    ],
+    "userTasks": [
+      "compare inventory, redesign, and allocation",
+      "trace where two dependency branches merge",
+      "explain why feasibility is not a recommendation"
+    ]
+  },
   "decisionQuestion": "How do inventory, supplier diversification, and allocation compare under bounded chip-capacity loss?",
   "domain": "Advanced manufacturing",
   "edgeCount": 5,

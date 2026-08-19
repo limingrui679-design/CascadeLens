@@ -1,0 +1,993 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 45,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.28999999999999987,
+        "endImpact": 0,
+        "impact": 0.28999999999999987,
+        "nodeId": "node:health-data-interoperability-stress:records",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:decision-support",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:population-reporting",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:provenance",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:terminology",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 45,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "health-data-interoperability-stress",
+    "simulatedDays": 45,
+    "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+    "totalWeightedImpact": 0.05649350649350648,
+    "totalWeightedPeakEnvelope": 0.08766233766233766,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.08766233766233766,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 3,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.44999999999999996,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.44999999999999996,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 3,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.08766233766233766,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 3,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.08766233766233766,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 3,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.44999999999999996,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.44999999999999996,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 3,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.08766233766233766,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.31102718020972014,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 3,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.44999999999999996,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.44999999999999996,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20696471999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-3",
+                "fromNodeId": "node:health-data-interoperability-stress:terminology"
+              },
+              {
+                "contribution": 0.18554205599999998,
+                "edgeId": "edge:health-data-interoperability-stress:link-4",
+                "fromNodeId": "node:health-data-interoperability-stress:provenance"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3541061163317356,
+            "impact": 0.3541061163317356,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3541061163317356
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33209999999999995,
+                "edgeId": "edge:health-data-interoperability-stress:link-1",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33209999999999995,
+            "impact": 0.33209999999999995,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33209999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.30995999999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-2",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.30996,
+            "impact": 0.30996,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.30996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11614680615680928,
+                "edgeId": "edge:health-data-interoperability-stress:link-5",
+                "fromNodeId": "node:health-data-interoperability-stress:decision-support"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11614680615680928,
+            "impact": 0.11614680615680928,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11614680615680928
+          }
+        ],
+        "iterations": 3,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 3,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.31102718020972014,
+        "totalWeightedPeakEnvelope": 0.31102718020972014,
+        "warnings": [
+          "Incoming depends_on shares for node:health-data-interoperability-stress:decision-support exceed one by 0.490000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0.08766233766233766,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.08766233766233769,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 14,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0.08766233766233766,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.08766233766233769,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0.31102718020972014,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 14,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.4500000000000001,
+            "endImpact": 0.44999999999999996,
+            "impact": 0.4500000000000001,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20696471999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-3",
+                "fromNodeId": "node:health-data-interoperability-stress:terminology"
+              },
+              {
+                "contribution": 0.18554205599999998,
+                "edgeId": "edge:health-data-interoperability-stress:link-4",
+                "fromNodeId": "node:health-data-interoperability-stress:provenance"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.3541061163317356,
+            "impact": 0.35410611633173555,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3541061163317356
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33209999999999995,
+                "edgeId": "edge:health-data-interoperability-stress:link-1",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.33209999999999995,
+            "impact": 0.3321,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33209999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.30995999999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-2",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.30996,
+            "impact": 0.3099600000000001,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.30996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11614680615680928,
+                "edgeId": "edge:health-data-interoperability-stress:link-5",
+                "fromNodeId": "node:health-data-interoperability-stress:decision-support"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0.11614680615680928,
+            "impact": 0.11614680615680932,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11614680615680928
+          }
+        ],
+        "iterations": 14,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 14,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.3110271802097202,
+        "totalWeightedPeakEnvelope": 0.31102718020972014,
+        "warnings": [
+          "Incoming depends_on shares for node:health-data-interoperability-stress:decision-support exceed one by 0.490000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 45,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.28999999999999987,
+            "endImpact": 0,
+            "impact": 0.28999999999999987,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 45,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.05649350649350648,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 45,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 45,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.28999999999999987,
+            "endImpact": 0,
+            "impact": 0.28999999999999987,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 45,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.05649350649350648,
+        "totalWeightedPeakEnvelope": 0.08766233766233766,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 45,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.28999999999999987,
+            "endImpact": 0,
+            "impact": 0.28999999999999987,
+            "nodeId": "node:health-data-interoperability-stress:records",
+            "peakDirectImpact": 0.44999999999999996,
+            "peakImpact": 0.44999999999999996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.20696471999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-3",
+                "fromNodeId": "node:health-data-interoperability-stress:terminology"
+              },
+              {
+                "contribution": 0.18554205599999998,
+                "edgeId": "edge:health-data-interoperability-stress:link-4",
+                "fromNodeId": "node:health-data-interoperability-stress:provenance"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.228201719413785,
+            "nodeId": "node:health-data-interoperability-stress:decision-support",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3541061163317356
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.33209999999999995,
+                "edgeId": "edge:health-data-interoperability-stress:link-1",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.21401999999999996,
+            "nodeId": "node:health-data-interoperability-stress:terminology",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.33209999999999995
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.30995999999999996,
+                "edgeId": "edge:health-data-interoperability-stress:link-2",
+                "fromNodeId": "node:health-data-interoperability-stress:records"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.19975200000000012,
+            "nodeId": "node:health-data-interoperability-stress:provenance",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.30996
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.11614680615680928,
+                "edgeId": "edge:health-data-interoperability-stress:link-5",
+                "fromNodeId": "node:health-data-interoperability-stress:decision-support"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.07485016396772158,
+            "nodeId": "node:health-data-interoperability-stress:population-reporting",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.11614680615680928
+          }
+        ],
+        "iterations": 45,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "health-data-interoperability-stress",
+        "simulatedDays": 45,
+        "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+        "totalWeightedImpact": 0.2004397383573752,
+        "totalWeightedPeakEnvelope": 0.31102718020972014,
+        "warnings": [
+          "Incoming depends_on shares for node:health-data-interoperability-stress:decision-support exceed one by 0.490000."
+        ]
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 45,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.28999999999999987,
+        "endImpact": 0,
+        "impact": 0.28999999999999987,
+        "nodeId": "node:health-data-interoperability-stress:records",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:decision-support",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:population-reporting",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:provenance",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:health-data-interoperability-stress:terminology",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 45,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "health-data-interoperability-stress",
+    "simulatedDays": 45,
+    "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+    "totalWeightedImpact": 0.05649350649350648,
+    "totalWeightedPeakEnvelope": 0.08766233766233766,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 45,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.28999999999999987,
+        "endImpact": 0,
+        "impact": 0.28999999999999987,
+        "nodeId": "node:health-data-interoperability-stress:records",
+        "peakDirectImpact": 0.44999999999999996,
+        "peakImpact": 0.44999999999999996
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.20696471999999996,
+            "edgeId": "edge:health-data-interoperability-stress:link-3",
+            "fromNodeId": "node:health-data-interoperability-stress:terminology"
+          },
+          {
+            "contribution": 0.18554205599999998,
+            "edgeId": "edge:health-data-interoperability-stress:link-4",
+            "fromNodeId": "node:health-data-interoperability-stress:provenance"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.228201719413785,
+        "nodeId": "node:health-data-interoperability-stress:decision-support",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.3541061163317356
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.33209999999999995,
+            "edgeId": "edge:health-data-interoperability-stress:link-1",
+            "fromNodeId": "node:health-data-interoperability-stress:records"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.21401999999999996,
+        "nodeId": "node:health-data-interoperability-stress:terminology",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.33209999999999995
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.30995999999999996,
+            "edgeId": "edge:health-data-interoperability-stress:link-2",
+            "fromNodeId": "node:health-data-interoperability-stress:records"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.19975200000000012,
+        "nodeId": "node:health-data-interoperability-stress:provenance",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.30996
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.11614680615680928,
+            "edgeId": "edge:health-data-interoperability-stress:link-5",
+            "fromNodeId": "node:health-data-interoperability-stress:decision-support"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.07485016396772158,
+        "nodeId": "node:health-data-interoperability-stress:population-reporting",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.11614680615680928
+      }
+    ],
+    "iterations": 45,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "health-data-interoperability-stress",
+    "simulatedDays": 45,
+    "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+    "totalWeightedImpact": 0.2004397383573752,
+    "totalWeightedPeakEnvelope": 0.31102718020972014,
+    "warnings": [
+      "Incoming depends_on shares for node:health-data-interoperability-stress:decision-support exceed one by 0.490000."
+    ]
+  }
+}

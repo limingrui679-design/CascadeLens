@@ -1,0 +1,30 @@
+{
+  "classification": "synthetic_stress",
+  "engineVersion": "0.2.0",
+  "files": [
+    "REBUILD.txt",
+    "assumptions.json",
+    "graph/snapshot.json",
+    "inputs/benchmark-outcomes.json",
+    "inputs/observability-config.json",
+    "inputs/observation-candidates.json",
+    "limitations.json",
+    "model-card.json",
+    "results/benchmark.json",
+    "results/cascade-bounds.json",
+    "results/interventions.json",
+    "results/observability.json",
+    "scenario.json",
+    "sources/manifest.json"
+  ],
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "packId": "riskpack:health-data-interoperability-stress:engine-v0.2.0",
+  "scenarioId": "health-data-interoperability-stress",
+  "schemaVersion": "0.1.0",
+  "snapshotDigest": "e0b1f62173dcad77e1e5f5766763a1acaa3b8fba5728e296d1268ab176a82f46",
+  "truthfulStatus": [
+    "model_inferred",
+    "scenario_only"
+  ],
+  "verificationMode": "recomputed"
+}

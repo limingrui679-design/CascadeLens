@@ -1,0 +1,35 @@
+[
+  {
+    "acquisitionCost": 3,
+    "acquisitionCostUnit": "normalized_cost",
+    "candidateEdge": {
+      "evidence": {
+        "confidence": 0.3,
+        "grade": "MODEL_INFERRED",
+        "reviewStatus": "not_required",
+        "sourceIds": [
+          "source:portfolio-concentration-fiduciary-stress:assumptions"
+        ]
+      },
+      "from": "node:portfolio-concentration-fiduciary-stress:exposure",
+      "id": "edge:portfolio-concentration-fiduciary-stress:link-100",
+      "observedAt": "2026-08-12T00:00:00Z",
+      "properties": {
+        "eligibleForPrimaryEstimate": false,
+        "factualStatus": "model_assumption"
+      },
+      "relation": "depends_on",
+      "to": "node:portfolio-concentration-fiduciary-stress:beneficiary",
+      "validFrom": "2026-08-12T00:00:00Z",
+      "weight": {
+        "lower": 0,
+        "unit": "share",
+        "upper": 0.36,
+        "value": 0.2
+      }
+    },
+    "id": "candidate:portfolio-concentration-fiduciary-stress:direct-link",
+    "label": "Verify a possible direct dependency from Concentrated risk exposure to Beneficiary objective continuity",
+    "probabilityPresent": 0.35
+  }
+]

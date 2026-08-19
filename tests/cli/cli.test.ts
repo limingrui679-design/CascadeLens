@@ -20,7 +20,7 @@ async function run(args: string[]) {
   });
 }
 
-test("lists twelve truthfully classified reference cases", async () => {
+test("lists sixteen truthfully classified reference cases", async () => {
   const packageMetadata = JSON.parse(
     await readFile(join(repositoryRoot, "package.json"), "utf8"),
   ) as { version: string };
@@ -33,8 +33,8 @@ test("lists twelve truthfully classified reference cases", async () => {
     cases: Array<{ slug: string }>;
   };
   assert.equal(result.status, "reference_cases_not_empirical_validation");
-  assert.equal(result.cases.length, 12);
-  assert.equal(new Set(result.cases.map((item) => item.slug)).size, 12);
+  assert.equal(result.cases.length, 16);
+  assert.equal(new Set(result.cases.map((item) => item.slug)).size, 16);
 });
 
 test("validates and runs a scenario against its sealed graph", async () => {

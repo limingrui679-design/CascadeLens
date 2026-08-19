@@ -1,0 +1,1663 @@
+{
+  "baselineBundle": {
+    "activationSchedule": [],
+    "centralImpact": 0.05649350649350648,
+    "cost": 0,
+    "feasible": true,
+    "horizonResults": [
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.08766233766233766,
+        "horizonDays": 3,
+        "lowerImpact": 0.08766233766233766,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.31102718020972014,
+        "worstCaseImpact": 0.31102718020972014
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.08766233766233769,
+        "horizonDays": 14,
+        "lowerImpact": 0.08766233766233769,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.3110271802097202,
+        "worstCaseImpact": 0.3110271802097202
+      },
+      {
+        "activeInterventionIds": [],
+        "centralImpact": 0.05649350649350648,
+        "horizonDays": 45,
+        "lowerImpact": 0.05649350649350648,
+        "pendingInterventionIds": [],
+        "upperImpact": 0.2004397383573752,
+        "worstCaseImpact": 0.2004397383573752
+      }
+    ],
+    "interventionIds": [],
+    "lowerImpact": 0.05649350649350648,
+    "reasons": [],
+    "strategy": "do_not_act",
+    "upperImpact": 0.2004397383573752,
+    "worstCaseImpact": 0.2004397383573752
+  },
+  "evaluatedBundles": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.05649350649350648,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.31102718020972014,
+          "worstCaseImpact": 0.31102718020972014
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3110271802097202,
+          "worstCaseImpact": 0.3110271802097202
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2004397383573752,
+          "worstCaseImpact": 0.2004397383573752
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.2004397383573752,
+      "worstCaseImpact": 0.2004397383573752
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 7,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2724715634194792,
+          "worstCaseImpact": 0.2724715634194792
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.27247156341947926,
+          "worstCaseImpact": 0.27247156341947926
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17559278531477548,
+          "worstCaseImpact": 0.17559278531477548
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.17559278531477548,
+      "worstCaseImpact": 0.17559278531477548
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-15T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+          "leadTimeDays": 3
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 8,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29487174282629663,
+          "worstCaseImpact": 0.29487174282629663
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.29487174282629663,
+          "worstCaseImpact": 0.29487174282629663
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1900284564880578,
+          "worstCaseImpact": 0.1900284564880578
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:accountable-review"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1900284564880578,
+      "worstCaseImpact": 0.1900284564880578
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 10,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2792754957942276,
+          "worstCaseImpact": 0.2792754957942276
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26680161977385564,
+          "worstCaseImpact": 0.26680161977385564
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1708048329029155,
+          "worstCaseImpact": 0.1708048329029155
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1708048329029155,
+      "worstCaseImpact": 0.1708048329029155
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-15T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+          "leadTimeDays": 3
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 15,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2548826136514076,
+          "worstCaseImpact": 0.2548826136514076
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25488261365140763,
+          "worstCaseImpact": 0.25488261365140763
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1642576843531293,
+          "worstCaseImpact": 0.1642576843531293
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1642576843531293,
+      "worstCaseImpact": 0.1642576843531293
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 17,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25151545170525413,
+          "worstCaseImpact": 0.25151545170525413
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.24328269353180862,
+          "worstCaseImpact": 0.24328269353180862
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15603374771483203,
+          "worstCaseImpact": 0.15603374771483203
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.15603374771483203,
+      "worstCaseImpact": 0.15603374771483203
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-15T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+          "leadTimeDays": 3
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 18,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26193951879991745,
+          "worstCaseImpact": 0.26193951879991745
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2490018593609828,
+          "worstCaseImpact": 0.2490018593609828
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15929171406343723,
+          "worstCaseImpact": 0.15929171406343723
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:source-redundancy"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.15929171406343723,
+      "worstCaseImpact": 0.15929171406343723
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-15T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+          "leadTimeDays": 3
+        },
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": null,
+      "cost": 25,
+      "feasible": false,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 3,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 14,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": null,
+          "horizonDays": 45,
+          "lowerImpact": null,
+          "pendingInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "upperImpact": null,
+          "worstCaseImpact": null
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": null,
+      "reasons": [
+        "budget_exceeded",
+        "intervention_limit_exceeded"
+      ],
+      "strategy": "intervene",
+      "upperImpact": null,
+      "worstCaseImpact": null
+    }
+  ],
+  "horizonAnalyses": [
+    {
+      "horizonDays": 3,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05649350649350648,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31102718020972014,
+              "worstCaseImpact": 0.31102718020972014
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3110271802097202,
+              "worstCaseImpact": 0.3110271802097202
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2004397383573752,
+              "worstCaseImpact": 0.2004397383573752
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.2004397383573752,
+          "worstCaseImpact": 0.2004397383573752
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2724715634194792,
+              "worstCaseImpact": 0.2724715634194792
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.27247156341947926,
+              "worstCaseImpact": 0.27247156341947926
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17559278531477548,
+              "worstCaseImpact": 0.17559278531477548
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.17559278531477548,
+          "worstCaseImpact": 0.17559278531477548
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-15T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+              "leadTimeDays": 3
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 15,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2548826136514076,
+              "worstCaseImpact": 0.2548826136514076
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25488261365140763,
+              "worstCaseImpact": 0.25488261365140763
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1642576843531293,
+              "worstCaseImpact": 0.1642576843531293
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1642576843531293,
+          "worstCaseImpact": 0.1642576843531293
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+              "leadTimeDays": 21
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25151545170525413,
+              "worstCaseImpact": 0.25151545170525413
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24328269353180862,
+              "worstCaseImpact": 0.24328269353180862
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15603374771483203,
+              "worstCaseImpact": 0.15603374771483203
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.15603374771483203,
+          "worstCaseImpact": 0.15603374771483203
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    },
+    {
+      "horizonDays": 14,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05649350649350648,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31102718020972014,
+              "worstCaseImpact": 0.31102718020972014
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3110271802097202,
+              "worstCaseImpact": 0.3110271802097202
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2004397383573752,
+              "worstCaseImpact": 0.2004397383573752
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.2004397383573752,
+          "worstCaseImpact": 0.2004397383573752
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2724715634194792,
+              "worstCaseImpact": 0.2724715634194792
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.27247156341947926,
+              "worstCaseImpact": 0.27247156341947926
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17559278531477548,
+              "worstCaseImpact": 0.17559278531477548
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.17559278531477548,
+          "worstCaseImpact": 0.17559278531477548
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 10,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2792754957942276,
+              "worstCaseImpact": 0.2792754957942276
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26680161977385564,
+              "worstCaseImpact": 0.26680161977385564
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1708048329029155,
+              "worstCaseImpact": 0.1708048329029155
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1708048329029155,
+          "worstCaseImpact": 0.1708048329029155
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-15T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+              "leadTimeDays": 3
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 15,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2548826136514076,
+              "worstCaseImpact": 0.2548826136514076
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25488261365140763,
+              "worstCaseImpact": 0.25488261365140763
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1642576843531293,
+              "worstCaseImpact": 0.1642576843531293
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1642576843531293,
+          "worstCaseImpact": 0.1642576843531293
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+              "leadTimeDays": 21
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25151545170525413,
+              "worstCaseImpact": 0.25151545170525413
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24328269353180862,
+              "worstCaseImpact": 0.24328269353180862
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15603374771483203,
+              "worstCaseImpact": 0.15603374771483203
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.15603374771483203,
+          "worstCaseImpact": 0.15603374771483203
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    },
+    {
+      "horizonDays": 45,
+      "paretoFrontier": [
+        {
+          "activationSchedule": [],
+          "centralImpact": 0.05649350649350648,
+          "cost": 0,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.31102718020972014,
+              "worstCaseImpact": 0.31102718020972014
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.3110271802097202,
+              "worstCaseImpact": 0.3110271802097202
+            },
+            {
+              "activeInterventionIds": [],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2004397383573752,
+              "worstCaseImpact": 0.2004397383573752
+            }
+          ],
+          "interventionIds": [],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "do_not_act",
+          "upperImpact": 0.2004397383573752,
+          "worstCaseImpact": 0.2004397383573752
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 7,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2724715634194792,
+              "worstCaseImpact": 0.2724715634194792
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.27247156341947926,
+              "worstCaseImpact": 0.27247156341947926
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.17559278531477548,
+              "worstCaseImpact": 0.17559278531477548
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.17559278531477548,
+          "worstCaseImpact": 0.17559278531477548
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+              "leadTimeDays": 21
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 10,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2792754957942276,
+              "worstCaseImpact": 0.2792754957942276
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.26680161977385564,
+              "worstCaseImpact": 0.26680161977385564
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1708048329029155,
+              "worstCaseImpact": 0.1708048329029155
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1708048329029155,
+          "worstCaseImpact": 0.1708048329029155
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-08-15T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+              "leadTimeDays": 3
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 15,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.2548826136514076,
+              "worstCaseImpact": 0.2548826136514076
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25488261365140763,
+              "worstCaseImpact": 0.25488261365140763
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:accountable-review",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.1642576843531293,
+              "worstCaseImpact": 0.1642576843531293
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.1642576843531293,
+          "worstCaseImpact": 0.1642576843531293
+        },
+        {
+          "activationSchedule": [
+            {
+              "activationAt": "2026-09-02T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+              "leadTimeDays": 21
+            },
+            {
+              "activationAt": "2026-08-19T00:00:00.000Z",
+              "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+              "leadTimeDays": 7
+            }
+          ],
+          "centralImpact": 0.05649350649350648,
+          "cost": 17,
+          "feasible": true,
+          "horizonResults": [
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233766,
+              "horizonDays": 3,
+              "lowerImpact": 0.08766233766233766,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.25151545170525413,
+              "worstCaseImpact": 0.25151545170525413
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.08766233766233769,
+              "horizonDays": 14,
+              "lowerImpact": 0.08766233766233769,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.24328269353180862,
+              "worstCaseImpact": 0.24328269353180862
+            },
+            {
+              "activeInterventionIds": [
+                "intervention:health-data-interoperability-stress:source-redundancy",
+                "intervention:health-data-interoperability-stress:validate-mapping"
+              ],
+              "centralImpact": 0.05649350649350648,
+              "horizonDays": 45,
+              "lowerImpact": 0.05649350649350648,
+              "pendingInterventionIds": [],
+              "upperImpact": 0.15603374771483203,
+              "worstCaseImpact": 0.15603374771483203
+            }
+          ],
+          "interventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "lowerImpact": 0.05649350649350648,
+          "reasons": [],
+          "strategy": "intervene",
+          "upperImpact": 0.15603374771483203,
+          "worstCaseImpact": 0.15603374771483203
+        }
+      ],
+      "recommendationStatus": "evidence_required",
+      "recommendedBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    }
+  ],
+  "paretoFrontier": [
+    {
+      "activationSchedule": [],
+      "centralImpact": 0.05649350649350648,
+      "cost": 0,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.31102718020972014,
+          "worstCaseImpact": 0.31102718020972014
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.3110271802097202,
+          "worstCaseImpact": 0.3110271802097202
+        },
+        {
+          "activeInterventionIds": [],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2004397383573752,
+          "worstCaseImpact": 0.2004397383573752
+        }
+      ],
+      "interventionIds": [],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "do_not_act",
+      "upperImpact": 0.2004397383573752,
+      "worstCaseImpact": 0.2004397383573752
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 7,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2724715634194792,
+          "worstCaseImpact": 0.2724715634194792
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.27247156341947926,
+          "worstCaseImpact": 0.27247156341947926
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.17559278531477548,
+          "worstCaseImpact": 0.17559278531477548
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.17559278531477548,
+      "worstCaseImpact": 0.17559278531477548
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 10,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2792754957942276,
+          "worstCaseImpact": 0.2792754957942276
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.26680161977385564,
+          "worstCaseImpact": 0.26680161977385564
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1708048329029155,
+          "worstCaseImpact": 0.1708048329029155
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1708048329029155,
+      "worstCaseImpact": 0.1708048329029155
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-08-15T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:accountable-review",
+          "leadTimeDays": 3
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 15,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.2548826136514076,
+          "worstCaseImpact": 0.2548826136514076
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25488261365140763,
+          "worstCaseImpact": 0.25488261365140763
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:accountable-review",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.1642576843531293,
+          "worstCaseImpact": 0.1642576843531293
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.1642576843531293,
+      "worstCaseImpact": 0.1642576843531293
+    },
+    {
+      "activationSchedule": [
+        {
+          "activationAt": "2026-09-02T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:source-redundancy",
+          "leadTimeDays": 21
+        },
+        {
+          "activationAt": "2026-08-19T00:00:00.000Z",
+          "interventionId": "intervention:health-data-interoperability-stress:validate-mapping",
+          "leadTimeDays": 7
+        }
+      ],
+      "centralImpact": 0.05649350649350648,
+      "cost": 17,
+      "feasible": true,
+      "horizonResults": [
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233766,
+          "horizonDays": 3,
+          "lowerImpact": 0.08766233766233766,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.25151545170525413,
+          "worstCaseImpact": 0.25151545170525413
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.08766233766233769,
+          "horizonDays": 14,
+          "lowerImpact": 0.08766233766233769,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.24328269353180862,
+          "worstCaseImpact": 0.24328269353180862
+        },
+        {
+          "activeInterventionIds": [
+            "intervention:health-data-interoperability-stress:source-redundancy",
+            "intervention:health-data-interoperability-stress:validate-mapping"
+          ],
+          "centralImpact": 0.05649350649350648,
+          "horizonDays": 45,
+          "lowerImpact": 0.05649350649350648,
+          "pendingInterventionIds": [],
+          "upperImpact": 0.15603374771483203,
+          "worstCaseImpact": 0.15603374771483203
+        }
+      ],
+      "interventionIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "lowerImpact": 0.05649350649350648,
+      "reasons": [],
+      "strategy": "intervene",
+      "upperImpact": 0.15603374771483203,
+      "worstCaseImpact": 0.15603374771483203
+    }
+  ],
+  "recommendationStatus": "evidence_required",
+  "recommendedBundleIds": [
+    "intervention:health-data-interoperability-stress:source-redundancy",
+    "intervention:health-data-interoperability-stress:validate-mapping"
+  ],
+  "reversalThresholds": [
+    {
+      "fromBundleIds": [],
+      "parameter": "risk_value_per_unit",
+      "threshold": 281.7246842298374,
+      "toBundleIds": [
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 626.5726435728276,
+      "toBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 763.6912408476302,
+      "toBundleIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    },
+    {
+      "fromBundleIds": [
+        "intervention:health-data-interoperability-stress:accountable-review",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ],
+      "parameter": "risk_value_per_unit",
+      "threshold": 243.19253515237355,
+      "toBundleIds": [
+        "intervention:health-data-interoperability-stress:source-redundancy",
+        "intervention:health-data-interoperability-stress:validate-mapping"
+      ]
+    }
+  ],
+  "scenarioId": "health-data-interoperability-stress"
+}

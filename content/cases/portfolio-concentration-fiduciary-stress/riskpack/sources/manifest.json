@@ -1,0 +1,44 @@
+[
+  {
+    "artifactKind": "normalized_snapshot",
+    "availableAt": "2026-08-12T00:00:00Z",
+    "bytes": 4320,
+    "contentType": "application/json",
+    "digestScope": "exact_bytes",
+    "id": "source:portfolio-concentration-fiduciary-stress:assumptions",
+    "license": {
+      "mode": "redistributable",
+      "name": "Apache-2.0",
+      "notes": "Covers the locally authored assumption register, not the linked context page.",
+      "spdx": "Apache-2.0",
+      "termsUri": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "publishedAt": "2026-08-12T00:00:00Z",
+    "publisher": "CascadeLens",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "input",
+    "sha256": "6ddb41686a682d0401fede096a7e7d54ba355fe6ac0ad77819a7bbb45bd933b3",
+    "title": "Portfolio concentration and fiduciary stress local assumption register",
+    "uri": "https://github.com/limingrui679-design/CascadeLens/blob/main/content/cases/portfolio-concentration-fiduciary-stress/assumptions.json"
+  },
+  {
+    "artifactKind": "citation_record",
+    "availableAt": "2019-02-01T00:00:00Z",
+    "contentType": "application/json",
+    "digestScope": "canonical_record",
+    "id": "source:portfolio-concentration-fiduciary-stress:context",
+    "license": {
+      "mode": "download_on_run",
+      "name": "Linked publisher terms apply",
+      "notes": "Citation metadata only. The linked page is not redistributed and does not supply model weights.",
+      "termsUri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+    },
+    "publishedAt": "2019-02-01T00:00:00Z",
+    "publisher": "U.S. Securities and Exchange Commission, Investor.gov",
+    "retrievedAt": "2026-08-12T00:00:00Z",
+    "role": "context",
+    "sha256": "ed9b566303e68c197e0141dab8266754a6163b5824ca35561f42b26f9349e8af",
+    "title": "Beginner's guide to asset allocation, diversification, and rebalancing",
+    "uri": "https://www.investor.gov/sites/investorgov/files/2019-02/Beginners-Guide-to-Asset-Allocation.pdf"
+  }
+]

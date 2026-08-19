@@ -1,0 +1,993 @@
+{
+  "central": {
+    "bound": "central",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 365,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.03129929431299295,
+        "endImpact": 0,
+        "impact": 0.03129929431299295,
+        "nodeId": "node:place-based-regeneration-equity-stress:transition",
+        "peakDirectImpact": 0.3939393939393939,
+        "peakImpact": 0.3939393939393939
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:business",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:housing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 365,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "place-based-regeneration-equity-stress",
+    "simulatedDays": 365,
+    "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+    "totalWeightedImpact": 0.005409754572616066,
+    "totalWeightedPeakEnvelope": 0.06808829031051253,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "horizons": [
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.3808080808080809,
+            "endImpact": 0,
+            "impact": 0.3808080808080809,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 30,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.06581868063349547,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 30,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.3808080808080809,
+            "endImpact": 0,
+            "impact": 0.3808080808080809,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 30,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 30,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.06581868063349547,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 30,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.3808080808080809,
+            "endImpact": 0,
+            "impact": 0.3808080808080809,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.17948597333333333,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-3",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:housing"
+              },
+              {
+                "contribution": 0.16269227393939387,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-4",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.3025446905932053,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3129772661309018
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28426666666666667,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-1",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.274791111111111,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.28426666666666667
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.2681151515151515,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-2",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.2591779797979797,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2681151515151514
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.10265654329093579,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-5",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:business"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.0992346585145713,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10265654329093576
+          }
+        ],
+        "iterations": 30,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 30,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.2536479628168214,
+        "totalWeightedPeakEnvelope": 0.26239444429326353,
+        "warnings": [
+          "Incoming depends_on shares for node:place-based-regeneration-equity-stress:business exceed one by 0.510000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.06346801346801348,
+            "endImpact": 0,
+            "impact": 0.06346801346801348,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.010969780105582578,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 180,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.06346801346801348,
+            "endImpact": 0,
+            "impact": 0.06346801346801348,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.010969780105582578,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 180,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.06346801346801348,
+            "endImpact": 0,
+            "impact": 0.06346801346801348,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.17948597333333333,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-3",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:housing"
+              },
+              {
+                "contribution": 0.16269227393939387,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-4",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.05042411509886756,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3129772661309018
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28426666666666667,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-1",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.045798518518518495,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.28426666666666667
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.2681151515151515,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-2",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.04319632996632995,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2681151515151514
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.10265654329093579,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-5",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:business"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.01653910975242855,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10265654329093576
+          }
+        ],
+        "iterations": 180,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 180,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.04227466046947024,
+        "totalWeightedPeakEnvelope": 0.26239444429326353,
+        "warnings": [
+          "Incoming depends_on shares for node:place-based-regeneration-equity-stress:business exceed one by 0.510000."
+        ]
+      }
+    },
+    {
+      "central": {
+        "bound": "central",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 365,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.03129929431299295,
+            "endImpact": 0,
+            "impact": 0.03129929431299295,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 365,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 365,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.005409754572616066,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "horizonDays": 365,
+      "lower": {
+        "bound": "lower",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 5,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 365,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.03129929431299295,
+            "endImpact": 0,
+            "impact": 0.03129929431299295,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          },
+          {
+            "contributions": [],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0
+          }
+        ],
+        "iterations": 365,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 365,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.005409754572616066,
+        "totalWeightedPeakEnvelope": 0.06808829031051253,
+        "warnings": [
+          "No eligible dependency edges were visible for this bound."
+        ]
+      },
+      "upper": {
+        "bound": "upper",
+        "converged": true,
+        "endWeightedImpact": 0,
+        "engineVersion": "0.2.0",
+        "excludedEdgeCounts": {
+          "ENTITY_REPORTED": 0,
+          "MODEL_INFERRED": 0,
+          "OFFICIAL_OBSERVED": 0,
+          "TEXT_EXTRACTED": 0,
+          "THIRD_PARTY_VERIFIED": 0
+        },
+        "horizonDays": 365,
+        "impacts": [
+          {
+            "contributions": [],
+            "directImpact": 0.03129929431299295,
+            "endImpact": 0,
+            "impact": 0.03129929431299295,
+            "nodeId": "node:place-based-regeneration-equity-stress:transition",
+            "peakDirectImpact": 0.3939393939393939,
+            "peakImpact": 0.3939393939393939
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.17948597333333333,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-3",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:housing"
+              },
+              {
+                "contribution": 0.16269227393939387,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-4",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:access"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.02486668689807167,
+            "nodeId": "node:place-based-regeneration-equity-stress:business",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.3129772661309018
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.28426666666666667,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-1",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.022585570776255698,
+            "nodeId": "node:place-based-regeneration-equity-stress:housing",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.28426666666666667
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.2681151515151515,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-2",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.02130229970942299,
+            "nodeId": "node:place-based-regeneration-equity-stress:access",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.2681151515151514
+          },
+          {
+            "contributions": [
+              {
+                "contribution": 0.10265654329093579,
+                "edgeId": "edge:place-based-regeneration-equity-stress:link-5",
+                "fromNodeId": "node:place-based-regeneration-equity-stress:business"
+              }
+            ],
+            "directImpact": 0,
+            "endImpact": 0,
+            "impact": 0.008156273302567504,
+            "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+            "peakDirectImpact": 0,
+            "peakImpact": 0.10265654329093576
+          }
+        ],
+        "iterations": 365,
+        "maxSolverIterationsUsed": 1,
+        "metric": "time_weighted_mean_node_impact",
+        "scenarioId": "place-based-regeneration-equity-stress",
+        "simulatedDays": 365,
+        "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+        "totalWeightedImpact": 0.020847777765766146,
+        "totalWeightedPeakEnvelope": 0.26239444429326353,
+        "warnings": [
+          "Incoming depends_on shares for node:place-based-regeneration-equity-stress:business exceed one by 0.510000."
+        ]
+      }
+    }
+  ],
+  "lower": {
+    "bound": "lower",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 5,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 365,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.03129929431299295,
+        "endImpact": 0,
+        "impact": 0.03129929431299295,
+        "nodeId": "node:place-based-regeneration-equity-stress:transition",
+        "peakDirectImpact": 0.3939393939393939,
+        "peakImpact": 0.3939393939393939
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:business",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:housing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      },
+      {
+        "contributions": [],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0,
+        "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0
+      }
+    ],
+    "iterations": 365,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "place-based-regeneration-equity-stress",
+    "simulatedDays": 365,
+    "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+    "totalWeightedImpact": 0.005409754572616066,
+    "totalWeightedPeakEnvelope": 0.06808829031051253,
+    "warnings": [
+      "No eligible dependency edges were visible for this bound."
+    ]
+  },
+  "upper": {
+    "bound": "upper",
+    "converged": true,
+    "endWeightedImpact": 0,
+    "engineVersion": "0.2.0",
+    "excludedEdgeCounts": {
+      "ENTITY_REPORTED": 0,
+      "MODEL_INFERRED": 0,
+      "OFFICIAL_OBSERVED": 0,
+      "TEXT_EXTRACTED": 0,
+      "THIRD_PARTY_VERIFIED": 0
+    },
+    "horizonDays": 365,
+    "impacts": [
+      {
+        "contributions": [],
+        "directImpact": 0.03129929431299295,
+        "endImpact": 0,
+        "impact": 0.03129929431299295,
+        "nodeId": "node:place-based-regeneration-equity-stress:transition",
+        "peakDirectImpact": 0.3939393939393939,
+        "peakImpact": 0.3939393939393939
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.17948597333333333,
+            "edgeId": "edge:place-based-regeneration-equity-stress:link-3",
+            "fromNodeId": "node:place-based-regeneration-equity-stress:housing"
+          },
+          {
+            "contribution": 0.16269227393939387,
+            "edgeId": "edge:place-based-regeneration-equity-stress:link-4",
+            "fromNodeId": "node:place-based-regeneration-equity-stress:access"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.02486668689807167,
+        "nodeId": "node:place-based-regeneration-equity-stress:business",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.3129772661309018
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.28426666666666667,
+            "edgeId": "edge:place-based-regeneration-equity-stress:link-1",
+            "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.022585570776255698,
+        "nodeId": "node:place-based-regeneration-equity-stress:housing",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.28426666666666667
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.2681151515151515,
+            "edgeId": "edge:place-based-regeneration-equity-stress:link-2",
+            "fromNodeId": "node:place-based-regeneration-equity-stress:transition"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.02130229970942299,
+        "nodeId": "node:place-based-regeneration-equity-stress:access",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.2681151515151514
+      },
+      {
+        "contributions": [
+          {
+            "contribution": 0.10265654329093579,
+            "edgeId": "edge:place-based-regeneration-equity-stress:link-5",
+            "fromNodeId": "node:place-based-regeneration-equity-stress:business"
+          }
+        ],
+        "directImpact": 0,
+        "endImpact": 0,
+        "impact": 0.008156273302567504,
+        "nodeId": "node:place-based-regeneration-equity-stress:resident-continuity",
+        "peakDirectImpact": 0,
+        "peakImpact": 0.10265654329093576
+      }
+    ],
+    "iterations": 365,
+    "maxSolverIterationsUsed": 1,
+    "metric": "time_weighted_mean_node_impact",
+    "scenarioId": "place-based-regeneration-equity-stress",
+    "simulatedDays": 365,
+    "snapshotDigest": "38d88466a6e8dc8a6900bd6b34c0d41377769504def5a01918303663716d5ad2",
+    "totalWeightedImpact": 0.020847777765766146,
+    "totalWeightedPeakEnvelope": 0.26239444429326353,
+    "warnings": [
+      "Incoming depends_on shares for node:place-based-regeneration-equity-stress:business exceed one by 0.510000."
+    ]
+  }
+}

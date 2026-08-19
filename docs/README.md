@@ -6,6 +6,7 @@ This index routes readers to the contract, evidence, and operating material behi
 
 | Document | Purpose |
 |---|---|
+| [v0.6.0 decision-case review](SELF_REVIEW_2026-08-20_v0.6.0.md) | Records the 16-case decision system, capability matrix, sensitivity surface, decision brief, full-suite gates, and unchanged external-evidence boundary. |
 | [v0.5.1 presentation and release review](SELF_REVIEW_2026-08-14_v0.5.1.md) | Records the compact workflow, version alignment, full-suite gates, release assets, and public deployment identity. |
 | [v0.5.0 relational-data review](SELF_REVIEW_2026-08-14_v0.5.0.md) | Records the BEA topology, evidence-ledger, full-suite, release, and publication checks. |
 | [Acceptance matrix](ACCEPTANCE_MATRIX.md) | Maps product requirements to implementation and verification evidence. |
@@ -25,6 +26,7 @@ Maintainer review is internal software evidence. It is not independent domain va
 | Document | Purpose |
 |---|---|
 | [Product requirements](PRODUCT_REQUIREMENTS.md) | Normative scope, invariants, non-goals, and acceptance requirements. |
+| [Case capability matrix](CASE_CAPABILITY_MATRIX.md) | Maps all sixteen cases to decision owners, stakeholder tasks, methods, trade-offs, and fifteen capabilities. |
 | [Architecture](ARCHITECTURE.md) | Runtime flow, determinism, storage profile, and package boundaries. |
 | [Schema compatibility](SCHEMA_COMPATIBILITY.md) | Compatibility policy for ShockScript, WorldGraph, and RiskPack contracts. |
 | [Data licenses](DATA_LICENSES.md) | Source-by-source access and redistribution boundaries. |

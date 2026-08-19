@@ -6,6 +6,38 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 No unreleased changes.
 
+## 0.6.0 — 2026-08-20
+
+### Decision-oriented case system
+
+- Expanded the executable library from 12 to 16 cases without removing any prior
+  case, adding health-data interoperability, behavioral-intervention evidence,
+  place-based regeneration equity, and portfolio-concentration fiduciary stress.
+- Added one shared 15-capability taxonomy and a decision profile for every case,
+  covering the decision owner, stakeholders, methods, user tasks, trade-offs,
+  and a domain-specific guardrail.
+- Generated the case catalog, public capability matrix, and Workbench bundle
+  from the same reviewed specifications, with validation that rejects drift
+  among those surfaces.
+
+### Robustness and communication
+
+- Added a 25-run normalized-severity by transmission sensitivity surface to the
+  browser Workbench.
+- Added a downloadable Markdown decision brief carrying the graph digest,
+  lower/central/upper bounds, stakeholder context, trade-offs, and explicit
+  `scenario_only` and `evidence_required` boundaries.
+- Reworked the case library, benchmark page, README, and documentation to make
+  capability coverage and the exact path for changing each external-evidence
+  count visible without converting internal software evidence into validation.
+
+### Evidence boundary
+
+All 16 cases remain `scenario_only`. This release adds no historically scored
+case, external method or domain review, structured user study, verified
+organizational adoption, or demonstrated real-world impact; all five counts
+remain zero until a qualifying public record passes the machine gate.
+
 ## 0.5.1 — 2026-08-14
 
 ### Clearer public workflow
