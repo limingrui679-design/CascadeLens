@@ -59,7 +59,7 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
 </table>
 
 > [!IMPORTANT]
-> Current development scope contains **0 historically scored cases**, **0 external validations**, **0 structured user studies**, **0 verified organizational adoptions**, and **0 demonstrated real-world impacts**. All 16 cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
+> Stable release: **[`v0.6.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.6.0)**. It contains **0 historically scored cases**, **0 external validations**, **0 structured user studies**, **0 verified organizational adoptions**, and **0 demonstrated real-world impacts**. All 16 cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 ## Explore all 16 cases
 

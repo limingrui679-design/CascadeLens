@@ -77,7 +77,7 @@ scanning, dependency audit, and the enforced 20,000-node performance profile.
 | Client bundle budget | 1,144,661 / 1,500,000 bytes |
 | Largest client asset budget | 190,101 / 300,000 bytes |
 | 20,000-node / 19,999-edge smoke run | 7,804 / 15,000 ms; 176,324,608 / 805,306,368 RSS-delta bytes |
-| Two offline production builds | Exact match: `0033f7f0f293eeec8e8a68f402a071b2a872659938e0f363cf3aafde6baa4cc9` |
+| Two pre-tag offline production builds | Exact match: `0033f7f0f293eeec8e8a68f402a071b2a872659938e0f363cf3aafde6baa4cc9` |
 
 The browser review covers 1440 × 900 desktop, 390 × 844 mobile, and the minimum
 320-pixel supported width. It verifies the 16-case selector, binary and demand
@@ -91,8 +91,27 @@ The release process binds the annotated tag, commit, Git tree, package and
 Python versions, generated artifacts, RiskPack catalog, SBOM, and complete
 production build digest. Detached verification repeats Python execution,
 generation, full web CI, and two offline builds from an archive without `.git`.
-The final release receipt and hosted `/build-info.json` comparison are recorded
-after the immutable tag and public deployment are complete.
+
+### Public release receipt
+
+| Receipt | Verified value |
+|---|---|
+| Public release | [`v0.6.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.6.0), published with ZIP, TAR.GZ, CycloneDX SBOM, checksums, manifest, and verification report |
+| Annotated tag object | `60784fe3fce98fb52ab6278acd2c1235315e63e1` |
+| Tagged commit | `31f261629583ee7bed3917a799bb147e73192b3c` |
+| Tagged Git tree | `bf26ffc69e1aaadd2a77216a3c2d1da7f1b51007` |
+| Fresh-archive generated-artifact digest | `27c72d0784b57bba4f3f3a13e654732ae4ce9ebe2027e26d9b4e55e9138d0996` |
+| Fresh-archive double-build digest | `1d92d44d326825851f5540e9195e39c05d03b71b84e69ed9522e8060b6d37a9b` |
+| GitHub automation | [`CI`](https://github.com/limingrui679-design/CascadeLens/actions/runs/32284867482) and [`CodeQL`](https://github.com/limingrui679-design/CascadeLens/actions/runs/32284867413) succeeded on the tagged commit |
+| Public hosting | Sites version 12, deployment `appgdep_6a85f271b47c8191bae9e74e1dcca4c4`, [`live product`](https://cascadelens.limingrui2.chatgpt.site) |
+
+The hosted [`/build-info.json`](https://cascadelens.limingrui2.chatgpt.site/build-info.json)
+reports the same commit, tree, `v0.6.0`, package version `0.6.0`, and
+`dirty: false`. A post-deployment browser pass reopened the home, case library,
+benchmark, and Workbench; it confirmed 16 scenario-only cases, all five honest
+zero counts, and a recomputed non-degenerate 5 × 5 Suez sensitivity surface.
+The seven public release assets were then downloaded without authentication;
+their manifest and verification-report checksums matched.
 
 ## Current evidence status
 
