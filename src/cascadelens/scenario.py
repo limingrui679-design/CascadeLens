@@ -7,7 +7,7 @@ import math
 import re
 from datetime import timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, TypeGuard, cast
 
 from .errors import ValidationIssue, assert_no_errors
 from .evidence import EVIDENCE_GRADES
@@ -108,7 +108,7 @@ def _nonempty_text(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
 
-def _finite_number(value: Any) -> bool:
+def _finite_number(value: object) -> TypeGuard[int | float]:
     return (
         isinstance(value, (int, float))
         and not isinstance(value, bool)
@@ -433,13 +433,17 @@ def validate_scenario(scenario: Any) -> list[ValidationIssue]:
             _add(issues, "constraints.budget", "invalid_budget", "Budget must be non-negative.")
         if "budgetUnit" in constraints and not _nonempty_text(constraints.get("budgetUnit")):
             _add(issues, "constraints.budgetUnit", "required", "budgetUnit must be non-empty.")
-        for field, maximum in (("maxInterventions", 16), ("maxLeadTimeDays", None)):
-            value = constraints.get(field)
-            if value is not None and (
-                not isinstance(value, int)
-                or isinstance(value, bool)
-                or value < 0
-                or (maximum is not None and value > maximum)
+        constraint_limits: tuple[tuple[str, int | None], ...] = (
+            ("maxInterventions", 16),
+            ("maxLeadTimeDays", None),
+        )
+        for field, constraint_maximum in constraint_limits:
+            constraint_value = constraints.get(field)
+            if constraint_value is not None and (
+                not isinstance(constraint_value, int)
+                or isinstance(constraint_value, bool)
+                or constraint_value < 0
+                or (constraint_maximum is not None and constraint_value > constraint_maximum)
             ):
                 _add(issues, f"constraints.{field}", "invalid_constraint", f"{field} is invalid.")
     return issues
@@ -531,14 +535,14 @@ def load_scenario(path: str | Path) -> dict[str, Any]:
         value = json.loads(text)
     except json.JSONDecodeError:
         try:
-            import yaml  # type: ignore[import-not-found]
+            import yaml
         except ImportError as import_error:
             raise ValueError(
                 "ShockScript is not JSON; install cascadelens[yaml] for YAML"
             ) from import_error
         value = yaml.safe_load(text)
     assert_no_errors("Invalid ShockScript", validate_scenario(value))
-    return value
+    return cast(dict[str, Any], value)
 
 
 def default_scenario(snapshot: dict[str, Any], *, magnitude: float = 0.5) -> dict[str, Any]:

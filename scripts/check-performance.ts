@@ -1,5 +1,6 @@
 import { performance } from "node:perf_hooks";
 import { readdir, stat } from "node:fs/promises";
+import { arch, cpus, loadavg, platform } from "node:os";
 import { join, relative } from "node:path";
 import {
   runCascadeBounds,
@@ -149,21 +150,32 @@ const clientTotalBytes = clientAssets.reduce((sum, asset) => sum + asset.bytes, 
 const largestClientAsset = [...clientAssets].sort((left, right) => right.bytes - left.bytes)[0];
 
 const rssBefore = process.memoryUsage().rss;
+const cpuBefore = process.cpuUsage();
 const startedAt = performance.now();
 const snapshot = await sealSnapshot(draftForScale());
 const sealedAt = performance.now();
 const results = await runCascadeBounds(snapshot, scenarioForScale());
 const completedAt = performance.now();
+const cpuUsed = process.cpuUsage(cpuBefore);
 const researchSmokeMilliseconds = completedAt - startedAt;
+const researchSmokeCpuMilliseconds = (cpuUsed.user + cpuUsed.system) / 1_000;
 const researchSmokeRssDeltaBytes = Math.max(0, process.memoryUsage().rss - rssBefore);
 
 const report = {
   generatedAt: new Date().toISOString(),
+  runtimeContext: {
+    node: process.version,
+    platform: platform(),
+    architecture: arch(),
+    logicalCpuCount: cpus().length,
+    loadAverage: loadavg(),
+  },
   budgets,
   measurements: {
     clientTotalBytes,
     largestClientAsset,
     researchSmokeMilliseconds: Math.round(researchSmokeMilliseconds),
+    researchSmokeCpuMilliseconds: Math.round(researchSmokeCpuMilliseconds),
     graphConstructionAndSealMilliseconds: Math.round(sealedAt - startedAt),
     cascadeMilliseconds: Math.round(completedAt - sealedAt),
     researchSmokeRssDeltaBytes,

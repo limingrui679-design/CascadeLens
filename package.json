@@ -17,7 +17,7 @@
     "build:offline": "tsx scripts/build-site.ts --offline",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run test:unit && npm run test:examples && npm run validate:content && npm run validate:evidence && npm run test:docs && npm run build && npm run test:rendered && npm run test:a11y && npm run test:security && npm run test:performance",
-    "test:unit": "tsx --test tests/**/*.test.ts",
+    "test:unit": "node --import tsx --test --experimental-test-coverage --test-coverage-include=\"packages/**/*.ts\" --test-coverage-lines=90 --test-coverage-branches=65 --test-coverage-functions=90 tests/**/*.test.ts",
     "test:rendered": "node --test tests/rendered-html.test.mjs",
     "test:a11y": "node --test tests/accessibility.test.mjs",
     "test:docs": "node --test tests/documentation.test.mjs",

@@ -5,11 +5,11 @@ CascadeLens welcomes focused changes that make evidence-graded scenario analysis
 ## A 15-minute first contribution
 
 1. Install Python 3.11 or newer and clone the repository.
-2. Install the package locally: `python -m pip install -e .`.
+2. Install the package and development checks locally: `python -m pip install -e ".[dev]"`.
 3. Run one checked example: `python examples/python/quickstart.py`.
 4. Choose an issue labelled [`good first issue`](https://github.com/limingrui679-design/CascadeLens/labels/good%20first%20issue).
 5. Make one narrow change and add or update a test.
-6. Run `python -m unittest discover -s tests_python -v`.
+6. Run `python -m coverage run -m unittest discover -s tests_python -v`, then `python -m coverage combine`, `python -m coverage report`, and `python -m mypy`.
 7. Open a pull request using the template; describe what changed and what the result does **not** prove.
 
 Documentation-only fixes do not require Node.js. Changes to the hosted website or TypeScript compatibility layer also require `npm ci` and `npm run ci`.
@@ -40,13 +40,18 @@ Documentation-only fixes do not require Node.js. Changes to the hosted website o
 Python:
 
 ```bash
-python -m pip install -e .
-python -m unittest discover -s tests_python -v
+python -m pip install -e ".[dev]"
+python -m ruff check src tests_python examples/python
+python -m ruff format --check src tests_python examples/python
+python -m mypy
+PYTHONPATH=src python -m coverage run -m unittest discover -s tests_python -v
+python -m coverage combine
+python -m coverage report
 cascadelens demo --out work/demo-riskpack
 cascadelens verify work/demo-riskpack
 ```
 
-Hosted interface and release compatibility:
+Hosted interface and release compatibility (the unit command enforces package coverage thresholds):
 
 ```bash
 npm ci

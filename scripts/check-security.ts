@@ -15,6 +15,7 @@ const excludedDirectories = new Set([
   "__pycache__",
   "work",
 ]);
+const excludedGeneratedFiles = new Set([".coverage"]);
 const binaryExtensions = new Set([
   ".gif", ".ico", ".jpg", ".jpeg", ".pdf", ".png", ".woff", ".woff2", ".zip",
 ]);
@@ -24,6 +25,12 @@ async function listFiles(directory: string): Promise<string[]> {
   const output: string[] = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     if (entry.isDirectory() && excludedDirectories.has(entry.name)) continue;
+    if (
+      entry.isFile() &&
+      (excludedGeneratedFiles.has(entry.name) || entry.name.startsWith(".coverage."))
+    ) {
+      continue;
+    }
     const path = join(directory, entry.name);
     if (entry.isSymbolicLink()) {
       output.push(path);

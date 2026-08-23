@@ -1,7 +1,7 @@
 # Release process
 
 1. Regenerate the connector catalog, sixteen cases, capability matrix, Workbench bundle, deterministic RiskPack archives, and CycloneDX SBOM.
-2. Run the Python 3.11/3.12/3.13 install-and-test matrix, `npm run ci`, and `npm run verify:build-reproducibility` from the working tree. The latter performs two network-blocked production builds and requires identical complete `dist` tree digests.
+2. Run the Python 3.11/3.12/3.13 install-and-test matrix, including strict `mypy` and branch-aware source coverage on Python 3.12, plus `npm run ci` and `npm run verify:build-reproducibility` from the working tree. The latter performs two network-blocked production builds and requires identical complete `dist` tree digests.
 3. Commit the exact tree, push it, and require the Python matrix, Linux/macOS reproducible-build matrix, and complete web CI job to pass.
 4. Create an annotated semantic-version tag on that exact commit.
 5. Rebuild the clean tagged tree with `npm run verify:build-reproducibility`, then run `npm run release:prepare -- vX.Y.Z`. The release manifest binds the commit, Git tree, package version, release date, and exact production `dist` digest to the source archives, SBOM, and checksums.

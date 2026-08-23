@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+/.coverage
+/.coverage.*
 /.pytest_cache/
 /.ruff_cache/
 

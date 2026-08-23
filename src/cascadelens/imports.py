@@ -8,6 +8,7 @@ import json
 import math
 import re
 import xml.etree.ElementTree as ET
+from collections.abc import Iterable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Protocol
@@ -24,9 +25,9 @@ _SAFE = re.compile(r"[^a-z0-9._-]+")
 
 
 class NetworkXLike(Protocol):
-    def nodes(self, data: bool = False): ...
+    def nodes(self, data: bool = False) -> Iterable[Any]: ...
 
-    def edges(self, data: bool = False, keys: bool = False): ...
+    def edges(self, data: bool = False, keys: bool = False) -> Iterable[Any]: ...
 
     def is_multigraph(self) -> bool: ...
 

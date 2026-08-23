@@ -2,15 +2,16 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from itertools import combinations, pairwise
-from typing import Any
+from typing import Any, cast
 
 from .cascade import first_shock_start, intervention_activation, run_cascade_bounds
 from .evidence import can_use
 from .temporal import isoformat
 
 
-def _all_subsets(items: list[dict[str, Any]]):
+def _all_subsets(items: list[dict[str, Any]]) -> Iterator[tuple[dict[str, Any], ...]]:
     if len(items) > 16:
         raise ValueError("At most 16 interventions may be enumerated")
     for size in range(len(items) + 1):
@@ -46,37 +47,45 @@ def _feasibility(scenario: dict[str, Any], selected: tuple[dict[str, Any], ...])
 
 def _impact(bundle: dict[str, Any], horizon: int | None = None) -> float | None:
     if horizon is None:
-        return bundle["worstCaseImpact"]
+        value = bundle["worstCaseImpact"]
+        return None if value is None else float(value)
     match = next(
         (item for item in bundle["horizonResults"] if item["horizonDays"] == horizon), None
     )
-    return None if match is None else match["worstCaseImpact"]
+    if match is None or match["worstCaseImpact"] is None:
+        return None
+    return float(match["worstCaseImpact"])
 
 
 def _pareto(bundles: list[dict[str, Any]], horizon: int | None = None) -> list[dict[str, Any]]:
-    feasible = [item for item in bundles if item["feasible"] and _impact(item, horizon) is not None]
-    frontier = []
-    for candidate in feasible:
-        candidate_impact = _impact(candidate, horizon)
+    feasible: list[tuple[dict[str, Any], float]] = []
+    for item in bundles:
+        impact = _impact(item, horizon)
+        if item["feasible"] and impact is not None:
+            feasible.append((item, impact))
+    frontier: list[dict[str, Any]] = []
+    for candidate, candidate_impact in feasible:
         dominated = any(
             other is not candidate
             and other["cost"] <= candidate["cost"]
-            and _impact(other, horizon) <= candidate_impact
-            and (other["cost"] < candidate["cost"] or _impact(other, horizon) < candidate_impact)
-            for other in feasible
+            and other_impact <= candidate_impact
+            and (other["cost"] < candidate["cost"] or other_impact < candidate_impact)
+            for other, other_impact in feasible
         )
         if not dominated:
             frontier.append(candidate)
-    return sorted(frontier, key=lambda item: (item["cost"], _impact(item, horizon)))
+    return sorted(frontier, key=lambda item: (item["cost"], cast(float, _impact(item, horizon))))
 
 
 def _best(bundles: list[dict[str, Any]], horizon: int | None = None) -> dict[str, Any] | None:
-    eligible = [item for item in bundles if item["feasible"] and _impact(item, horizon) is not None]
+    eligible: list[tuple[dict[str, Any], float]] = []
+    for item in bundles:
+        impact = _impact(item, horizon)
+        if item["feasible"] and impact is not None:
+            eligible.append((item, impact))
     if not eligible:
         return None
-    return min(
-        eligible, key=lambda item: (_impact(item, horizon), item["cost"], item["interventionIds"])
-    )
+    return min(eligible, key=lambda item: (item[1], item[0]["cost"], item[0]["interventionIds"]))[0]
 
 
 def _status(scenario: dict[str, Any], bundle: dict[str, Any] | None) -> str:
@@ -199,6 +208,19 @@ def analyze_interventions(snapshot: dict[str, Any], scenario: dict[str, Any]) ->
                     "toBundleIds": right["interventionIds"],
                 }
             )
+    horizon_analyses: list[dict[str, Any]] = []
+    for days in horizons:
+        horizon_best = _best(evaluated, days)
+        horizon_analyses.append(
+            {
+                "horizonDays": days,
+                "paretoFrontier": _pareto(evaluated, days),
+                "recommendedBundleIds": []
+                if horizon_best is None
+                else horizon_best["interventionIds"],
+                "recommendationStatus": _status(scenario, horizon_best),
+            }
+        )
     return {
         "scenarioId": scenario["scenarioId"],
         "evaluatedBundles": evaluated,
@@ -206,16 +228,6 @@ def analyze_interventions(snapshot: dict[str, Any], scenario: dict[str, Any]) ->
         "baselineBundle": baseline,
         "recommendedBundleIds": [] if best is None else best["interventionIds"],
         "recommendationStatus": _status(scenario, best),
-        "horizonAnalyses": [
-            {
-                "horizonDays": days,
-                "paretoFrontier": _pareto(evaluated, days),
-                "recommendedBundleIds": []
-                if _best(evaluated, days) is None
-                else _best(evaluated, days)["interventionIds"],
-                "recommendationStatus": _status(scenario, _best(evaluated, days)),
-            }
-            for days in horizons
-        ],
+        "horizonAnalyses": horizon_analyses,
         "reversalThresholds": thresholds,
     }

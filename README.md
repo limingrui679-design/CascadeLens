@@ -332,9 +332,15 @@ docs/             methods + tutorials           scripts/       hosted build veri
 Connectors, engines, cases, product surfaces, documentation, and assurance improvements are welcome. Preserve source, time, license, evidence grade, and scenario status; then run:
 
 ```bash
-python -m unittest discover -s tests_python -v
+python -m pip install -e ".[dev]"
+python -m mypy
+PYTHONPATH=src python -m coverage run -m unittest discover -s tests_python -v
+python -m coverage combine
+python -m coverage report
 npm run ci
 ```
+
+CI enforces strict Python typing, branch-aware Python source coverage, and TypeScript package coverage thresholds in addition to the functional, rendering, accessibility, security, performance, and reproducibility gates.
 
 [Contribution guide](CONTRIBUTING.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Private security reporting](SECURITY.md)
 

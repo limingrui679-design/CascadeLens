@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections import defaultdict, deque
 from collections.abc import Iterable
-from datetime import timedelta
+from datetime import datetime, timedelta
 from typing import Any, Literal
 
 from .errors import assert_no_errors
@@ -55,11 +55,11 @@ def _shock_severity(shock: dict[str, Any]) -> float:
     raise ValueError(f"Unsupported shock operation {operation}")
 
 
-def first_shock_start(scenario: dict[str, Any]):
+def first_shock_start(scenario: dict[str, Any]) -> datetime:
     return min(parse_datetime(shock["startsAt"]) for shock in scenario["shocks"])
 
 
-def intervention_activation(scenario: dict[str, Any], intervention: dict[str, Any]):
+def intervention_activation(scenario: dict[str, Any], intervention: dict[str, Any]) -> datetime:
     return parse_datetime(scenario["decisionCutoff"]) + timedelta(
         days=int(intervention["leadTimeDays"])
     )
@@ -94,7 +94,9 @@ def _select_edges(snapshot: dict[str, Any], target: dict[str, Any]) -> list[dict
     return output
 
 
-def _visible(snapshot: dict[str, Any], current, known_at: str):
+def _visible(
+    snapshot: dict[str, Any], current: datetime, known_at: str
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], set[str], set[str]]:
     valid_at = isoformat(current)
     nodes = [
         node
@@ -137,7 +139,7 @@ def _topological_order(
 def _intervention_effects(
     scenario: dict[str, Any],
     interventions: list[dict[str, Any]],
-    current,
+    current: datetime,
 ) -> tuple[dict[str, float], dict[str, float]]:
     node_effects: dict[str, float] = {}
     edge_effects: dict[str, float] = {}
@@ -433,11 +435,11 @@ def run_cascade_bounds(
     _validate_inputs(snapshot, scenario)
     horizons = sorted(set(int(day) for day in scenario["propagation"]["horizonsDays"]))
     selected = interventions or []
-    series = {
-        bound: _run_bound_series(snapshot, scenario, bound, horizons, selected)
-        for bound in ("lower", "central", "upper")
+    bounds: tuple[Bound, ...] = ("lower", "central", "upper")
+    series: dict[Bound, dict[int, dict[str, Any]]] = {
+        bound: _run_bound_series(snapshot, scenario, bound, horizons, selected) for bound in bounds
     }
-    horizon_results = [
+    horizon_results: list[dict[str, Any]] = [
         {
             "horizonDays": days,
             "lower": series["lower"][days],

@@ -4,7 +4,26 @@ All notable release changes are recorded here. CascadeLens follows Semantic Vers
 
 ## Unreleased
 
-No unreleased changes.
+### Development assurance
+
+- Added strict `mypy` validation for the canonical Python package and shipped its
+  inline annotations with a verified PEP 561 marker.
+- Added branch-aware Python source coverage, including subprocess CLI execution,
+  and enforced TypeScript package line, branch, and function coverage thresholds.
+- Migrated Python package licensing metadata to the current SPDX/PEP 639 form and
+  verified that both legal files and the typing marker are present in the wheel.
+- Added Node, platform, CPU, load, and process-CPU diagnostics to the existing
+  wall-time performance gate so a contended runner can be distinguished from
+  increased algorithmic work without weakening the gate.
+- Excluded Coverage.py's ignored SQLite result files from the repository text
+  scanner so local Python assurance runs cannot create false secret findings.
+
+### Evidence boundary
+
+These changes strengthen internal engineering verification only. They do not add
+a historically scored case, external method or domain review, structured user
+study, verified organizational adoption, or demonstrated real-world impact; all
+five accepted-evidence counts remain zero.
 
 ## 0.6.0 — 2026-08-20
 

@@ -88,7 +88,9 @@ def _parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _load_inputs(graph_path: Path, scenario_path: Path | None):
+def _load_inputs(
+    graph_path: Path, scenario_path: Path | None
+) -> tuple[dict[str, Any], dict[str, Any]]:
     snapshot = load_graph(graph_path)
     scenario = load_scenario(scenario_path) if scenario_path else default_scenario(snapshot)
     assert_no_errors("Invalid WorldGraph snapshot", verify_snapshot(snapshot))
