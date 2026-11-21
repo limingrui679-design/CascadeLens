@@ -94,27 +94,74 @@ function pareto(
   results: InterventionBundleResult[],
   horizonDays?: number,
 ): InterventionBundleResult[] {
-  const feasible = results.filter(
-    (result) => result.feasible && horizonImpact(result, horizonDays) !== null,
-  );
-  return feasible
-    .filter((candidate) => {
-      const candidateImpact = horizonImpact(candidate, horizonDays)!;
-      return !feasible.some((other) => {
-        if (other === candidate) return false;
-        const otherImpact = horizonImpact(other, horizonDays)!;
-        return (
-          other.cost <= candidate.cost &&
-          otherImpact <= candidateImpact &&
-          (other.cost < candidate.cost || otherImpact < candidateImpact)
-        );
-      });
-    })
-    .sort((left, right) => {
-      const impactDifference =
-        horizonImpact(left, horizonDays)! - horizonImpact(right, horizonDays)!;
-      return left.cost - right.cost || impactDifference;
-    });
+  const feasible = results.flatMap(bundle => {
+    const impact = horizonImpact(bundle, horizonDays);
+    return bundle.feasible && impact !== null ? [{ bundle, impact }] : [];
+  }).sort((a, b) => a.bundle.cost - b.bundle.cost || a.impact - b.impact);
+  const frontier: InterventionBundleResult[] = [];
+  let bestCheaper = Infinity;
+  for (let start = 0; start < feasible.length;) {
+    const { bundle, impact } = feasible[start];
+    let end = start;
+    while (end < feasible.length && feasible[end].bundle.cost === bundle.cost) {
+      if (impact < bestCheaper && feasible[end].impact === impact) frontier.push(feasible[end].bundle);
+      end++;
+    }
+    bestCheaper = Math.min(bestCheaper, impact);
+    start = end;
+  }
+  return frontier;
+}
+
+// Adjacent Pareto bundles can break even without ever being globally optimal.
+/** Rank common options against the best available choice in each supplied scenario. */
+export function minimaxRegret(scenarios: Map<string, Map<string, number>>) {
+  const groups = [...scenarios.entries()].sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0);
+  if (!groups.length || groups.some(([, group]) => !group.size)) return [];
+  const minima = groups.map(([, group]) => {
+    let best = Infinity;
+    for (const loss of group.values()) {
+      if (!Number.isFinite(loss)) throw new Error("Scenario losses must be finite");
+      best = Math.min(best, loss);
+    }
+    return best;
+  });
+  const ranked = [];
+  for (const option of groups[0][1].keys()) {
+    if (groups.some(([, group]) => !group.has(option))) continue;
+    const gaps = groups.map(([name, group], i) => [name, group.get(option)! - minima[i]] as const);
+    const values = gaps.map(([, regret]) => regret);
+    ranked.push({ option, worstRegret: Math.max(...values),
+      meanRegret: values.reduce((a, b) => a + b, 0) / values.length,
+      byScenario: Object.fromEntries(gaps) as Record<string, number> });
+  }
+  return ranked.sort((a,b) => a.worstRegret-b.worstRegret || a.meanRegret-b.meanRegret ||
+    (a.option < b.option ? -1 : a.option > b.option ? 1 : 0));
+}
+
+export function policySwitches(frontier: InterventionBundleResult[]): InterventionAnalysis["reversalThresholds"] {
+  const supported: InterventionBundleResult[] = [];
+  for (const item of frontier) {
+    if (supported.at(-1)?.cost === item.cost) continue;
+    while (supported.length >= 2) {
+      const mid = supported[supported.length - 1];
+      const left = supported[supported.length - 2];
+      const before = (mid.cost - left.cost) * (mid.worstCaseImpact! - item.worstCaseImpact!);
+      const after = (item.cost - mid.cost) * (left.worstCaseImpact! - mid.worstCaseImpact!);
+      if (before < after) break;
+      supported.pop();
+    }
+    supported.push(item);
+  }
+  return supported.slice(1).map((right, index) => {
+    const left = supported[index];
+    return {
+      parameter: "risk_value_per_unit" as const,
+      threshold: (right.cost - left.cost) / (left.worstCaseImpact! - right.worstCaseImpact!),
+      fromBundleIds: left.interventionIds,
+      toBundleIds: right.interventionIds,
+    };
+  });
 }
 
 function bestBundle(

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { analyzeInterventions } from "../../packages/core/src/index";
+import { policySwitches } from "../../packages/core/src/interventions";
 import { graphSnapshot, scenario } from "./fixtures";
 
 test("evaluates the full feasible intervention set and returns a Pareto frontier", async () => {
@@ -146,4 +147,20 @@ test("reports lead-time, mutual-exclusion, and cost-unit infeasibility explicitl
     byIds(["intervention:incompatible-unit"])?.reasons,
     ["cost_unit_mismatch:intervention:incompatible-unit"],
   );
+});
+
+test("global policy switches skip unsupported and duplicate frontier alternatives", async () => {
+  const { baselineBundle } = await analyzeInterventions(await graphSnapshot(), scenario());
+  const frontier = [[0, 10], [6, 8], [10, 0], [10, 0]].map(([cost, worstCaseImpact], index) =>
+    ({ ...baselineBundle, cost, worstCaseImpact, interventionIds: [String(index)] }));
+  assert.deepEqual(policySwitches(frontier), [{
+    parameter: "risk_value_per_unit", threshold: 1, fromBundleIds: ["0"], toBundleIds: ["2"]
+  }]);
+});
+
+test("minimax compares common choices with each horizon's feasible oracle", async () => {
+  const { minimaxRegret } = await import("../../packages/core/src/interventions");
+  const choices = new Map([["7",new Map([["A",1],["B",4],["C",0]])],["30",new Map([["A",7],["B",3]])]]);
+  assert.deepEqual(minimaxRegret(choices).map(r=>[r.option,r.worstRegret]),[["B",4],["A",4]]);
+  assert.throws(()=>minimaxRegret(new Map([["x",new Map([["bad",NaN]])]])));
 });

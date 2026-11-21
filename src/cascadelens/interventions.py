@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from collections.abc import Iterator
-from itertools import combinations, pairwise
-from typing import Any, cast
+from itertools import combinations, groupby, pairwise
+from math import isfinite
+from typing import Any
 
 from .cascade import first_shock_start, intervention_activation, run_cascade_bounds
 from .evidence import can_use
@@ -63,18 +64,71 @@ def _pareto(bundles: list[dict[str, Any]], horizon: int | None = None) -> list[d
         impact = _impact(item, horizon)
         if item["feasible"] and impact is not None:
             feasible.append((item, impact))
-    frontier: list[dict[str, Any]] = []
-    for candidate, candidate_impact in feasible:
-        dominated = any(
-            other is not candidate
-            and other["cost"] <= candidate["cost"]
-            and other_impact <= candidate_impact
-            and (other["cost"] < candidate["cost"] or other_impact < candidate_impact)
-            for other, other_impact in feasible
+    # At equal cost all bundles with the minimum impact remain tied. Earlier
+    # cheaper bundles dominate the group if they already match that minimum.
+    feasible.sort(key=lambda pair: (pair[0]["cost"], pair[1]))
+    frontier = []
+    best_cheaper = float("inf")
+    for _, group in groupby(feasible, key=lambda pair: pair[0]["cost"]):
+        first, *rest = group
+        minimum = first[1]
+        if minimum < best_cheaper:
+            frontier.append(first[0])
+            frontier.extend(item for item, impact in rest if impact == minimum)
+            best_cheaper = minimum
+    return frontier
+
+
+def minimax_regret(losses: dict[str, dict[str, float]]) -> list[dict[str, Any]]:
+    """Rank options available in every scenario against each scenario's own best loss."""
+    if not losses or any(not group for group in losses.values()):
+        return []
+    if any(not isfinite(v) for group in losses.values() for v in group.values()):
+        raise ValueError("Scenario losses must be finite")
+    shared = set.intersection(*(set(group) for group in losses.values()))
+    best = {name: min(group.values()) for name, group in losses.items()}
+    ranked = []
+    for option in shared:
+        gaps = {name: losses[name][option] - best[name] for name in sorted(losses)}
+        ranked.append(
+            {
+                "option": option,
+                "worstRegret": max(gaps.values()),
+                "meanRegret": sum(gaps.values()) / len(gaps),
+                "byScenario": gaps,
+            }
         )
-        if not dominated:
-            frontier.append(candidate)
-    return sorted(frontier, key=lambda item: (item["cost"], cast(float, _impact(item, horizon))))
+    return sorted(ranked, key=lambda r: (r["worstRegret"], r["meanRegret"], r["option"]))
+
+
+def policy_switches(frontier: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Positive-value switches for cost + value * worst-case impact."""
+    supported: list[dict[str, Any]] = []
+    for item in frontier:
+        if supported and item["cost"] == supported[-1]["cost"]:
+            continue  # Same cost and impact; first representative in stable frontier order.
+        while len(supported) >= 2:
+            left, mid = supported[-2:]
+            before = (mid["cost"] - left["cost"]) * (
+                mid["worstCaseImpact"] - item["worstCaseImpact"]
+            )
+            after = (item["cost"] - mid["cost"]) * (
+                left["worstCaseImpact"] - mid["worstCaseImpact"]
+            )
+            if before < after:
+                break
+            supported.pop()
+        supported.append(item)
+    return [
+        {
+            "parameter": "risk_value_per_unit",
+            "threshold": (right["cost"] - left["cost"])
+            / (left["worstCaseImpact"] - right["worstCaseImpact"]),
+            "fromBundleIds": left["interventionIds"],
+            "toBundleIds": right["interventionIds"],
+        }
+        for left, right in pairwise(supported)
+    ]
 
 
 def _best(bundles: list[dict[str, Any]], horizon: int | None = None) -> dict[str, Any] | None:

@@ -132,3 +132,9 @@ Analysis blocks or weakens its status when any of the following occurs:
 RiskPack verification checks paths, file sets, checksums, contracts, the snapshot digest, and deterministic recomputation of bounds, interventions, and benchmark status. It does not prove data publisher identity, causal structure, empirical accuracy, independent review, adoption, or realized impact.
 
 See [External validation protocol](EXTERNAL_VALIDATION_PROTOCOL.md) for the evidence required to strengthen those claims.
+
+### Regret across horizons and an annual holdout
+
+The workbench compares each feasible bundle with the best feasible upper-bound impact at each horizon, then minimizes the largest gap. Ties use mean regret and a stable option key. The separate annual-data benchmark uses the checked-in U.S. Bureau of Economic Analysis commodity-by-industry workbook (SHA-256 `1590bb70bc05a39b367ba34344b45308873af09709384515a66df238f0124316`). Installing `openpyxl` and running `PYTHONPATH=src python scripts/compare_bea_input_shares.py content/snapshots/bea-2023-direct-requirements/partition-000001.payload` reproduces it.
+
+For each industry, choose one off-diagonal input using the previous three annual tables, then measure its share gap to the largest realized input in the following table. Over 360 industry-years (2000–2023), choices differed 23 times. The mean gap was 0.000987 for minimax regret and 0.000722 for simply retaining last year's largest input. The latter scored better on this objective. All sheets belong to one archived workbook vintage. Sector shares test selection stability; they do not observe the effects of a counterfactual intervention.

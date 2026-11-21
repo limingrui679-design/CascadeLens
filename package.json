@@ -43,12 +43,12 @@
     "fflate": "^0.8.3",
     "image-size": "file:vendor/image-size",
     "lucide-react": "^0.468.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.52.0",
+    "@cloudflare/vite-plugin": "1.70.1",
     "@eslint/js": "9.39.4",
     "@next/eslint-plugin-next": "16.2.6",
     "@tailwindcss/postcss": "4.2.1",
@@ -57,7 +57,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.0.5",
-    "@vitejs/plugin-rsc": "^0.5.34",
+    "@vitejs/plugin-rsc": "0.5.39",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "axe-core": "^4.13.0",
@@ -67,17 +67,20 @@
     "eslint-plugin-react-hooks": "7.1.1",
     "globals": "16.4.0",
     "jsdom": "29.1.1",
-    "react-server-dom-webpack": "^19.2.8",
+    "react-server-dom-webpack": "19.3.1",
     "tailwindcss": "4.2.1",
     "tsx": "^4.23.12",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.59.3",
-    "vinext": "^1.0.0-beta.5",
-    "vite": "^8.2.1",
-    "wrangler": "^4.122.0"
+    "typescript-eslint": "8.73.0",
+    "vinext": "1.4.6",
+    "vite": "8.3.8",
+    "wrangler": "4.166.0"
   },
   "overrides": {
-    "image-size": "$image-size"
+    "image-size": "$image-size",
+    "satori": {
+      "fflate": "0.8.3"
+    }
   },
   "type": "module"
 }

@@ -2,24 +2,13 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-let workerPromise;
+import { startBuiltWorker } from "../scripts/built-worker.mjs";
 
-async function worker() {
-  if (!workerPromise) {
-    const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-    workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-    workerPromise = import(workerUrl.href).then((module) => module.default);
-  }
-  return workerPromise;
-}
+const harness = await startBuiltWorker();
+test.after(() => harness.close());
 
-async function render(path = "/") {
-  const activeWorker = await worker();
-  return activeWorker.fetch(
-    new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }),
-    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-    { waitUntil() {}, passThroughOnException() {} },
-  );
+function render(path = "/") {
+  return harness.fetch(`http://localhost${path}`, { headers: { accept: "text/html" } });
 }
 
 const routes = [
@@ -137,11 +126,6 @@ test("every HTML response carries the release security headers", async () => {
 });
 
 test("public worker blocks framework control paths, headers, and draft cookies", async () => {
-  const activeWorker = await worker();
-  const environment = {
-    ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
-  };
-  const context = { waitUntil() {}, passThroughOnException() {} };
   for (const request of [
     new Request("http://localhost/__vinext/prerender/static-params"),
     new Request("http://localhost/", {
@@ -151,7 +135,7 @@ test("public worker blocks framework control paths, headers, and draft cookies",
       headers: { cookie: "session=fixture; __prerender_bypass=publicly-derived-build-token" },
     }),
   ]) {
-    const response = await activeWorker.fetch(request, environment, context);
+    const response = await harness.fetch(request.url, { headers: request.headers });
     assert.equal(response.status, 403);
     assert.match(response.headers.get("content-security-policy") ?? "", /default-src 'self'/);
   }
