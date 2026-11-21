@@ -4,6 +4,7 @@ import { Download, FileText, Github, Link2, Play, RotateCcw, Upload } from "luci
 import { useMemo, useState, type ChangeEvent } from "react";
 import {
   analyzeInterventions,
+  policySwitches,
   parseShockScript,
   runCascadeBounds,
   type CascadeBounds,
@@ -375,6 +376,7 @@ export function Workbench({
     }
   }
 
+  const switches = useMemo(() => policySwitches(interventions.paretoFrontier), [interventions]);
   const recommended = interventions.recommendedBundleIds.map(
     (id) => active.scenario.interventions.find((item) => item.id === id)?.label ?? id,
   );
@@ -596,6 +598,13 @@ export function Workbench({
                 </div>
               ))}
             </div>
+            {switches.length > 0 && <details>
+              <summary>When does a different bundle become worth its cost?</summary>
+              <p>Value is measured in cost units per unit of avoided worst-case impact.</p>
+              <ul>{switches.map((point) => <li key={point.toBundleIds.join("|")}>
+                At {Number(point.threshold.toPrecision(4))}, {point.fromBundleIds.join(" + ") || "do nothing"} and {point.toBundleIds.join(" + ")} tie for lowest combined cost and impact.
+              </li>)}</ul>
+            </details>}
           </article>
 
           <article className="panel impact-list-panel">

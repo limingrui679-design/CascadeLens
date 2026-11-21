@@ -94,27 +94,49 @@ function pareto(
   results: InterventionBundleResult[],
   horizonDays?: number,
 ): InterventionBundleResult[] {
-  const feasible = results.filter(
-    (result) => result.feasible && horizonImpact(result, horizonDays) !== null,
-  );
-  return feasible
-    .filter((candidate) => {
-      const candidateImpact = horizonImpact(candidate, horizonDays)!;
-      return !feasible.some((other) => {
-        if (other === candidate) return false;
-        const otherImpact = horizonImpact(other, horizonDays)!;
-        return (
-          other.cost <= candidate.cost &&
-          otherImpact <= candidateImpact &&
-          (other.cost < candidate.cost || otherImpact < candidateImpact)
-        );
-      });
-    })
-    .sort((left, right) => {
-      const impactDifference =
-        horizonImpact(left, horizonDays)! - horizonImpact(right, horizonDays)!;
-      return left.cost - right.cost || impactDifference;
-    });
+  const feasible = results.flatMap(bundle => {
+    const impact = horizonImpact(bundle, horizonDays);
+    return bundle.feasible && impact !== null ? [{ bundle, impact }] : [];
+  }).sort((a, b) => a.bundle.cost - b.bundle.cost || a.impact - b.impact);
+  const frontier: InterventionBundleResult[] = [];
+  let bestCheaper = Infinity;
+  for (let start = 0; start < feasible.length;) {
+    const { bundle, impact } = feasible[start];
+    let end = start;
+    while (end < feasible.length && feasible[end].bundle.cost === bundle.cost) {
+      if (impact < bestCheaper && feasible[end].impact === impact) frontier.push(feasible[end].bundle);
+      end++;
+    }
+    bestCheaper = Math.min(bestCheaper, impact);
+    start = end;
+  }
+  return frontier;
+}
+
+// Adjacent Pareto bundles can break even without ever being globally optimal.
+export function policySwitches(frontier: InterventionBundleResult[]): InterventionAnalysis["reversalThresholds"] {
+  const supported: InterventionBundleResult[] = [];
+  for (const item of frontier) {
+    if (supported.at(-1)?.cost === item.cost) continue;
+    while (supported.length >= 2) {
+      const mid = supported[supported.length - 1];
+      const left = supported[supported.length - 2];
+      const before = (mid.cost - left.cost) * (mid.worstCaseImpact! - item.worstCaseImpact!);
+      const after = (item.cost - mid.cost) * (left.worstCaseImpact! - mid.worstCaseImpact!);
+      if (before < after) break;
+      supported.pop();
+    }
+    supported.push(item);
+  }
+  return supported.slice(1).map((right, index) => {
+    const left = supported[index];
+    return {
+      parameter: "risk_value_per_unit" as const,
+      threshold: (right.cost - left.cost) / (left.worstCaseImpact! - right.worstCaseImpact!),
+      fromBundleIds: left.interventionIds,
+      toBundleIds: right.interventionIds,
+    };
+  });
 }
 
 function bestBundle(

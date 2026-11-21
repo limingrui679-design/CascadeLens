@@ -15,7 +15,7 @@ from .imports import (
     graph_from_networkx,
     load_graph,
 )
-from .interventions import analyze_interventions
+from .interventions import analyze_interventions, policy_switches
 from .riskpack import create_riskpack, verify_riskpack
 from .scenario import default_scenario, load_scenario, validate_scenario
 from .validation import seal_snapshot, validate_snapshot, verify_snapshot
@@ -36,6 +36,7 @@ __all__ = [
     "graph_from_networkx",
     "load_graph",
     "load_scenario",
+    "policy_switches",
     "run_cascade",
     "run_cascade_bounds",
     "seal_snapshot",

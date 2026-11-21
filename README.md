@@ -347,3 +347,7 @@ CI enforces strict Python typing, branch-aware Python source coverage, and TypeS
 ## Cite and license
 
 Use [`CITATION.cff`](CITATION.cff) to cite the exact reviewed release. Licensed under [Apache-2.0](LICENSE). © 2026 Mingrui Li.
+
+### Which intervention is worth its cost?
+
+The intervention workbench and the SDK functions `policySwitches(frontier)` (TypeScript) and `policy_switches(frontier)` (Python) give switching values for the objective `cost + value × worst-case impact`. These thresholds identify a change in the winner across all feasible bundles. The existing `reversalThresholds` compare neighboring Pareto alternatives pairwise. For (cost, impact) of (0, 10), (6, 8), and (10, 0), all three are Pareto-efficient, but the middle bundle never minimizes the objective. The decision switches directly between the first and third at a value of 1 per impact unit. Exact ties at a switch may admit several optima.
