@@ -1,8 +1,7 @@
 # CascadeLens
 
 <p align="center">
-  <strong>Trace how disruption becomes systemic risk—without hiding where the evidence ends.</strong><br />
-  Evidence-graded graphs · executable shocks · bounded decisions · recomputable proof
+  <strong>Trace a disruption through a supply network and compare the responses available.</strong><br />
 </p>
 
 <p align="center">
@@ -23,9 +22,9 @@
 
 ![CascadeLens overview showing the Suez route scenario, bounded results, and verified release scope](docs/assets/readme/overview.jpg)
 
-CascadeLens turns a sourced **WorldGraph snapshot**, a **frozen decision cutoff**, and a versioned **ShockScript** into an auditable decision artifact.
+When a shipping route closes, an operations analyst needs to know which suppliers are exposed, how soon the disruption could reach production, and where a buffer would help. CascadeLens turns that question into a scenario another analyst can rerun. It freezes the information available at a chosen date, maps the dependencies and propagates a shock over time.
 
-Each run reports **lower, central, and upper impacts**, exposes **feasible Pareto trade-offs**, returns `scenario_only` when outcomes are insufficient, and writes a **RiskPack whose metadata and analytical outputs are recomputed** during verification.
+In the Suez case, you can compare rerouting with adding inventory, see how their estimated impacts change across assumptions, and inspect the cost and feasibility of each response. The exported RiskPack keeps the graph, assumptions and results together so a reviewer can reproduce the comparison. [Explore the Suez scenario](content/cases/suez-route-restress/README.md)
 
 ## 60-second Python start
 
@@ -57,9 +56,6 @@ The second command runs a complete scenario, writes a checksummed RiskPack, and 
     <td align="center"><strong>PASS</strong><br /><sub>Node + Python unit suites</sub></td>
   </tr>
 </table>
-
-> [!IMPORTANT]
-> Stable release: **[`v0.6.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.6.0)**. It contains **0 historically scored cases**, **0 external validations**, **0 structured user studies**, **0 verified organizational adoptions**, and **0 demonstrated real-world impacts**. All 16 cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 ## Explore all 16 cases
 
@@ -315,6 +311,9 @@ docs/             methods + tutorials           scripts/       hosted build veri
 | Navigate everything | [Documentation hub](docs/README.md) |
 
 ## Evidence boundaries
+
+> [!IMPORTANT]
+> Stable release: **[`v0.6.0`](https://github.com/limingrui679-design/CascadeLens/releases/tag/v0.6.0)**. It contains **0 historically scored cases**, **0 external validations**, **0 structured user studies**, **0 verified organizational adoptions**, and **0 demonstrated real-world impacts**. All 16 cases are deterministic, `scenario_only` research demonstrations—not forecasts or client projects.
 
 | Demonstrated | Not demonstrated |
 |---|---|
