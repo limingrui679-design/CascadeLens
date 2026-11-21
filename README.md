@@ -35,6 +35,13 @@ cascadelens demo --out demo-riskpack
 
 The second command runs a complete scenario, writes a checksummed RiskPack, and recomputes it. No Node.js setup or external data is required.
 
+<details>
+<summary>How to read the output</summary>
+
+A run takes a WorldGraph snapshot at a frozen decision cutoff and reports lower, central, and upper impacts. Compare feasible Pareto trade-offs to see which combinations offer the largest impact reduction at each cost. The Suez example returns `scenario_only` and writes a RiskPack whose metadata and analytical outputs are recomputed during verification.
+
+</details>
+
 <table>
   <tr>
     <td width="33%" valign="top"><strong>Use your graph</strong><br /><sub>JSON · CSV · GraphML · NetworkX</sub><br /><a href="docs/tutorials/02_bring_your_own_graph.md">Import guide →</a></td>
