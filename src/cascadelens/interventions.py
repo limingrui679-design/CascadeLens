@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 from itertools import combinations, groupby, pairwise
+from math import isfinite
 from typing import Any
 
 from .cascade import first_shock_start, intervention_activation, run_cascade_bounds
@@ -76,6 +77,28 @@ def _pareto(bundles: list[dict[str, Any]], horizon: int | None = None) -> list[d
             frontier.extend(item for item, impact in rest if impact == minimum)
             best_cheaper = minimum
     return frontier
+
+
+def minimax_regret(losses: dict[str, dict[str, float]]) -> list[dict[str, Any]]:
+    """Rank options available in every scenario against each scenario's own best loss."""
+    if not losses or any(not group for group in losses.values()):
+        return []
+    if any(not isfinite(v) for group in losses.values() for v in group.values()):
+        raise ValueError("Scenario losses must be finite")
+    shared = set.intersection(*(set(group) for group in losses.values()))
+    best = {name: min(group.values()) for name, group in losses.items()}
+    ranked = []
+    for option in shared:
+        gaps = {name: losses[name][option] - best[name] for name in sorted(losses)}
+        ranked.append(
+            {
+                "option": option,
+                "worstRegret": max(gaps.values()),
+                "meanRegret": sum(gaps.values()) / len(gaps),
+                "byScenario": gaps,
+            }
+        )
+    return sorted(ranked, key=lambda r: (r["worstRegret"], r["meanRegret"], r["option"]))
 
 
 def policy_switches(frontier: list[dict[str, Any]]) -> list[dict[str, Any]]:

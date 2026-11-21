@@ -1,3 +1,4 @@
+import { startBuiltWorker } from "./built-worker.mjs";
 import { readFile, readdir, stat } from "node:fs/promises";
 import { extname, join, relative } from "node:path";
 
@@ -118,52 +119,46 @@ const expectedHeaders = new Map([
   ["x-content-type-options", /^nosniff$/],
   ["x-frame-options", /^DENY$/],
 ]);
-const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-workerUrl.searchParams.set("security", `${process.pid}-${Date.now()}`);
-const worker = await import(workerUrl.href).then((module) => module.default);
-const response = await worker.fetch(
-  new Request("http://localhost/", { headers: { accept: "text/html" } }),
-  { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-  { waitUntil() {}, passThroughOnException() {} },
-);
-if (response.status !== 200) findings.push(`security_header_render_status:${response.status}`);
-for (const [name, pattern] of expectedHeaders) {
-  const value = response.headers.get(name) ?? "";
-  if (!pattern.test(value)) findings.push(`missing_or_invalid_header:${name}`);
-}
-const csp = response.headers.get("content-security-policy") ?? "";
-if (/script-src[^;]*'unsafe-inline'/.test(csp)) {
-  findings.push("unsafe_inline_script_csp");
-}
-if (/style-src[^;]*'unsafe-inline'/.test(csp)) {
-  findings.push("unsafe_inline_style_csp");
-}
-if (response.headers.has("x-powered-by")) findings.push("framework_disclosure:x-powered-by");
-const blockedControlResponse = await worker.fetch(
-  new Request("http://localhost/__vinext/prerender/static-params", {
+const worker = await startBuiltWorker();
+try {
+  const response = await worker.fetch("http://localhost/", { headers: { accept: "text/html" } });
+  if (response.status !== 200) findings.push(`security_header_render_status:${response.status}`);
+  for (const [name, pattern] of expectedHeaders) {
+    const value = response.headers.get(name) ?? "";
+    if (!pattern.test(value)) findings.push(`missing_or_invalid_header:${name}`);
+  }
+  const csp = response.headers.get("content-security-policy") ?? "";
+  if (/script-src[^;]*'unsafe-inline'/.test(csp)) {
+    findings.push("unsafe_inline_script_csp");
+  }
+  if (/style-src[^;]*'unsafe-inline'/.test(csp)) {
+    findings.push("unsafe_inline_style_csp");
+  }
+  if (response.headers.has("x-powered-by")) findings.push("framework_disclosure:x-powered-by");
+  const blockedControlResponse = await worker.fetch("http://localhost/__vinext/prerender/static-params", {
     headers: {
       "x-vinext-prerender-secret": "publicly-derived-build-token",
       cookie: "__prerender_bypass=publicly-derived-build-token",
     },
-  }),
-  { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-  { waitUntil() {}, passThroughOnException() {} },
-);
-if (blockedControlResponse.status !== 403) {
-  findings.push(`framework_control_request_not_blocked:${blockedControlResponse.status}`);
-}
+  });
+  if (blockedControlResponse.status !== 403) {
+    findings.push(`framework_control_request_not_blocked:${blockedControlResponse.status}`);
+  }
 
-console.log(
-  JSON.stringify(
-    {
-      scannedFiles: (await listFiles(root)).length,
-      responseHeaders: Object.fromEntries(
-        [...expectedHeaders.keys()].map((name) => [name, response.headers.get(name)]),
-      ),
-      findings,
-    },
-    null,
-    2,
-  ),
-);
-if (findings.length > 0) process.exitCode = 1;
+  console.log(
+    JSON.stringify(
+      {
+        scannedFiles: (await listFiles(root)).length,
+        responseHeaders: Object.fromEntries(
+          [...expectedHeaders.keys()].map((name) => [name, response.headers.get(name)]),
+        ),
+        findings,
+      },
+      null,
+      2,
+    ),
+  );
+  if (findings.length > 0) process.exitCode = 1;
+} finally {
+  await worker.close();
+}

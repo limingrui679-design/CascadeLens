@@ -4,19 +4,13 @@ import test from "node:test";
 import axe from "axe-core";
 import { JSDOM } from "jsdom";
 
-let workerPromise;
+import { startBuiltWorker } from "../scripts/built-worker.mjs";
+
+const harness = await startBuiltWorker();
+test.after(() => harness.close());
+
 async function render(path) {
-  if (!workerPromise) {
-    const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-    workerUrl.searchParams.set("a11y", `${process.pid}-${Date.now()}`);
-    workerPromise = import(workerUrl.href).then((module) => module.default);
-  }
-  const worker = await workerPromise;
-  const response = await worker.fetch(
-    new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }),
-    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-    { waitUntil() {}, passThroughOnException() {} },
-  );
+  const response = await harness.fetch(`http://localhost${path}`, { headers: { accept: "text/html" } });
   assert.equal(response.status, 200, path);
   return response.text();
 }

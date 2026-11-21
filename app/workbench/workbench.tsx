@@ -5,6 +5,7 @@ import { useMemo, useState, type ChangeEvent } from "react";
 import {
   analyzeInterventions,
   policySwitches,
+  minimaxRegret,
   parseShockScript,
   runCascadeBounds,
   type CascadeBounds,
@@ -377,6 +378,19 @@ export function Workbench({
   }
 
   const switches = useMemo(() => policySwitches(interventions.paretoFrontier), [interventions]);
+  const robust = useMemo(() => {
+    const horizons = new Map<string, Map<string, number>>(
+      interventions.horizonAnalyses.map(({ horizonDays }) => [String(horizonDays), new Map()]),
+    );
+    for (const bundle of interventions.evaluatedBundles) {
+      if (!bundle.feasible) continue;
+      const key = JSON.stringify(bundle.interventionIds);
+      for (const row of bundle.horizonResults) {
+        if (row.worstCaseImpact !== null) horizons.get(String(row.horizonDays))?.set(key, row.worstCaseImpact);
+      }
+    }
+    return minimaxRegret(horizons)[0];
+  }, [interventions]);
   const recommended = interventions.recommendedBundleIds.map(
     (id) => active.scenario.interventions.find((item) => item.id === id)?.label ?? id,
   );
@@ -598,6 +612,10 @@ export function Workbench({
                 </div>
               ))}
             </div>
+            {robust && <details><summary>Least regret across modeled horizons</summary>
+              <p>{(JSON.parse(robust.option) as string[]).join(" + ") || "Do nothing"} has a maximum
+                modeled impact gap of {Number(robust.worstRegret.toPrecision(4))} against the best
+                feasible bundle at each horizon. Costs enter through the budget constraint.</p></details>}
             {switches.length > 0 && <details>
               <summary>When does a different bundle become worth its cost?</summary>
               <p>Value is measured in cost units per unit of avoided worst-case impact.</p>

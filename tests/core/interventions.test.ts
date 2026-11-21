@@ -157,3 +157,10 @@ test("global policy switches skip unsupported and duplicate frontier alternative
     parameter: "risk_value_per_unit", threshold: 1, fromBundleIds: ["0"], toBundleIds: ["2"]
   }]);
 });
+
+test("minimax compares common choices with each horizon's feasible oracle", async () => {
+  const { minimaxRegret } = await import("../../packages/core/src/interventions");
+  const choices = new Map([["7",new Map([["A",1],["B",4],["C",0]])],["30",new Map([["A",7],["B",3]])]]);
+  assert.deepEqual(minimaxRegret(choices).map(r=>[r.option,r.worstRegret]),[["B",4],["A",4]]);
+  assert.throws(()=>minimaxRegret(new Map([["x",new Map([["bad",NaN]])]])));
+});

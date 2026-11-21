@@ -1,10 +1,17 @@
 import unittest
 from itertools import product
 
-from cascadelens.interventions import _pareto, policy_switches
+from cascadelens.interventions import _pareto, minimax_regret, policy_switches
 
 
 class PolicyValueTests(unittest.TestCase):
+    def test_minimax_scores_each_scenario_against_its_own_oracle(self):
+        rows = minimax_regret({"short": {"A": 1, "B": 4, "C": 0}, "long": {"A": 7, "B": 3}})
+        self.assertEqual([(r["option"], r["worstRegret"]) for r in rows], [("B", 4), ("A", 4)])
+        self.assertEqual(minimax_regret({"a": {"x": 1}, "b": {"y": 2}}), [])
+        with self.assertRaises(ValueError):
+            minimax_regret({"s": {"x": float("inf")}})
+
     def test_only_globally_supported_bundles_switch(self):
         options = [
             {"cost": cost, "worstCaseImpact": impact, "interventionIds": [name], "feasible": True}
