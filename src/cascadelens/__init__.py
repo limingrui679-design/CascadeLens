@@ -18,6 +18,7 @@ from .imports import (
 from .interventions import analyze_interventions, minimax_regret, policy_switches
 from .riskpack import create_riskpack, verify_riskpack
 from .scenario import default_scenario, load_scenario, validate_scenario
+from .switching import replay_switching_costs
 from .validation import seal_snapshot, validate_snapshot, verify_snapshot
 from .version import __version__
 
@@ -38,6 +39,7 @@ __all__ = [
     "load_scenario",
     "minimax_regret",
     "policy_switches",
+    "replay_switching_costs",
     "run_cascade",
     "run_cascade_bounds",
     "seal_snapshot",

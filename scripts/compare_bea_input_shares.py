@@ -5,12 +5,13 @@ from __future__ import annotations
 import argparse
 import json
 from hashlib import sha256
+from itertools import pairwise
 from pathlib import Path
 from statistics import mean
 
 from openpyxl import load_workbook
 
-from cascadelens.interventions import minimax_regret
+from cascadelens import minimax_regret, replay_switching_costs
 
 
 def compare(path: Path) -> dict[str, object]:
@@ -61,10 +62,40 @@ def compare(path: Path) -> dict[str, object]:
             )
     if not outcomes:
         raise ValueError("No comparable industry-years in this workbook")
+    # Align the pathwise comparison with the original 2000 onward evaluation horizon.
+    years = sorted({r[0] for r in outcomes})
+    path_years = [years[0] - 1, *years]
+    if any(b != a + 1 for a, b in pairwise(path_years)):
+        raise ValueError("switch-cost evaluation requires consecutive annual tables")
+    industries_seen = set.union(*(set(annual[y]) for y in path_years))
+    panels = []
+    for industry in sorted(industries_seen):
+        rows = [annual[y].get(industry, {}) for y in path_years]
+        if rows[0] and all(row.keys() == rows[0].keys() for row in rows):
+            panels.append(rows)
+    if not panels:
+        raise ValueError("No complete industry panel for the switching-cost comparison")
+    cost_sensitivity = []
+    for fee in (0.0, 0.001, 0.005, 0.01):
+        runs = [replay_switching_costs(rows, fee)["policies"] for rows in panels]
+        methods = {}
+        for policy in runs[0]:
+            gaps = [run[policy]["total_loss"] - run["hindsight_path"]["total_loss"] for run in runs]
+            methods[policy] = {
+                "switches": sum(run[policy]["switches"] for run in runs),
+                "mean_net_gap_to_hindsight": mean(gaps) / len(years),
+            }
+        cost_sensitivity.append({"switch_cost_in_share_units": fee, "policies": methods})
     return {
         "sha256": sha256(path.read_bytes()).hexdigest(),
         "years": [min(r[0] for r in outcomes), max(r[0] for r in outcomes)],
         "industry_years": len(outcomes),
+        "switching_panel": {
+            "industries_seen": len(industries_seen),
+            "complete_industries": len(panels),
+            "evaluation_years": years,
+            "sensitivity": cost_sensitivity,
+        },
         "different_choices": sum(r[3] for r in outcomes),
         "three_year_minimax_mean_gap": mean(r[1] for r in outcomes),
         "last_year_mean_gap": mean(r[2] for r in outcomes),
